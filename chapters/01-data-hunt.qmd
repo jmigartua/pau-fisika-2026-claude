@@ -1,0 +1,74 @@
+---
+title: "The data hunt"
+subtitle: "What was searched, what exists, what was found, what is still unpublished"
+description: "Coverage matrix for all 17 autonomous communities, the Ministry, the Basque institutions and the literature, with the retrieval method for each source."
+date: 2026-09-18
+categories: [evidence, sources]
+---
+
+## Design of the search
+
+The search was organised as five parallel investigations, each with an explicit brief, followed by a second pass with a real browser session on the user's computer for the sites that reject automated readers (Power BI dashboards, WAF-protected university sites, rate-limited servers). The five briefs were:
+
+1. **Euskadi / EHU** — anything published after 6 July 2026: extraordinary sitting, revisions, tribunal data, Basque Government, Parliament, unions, press in Spanish and Basque, Open Data Euskadi, Eustat, ISEI-IVEI, the Inspectorate's school results.
+2. **Ministry and north-east** — SIIU/EPAU 2026 status, Cataluña (Govern dossiers and Recull estadístic), Aragón, Navarra, Baleares, La Rioja.
+3. **South** — Andalucía (Distrito Único, ponencias UMA/US/UCA), Extremadura, Castilla-La Mancha, Murcia, Canarias (coordination minutes).
+4. **North-west, Madrid, Valencia** — Galicia (CiUG), Asturias, Cantabria, Castilla y León (four universities), Madrid (six universities), Comunitat Valenciana (five universities).
+5. **Literature and national narrative** — Dialnet, Redalyc, UNED/UM journals, MDPI, Frontiers, arXiv, TESEO; national press and professional bodies (RSEF, CRUE, teacher associations).
+
+Query families were run in Spanish, Basque, Catalan and Galician (`nota media Física PAU 2026`, `Fisika USaP 2026 emaitzak`, `mitjana Física PAU 2026`, `estatísticas PAU 2026 Física`, …) until the search budget of the session (200 web searches) was exhausted. Direct URL probes (HTTP status of the predictable 2026 filenames) were used to distinguish "not found by search" from "not yet published".
+
+::: {.callout-tip title="What made the difference"}
+The four largest gains came from **reading dashboards and chart-only PDFs in a real browser**, not from search engines: the UCLM Power BI (Física 2021–2026, both sittings, by province), the ULL and ULPGC Power BI (Física histograms 2024–2026 with zeros, tens and means by sex), and the University of La Rioja's chart-only PDF (Física 2010–2022). None of these numbers exist as text anywhere on the web.
+:::
+
+## Coverage matrix, 18 September 2026
+
+| Community | 2026 Física (ordinary) | 2025 baseline | Best source found | Status |
+|---|---:|---:|---|---|
+| País Vasco | **3.99**, 39.8 % pass, N = 2 066 | 5.47, 62.3 % | EHU presentation 6 Jul 2026 [@ehu2026notak] | [official]{.pill .ok}; July sitting, pass count, tribunal spread **not** published |
+| Cataluña | **6.84** (aptes basis), N = 8 021 | 6.04 (aptes) / 5.98 (ministry) | Govern dossier 23 Jun 2026, pp. 19–21 [@govern2026dossier] | [official]{.pill .ok}; September sitting aggregate only; Recull 2026 due after 29 Sep |
+| Andalucía | **5.86** | 5.69 | Junta table of 33 subject means [@junta2026pevau]; UMA/US/UCA ponencias give 2025 by university | [official]{.pill .ok}; N and pass % unpublished; ponencias for 2026 due Nov 2026 |
+| Extremadura | **5.27** (lowest subject) | 6.09 | UEx release via Canal Extremadura [@canalextremadura2026] | [press]{.pill .press}; unex.es statistics pages block readers |
+| Asturias | **6.62**, 76.87 % pass | 5.49 | Uniovi press release 12 Jun 2026 [@uniovi2026junio] | [official]{.pill .ok}; July release omits Física |
+| Comunidad de Madrid | **6.7** (chart, 1 dec.) | 5.6 (chart) / 5.65 | CM presentation p. 14, read from the rendered chart [@madrid2026pau] | [official]{.pill .ok}; per-university 2026 not published; UAM ponencia charts have no labels |
+| Comunitat Valenciana | **6.396**, 76.35 %, N = 5 259, SD 2.38 | 5.889, 69.6 % | GVA statistics PDFs June/July/Global 2026, p. 43 [@gva2026junio] | [official]{.pill .ok}; re-extracted here; July 2026 = 4.162 |
+| Castilla-La Mancha | **6.80**, 80.07 %, N = 1 781 | 5.86, 65.6 % | UCLM Power BI, curso 2025-26 [@uclm_powerbi] | [official]{.pill .ok}; full 2021–2026 series by province and sitting retrieved |
+| Canarias | **4.08** (ULL, N = 683) / **4.41** (ULPGC, N = 712) | 4.92 / 5.25 (ministry pooled 5.08) | ULL and ULPGC Power BI [@ull_powerbi; @ulpgc_powerbi] | [official]{.pill .ok}; histograms, zeros, tens, sex means; July ULL = 3.27 |
+| Aragón | — | 6.469, 79.4 % | UNIZAR xlsx 2020–2025 with grade bands [@unizar2025asig] | [gap]{.pill .gap}; `pauresulasig2026.*` → 404 (expected winter 2026-27) |
+| Navarra | — | 5.36, 60.9 % | UPNA Informe 2024-25, grade bands [@upna2025informe] | [gap]{.pill .gap}; `Informe_PAU_2025-26.pdf` → 404 |
+| Región de Murcia | — | 5.33, 61 % | Informe General PAU2025 (2017–2025 pass series) [@umu2025informe] | [gap]{.pill .gap}; 2026 report due at first COPAU meeting of 2026-27 |
+| Cantabria | — | 5.44, 63.2 % | UC per-subject PDFs 2025 [@unican2025materia] | [gap]{.pill .gap}; four 2026 filename probes → 404 |
+| Galicia | — | 5.63 (ministry) | CiUG working-group report 2020–2023 [@ciug_fisica2023] | [gap]{.pill .gap}; "Grupos de traballo" page reads *Actualizando contido* (18 Sep 2026) |
+| Castilla y León | — | 6.19 (ministry) | UVa/USAL/UBU/ULE releases (global only) | [gap]{.pill .gap}; no per-subject publication exists in any year; USAL viewer is a dead Infogram embed |
+| Illes Balears | — | 4.45 (ministry) | UIB releases (global only) | [gap]{.pill .gap}; UIB appears never to publish subject statistics |
+| La Rioja | — | 6.39 (ministry) | UR chart-only PDF, Física 2010–2022 [@unirioja_evolucion] | [gap]{.pill .gap}; page still links the 2022 edition |
+| **Spain (Ministry)** | — | 5.65 | SIIU EPAU 2025 cubes, published 8 Jun 2026 [@siiu_epau2025] | [gap]{.pill .gap}; 2026 edition due ≈ June 2027; no *avance* exists |
+
+## Euskadi: everything found after 6 July 2026
+
+**Numerical.** The EHU deck of 6 July [@ehu2026notak] remains the only source of Física 2026 figures. It also gives the other subjects' means, pass rates and low-score shares, revision requests for four subjects (not Física), and the global PAU counts: 12 080 presented, 41 tribunals, 848 evaluators, 4 223 revision requests covering 8 127 exams, 313 zeros (2.6 %). The extraordinary sitting was reported on 7 July through the press (1 332 presented, 951 passed, 71.40 %; Araba 77.9 %, Bizkaia 64.3 %, Gipuzkoa 79.8 %; euskera 75.7 %, castellano 61.7 %) with **no subject breakdown** [@donostitik2026extra]. The annual *Informe* archive still ends at 2025 (two-page summaries since 2023, with no subject tables).
+
+**A genuinely new dataset.** The Basque Inspectorate's *Resultados escolares 2024-2025* [@gv_resultados_escolares_2425] tabulates 2º Bachillerato Física by territory, network and linguistic model: 4 541 students evaluated, 4 455 passed (98.11 %), mean 7.09. This is the first time the project has the school marks of a PAU cohort ([Chapter 5](05-subjects-sittings.qmd)).
+
+**Institutional narrative.** The Education Counsellor's interview of 12 July [@pedrosa2026entrevista] is the key post-6-July document: the Department has "only the report the university made public", will "ask for more data", will review "all subjects" for 2027 "in the short term", and has no diagnosis yet. The Science and Universities Counsellor admitted a "déficit de confianza" in the marking system (7 July). The rector's press conference, as reported in Basque by Argia [@argia2026ehu], acknowledged significant variation between evaluation panels in Física and other subjects. As of 7 September nothing had been sent to schools for PAU 2027 beyond the Euskara II instructions. The 22 June *agerraldia* referenced in the deck's footer was not located.
+
+**Not found.** No Ararteko file, no union or physics-teacher statement on Física, no Open Data Euskadi or Eustat PAU dataset, no parliamentary initiative text (the Parliament's search interface could not be driven from this session — a lead, not a negative), no EHU 2027 Física orientations, no per-territory or per-language Física figure for 2026.
+
+## Sources that exist but could not be read
+
+- **unex.es** (Extremadura statistics) and **uclm.es** return 403 to automated readers; UCLM was solved with the browser, UEx's `alumnado.unex.es/pau/` page turned out to contain no statistics section at all.
+- **estadisticas.ciencia.gob.es** (Ministry PC-Axis host) serves an incomplete TLS chain; the July copies already in the project (byte-identical to the September re-download made by the earlier session) were used.
+- **ciug.gal** also serves an incomplete chain; it was fixed legitimately by adding the missing intermediate certificate, but the statistics section itself is empty.
+- **universitats.gva.es** is disallowed by robots.txt for the fetch tool; the three 2026 PDFs were downloaded from the user's own machine and re-extracted (values identical to the earlier session's).
+- **unirioja.es** rate-limits (HTTP 429); the four PDFs were downloaded from the user's machine with a browser session.
+- **Deia / Noticias de Gipuzkoa / Noticias de Álava** return 406; worked around with a browser user-agent. **El Correo** and **El Diario Vasco** are paywalled and were not retrieved.
+
+## Numbers that must not be mixed
+
+- **Cataluña** means are over *students eligible for university assignment*, and the ordinary-only figure (6.04 for 2025) differs from the full-year Recull figure (5.85). The 2026 dossier's back-series is the ordinary-only one.
+- **Valencia** publishes six differently-scoped 2025 reports (Ordinaria/JUNIO/Extraordinaria/JULIO/JULIO finales/GLOBALES) whose Física means differ at the second decimal; the JUNIO files are used here for both years.
+- **Aragón**'s `DESV` column is a *mean absolute deviation*, not a standard deviation.
+- **Andalucía** 2025: the ponencias' 5.69 (unweighted mean of ten university means) coincides with the ministry's 5.69; a secondary blog's 5.67 is unverified.
+- **EHU** press: 3.98 (Orain/EITB copy) versus 3.99 (deck and Campusa); some outlets copied Matemáticas II's $-1.67$ onto Física. Use 3.99 and $-1.48$.
+- **Valencia July 2026** Física pass rate 39.41 % (resit population) is *not* comparable with Euskadi's 39.8 % (ordinary sitting) despite the coincidence.

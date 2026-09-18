@@ -1,0 +1,54 @@
+---
+title: "Interpretation and the 2027 question"
+subtitle: "Which explanations survive the evidence, what would decide between the rest, and what to ask for"
+description: "A structured reading of the hypotheses for the 2026 Basque Physics result against the assembled evidence, the institutional narrative after 6 July, and a prioritised list of data requests and design choices for PAU 2027."
+date: 2026-09-18
+categories: [findings, interpretation, 2027]
+---
+
+## The hypotheses, one by one
+
+The evidence assembled in Chapters 2–5 is observational and the exam changes every year, so nothing below is a causal estimate. But the hypotheses that circulated in July can be sorted by what the data allow.
+
+**H1 — "The competency model (RD 534/2024) is to blame."** *Explains 2025, not 2026.* The model was applied in all seventeen communities in both years. In 2025 the Física mean fell in 14 of 17, by $-0.81$ on average — Euskadi's $-0.62$ was below the national move. In 2026 at least six of nine reporting communities rose by $+0.5$ to $+1.1$ under the same model; Euskadi fell $-1.48$. A national cause cannot produce opposite signs in the same year. The Basque institutions' July framing ("el nuevo enfoque competencial pasa factura") is therefore at most a description of 2025. There is a further difficulty with it: the only systematic rating of PAU papers' competency orientation, covering six communities over 2015–2025 [@sancheztarazaga2026pau], places País Vasco and Cataluña at the *top* of the range before the reform, so the Basque papers did not "become competency-based" in 2025 — they were already the most competency-oriented in Spain, and Cataluña, rated alongside them, rose in 2026.
+
+**H2 — "The 2026 Basque Física paper was harder, or differently pitched, than its own 2025 paper and than other communities' 2026 papers."** *Consistent with everything.* The cohort-wide displacement of the distribution ([Chapter 4](04-distributions.qmd)), the confinement of the damage to Física and Matemáticas II with Química, Biología and Lengua unaffected ([Chapter 5](05-subjects-sittings.qmd)), the Catalan mirror image (Física up, Matemàtiques down, same authority, same cohort) and the Canarian coordinators' own reading of their milder 2025 all point to the paper — its problems, its optionality (two of four problems with no choice in 2026), its marking scheme — as the first-order variable. The July package already noted that the 2026 ordinary paper's gravitational problem contains a validity issue in its energy comparison. A structured content audit of the 2024, 2025 and 2026 Basque papers against the other communities' 2026 papers (the design of @faura2022desigualdad and @nortes2021pauebau) is the natural next study, and the user's exam archive makes it feasible.
+
+**H3 — "Tribunals marked more severely."** *Possible, unmeasured, and acknowledged by EHU.* The rector's press conference reported "significant variation between evaluation panels" in Física among other subjects [@argia2026ehu], and the 6 July deck published tribunal-mean ranges for Euskara (2.88–4.43), Lengua (5.80–6.92) and Inglés (6.65–7.56) but not for Física. Rater-severity effects of the size needed to move a subject mean by more than a point are not unknown in Spanish PAU marking [@veas2025consistency], but the cohort-wide shape of the 2026 distribution says severity, if present, was general rather than confined to a few panels. Only the tribunal-level Física table settles this.
+
+**H4 — "The cohort was weaker or differently composed."** *Weak for 2026.* Presentation fell 6 % from 2025 and enrolment is unpublished, so a small compositional component cannot be excluded, but the school marks of the preceding cohort were 7.09 with 98 % passing, and the same students' Química and Biología marks did not move. A weaker cohort does not fail Física and Matemáticas by 1.5 points while holding Química.
+
+**H5 — "Students under-prepare Física because the weighting rules make it dispensable."** *Plausible as a slow driver, not as a 2026 trigger.* This is the Canarian coordinators' hypothesis for their own decline (few degrees need a high Física mark; Matemáticas II carries the weighting; Física is examined last on a long day). It fits the ten-year erosion of the top decile better than a one-year fall of 1.5 points, and it is the hypothesis most directly addressable by the Basque ponderación table and the exam timetable for 2027.
+
+**H6 — "Language or network bias."** *No evidence either way for Física.* The 2010–2022 series shows euskera/castellano differences of a few tenths in both directions and no sign that either network fails Física differentially; EHU's 2026 bias analysis was run for Euskara II. Nothing published for Física 2026 speaks to this.
+
+The ranking that emerges is H2 first, H3 unresolved and testable, H5 as background, H1 as a description of 2025 only, and H4 and H6 unsupported.
+
+## The institutional record since 6 July
+
+- **6 July**, EHU: Física figures published as a counter-example in the Euskara controversy; tribunal data handed to the Education Department; anomalous tribunal values reported for eleven subjects including Física [@ehu2026campusa; @argia2026ehu].
+- **7 July**, Science and Universities Counsellor: admits a "déficit de confianza, fundamentado o no fundamentado" in the marking system; floats multi-marker models; ≈ 40 judicial appeals by students with very low marks.
+- **7 July**, extraordinary sitting: 71.4 % global pass (90.6 % in 2025); no Física figure.
+- **8–10 July**: 12 000-signature faculty manifesto in support of markers; EHU appeals the court measures on the Euskara marks; press notes that "los ceros en Física duplican a los de Euskera".
+- **12 July**, Education Counsellor Pedrosa [@pedrosa2026entrevista]: the Department has only the EHU report, will request more data, will review all subjects for 2027 "a corto plazo", has no diagnosis yet, and does not hold other communities' data.
+- **30 July**, Galicia (context): after errors in three papers, the Xunta announces peer review of papers and double marking for 2027 — the single-author, no-external-review failure mode that any Basque audit should check for.
+- **7 September**: nothing sent to schools for PAU 2027 beyond the Euskara II instructions; "2027 será un año de ajuste técnico" and the competency model is to be fully deployed in 2028.
+
+## What to ask for, in order of value
+
+1. **Física by tribunal, 2025 and 2026**: $n_j$, $\bar{x}_j$, $s_j$ and the school composition of each tribunal's scripts. EHU computed this. It separates H2 from H3 in one table.
+2. **The full Física grade histogram, 2024–2026**, in one-point bands with zeros and tens, as ULL and ULPGC publish routinely. It replaces the model of [Chapter 4](04-distributions.qmd) with data.
+3. **July 2026 Física**: presented, passed, mean. Its position relative to the June result tells whether the July paper was pitched like the June one.
+4. **Revision statistics for Física 2026**: requests, share raised, mean change. Published for four subjects, not for the subject with the lowest mean.
+5. **Física by sex, language and territory for 2023–2026**, the breakdowns the annual reports carried until 2022.
+6. **Problem-level marks** (four problems, options a/b) for a sample of scripts: this is the item-level evidence that distinguishes "the paper was hard" from "the paper was unanswerable", and it is what the Canarian subcommittee planned for 2026.
+
+## Design questions for 2027 that the data already inform
+
+- **Optionality.** The 2026 Basque paper fixed problems 1 and 2 with no alternative. The COVID years (single super-option, choice among questions) produced the highest means in the series; the 2025–26 reduction of choice coincides with the two lowest. Restoring a choice within problems 1–2 is the cheapest lever with a documented effect.
+- **Calibration against a reference.** The Ministry cube gives, for every subject, community and year, a full distribution; a target distribution for Física (for example the 2017–2024 Basque band structure, $[0,5)$ ≈ 30 %, $[9,10]$ ≈ 15 %) can be written into the coordination instructions and checked against a pre-test of the paper on a sample of Bachillerato students, as some communities' ponencias already do informally.
+- **The threshold.** The Canarian histograms show that in 2026 the customary rounding of borderline scripts to 5 vanished. Whether that is desirable is a policy question; that it moves the pass rate by 5–8 points is an empirical one.
+- **Order of exams.** Física is sat on the last slot of the science day in several communities; the Tenerife minutes name this explicitly. The Basque timetable is a free parameter.
+- **Second marking.** Galicia's 2027 reform (double marking, external review of papers) is the model that the "déficit de confianza" language of July points toward; Veas & López-Pina's Rasch equating in Comunitat Valenciana is the statistical complement.
+
+None of these requires new data to be argued; all of them would be sharpened by the six items above.

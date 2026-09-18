@@ -1,0 +1,77 @@
+---
+title: "Physics in the PAU, 2026: what the data now say"
+subtitle: "An independent data hunt and analysis — Euskadi (UPV/EHU) 2010–2026 in its Spanish context"
+author:
+  - name: "Independent analysis prepared for Josu M. Igartua"
+    affiliation: "Working folder `claude_analysis_2026-09-18`"
+date: 2026-09-18
+date-format: "D MMMM YYYY"
+abstract: |
+  In the June 2026 sitting of the Basque university-entrance exam the Physics mean fell to 3.99 with a 39.8 % pass rate, the lowest values since 2010–11.
+  This site documents an exhaustive search for every published Physics result in Spain since the project started (6 July 2026), consolidates the new
+  material with the datasets already in the project, and re-analyses the whole picture independently: the Euskadi series 2010–2026, the 2026 results of
+  the nine autonomous communities that have published them, the shape of the grade distribution, the science-subject block, both sittings, participation,
+  and the school-mark/exam-mark gap. The main new facts: the 2025 fall was national, the 2026 fall is regional (Euskadi, Canarias and Extremadura fell while
+  six communities rose), and Canarias 2026 is an almost exact twin of Euskadi in level and tail shape.
+keywords: [PAU, EBAU, Física, Euskadi, UPV/EHU, LOMLOE, "2026", Canarias, comparabilidad territorial]
+license: "CC BY 4.0 (analysis); source documents retain their owners' terms"
+---
+
+## Headline numbers {.unnumbered}
+
+::: {.kpi-row}
+::: {.kpi .bad}
+[3.99]{.v}
+[Física mean, Euskadi, June 2026 (2025: 5.47)]{.l}
+:::
+::: {.kpi .bad}
+[39.8 %]{.v}
+[pass rate, Euskadi 2026 (2025: 62.3 %)]{.l}
+:::
+::: {.kpi .bad}
+[24.5 %]{.v}
+[of Basque Physics exams at ≤ 2 points (2025: 10 %)]{.l}
+:::
+::: {.kpi}
+[9 / 17]{.v}
+[communities with a published 2026 Física mean (3 down, 6 up)]{.l}
+:::
+::: {.kpi .bad}
+[4.08 · 4.41]{.v}
+[Tenerife (ULL) and Las Palmas (ULPGC), June 2026 — the Canarias twin]{.l}
+:::
+::: {.kpi .good}
+[+0.80]{.v}
+[Cataluña Física 2025→2026 (6.04 → 6.84, 8 021 students)]{.l}
+:::
+:::
+
+## What this study adds {.unnumbered}
+
+The July 2026 package in this project (`fisica_pau_ehu_package`, `hist_evolution`) already held the Euskadi Physics series 2010–2025 and the Ministry EPAU cubes 2015–2025. The question the user asked on 18 September was different: *since then, what else has been published, anywhere in Spain, and what does the whole body of evidence say?* This site answers in three layers.
+
+**Data hunt** ([Chapter 1](chapters/01-data-hunt.qmd)). Five parallel searches (Euskadi/EHU; Ministry and north-east; south; north-west, Madrid and Valencia; literature and national press) plus a second pass with a real browser on the official dashboards that block automated readers. Nine communities now have a 2026 Física mean; four of those (Castilla-La Mancha, Tenerife, Las Palmas and La Rioja's 2010–2022 series) were retrieved from dashboards or chart-only PDFs that no search engine indexes. The Basque Government's school-results report gives, for the first time in this project, the *school* Physics marks of the cohort that sits the PAU.
+
+**Independent analysis** ([Chapters 2–6](chapters/02-euskadi.qmd)). Everything is recomputed from the raw files with the scripts in `scripts/`. The Ministry cubes are parsed with a small dependency-free PC-Axis reader and the result is checked cell-by-cell against the July package (exact agreement, [Chapter 10](chapters/10-reproduce.qmd)). Where a number is modelled rather than observed (the implied 2026 grade distribution) it is labelled as such.
+
+**Log and sources** ([Chapters 8–9](chapters/08-sources.qmd)). Every figure on this site can be traced to a URL, a page number or a dashboard filter, and every dead end is recorded so that the next update does not repeat it.
+
+## Five findings in one paragraph each {.unnumbered}
+
+**1. The 2025 fall was national; the 2026 fall is regional.** Across the 17 communities the ordinary-sitting Physics mean changed by $-0.81$ points on average between 2024 and 2025 (14 of 17 fell), the first year of the LOMLOE competency exam. Euskadi's $-0.62$ that year was *milder* than the national move. In 2026 most communities that have reported bounced back ($+0.5$ to $+1.1$: Asturias, Madrid, Castilla-La Mancha, Cataluña, C. Valenciana, Andalucía), while Euskadi ($-1.48$), Canarias ($-0.83$) and Extremadura ($-0.82$) fell further. The reform explains 2025; it does not explain 2026. ([Chapter 3](chapters/03-spain-2026.qmd))
+
+**2. A one-year change of $-1.48$ is rare but not unprecedented; the *level* is what is exceptional.** In the Ministry panel of 170 year-to-year changes (17 communities × 10 transitions, 2015–2025) the standard deviation is 0.74 and only 7 changes were as negative — Extremadura 2024 ($-2.10$), Cantabria 2017 ($-1.94$), Canarias 2019 ($-1.76$), Baleares 2025, Euskadi itself in 2022 ($-1.62$, the post-COVID normalisation), Asturias 2025. But a mean of 3.99 is lower than any ordinary-sitting regional mean in the twelve years of Ministry data except Canarias 2019 (3.60), and it is Euskadi's second consecutive fall: $6.09 \to 5.47 \to 3.99$. ([Chapter 2](chapters/02-euskadi.qmd))
+
+**3. Canarias 2026 is the Basque case's twin.** Tenerife (ULL): 683 exams, mean 4.08, 38.5 % pass, 30 zeros, 25 % of exams below 2. Las Palmas (ULPGC): 712 presented, mean 4.41, 42.8 % pass, 22.6 % below 2. These histograms, read directly from the universities' dashboards, show the same shape the Basque summary statistics imply: a flat-to-decreasing density with a heavy tail at 0–2 and a collapsed top decile. They are the best available empirical picture of what "3.99 / 39.8 % / 24.5 % ≤ 2" looks like exam by exam. ([Chapter 4](chapters/04-distributions.qmd))
+
+**4. In Euskadi the damage is concentrated in the science-technical block; elsewhere the pattern differs by subject.** Euskadi 2025→2026: Física $-1.48$, Matemáticas II $-1.67$, Historia $-0.83$, Euskara $-0.48$, Química $-0.21$, Biología $+0.15$. Cataluña: Física $+0.80$ but Matemàtiques $-1.94$. Madrid: Física $+1.1$, Matemáticas II $+0.5$. Andalucía: Física $+0.17$, Matemáticas II $-0.59$. The subject-by-region pattern is not the signature of a single national exam-model effect; it is the signature of regional paper design and marking, subject by subject. ([Chapter 5](chapters/05-subjects-sittings.qmd))
+
+**5. The same students carry a school Physics mark of 7.09.** The Basque Inspectorate's *Resultados escolares 2024-25* gives 2º Bachillerato Física: 4 541 students, 98.1 % pass, mean 7.09 (public 7.04, private/concertada 7.15; models A/B/D 6.93/7.31/7.09). Roughly 45–48 % of them sit PAU Física. The school-to-exam gap was 1.6 points in 2025 and, if school marks did not move, 3.1 points in 2026. ([Chapter 5](chapters/05-subjects-sittings.qmd))
+
+## What is still missing {.unnumbered}
+
+No 2026 Física figure has been published for Aragón, Baleares, Cantabria, Castilla y León, Galicia, Murcia, Navarra or La Rioja; the Ministry's 2026 cube is due in June 2027. EHU has not published the Física result of the July 2026 sitting, the pass *count*, the revision statistics for Física, the tribunal-level spread it referred to on 6 July, nor any split by sex, language or territory. The Basque *Resultados escolares 2025-26* (the school marks of the cohort that sat PAU 2026) is not yet out. [Chapter 9](chapters/09-log.qmd) lists the URLs to poll and the dates by which each is expected.
+
+::: {.callout-note title="How to read the numbers"}
+All means are on the 0–10 scale and, unless stated, refer to the **ordinary (June) sitting** and to **students who sat the exam**. Cataluña publishes means over students *eligible for university assignment* ("aptes"), Madrid publishes chart labels rounded to one decimal, Extremadura's 2026 value comes from the university's press release as quoted by regional media; these are flagged wherever they appear. Nothing on this site is a causal estimate: the data are cohort statistics of different exams marked by different tribunals.
+:::

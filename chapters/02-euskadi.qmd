@@ -1,0 +1,83 @@
+---
+title: "Euskadi 2010–2026: the series and the break"
+subtitle: "Level, pass rate and regimes of the Physics exam at UPV/EHU"
+description: "The 17-year Basque Physics series consolidated from three sources, its structural regimes, a trend model, and how the 2026 value compares with the historical variability of regional Physics means."
+date: 2026-09-18
+categories: [findings, Euskadi]
+---
+
+## The consolidated series
+
+The Euskadi Physics series is spliced from three sources: the EHU annual reports for 2010–2022 (all Physics takers, both phases) [@ehu_informes], the Ministry EPAU cube for 2023–2025 (specific/admission phase, which is where Física sits since 2017 — the two agree to ±0.02 on the overlap 2017–2022) [@siiu_epau2025], and the EHU presentation of 6 July 2026 for the last point [@ehu2026notak]. The splice is validated in [Chapter 10](10-reproduce.qmd).
+
+![Physics in the Basque university-entrance exam, ordinary sitting, 2010–2026. Shaded bands mark the exam regimes; the grey line is the Spanish total from the Ministry cube (2015–2025).](../plots/fig01_euskadi_series.png){#fig-series}
+
+::: {#tbl-series}
+{{< include ../data/tables/euskadi_series.md >}}
+
+Euskadi Física, ordinary sitting, 2010–2026. Pass rate over presented; "Spain mean" is the Ministry national mean (all communities, presented-weighted over phases). File: `data/analysis/euskadi_fisica_series_2010_2026.csv`.
+:::
+
+Two features of the table matter for everything that follows. First, the **2011 presented count (2 610) is an artefact** of the 2011 report, which prints an implausible ten no-shows; the pass rate for that year should be read as roughly 55 % rather than 49.6 %. Second, from 2017 the presented/enrolled ratio drops sharply (from ≈ 89 % to ≈ 70 %) because Física became an optional admission-phase subject that many students enrol in and then skip; **2025 reversed this** (2 189 of 2 597, 84 %), so the 2025 and 2026 means are computed over a *larger and less self-selected* pool than 2017–2024. Part of the 2025 drop is therefore compositional; the 2026 drop, on a slightly smaller pool (2 066), is not.
+
+## Regimes rather than a trend
+
+The series is not stationary; it is a sequence of plateaus separated by policy changes — the two-phase PAU of RD 1892/2008 (2010), the EAU under LOMCE (2017), the COVID flexibility (2020–21), and the LOMLOE competency model of RD 534/2024 (2025) [@rd534_2024]. Averaging within each regime:
+
+::: {#tbl-regimes}
+{{< include ../data/tables/regimes.md >}}
+
+Regime means, Euskadi Física, ordinary sitting.
+:::
+
+Between 2012 and 2024, excluding the COVID year 2021, the series is flat: a linear fit $x_t = \alpha + \beta t + \varepsilon_t$ gives $\beta = +0.013$ points per year ($r = 0.17$, $p = 0.60$) with a residual standard deviation $\sigma_\varepsilon = 0.31$. Against that baseline,
+
+$$
+\hat{x}_{2026} = 6.17, \qquad x_{2026} - \hat{x}_{2026} = -2.18 \approx -7.0\,\sigma_\varepsilon ,
+$$
+
+and the 2025 residual was already $-0.69 \approx -2.2\,\sigma_\varepsilon$. In plain words: for thirteen years the Basque exam produced means between 5.45 and 6.49 in normal years; 2025 fell just outside that band and 2026 fell far outside it. The only comparable level in the series is the 2010–11 start of the two-phase PAU (4.45, 4.44), when Física was the lowest-scoring modality subject in the Basque system and roughly half of the candidates passed — and, as [Chapter 3](03-spain-2026.qmd) shows with the newly found La Rioja series, that 2010–11 trough was itself a national feature, not a Basque one.
+
+## How unusual is a −1.48 change?
+
+A single region's history is a small sample. The Ministry cube offers a much larger reference set: the year-to-year change of the ordinary-sitting Physics mean for each of the 17 communities over 2015–2025, $n = 170$ changes.
+
+![Distribution of year-to-year changes of the ordinary-sitting Physics mean across all 17 communities, 2015–2025, with the two Basque changes marked.](../plots/fig02_annual_changes.png){#fig-changes}
+
+The panel of changes has mean $\bar\Delta = -0.03$ and standard deviation $s_\Delta = 0.74$ (excluding the COVID transitions 2020–2022: 0.69). The Basque 2026 change sits at
+
+$$
+z = \frac{-1.48 - \bar{\Delta}}{s_\Delta} = -1.97,
+$$
+
+and only 7 of the 170 observed changes were as negative: Extremadura 2024 ($-2.10$), Cantabria 2017 ($-1.94$), Canarias 2019 ($-1.76$), Baleares 2025 ($-1.65$), Euskadi 2022 ($-1.62$, the post-COVID normalisation), Asturias 2025 ($-1.55$). Regional Physics means are volatile — a typical community moves by ±0.7 points from one June to the next — so a fall of this size, while rare (≈ 4 % of transitions), has precedents. The Basque series' own year-to-year standard deviation before 2026 is 0.85.
+
+What has fewer precedents is the **level**. Among the 187 community-year ordinary means in the cube, only Canarias 2019 (3.60) lies below 3.99; the next lowest are Baleares 2025 (4.45), Andalucía 2018 (4.65) and Galicia 2023 (4.67). And the Basque case is the only one in the panel with two consecutive falls summing to more than two points ($6.09 \to 5.47 \to 3.99$).
+
+::: {#tbl-changes}
+{{< include ../data/tables/changes_by_year.md >}}
+
+Year-to-year changes of the ordinary-sitting Physics mean across the 17 communities, by transition year (Ministry cube). The 2025 row is the first year of the LOMLOE model.
+:::
+
+The last row of @tbl-changes is the first key result of this study: **2025 was a national fall**. Fourteen of seventeen communities went down, by $-0.81$ on average; Euskadi's $-0.62$ was milder than the typical move. Whatever the new exam model did to Physics marks, it did it everywhere in 2025.
+
+## Euskadi's position among the communities
+
+::: {#tbl-rank}
+{{< include ../data/tables/rank.md >}}
+
+Rank of Euskadi among the 17 communities by ordinary-sitting Physics mean (1 = highest), Ministry cube.
+:::
+
+Euskadi has never been a top region in Physics: its median rank over 2015–2025 is 7–8, with a low of 15th in 2015 and 13th in 2024. In 2025 it ranked 12th with 5.47, 0.18 below the national mean. Among the nine communities with 2026 data Euskadi is last; if the 2025 values are kept for the eight that have not published, Euskadi 2026 would still be last, 0.46 below Baleares 2025.
+
+::: {#tbl-wide}
+{{< include ../data/tables/ministry_wide.md >}}
+
+Ordinary-sitting Física mean by community, 2015–2025 (Ministry cube, presented-weighted over phases; "Estado" = UNED/foreign centres omitted). Sorted by 2025.
+:::
+
+## What the series does and does not say
+
+The series establishes three facts. The 2026 value is the lowest since the start of the two-phase PAU; it is the second consecutive fall; and the size of the single-year fall is at the edge of, but inside, the range of regional Physics volatility in Spain. It does not, by itself, identify a cause: a change of exam difficulty, of marking severity, of the students' preparation, or of who sits the exam all produce the same summary statistic. [Chapter 3](03-spain-2026.qmd) uses the other communities to narrow the field; [Chapter 4](04-distributions.qmd) uses the shape of the distribution.

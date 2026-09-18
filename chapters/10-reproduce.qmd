@@ -1,0 +1,79 @@
+---
+title: "Methods, checks and reproduction"
+subtitle: "How every number was computed, what was verified against what, and how to rebuild the site"
+description: "Definitions and formulas used in the analysis, the validation of the Ministry parse against the July package, the internal consistency checks on the found data, the data dictionary, and the build instructions."
+date: 2026-09-18
+categories: [methods, reproducibility]
+---
+
+## Definitions
+
+Unless stated otherwise, for a subject in a given community, year and sitting:
+
+$$
+\text{pass rate} = \frac{\text{passed}}{\text{presented}}, \qquad
+\text{presentation rate} = \frac{\text{presented}}{\text{enrolled}}, \qquad
+\bar{x} = \frac{1}{N}\sum_{i=1}^{N} x_i \ \text{over presented students.}
+$$
+
+When a source reports Física in two phases (general and specific, as the Ministry does for 2015–2016 in some communities), the pooled mean is presented-weighted,
+$$
+\bar{x}_{\text{pooled}} = \frac{\sum_p n_p \bar{x}_p}{\sum_p n_p},
+$$
+never the unweighted average of the two phase means. The same rule pools ULL and ULPGC into a Canarias 2026 figure, and the five Valencian universities into the SUV figure (the published SUV row is used, and it agrees with the weighted mean of the five rows to three decimals).
+
+The change of a mean between consecutive years is $\Delta_t = \bar{x}_t - \bar{x}_{t-1}$. The reference distribution of changes is the set $\{\Delta_{c,t}\}$ over the 17 communities and the 10 transitions 2015→2016 … 2024→2025 of the Ministry cube (ordinary sitting, pooled phases), $n = 170$; its mean and standard deviation give $z = (\Delta - \bar\Delta)/s_\Delta$ for any new change.
+
+The trend baseline for Euskadi is an ordinary least-squares fit $\bar{x}_t = \alpha + \beta t + \varepsilon_t$ over 2012–2024 excluding 2021, with residual standard deviation $\sigma_\varepsilon$; residuals of 2025 and 2026 are reported in units of $\sigma_\varepsilon$.
+
+The grade-distribution reconstruction fits $f(x) = p_0\delta(x) + (1-p_0)\,\tfrac{1}{10}\mathrm{Beta}(x/10; a, b)$ by least squares on the three constraints $(\bar{x},\ P(x \ge 5),\ P(x \le 2))$ in $(\log a, \log b)$; $p_0$ is the published zero share (2026) or an assumed 1.2 % (2025, with $p_0 \in \{0, 0.02\}$ as sensitivity). The model-implied standard deviation is $\sqrt{(1-p_0)\,(\sigma_B^2 + \mu_B^2) - \bar{x}^2}$ with $\mu_B = 10a/(a+b)$ and $\sigma_B^2 = 100ab/[(a+b)^2(a+b+1)]$.
+
+## Validation
+
+**Ministry parse.** The PC-Axis cubes are read by `scripts/pxparse.py`, which parses `STUB`, `HEADING` and `VALUES` and lays the `DATA` block out in row-major order over the declared dimensions (cell count asserted: 551 760, 827 640 and 1 655 280 cells). The Euskadi specific-phase ordinary series produced by `01_build_ministry_panel.py` is compared with `fisica_pau_ministerio_2015_2025.csv` of the July package: 11/11 means and 11/11 presented counts identical (assertion in the script). Spot checks of the pooled ordinary means against independently found sources: Aragón 2025 6.47 vs 6.469 (UNIZAR); Navarra 5.36 vs 5.36 (UPNA); Cantabria 5.42 vs 5.44 (UC, Bachillerato only); Castilla-La Mancha 5.86 vs 5.86 (UCLM); Comunitat Valenciana 5.89 vs 5.889 (GVA); Canarias 5.08 vs the ULL/ULPGC presented-weighted 5.08; Andalucía 5.69 vs 5.69 (ponencias); La Rioja 2022 7.43 vs 7.430 (UR). Murcia 5.31 vs 5.33 (COPAU, final post-claims) is the largest discrepancy and is within revision-stage differences.
+
+**Found data.** Every histogram transcribed from the ULL and ULPGC dashboards sums to the displayed number of exams (683, 97, 796, 731; 712, 758, 796). Bin-midpoint means recomputed from the histograms are within 0.02–0.07 of the published means (the midpoint approximation biases slightly upward when the density falls within bins). UCLM presented = aprobados + no aprobados, and the displayed pass percentages are reproduced from those counts. Valencia page-43 figures were re-extracted from freshly downloaded PDFs and agree with the earlier session's extraction. The EHU 2026 figures were re-read from the text of the 6 July deck (pages 3–8).
+
+**EHU 2026 counts.** With $N = 2\,066$ and percentages rounded to one decimal, the compatible integer counts are 822–823 passes (39.8 %), 506–507 exams at ≤ 2 (24.5 %) and 66–67 zeros (3.2 %). These intervals are reported instead of point counts.
+
+**Plots.** All ten figures were rendered and inspected on a contact sheet; label collisions found in a first pass (regime labels, axis footnotes, legend overlap) were corrected before the final render.
+
+## Data dictionary
+
+| File | Content | Grain |
+|---|---|---|
+| `data/ministry_fisica_panel.csv` | Ministry Física: enrolled, presented, passed, mean, mean of passed, pass %, presentation % | ccaa × year × sitting × phase (+ pooled) |
+| `data/ministry_fisica_distr.csv` | Ministry Física grade bands (counts) | ccaa × year × sitting × phase |
+| `data/ministry_fisica_ord_ccaa.csv` | Ordinary pooled mean, wide | ccaa × year |
+| `data/regional_fisica_found.csv` | All regional figures located in this study, with denominator, source type and URL | region × university × year × sitting |
+| `data/found_clm_powerbi.csv` | UCLM Física 2021–2026 by sitting and province | year × sitting × province |
+| `data/found_canarias_ull_powerbi.csv`, `found_canarias_ulpgc_powerbi.csv` | Histograms, zeros, tens, means by sex | university × year × sitting |
+| `data/found_canarias_ull_history.csv` | ULL Física mean history 2010–2026, both sittings (chart labels) | year × sitting |
+| `data/analysis/euskadi_fisica_series_2010_2026.csv` | The consolidated Basque series with Spain mean, gap and changes | year |
+| `data/analysis/annual_changes_all_ccaa.csv` | The 170 year-to-year changes | ccaa × year |
+| `data/analysis/regions_2026_vs_2025.csv` | The 2026 cross-regional table | ccaa |
+| `data/analysis/subjects_2025_2026_by_region.csv` | Subject means 2025/2026 in five regions | region × subject |
+| `data/analysis/beta_fit_EHU_2025.csv`, `beta_fit_EHU_2026.csv` | Fitted densities on a 1 001-point grid | x |
+| `data/analysis/euskadi_grade_bands_2015_2025.csv` | Ministry band shares, Euskadi | year |
+| `data/analysis/canarias_histograms.csv` | Band shares, six university-years | band |
+| `data/analysis/ord_vs_extra_ministry.csv` | Ordinary and extraordinary means and gap | ccaa × year |
+| `data/analysis/euskadi_gender_language.csv`, `euskadi_participation.csv`, `euskadi_regimes.csv` | As named | year / regime |
+| `data/analysis/results.json` | Every scalar quoted in the text | — |
+
+## Rebuild
+
+```bash
+cd claude_analysis_2026-09-18
+python3 scripts/01_build_ministry_panel.py   # parses the cubes, validates against the July package
+python3 scripts/02_analysis.py               # all computations → data/analysis/
+python3 scripts/03_plots.py                  # ten figures → plots/
+python3 scripts/04_tables.py                 # Markdown tables → data/tables/
+python3 scripts/05_registry.py               # source registry
+quarto render                                # → _site/
+```
+
+Requirements: Python ≥ 3.10 with `numpy`, `pandas`, `scipy`, `matplotlib`; Quarto ≥ 1.4 (the site uses no execution engine — every table is a static include, so no Jupyter kernel is needed). `pdftotext` (poppler) only for re-extracting the archived PDFs.
+
+## Limits
+
+The 2026 data are cohort statistics of different papers marked by different tribunals; no causal claim is made. The Beta reconstruction is a two-parameter summary of three published moments, labelled as a model wherever it appears, and the published moments cannot distinguish a J-shaped density from a bell pushed against the floor. Press-reported values (Extremadura 2026; EHU July 2026 global figures) are marked as such. The Ministry 2025 baselines include non-Bachillerato access routes; the effect on Física is ≤ 0.05 where it can be checked. Chart-read values (Madrid, La Rioja, ULL history) carry the precision of their labels (one decimal for Madrid and the ULL history; three decimals for La Rioja).

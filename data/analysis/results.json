@@ -1,0 +1,730 @@
+{
+  "ehu2026_pass_count_interval": [
+    822,
+    823
+  ],
+  "ehu2026_low_count_interval": [
+    506,
+    507
+  ],
+  "ehu2026_zero_count_interval": [
+    66,
+    67
+  ],
+  "annual_change_dist_all": {
+    "n": 170,
+    "mean": -0.030970588235294114,
+    "sd": 0.7371734152153369,
+    "q05": -1.36335,
+    "q95": 1.036499999999999,
+    "min": -2.1000000000000005,
+    "max": 2.0999999999999996
+  },
+  "annual_change_dist_noncovid": {
+    "n": 119,
+    "mean": -0.14970588235294113,
+    "sd": 0.687464727636819,
+    "q05": -1.4469999999999994,
+    "q95": 0.8928000000000004,
+    "min": -2.1000000000000005,
+    "max": 1.12
+  },
+  "annual_change_dist_2025": {
+    "n": 17,
+    "mean": -0.8099999999999997,
+    "sd": 0.6383964285614386,
+    "q05": -1.5699999999999998,
+    "q95": 0.1200000000000001,
+    "min": -1.6499999999999995,
+    "max": 0.3200000000000003
+  },
+  "ehu2026_delta_z_all": -1.9656560883186862,
+  "ehu2026_delta_z_noncovid": -1.935072541423304,
+  "ehu2026_delta_empirical_rank": {
+    "n_changes_more_negative": 7,
+    "n_total": 170,
+    "most_negative": [
+      {
+        "ccaa": "Extremadura",
+        "year": 2024,
+        "delta": -2.1000000000000005
+      },
+      {
+        "ccaa": "Cantabria",
+        "year": 2017,
+        "delta": -1.944
+      },
+      {
+        "ccaa": "Canarias",
+        "year": 2019,
+        "delta": -1.7600000000000002
+      },
+      {
+        "ccaa": "Balears (Illes)",
+        "year": 2025,
+        "delta": -1.6499999999999995
+      },
+      {
+        "ccaa": "País Vasco",
+        "year": 2022,
+        "delta": -1.62
+      },
+      {
+        "ccaa": "Asturias (Principado de)",
+        "year": 2025,
+        "delta": -1.5499999999999998
+      }
+    ]
+  },
+  "euskadi_own_changes": {
+    "2011": -0.01,
+    "2012": 2.05,
+    "2013": -0.33,
+    "2014": -0.48,
+    "2015": -0.23,
+    "2016": 0.71,
+    "2017": -0.26,
+    "2018": 0.26,
+    "2019": -0.27,
+    "2020": 0.56,
+    "2021": 1.24,
+    "2022": -1.63,
+    "2023": 0.24,
+    "2024": -0.21,
+    "2025": -0.62,
+    "2026": -1.48
+  },
+  "euskadi_own_change_sd_excl2026": 0.8548951481238588,
+  "euskadi_rank_by_year": {
+    "2015": 15,
+    "2016": 4,
+    "2017": 8,
+    "2018": 4,
+    "2019": 7,
+    "2020": 7,
+    "2021": 4,
+    "2022": 11,
+    "2023": 8,
+    "2024": 13,
+    "2025": 12
+  },
+  "regions_2026": {
+    "n_with_data": 9,
+    "n_up": 6,
+    "n_down": 3,
+    "presented_weighted_delta_excl_pv": 0.58288490520175,
+    "median_delta_excl_pv": 0.653,
+    "table": [
+      {
+        "ccaa": "País Vasco",
+        "mean_2025": 5.47,
+        "mean_2026": 3.99,
+        "delta": -1.48,
+        "pass_pct_2026": 39.8,
+        "presented_2026": 2066.0,
+        "basis": "presented",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Canarias",
+        "mean_2025": 5.08,
+        "mean_2026": 4.248,
+        "delta": -0.832,
+        "pass_pct_2026": 40.717,
+        "presented_2026": 1395.0,
+        "basis": "ULL+ULPGC pooled, presented-weighted",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Extremadura",
+        "mean_2025": 6.09,
+        "mean_2026": 5.27,
+        "delta": -0.82,
+        "pass_pct_2026": NaN,
+        "presented_2026": NaN,
+        "basis": "presented (N unpublished)",
+        "quality": "press"
+      },
+      {
+        "ccaa": "Andalucía",
+        "mean_2025": 5.69,
+        "mean_2026": 5.86,
+        "delta": 0.17,
+        "pass_pct_2026": NaN,
+        "presented_2026": NaN,
+        "basis": "presented (N unpublished)",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Comunitat Valenciana",
+        "mean_2025": 5.89,
+        "mean_2026": 6.396,
+        "delta": 0.506,
+        "pass_pct_2026": 76.35,
+        "presented_2026": 5259.0,
+        "basis": "presented",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Cataluña",
+        "mean_2025": 6.04,
+        "mean_2026": 6.84,
+        "delta": 0.8,
+        "pass_pct_2026": NaN,
+        "presented_2026": 8021.0,
+        "basis": "eligible students (aptes)",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Castilla-La Mancha",
+        "mean_2025": 5.86,
+        "mean_2026": 6.8,
+        "delta": 0.94,
+        "pass_pct_2026": 80.07,
+        "presented_2026": 1781.0,
+        "basis": "presented",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Madrid (Comunidad de)",
+        "mean_2025": 5.65,
+        "mean_2026": 6.7,
+        "delta": 1.05,
+        "pass_pct_2026": NaN,
+        "presented_2026": NaN,
+        "basis": "chart label, 1 decimal",
+        "quality": "official"
+      },
+      {
+        "ccaa": "Asturias (Principado de)",
+        "mean_2025": 5.49,
+        "mean_2026": 6.62,
+        "delta": 1.13,
+        "pass_pct_2026": 76.87,
+        "presented_2026": NaN,
+        "basis": "presented (N unpublished)",
+        "quality": "official"
+      }
+    ]
+  },
+  "regions_2026_not_published": [
+    "Aragón",
+    "Balears (Illes)",
+    "Cantabria",
+    "Castilla y León",
+    "Galicia",
+    "Murcia (Región de)",
+    "Navarra (Comunidad Foral de)",
+    "Rioja (La)"
+  ],
+  "pass_pct_2025": {
+    "País Vasco": 62.3,
+    "Canarias": 54.0,
+    "Castilla-La Mancha": 65.6,
+    "Comunitat Valenciana": 69.6,
+    "Asturias (Principado de)": 66.0,
+    "Total": 64.4
+  },
+  "beta_fits": {
+    "EHU_2026": {
+      "a": 1.2744226573911703,
+      "b": 1.8103459701714797,
+      "residuals": [
+        0.009136665654507325,
+        -0.04679810033581877,
+        0.01500546259401958
+      ],
+      "sd": 2.519389387641041,
+      "band_shares": {
+        "[0-1)": 0.13106960151172478,
+        "[1-2)": 0.12893586108229477,
+        "[2-3)": 0.1344223936445923,
+        "[3-4)": 0.1313888841493369,
+        "[4-5)": 0.12298135994787011,
+        "[5-6)": 0.11044529537416124,
+        "[6-7)": 0.0943033590424416,
+        "[7-8)": 0.07462651177627268,
+        "[8-9)": 0.050937356094455266,
+        "[9-10)": 0.020889377376850343
+      },
+      "p_ge7": 0.14645324524757794,
+      "p_ge9": 0.020889377376850246,
+      "median": 3.799506254303185
+    },
+    "EHU_2025": {
+      "a": 2.001473488157516,
+      "b": 1.6098952904178643,
+      "residuals": [
+        0.005640754361553313,
+        -0.038441916028047585,
+        -0.012098331867410037
+      ],
+      "sd": 2.3914967343462084,
+      "band_shares": {
+        "[0-1)": 0.03183812342833315,
+        "[1-2)": 0.05606354470425683,
+        "[2-3)": 0.0867432531633519,
+        "[3-4)": 0.11139240258754891,
+        "[4-5)": 0.12940459214455668,
+        "[5-6)": 0.1399601691172944,
+        "[6-7)": 0.1418651935266834,
+        "[7-8)": 0.13318052028598396,
+        "[8-9)": 0.1100885897775993,
+        "[9-10)": 0.059463611264391494
+      },
+      "p_ge7": 0.3027327213279747,
+      "p_ge9": 0.05946361126439161,
+      "median": 5.609420582893483
+    },
+    "EHU_2025_pz0.0": {
+      "a": 1.8470693709472659,
+      "b": 1.5256598945685664
+    },
+    "EHU_2025_pz0.02": {
+      "a": 2.1189947567709178,
+      "b": 1.6738975779289944
+    }
+  },
+  "canarias_hist": {
+    "ULL_2026": {
+      "n": 683,
+      "shares": [
+        0.1493411420204978,
+        0.10248901903367497,
+        0.13616398243045388,
+        0.1273792093704246,
+        0.09956076134699854,
+        0.11859443631039532,
+        0.09663250366032211,
+        0.07174231332357248,
+        0.06734992679355783,
+        0.03074670571010249
+      ],
+      "mean_from_bins": 4.145680819912152,
+      "mean_published": 4.08,
+      "p_lt2": 0.2518301610541728,
+      "p_lt5": 0.6149341142020498,
+      "p_ge9": 0.03074670571010249,
+      "pile_up_5_6": 0.11859443631039532
+    },
+    "ULL_2025": {
+      "n": 796,
+      "shares": [
+        0.08919597989949749,
+        0.10175879396984924,
+        0.09547738693467336,
+        0.10804020100502512,
+        0.07160804020100503,
+        0.1620603015075377,
+        0.10175879396984924,
+        0.09296482412060302,
+        0.08793969849246232,
+        0.08919597989949749
+      ],
+      "mean_from_bins": 4.981155778894473,
+      "mean_published": 4.92,
+      "p_lt2": 0.19095477386934673,
+      "p_lt5": 0.46608040201005024,
+      "p_ge9": 0.08919597989949749,
+      "pile_up_5_6": 0.1620603015075377
+    },
+    "ULL_2024": {
+      "n": 731,
+      "shares": [
+        0.04240766073871409,
+        0.06292749658002736,
+        0.060191518467852256,
+        0.11354309165526676,
+        0.08891928864569083,
+        0.17510259917920656,
+        0.1326949384404925,
+        0.12175102599179206,
+        0.1039671682626539,
+        0.09849521203830369
+      ],
+      "mean_from_bins": 5.621751025991792,
+      "mean_published": 5.6,
+      "p_lt2": 0.10533515731874145,
+      "p_lt5": 0.3679890560875513,
+      "p_ge9": 0.09849521203830369,
+      "pile_up_5_6": 0.17510259917920656
+    },
+    "ULPGC_2026": {
+      "n": 712,
+      "shares": [
+        0.11235955056179775,
+        0.11376404494382023,
+        0.0997191011235955,
+        0.1306179775280899,
+        0.1151685393258427,
+        0.12780898876404495,
+        0.09831460674157304,
+        0.09410112359550561,
+        0.05898876404494382,
+        0.04915730337078652
+      ],
+      "mean_from_bins": 4.467696629213483,
+      "mean_published": 4.41,
+      "p_lt2": 0.22612359550561797,
+      "p_lt5": 0.5716292134831461,
+      "p_ge9": 0.04915730337078652,
+      "pile_up_5_6": 0.12780898876404495
+    },
+    "ULPGC_2025": {
+      "n": 758,
+      "shares": [
+        0.06596306068601583,
+        0.07387862796833773,
+        0.10686015831134564,
+        0.11345646437994723,
+        0.09366754617414248,
+        0.13324538258575197,
+        0.10817941952506596,
+        0.11081794195250659,
+        0.06860158311345646,
+        0.12532981530343007
+      ],
+      "mean_from_bins": 5.270448548812665,
+      "mean_published": 5.25,
+      "p_lt2": 0.13984168865435356,
+      "p_lt5": 0.45382585751978893,
+      "p_ge9": 0.12532981530343007,
+      "pile_up_5_6": 0.13324538258575197
+    },
+    "ULPGC_2024": {
+      "n": 796,
+      "shares": [
+        0.028894472361809045,
+        0.0364321608040201,
+        0.06658291457286432,
+        0.09296482412060302,
+        0.09547738693467336,
+        0.12562814070351758,
+        0.114321608040201,
+        0.135678391959799,
+        0.14321608040201006,
+        0.16080402010050251
+      ],
+      "mean_from_bins": 6.187185929648241,
+      "mean_published": 6.15,
+      "p_lt2": 0.06532663316582915,
+      "p_lt5": 0.3203517587939699,
+      "p_ge9": 0.16080402010050251,
+      "pile_up_5_6": 0.12562814070351758
+    }
+  },
+  "euskadi_low_band_0_5": {
+    "2015": 36.4,
+    "2016": 27.7,
+    "2017": 33.0,
+    "2018": 29.3,
+    "2019": 33.8,
+    "2020": 24.8,
+    "2021": 10.6,
+    "2022": 30.6,
+    "2023": 29.3,
+    "2024": 27.0,
+    "2025": 37.7
+  },
+  "euskadi_top_band_9_10": {
+    "2015": 8.5,
+    "2016": 15.6,
+    "2017": 14.3,
+    "2018": 18.6,
+    "2019": 15.4,
+    "2020": 18.0,
+    "2021": 36.0,
+    "2022": 17.2,
+    "2023": 20.2,
+    "2024": 10.3,
+    "2025": 6.7
+  },
+  "ord_extra_gap": {
+    "mean_gap_all": 1.85124064171123,
+    "sd_gap_all": 0.8616656605653004,
+    "euskadi": {
+      "2015": 1.8,
+      "2016": 3.13,
+      "2017": 1.96,
+      "2018": 2.81,
+      "2019": 3.49,
+      "2020": 1.77,
+      "2021": 3.02,
+      "2022": 1.18,
+      "2023": 2.24,
+      "2024": 1.98,
+      "2025": 2.26
+    }
+  },
+  "found_2026_extraordinary": {
+    "Comunitat Valenciana": 4.162,
+    "Castilla-La Mancha": 3.97,
+    "ULL": 3.27,
+    "EHU global pass % (all subjects)": 71.4
+  },
+  "bachillerato_2024_25": {
+    "students": 4541,
+    "passed": 4455,
+    "pass_pct": 98.11,
+    "mean": 7.09,
+    "source": "Gobierno Vasco, Resultados escolares 2024-2025, 2º Bachillerato Física (A+B+D, all networks)"
+  },
+  "pau_share_of_bach": {
+    "pau2025_presented_over_bach2425": 0.48205241136313587,
+    "pau2026_presented_over_bach2425": 0.4549658665492182,
+    "note": "cohort offset: the 2024-25 Bachillerato cohort sits PAU 2025; 2025-26 school results not yet published"
+  },
+  "school_pau_gap": {
+    "gap_2025": 1.62,
+    "gap_2026_if_school_unchanged": 3.0999999999999996
+  },
+  "ministry_subject_names": {
+    "mat": "Matemáticas II",
+    "qui": "Química"
+  },
+  "subjects_table": [
+    {
+      "region": "País Vasco",
+      "subject": "Física",
+      "mean_2025": 5.47,
+      "mean_2026": 3.99,
+      "basis": "EHU deck",
+      "delta": -1.48
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Matemáticas II",
+      "mean_2025": 6.73,
+      "mean_2026": 5.06,
+      "basis": "EHU deck",
+      "delta": -1.67
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Química",
+      "mean_2025": 6.24,
+      "mean_2026": 6.03,
+      "basis": "EHU deck",
+      "delta": -0.21
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Biología",
+      "mean_2025": 6.45,
+      "mean_2026": 6.6,
+      "basis": "EHU deck",
+      "delta": 0.15
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Historia de España",
+      "mean_2025": 6.91,
+      "mean_2026": 6.08,
+      "basis": "EHU deck",
+      "delta": -0.83
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Euskara II",
+      "mean_2025": 6.81,
+      "mean_2026": 6.33,
+      "basis": "EHU deck",
+      "delta": -0.48
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Lengua Castellana",
+      "mean_2025": 6.39,
+      "mean_2026": 6.42,
+      "basis": "EHU deck",
+      "delta": 0.03
+    },
+    {
+      "region": "País Vasco",
+      "subject": "Hª Filosofía",
+      "mean_2025": 7.1,
+      "mean_2026": 6.81,
+      "basis": "EHU deck",
+      "delta": -0.29
+    },
+    {
+      "region": "Cataluña",
+      "subject": "Física",
+      "mean_2025": 6.04,
+      "mean_2026": 6.84,
+      "basis": "Govern dossier (aptes)",
+      "delta": 0.8
+    },
+    {
+      "region": "Cataluña",
+      "subject": "Matemáticas II",
+      "mean_2025": 6.12,
+      "mean_2026": 4.18,
+      "basis": "Govern dossier (aptes)",
+      "delta": -1.94
+    },
+    {
+      "region": "Cataluña",
+      "subject": "Química",
+      "mean_2025": 6.38,
+      "mean_2026": 6.04,
+      "basis": "Govern dossier (aptes)",
+      "delta": -0.34
+    },
+    {
+      "region": "Cataluña",
+      "subject": "Biología",
+      "mean_2025": 6.23,
+      "mean_2026": 6.02,
+      "basis": "Govern dossier (aptes)",
+      "delta": -0.21
+    },
+    {
+      "region": "Madrid",
+      "subject": "Física",
+      "mean_2025": 5.6,
+      "mean_2026": 6.7,
+      "basis": "CM chart",
+      "delta": 1.1
+    },
+    {
+      "region": "Madrid",
+      "subject": "Matemáticas II",
+      "mean_2025": 5.8,
+      "mean_2026": 6.3,
+      "basis": "CM chart",
+      "delta": 0.5
+    },
+    {
+      "region": "Madrid",
+      "subject": "Química",
+      "mean_2025": 6.2,
+      "mean_2026": 5.9,
+      "basis": "CM chart",
+      "delta": -0.3
+    },
+    {
+      "region": "Madrid",
+      "subject": "Biología",
+      "mean_2025": 5.6,
+      "mean_2026": 6.3,
+      "basis": "CM chart",
+      "delta": 0.7
+    },
+    {
+      "region": "Andalucía",
+      "subject": "Física",
+      "mean_2025": 5.69,
+      "mean_2026": 5.86,
+      "basis": "Junta table / ministry 2025",
+      "delta": 0.17
+    },
+    {
+      "region": "Andalucía",
+      "subject": "Matemáticas II",
+      "mean_2025": 6.542,
+      "mean_2026": 5.95,
+      "basis": "Junta table; 2025 baseline from ministry (ministry EPAU 2025, ordinary, presented-weighted phases)",
+      "delta": -0.592
+    },
+    {
+      "region": "Andalucía",
+      "subject": "Química",
+      "mean_2025": 5.49,
+      "mean_2026": 5.27,
+      "basis": "Junta table; 2025 baseline from ministry (ministry EPAU 2025, ordinary, presented-weighted phases)",
+      "delta": -0.22
+    },
+    {
+      "region": "Asturias",
+      "subject": "Física",
+      "mean_2025": 5.49,
+      "mean_2026": 6.62,
+      "basis": "Uniovi release / ministry 2025",
+      "delta": 1.13
+    },
+    {
+      "region": "Asturias",
+      "subject": "Matemáticas II",
+      "mean_2025": 6.762,
+      "mean_2026": 6.862,
+      "basis": "Uniovi release",
+      "delta": 0.1
+    },
+    {
+      "region": "Asturias",
+      "subject": "Química",
+      "mean_2025": 7.39,
+      "mean_2026": 7.67,
+      "basis": "Uniovi release",
+      "delta": 0.28
+    }
+  ],
+  "gender_gap_mean_2011_2022": 0.20833333333333318,
+  "canarias_gender_2026": {
+    "ULL": {
+      "women": 4.09,
+      "men": 4.07
+    },
+    "ULPGC": {
+      "women": 4.5,
+      "men": 4.38
+    }
+  },
+  "regimes": [
+    {
+      "regime": "2010-11 PAU (RD 1892/2008) first years",
+      "years": "2010-2011",
+      "mean": 4.445,
+      "pass_pct": 47.94,
+      "n_years": 2
+    },
+    {
+      "regime": "2012-16 PAU settled",
+      "years": "2012-2016",
+      "mean": 5.9879999999999995,
+      "pass_pct": 70.484,
+      "n_years": 5
+    },
+    {
+      "regime": "2017-19 EAU/LOMCE",
+      "years": "2017-2019",
+      "mean": 5.983333333333333,
+      "pass_pct": 68.15666666666667,
+      "n_years": 3
+    },
+    {
+      "regime": "2020-21 COVID flexibility",
+      "years": "2020-2021",
+      "mean": 7.07,
+      "pass_pct": 82.405,
+      "n_years": 2
+    },
+    {
+      "regime": "2022-24 post-COVID",
+      "years": "2022-2024",
+      "mean": 6.1499999999999995,
+      "pass_pct": 71.01666666666667,
+      "n_years": 3
+    },
+    {
+      "regime": "2025-26 LOMLOE competency model",
+      "years": "2025-2026",
+      "mean": 4.73,
+      "pass_pct": 51.055,
+      "n_years": 2
+    }
+  ],
+  "trend_2012_2024": {
+    "slope_per_year": 0.012989840348330882,
+    "intercept": -20.144417029511303,
+    "r": 0.17081805609610176,
+    "p": 0.5955585132457873,
+    "resid_sd": 0.3109705611287465,
+    "pred_2025": 6.160009675858735,
+    "pred_2026": 6.172999516207064,
+    "resid_2025": -0.6900096758587351,
+    "resid_2026": -2.1829995162070635,
+    "resid_2026_in_sd": -7.019955549114724
+  }
+}

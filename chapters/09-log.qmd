@@ -1,0 +1,96 @@
+---
+title: "Log"
+subtitle: "What was done on 18 September 2026, in order, with the dead ends and the watch-list"
+description: "Chronological work log of the data hunt and analysis, the sources that could not be read and why, the leads left open, and the URLs to poll for the next update with their expected dates."
+date: 2026-09-18
+categories: [log]
+---
+
+## Chronology
+
+**09:00–09:30 — Orientation.** Read the July package (`fisica_pau_ehu_package`: README, dossier, two CSVs, 16 EHU reports, Ministry cubes, parse script), `hist_evolution` (digitised centre-level figures 2010–2016, Física tables 2010–2022, Cataluña 2014–2026 press series, 2026 press comparison) and the folder `analysis_2026-09-18` produced earlier the same day by another session (its README, work log and data files), so as to know what it had found and keep this analysis independent of it. Confirmed the project's central fact: Física 2026 at EHU = 3.99 (press 3.98).
+
+**09:30 — Task plan and folder.** Six tasks: study, exhaustive search, folder, independent analysis, Quarto site, verification. New working folder `claude_analysis_2026-09-18/`; nothing in the existing folders is modified.
+
+**09:35–10:00 — First wave: five parallel search agents** with written briefs (Euskadi/EHU; Ministry + Cataluña/Aragón/Navarra/Baleares/Rioja; Andalucía/Extremadura/CLM/Murcia/Canarias; Galicia/Asturias/Cantabria/CyL/Madrid/Valencia; literature + national press). Each returned a structured report with URLs, downloaded files and query families that found nothing. Total: 552 tool calls, 200 web searches (the session budget), 37 files downloaded.
+
+**10:00–10:45 — Second wave in the built-in browser** (on the user's computer, for sites that block or rate-limit automated readers):
+
+- `unirioja.es` (HTTP 429 from the cloud): four PDFs downloaded from the user's machine; `EvolucionJUN.pdf` is a 2022 edition whose subject names are images — rendered page 18 and read the Física chart: **2010–2022 series recovered**.
+- `alumnado.unex.es/pau/`: reachable in the browser but carries no statistics section; Extremadura 2026 stays press-level.
+- `uclm.es` (Azure WAF): passed the bot check in the browser; the statistics page links two Power BI reports; drove the Materia slicer to Física and read the per-year, per-sitting, per-province tables from the DOM: **Castilla-La Mancha 2021–2026 recovered**.
+- `ull.es/estadisticas/pau/` → Power BI "Calificaciones en la PAU por asignatura": FÍSICA × JUN/JUL × 2025-26, 2024-25, 2023-24, plus the 2010–2026 mean history: **Tenerife histograms recovered**.
+- `ulpgc.es/direccion-acceso/informes-ebau-powerbi-2021` (page updated 11 Sep 2026) → Informe 2: Física × JUNIO × 2024/2025/2026: **Las Palmas histograms recovered**.
+- `indicadores.usal.es` "Notas medias de las asignaturas": the page embeds an Infogram project that no longer exists (**dead end, documented**).
+- `legebiltzarra.eus`: site reachable, search form does not accept automated input (**lead, not a negative**).
+- `universitats.gva.es/es/estadistiques`: same three 2026 files as in July (JUNIO, JULIO, GLOBALES); downloaded from the user's machine and **re-extracted page 43 independently** (identical values).
+
+**10:45–11:30 — Data consolidation.** Wrote `pxparse.py` (dependency-free PC-Axis reader; `pyaxis` does not build in this environment) and `01_build_ministry_panel.py`; the Euskadi specific-phase series reproduces the July CSV exactly (11/11 means, 11/11 presented counts). Hand-coded `regional_fisica_found.csv` (80 rows) from the verified figures; transcribed the three dashboards to `found_clm_powerbi.csv`, `found_canarias_ull_powerbi.csv`, `found_canarias_ull_history.csv`, `found_canarias_ulpgc_powerbi.csv`.
+
+**11:30–12:30 — Analysis** (`02_analysis.py`): Euskadi series 2010–2026 and regimes, trend model, panel of 170 annual changes, 2026 cross-regional table, Beta-mixture fits, Ministry grade bands, Canarias histogram summaries, ordinary/extraordinary relation, participation, school-vs-PAU, subject block, sex and language. All results in `data/analysis/results.json`.
+
+**12:30–13:15 — Figures** (`03_plots.py`, ten figures, PNG + SVG) and tables (`04_tables.py`), registry (`05_registry.py`).
+
+**13:15–15:00 — Writing** the ten Quarto chapters and the site theme; rendering on the user's machine; verification pass ([Chapter 10](10-reproduce.qmd)).
+
+
+## Evening follow-up (same day, user away)
+
+The user asked, from a phone, to continue without them. The session's search quota was spent, so two quota-free routes were used.
+
+**Watch-list poll** (`scripts/06_poll_watchlist.py`, output `logs/watchlist_poll_2026-09-18.md`): all predictable 2026 files still return 404 (Cataluña Recull 2026, Aragón `pauresulasig2026.*`, Navarra `Informe_PAU_2025-26.pdf`, Cantabria 2026 PDFs, UMA ponencia 26-27, Canarias `pau-2027` folder, Murcia informe 2026, UVa 2026, EHU informe 2026, Basque *Resultados escolares 2025-26*); the EHU statistics page, the GVA statistics page, the UPNA report page and the Ministry landing page are unchanged. The script can be re-run at any time.
+
+**Searches through the built-in browser** (DuckDuckGo, not subject to the quota), on the open leads:
+
+- *EHU July 2026 Física*: still unpublished. New pointers to press pieces of 6–7 July with per-subject numbers (Diario Vasco "el bajón de 2026, en cifras"; Telecinco; Bilbao Hiria) and to Cadena SER of 29 June on the size of the extraordinary enrolment ("casi uno de cada tres alumnos busca subir nota"); these outlets are on the fetch tool's blocked list, so their figures were not read — worth opening by hand.
+- *Basque Parliament*: the site's search form did not accept either typed or scripted input in this session; no initiative located. Still a manual BOPV check.
+- *Extremadura*: no per-subject table beyond the Canal Extremadura / Hoy releases; `alumnado.unex.es/pau/` has no statistics section; the Aragón government's "Estadística de las PAU" (IAEST) is aggregate only and last updated March 2024.
+- *Galicia, Cantabria, Murcia, Aragón, Navarra, La Rioja, Baleares, Castilla y León*: no 2026 Física figure surfaced; only pass rates, notas de corte and exam archives.
+- *UJI study*: identified — @sancheztarazaga2026pau, The Conversation 2 June 2026, DOI 10.64628/AAO.atrdhyeha; findings incorporated in Chapters 6 and 7.
+- *National coverage*: El País, Europa Press and 20minutos did carry the EHU Física figures on 6 July (as the counter-example in the Euskara story); Chapter 7 corrected accordingly. Those three sites are blocked for the fetch tool.
+
+## Dead ends, so they are not repeated
+
+| Target | What happened | Verdict |
+|---|---|---|
+| Ministry PC-Axis host `estadisticas.ciencia.gob.es` | incomplete TLS chain; unreachable from the cloud | use project copies; 2026 edition ≈ June 2027 |
+| EHU July 2026 Física | three press versions of the 7 July release, none with subject data; Campusa slug for 2026 not found | ask EHU |
+| EHU "Informe PAU 2026" | archive ends at 2025; 2023–2025 informes have no subject tables anyway | low value even when published |
+| Eusko Legebiltzarra initiatives | search form accepts neither typed nor scripted input in this session (two attempts); database unqueried | manual check of the BOPV for Jul–Sep 2026 |
+| Ararteko, unions, physics-teacher associations, Ikastolen Elkartea, Kristau Eskola | nothing on Física 2026 | negative |
+| Open Data Euskadi, Eustat, ISEI-IVEI | no PAU dataset; ISEI-IVEI robots-blocked | negative / lead |
+| El Correo, El Diario Vasco, El País, Europa Press, 20minutos, Cadena SER | paywalled or blocked for the fetch tool | not retrieved; open by hand |
+| Aragón `pauresulasig2026.*`, Navarra `Informe_PAU_2025-26.pdf`, Cantabria 2026 filenames, Catalan `pau_estadistiques_2026.pdf`, UMA ponencia 26-27, Canarias `pau-2027` acta | all HTTP 404 | not yet published |
+| Galicia CiUG statistics | working-group page reads "Actualizando contido"; filenames now hashed, cannot be guessed | watch the page |
+| Castilla y León | no per-subject publication exists in any year (UVa 2025 PDF has none; USAL viewer dead) | transparency request |
+| Illes Balears | UIB publishes no subject statistics | negative |
+| Extremadura official statistics | `unex.es` 403 to fetchers; browser reached the PAU page, which has no statistics | press value stands |
+| USAL Infogram | project deleted | negative |
+| Sánchez-Tarazaga & Gimeno Rovira (UJI) | The Conversation piece located (DOI 10.64628/AAO.atrdhyeha); primary article still not located | partial |
+
+## Watch-list for the next update
+
+| What | Where | When expected |
+|---|---|---|
+| Cataluña Recull estadístic PAU 2026 (full-year Física, phase and CFGS splits) | `https://universitats.gencat.cat/web/.content/01_acces_i_admissio/pau/documents/informes_i_estad/pau_estadistiques_2026.pdf` | after 29 Sep 2026 |
+| Canarias Física coordination minutes PAU 2027 (2026 analysis; Las Palmas item study) | `…/descargas/pau-2027/2026100X_acta-primera-reunion-coordinacion-fisica-pau-27.pdf` | October 2026 |
+| Murcia Informe General PAU2026 | `https://www.um.es/documents/d/estudios/co-pau2027-1-doc-N-informe-general-pau2026` | autumn 2026 |
+| Andalucía Física ponencias 2026-27 (UMA, US, UCA) with per-university N, pass %, per-question data | `https://www.uma.es/media/files/PRESENTACIÓN_PONENCIA_UMA_26-27.pdf`; `https://www.us.es/pevau/coordinacion` | November 2026 |
+| Valencia `FISI Acta noviembre 2026 PAU 2027.pdf` (comisión de materia) | `https://universitats.gva.es/documents/389338055/389340468/` | November 2026 |
+| UCLM `FISICA-PAU-2027.ashx` coordination report | `https://www.uclm.es/-/media/Files/A04-Gestion-Academica/PDFEstudiantes/PDFEvAU/ReunionesMateria2627/InformacionMaterias/` | November 2026 |
+| Cantabria `Resultados por Materia PAU Ordinaria 2026_Web.pdf` | `https://web.unican.es/admision/Documents/Acceso/` | autumn 2026 |
+| Aragón `pauresulasig2026.xlsx` (grade bands) | `https://academico.unizar.es/sites/academico/files/archivos/acceso/estad/` | winter 2026-27 |
+| Navarra `Informe_PAU_2025-26.pdf` | `https://www2.unavarra.es/gesadj/Estudios/acceso_matricula/PAU/` | winter 2026-27 |
+| Galicia Física working-group report (2024–2026) | `https://ciug.gal/grupos-de-traballo` | unknown |
+| Basque *Resultados escolares 2025-2026* (school Física marks of the PAU 2026 cohort) | `https://www.euskadi.eus/resultados-escolares-inspeccion-de-educacion/web01-a2hikus/es/` | autumn 2026 |
+| EHU PAU 2027 instructions for Física; any tribunal-level release | `https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/` | autumn 2026 |
+| Ministry EPAU 2026 cubes | `https://www.ciencia.gob.es/Ministerio/Estadisticas/SIIU/PAU.html` | June 2027 |
+
+## Files in this folder
+
+- `index.qmd`, `chapters/*.qmd`, `_quarto.yml`, `styles.scss`, `styles-dark.scss`, `assets/`: the site.
+- `data/`: `regional_fisica_found.csv`, `found_*.csv` (dashboard transcriptions), `ministry_fisica_*.csv` (parsed cubes), `original/` (July package copies), `analysis/` (all computed outputs + `results.json`), `tables/` (Markdown tables included by the chapters).
+- `sources/`: `raw/` (37 downloaded documents), `ministry/` (3 cubes), `text/` (extractions), `agent_extractions/` (the search agents' CSVs, unmodified), `source_registry.csv`, `literature_new.bib`, `references_core.bib`.
+- `scripts/`: `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`.
+- `plots/`: ten figures, PNG and SVG.
+- `logs/`: `WORK_LOG.md` (this chapter as a standalone file), `SEARCH_REPORTS.md` (the five agents' full reports).

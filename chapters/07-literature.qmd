@@ -1,0 +1,41 @@
+---
+title: "Literature: what exists and what does not"
+subtitle: "The evidence base for a Basque Physics PAU study, updated to September 2026"
+description: "Newly located academic references (2014–2026) on PAU results, rater consistency, territorial comparability and washback, the classic Basque and Physics-specific references from the July dossier, and the gap they leave for a Física-specific study."
+date: 2026-09-18
+categories: [evidence, literature]
+---
+
+## The gap, stated by the field itself
+
+The most useful new reference is a bibliometric review published this year [@ruizlazaro2026revision]: a PRISMA screening of 16 311 records on university access in Spain that retains 59 empirical articles and 12 doctoral theses across five thematic clusters (access models; results and their explanatory variables; international comparison; psychometrics; alternative pathways). **None of the 71 items analyses Physics results.** The results-oriented literature is concentrated on mathematics, language and history; the PAU literature that touches Physics is content analysis of the papers [@gonzalez2024fisica], not analysis of marks. A Física-specific results study of the kind this project is building is unoccupied ground.
+
+## New references located in this search
+
+| Reference | What it contributes | Física? | Open |
+|---|---|---|---|
+| @ruizlazaro2026revision | Bibliometric map of the whole field to 2024; documents the absence of Physics-results studies | no | yes |
+| @veas2025consistency | Many-facet Rasch analysis of 54 assessment boards, 3 000 students, five Valencian universities (June 2018): "large inconsistencies … in the severity levels of many subjects both within and between universities" — the strongest Spanish evidence for tribunal effects | not among the six subjects | yes |
+| @veas2020comparabilidad | Partial-credit Rasch on 6 709 students, 15 subjects (Alicante): rubric step structure itself is a source of measurement error (non-monotonic scoring categories) — relevant to 0.25-point rubrics | included among subjects | yes |
+| @faura2022desigualdad | Expert-panel difficulty rating of the 17 regional papers in one subject, correlated with regional means; concludes a single national paper is needed. The design to replicate for Física 2026 | no (Mat. CCSS) | yes |
+| @luzarraga2024pau | Basque case study: EBAU shapes Bachillerato guidance toward the university pathway without assessing competences; the newest Basque PAU study (qualitative) | no | yes |
+| @nortes2021pauebau | Item-level error analysis of 138 scripts across the PAU→EBAU regime change: same item types, same errors, 25 % of items scored zero. Template for a 2024→2026 Física item comparison | no (Mat. CCSS) | yes |
+| @woitschach2018correctores | Differential rater severity with 13 raters and an 8-criterion rubric; not a PAU study, cited for method and magnitude | no | yes |
+| @rodriguez2014genero | Oviedo PAU cohorts 2006–2010: performance gender differences shrinking, field-choice segregation persisting; the closest PAU × gender × STEM study located | not disaggregated | yes |
+| @veas2025conversation | Dissemination piece from project PID2020-115248RA-I00: PAU is criterion-referenced only; proposes percentile thresholds and Rasch equating across communities, "implemented for the first time in the Comunitat Valenciana"; calls for standardised tribunal training | — | yes |
+
+One further item was resolved in the evening follow-up: the study attributed in June 2026 press to two Universitat Jaume I researchers is the piece by @sancheztarazaga2026pau (The Conversation, 2 June 2026, with a DOI). It scores, with an AI model trained on the Bachillerato curricula, the competency orientation of the PAU papers of six communities — **including País Vasco** — over 2015–2025 on a 0–100 scale. Its findings bear directly on the Basque question: Cataluña and País Vasco are rated the *most* competency-oriented exam systems and Madrid the least; the subject matters more than the community; Matemáticas II is the least competency-oriented subject (but the one improving fastest), Inglés the most, Química and Biología low but improving. Física is not singled out. The implication for Chapter 6 is that the Basque papers were already at the competency-oriented end of the Spanish range before 2025, so the 2025–26 change in Euskadi cannot be described simply as "becoming competency-based". The underlying primary article has not been located; the authors' names are Sánchez-Tarazaga (not "Taragaza" as some outlets print) and Gimeno Rovira.
+
+## The classic references, and how this study uses them
+
+- **Basque PAU results**: the Ikastorratza comparison of Cataluña, Comunitat Valenciana and País Vasco for June 2011 [@ruizdegauna2013comparado] — the source of the 2011 Física comparison (4.44 vs 5.68 vs 4.07) and of the subject-choice typology in which Física is a "specific-phase" subject; the 1994–2008 Mathematics series [@ruizdegauna2011matematicas] as proof that per-subject records exist internally back to 1994; and the teachers' opinion study [@ruizdegauna2013selectividad]. The La Rioja series located here ([Chapter 3](03-spain-2026.qmd)) shows that the 2010–11 Física trough in these papers was national.
+- **Physics-specific content analysis**: 183 papers from four communities 2010–2022 [@gonzalez2024fisica], the coding scheme to extend to the Basque papers; the washback study [@oliva2018influencia] for the competency-design question.
+- **Marking and comparability**: rater criteria [@mengual2019criterios], scoring standards [@veas2020frontiers], the inter-community comparability thesis [@ruizlazaro2021tesis] and the gender analysis of science subjects [@manzano2011genero].
+
+## What was searched and not found
+
+RSEF, the Conferencia de Decanos de Física, CRUE and the physics-teacher associations published nothing on the 2026 Física results. No peer-reviewed content analysis of Física PAU papers exists for 2023–2026 (chemistry has this literature; physics does not). No study disaggregates Física PAU results by sex. Nothing newer than 2013 by Ruiz de Gauna, Sarasua or Dávila on PAU was located. No TESEO or ADDI thesis on Física PAU results exists. arXiv `physics.ed-ph` has nothing on the Spanish PAU. The 2026 national press covered Matemàtiques in Cataluña and Euskara in Euskadi; the Basque Física figures were carried nationally only as the counter-example in the Euskara story (El País, Europa Press, 20minutos, Telecinco, 6–7 July, all relaying the EHU press conference), never as a story in themselves, and the Canarias 2026 Física result was, as far as this search could establish, not covered anywhere.
+
+## Positioning a Basque Física paper
+
+Taken together, the literature supports a paper with three layers that nobody has combined for Physics: (1) the 2010–2026 results series with its regimes ([Chapter 2](02-euskadi.qmd)), (2) a content and difficulty audit of the Basque papers against the other communities' 2026 papers in the design of @faura2022desigualdad and @gonzalez2024fisica, and (3) tribunal-level marking data in the design of @veas2025consistency, if EHU releases them. The Canarias comparison ([Chapter 4](04-distributions.qmd)) gives the paper a second case with full histograms, and the school-marks series ([Chapter 5](05-subjects-sittings.qmd)) gives it the certification-versus-examination gap that the Basque centre-level literature has only addressed for all subjects together.

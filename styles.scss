@@ -1,0 +1,102 @@
+/*-- scss:defaults --*/
+// Zensical / Material-like documentation look for Quarto (light mode defaults)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-monospace: "JetBrains Mono", "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$font-size-root: 15px;
+$headings-font-weight: 600;
+$line-height-base: 1.6;
+
+$primary: #3f51b5;          // indigo (Material / Zensical accent)
+$secondary: #536dfe;
+$link-color: #3949ab;
+$body-bg: #ffffff;
+$body-color: #1f2328;
+$border-radius: 6px;
+$navbar-bg: #3f51b5;
+$navbar-fg: #ffffff;
+$sidebar-bg: #ffffff;
+$code-bg: #f5f6fa;
+$code-color: #4c3bb5;
+$table-striped-bg: #f7f8fc;
+
+/*-- scss:rules --*/
+:root {
+  --zs-accent: #{$primary};
+  --zs-accent-soft: rgba(63, 81, 181, 0.08);
+  --zs-surface: #ffffff;
+  --zs-surface-2: #f5f6fa;
+  --zs-ink-2: #5a6270;
+  --zs-border: #e3e6ee;
+  --zs-shadow: 0 2px 8px rgba(20, 24, 40, 0.10);
+}
+
+// ---------- header: two-row Material header (title row + tabs row)
+.navbar {
+  box-shadow: var(--zs-shadow);
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  .navbar-brand { font-weight: 700; letter-spacing: 0.01em; font-size: 1.05rem; }
+  .navbar-brand img { height: 26px; margin-right: 0.5rem; }
+  .nav-link { font-weight: 500; text-transform: none; letter-spacing: 0.01em; opacity: 0.92; border-bottom: 2px solid transparent; }
+  .nav-link.active, .nav-link:hover { opacity: 1; border-bottom-color: #ffffff; }
+}
+.navbar .aa-DetachedSearchButton, .navbar .quarto-search { border-radius: 8px; background: rgba(255,255,255,0.14); }
+
+// ---------- sidebar (section navigation)
+#quarto-sidebar {
+  border-right: 1px solid var(--zs-border);
+  .sidebar-item-container .sidebar-link { font-size: 0.9rem; padding: 0.28rem 0.5rem; border-radius: 6px; }
+  .sidebar-item-container .sidebar-link.active { background: var(--zs-accent-soft); color: var(--zs-accent); font-weight: 600; }
+  .sidebar-item-section .sidebar-item-text { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72rem; color: var(--zs-ink-2); font-weight: 600; }
+}
+
+// ---------- right TOC
+#quarto-margin-sidebar .sidebar nav#TOC ul > li > a { font-size: 0.82rem; color: var(--zs-ink-2); }
+#quarto-margin-sidebar nav#TOC ul > li > a.active { color: var(--zs-accent); border-left-color: var(--zs-accent); font-weight: 600; }
+#TOC .toc-title, .toc-actions { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72rem; color: var(--zs-ink-2); }
+
+// ---------- typography
+h1.title { font-size: 2rem; font-weight: 700; letter-spacing: -0.01em; }
+.subtitle { color: var(--zs-ink-2); font-size: 1.05rem; }
+h2 { font-size: 1.45rem; margin-top: 2.2rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--zs-border); }
+h3 { font-size: 1.15rem; margin-top: 1.6rem; }
+.header-section-number { color: var(--zs-ink-2); font-weight: 500; margin-right: 0.35em; }
+p { max-width: 74ch; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+// ---------- callouts, tables, figures (Material cards)
+.callout { border-radius: 8px; box-shadow: var(--zs-shadow); border-left-width: 4px; }
+.callout-note { border-left-color: var(--zs-accent); }
+.table { font-size: 0.86rem; }
+.table thead th { background: var(--zs-surface-2); border-bottom: 2px solid var(--zs-border); font-weight: 600; }
+.figure, .quarto-figure { background: var(--zs-surface); border: 1px solid var(--zs-border); border-radius: 8px; padding: 0.6rem; box-shadow: var(--zs-shadow); }
+.figure img, .quarto-figure img { max-width: 100%; height: auto; }
+figcaption, .figure-caption { color: var(--zs-ink-2); font-size: 0.84rem; margin-top: 0.4rem; }
+code { font-size: 0.85em; padding: 0.1em 0.3em; border-radius: 4px; }
+pre code { font-size: 0.82rem; }
+
+// ---------- key-figure tiles
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem; margin: 1rem 0 1.4rem; }
+.kpi { background: var(--zs-surface-2); border: 1px solid var(--zs-border); border-radius: 8px; padding: 0.7rem 0.9rem; }
+.kpi .v, .kpi .l { display: block; }
+.kpi .v { font-size: 1.7rem; font-weight: 700; color: var(--zs-accent); line-height: 1.1; }
+.kpi .l { font-size: 0.78rem; color: var(--zs-ink-2); margin-top: 0.25rem; }
+.kpi.bad .v { color: #d13c3c; }
+.kpi.good .v { color: #1a8f5c; }
+
+// ---------- status pills used in the source registry
+.pill { display: inline-block; padding: 0.05em 0.55em; border-radius: 999px; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.02em; }
+.pill.ok { background: #e3f6ec; color: #1a7a4c; }
+.pill.press { background: #fff3d6; color: #9a6b00; }
+.pill.gap { background: #fde5e5; color: #b02a2a; }
+.pill.model { background: #e9e7fb; color: #4c3bb5; }
+
+// ---------- footer
+.nav-footer { border-top: 1px solid var(--zs-border); font-size: 0.8rem; color: var(--zs-ink-2); }
+
+@media (max-width: 991px) {
+  p { max-width: none; }
+}

@@ -1,0 +1,36 @@
+---
+title: "Sources"
+subtitle: "Every file, dashboard and page used, with URL, retrieval method and fingerprint"
+description: "Registry of the 44 raw files archived in this study and of the dashboards and pages read without a downloadable file; the consolidated regional dataset; and the bibliography."
+date: 2026-09-18
+categories: [sources]
+---
+
+## Raw files archived in `sources/`
+
+::: {#tbl-registry}
+{{< include ../data/tables/source_registry.md >}}
+
+Files in `sources/raw/` and `sources/ministry/` with size, retrieval route and SHA-256 prefix. Full hashes: `sources/source_registry.csv`. Text extractions (`pdftotext -layout`) are in `sources/text/`.
+:::
+
+## The consolidated regional dataset
+
+Every regional Física figure used in this study, with its denominator and source type, is in `data/regional_fisica_found.csv` (hand-coded from the sources above and from the dashboards; the search agents' raw extractions are kept unchanged in `sources/agent_extractions/` for provenance).
+
+::: {#tbl-found}
+{{< include ../data/tables/regional_found.md >}}
+
+Regional Física results located in this study. "Source type" distinguishes official statistics, official presentations and dashboards from coordinator ponencias, working-group reports and press.
+:::
+
+## Datasets carried over from the July package
+
+Used unchanged, copied to `data/original/`: `fisica_pau_ehu_2010_2022.csv` (EHU annual reports, with sex, language and network splits), `fisica_pau_ministerio_2015_2025.csv` (the July parse of the Ministry cube, used only as a validation target), `fisica_tables.csv`, `catalunya_materias_2014_2026.csv` and `comparativa_materias_2026.csv` from `hist_evolution`. The three Ministry PC-Axis cubes are the July copies (`nota`, `matric`) plus the grade-distribution cube downloaded on 18 September by the earlier session (`distr`); the September re-download of the first two was byte-identical to the July copies.
+
+## Bibliography
+
+The reference list below is generated from `references.bib` (45 entries: 10 new academic references, 9 classic ones, 26 official and press sources) with the APA style (`apa.csl`).
+
+::: {#refs}
+:::

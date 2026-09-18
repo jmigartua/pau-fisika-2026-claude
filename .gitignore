@@ -1,0 +1,5 @@
+.quarto/
+__pycache__/
+*.pyc
+.DS_Store
+_update.tgz

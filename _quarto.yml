@@ -1,0 +1,108 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - chapters/*.qmd
+  resources:
+    - plots/*
+    - data/analysis/*.csv
+    - data/*.csv
+
+website:
+  title: "PAU Física 2026"
+  description: "Independent data hunt and analysis of Physics results in the Spanish university-entrance exam, with Euskadi (UPV/EHU) 2010–2026 at the centre."
+  site-url: "https://example.org/pau-fisika-2026"
+  favicon: assets/favicon.svg
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    logo: assets/favicon.svg
+    logo-alt: "PAU Física"
+    pinned: true
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Findings"
+        href: chapters/02-euskadi.qmd
+      - text: "Data hunt"
+        href: chapters/01-data-hunt.qmd
+      - text: "Sources & log"
+        href: chapters/08-sources.qmd
+    right:
+      - icon: github
+        href: "https://github.com/"
+        aria-label: "Repository (placeholder)"
+    tools:
+      - icon: moon
+        text: "Theme"
+  sidebar:
+    - title: "Findings"
+      style: docked
+      collapse-level: 2
+      contents:
+        - section: "Findings"
+          contents:
+            - chapters/02-euskadi.qmd
+            - chapters/03-spain-2026.qmd
+            - chapters/04-distributions.qmd
+            - chapters/05-subjects-sittings.qmd
+            - chapters/06-interpretation.qmd
+        - section: "Evidence"
+          contents:
+            - chapters/01-data-hunt.qmd
+            - chapters/07-literature.qmd
+        - section: "Sources & log"
+          contents:
+            - chapters/08-sources.qmd
+            - chapters/09-log.qmd
+            - chapters/10-reproduce.qmd
+    - title: "Data hunt"
+      contents:
+        - chapters/01-data-hunt.qmd
+        - chapters/07-literature.qmd
+    - title: "Sources & log"
+      contents:
+        - chapters/08-sources.qmd
+        - chapters/09-log.qmd
+        - chapters/10-reproduce.qmd
+  page-footer:
+    left: "Independent analysis prepared 18 September 2026 · all figures reproducible from `scripts/`"
+    right: "Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR"
+
+format:
+  html:
+    theme:
+      light: [flatly, styles.scss]
+      dark: [darkly, styles.scss, styles-dark.scss]
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    toc-title: "On this page"
+    number-sections: true
+    code-fold: true
+    code-tools: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    html-math-method: mathjax
+    lang: en
+    grid:
+      sidebar-width: 280px
+      body-width: 860px
+      margin-width: 260px
+      gutter-width: 1.6rem
+
+bibliography: references.bib
+csl: apa.csl
+link-citations: true
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
