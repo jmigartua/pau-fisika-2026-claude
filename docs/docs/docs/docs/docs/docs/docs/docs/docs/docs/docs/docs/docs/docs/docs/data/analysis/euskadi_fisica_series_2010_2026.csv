@@ -1,0 +1,18 @@
+year,enrolled,presented,passed,pass_pct,mean,source,spain_mean,gap_vs_spain,delta_mean,delta_pass_pct
+2010,2504,2108,975,46.3,4.45,EHU informe (all phases),,,,
+2011,2620,2610,1294,49.58,4.44,EHU informe (all phases),,,-0.01,3.28
+2012,2362,2056,1579,76.8,6.49,EHU informe (all phases),,,2.05,27.22
+2013,2457,2203,1658,75.26,6.16,EHU informe (all phases),,,-0.33,-1.54
+2014,2495,2253,1485,65.9,5.68,EHU informe (all phases),,,-0.48,-9.36
+2015,2459,2179,1348,61.86,5.45,EHU informe (all phases),5.826,-0.376,-0.23,-4.04
+2016,2342,2082,1511,72.6,6.16,EHU informe (all phases),5.677,0.483,0.71,10.74
+2017,2445,1784,1197,67.1,5.9,EHU informe (all phases),5.76,0.14,-0.26,-5.5
+2018,2575,1734,1229,70.87,6.16,EHU informe (all phases),5.76,0.4,0.26,3.77
+2019,2532,1654,1100,66.5,5.89,EHU informe (all phases),5.598,0.292,-0.27,-4.37
+2020,2548,1631,1227,75.23,6.45,EHU informe (all phases),6.369,0.081,0.56,8.73
+2021,2355,1765,1581,89.58,7.69,EHU informe (all phases),6.637,1.053,1.24,14.35
+2022,2320,1742,1208,69.35,6.06,EHU informe (all phases),6.109,-0.049,-1.63,-20.23
+2023,2429,1830,1294,70.71,6.3,Ministry EPAU (specific phase),6.179,0.121,0.24,1.36
+2024,2341,1788,1305,72.99,6.09,Ministry EPAU (specific phase),6.15,-0.06,-0.21,2.28
+2025,2597,2189,1364,62.31,5.47,Ministry EPAU (specific phase),5.651,-0.181,-0.62,-10.68
+2026,,2066,,39.8,3.99,EHU presentation 6 Jul 2026 (pass count not published),,,-1.48,-22.51

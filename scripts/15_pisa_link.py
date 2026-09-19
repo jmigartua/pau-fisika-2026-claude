@@ -1,29 +1,36 @@
 #!/usr/bin/env python3
-"""Does an independent instrument see the Basque top tail thin as well?
+"""What an externally marked instrument says about the Basque cohorts, 2006–2022.
 
-The conditional top-band measure of figure 16 found the Basque cohort turning in
-2024 — from +0.64 SD above the field across 2016–2023 to −0.96 SD — a year before
-the competency model and two before the 2026 paper. That measurement is made by
-the PAU, marked by Basque tribunals, so it cannot by itself distinguish a thinner
-cohort from a paper that stopped rewarding the top. An external instrument can.
+An earlier version of this script read two PISA rounds, found the Basque top tail
+thin in 2022, and concluded that this was the pandemic cohort and therefore a
+one-off. Both halves of that were wrong, and reading the earlier rounds is what
+showed it.
 
-PISA tests 15-year-olds, modal 4º ESO, who reach the PAU two years later:
+The Basque science mean runs +6 to +9 points ABOVE Spain across 2006, 2009 and
+2012, and then falls 22.6 points between 2012 and 2015 while Spain falls 3.7. It
+has not recovered: −9.7 against Spain in 2015, +4.1 in 2018, −5.0 in 2022. The
+decade-long fall is 26 points against Spain's 12. None of that is pandemic; the
+break is in the 2015 round, five years before the schools closed.
 
-    PISA 2015 -> PAU 2017    PISA 2018 -> PAU 2020
-    PISA 2022 -> PAU 2024    PISA 2025 -> PAU 2027
+The second correction concerns the cohort alignment. PISA tests 15-year-olds who
+reach the PAU two years later, and three rounds fall inside this study's PAU
+window. Of those three matched cohorts, only one agrees with the PAU conditional
+top-band measure:
 
-That is three matched points inside the PAU window and two of them fall in the
-marking plateau, so a PAU–PISA correlation is not available and is not attempted.
-What is available is one aligned cohort — PISA 2022 / PAU 2024 — and a comparison
-made on the right quantity. PISA reports proficiency levels, and levels 5 and 6
-are the direct analogue of the 8–10 band: the top of the distribution, which is
-exactly where the PAU signal sits.
+    PISA 2015 (−9.7 vs Spain)  ->  PAU 2017 (+0.70 SD vs field)   disagree
+    PISA 2018 (+4.1)           ->  PAU 2020 (−0.82 SD)            disagree
+    PISA 2022 (−5.0)           ->  PAU 2024 (−0.96 SD)            agree
 
-Reads : sources/pisa/pisa2018_cap2_tablas.xlsx (INEE, table 2.9)
-        sources/pisa/pisa2022_cap2_tablas.xlsx (INEE, table 2.24)
+One of three is noise. So PISA establishes a long Basque decline that the PAU
+cannot see, and fails to predict the PAU cohort by cohort. Both statements belong
+in the chapter; neither on its own is the finding.
+
+Reads : sources/pisa/pisa2015_cap2_tablas.xls  (INEE, tables 2.2 and 2.7)
+        sources/pisa/pisa2018_cap2_tablas.xlsx (INEE, tables 2.3 and 2.9)
+        sources/pisa/pisa2022_cap2_tablas.xlsx (INEE, tables 2.21 and 2.24)
         data/analysis/shape_locus.json
 Writes: plots/fig21_pisa_link.(png|svg), data/analysis/pisa_link.json,
-        data/pisa_science_top_levels.csv
+        data/pisa_science_series.csv
 """
 from __future__ import annotations
 
@@ -44,132 +51,136 @@ A = DATA / "analysis"
 SRC = ROOT / "sources" / "pisa"
 P = ROOT / "plots"
 
+F15, F18, F22 = (SRC / "pisa2015_cap2_tablas.xls",
+                 SRC / "pisa2018_cap2_tablas.xlsx",
+                 SRC / "pisa2022_cap2_tablas.xlsx")
 
-def top_levels(path: Path, sheet: str, col5: int, col6: int) -> pd.DataFrame:
-    """Share of students at proficiency levels 5 and 6 in science, by jurisdiction.
 
-    The INEE tables put countries first and the Spanish communities after, in one
-    block with a single header; the jurisdiction name is the only reliable key, so
-    rows are selected by name rather than by position.
-    """
+def _row(path: Path, sheet: str, name: str, cols: list[int]) -> list[float]:
     d = pd.read_excel(path, sheet_name=sheet, header=None)
-    sub = d.iloc[:, [1, col5, col6]].copy()
-    sub.columns = ["jurisdiccion", "n5", "n6"]
-    sub = sub.dropna(subset=["jurisdiccion"])
-    sub["top56"] = (pd.to_numeric(sub.n5, errors="coerce")
-                    + pd.to_numeric(sub.n6, errors="coerce"))
-    return sub.dropna(subset=["top56"])[["jurisdiccion", "top56"]]
-
-
-p18 = top_levels(SRC / "pisa2018_cap2_tablas.xlsx", "2.9", 14, 16)
-p22 = top_levels(SRC / "pisa2022_cap2_tablas.xlsx", "2.24", 14, 16)
-
-
-def pick(df: pd.DataFrame, name: str) -> float:
-    hit = df[df.jurisdiccion.astype(str).str.strip().str.startswith(name)]
+    hit = d[d.iloc[:, 1].astype(str).str.strip().str.startswith(name)]
     if hit.empty:
-        raise KeyError(f"{name!r} not found")
-    return float(hit.top56.iloc[0])
+        raise KeyError(f"{name!r} not in {path.name}/{sheet}")
+    return [float(hit.iloc[0, c]) for c in cols]
 
 
-rows = []
-for year, df in [(2018, p18), (2022, p22)]:
-    for label, key in [("País Vasco", "País Vasco"), ("España", "España"),
-                       ("Promedio OCDE", "Promedio OCDE")]:
-        rows.append({"pisa_year": year, "pau_year": year + 2,
-                     "jurisdiccion": label, "top56_pct": pick(df, key)})
-top = pd.DataFrame(rows)
-top.to_csv(DATA / "pisa_science_top_levels.csv", index=False)
+# Means. The 2015 report carries the whole back-series by community in table 2.7
+# (2015, 2012, 2009, 2006 in that column order); 2018 and 2022 give their own round.
+back_pv = _row(F15, "Tabla 2.7", "País Vasco", [2, 4, 6, 8])
+back_es = _row(F15, "Tabla 2.7", "España", [2, 4, 6, 8])
+mean_pv = dict(zip([2015, 2012, 2009, 2006], back_pv))
+mean_es = dict(zip([2015, 2012, 2009, 2006], back_es))
+mean_pv[2018] = _row(F18, "2.3", "País Vasco", [2])[0]
+mean_es[2018] = _row(F18, "2.3", "España", [2])[0]
+mean_pv[2022] = _row(F22, "2.21", "País Vasco", [2])[0]
+mean_es[2022] = _row(F22, "2.21", "España", [2])[0]
 
-pv = {y: float(top[(top.pisa_year == y) & (top.jurisdiccion == "País Vasco")].top56_pct.iloc[0])
-      for y in (2018, 2022)}
-es = {y: float(top[(top.pisa_year == y) & (top.jurisdiccion == "España")].top56_pct.iloc[0])
-      for y in (2018, 2022)}
-ratio = {y: pv[y] / es[y] for y in (2018, 2022)}
+# Proficiency levels 5+6, available by community from 2015 onwards.
+top_pv, top_es = {}, {}
+for yr, path, sheet in [(2015, F15, "Tabla 2.2"), (2018, F18, "2.9"), (2022, F22, "2.24")]:
+    a, b = _row(path, sheet, "País Vasco", [14, 16])
+    top_pv[yr] = a + b
+    a, b = _row(path, sheet, "España", [14, 16])
+    top_es[yr] = a + b
 
-locus = json.load(open(A / "shape_locus.json", encoding="utf-8"))
-vs_field = locus["euskadi_conditional_vs_field"]
+years = sorted(mean_pv)
+series = pd.DataFrame({
+    "pisa_year": years, "pau_year": [y + 2 for y in years],
+    "pv_mean": [mean_pv[y] for y in years], "es_mean": [mean_es[y] for y in years],
+    "gap": [mean_pv[y] - mean_es[y] for y in years],
+    "pv_top56": [top_pv.get(y, np.nan) for y in years],
+    "es_top56": [top_es.get(y, np.nan) for y in years],
+})
+series.to_csv(DATA / "pisa_science_series.csv", index=False)
 
-fig, (axp, axa) = plt.subplots(1, 2, figsize=(12.6, 5.2),
-                               gridspec_kw=dict(width_ratios=[1.15, 1.0], wspace=0.26))
+vs_field = json.load(open(A / "shape_locus.json", encoding="utf-8"))[
+    "euskadi_conditional_vs_field"]
+matched = [(y, mean_pv[y] - mean_es[y], vs_field.get(str(y + 2)))
+           for y in years if str(y + 2) in vs_field]
 
-# --- a. the top of the distribution, two instruments, one direction ---------------
-order = p22.copy()
-order = order[order.jurisdiccion.astype(str).str.strip().isin(
-    [c.strip() for c in
-     ["Andalucía", "Aragón", "Asturias, P. de", "Balears, Illes", "C. Valenciana",
-      "Canarias ", "Cantabria", "Castilla y León", "Castilla-La Mancha", "Cataluña",
-      "Extremadura", "Galicia", "Madrid, C. de", "Murcia, R. de", "Navarra, C. F. de",
-      "País Vasco", "Rioja, La"]])]
-order = order.sort_values("top56")
-colours = [C["violet"] if str(j).strip() == "País Vasco" else MUTED
-           for j in order.jurisdiccion]
-axp.barh(range(len(order)), order.top56, color=colours, height=0.72, lw=0)
-axp.set_yticks(range(len(order)))
-axp.set_yticklabels([str(j).strip() for j in order.jurisdiccion], fontsize=7.6)
-axp.axvline(es[2022], color=INK2, lw=1.1, ls=(0, (5, 3)), zorder=3,
-            label="Spain (%.2f %%)" % es[2022])
-axp.axvline(pick(p22, "Promedio OCDE"), color=C["red"], lw=1.1, ls=(0, (2, 2)),
-            zorder=3, label="OECD average (%.2f %%)" % pick(p22, "Promedio OCDE"))
-axp.set_xlabel("Students at PISA science levels 5–6 (%)")
-axp.set_title("a. PISA 2022 science, top performers\n(the cohort that sat the PAU in 2024)")
-axp.legend(loc="lower right", fontsize=7.6)
-axp.grid(axis="y", visible=False)
+fig, (ax, axg, axm) = plt.subplots(1, 3, figsize=(16.6, 5.2),
+                                   gridspec_kw=dict(width_ratios=[1.25, 1.0, 1.0],
+                                                    wspace=0.30))
 
-# --- b. the two instruments side by side, as changes ------------------------------
-axa.axhline(0, color=INK2, lw=1.0, zorder=1)
-bars = [
-    ("PISA science,\nlevels 5–6\n(PV as share of Spain)", ratio[2018], ratio[2022],
-     "2018", "2022"),
-]
-# PISA panel: plotted as the Basque share of the Spanish figure, so that a national
-# move does not read as a Basque one.
-axa.plot([0, 1], [ratio[2018], ratio[2022]], color=C["violet"], lw=2.2, marker="o",
-         ms=8, zorder=3)
-for x, y, lab in [(0, ratio[2018], "PISA 2018\n%.2f" % ratio[2018]),
-                  (1, ratio[2022], "PISA 2022\n%.2f" % ratio[2022])]:
-    axa.annotate(lab, (x, y), textcoords="offset points", xytext=(0, 14),
-                 ha="center", fontsize=8, color=C["violet"])
-axa.axhline(1.0, color=MUTED, lw=1.0, ls=(0, (4, 3)), zorder=1)
-axa.annotate("parity with Spain", xy=(1.42, 1.005), fontsize=7.6, color=MUTED,
-             ha="right")
-axa.set_xlim(-0.35, 1.5)
-axa.set_ylim(0.55, 1.15)
-axa.set_xticks([0, 1])
-axa.set_xticklabels(["PISA 2018\n→ PAU 2020", "PISA 2022\n→ PAU 2024"], fontsize=8)
-axa.set_ylabel("País Vasco ÷ Spain, top-performer share")
-axa.set_title("b. The Basque top tail relative to Spain")
-axa.annotate(
-    "PAU, same cohorts: Euskadi's top-band share among passers,\n"
-    "measured against the other communities in the same year,\n"
-    "runs $%+.2f$ SD on average across 2016–2023 and $%+.2f$ SD in 2024."
-    % (vs_field["mean_2016_2023"], vs_field["2024"]),
-    xy=(0.5, 0.06), xycoords="axes fraction", fontsize=7.8, color=INK2, ha="center")
+# --- a. the long series ----------------------------------------------------------
+ax.plot(years, [mean_es[y] for y in years], color=INK2, lw=1.9, marker="o", ms=5,
+        zorder=3, label="Spain")
+ax.plot(years, [mean_pv[y] for y in years], color=C["violet"], lw=1.9, marker="o",
+        ms=5, zorder=4, label="País Vasco")
+ax.axvspan(2019.5, 2022.5, color=C["yellow"], alpha=0.12, lw=0, zorder=0)
+ax.annotate("schools closed\n2020–21", xy=(2021, 474), fontsize=7.4,
+            color="#8a6a00", ha="center")
+ax.annotate("the break is here:\nPV $-22.6$, Spain $-3.7$", xy=(2016.0, 501),
+            fontsize=7.8, color=C["red"], ha="left")
+ax.plot([2012, 2015], [mean_pv[2012], mean_pv[2015]], color=C["red"], lw=2.6,
+        alpha=0.5, zorder=2)
+ax.set_xticks(years)
+ax.set_xlabel("PISA round")
+ax.set_ylabel("Science score")
+ax.set_title("a. Basque science fell before the pandemic, not during it")
+ax.legend(loc="lower left", fontsize=7.8)
+
+# --- b. the gap ------------------------------------------------------------------
+gaps = [mean_pv[y] - mean_es[y] for y in years]
+axg.axhline(0, color=INK2, lw=1.0, zorder=2)
+axg.bar(years, gaps, width=1.7,
+        color=[C["aqua"] if g > 0 else C["red"] for g in gaps], lw=0, zorder=3)
+for y, g in zip(years, gaps):
+    axg.annotate("%+.1f" % g, (y, g), textcoords="offset points",
+                 xytext=(0, 5 if g > 0 else -12), ha="center", fontsize=7.6,
+                 color=INK2)
+axg.set_xticks(years)
+axg.set_xticklabels(["%d\n(PAU %d)" % (y, (y + 2) % 100) for y in years],
+                    fontsize=7.0)
+axg.set_ylabel("País Vasco − Spain, science score")
+axg.set_title("b. A standing advantage became a deficit")
+
+# --- c. do the matched cohorts line up? ------------------------------------------
+axm.axhline(0, color=INK2, lw=0.9, zorder=1)
+axm.axvline(0, color=INK2, lw=0.9, zorder=1)
+for py, gap, pau in matched:
+    agree = (gap < 0) == (pau < 0)
+    colr = C["aqua"] if agree else C["red"]
+    axm.scatter([gap], [pau], s=90, color=colr, zorder=3)
+    axm.annotate("PISA %d\n→ PAU %d" % (py, py + 2), (gap, pau),
+                 textcoords="offset points", xytext=(9, 6), fontsize=7.6, color=colr)
+axm.annotate("agreement would put every point in the\nlower-left or upper-right quadrant;\n"
+             "one of three does",
+             xy=(0.97, 0.96), xycoords="axes fraction", fontsize=7.8, color=INK2,
+             ha="right", va="top")
+axm.set_xlim(-13, 8)
+axm.set_ylim(-1.35, 1.15)
+axm.set_xlabel("PISA: País Vasco − Spain, science")
+axm.set_ylabel("PAU: Euskadi's conditional top-band\nshare vs the field (SD)")
+axm.set_title("c. But they do not track cohort by cohort")
 
 fig.text(0.005, 0.015,
-         "PISA: INEE Spanish reports, science proficiency levels — PISA 2018 table 2.9, "
-         "PISA 2022 table 2.24. The alignment is PISA year + 2: a 15-year-old in 4º ESO\n"
-         "reaches the PAU two years later. Only three PISA rounds fall inside the PAU "
-         "window and two of them land in the marking plateau, so no correlation is "
-         "computed;\nthis is a comparison of one aligned cohort on the one quantity both "
-         "instruments measure, the top of the distribution.",
+         "PISA: INEE Spanish reports — 2015 tables 2.2 and 2.7 (which carries the "
+         "2006–2015 back-series by community), 2018 tables 2.3 and 2.9, 2022 tables "
+         "2.21 and 2.24.\nThe alignment in b and c is PISA year + 2: a 15-year-old in "
+         "4º ESO reaches the PAU two years later. Three rounds fall inside this study's "
+         "PAU window, so c has three\npoints and no correlation is computed from them.",
          fontsize=7, color=MUTED, linespacing=1.5)
-fig.subplots_adjust(bottom=0.24, top=0.88, left=0.13, right=0.97)
+fig.subplots_adjust(bottom=0.26, top=0.90, left=0.055, right=0.985)
 _save(fig, "fig21_pisa_link", P, dpi=200)
 
 json.dump({
     "alignment": "PISA year + 2 (4º ESO -> 1º Bach -> 2º Bach -> PAU)",
-    "matched_points_in_pau_window": {"PISA 2015": 2017, "PISA 2018": 2020,
-                                     "PISA 2022": 2024},
-    "pais_vasco_top56": pv, "espana_top56": es,
-    "pv_over_spain": ratio,
-    "oecd_2022_top56": pick(p22, "Promedio OCDE"),
-    "pau_euskadi_conditional_vs_field": {
-        "mean_2016_2023": vs_field["mean_2016_2023"], "2024": vs_field["2024"],
-        "2025": vs_field["2025"]},
+    "science_mean": {"pais_vasco": mean_pv, "espana": mean_es},
+    "gap_pv_minus_spain": {y: mean_pv[y] - mean_es[y] for y in years},
+    "top56_pct": {"pais_vasco": top_pv, "espana": top_es},
+    "decade_change_2012_2022": {"pais_vasco": mean_pv[2022] - mean_pv[2012],
+                                "espana": mean_es[2022] - mean_es[2012]},
+    "break_2012_2015": {"pais_vasco": mean_pv[2015] - mean_pv[2012],
+                        "espana": mean_es[2015] - mean_es[2012]},
+    "matched_cohorts": [{"pisa_year": py, "pau_year": py + 2, "pisa_gap": gap,
+                         "pau_conditional_vs_field_sd": pau,
+                         "same_sign": bool((gap < 0) == (pau < 0))}
+                        for py, gap, pau in matched],
 }, open(A / "pisa_link.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-print(f"PISA science levels 5-6:  PV {pv[2018]:.2f} -> {pv[2022]:.2f}   "
-      f"Spain {es[2018]:.2f} -> {es[2022]:.2f}")
-print(f"PV as share of Spain:     {ratio[2018]:.3f} -> {ratio[2022]:.3f}")
-print(f"PAU conditional vs field: {vs_field['mean_2016_2023']:+.2f} SD (2016-23) -> "
-      f"{vs_field['2024']:+.2f} SD (2024)")
+
+for y in years:
+    print(f"  {y}  PV {mean_pv[y]:7.2f}  ES {mean_es[y]:7.2f}  gap {mean_pv[y]-mean_es[y]:+6.2f}"
+          + (f"   top5+6 PV {top_pv[y]:.2f} ES {top_es[y]:.2f}" if y in top_pv else ""))
+print(f"\n  2012->2022: PV {mean_pv[2022]-mean_pv[2012]:+.1f}, Spain {mean_es[2022]-mean_es[2012]:+.1f}")
+print(f"  matched cohorts agreeing: {sum(1 for _, g, p in matched if (g < 0) == (p < 0))} of {len(matched)}")

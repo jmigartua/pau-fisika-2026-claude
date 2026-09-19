@@ -72,9 +72,9 @@ steps = [
      STOOD, "kills the recruitment mechanism, and corrects a dilution effect this "
             "study had itself reported from a phase-undercount of 2015–16"),
     ("9. Bringing in an outside instrument",
-     "PISA 2022 (the PAU 2024 cohort): Basque top performers fall to 0.67 of Spain.",
-     STOOD, "separates a thinner cohort from a stricter paper for one cohort — but "
-            "it is the pandemic cohort, so it argues against the slow-drift reading"),
+     "PISA 2006–2022: Basque science goes from +9 above Spain to −5, breaking in 2015.",
+     STOOD, "the drift is real and pre-pandemic, but the cohorts do not match the PAU "
+            "(1 of 3), which retracts the triangulation step 9 first claimed"),
 ]
 
 fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 11.0),
