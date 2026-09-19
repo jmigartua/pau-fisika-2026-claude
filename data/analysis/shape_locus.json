@@ -52,6 +52,18 @@
     "2015": 30839,
     "2025": 49010
   },
+  "mean_axis": {
+    "skew": 0.6037225952733428,
+    "excess_kurtosis": 0.8798806025103127,
+    "shapiro_p": 0.00016519014025107026,
+    "anderson_A2": 2.063685926267908,
+    "anderson_crit_5pct": 0.771,
+    "normal": false,
+    "n_below_4_5": 2,
+    "n_below_5_0": 9,
+    "locus_ci95_pp_at_mean_4_08": 1.4069462465439553,
+    "locus_ci95_pp_at_mean_6_00": 0.3193695269894323
+  },
   "points": {
     "ULL (Tenerife) 2026": {
       "mean": 4.08,

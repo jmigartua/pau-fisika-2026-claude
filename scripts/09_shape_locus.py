@@ -25,7 +25,8 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy.stats import beta as beta_dist, ttest_ind
+from scipy.stats import (anderson, beta as beta_dist, kurtosis, norm,
+                         shapiro, skew, ttest_ind)
 
 from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
 
@@ -132,7 +133,26 @@ COL_OBS, COL_MODEL = C["aqua"], C["red"]
 # and make two unrelated things look related.
 COL_PRE = INK2
 
-fig, axes = plt.subplots(1, 2, figsize=(11.6, 5.2))
+# Standard error of the fitted locus itself, which the flat residual-SD band does
+# not show. It is smallest where the region-years pile up and grows towards both
+# ends — at mean 4.0, where the 2026 cohorts sit, the curve is uncertain to about
+# ±1.4 pp at 95 %, against ±0.3 pp at mean 6.0. Without this the reader cannot tell
+# that a 2026 point is being compared with an extrapolated curve.
+def locus_ci(xq, coef, xs, ys, deg=2):
+    """95 % confidence interval of the fitted mean response at xq."""
+    X = np.vander(xs, deg + 1)
+    resid = ys - np.polyval(coef, xs)
+    s2 = float(resid @ resid) / (len(xs) - (deg + 1))
+    XtXi = np.linalg.inv(X.T @ X)
+    Xq = np.vander(np.atleast_1d(xq), deg + 1)
+    se = np.sqrt(s2 * np.einsum("ij,jk,ik->i", Xq, XtXi, Xq))
+    return 1.96 * se
+
+
+fig = plt.figure(figsize=(11.6, 7.4))
+gs = fig.add_gridspec(2, 2, height_ratios=[3.0, 1.25], hspace=0.42, wspace=0.22)
+axes = [fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])]
+ax_marg = fig.add_subplot(gs[1, :])
 grid = np.linspace(hist["mean"].min() - 0.15, hist["mean"].max() + 0.15, 200)
 ehu = hist[hist.ccaa == "País Vasco"].sort_values("year")
 obs = observed_2026()
@@ -162,7 +182,7 @@ OFFSETS = {
         # ULL label runs straight into the model label; both 2026 observations go
         # right, separated vertically.
         "ULL (Tenerife) 2026": (10, -13),
-        "ULPGC (Las Palmas) 2026": (10, 5),
+        "ULPGC (Las Palmas) 2026": (16, 13),
         "model": (-9, -22),
     },
 }
@@ -170,8 +190,13 @@ OFFSETS = {
 for ax, col, coef, sd, marker, ylab, title, ehu26_y, overlay in panels:
     curve = np.polyval(coef, grid)
     ax.fill_between(grid, curve - 2 * sd, curve + 2 * sd, color="#e9e8e4",
-                    zorder=0, lw=0, label=r"locus $\pm 2$ SD")
-    ax.plot(grid, curve, color=INK2, lw=1.2, zorder=1,
+                    zorder=0, lw=0, label="scatter of region-years (±2 SD)")
+    # The locus's own 95 % interval, which widens where the data thin out. This is
+    # the band a 2026 point should be judged against, and at mean 4 it is wide.
+    ci = locus_ci(grid, coef, hist["mean"].values, hist[col].values)
+    ax.fill_between(grid, curve - ci, curve + ci, color=INK2, alpha=0.22,
+                    zorder=1, lw=0, label="locus, 95 % CI of the fit")
+    ax.plot(grid, curve, color=INK2, lw=1.2, zorder=2,
             label="2015--2025 locus (17 regions)")
     # The cloud is split at the 2017 regime change. Until 2016 Física could also be
     # sat in the general phase; from 2017 LOMCE left it in the voluntary phase only,
@@ -218,6 +243,40 @@ axes[0].legend(loc="upper left", fontsize=7.6)
 # fig.text does not wrap, and an over-long single line stretches the canvas, so the
 # in-figure note stays short and the full statement of sources, denominators and the
 # regime test lives in the Quarto caption (ThesisFigures T5/E5).
+# ---------------------------------------------------------------------------
+# Panel c — the marginal distribution of the x variable. Both panels above judge a
+# 2026 cohort by where it falls relative to a curve; how much that judgement is
+# worth depends on how many region-years actually sit at that mean. Very few do.
+# ---------------------------------------------------------------------------
+means = hist["mean"].values
+sw = shapiro(means)
+ad = anderson(means, "norm")
+bins = np.arange(3.4, 8.9, 0.2)
+ax_marg.hist(means, bins=bins, color=COL_CLOUD, alpha=0.55, lw=0)
+# A normal with the same mean and SD, for comparison rather than as a fit.
+xs = np.linspace(bins[0], bins[-1], 400)
+ax_marg.plot(xs, norm.pdf(xs, means.mean(), means.std(ddof=1)) * len(means) * 0.2,
+             color=INK2, lw=1.2, label="normal, same mean and SD")
+# Where the 2026 cohorts sit, and how little supports the curve there.
+ax_marg.axvspan(bins[0], 4.5, color=COL_MODEL, alpha=0.07, lw=0)
+for mu, col in [(ehu26_mean, COL_MODEL)] + [(mu, COL_OBS) for _, mu, _, _ in obs]:
+    ax_marg.axvline(mu, color=col, lw=1.1, ymax=0.62)
+n_below = int((means < 4.5).sum())
+ax_marg.annotate(
+    "%d of %d region-years below 4.5;\nthe three 2026 cohorts sit here" % (n_below, len(means)),
+    xy=(4.2, ax_marg.get_ylim()[1] * 0.52), fontsize=7.5, color=COL_MODEL, ha="left")
+ax_marg.annotate(
+    "Shapiro–Wilk $p = %.5f$, Anderson–Darling $A^2 = %.2f$ (5 %% critical %.2f):\n"
+    "the means are not normal — skew $%+.2f$, excess kurtosis $%+.2f$."
+    % (sw.pvalue, ad.statistic, ad.critical_values[2], skew(means), kurtosis(means)),
+    xy=(0.985, 0.88), xycoords="axes fraction", fontsize=7.5, color=INK2,
+    ha="right", va="top")
+ax_marg.set_xlim(grid[0], grid[-1])
+ax_marg.set_xlabel("Mean Física mark, ordinary sitting")
+ax_marg.set_ylabel("Region-years")
+ax_marg.set_title("c. Where the evidence actually is: distribution of the 187 region-year means")
+ax_marg.legend(loc="upper left", fontsize=7.6)
+
 note = (
     "Ministry EPAU, Física, ordinary sitting, specific phase, 17 communities, "
     "n = %d region-years.\n"
@@ -239,6 +298,19 @@ summary = {"n_region_years": int(len(hist)), "sd_pass_pp": sd_pass, "sd_top_pp":
                for r in inconsistent.itertuples()],
            "regime_change_2017": regimes,
            "presented_2015_2025": cohort,
+           "mean_axis": {
+               "skew": float(skew(means)), "excess_kurtosis": float(kurtosis(means)),
+               "shapiro_p": float(sw.pvalue),
+               "anderson_A2": float(ad.statistic),
+               "anderson_crit_5pct": float(ad.critical_values[2]),
+               "normal": bool(ad.statistic < ad.critical_values[2]),
+               "n_below_4_5": int((means < 4.5).sum()),
+               "n_below_5_0": int((means < 5.0).sum()),
+               "locus_ci95_pp_at_mean_4_08": float(
+                   locus_ci(4.08, coef_pass, hist["mean"].values, hist.pass_pct.values)[0]),
+               "locus_ci95_pp_at_mean_6_00": float(
+                   locus_ci(6.00, coef_pass, hist["mean"].values, hist.pass_pct.values)[0]),
+           },
            "points": {}}
 for lab, mu, pa, tp in obs + [("EHU 2026 (model)", ehu26_mean, ehu26_pass, ehu26_top)]:
     summary["points"][lab] = {
