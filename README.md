@@ -9,7 +9,7 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 | Path | Content |
 |---|---|
 | `index.qmd`, `chapters/01…12-*.qmd` | The report: overview; data hunt; Euskadi series; Spain 2026; distributions; subjects/sittings/participation/groups; interpretation & 2027; literature; sources; log; methods & reproduction; the papers themselves (exam-content coding, day 2); sixteen years of one paper (EHU 2010–2026 inventory, marking rules, selection premium) |
-| `_quarto.yml`, `styles.scss`, `styles-dark.scss`, `assets/`, `references.bib`, `apa.csl` | Site configuration, theme, bibliography (45 entries) |
+| `_quarto.yml`, `styles.scss`, `assets/`, `references.bib`, `apa.csl` | Site configuration, theme (one stylesheet for both colour schemes, UPV/EHU palette), bibliography (45 entries) |
 | `_site/` | Rendered site (Quarto 1.7.32) |
 | `data/regional_fisica_found.csv` | **The consolidated regional Física dataset** located in this study (80 rows, with denominator, source type and URL) |
 | `data/found_clm_powerbi.csv`, `data/found_canarias_ull_powerbi.csv`, `data/found_canarias_ull_history.csv`, `data/found_canarias_ulpgc_powerbi.csv` | Transcriptions of the UCLM, ULL and ULPGC dashboards (Física 2021–2026, histograms, zeros, tens, means by sex) |
@@ -20,15 +20,16 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 | `data/analysis/` | All computed outputs; `results.json` holds every scalar quoted in the text |
 | `data/tables/` | Markdown tables included by the chapters (generated) |
 | `sources/raw/` | 37 downloaded documents (PDF/XLSX/HTML) · `sources/exams/` the 2025 and 2026 Física papers and corrector documents of nine communities (day 2) · `sources/exams_ehu_hist/` all EHU Física papers 2010–2026 and the PAU 2025 model documents · `sources/ministry/` 3 cubes · `sources/text/` extractions · `sources/agent_extractions/` the search agents' raw CSVs · `sources/source_registry.csv` |
-| `scripts/` | `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py`, `08_ehu_history.py` |
-| `plots/` | Ten figures, PNG (200 dpi) and SVG |
+| `scripts/` | `plot_style.py` (shared LaTeX figure style), `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py`, `08_ehu_history.py`, `09_shape_locus.py` |
+| `plots/` | Sixteen figures, PNG (200 dpi) and SVG, all matplotlib with LaTeX-typeset text |
 | `logs/WORK_LOG.md`, `logs/SEARCH_REPORTS.md` | Chronological log; the five search agents' full reports |
 
 ## Rebuild
 
 ```bash
 python3 scripts/01_build_ministry_panel.py && python3 scripts/02_analysis.py && python3 scripts/03_plots.py \
-  && python3 scripts/04_tables.py && python3 scripts/07_exam_coding.py && python3 scripts/08_ehu_history.py && python3 scripts/05_registry.py && quarto render
+  && python3 scripts/04_tables.py && python3 scripts/07_exam_coding.py && python3 scripts/08_ehu_history.py \
+  && python3 scripts/09_shape_locus.py && python3 scripts/05_registry.py && quarto render
 ```
 
 Python ≥ 3.10 with numpy, pandas, scipy, matplotlib; Quarto ≥ 1.4; no Jupyter needed (static includes).
@@ -36,7 +37,7 @@ Python ≥ 3.10 with numpy, pandas, scipy, matplotlib; Quarto ≥ 1.4; no Jupyte
 **A LaTeX installation is required for the figures.** Every figure is matplotlib with
 `text.usetex`, so all figure text is typeset by the same engine as the mathematics — the
 plotting scripts abort without `latex` and `dvipng` on `PATH`. All styling lives in
-`scripts/plot_style.py`; the three plotting scripts define none of their own. Check the
+`scripts/plot_style.py`; the four plotting scripts define none of their own. Check the
 toolchain with:
 
 ```bash

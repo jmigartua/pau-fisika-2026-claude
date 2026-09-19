@@ -1,0 +1,31 @@
+region,university,academic_year,year,sitting,subject,mean,source_note
+Canarias,ULL (Tenerife),2009-10,2010,ordinary,Física,5.2,"Histórico de nota media, dashboard ULL (labels read from chart; 1 decimal)"
+Canarias,ULL (Tenerife),2010-11,2011,ordinary,Física,5.6,same
+Canarias,ULL (Tenerife),2011-12,2012,ordinary,Física,5.1,same
+Canarias,ULL (Tenerife),2012-13,2013,ordinary,Física,5.7,same
+Canarias,ULL (Tenerife),2013-14,2014,ordinary,Física,6.1,same
+Canarias,ULL (Tenerife),2014-15,2015,ordinary,Física,5.6,same
+Canarias,ULL (Tenerife),2015-16,2016,ordinary,Física,5.7,same
+Canarias,ULL (Tenerife),2016-17,2017,ordinary,Física,5.2,same
+Canarias,ULL (Tenerife),2017-18,2018,ordinary,Física,5.3,same
+Canarias,ULL (Tenerife),2018-19,2019,ordinary,Física,3.5,same
+Canarias,ULL (Tenerife),2020-21,2021,ordinary,Física,5.9,"same; 2019-20 absent from the JUN axis (COVID year, ordinary sitting held in July)"
+Canarias,ULL (Tenerife),2021-22,2022,ordinary,Física,6.0,same
+Canarias,ULL (Tenerife),2022-23,2023,ordinary,Física,4.8,same
+Canarias,ULL (Tenerife),2023-24,2024,ordinary,Física,5.6,same
+Canarias,ULL (Tenerife),2024-25,2025,ordinary,Física,4.9,same
+Canarias,ULL (Tenerife),2025-26,2026,ordinary,Física,4.1,same
+Canarias,ULL (Tenerife),2012-13,2013,extraordinary,Física,3.4,"Histórico JUL"
+Canarias,ULL (Tenerife),2013-14,2014,extraordinary,Física,3.6,same
+Canarias,ULL (Tenerife),2014-15,2015,extraordinary,Física,2.9,same
+Canarias,ULL (Tenerife),2015-16,2016,extraordinary,Física,3.7,same
+Canarias,ULL (Tenerife),2016-17,2017,extraordinary,Física,3.0,same
+Canarias,ULL (Tenerife),2017-18,2018,extraordinary,Física,3.6,same
+Canarias,ULL (Tenerife),2018-19,2019,extraordinary,Física,3.6,same
+Canarias,ULL (Tenerife),2019-20,2020,extraordinary,Física,5.0,"same; JUL 2020 was the ordinary sitting of the COVID year"
+Canarias,ULL (Tenerife),2020-21,2021,extraordinary,Física,3.2,same
+Canarias,ULL (Tenerife),2021-22,2022,extraordinary,Física,3.4,same
+Canarias,ULL (Tenerife),2022-23,2023,extraordinary,Física,3.5,same
+Canarias,ULL (Tenerife),2023-24,2024,extraordinary,Física,4.1,same
+Canarias,ULL (Tenerife),2024-25,2025,extraordinary,Física,2.6,same
+Canarias,ULL (Tenerife),2025-26,2026,extraordinary,Física,3.3,same
