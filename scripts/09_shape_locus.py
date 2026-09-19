@@ -150,9 +150,9 @@ def locus_ci(xq, coef, xs, ys, deg=2):
 
 
 fig = plt.figure(figsize=(11.6, 7.4))
-gs = fig.add_gridspec(2, 2, height_ratios=[3.0, 1.25], hspace=0.42, wspace=0.22)
+gs = fig.add_gridspec(2, 2, height_ratios=[3.0, 1.35], hspace=0.46, wspace=0.22)
 axes = [fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])]
-ax_marg = fig.add_subplot(gs[1, :])
+margs = [fig.add_subplot(gs[1, 0]), fig.add_subplot(gs[1, 1])]
 grid = np.linspace(hist["mean"].min() - 0.15, hist["mean"].max() + 0.15, 200)
 ehu = hist[hist.ccaa == "País Vasco"].sort_values("year")
 obs = observed_2026()
@@ -182,7 +182,7 @@ OFFSETS = {
         # ULL label runs straight into the model label; both 2026 observations go
         # right, separated vertically.
         "ULL (Tenerife) 2026": (10, -13),
-        "ULPGC (Las Palmas) 2026": (16, 13),
+        "ULPGC (Las Palmas) 2026": (15, -7),
         "model": (-9, -22),
     },
 }
@@ -235,6 +235,10 @@ for ax, col, coef, sd, marker, ylab, title, ehu26_y, overlay in panels:
     ax.annotate("EHU 2026\n(fitted model)", (ehu26_mean, ehu26_y),
                 textcoords="offset points", xytext=OFFSETS[title]["model"],
                 fontsize=7.5, color=COL_MODEL, ha="right")
+    # The x-marginal is the same variable in both panels, so instead of drawing it
+    # twice the sparse end of it is marked here: only 2 of 187 region-years lie
+    # below 4.5, which is where all three 2026 cohorts fall.
+    ax.axvspan(grid[0], 4.5, color=COL_MODEL, alpha=0.055, lw=0, zorder=0)
     ax.set_xlabel("Mean Física mark, ordinary sitting")
     ax.set_ylabel(ylab)
     ax.set_title(title)
@@ -244,46 +248,70 @@ axes[0].legend(loc="upper left", fontsize=7.6)
 # in-figure note stays short and the full statement of sources, denominators and the
 # regime test lives in the Quarto caption (ThesisFigures T5/E5).
 # ---------------------------------------------------------------------------
-# Panel c — the marginal distribution of the x variable. Both panels above judge a
-# 2026 cohort by where it falls relative to a curve; how much that judgement is
-# worth depends on how many region-years actually sit at that mean. Very few do.
+# Panels c and d — the distribution of each joint panel's own y variable.
+#
+# These are deliberately NOT the distribution of the mean: that is the same
+# variable on both x axes, so drawing it under each panel would repeat one
+# histogram. The two y distributions are different quantities and they give
+# opposite answers, which is the reason to separate them. The pass rate sits in
+# the middle of a bounded scale and comes out symmetric; the 8–10 share is a tail
+# quantity pressed against zero and is strongly right-skewed. That asymmetry is
+# also why a residual quoted "in SD" is better behaved on the pass panel than on
+# the top-band panel, where the scatter it is normalised by is not symmetric.
 # ---------------------------------------------------------------------------
 means = hist["mean"].values
-sw = shapiro(means)
-ad = anderson(means, "norm")
-bins = np.arange(3.4, 8.9, 0.2)
-ax_marg.hist(means, bins=bins, color=COL_CLOUD, alpha=0.55, lw=0)
-# A normal with the same mean and SD, for comparison rather than as a fit.
-xs = np.linspace(bins[0], bins[-1], 400)
-ax_marg.plot(xs, norm.pdf(xs, means.mean(), means.std(ddof=1)) * len(means) * 0.2,
-             color=INK2, lw=1.2, label="normal, same mean and SD")
-# Where the 2026 cohorts sit, and how little supports the curve there.
-ax_marg.axvspan(bins[0], 4.5, color=COL_MODEL, alpha=0.07, lw=0)
-for mu, col in [(ehu26_mean, COL_MODEL)] + [(mu, COL_OBS) for _, mu, _, _ in obs]:
-    ax_marg.axvline(mu, color=col, lw=1.1, ymax=0.62)
 n_below = int((means < 4.5).sum())
-ax_marg.annotate(
-    "%d of %d region-years below 4.5;\nthe three 2026 cohorts sit here" % (n_below, len(means)),
-    xy=(4.2, ax_marg.get_ylim()[1] * 0.52), fontsize=7.5, color=COL_MODEL, ha="left")
-ax_marg.annotate(
-    "Shapiro–Wilk $p = %.5f$, Anderson–Darling $A^2 = %.2f$ (5 %% critical %.2f):\n"
-    "the means are not normal — skew $%+.2f$, excess kurtosis $%+.2f$."
-    % (sw.pvalue, ad.statistic, ad.critical_values[2], skew(means), kurtosis(means)),
-    xy=(0.985, 0.88), xycoords="axes fraction", fontsize=7.5, color=INK2,
-    ha="right", va="top")
-ax_marg.set_xlim(grid[0], grid[-1])
-ax_marg.set_xlabel("Mean Física mark, ordinary sitting")
-ax_marg.set_ylabel("Region-years")
-ax_marg.set_title("c. Where the evidence actually is: distribution of the 187 region-year means")
-ax_marg.legend(loc="upper left", fontsize=7.6)
+
+marginals = [
+    (margs[0], "pass_pct", np.arange(30, 100, 3.0), "Pass rate (% of presented)",
+     "c. Distribution of the pass rate", PASS_MARK),
+    (margs[1], "top", np.arange(0, 80, 3.0), "Share in the 8–10 band (%)",
+     "d. Distribution of the 8–10 band share", TOP_MARK),
+]
+
+normality = {}
+for axm, col, bins, xlab, title, marker in marginals:
+    v = hist[col].values
+    sw, ad = shapiro(v), anderson(v, "norm")
+    is_normal = bool(ad.statistic < ad.critical_values[2])
+    normality[col] = {"skew": float(skew(v)), "excess_kurtosis": float(kurtosis(v)),
+                      "shapiro_p": float(sw.pvalue), "anderson_A2": float(ad.statistic),
+                      "anderson_crit_5pct": float(ad.critical_values[2]),
+                      "normal_at_5pct": is_normal}
+    axm.hist(v, bins=bins, color=COL_CLOUD, alpha=0.55, lw=0)
+    xs = np.linspace(bins[0], bins[-1], 400)
+    width = bins[1] - bins[0]
+    axm.plot(xs, norm.pdf(xs, v.mean(), v.std(ddof=1)) * len(v) * width,
+             color=INK2, lw=1.2, label="normal, same mean and SD")
+    # Where the three 2026 cohorts fall on this quantity.
+    vals = ([pa for _, _, pa, _ in obs] + [ehu26_pass]) if col == "pass_pct" \
+        else ([tp for _, _, _, tp in obs] + [ehu26_top])
+    for val, colr in zip(vals, [COL_OBS, COL_OBS, COL_MODEL]):
+        axm.axvline(val, color=colr, lw=1.1, ymax=0.55)
+    axm.annotate(
+        "skew $%+.2f$, excess kurtosis $%+.2f$\n"
+        "Shapiro--Wilk $p = %s$, Anderson--Darling $A^2 = %.2f$ (5 %% crit. %.2f)\n"
+        "%s"
+        % (normality[col]["skew"], normality[col]["excess_kurtosis"],
+           ("%.3f" % sw.pvalue) if sw.pvalue >= 1e-3 else ("%.0e" % sw.pvalue),
+           ad.statistic, ad.critical_values[2],
+           "normality cannot be rejected" if is_normal else "not normal"),
+        xy=(0.97, 0.92), xycoords="axes fraction", fontsize=7.2,
+        color=INK2 if is_normal else COL_MODEL, ha="right", va="top")
+    axm.set_xlabel(xlab)
+    axm.set_ylabel("Region-years")
+    axm.set_title(title)
+    axm.legend(loc="upper left", fontsize=7.4)
 
 note = (
     "Ministry EPAU, Física, ordinary sitting, specific phase, 17 communities, "
-    "n = %d region-years.\n"
-    "Hollow markers: 2015–16, when Física could still be sat in the general phase. "
-    "The two regimes share one locus (pass p = %.2f, top band p = %.2f, excluding COVID)."
+    "n = %d region-years. Hollow markers in a and b: 2015–16, when Física could still "
+    "be sat in the general phase;\nthe two regimes share one locus (pass p = %.2f, top "
+    "band p = %.2f, excluding COVID). Tinted strip: only %d of %d region-years have a "
+    "mean below 4.5, where all three 2026 cohorts sit.\nPanels c and d show each joint "
+    "panel's own y variable — not the mean, which is the same variable on both x axes."
     % (len(hist), regimes["excluding_covid_2020_21"]["pass"]["p"],
-       regimes["excluding_covid_2020_21"]["top"]["p"])
+       regimes["excluding_covid_2020_21"]["top"]["p"], n_below, len(hist))
 )
 fig.text(0.005, 0.005, note, fontsize=7, color=MUTED, linespacing=1.5)
 fig.tight_layout(rect=[0, 0.03, 1, 1])
@@ -298,6 +326,7 @@ summary = {"n_region_years": int(len(hist)), "sd_pass_pp": sd_pass, "sd_top_pp":
                for r in inconsistent.itertuples()],
            "regime_change_2017": regimes,
            "presented_2015_2025": cohort,
+           "y_normality": normality,
            "mean_axis": {
                "skew": float(skew(means)), "excess_kurtosis": float(kurtosis(means)),
                "shapiro_p": float(sw.pvalue),

@@ -52,11 +52,29 @@
     "2015": 30839,
     "2025": 49010
   },
+  "y_normality": {
+    "pass_pct": {
+      "skew": 0.011160333060977114,
+      "excess_kurtosis": 0.3944193782068912,
+      "shapiro_p": 0.09551504254341125,
+      "anderson_A2": 0.5821284205270558,
+      "anderson_crit_5pct": 0.771,
+      "normal_at_5pct": true
+    },
+    "top": {
+      "skew": 1.2905332479537508,
+      "excess_kurtosis": 1.832738648496898,
+      "shapiro_p": 8.383013727630839e-10,
+      "anderson_A2": 5.804937634615641,
+      "anderson_crit_5pct": 0.771,
+      "normal_at_5pct": false
+    }
+  },
   "mean_axis": {
     "skew": 0.6037225952733428,
     "excess_kurtosis": 0.8798806025103127,
-    "shapiro_p": 0.00016519014025107026,
-    "anderson_A2": 2.063685926267908,
+    "shapiro_p": 8.383013727630839e-10,
+    "anderson_A2": 5.804937634615641,
     "anderson_crit_5pct": 0.771,
     "normal": false,
     "n_below_4_5": 2,
