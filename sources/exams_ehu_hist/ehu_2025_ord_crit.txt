@@ -1,0 +1,511 @@
+A.- 1
+Altura para órbita circular (H )
+Para que el satélite Galileo describa una órbita circular, la fuerza gravitatoria que actúa
+sobre él debe igualar la fuerza necesaria para mantener la aceleración normal debida al
+movimiento circular uniforme:
+                                                F gravitatoria =F normal
+
+                                                              G M Tierra m
+                                                                m v2
+Aplicando las expresiones correspondientes:                 2
+                                                              =
+                                            ( R Tierra + H ) R Tierra + H
+Donde:
+
+
+
+
+                  U
+                                                       G M Tierra m
+  •     F gravitatoria es la fuerza gravitatoria (                        2   ), según la ley de gravitación universal
+                                                       ( R Tierra + H )
+        de Newton.
+  •     F normal es la fuerza normal, que surge de la aceleración normal de un cuerpo en
+                                    m v2
+        movimiento circular (                 ).
+                                 R Tierra + H
+
+Simplificamos eliminando la masa del satélite m y reorganizamos para H :
+EH
+                    G M Tierra      2                       G M Tierra                 G M Tierra
+                                 =v        R Tierra + H =          2
+                                                                                  H=                − R Tierra
+                    R Tierra + H                               v                             v2
+Velocidad orbital (v)
+
+                                                                                             G M Tierra
+La velocidad orbital se determina utilizando la expresión: v=
+                                                                                         √   R Tierra + H
+
+                                        ( 6.67 ×10− 11 )( 5.98 ×1024 )
+Sustituyendo los valores: v=
+                                   √               6
+                                        6.37 ×10 +2.3222×10                   7
+                                                                                   v ≈ 3.671×103 m/ s=3,671 km/ s
+
+Energía total necesaria ( E total)
+La energía total necesaria es la suma del cambio en la energía potencial gravitatoria (Δ U ) y
+la energía cinética necesaria para mantener el movimiento circular ( E c ).
+                                                                                       G M Tierra m
+La energía potencial gravitatoria en un campo gravitatorio está dada por: U =−
+                                                                                           r
+El cambio en la energía potencial gravitatoria al mover el satélite desde la superficie
+( r=R Tierra ) hasta la altura H (r=R Tierra + H ) es: Δ U =U H −U s u p e r f i c i e
+                          ( 6.67 × 10− 11 )( 5.98 ×1024 ) ( 700 ) ( 6.67 ×10− 11 )( 5.98 ×1024 ) ( 700 )
+Sustituyendo: Δ U =−                                                   +
+                              6.37 ×106 +2.3222×107                                          6.37 ×106
+                                  Δ U =U H −U superficie ≈ 3.44 ×1010 J
+
+                                                                                  1    2
+La energía cinética necesaria para mantener el movimiento circular uniforme: E c = m v
+                                                                                  2
+                               1                 2
+Sustituyendo los valores: E c = ( 700 ) ( 3671 )         E c ≈ 4.72×109 J
+                               2
+La energía total necesaria para llevar el satélite a la altura H y ponerlo en órbita circular es:
+E total = Δ U + E c
+                                              10               9                         10
+Sustituyendo los valores: E total =3.44 × 10 +4.72 × 10             E total ≈ 3.91 × 10 J
+
+Periodo orbital (T )
+
+
+
+
+                      U
+Para obtener el período, aplicamos las leyes de Kepler y los conceptos de la dinámica
+gravitatoria. La tercera ley de Kepler establece que: T 2 ∝ r 3.
+
+                                                                                  r3
+Para un satélite en órbita circular, el periodo orbital es: T =2 π
+                                                                            √   G M Tierra
+                                                                                           .
+
+Cálculo
+     1. Radio de la órbita: r=R Tierra + H ,
+               sustituyendo: r=6.37 × 106 m+2.3222 × 107 m                r=2.9592 × 10 m
+                                                                                               7
+EH
+     2. Sustituyendo en al expresión del eríodo:
+                                                     3
+                                    ( 2.9592 ×107 )
+                      T =2 π
+                             √
+                             ( 6.67 ×10− 11 )( 5.98 ×1024 )
+                                                                   T ≈ 5.06 ×10 4 s ;
+
+                        5.06 ×10 4
+     3. En horas: T ≈              ≈ 14.06 horas
+                          3600
+B.- 1
+Campo magnético creado por cada corriente
+El campo magnético generado por un conductor rectilíneo largo se calcula mediante la ley
+                  μ I
+de Biot-Savart: B= 0
+                  2π r
+Usando la regla de la mano derecha:
+  •     El sentido del campo magnético es circular alrededor del conductor.
+
+  •     En la región entre ambos conductores, los campos magnéticos generados por cada
+        corriente tienen direcciones opuestas.
+Fuerza magnética entre los conductores
+
+
+
+
+                    U
+                                                                                                         μ0 I 1 I 2
+La fuerza magnética por unidad de longitud entre dos conductores paralelos: F / L=
+                                                                                                          2π d
+I 1 y I 2 son las corrientes en los conductores; d=0 , 06 m es la distancia entre los
+conductores. Dado que las corrientes tienen el mismo sentido, los conductores se atraerán.
+Campo magnético resultante en el punto medio
+En el punto medio de la línea que une ambos conductores (r=0 , 03 m para ambos
+conductores):
+EH
+                                          μ 0 I 1 4 π ⋅ 10− 7 ⋅ 9
+• Conductor con I 1=9 A es: B 1=                 =                =6 ⋅ 10− 5 T
+                                          2π r     2 π ⋅ 0 , 03
+                                            μ 0 I 2 4 π ⋅ 10− 7 ⋅ 15         −5
+• Conductor con I 2=15 A es: B 2=                  =                 =10 ⋅ 10 T
+                                            2π r      2 π ⋅ 0 , 03
+    En el punto medio, los campos tienen sentidos opuestos, por lo que el campo magnético
+                                                                    −5      −5
+    resultante es: B r e s u l t a n t e =B 2 − B 1= ( 10 − 6 ) ⋅ 10 =4 ⋅ 10 T
+
+Anulación del campo magnético entre los conductores
+En la región entre los conductores, el campo magnético se anula a una distancia r del
+conductor con I 1= 9 A . En este punto: B 1=B 2
+                                                       μ0 I 1   μ0 I 2        I1   I
+Sustituimos las expresiones para B 1 y B 2:                   =                  = 2
+                                                       2 π r 2 π (d −r )      r d −r
+                                                                     I1d         9 ⋅ 0 , 06 0 ,54
+Despejamos r : I 1 ( d − r ) =I 2 r   I 1 d=r ( I 1 + I 2 )   r=            ; r=           =      =0 , 0225 m
+                                                                   I 1+ I 2       9+15       24
+B.- 2
+El potencial eléctrico creado por una carga puntual q en un punto situado a una distancia r
+                   q
+de ella es: V =K ⋅ .
+                   r
+El potencial total en un punto es la suma algebraica de los potenciales creados por cada
+carga: V t o t a l =V A +V B .
+El campo eléctrico creado por una carga puntual q en un punto situado a una distancia r de
+               q
+ella es: ⃗
+         E =K ⋅ 2 ⋅ r^
+               r
+Donde r^ es el vector unitario en la dirección del punto respecto a la carga.
+
+
+
+
+                   U
+El campo total es la suma vectorial de los campos creados por cada carga: ⃗
+                                                                          Et o t a l=⃗
+                                                                                     EA+⃗
+                                                                                        EB
+
+Cálculo en el origen de coordenadas ( 0 , 0 )
+  1.    Distancias desde el origen a las cargas:
+
+          −    Distancia a q A : r A = √ ( − 4 )2 +02=4 c m=0 , 04 m.
+
+          −    Distancia a q B: r B = √ ( 4 )2 +02=4 c m=0 , 04 m.
+
+  2.    Potencial eléctrico en el origen:
+EH
+                   qA            5 ⋅ 10− 9                   q         9 −5 ⋅ 10
+                                                                                 −9
+        V A =K ⋅      =9 ⋅ 109 ⋅           =1125 V ; V B =K ⋅ B =9 ⋅ 10 ⋅           =−1125 V
+                   rA             0 , 04                     rB           0 , 04
+
+                                 V t o t a l =V A +V B =1125 − 1125=0 V
+
+  3.    Campo eléctrico en el origen:
+                                                      qA              5 ⋅ 10− 9
+          −    El campo creado por q A : E A =K ⋅      2
+                                                         =9 ⋅ 109 ⋅              2
+                                                                                   =28125 N /C
+                                                      rA              ( 0 , 04 )
+
+               Dirección: hacia fuera de q A , hacia la derecha (vector unitario i^ ).
+                                                      qB              −5 ⋅ 10− 9
+          −    El campo creado por q B : E B =K ⋅      2
+                                                         =9 ⋅ 109 ⋅               2
+                                                                                    =28125 N /C
+                                                      rB               ( 0 , 04 )
+
+               Dirección: hacia q B , hacia la derecha (vector unitario i^ ).
+
+          −    Campo total: ⃗
+                            Et o t a l=⃗
+                                       EA+⃗          ^
+                                          E B =28125 i+28125 ^
+                                                             i=56250 i^ N /C
+Cálculo en el punto ( 0 , 3 ) c m
+  1.   Distancias desde ( 0 , 3 ) c m a las cargas:
+
+          −      Distancia a q A : r A = √ ( − 4 )2 +32= √ 16+9=5 c m=0 , 05 m.
+
+          −      Distancia a q B: r B = √ ( 4 )2 +32= √ 16+9=5 c m=0 , 05 m.
+
+  2.   Potencial eléctrico en ( 0 , 3 ) c m:
+                    qA            5 ⋅ 10− 9                  q         9 −5 ⋅ 10
+                                                                                 −9
+        V A =K ⋅       =9 ⋅ 109 ⋅           =900 V ; V B =K ⋅ B =9 ⋅ 10 ⋅           =− 900 V
+                    rA             0 , 05                    rB           0 , 05
+
+                                      V t o t a l =V A +V B =900 − 900=0 V
+
+
+
+
+                    U
+  3.   Campo eléctrico en ( 0 , 3 ) c m:
+                                                             qA               5 ⋅ 10− 9
+          −      El campo creado por q A : E A =K ⋅            2
+                                                                 =9 ⋅ 109 ⋅              2
+                                                                                           =18000 N /C
+                                                             rA               ( 0 , 05 )
+
+                                                                                       (4 ,3)
+                 Dirección: desde q A hacia ( 0 , 3 ). Vector unitario: r^ A =                =( 0 , 8 , 0 , 6 )
+                                                                                         5
+                           ⃗                    ^ , 6 ^j ) = ( 14400 i^ , 1080 0 ^j ) N /C
+                           E A =18000 ⋅ ( 0 , 8 i+0
+
+                                                             qB
+EH
+          −      El campo creado por q B : E B =K ⋅                 =18000 N /C
+                                                             r 2B
+
+                                                                                             ( 4 ,− 3 )
+                 Dirección: hacia q B , hacia la carga (vector unitario): r^ B =                        = ( 0 , 8 ,− 0 , 6 )
+                                                                                                  5
+
+
+                          E B =18000 ⋅ ( 0 , 8 i^ − 0 , 6 ^j ) = ( 14400 i^ ,−10800 ^j ) N /C
+                          ⃗
+
+          −      Campo total:
+              ⃗
+              Et o t a l=⃗
+                         EA+⃗                     ^ ( 10800 −10800 ) ^j; ⃗
+                            E B = ( 14400+14400 ) i+                     E t o t a l =28800 i^ N /C
+C.- 1
+Para realizar el trazado de rayos:
+      •   Dibuja el espejo cóncavo y el eje principal.
+
+      •   Marca la posición del foco ( f =50 c m) y del centro de curvatura (C=2 f =100 c m).
+
+      •   Coloca el objeto en d o =25 c m.
+
+      •   Traza los rayos descritos y determina el punto donde se cruzan. Este es el lugar
+          donde se forma la imagen.
+
+
+Cálculo de la posición y tamaño de la imagen
+
+
+
+
+                    U
+                                                                            1 1 1
+  •       La posición de la imagen se calcula usando la ecuación del espejo: = +
+                                                                            f do di
+
+          Donde: f : distancia focal (50 c m); d o: distancia del objeto (25 c m); d i: distancia de la
+          imagen (a determinar).
+                                             1 1 1 1
+          Reorganizamos para despejar          : = −
+                                             di di f do
+
+                                     1 1     1        1 1     2  1
+EH
+          Sustituimos los valores:      = −              = − =− ∴ d i =−50 c m
+                                     d i 50 25        d i 50 50 50
+
+          El signo negativo indica que la imagen se forma del lado opuesto al objeto (imagen
+          virtual).
+
+
+                                                                                         hi   d
+  •       El tamaño de la imagen se calcula usando la relación de aumentos: M =             =− i
+                                                                                         ho   do
+
+          Donde: M : aumento;hi: altura de la imagen; ho : altura del objeto ( 1 cm ).
+
+                                             −50                  h
+          Sustituimos los valores: M =−          =2; Por lo tanto: i =2 ⟹ hi =2 c m
+                                              25                   1
+          La imagen tiene una altura de 2 c m y es virtual, derecha y ampliada.
+C.- 2
+Cálculo del número de onda k y la fase inicial ϕ 0
+  •     La relación entre la velocidad de propagación v , el número de onda k y la frecuencia
+                                         ω      ω         200 π π
+        angular ω=200 π r a d / s es: v=     k=      k=        = r a d /m
+                                         k      v          400 2
+  •     Para determinar ϕ 0, se usa la condición inicial y ( 0 , 0 ) =1.5 c m: y ( 0 , 0 ) =3 sen ( ϕ 0 ) =1.5
+
+                                                1.5                                           π
+        Despejamos sen ( ϕ 0 ): sen ( ϕ 0 ) =       =0.5; Por lo tanto: ϕ 0 =arcsin ( 0.5 ) =
+                                                 3                                            6
+        Además, se indica que la velocidad de oscilación en t =0 y x= 0 es positiva. La
+        velocidad de oscilación está dada por la derivada temporal de y ( x , t ):
+
+
+
+
+                   U
+                                    ∂y
+                                       =− 3 ⋅ 200 π cos ( k x − 200 π t +ϕ 0 )
+                                    ∂t
+                           ∂y
+        En x=0 y t =0:        ( 0 , 0 ) =− 3 ⋅ 200 π cos ( ϕ 0 )
+                           ∂t
+                                                                                        π 5π
+        Para que la velocidad sea positiva, cos ( ϕ 0 ) <0. Esto ocurre cuando: ϕ 0 =π − =
+                                                                                        6 6
+                              5π
+        Por lo tanto: ϕ 0 =
+EH
+                               6
+Aceleración máxima de oscilación
+La aceleración está dada por la segunda derivada temporal de y ( x , t ):
+
+                                   ∂2 y                 2
+                                      2
+                                        =− 3 ⋅ ( 200 π ) sen ( k x − 200 π t +ϕ 0 )
+                                   ∂t
+                                                                                                  2
+La aceleración máxima ocurre cuando sen ( k x − 200 π t +ϕ 0 ) =± 1: |am a x ) =3 ⋅ ( 200 π )
+
+Sustituimos los valores:
+
+|am a x )=3 ⋅ ( 200 π )2=3 ⋅ 40000 π 2 |am a x ) ≈ 3 ⋅ 40000 ⋅ 9.87=1.18 ⋅ 106 c m/ s2 |am a x ) ≈ 1.18 ⋅ 104 m/ s2
+D.- 1
+Comprobación del Efecto Fotoeléctrico
+El trabajo de extracción (Φ ) es la energía mínima necesaria para liberar un electrón de la
+superficie del metal. En nuestro caso, el trabajo de extracción es: Φ=2 , 29 eV
+Convertimos a Julios usando 1 eV=1 , 6 ⋅ 10− 19 J : Φ=2 , 29 ⋅ 1 , 6 ⋅ 10− 19 J=3 , 66 ⋅ 10− 19 J
+                                                                                     h⋅c
+La energía de la radiación incidente se calcula con : E fotón =
+                                                                                      λ
+
+                                   6 , 6 ⋅ 10− 34 ⋅ 3 ⋅ 108
+Sustituimos los valores: E fotón =                  −6
+                                                            =9 , 9 ⋅ 10− 19 J
+                                         0 , 2 ⋅ 10
+Para que se produzca el efecto fotoeléctrico, la energía del fotón debe ser mayor que el
+
+
+
+
+                   U
+trabajo de extracción: E fotón >Φ
+
+Comprobamos: 9 , 9 ⋅ 10− 19 J>3 , 66 ⋅ 10− 19 J Sí se produce el efecto fotoeléctrico.
+Velocidad de los Electrones Emitidos
+Una vez que el electrón es liberado, la energía cinética máxima ( E k ) del electrón se puede
+calcular con la diferencia entre la energía del fotón y el trabajo de extracción: E k =E fotón − Φ
+                                               − 19                     − 19                   − 19
+                             E k =9 , 9 ⋅ 10          J − 3 , 66 ⋅ 10          J=6 , 24 ⋅ 10          J
+EH
+                                                                         1                                                     2 Ek
+La velocidad se calcula usando la expresión de la energía cinética: E k = me v 2
+                                                                         2
+                                                                                                                      v=
+                                                                                                                           √    me
+
+                                      2 ⋅ 6 , 24 ⋅ 10− 19
+Sustituimos los valores: v=
+                                  √      9 ,1 ⋅ 10− 31
+                                                                v= √ 1 , 372 ⋅ 1012             v ≈ 1 , 2 ⋅ 106 m/s
+
+Frecuencia Umbral
+                                                                                                                 Φ
+La frecuencia umbral ( ν 0) se puede calcular con la ecuación: Φ=h ⋅ ν 0                                  ν 0=
+                                                                                                                 h
+
+                                   3 , 66 ⋅ 10− 19
+Sustituimos los valores: ν 0 =                              ν 0 ≈ 5 ,5 ⋅ 1014 Hz
+                                   6 , 6 ⋅ 10− 34
+Diferencia de Potencial para Detener los Electrones
+                                                                                         Ek
+El potencial de frenado (V s), se calcula con: e ⋅ V s =E k                       V s=
+                                                                                         e
+
+                                      6 , 24 ⋅ 10− 19
+Sustituimos los valores: V s =                              V s≈3,9 V
+                                       1 , 6 ⋅ 10− 19
+D.- 2
+Determinación del Trabajo de Extracción (Φ)
+En la primera medida, la longitud de onda de la luz incidente es λ=700 n m. La energía del
+                                                                    h⋅c
+fotón se puede calcular utilizando la siguiente ecuación: E fotón =
+                                                                     λ
+La energía del fotón está relacionada con el trabajo de extracción (Φ ) y la energía cinética
+máxima del electrón ( E k ) mediante la ecuación del efecto fotoeléctrico:
+                                  E fotón =Φ+ E k           Φ=E fotón − E k
+
+                                          h⋅c                          h⋅c
+Sustituimos la expresión de E fotón: Φ=       − Ek              Φ=         − Ek
+                                           λ                            λ1                       1
+
+
+
+
+                 U
+Frecuencia de la Luz Utilizada en la Segunda Medida
+En la segunda medida, tenemos una energía cinética máxima del electrón igual a
+E k =1 , 49 eV . La energía del fotón ahora se puede escribir como: E fotón =Φ+ E k
+
+                                                                     h⋅c
+Donde Φ ya lo tenemos en términos generales: Φ=                          − Ek
+                                                                      λ                     1
+
+
+
+
+Sustituimos Φ en la ecuación del fotón: E fotón 2=          ( hλ⋅ c − E )+ E
+                                                                 1
+                                                                                k1              k2
+EH
+  •     E k es la energía cinética máxima en la primera medida (0 , 45 eV ).
+          1
+
+
+
+
+  •     E k es la energía cinética máxima en la segunda medida (1 , 49 eV ).
+          2
+
+
+
+
+La frecuencia está relacionada con la energía mediante:
+                                      h⋅c
+
+E fotón 2=h ⋅ ν 2 ν 2=
+                       E fotón 2   (
+                                 ν 2=
+                                       λ1
+                                          − Ek + Ek
+                                                1
+                                                    )       2
+
+
+
+
+                          h                h
+Frecuencia Umbral ( ν 0)
+
+La frecuencia umbral ( ν 0) se relaciona con el trabajo de extracción (Φ) mediante la
+                                               h⋅c
+siguiente ecuación:
+                    Φ=h ⋅ ν 0 ν 0 =
+                                     Φ
+                                          ν 0=
+                                                 λ1
+                                                    − Ek
+                                                        (               1
+                                                                            )
+                                     h              h
+Sustitución de Valores y Cálculos Numéricos, si se hace uso del valor de h.
+
+                                                ( 6 , 63 ×10− 34 ) ⋅ ( 3 ×108 )
+  1.    Trabajo de Extracción (Φ ) E fotón =                                     −9
+                                                                                                     E fotón =2 , 84 ×10− 19 J
+                                                                700 ×10
+                                                                                     − 19
+        Convertimos E k de eV a julios: E k =0 , 45 ×1 , 6 ×10
+                                            1
+                                                                                            J=7 , 2×10− 20 J
+     Calculamos Φ : Φ=2 , 84 × 10− 19 J −7 , 2×10− 20 J=2 ,12×10− 19 J
+
+                                  2,12 ×10− 19
+     Convertimos Φ a eV: Φ=                    =1,33 eV
+                                  1,6 ×10− 19
+                                                                             − 19
+2.   Frecuencia en la segunda medida E k =1 , 49 ×1 , 6 ×10
+                                                 2
+                                                                                    J=2 , 38 ×10− 19 J
+                                              − 19                   − 19                   − 19
+               E fotón =Φ+ E k =2 , 12 × 10
+                             2
+                                                     J+2 , 38 × 10          J=4 , 50 × 10          J
+
+                                      E fotón 4 ,50 ×10− 19
+     Calculamos la frecuencia: ν=            =                =6 ,79 ×1014 Hz
+                                        h      6 , 63 ×10− 34
+
+                                 Φ 2 ,12 ×10− 19
+3.   Frecuencia Umbral ν 0 =      =               =3 , 20 ×1014 Hz
+                                 h 6 , 63 ×10− 34
+
+
+
+
+              U
+EH
+

@@ -1,0 +1,195 @@
+             UNIBERTSITATEAN                PRUEBA DE ACCESO A LA
+             SARTZEKO PROBA                     UNIVERSIDAD
+              2026ko EZOHIKOA                EXTRAORDINARIA 2026
+                   FISIKA                            FÍSICA
+
+
+                        AZTERKETARAKO ARGIBIDEAK
+ Proba idatzi honek 4 ariketa ditu.
+ 1. eta 2. ariketek ez dute aukerarik.
+ 3. eta 4. ariketek bi aukera dituzte (a eta b); bi aukeretako bat hautatu.
+ Jarraibideetan adierazitakoei baino galdera gehiagori erantzunez gero,
+ erantzunak ordenari jarraituta zuzenduko dira.
+ Ariketa bakoitzaren balioa 2,5 puntu da.
+ Kalkulagailu zientifikoa erabil daiteke.
+ Soilik erabil daitezke taulako eta enuntziatuetako datuak.
+
+
+
+
+   U      Ez ahaztu kodea azterketa-koaderno guztietan idaztea.
+
+
+                    INSTRUCCIONES PARA EL EXAMEN
+ La prueba escrita consta de 4 problemas.
+ Los problemas 1 y 2 no tienen opcionalidad.
+ Los problemas 3 y 4 tienen dos opciones (a y b); debes elegir una de
+ cada.
+EH
+ Si se responde a más cuestiones de las indicadas, se corregirán siguiendo el
+ orden.
+ El valor de cada problema es de 2.5 puntos.
+ Se puede utilizar calculadora científica.
+ Solo se pueden utilizar los datos de la tabla y de los enunciados.
+
+ No olvides incluir el código en cada uno de los cuadernillos de hojas de
+                                  examen.
+                             UNIBERTSITATEAN                PRUEBA DE ACCESO A LA
+                             SARTZEKO PROBA                     UNIVERSIDAD
+                             2026ko EZOHIKOA                 EXTRAORDINARIA 2026
+                                 FISIKA                                FÍSICA
+
+                                  DATOS Y CONSTANTES FÍSICAS
+𝐺𝐺=6.67 × 10−11 Nm2kg−2           𝑐𝑐=3.00 × 108 ms−1        ℎ=6.63 × 10−34 Js       1 año=3.16 × 107 s
+𝑀𝑀M =6.39 × 1023 kg               𝑞𝑞𝑒𝑒 =1.60 × 10−19 C      𝑚𝑚𝑒𝑒 =9.11 × 10−31 kg   𝐾𝐾=9.00 × 109 Nm2 C−2
+1 UA=1.50 × 1011 m                𝜇𝜇0 =4𝜋𝜋 × 10−7 T mA−1    1 u=1.66 × 10−27 kg     1 u=931.5 MeV/𝑐𝑐 2
+𝑅𝑅M =3.39 × 106 m                 𝑁𝑁𝐴𝐴 =6.02 × 1023 mol−1
+
+                                           BLOQUE A: Problema
+
+ 1.     Problema, BLOQUE A: Campo Gravitatorio
+        Este bloque consta de 1 problema. No tiene opcionalidad.
+
+
+
+
+   U
+ A1.- Una sonda de masa 𝑚𝑚=420 kg orbita Marte en dos fases: una órbita baja de
+      cartografía, ℎ1 =250 km; y una órbita alta de comunicaciones, ℎ2 =6000 km. Las
+      distancias se miden desde la superficie marciana.
+        a) Deduce, a partir de la ley de la gravitación universal y de la condición de
+           órbita circular, la expresión para el período orbital: (0.50 puntos)
+                      𝑟𝑟 3
+           𝑇𝑇=2𝜋𝜋� 𝜇𝜇 donde 𝜇𝜇=𝐺𝐺𝑀𝑀M . Indica las hipótesis del modelo.
+        b) (1.00 punto)
+EH
+            1. Calcula la intensidad del campo gravitatorio 𝑔𝑔(ℎ1 ), y exprésala como
+               fracción de 𝑔𝑔0 =9.8 ms−2 (valor en la superficie terrestre). (0.25 puntos)
+            2. Calcula la velocidad orbital y el periodo para ℎ1 =250 km. (0.50 puntos)
+            3. Razona, sin cálculos numéricos, si la velocidad y el período para
+               ℎ2 =6000 km serán mayores o menores que para ℎ1 . Justifica tu respuesta
+               usando 𝑣𝑣 ∝ 𝑟𝑟 −1/2 y 𝑇𝑇 ∝ 𝑟𝑟 3/2 . (0.25 puntos)
+        c) La tabla recoge datos orbitales de 4 objetos en torno a Marte: (1.00 punto)
+                  Objeto                        𝑟𝑟(106 m)               𝑇𝑇(103 s)
+                     A                              3.70                    6.85
+                     B                              9.50                    28.2
+                     C                              20.4                    88.6
+                     D                              6.30                    20.0
+                                  2 3
+            1. Comprueba si 𝑇𝑇 /𝑟𝑟 es aproximadamente constante y estima la masa de
+                Marte. (0.50 puntos)
+            2. Identifica el objeto que no se ajusta a la relación 𝑇𝑇 2 /𝑟𝑟 3. (0.25 puntos)
+            3. Usa la constante 𝑇𝑇 2 /𝑟𝑟 3 obtenida para predecir el periodo orbital para una
+                órbita circular de radio 𝑟𝑟=1.50 × 107 m alrededor de Marte. (0.25 puntos)
+
+
+
+
+                                           BLOQUE B: Problema
+                     UNIBERTSITATEAN                 PRUEBA DE ACCESO A LA
+                     SARTZEKO PROBA                      UNIVERSIDAD
+                     2026ko EZOHIKOA                  EXTRAORDINARIA 2026
+                           FISIKA                              FÍSICA
+
+ 2.   Problema, BLOQUE B: Campo Electromagnético
+      Este bloque consta de 1 problema. No tiene opcionalidad.
+
+ B1.- Un espectrómetro de masas identifica iones por su relación carga/masa:
+      primero, los selecciona por velocidad; y, luego, los desvía con un campo
+      magnético.
+      Selector de velocidades. Los iones positivos entran con velocidad horizontal 𝑣𝑣⃗
+      hacia la derecha. En esa región actúan dos campos uniformes, perpendiculares
+      entre sí y a la velocidad del ion, con módulos: |𝐸𝐸�⃗ |=3.0 × 104 V/m, y |𝐵𝐵
+                                                                                �⃗ |=0.15 T.
+      Toma 𝐵𝐵�⃗ saliendo del plano del papel.
+      Región de deflexión. En esta región, solo actúa un campo magnético uniforme
+      de módulo �𝐵𝐵 �⃗ ′ � = 0.5 T, perpendicular a la velocidad de entrada; aquí los iones
+      describen trayectorias circulares.
+
+
+
+
+   U  Para calibrar el espectrómetro, se estudia un ion positivo de carga 𝑞𝑞=|𝑞𝑞𝑒𝑒 |, y de
+      masa 𝑚𝑚=1.0 × 10−25 kg.
+      a) En el selector de velocidades: (1.00 punto)
+          1. Escribe la expresión vectorial de la fuerzas eléctrica y magnética sobre
+              un ion de velocidad 𝑣𝑣⃗. Indica en un esquema las direcciones y los
+              sentidos de los vectores 𝐸𝐸�⃗ , 𝐵𝐵
+                                              �⃗ y 𝑣𝑣⃗. (0.50 puntos)
+          2. Justifica la condición para que un ion no se desvíe, y deduce el módulo
+EH
+              𝑣𝑣0 de la velocidad seleccionada. (0.25 puntos)
+          3. Calcula 𝑣𝑣0 . (0.25 puntos)
+      b) En la región de deflexión: describe la fuerza que actúa sobre los iones, y el
+         tipo de trayectoria de los iones; y justifica por qué se trata de ese movimiento
+         e indica una hipótesis simplificadora del modelo utilizado. (0.50 puntos)
+      c) En la región de deflexión: (1.00 punto)
+           1. Calcula el radio de la trayectoria circular del ion de calibración al entrar
+              con velocidad 𝑣𝑣0 . (0.50 puntos)
+           2. Explica cómo la medida del radio permite determinar la relación
+              carga/masa de iones desconocidos, manteniendo fijos 𝐸𝐸, 𝐵𝐵 y 𝐵𝐵′. (0.50
+              puntos)
+
+                                 BLOQUES C y D: Problemas
+
+ 3.   Problema, BLOQUE C: Vibraciones y Ondas, y Óptica
+      Este bloque consta de 2 problemas. Debes responder solo a uno.
+
+ C1.- Una masa 𝑚𝑚=0.30 kg se encuentra sobre un plano horizontal sin rozamiento
+      unida a un muelle horizontal. El sistema describe un movimiento vibratorio
+      armónico. La energía cinética máxima de la masa es 𝐾𝐾máx =15 J.
+      Se sabe que la distancia entre las dos posiciones extremas (aquellas en las
+      que la velocidad de la masa es nula) es de 50cm.
+      a) Calcula la amplitud 𝐴𝐴 del movimiento, la frecuencia angular 𝜔𝜔 y el período 𝑇𝑇.
+         (1.00 punto)
+                   UNIBERTSITATEAN                 PRUEBA DE ACCESO A LA
+                   SARTZEKO PROBA                      UNIVERSIDAD
+                    2026ko EZOHIKOA                EXTRAORDINARIA 2026
+                          FISIKA                            FÍSICA
+
+      b) Determina la constante elástica 𝑘𝑘 del muelle. (0.50 puntos)
+      c) Determina la posición, la velocidad y la aceleración de la masa en el instante
+         𝑡𝑡=3 s, sabiendo que en 𝑡𝑡=0 la masa tiene su energía cinética máxima y se
+         mueve en el sentido positivo del eje 𝑥𝑥. (1.00 punto)
+
+ C2.- Se dispone de una lente delgada convergente de distancia focal 𝑓𝑓.
+      a) Se sitúa un objeto sobre el eje óptico a una distancia 4𝑓𝑓 a la izquierda del
+         centro óptico de la lente. (1.00 punto)
+          1. Realiza el trazado de rayos para obtener la imagen.
+          2. Indica las propiedades de la imagen: real o virtual; derecha o invertida;
+             mayor, menor o igual que el objeto.
+      b) Obtén, a partir de la ecuación de lentes y del aumento lateral, la posición de
+
+
+
+
+   U     la imagen y el cociente |ℎi /ℎo |, en función de 𝑓𝑓. (0.50 puntos)
+      c) Se repite la experiencia situando ahora el objeto a una distancia 𝑓𝑓/2 a la
+         izquierda del centro óptico. (1.00 punto)
+          1. Realiza el trazado de rayos.
+          2. Discute las propiedades de la imagen (real/virtual, derecha/invertida,
+             tamaño relativo).
+      Nota: puede utilizarse cualquiera de los convenios de signos (DIN/cartesiano o
+      Gauss/real-positivo), siempre que se aplique de forma coherente.
+EH
+ 4.   Problema, BLOQUE D: Física Nuclear y de Partículas
+      Este bloque consta de 2 problemas. Debes responder solo a uno.
+
+ D1.- Sobre la superficie de un metal incide radiación electromagnética formada por
+      fotones de longitud de onda 𝜆𝜆=500 nm. La longitud de onda umbral
+      correspondiente a ese metal es 𝜆𝜆um =612 nm.
+      a) Decide si, con esa radiación incidente, se emiten o no electrones desde el
+         metal. Justifica tu respuesta. (0.50 puntos)
+      b) En caso de que se produzca emisión, calcula la velocidad máxima de los
+         electrones arrancados. (1.00 punto)
+      c) Supón ahora que el trabajo de extracción del metal se hace el doble del valor
+         anterior. Determina la frecuencia mínima que debe tener la radiación
+         incidente para que se siga produciendo emisión fotoeléctrica. (1.00 punto)
+
+ D2.- La masa de un núcleo de 239 Pu (plutonio) es 239.05 u y su periodo de semi-
+      desintegración es 24200 años. Determina:
+      a) La constante de desintegración 𝜆𝜆. (0.50 puntos)
+      b) La actividad de una muestra de 1.0 mg de 239 Pu. (1.00 punto)
+      c) El tiempo necesario para que quede el 25% de los núcleos de la muestra
+         anterior. (1.00 punto)
+

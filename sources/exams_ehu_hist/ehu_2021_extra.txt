@@ -1,0 +1,404 @@
+Física
+
+ EAU 2021
+www.ehu.eus
+                          UNIBERTSITATERA SARTZEKO           EVALUACIÓN PARA EL
+                                 EBALUAZIOA                ACCESO A LA UNIVERSIDAD
+                                 2021eko UZTAILA                    JULIO 2021
+
+
+                                      FISIKA                          FÍSICA
+
+
+Proposatutako zortzi ariketa hauetako LAUri erantzun behar diezu.
+Ez ahaztu azterketa-orrialde bakoitzean kodea jartzea.
+
+        •   Proba idatzi honek 8 ariketa ditu.
+        •   Ariketak bi multzotan banatuta daude:
+            A multzoa: lau problema ditu, eta 2 ebatzi behar dituzu.
+            B multzoa: lau galdera ditu, eta 2ri erantzun behar diezu.
+            Jarraibideetan adierazitakoei baino galdera gehiagori
+            erantzunez gero, erantzunak ordenari jarraituta zuzenduko
+            dira, harik eta beharrezko kopurura iritsi arte.
+
+        •   Problema bakoitzak 3 puntu balio du. Problemen atal guztiek balio
+            berdina dute. Atal bakoitzaren emaitzak, zuzena zein okerra izan, ez
+                      21
+            du izango inolako eraginik beste ataletako emaitzen balioespenean.
+
+        •   Galdera bakoitzak, gehienez, 2 puntu balio du.
+        •   Kalkulagailu zientifikoa erabil daiteke.
+
+
+Debes responder a CUATRO de los siguientes ocho ejercicios
+   20
+propuestos.
+No olvides incluir el código en cada una de las hojas de examen.
+
+
+        •   Esta prueba escrita se compone de 8 ejercicios.
+        •   Los ejercicios están distribuidos en dos bloques:
+            Bloque A: consta de cuatro problemas, debes responder 2 de
+            ellos.
+            Bloque B: consta de cuatro cuestiones, debes responder 2 de
+            ellas.
+            En caso de responder a más preguntas de las estipuladas, las
+            respuestas se corregirán en orden hasta llegar al número
+            necesario.
+        •   Cada problema tiene un valor de 3 puntos. Todos los apartados de
+            cada ejercicio tienen igual valor. El resultado, correcto o incorrecto,
+            de cada apartado no influirá en la valoración de los restantes.
+
+        •   Cada cuestión se valora en un máximo de 2 puntos.
+        •   Puede utilizarse una calculadora científica.
+                            UNIBERTSITATERA SARTZEKO              EVALUACIÓN PARA EL
+                                   EBALUAZIOA                   ACCESO A LA UNIVERSIDAD
+                                   2021eko UZTAILA                       JULIO 2021
+
+
+                                        FISIKA                             FÍSICA
+
+
+                            BLOQUE A: Problemas
+                    (Consta de cuatro problemas, debes resolver 2)
+
+
+
+
+ A1.- Un satélite artificial de 700 kg y
+ que se encuentra en una órbita circular
+ precisa de 48 horas para completar
+ una vuelta en torno a la Tierra.
+
+ Calcula:
+                        21
+   a) A qué altura se encuentra el satélite, respecto a la superficie terrestre.
+   b) La aceleración del satélite en la órbita en la que está.
+   c) El período del satélite si se sitúa éste respecto a la superficie de la Tierra
+   a una distancia el doble del radio de la Tierra.
+Datos:
+    20
+𝐺𝐺 = 6,67 × 10−11 N ⋅ m2 ⋅ kg −2 ; 𝑀𝑀Tierra = 5,97 × 1024 kg; 𝑅𝑅Tierra = 6370 km
+
+
+ A2.- Tres cargas, 𝑞𝑞1 = −4 nC y 𝑞𝑞2 =
+ 𝑞𝑞3 = 2 nC, se encuentran colocadas
+ en tres de los vértices de un
+ cuadrado de lado 60 cm (como se
+ indica en la figura).
+
+ Calcula:
+
+   a) El campo electrostático (módulo, dirección y sentido) en el punto 𝐴𝐴 (en
+   el cuarto vértice).
+   b) El potencial electrostático (𝑉𝑉) en el punto 𝐴𝐴 .
+   c) El trabajo que hay que hacer para llevar una cuarta carga (𝑞𝑞4 = 30 nC)
+   desde el centro del cuadrado hasta el punto 𝐴𝐴.
+
+Datos:
+𝐾𝐾 = 9 × 109 N ⋅ m2 ⋅ C−2
+                                        UNIBERTSITATERA SARTZEKO       EVALUACIÓN PARA EL
+                                               EBALUAZIOA            ACCESO A LA UNIVERSIDAD
+                                                   2021eko UZTAILA          JULIO 2021
+
+
+                                                           FISIKA            FÍSICA
+
+
+
+A3.- La ecuación de una onda es la siguiente: 𝑦𝑦 = 0,6𝑠𝑠𝑠𝑠𝑠𝑠(18𝜋𝜋 ⋅ 𝑡𝑡 − 2𝜋𝜋 ⋅ 𝑥𝑥), en el
+SI de unidades. Calcula:
+
+   a) La velocidad de propagación de la onda
+   b) La velocidad de vibración del punto 𝑥𝑥 = 3 m, en el instante 𝑡𝑡 = 8 s.
+   c) En ese mismo punto, la aceleración máxima del movimiento de vibración.
+
+A4.- Un rayo de luz, de longitud de onda 600 nm, incide con un ángulo de
+incidencia de 30º sobre un cristal de doble cara de grosor de 3 cm.
+
+   a) Obtén el ángulo que forma con respecto a la normal el rayo refractado.
+                                  21
+   b) ¿Cuánto vale la velocidad de la luz mientras atraviesa el cristal?
+   c) Calcula el tiempo que necesita la luz en atravesar el cristal.
+Datos:
+               𝑚𝑚
+𝑐𝑐 = 3 · 108   𝑠𝑠
+                    ; 𝑛𝑛𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎 = 1; 𝑛𝑛𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 = 1,5
+    20
+                                       BLOQUE B: Cuestiones
+                (Consta de cuatro cuestiones, debes responder a 2 de ellas)
+
+
+B1.- Reflexión y refracción de ondas: concepto, índice de refracción, leyes…
+Conceptos de ángulo límite y reflexión total.
+
+B2.- Cámara fotográfica. Descripción. Esquema de la formación de imágenes.
+
+B3.- Fuerza ejercida dentro de un campo magnético uniforme:
+   a) Sobre una carga puntual en movimiento (ejemplo: trayectoria cuando la
+   velocidad de la carga es perpendicular al campo).
+   b) Sobre un conductor lineal de corriente eléctrica.
+
+B4.- Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein.
+Frecuencia umbral. Trabajo de extracción.
+                                                                                                                     UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                                                               EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                                                        CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                                                       ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+
+
+
+                                                                    RESOLUCIÓN
+BLOQUE A:Problemas
+A1.-RESOLUCIÓN
+
+a) Para calcular la altura
+
+         La fuerza gravitatoria de atracción que ejerce la Tierra sobre el satélite es igual
+                                                  21
+         a la fuerza centrípeta que actúa sobre el satélite
+                                                                            𝑀𝑀𝐿𝐿 ·𝑚𝑚𝑠𝑠
+        •         Fuerza de la gravedad 𝐹𝐹 = 𝐺𝐺                                                      Fuerza centrípeta 𝐹𝐹 = 𝑚𝑚𝑠𝑠 · 𝑎𝑎𝑛𝑛
+                                                                                 𝑅𝑅 2
+
+                                    𝑀𝑀𝐿𝐿 ·𝑚𝑚𝑠𝑠
+Son iguales                   𝐺𝐺                 = 𝑚𝑚𝑠𝑠 · 𝑎𝑎𝑛𝑛
+                                       𝑅𝑅 2
+        20
+                              𝑣𝑣 2                      4·𝜋𝜋 2 ·𝑅𝑅 2       4·𝜋𝜋 2 ·𝑅𝑅
+Además 𝑎𝑎𝑛𝑛 =                            ⟹ 𝑎𝑎𝑛𝑛 =                      =                 después de sustituir
+                               𝑅𝑅                         𝑅𝑅·𝑇𝑇 2               𝑇𝑇 2
+
+
+     𝑀𝑀𝐿𝐿 ·𝑚𝑚𝑠𝑠             4·𝜋𝜋 2 ·𝑅𝑅                     𝐺𝐺·𝑀𝑀𝐿𝐿 ·𝑇𝑇 2                    3   𝐺𝐺·𝑀𝑀 ·𝑇𝑇 2
+𝐺𝐺                 𝑚𝑚𝑠𝑠 ·                 ⟹ 𝑅𝑅 3 =                          ⟹ 𝑅𝑅 = � 4·𝜋𝜋𝐿𝐿 2
+        𝑅𝑅 2                   𝑇𝑇 2                           4·𝜋𝜋2
+
+
+En este caso:
+
+            3
+                      −11     2      2           24                                                            3600𝑠𝑠 2
+            �6,67 · 10 𝑁𝑁 · 𝑚𝑚 · 𝑘𝑘𝑘𝑘 · 5,97 · 10 𝑘𝑘𝑘𝑘 �48𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜 ·                                          1 · 𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜
+                                                                                                                           �
+𝑅𝑅 =
+                                                                       4 · 𝜋𝜋 2
+                              = 67031041,63𝑚𝑚
+
+𝑅𝑅 = 67031 km
+
+𝑅𝑅 = 𝑅𝑅𝐿𝐿 + ℎ ⇒ ℎ = 𝑅𝑅 − 𝑅𝑅𝐿𝐿 = 67031𝑘𝑘𝑘𝑘 − 6370𝑘𝑘𝑘𝑘 = 60661𝑘𝑘𝑘𝑘
+
+b) Para calcular la aceleración:
+                    𝑀𝑀 ·𝑚𝑚                                                 𝑀𝑀
+       𝐺𝐺 𝐿𝐿𝑅𝑅2 𝑠𝑠 = 𝑚𝑚𝑠𝑠 · 𝑎𝑎𝑛𝑛 ⇒ 𝑎𝑎𝑛𝑛 = 𝐺𝐺 𝑅𝑅2𝐿𝐿
+En este caso:
+                                                                                        UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                                  EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                             CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                            ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+                                                           5,97·1024 𝑘𝑘𝑘𝑘         𝑚𝑚
+             𝑎𝑎𝑛𝑛 = 6,67 · 10−11 𝑁𝑁 · 𝑚𝑚2 · 𝑘𝑘𝑘𝑘2 (67031·103 𝑘𝑘𝑘𝑘)2 = 0,09 𝑠𝑠2
+
+c) Periodo
+
+ℎ = 2 · 𝑅𝑅𝐿𝐿             ⟹ 𝑅𝑅 = 3 · 𝑅𝑅𝐿𝐿
+
+Teniendo en cuenta la ley de Kepler
+
+         𝐺𝐺·𝑀𝑀𝐿𝐿 ·𝑇𝑇 2                   𝑅𝑅 3 ·4·𝜋𝜋2            2   𝑅𝑅 3 ·4·𝜋𝜋2
+𝑅𝑅 3 =                      ⟹ 𝑇𝑇 2 = 𝐺𝐺·𝑀𝑀             ⟹ 𝑇𝑇 = � 𝐺𝐺·𝑀𝑀
+            4·𝜋𝜋2                               𝐿𝐿                          𝐿𝐿
+
+
+En este caso:
+
+     2               (3·6370·103 𝑚𝑚)3 ·4·𝜋𝜋2
+𝑇𝑇 = �6,67·10−11 𝑁𝑁·𝑚𝑚2 ·𝑘𝑘𝑘𝑘−2 ·5,95·1024𝑘𝑘𝑘𝑘 = 26348,11𝑠𝑠 = 7,3horas
+
+A2.-RESOLUCIÓN
+DATOS
+                                     21
+q1 = -4 nC
+ q2 = q3 = 2 nC,
+Lado Del cuadrado: 60cm-ko
+k= 9.109 Nm2C-2
+a) Campo eléctrico en el punto A
+    20
+           ����⃗
+           𝐸𝐸𝐴𝐴 = ����⃗
+                  𝐸𝐸1 + ����⃗ ����⃗3
+                        𝐸𝐸2 + 𝐸𝐸
+La expresión grafica
+
+
+
+
+           Teniendo en cuenta la expresión del módulo del campo magnético y las
+           distancias de cada carga al punto A
+
+
+                              𝑞𝑞
+              �𝐸𝐸�⃗ � = 𝐾𝐾 · 𝑑𝑑2
+
+              𝑑𝑑1 = �(0,6𝑚𝑚)2 + (0,6𝑚𝑚)2 = √0,72𝑚𝑚
+                                                                                       UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                                 EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                         CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                        ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+
+
+        Por otra lado, los campos eléctricos hay que poner en forma vectorial
+                                                                                   𝑁𝑁
+        𝐸𝐸         4·10−9     𝑁𝑁    ⇒ ����⃗
+                                      𝐸𝐸1 = 50(𝑐𝑐𝑐𝑐𝑐𝑐2250 𝚤𝚤⃗ + 𝑠𝑠𝑠𝑠𝑠𝑠2250 𝚥𝚥⃗) 𝐶𝐶
+          1=9·109          =50
+                  (√0,72)2     𝐶𝐶
+
+
+        𝐸𝐸        2·10−9    𝑁𝑁          ⇒    ����⃗2 = 50𝚤𝚤⃗ 𝑁𝑁 𝐸𝐸
+                                             𝐸𝐸                         2·10−9    𝑁𝑁     ⇒ ����⃗
+                                                                                           𝐸𝐸3 = 50𝚥𝚥⃗ 𝐶𝐶
+                                                                                                         𝑁𝑁
+          2=9·109        =50                                𝐶𝐶  3=9·109        =50
+                   0,602     𝐶𝐶                                          0,602     𝐶𝐶
+
+        En el punto A, el campo eléctrico resultante
+                                                  𝑁𝑁
+        ����⃗
+        𝐸𝐸𝑇𝑇 = −35,36𝚤𝚤⃗ − 35,36𝚥𝚥⃗ +50𝚤𝚤⃗ +50𝚥𝚥⃗ 𝐶𝐶
+
+        ����⃗𝑇𝑇 = 14.64𝚤𝚤⃗ +14,64𝚥𝚥⃗𝑁𝑁⁄𝐶𝐶
+        𝐸𝐸
+        Entonces, el módulo del campo en el punto A
+                                                       𝑁𝑁
+        𝐸𝐸𝑇𝑇 = �14,462 + 14,462 = 20,45 𝐶𝐶
+                              21
+b) Potencial eléctrico en el punto A:
+                                  𝑞𝑞1 𝑞𝑞2 𝑞𝑞3          −4 ⋅ 10−9 2 ⋅ 10−9 2 ⋅ 10−9
+ 𝑉𝑉𝐴𝐴 = 𝑉𝑉1 + 𝑉𝑉2 + 𝑉𝑉3 = 𝑘𝑘 �       + + � = 9 ⋅ 109 �           +       +         �
+                                  𝑑𝑑1 𝑑𝑑2 𝑑𝑑4          �2 ⋅ 0,62    0,6      0,6
+
+                       −4                4
+        𝑉𝑉𝐴𝐴 = 9 �                  +      � = 17.57𝑉𝑉
+                                        0,6
+    20
+                     �2 ⋅ 0,62
+c) El trabajo que hay que realizar para llevar una cuarta carga desde el centro del
+cuadrado al punto A:
+        𝑊𝑊 = 𝑞𝑞4 (𝑉𝑉𝐶𝐶 − 𝑉𝑉𝐴𝐴 )
+                   𝑞𝑞1 𝑞𝑞2 𝑞𝑞3    9
+                                    −4 ⋅ 10−9 2 ⋅ 10−9 2 ⋅ 10−9
+        𝑉𝑉𝐶𝐶 = 𝑘𝑘 � + + � = 9 ⋅ 10 �         +        +         �
+                   𝑑𝑑1 𝑑𝑑2 𝑑𝑑3         𝑑𝑑1       𝑑𝑑2      𝑑𝑑3
+        𝑑𝑑1 = 𝑑𝑑2 = 𝑑𝑑3
+                 Por lo tanto, 𝑉𝑉𝐶𝐶 = 0
+        𝑊𝑊 = −𝑞𝑞4 𝑉𝑉𝐴𝐴 = −30 ⋅ 10−9 ⋅ 17,57 = −5,27 ⋅ 10−7 𝐽𝐽
+El trabajo a realizar para llevar una carga positiva del punto C al punto A es
+negativo. Eso quiere decir que es trabajo realizado en contra del campo.
+
+
+A3.- RESOLUCIÓN
+
+a) Velocidad de propagación de la onda
+La expresión general de la ecuación de onda 𝑦𝑦(𝑥𝑥, 𝑡𝑡) = 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝑘𝑘𝑘𝑘 ± 𝜔𝜔𝜔𝜔 + 𝜑𝜑)
+                                                                                                             UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                                                       EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                                         CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                                        ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+𝑦𝑦(𝑥𝑥, 𝑡𝑡) = 0,6𝑠𝑠𝑠𝑠𝑠𝑠(18𝜋𝜋𝜋𝜋 − 2𝜋𝜋𝜋𝜋) en unidades SI
+Comparando las dos ondas
+       2𝜋𝜋                                         2𝜋𝜋             1
+𝜔𝜔 = 𝑇𝑇 = 18𝜋𝜋 ⟹ 𝑇𝑇 = 18𝜋𝜋 = 9 𝑠𝑠
+       2𝜋𝜋                                   2𝜋𝜋
+𝑘𝑘 = 𝜆𝜆 = 2𝜋𝜋 ⟹ 𝜆𝜆 = 2𝜋𝜋 = 1𝑚𝑚
+                                                                                             𝜆𝜆
+La expresión de la velocidad de propagación                                        𝑣𝑣 = 𝑇𝑇
+                                                                             𝜆𝜆     1𝑚𝑚           𝑚𝑚
+Por tanto, la velocidad de propagación 𝑣𝑣 =                                       = 1 = 9 𝑠𝑠
+                                                                             𝑇𝑇         𝑠𝑠
+                                                                                    9
+
+b) Velocidad de vibración en el punto x = 3m y en el intervalo t = 8s
+               𝑑𝑑𝑑𝑑
+𝑣𝑣(𝑥𝑥, 𝑡𝑡) = 𝑑𝑑𝑑𝑑 = 0,6 ⋅ 18𝜋𝜋𝜋𝜋𝜋𝜋𝜋𝜋(18𝜋𝜋 · 𝑡𝑡 − 2𝜋𝜋 · 𝑥𝑥)
+
+𝑣𝑣(3,8) = 10,8𝜋𝜋𝜋𝜋𝜋𝜋𝜋𝜋(18𝜋𝜋 · 8 − 2𝜋𝜋 · 3) = 10,8𝜋𝜋 = 33.93 𝑚𝑚⁄𝑠𝑠
+c) Aceleración máxima
+
+𝑎𝑎 =
+       𝑑𝑑𝑑𝑑
+       𝑑𝑑𝑑𝑑
+                                              21
+            = −0,6(18𝜋𝜋)2 𝑠𝑠𝑠𝑠𝑠𝑠(18𝜋𝜋𝜋𝜋 − 2𝜋𝜋𝜋𝜋)
+
+para que la aceleración sea máxima:                                    𝑠𝑠𝑒𝑒𝑒𝑒(18𝜋𝜋𝜋𝜋 − 2𝜋𝜋𝜋𝜋) = ±1
+ 𝑎𝑎𝑚𝑚𝑚𝑚𝑚𝑚 = ±194,4𝜋𝜋 2 m/s2
+                       𝑚𝑚
+|𝑎𝑎𝑚𝑚𝑚𝑚𝑚𝑚 | = 194,4𝜋𝜋 2 2
+       20
+                       𝑠𝑠
+
+
+A4.-RESOLUCIÓN
+a) Localizar el ángulo del rayo refractado con respecto a la normal
+
+
+             𝑛𝑛1 𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 = 𝑛𝑛2 𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠
+                                                                       0,5
+              1 𝑠𝑠𝑠𝑠𝑠𝑠30 = 1,5𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 ⟹ 𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 = 1,5
+                                       0,5
+             𝑟𝑟 = 𝑠𝑠𝑠𝑠𝑠𝑠−1 1,5
+
+             𝑟𝑟 = 19,470
+
+
+b) ¿Cuál es la velocidad de la luz mientras atraviesa el cristal?
+                      𝑐𝑐                                 𝑐𝑐
+              𝑛𝑛 = 𝑣𝑣            ⟹           𝑣𝑣 = 𝑛𝑛
+                                 𝑚𝑚
+                      3·108                                   𝑚𝑚
+             𝑣𝑣 =                 𝑠𝑠
+                                       = 2 · 108 𝑠𝑠
+                           1,5
+                                                                                 UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                           EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                              CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                             ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+c) Calcular el tiempo que necesita la luz para atravesar el cristal
+          𝑑𝑑
+𝐴𝐴𝐴𝐴 =
+       𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐
+          0,03𝑚𝑚
+𝐴𝐴𝐴𝐴 =           0 = 0,032 m
+          𝑐𝑐𝑐𝑐𝑠𝑠19,47
+       𝐴𝐴𝐴𝐴                0,032𝑚𝑚
+𝑣𝑣 = 𝑡𝑡        ⟹ 𝑡𝑡 =              𝑚𝑚    = 0,016 · 10−8 𝑠𝑠
+                           2·108
+                                    𝑠𝑠
+       0,032𝑚𝑚
+𝑡𝑡 =           𝑚𝑚    = 0,016 · 10−8 𝑠𝑠
+       2·108
+                𝑠𝑠
+
+
+
+
+                                         21
+       20
+

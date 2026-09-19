@@ -1,0 +1,670 @@
+               UNIBERTSITATEAN SARTZEKO                               PRUEBA DE ACCESO A LA
+                         PROBA                                            UNIVERSIDAD
+                             2026ko OHIKOA                                     ORDINARIA 2026
+               EBAZPENA ETA IRIZPIDEAK                          SOLUCIONARIO Y CRITERIOS
+                                    FISIKA                                                 FÍSICA
+
+Referencia a los criterios generales
+Se aplican los criterios generales de corrección facilitados a los correctores, en particular:
+
+     •      Cálculo simbólico antes que numérico.
+     •      Unidades ausentes o incorrectas: -0.1 puntos.
+     •      Errores vectoriales simbólicos reiterados: -0.1 puntos.
+     •      Errores de redondeo y cifras significativas: -0.1 puntos.
+     •      Los errores graves (ecuaciones incorrectas, confusión escalar/vectorial, etc.) pueden
+            invalidar el apartado completo.
+     •      Si un apartado requiere el resultado de uno anterior, se usará el valor dado por el/la
+            alumno/a, salvo resultado físicamente absurdo.
+
+
+
+
+  U
+Tabla de datos y constantes físicas
+La siguiente tabla debe acompañar al enunciado del examen. Contiene todas las constantes
+necesarias para resolver los ejercicios,.
+
+ DATOS y
+ CONSTANTES FÍSICAS
+EH
+ 𝐺𝐺=6.67 × 10-11 𝑁𝑁𝑁𝑁2 𝑘𝑘𝑘𝑘-2       𝑐𝑐=3.00 × 108 𝑚𝑚𝑚𝑚 -1     𝑣𝑣𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 =340𝑚𝑚𝑚𝑚 -1            𝐾𝐾=9.00 × 109 𝑁𝑁𝑁𝑁2 𝐶𝐶 -2
+ 𝑀𝑀𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 =5.97 × 1024 𝑘𝑘𝑘𝑘   ℎ=6.63 × 10-34 𝐽𝐽𝐽𝐽       𝐼𝐼0 =10-12 𝑊𝑊𝑊𝑊-2                     𝑚𝑚𝑝𝑝 =1.67 × 10-27 𝑘𝑘𝑘𝑘
+ 𝑅𝑅𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 =6.37 × 106 𝑚𝑚      |𝑞𝑞𝑒𝑒 |=1.60 × 10-19 𝐶𝐶   𝑚𝑚𝑒𝑒 =9.11 × 10-31 𝑘𝑘𝑘𝑘
+
+
+
+
+Ejercicio 1 — Campo gravitatorio (2.50 puntos)
+Distribución de puntos
+         Apartado                     Subapartado                  Puntos                    Contenido
+               a)                            a.1                      0.50                   Cálculo de 𝑟𝑟𝑔𝑔𝑔𝑔𝑔𝑔
+                                             a.2                      0.25                   Cálculo de ℎ
+                                             a.3                      0.25                   Cálculo de 𝑣𝑣𝑜𝑜𝑜𝑜𝑜𝑜
+                                                                     1.00
+               b)                            b.1                      0.50                   Velocidad de
+                                                                                             impacto (caída
+                                                                                             libre desde 𝑟𝑟)
+                                             b.2                      0.50                   Comparación
+                                                                                             energética y
+                                                                                             conclusión
+                                                                     1.00
+               c)                            c.1                      0.50                   Dependencia con la
+                                                                                             masa
+                                                                                                              EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                         PRUEBA DE ACCESO A LA
+                     PROBA                                      UNIVERSIDAD
+                      2026ko OHIKOA                                ORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                      SOLUCIONARIO Y CRITERIOS
+                           FISIKA                                      FÍSICA
+
+        Apartado               Subapartado                 Puntos           Contenido
+                                                            0.50
+
+Datos previos
+                      𝜇𝜇=𝐺𝐺𝑀𝑀𝑇𝑇 =6.67 × 10-11 × 5.97 × 1024 =3.98 × 1014 𝑚𝑚3 𝑠𝑠 -2
+Periodo geoestacionario: 𝑇𝑇=24ℎ=86400𝑠𝑠.
+
+Solución orientativa y criterios
+a) — Órbita geoestacionaria (1.00 = 0.50 + 0.25 + 0.25)
+    •    0.50 — Radio orbital (𝑟𝑟𝑔𝑔𝑔𝑔𝑔𝑔 ):
+
+            𝐺𝐺𝐺𝐺𝐺𝐺                  3 𝐺𝐺𝐺𝐺𝑇𝑇 2 3 3.98 × 1014 × (86400)2
+
+
+
+
+  U •
+
+
+
+    •
+              𝑟𝑟 2
+                   =𝑚𝑚𝜔𝜔 2
+
+
+
+         0.25 — Altura (ℎ):
+                           𝑟𝑟 ⟹ 𝑟𝑟= �
+                                       4𝜋𝜋 2
+                                              =�
+                                                          39.48
+                                                                        =4.22 × 107 𝑚𝑚
+
+
+
+
+                    ℎ=𝑟𝑟-𝑅𝑅𝑇𝑇 =4.22 × 107 -6.37 × 106 =3.58 × 107 𝑚𝑚 ≈ 35800𝑘𝑘𝑚𝑚
+
+         0.25 — Velocidad orbital (𝑣𝑣𝑜𝑜𝑜𝑜𝑜𝑜 ):
+EH
+                           𝐺𝐺𝐺𝐺 3.98 × 1014
+                       𝑣𝑣=�     =�            =3.07 × 103 𝑚𝑚/𝑠𝑠 ≈ 3.07𝑘𝑘𝑘𝑘/𝑠𝑠
+                             𝑟𝑟    4.22 × 107
+
+b.1 — Velocidad de impacto (0.50)
+    •    0.50 — Conservación de la energía (caída libre desde reposo en 𝑟𝑟𝑔𝑔𝑔𝑔𝑔𝑔 ):
+                                             𝐺𝐺𝐺𝐺𝐺𝐺 1            𝐺𝐺𝐺𝐺𝐺𝐺
+                              𝐸𝐸𝑖𝑖 =𝐸𝐸𝑓𝑓 ⟹ -          = 𝑚𝑚𝑣𝑣 2 -
+                                              𝑟𝑟𝑔𝑔𝑔𝑔𝑔𝑔 2           𝑅𝑅𝑇𝑇
+Despeje y cálculo:
+
+                               1 1
+                𝑣𝑣=�2𝐺𝐺𝐺𝐺 �       -         � =�2 ⋅ 3.98 × 1014 (1.57 × 10-7 -2.37 × 10-8 )
+                              𝑅𝑅𝑇𝑇 𝑟𝑟𝑔𝑔𝑔𝑔𝑔𝑔
+
+                    𝑣𝑣=�7.96 × 1014 ⋅ 1.33 × 10-7 =1.03 × 104 𝑚𝑚/𝑠𝑠 ≈ 10.3𝑘𝑘𝑘𝑘/𝑠𝑠
+
+b.2 — Energía y conclusión (0.50)
+                             1        1
+                          𝐾𝐾= 𝑚𝑚𝑣𝑣 2 = ⋅ 300 ⋅ (1.03 × 104 )2 ≈ 1.6 × 1010 𝐽𝐽
+                             2        2
+La energía (1010 J) es 100000 veces mayor que la del petardo (105 J). Ese orden de magnitud
+podría implicar “destruir grandes zonas”.
+
+Criterio: 0.50por calcular 𝐾𝐾 (o razonar la magnitud) y concluir que el titular no es exagerado
+respecto al alcance destructivo.
+
+
+
+
+                                                                                         EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+          UNIBERTSITATEAN SARTZEKO                                  PRUEBA DE ACCESO A LA
+                    PROBA                                               UNIVERSIDAD
+                    2026ko OHIKOA                                       ORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                             SOLUCIONARIO Y CRITERIOS
+                        FISIKA                                                 FÍSICA
+
+c.1 — Dependencia de la masa (0.50)
+Las magnitudes cinemáticas (𝑟𝑟, 𝑣𝑣, ℎ, 𝑎𝑎) no dependen de la masa del satélite (se cancela en las
+ecuaciones de movimiento). Las magnitudes energéticas (𝐸𝐸, 𝑊𝑊) sí dependen linealmente de la
+masa (𝐸𝐸 ∝ 𝑚𝑚).
+
+Criterio: 0.50 si distingue correctamente qué magnitudes cambian y cuáles no.
+
+
+Ejercicio 2 — Campo electromagnético (2.50 puntos)
+Distribución de puntos
+       Apartado                   Subapartado                          Puntos              Contenido
+           a)                            a.1                             0.25              Definición de flujo
+
+
+
+
+  U       b)
+                                         a.2
+
+
+
+                                         b.1
+                                                                         0.25
+
+
+                                                                         0.50
+                                                                         0.25
+                                                                                           magnético (𝛷𝛷=𝐵𝐵
+
+
+                                                                                           signo negativo
+                                                                                                           �⃗ ⋅ 𝑆𝑆⃗)
+                                                                                           Ley de Faraday-Lenz y
+
+
+
+                                                                                           Ángulo constante y
+                                                                                           𝛷𝛷(𝑡𝑡) Configuración I
+EH
+                                         b.2                             0.25              Deducción fem 𝜀𝜀(𝑡𝑡)
+                                                                                           Configuración I
+                                         b.3                             0.50              Cálculo numérico a
+                                                                                           𝑡𝑡=7 ms
+                                                                         1.00
+           c)                            c.1                             0.50              Expresión fem
+                                                                                           Configuración II y
+                                                                                           cálculo numérico
+                                         c.2                             0.50              Análisis fem máxima y
+                                                                                           viabilidad
+                                                                         1.00
+
+Solución orientativa y criterios
+a.1 — Flujo magnético (0.25)
+                             �⃗ ⋅ 𝑑𝑑𝑆𝑆⃗(𝑜𝑜𝑜𝑜=𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵)
+                        𝛷𝛷=∫ 𝐵𝐵
+                                                          �⃗ y normal a 𝑆𝑆).
+Magnitudes: 𝐵𝐵 (campo), 𝑆𝑆 (superficie), 𝜃𝜃 (ángulo entre 𝐵𝐵
+
+a.2 — Ley de Faraday-Lenz (0.25)
+                                                            𝑑𝑑𝑑𝑑
+                                                     𝜀𝜀=-
+                                                             𝑑𝑑𝑑𝑑
+Significado signo: La fem inducida genera una corriente cuyo campo magnético se opone a la
+variación del flujo que la produjo (Ley de Lenz).
+
+
+                                                                                                     EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                                 PRUEBA DE ACCESO A LA
+                     PROBA                                              UNIVERSIDAD
+                    2026ko OHIKOA                                          ORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                              SOLUCIONARIO Y CRITERIOS
+                         FISIKA                                                  FÍSICA
+
+b.1 — Flujo Config I (0.25)
+                    �⃗ en eje Z ⟹ vectores paralelos ⟹ 𝜃𝜃=0∘ (o 180∘ ), constante.
+Espira en plano XY, 𝐵𝐵
+
+                    𝛷𝛷(𝑡𝑡)=𝐵𝐵(𝑡𝑡) ⋅ 𝑆𝑆=(3𝑡𝑡 2 )(𝜋𝜋𝑅𝑅 2 )=3𝜋𝜋(0.06)2 𝑡𝑡 2 ≈ 0.0339𝑡𝑡 2 𝑊𝑊𝑊𝑊
+
+b.2 — Fem Config I (0.25)
+                                        𝑑𝑑𝑑𝑑 𝑑𝑑
+                                 𝜀𝜀=-        =- (0.0339𝑡𝑡 2 )=-0.0678𝑡𝑡𝑡𝑡
+                                         𝑑𝑑𝑑𝑑 𝑑𝑑𝑑𝑑
+(Se acepta trabajar en módulo).
+
+b.3 — Cálculo a 𝒕𝒕=𝟕𝟕 ms (0.50)
+    •    0.50 — Fem: |𝜀𝜀|=0.0678 ⋅ 0.007=4.7 × 10-4 𝑉𝑉=0.47𝑚𝑚𝑚𝑚.
+
+c.1 — Config II (generador) (0.50 = 0.25 + 0.25)
+
+
+
+
+  U •
+
+
+
+
+    •
+         0.25 — Expresiones:
+
+                                              𝛷𝛷(𝑡𝑡)=𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵(𝜔𝜔𝜔𝜔)
+
+                                          𝜀𝜀(𝑡𝑡)=-
+
+         0.25 — Cálculo: 𝜔𝜔𝜔𝜔=60 × 0.007=0.42𝑟𝑟𝑟𝑟𝑟𝑟.
+                                                     𝑑𝑑𝑑𝑑
+                                                      𝑑𝑑𝑑𝑑
+                                                           =𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵(𝜔𝜔𝜔𝜔)
+
+
+
+                             𝜀𝜀=(8 × 10-3 ) ⋅ (𝜋𝜋 ⋅ 0.062 ) ⋅ 60 ⋅ 𝑠𝑠𝑠𝑠𝑠𝑠(0.42)
+EH
+                         𝜀𝜀=5.43 × 10-3 ⋅ 𝑠𝑠𝑠𝑠𝑠𝑠(0.42) ≈ 2.2 × 10-3 𝑉𝑉=2.2𝑚𝑚𝑚𝑚
+
+c.2 — Fem máxima y análisis (0.50)
+    •    0.50 — Verificación: 𝜀𝜀𝑚𝑚á𝑥𝑥 =5.43 × 10-3 𝑉𝑉=5.4𝑚𝑚𝑚𝑚.
+
+Como 5.4𝑚𝑚𝑚𝑚>0.50𝑚𝑚𝑚𝑚, el prototipo cumple sobradamente el requisito.
+
+
+Ejercicio 3 Opción A — Ondas (violín) (2.50 puntos)
+Distribución de puntos
+        Apartado             Subapartado                          Puntos           Contenido
+           a)                      a.1                              0.25           Longitud de onda
+                                                                                   en la cuerda
+                                   a.2                              0.25           Longitud de onda
+                                                                                   en el aire
+                                                                    0.50
+           b)                      b.1                              0.25           Relación
+                                                                                   frecuencia–
+                                                                                   longitud (𝑓𝑓 ∝ 1/𝐿𝐿)
+                                   b.2                              0.25           Planteamiento
+                                                                                   𝑓𝑓𝑀𝑀𝑀𝑀 𝐿𝐿=𝑓𝑓𝐿𝐿𝐿𝐿 𝐿𝐿′
+                                   b.3                              0.25           Cálculo de 𝐿𝐿′
+
+                                                                                                   EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                                 PRUEBA DE ACCESO A LA
+                     PROBA                                              UNIVERSIDAD
+                      2026ko OHIKOA                                        ORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                               SOLUCIONARIO Y CRITERIOS
+                           FISIKA                                             FÍSICA
+
+        Apartado               Subapartado                        Puntos         Contenido
+                                       b.4                          0.25         Distancia donde
+                                                                                 pisar
+                                                                    1.00
+           c)                          c.1                          0.25         Intensidad con 1
+                                                                                 violín
+                                       c.2                          0.25         Nivel sonoro con 1
+                                                                                 violín
+                                       c.3                          0.25         Intensidad total (2
+                                                                                 violines)
+                                       c.4                          0.25         Nivel sonoro con 2
+
+
+
+
+  U
+Solución orientativa y criterios
+a) — Longitudes de onda (0.50 = 0.25 + 0.25)
+    •    0.25 — En la cuerda (modo fundamental, 𝐿𝐿=𝜆𝜆/2):
+                                                                    1.00
+                                                                                 violines
+EH
+                                       𝜆𝜆𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 =2𝐿𝐿=2 × 0.328=0.656𝑚𝑚
+
+    •    0.25 — En el aire (𝑣𝑣𝑠𝑠 =340𝑚𝑚/𝑠𝑠):
+                                                         𝑣𝑣𝑠𝑠 340
+                                          𝜆𝜆𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎 =       =     =0.516𝑚𝑚
+                                                          𝑓𝑓 659.3
+
+b) — Posición para nota La (1.00 = 4 × 0.25)
+    •    0.25 — Relación frecuencia-longitud: 𝑣𝑣=𝜆𝜆𝜆𝜆=2𝐿𝐿𝐿𝐿 ⟹ 𝑓𝑓 ∝ 1/𝐿𝐿 (si tensión y densidad
+         lineal son constantes).
+
+    •    0.25 — Planteamiento: 𝑓𝑓𝑀𝑀𝑀𝑀 ⋅ 𝐿𝐿=𝑓𝑓𝐿𝐿𝐿𝐿 ⋅ 𝐿𝐿′.
+
+    •    0.25 — Cálculo de 𝐿𝐿′:
+                                                𝑓𝑓𝑀𝑀𝑀𝑀         659.3
+                                       𝐿𝐿′=𝐿𝐿          =32.8 ⋅       =24.6𝑐𝑐𝑐𝑐
+                                                𝑓𝑓𝐿𝐿𝐿𝐿         880.0
+
+    •    0.25 — Punto donde pisar: Distancia desde el puente es 24.6 cm. Si se pide desde la
+         clavija (extremo “pisado”): 𝑑𝑑=32.8-24.6=8.2𝑐𝑐𝑐𝑐.
+
+Criterio: Se acepta referenciar la distancia a cualquier extremo si está bien especificado.
+
+c) — Decibelios (1.00 = 4 × 0.25)
+    •    0.25 — Intensidad 1 violín (𝑟𝑟=10 m):
+
+                                        𝑃𝑃      10-6
+                                𝐼𝐼=          =         =7.96 × 10-10 𝑊𝑊/𝑚𝑚2
+                                      4𝜋𝜋𝑟𝑟 2 4𝜋𝜋(10)2
+    •    0.25 — Nivel 1 violín:
+
+                                                                                             EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                           PRUEBA DE ACCESO A LA
+                     PROBA                                        UNIVERSIDAD
+                      2026ko OHIKOA                                  ORDINARIA 2026
+            EBAZPENA ETA IRIZPIDEAK                         SOLUCIONARIO Y CRITERIOS
+                           FISIKA                                       FÍSICA
+                                   𝐼𝐼            7.96 × 10-10
+                   𝛽𝛽1 =10𝑙𝑙𝑙𝑙𝑙𝑙 � � =10𝑙𝑙𝑙𝑙𝑙𝑙 �              � =10𝑙𝑙𝑙𝑙𝑙𝑙(796) ≈ 29𝑑𝑑𝑑𝑑
+                                  𝐼𝐼0               10-12
+
+    •    0.25 — Intensidad 2 violines: 𝐼𝐼𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡 =2𝐼𝐼.
+
+    •    0.25 — Nivel 2 violines: 𝛽𝛽2 =𝛽𝛽1 +10𝑙𝑙𝑙𝑙𝑙𝑙2 ≈ 29+3=32𝑑𝑑𝑑𝑑.
+
+
+Ejercicio 3 Opción B — Óptica (lentes) (2.50 puntos)
+Distribución de puntos
+        Apartado                Subapartado                  Puntos        Contenido
+           a)                         a.1                     0.50         Elección de lente
+                                                                           (convergente,
+
+
+
+
+  U        b)
+                                      a.2
+
+
+                                     b.1
+
+
+                                      b.2
+                                                              0.50
+                                                              1.00
+                                                              0.25
+
+
+                                                              0.25
+                                                                           imagen real)
+                                                                           Distancia focal 𝑓𝑓′
+
+
+                                                                           Distancia del
+                                                                           objeto 𝑠𝑠
+                                                                           Aumento y tamaño
+EH
+                                                                           de la imagen
+                                                              0.50
+           c)                         c.1                     0.25         Orientación de la
+                                                                           imagen (signo de
+                                                                           𝑀𝑀)
+                                      c.2                     0.50         Caso 𝑠𝑠=𝑓𝑓′/2:
+                                                                           posición y aumento
+                                      c.3                     0.25         Comparación de
+                                                                           propiedades
+                                                              1.00
+
+Solución orientativa y criterios
+a) — Lente adecuada y distancia focal (1.00 = 0.50 + 0.50)
+Para proyectar en una pantalla se necesita una imagen real. Las lentes divergentes (𝑃𝑃<0) solo
+forman imágenes virtuales. Las convergentes (𝑃𝑃>0) forman imágenes reales si el objeto está
+fuera del foco.
+
+    •    0.50 — Elección: Lupa de potencia +3𝐷𝐷 (convergente).
+
+    •    0.50 — Distancia focal:
+                                          1 1
+                                      𝑓𝑓′= = 𝑚𝑚 ≈ 0.333𝑚𝑚=33.3𝑐𝑐𝑐𝑐
+                                          𝑃𝑃 3
+
+
+                                                                                          EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                      PRUEBA DE ACCESO A LA
+                     PROBA                                   UNIVERSIDAD
+                    2026ko OHIKOA                              ORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                   SOLUCIONARIO Y CRITERIOS
+                        FISIKA                                    FÍSICA
+
+b.1 — Posición del objeto (0.25)
+Distancia imagen 𝑠𝑠′=+2.00 m (positiva, real a la derecha).
+
+    •    0.25 — Ecuación de Gauss:
+                                      1 1 1      1 1
+                                         - = ⟹ - =3
+                                      𝑠𝑠′ 𝑠𝑠 𝑓𝑓′ 2 𝑠𝑠
+Despeje:
+                           1                      1
+                              =0.5-3=-2.5 ⟹ 𝑠𝑠=-     =-0.40𝑚𝑚=-40𝑐𝑐𝑐𝑐
+                           𝑠𝑠                    2.5
+
+b.2 — Aumento y tamaño (0.25)
+    •    0.25 — Aumento y tamaño:
+                                            𝑠𝑠′ 2.00
+                                        𝑀𝑀=    =      =-5
+
+
+
+
+  U
+Tamaño imagen: 12 cm.
+
+c.1 — Orientación (0.25)
+    •
+                                             𝑠𝑠 -0.40
+                                  ℎ′=𝑀𝑀 ⋅ ℎ=-5 ⋅ 2.40=-12.0𝑐𝑐𝑐𝑐
+
+
+
+
+         0.25 — Signo negativo de 𝑀𝑀 (-5) indica que la imagen es invertida.
+
+c.2 — Caso 𝒔𝒔=𝒇𝒇′/𝟐𝟐 (0.50 = 0.25 + 0.25)
+EH
+    •    0.25 — Ecuación de lentes:
+                                         1 1 1         𝑓𝑓′
+                                            - = , 𝑠𝑠=-
+                                         𝑠𝑠′ 𝑠𝑠 𝑓𝑓′    2
+                                 1 2 1       1 1
+                                    + = ⟹ =- ⟹ 𝑠𝑠′=-𝑓𝑓′
+                                 𝑠𝑠′ 𝑓𝑓′ 𝑓𝑓′ 𝑠𝑠′ 𝑓𝑓′
+
+    •    0.25 — Aumento:
+                                              𝑠𝑠′ -𝑓𝑓′
+                                        𝑀𝑀=      =       =+2
+                                               𝑠𝑠 -𝑓𝑓′/2
+
+c.3 — Comparación de propiedades (0.25)
+Caso proyección (𝑠𝑠 para 𝑠𝑠′=2 m): imagen real, invertida, mayor (|M|=5).
+Caso 𝑠𝑠=𝑓𝑓′/2: imagen virtual, derecha, mayor (|M|=2).
+
+
+Ejercicio 4 Opción A — Física cuántica (2.50 puntos)
+Distribución de puntos
+        Apartado           Subapartado                 Puntos        Contenido
+           a)                   a.1                     0.25         Ecuación de
+                                                                     Einstein y
+                                                                     significado
+                                a.2                     0.25         Energía cinética
+
+
+                                                                                   EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+            UNIBERTSITATEAN SARTZEKO                                      PRUEBA DE ACCESO A LA
+                      PROBA                                                   UNIVERSIDAD
+                       2026ko OHIKOA                                             ORDINARIA 2026
+            EBAZPENA ETA IRIZPIDEAK                                   SOLUCIONARIO Y CRITERIOS
+                                FISIKA                                                 FÍSICA
+
+        Apartado                     Subapartado                        Puntos               Contenido
+                                                                                             máxima 𝐾𝐾𝑚𝑚á𝑥𝑥
+                                                                          0.50
+            b)                                   b.1                      0.50               Función trabajo 𝑊𝑊0
+                                                 b.2                      0.50               𝜈𝜈𝑢𝑢𝑢𝑢 y 𝜆𝜆𝑢𝑢𝑢𝑢
+                                                                          1.00
+            c)                                   c.1                      0.25               Nuevo 𝐾𝐾𝑚𝑚á𝑥𝑥 y
+                                                                                             comparación
+                                                 c.2                      0.50               Nueva función
+                                                                                             trabajo 𝑊𝑊0
+                                                 c.3                      0.25               Cambio en 𝜈𝜈𝑢𝑢𝑢𝑢 y
+
+
+
+
+  U
+Solución orientativa y criterios
+a) — Ecuación de Einstein y 𝑲𝑲𝒎𝒎á𝒙𝒙 (0.50 = 0.25 + 0.25)
+Datos: 𝜆𝜆=280𝑛𝑛𝑛𝑛, 𝑉𝑉𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 =1.3𝑉𝑉.
+                                                                          1.00
+                                                                                             explicación
+EH
+    •    0.25 — Ecuación de Einstein:
+                                                           ℎ𝑐𝑐
+                                                               =𝑊𝑊0 +𝐾𝐾𝑚𝑚á𝑥𝑥
+                                                           𝜆𝜆
+         Donde 𝑊𝑊0 es la función trabajo y 𝐾𝐾𝑚𝑚á𝑥𝑥 la energía cinética máxima.
+
+    •    0.25 — Energía cinética máxima:
+
+                                            𝐾𝐾𝑚𝑚á𝑥𝑥 =𝑒𝑒𝑉𝑉𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 =1.3𝑒𝑒𝑒𝑒=2.08 × 10-19 𝐽𝐽
+
+b) — 𝑾𝑾𝟎𝟎 , 𝝂𝝂𝒖𝒖𝒖𝒖 y 𝝀𝝀𝒖𝒖𝒖𝒖 (1.00 = 0.50 + 0.50)
+    •    0.50 — Energía del fotón y función trabajo:
+
+                               ℎ𝑐𝑐 6.63 × 10-34 ⋅ 3 × 108
+                      𝐸𝐸𝛾𝛾 =      =                       =7.10 × 10-19 𝐽𝐽 ≈ 4.44𝑒𝑒𝑒𝑒
+                               𝜆𝜆       280 × 10-9
+                               𝑊𝑊0 =𝐸𝐸𝛾𝛾 -𝐾𝐾𝑚𝑚á𝑥𝑥 =4.44-1.3=3.14𝑒𝑒𝑒𝑒(≈ 5.02 × 10-19 𝐽𝐽)
+
+    •    0.50 — Umbrales:
+
+                                              𝑊𝑊0 5.02 × 10-19
+                                     𝜈𝜈𝑢𝑢𝑢𝑢 =    =             =7.57 × 1014 𝐻𝐻𝐻𝐻
+                                               ℎ 6.63 × 10-34
+                                            𝑐𝑐         3.00 × 108
+                               𝜆𝜆𝑢𝑢𝑢𝑢 =            ≈               =3.96 × 10-7 𝑚𝑚=396𝑛𝑛𝑛𝑛
+                                          𝜈𝜈𝑢𝑢𝑢𝑢       7.57 × 1014
+
+c) — Metal oxidado (1.00 = 0.25 + 0.50 + 0.25)
+Nuevo potencial de frenado 𝑉𝑉′𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 =0.7𝑉𝑉.
+
+    •    0.25 — 𝐾𝐾𝑚𝑚á𝑥𝑥 disminuye:
+                                                                                                               EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+          UNIBERTSITATEAN SARTZEKO                                  PRUEBA DE ACCESO A LA
+                    PROBA                                               UNIVERSIDAD
+                     2026ko OHIKOA                                         ORDINARIA 2026
+          EBAZPENA ETA IRIZPIDEAK                              SOLUCIONARIO Y CRITERIOS
+                          FISIKA                                               FÍSICA
+                                            𝐾𝐾′𝑚𝑚á𝑥𝑥 =𝑒𝑒𝑒𝑒′𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 =0.7𝑒𝑒𝑒𝑒
+
+   •    0.50 — Nueva función trabajo:
+
+                                   𝑊𝑊′0 =𝐸𝐸𝛾𝛾 -𝐾𝐾′𝑚𝑚á𝑥𝑥 =4.44-0.7=3.74𝑒𝑒𝑒𝑒
+
+   •    0.25 — 𝜈𝜈𝑢𝑢𝑢𝑢 aumenta (y 𝜆𝜆𝑢𝑢𝑢𝑢 disminuye), porque 𝑊𝑊0 es mayor; la oxidación dificulta la
+        extracción de electrones.
+
+
+Ejercicio 4 Opción B — Física nuclear (2.50 puntos)
+Distribución de puntos
+       Apartado               Subapartado                         Puntos         Contenido
+
+
+
+
+  U       a)                        a.1
+
+
+                                    a.2
+
+
+                                    a.3
+                                    a.4
+                                                                    0.25
+
+
+                                                                    0.25
+
+
+                                                                    0.25
+                                                                    0.25
+                                                                                 Ley exponencial
+                                                                                 𝑁𝑁(𝑡𝑡)=𝑁𝑁0 𝑒𝑒 -𝜆𝜆𝜆𝜆
+                                                                                 Gráfica cualitativa y
+                                                                                 significado
+                                                                                 Relación 𝜆𝜆–𝑡𝑡1/2
+                                                                                 Cálculo de 𝜆𝜆
+EH
+                                                                    1.00
+          b)                        b.1                             0.25         𝑁𝑁 actual (10 g)
+                                    b.2                             0.25         𝑁𝑁0 al morir (10 g)
+                                                                    0.50
+          c)                        c.1                             0.25         Planteamiento de
+                                                                                 la ecuación
+                                    c.2                             0.50         Despeje simbólico
+                                                                                 de 𝑡𝑡
+                                    c.3                             0.25         Cálculo numérico
+                                                                    1.00
+
+Solución orientativa y criterios
+a) — Ley de desintegración y 𝝀𝝀 (1.00 = 4 × 0.25)
+   •    0.25 — Ecuación: 𝑁𝑁(𝑡𝑡)=𝑁𝑁0 𝑒𝑒 -𝜆𝜆𝜆𝜆 .
+
+   •    0.25 — Gráfica: Curva exponencial decreciente. Eje Y: Número de núcleos 𝑁𝑁. Eje X:
+        Tiempo 𝑡𝑡.
+
+   •    0.25 — Relación: 𝜆𝜆=𝑙𝑙𝑙𝑙2/𝑡𝑡1/2.
+
+   •    0.25 — Cálculo:
+                                        𝑙𝑙𝑙𝑙2 0.693
+                                  𝜆𝜆=        =      ≈ 1.21 × 10-4 𝑎𝑎ñ𝑜𝑜 -1
+                                        𝑇𝑇1/2 5730
+
+
+                                                                                                 EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+         UNIBERTSITATEAN SARTZEKO                              PRUEBA DE ACCESO A LA
+                   PROBA                                           UNIVERSIDAD
+                   2026ko OHIKOA                                     ORDINARIA 2026
+         EBAZPENA ETA IRIZPIDEAK                          SOLUCIONARIO Y CRITERIOS
+                        FISIKA                                               FÍSICA
+
+       (Se puede dejar en 𝑎𝑎ñ𝑜𝑜𝑜𝑜 -1 o pasar a SI: 3.83 × 10-12 𝑠𝑠 -1).
+
+b) — Átomos actuales y al morir (0.50 = 0.25 + 0.25)
+   •   0.25 — Átomos actuales (10 g):
+
+                       𝑁𝑁=9.5 × 108 á𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡/𝑔𝑔 × 10𝑔𝑔=9.5 × 109 á𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡
+
+   •   0.25 — Átomos al morir (10 g):
+
+                      𝑁𝑁0 =6.9 × 109 á𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡/𝑔𝑔 × 10𝑔𝑔=6.9 × 1010 á𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡
+
+c) — Antigüedad (1.00 = 0.25 + 0.50 + 0.25)
+   •   0.25 — Planteamiento:
+
+                                     𝑁𝑁=𝑁𝑁0 𝑒𝑒 -𝜆𝜆𝜆𝜆 ⟹ 𝑙𝑙𝑙𝑙(𝑁𝑁/𝑁𝑁0 )=-𝜆𝜆𝜆𝜆
+
+
+
+
+  U•
+
+
+
+
+   •
+       0.50 — Despeje simbólico:
+
+
+
+
+       0.25 — Cálculo numérico:
+
+                                      𝑁𝑁 9.5 × 109
+                                         =
+                                                  1
+
+
+
+
+                                      𝑁𝑁0 6.9 × 1010
+                                                         𝑁𝑁
+                                              𝑡𝑡=- 𝑙𝑙𝑙𝑙 � �
+                                                  𝜆𝜆     𝑁𝑁0
+
+
+
+                                                     ≈ 0.1377
+EH
+                                       1
+                           𝑡𝑡=-               𝑙𝑙𝑙𝑙(0.1377) ≈ 16360𝑎𝑎ñ𝑜𝑜𝑜𝑜
+                                  1.21 × 10-4
+       (Se acepta ≈ 16400 años según cifras significativas).
+
+
+
+
+                                                                                      EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+

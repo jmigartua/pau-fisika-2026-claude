@@ -1,0 +1,729 @@
+                                USaP                     PAU
+                               2024/25                  2024/25
+                        AZTERKETA EREDUA           MODELO DE EXAMEN
+
+
+                              FISIKA                   FÍSICA
+
+
+                            AZTERKETARAKO ARGIBIDEAK
+
+•   Proba idatzi honek 4 ariketa ditu.
+•   Problema bakoitzak 2,5 puntu balio du. Atal guztiek balio berdina dute. Atal bakoitzaren
+    emaitzak, zuzena zein okerra izan, ez du izango inolako eraginik beste ataletako emaitzen
+    balioespenean.
+•   Kalkulagailu zientifikoa erabil daiteke.
+
+
+
+
+                          INSTRUCCIONES PARA EL EXAMEN
+
+•   Esta prueba escrita se compone de 4 ejercicios.
+•   Cada problema tiene un valor de 2,5 puntos. Todos los apartados tienen igual valor. El
+    resultado, correcto o incorrecto, de cada apartado no influirá en la valoración de los
+    restantes.
+•   Puede utilizarse una calculadora científica.
+                                  USaP                     PAU
+                                 2024/25                  2024/25
+                           AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                 FISIKA                   FÍSICA
+
+
+1. ariketa: Grabitate Eremuari dagozkion konpetentziak
+Testuingurua: esplorazio espaziala
+Azken urteotan, espazio-esplorazioak nabarmen egin du aurrera, eta, horri esker, inoiz aztertu
+gabeko zeruko gorputz berriak aurkitu ditugu. Misio horien helburu nagusietako bat gorputz horiei
+buruzko ezinbesteko informazioa biltzea da, eta, bereziki, etorkizunean kolonia iraunkorrak har
+ditzaketen zehaztea.
+Espazio-ontzi batek planeta berri bat aurkitzen duenean, eta haren orbitan harrapatuta geratzen
+denean, zientzialariek orbita hori aztertu behar dute planetaren ezaugarri erabakigarriak zehazteko,
+hala nola masa, dentsitatea eta grabitatea.
+Enuntziatua: imajinatu espazio-zunda moderno bat orbita zirkular eta egonkor batean harrapatu
+dutela, esploratu gabeko planeta baten inguruan, urrun dagoen izar-sistema batean. Nabigazio-
+sistemak jakinarazten du ontziaren orbita-abiadura 25.000 km/h-koa dela, eta orbita oso bat osatzen
+duela 5 ordutan.
+
+
+Zera da zure zeregina:
+
+
+  a) • Espaziontziak planetaren inguruan duen orbita zirkularra irudikatuko duen zirriborroa egin,
+     orbitaren erradioa argi eta garbi adieraziz.
+     • Orbitaren erradioa kalkulatzeko jarraituko zenituzkeen urratsak deskribatzea eta erradio hori
+     nabearen abiadurarekin nola erlazionatzen den azaltzea.
+  b) • Gorputz askeko diagrama bat erabiliz, espazio-ontziaren orbitan eragiten duten indarren
+     zirriborroa egitea.
+     • Indar horiek planetaren masarekin nola erlazionatzen diren azaldu, eta masa hori
+     kalkulatzeko prozedura deskribatu.
+  c) • Marraztu grafiko kualitatibo bat, espazio-ontziaren energia potentziala eta energia zinetikoa
+     nola aldatzen diren erakusten duena, haren orbitan mugitzen den heinean.
+     • Azaldu nola kalkulatuko zenukeen planetaren gainazaleko grabitateak eragindako
+     azelerazioa, dentsitatea kontuan hartuta.
+                                   USaP                        PAU
+                                  2024/25                    2024/25
+                             AZTERKETA EREDUA        MODELO DE EXAMEN
+
+
+                                 FISIKA                      FÍSICA
+
+Soluzioa
+
+  a) Zirriborroa: ikasleak orbita irudikatzen duen zirkulu bat marraztea espero da, planeta erdian
+     dagoela. R orbitaren erradioa markatu behar du.
+                                                                                      𝐺𝑀
+     Erradioaren kalkulua: v abiadura orbitala konstantea da eta 𝑣 = √ 𝑅 -ren araberako
+     orbitaren erradioarekin lotuta dago, non M planetaren masa da, eta G grabitazio
+     unibertsalaren konstantea. Orbita osoa 5 ordutan egiteak esan nahi du 2πR = vT, non T = 5
+     × 3600s.
+                    𝑣𝑇
+     Horrela, 𝑅 = 2𝛱
+
+     Espero den emaitza: R ≈ 1.8 × 107 m.
+  b) Gorputz askeko diagrama: ikasleak espazio-ontzia eta indar jarduleak marraztu behar ditu:
+     indar zentripetoa eta planetaren grabitatea.
+                                            𝐺𝑀𝑚              𝑚𝑣 2
+     Planetaren masa kalkulatzea: 𝐹𝑔 =            eta 𝐹𝑐 =          erlazioak erabiliz, indarrak berdintzen
+                                            𝑅2                𝑅
+     dira:
+                                                  𝐺𝑀 𝑣 2
+                                                     =
+                                                  𝑅2   𝑅
+                   𝑣2𝑅
+      Beraz, 𝑀 = 𝐺
+
+
+     Espero den emaitza: M ≈ 5,96 × 1024 kg
+  c) Energia-grafikoak: ikasleak zirriborratu behar du energia potentziala (U) eta zinetika (K)
+     nola aldatzen diren orbitako posizioarekin. Biak dira konstanteak, orbita zirkularra dela eta.
+     Gainazaleko grabitatearen kalkulua : ρ dentsitatea ezaguna bada, M = ρ V, eta bolumena
+          4
+      V = 3 Πr 3
+                         1
+                  3𝑀 3
+     Orduan, 𝑟 = (4𝛱𝜌)
+                                                                        𝐺𝑀
+     Beraz, g grabitate-azelerazioa horrela kalkulatzen da: 𝑔 = 𝑟 2
+
+
+     Espero den emaitza: g ≈ 9.8m/s2.
+                                  USaP                     PAU
+                                 2024/25                  2024/25
+                           AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                 FISIKA                  FÍSICA
+
+2. ariketa: Eremu Elektromagnetikoari dagozkion konpetentziak
+Testuingurua: kargatutako partikulen manipulazioaren erronkak eta aplikazioak
+Nanoteknologiaren eta ingeniaritzaren aurrerapenarekin, gero eta inportanteagoa da elektrikoki
+kargatutako partikulak nola manipulatu ulertzea. Eremu elektriko eta magnetikoekin lan egiten duten
+teknologiak funtsezkoak dira gailu medikoak eta elektronikoak garatzeko, partikula-
+azeleragailuetatik hasi eta energia biltegiratzeko metodo berrietara arte.
+Imajinatu hutseko karga puntualen portaera aztertzeko esperimentuak egiten ari direla, aplikazio
+medikoetan nanopartikulak manipulatzeko teknologia berri bat garatzeko.
+Enuntziatua: hutsean egindako esperimentu batean, q1 = +10 µC eta q2 = -40 µC karga puntualak
+1m-ko distantziaz bereizita daude.
+
+
+Zera da zure zeregina:
+
+
+  a) Bi kargek sortutako eremu elektrikoa zirriborratu, biak lotzen dituen lerro zuzen batean.
+     Adierazi grafikoki eremu elektrikoa nulua den A puntua, eta azaldu nola zehaztu duzun
+     puntu hori.
+  b) Marraztu lerro ekipotentzialak kargen inguruan, eta adierazi potentzial elektrikoa nulua den
+     B puntua. Azaldu zure marrazkiaren atzean dagoen arrazoibidea eta deskribatu puntu hau
+     aurkitzeko egin beharreko urratsak.
+  c) Zirriborratu A eta B puntuen arteko ibilbidean protoi baten energia potentziala irudikatzen
+     duen diagrama bat. Gero, azaldu nola kalkulatuko zenukeen protoia puntu horien artean
+     mugitzeko behar den lana, diagrama zure azalpena bermatzeko erabiliz.
+                                 USaP                         PAU
+                                2024/25                      2024/25
+                          AZTERKETA EREDUA           MODELO DE EXAMEN
+
+
+                               FISIKA                        FÍSICA
+
+Soluzioa
+a) Eremu elektrikoaren zirriborroa: ikasleak q1 eta q2 inguruko eremu-lerroak marraztea
+   espero da, eta eremua nulua den A puntuak karga txikienetik (positiboa) gertuago egon
+   behar du.
+
+   A puntuaren kalkulua:
+                                            𝑘𝑞1     𝑘𝑞2
+                                              2
+                                                =
+                                            𝑥     (1 − 𝑥)2
+
+
+   Ebatziz, x ≈ 0,2 m.
+
+
+b) Lerro ekipotentzialak: ikasleak lerro ekipotentzial perpendikularrak marraztu behar ditu
+   eremu-lerroekiko. B puntuak karga bakoitzaren ondoriozko potentzialak baliogabetzen diren
+   distantziara egon behar du.
+
+   B puntuaren kalkulua:
+
+                                             𝑞1 𝑞2
+                                               + =0
+                                             𝑟1 𝑟2
+
+   Ebatziz, B puntua kargen arteko segmentutik kanpo dago
+
+
+c) Energia potentzialaren diagrama: grafikoak U-ren aldaketa erakutsi behar du A eta B
+   lotzen dituen lerroan zehar.
+
+   Lanaren kalkulua:
+                                          𝑊 = 𝑞[𝑉𝐵 − 𝑉𝐴 ]
+   non VA eta VB potentzialak dira A eta B puntuetan.
+                                  USaP                     PAU
+                                 2024/25                  2024/25
+                           AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                 FISIKA                  FÍSICA
+
+3.ariketa: Bibrazioen eta Uhinen dagozkien konpetentziak
+Testuingurua: zuntzetan eta kableetan uhinak hedatzea eta material aurreratuak ikertzea
+Hainbat hedabidetan uhinen hedapena aztertzea funtsezkoa da teknologia modernoetan, hala nola
+datuak zuntz optiko bidez transmititzean eta erresistentzia handiko kableen fabrikazioan. Uhin
+horien modelizazio egokiari esker, hobeto kontrola daiteke transmititzen den informazioa eta uhinok
+dituzten materialen egonkortasuna. Datuen transmisioa eta egitura-osotasuna hobetzeko,
+funtsezkoa da uhinak bitarteko horietan nola hedatzen eta islatzen diren ulertzea.
+Ikerketa-laborategi batean industria aeroespazialean erabiltzen den kable aurreratu batean
+zeharkako uhinak hedatzea aztertzen ari dira, eta funtsezkoa da haien portaera ulertzea.
+
+Enuntziatua: zeharkako uhin bat soka batean zabaltzen da OX ardatzean zehar. Uhinaren
+adierazpen matematikoa t = 0s eta t = 2s momentuetan hau da: y (x, 0) = 0,1cos (π-4πx) m eta
+y(x, 2) = 0,1cos (11π-4πx) m, hurrenez hurren.
+
+
+Zera da zure zeregina:
+
+
+  a) • Marraztu uhinak sokan duen forma t = 0s eta t = 2s momentuetan.
+      • Grafiko horietatik abiatuta, azaldu nola zehaztuko zenukeen uhinaren maiztasun
+      angeluarra, eta justifikatu erreferentzia-puntuen aukeraketa.
+  b) • Zirriborratu grafiko bat, denboraren arabera sokaren puntu baten abiadura-aldaketa
+     erakusten duena.
+      • Azaldu nola bideratuko zenukeen uhinaren adierazpen osoa informazio grafiko horretatik
+      abiatuta.
+  c) • Egin ezazu uhinaren hedapen-abiadura eta sokaren puntu baten gehieneko azelerazioa
+     irudikatzen duen zirriborro bat.
+     • Azaldu nola eragiten duten parametro horiek hariaren materiala aplikazio praktikoetan
+     egonkortzean.
+                                USaP                      PAU
+                               2024/25                   2024/25
+                          AZTERKETA EREDUA          MODELO DE EXAMEN
+
+
+                               FISIKA                    FÍSICA
+
+Soluzioa
+Uhinen zirriborroa t = 0s eta t = 2s momentuetan: uhinak behar bezala marraztu behar dira,
+emandako bi uneetan beren desplazamendua eta forma erakutsiz.
+
+                               2𝜋
+a) Maiztasun angularra: 𝜔 =
+                               𝑇
+                                                                       2
+   Kontuan hartuta uhinaren desplazamendua 𝛥𝜙 = 10𝜋 , 𝛥𝑡 = 2𝑠 , 𝑇 = 5 𝑠
+
+Abiaduraren grafikoa: grafikoak puntu baten abiadura erakutsi behar du denboraren arabera,
+oszilazio sinusoidalekin.
+
+
+b) Adierazpen matematiko osoa:
+                           y(x,t) = 0,1 cos(5πt-4πx) m
+
+c) Abiaduraren eta azelerazioaren diagrama: grafikoek abiadura eta azelerazioaren arteko
+   erlazioa adierazi behar dute, bihak funtzio sinusoidalekin.
+   Abiadura eta azelerazio maximoen kalkulua:
+
+                                         Vmax = 𝛚A eta amax = 𝛚2A
+   non A anplitudea da.
+                                   USaP                     PAU
+                                  2024/25                  2024/25
+                            AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                 FISIKA                   FÍSICA
+
+4.ariketa: Fisika erlatibista, kuantikoa, nuklearra eta partikulenari dagozkien konpetentziak
+
+
+Testuingurua: argazki kameretako fotometroak
+
+Bitarteko elektronikoen bidezko argazkigintzaren garapenaren jatorria efektu fotoelektrikoa da, hau
+da, metalen eta haien elektroiak argitan jartzean nahasteko beste material batzuen propietateari
+dagokiona. Fenomeno hori 1905ean deskribatu zuen Albert Einsteinek, eta ideia horrek argira
+ikusteko modua aldatuko zuen. Teoria horren arabera, argia korpuskulu bat zen edo bezala jokatzen
+zuen, eta hori materialen efektu fotoelektrikoan hautematen zen.
+
+1969ra arte, New Jerseyko (AEB) Bell laborategietan, bi zientzialarik, Willard Boylek eta George
+Smithek, argiaren bidez irudiak finkatzen zituen lehen gailua asmatu zuten, Einsteinen efektu
+fotoelektrikoaren ideia teorikoan oinarrituta.
+
+Hilabete lanean eman ondoren, zientzialari horiek prototipoa izan zuten eta argia seinale elektriko
+bihurtuz irudiak sortzea posible zela frogatu zuten. Baina 1975ean egin zuen Steven Sassonek
+lehen kamera digitala. Oso eredu primitiboa zen gaur egun ezagutzen ditugun estandarrentzat,
+100x100 pixelekin, baina Kodak eta Sony, besteak beste, film-kamerekin lehiatzeko ikerketaren
+hasiera markatu zuen.
+
+
+Enuntziatua: argazki kamara modelo berri baten fotometroa hobetzeko asmoarekin, orain arte
+erabiltzen ez ziren metalekin saiakuntzak egiten dira laborategi batean.
+Horietako saiakuntza batean xafla metaliko bat argiztatu zen λ1 = 500 nm-ko uhin-luzerako
+erradiazioa erabiliz, eta 0,612 V-eko balaztatze-potentziala lortu zen. Aldiz, λ2 = 680,8 nm-ko uhin-
+luzerako erradiazioarekin, balaztatze-potentziala 0,095 V izan zen.
+Badakigu me=9,1 10-31 kg, e=1,6 10-19c eta h=6.626 10-34Js direla.
+Zera da zure zeregina:
+ a) • Adierazi Einstein-en efektu fotoelektrikoaren ekuazioa, metalaren erasotzen dioten
+    fotoien uhin-luzeraren funtzioan.
+      • Metalaren lan-funtzioa aurkitu.
+ b) • Lan-funtzioa eta atari-maitasunaren arteko erlazioa zein den adierazi.
+      • Atari-maiztasuna kalkulatu.
+ c) • Energia zinetiko maximoa, balaztatze-potentziala eta elektroiaren kargaren arteko
+    eralazioa adierazi.
+      • Fotoelektroien abiadura maximoa aurkitu.
+                                  USaP                         PAU
+                                 2024/25                      2024/25
+                           AZTERKETA EREDUA             MODELO DE EXAMEN
+
+
+                                FISIKA                        FÍSICA
+
+Soluzioa
+a) Eskatutako ekuazioa:
+
+                                                     ℎ𝑐 𝑊0
+                                           𝑉𝑠𝑡𝑜𝑝 =      −
+                                                     𝑒𝜆   𝑒
+
+
+                                                    1
+                                           𝑉𝑠𝑡𝑜𝑝 = 𝑎 + 𝑏
+                                                    𝜆
+
+   Lan funtzioa: bi uhin-luzera eta bi balaztatze-potentzialak erabiliz, b parametroa kalkulatzen da
+   eta, ondorioz, W0:
+
+   W0 ≈ 1,33 eV
+
+b) Atari-maiztasuna: atari-maiztasuna da efektu fotoelektrikoa agerrarazten duen maiztasun
+   minimoa; hots, maiztasun hori duen fotoiaren energia eta metalaren lan-funtzioaren energia
+   berdinak dira:
+
+   W0 = hν0   → ν0 ≈ 3,22 1014 Hz
+
+
+
+c) Fotoelektroien abiadura maximoa energia zinetikoaren adierazpen klasikoa erabiliz:
+
+                                 eVstop = ½ mev2max
+
+                                 vmax1 ≈ 4,64 105 ms-1
+                                 vmax2 ≈ 1,83 105 ms-1
+                                  USaP                      PAU
+                                 2024/25                  2024/25
+                           AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                 FISIKA                   FÍSICA
+
+Ejercicio 1: competencias en relación al Campo Gravitatorio
+Contexto: la exploración espacial
+En los últimos años, la exploración espacial ha avanzado significativamente, permitiéndonos
+encontrar nuevos cuerpos celestes que nunca antes habían sido estudiados. Uno de los
+principales objetivos en esas misiones es recopilar información vital sobre estos cuerpos y,
+especialmente, determinar si podrían albergar futuras colonias permanentes.
+
+Cuando una nave espacial encuentra un nuevo planeta, y queda atrapada en su órbita, los
+científicos deben analizar esa órbita para determinar caracteríticas cruciales del planeta, tales
+como su masa, densidad y la gravedad en su superficie.
+
+
+Enunciado: imagina que una sonda espacial moderna ha sido capturada en una órbita circular
+y estable, alrededor de un planeta inexplorado, en un sistema estelar distante. El sistema de
+navegación informa que la velocidad orbital de la nave es de 25.000 km/h, y que completa una
+órbita completa en 5 horas.
+
+Tu tarea es:
+
+
+  a) • Realizar un esbozo que represente la órbita circular de la nave alrededor del planeta,
+     indicando claramente el radio de la órbita.
+     • Describir los pasos que seguirías para calcular el radio de la órbita y cómo este radio se
+     relaciona con la velocidad de la nave.
+
+  b) • Utilizando un diagrama de cuerpo libre, esbozar las fuerzas actuantes sobre la nave
+     espacial en su órbita.
+     • Explicar cómo estas fuerzas se relacionan con la masa del planeta, y describe el
+     procedimiento para calcular dicha masa.
+
+  c) • Dibujar un gráfico cualitativo que muestre cómo varían la energía potencial y la energía
+     cinética de la nave espacial a medida que se mueve en su órbita.
+      • Explicar cómo calcularías la aceleración debida a la gravedad en la superficie del
+     planeta, dada su densidad.
+                                      USaP                    PAU
+                                     2024/25                 2024/25
+                                AZTERKETA EREDUA        MODELO DE EXAMEN
+
+
+                                    FISIKA                   FÍSICA
+
+Solución
+  a) Esbozo: se espera que el estudiante dibuje un círculo representando la órbita, con el
+     planeta en el centro. Debe marcar el radio de la órbita R.
+     Cálculo del radio: la velocidad orbital v es constante y está relacionada con el radio de
+                           𝐺𝑀
+     la órbita por 𝑣 = √ 𝑅 , donde M es la masa del planeta y G es la constante de gravitación
+     universal. La órbita completa en 5 horas implica que 2πR = vT, donde T = 5 × 3600s.
+     Despejando R, tenemos
+
+               .
+     Resultado esperado: R ≈ 1.8 × 107 m.
+
+  b) Diagrama de cuerpo libre: el estudiante debe dibujar la nave espacial y las fuerzas
+     actuantes: fuerza centrípeta y la gravedad del planeta.
+
+     Cálculo de la masa del planeta: usando la relación                           , se igualan
+     las fuerzas:
+
+                       .
+                                               𝑣2𝑅
+     Despejando M, obtenemos            𝑀= 𝐺
+     Resultado esperado: M ≈ 5,96 × 1024 kg
+
+  c) Gráficos de energía: el estudiante debe esbozar cómo la energía potencial (U) y la
+     cinética (K) varían con la posición en la órbita. Ambas son constantes debido a la órbita
+     circular.
+     Cálculo de la gravedad en la superficie: si la densidad ρ es conocida, M = ρ·V , y el
+     volumen es                   , despejando el radio r,
+
+
+
+
+     Por lo tanto, la aceleración de gravedad g es
+
+                   .
+     Resultado esperado: g ≈ 9.8m/s2.
+                                  USaP                      PAU
+                                 2024/25                   2024/25
+                           AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                 FISIKA                   FÍSICA
+
+Ejercicio 2: competencias en relación al Campo Electromagnético
+Contexto: desafíos y aplicaciones de la manipulación de partículas cargadas
+Con el avance de la nanotecnología y la ingeniería a nivel molecular, es cada vez más importnte
+entender cómo manipular partículas cargadas electricamente. Las tecnologías que trabajan con
+campos eléctricos y magnéticos son esenciales para el desarrollo de los dispositivos médicos y
+electrónicos, desde aceleradores de partículas hasta nuevos métodos de almacenamiento de
+energía.
+
+Imagina que se están realizando experimentos para estudiar el comportamiento de cargas
+puntuales en el vacío, con el fín de desarrollar una nueva tecnología para manipular
+nanopartículas en aplicaciones médicas.
+
+
+Enunciado: en un experimento en el vacío, dos cargas puntuales q1 = +10 µC y q2 = -40 µC,
+están separadas por una distancia de 1m.
+
+Tu tarea es:
+
+
+  a) Esboza el campo eléctrico generado por ambas cargas en una línea recta que las une.
+     Indica gráficamente el punto A donde el campo eléctrico es nulo y explica cómo has
+     determinado ese punto.
+  b) Dibuja las líneas equipotenciales alrededor de las cargas y señala el punto B donde el
+     potencial eléctrico es nulo. Explica el razonamiento detrás de tu dibujo y describe los pasos
+     necesarios para encontrar este punto.
+  c) Esboza un diagrama que represente la energía potencial de un protón a lo largo del
+     trayecto entre los puntos A y B. Luego, explica cómo calcularías el trabajo necesario para
+     mover el protón entre estos puntos, utilizando el diagrama para apoyar tu explicación.
+                                   USaP                         PAU
+                                  2024/25                      2024/25
+                             AZTERKETA EREDUA          MODELO DE EXAMEN
+
+
+                                 FISIKA                        FÍSICA
+
+Solución
+a) Esbozo del campo eléctrico: se espera que el estudiante dibuje las líneas de campo
+   alrededor de q1 y q2, indicando la dirección El punto A donde el campo es nulo debe estar
+   más cerca de la carga menor (positiva).
+   Cálculo del punto A:
+                                              𝑘𝑞1     𝑘𝑞2
+                                                2
+                                                  =
+                                              𝑥     (1 − 𝑥)2
+
+
+   Resolviendo, x ≈ 0,2 m.
+
+b) Líneas equipotenciales: el estudiante debe dibujar las líneas equipotenciales
+   perpendiculares a las líneas de campo. El punto B debe estar a una distancia donde los
+   potenciales debidos a cada carga se cancelan.
+   Cálculo del punto B:
+
+                                               𝑞1 𝑞2
+                                                 + =0
+                                               𝑟1 𝑟2
+
+   Resolviendo, B está fuera del segmento entre las cargas.
+
+c) Diagrama de energía potencial: el gráfico debe mostrar la variación de U a lo largo de la
+   línea que une A y B.
+   Cálculo del trabajo:
+                                            𝑊 = 𝑞[𝑉𝐵 − 𝑉𝐴 ]
+   donde VA y VB son los potenciales en A y B.
+                                  USaP                     PAU
+                                 2024/25                  2024/25
+                           AZTERKETA EREDUA         MODELO DE EXAMEN
+
+
+                                FISIKA                   FÍSICA
+
+Ejercicio 3: competencias en relación a Vibraciones y Ondas
+Contexto: investigación en materiales avanzados y propagación de ondas en fibras y cables
+El estudio de la propagación de ondas en diferentes medios es fundamental en tecnologías
+modernas como la transmisión de datos por fibra óptica y en la fabricaciones de cables de alta
+resistencia. La correcta modelización de estas ondas permite un mejor control sobre la
+información que se transmite y la estabilidad de los materiales que las contienen. Comprender
+cómo las ondas se propagan y se reflejan en estos medios es esencial para mejorar la
+transmisión de datos y la integridad estructural.
+
+En un laboratorio de investigación se está estudiando la propagación de ondas transversaldes
+en un cable avanzado utilizado en la industria aeroespacial, y es crucial comprender su
+comportamiento.
+
+
+Enunciado: una onda transversal se propaga a lo largo del eje OX en una cuerda. La expresión
+matemática de la onda en los instantes t = 0s y t = 2s es y(x,0)= 0,1cos(π-4πx) m y
+y(x,2)=0,1cos(11π-4πx) m respectivamente.
+
+Tu tarea es:
+
+
+  a) • Dibuja la forma de la onda en la cuerda en los instantes t=0s y t=2s.
+     • A partir de estos gráficos, explica cómo determinarías la frecuencia angular de la onda,
+     y justifica tu elección de los puntos de referencia.
+  b) • Esboza un gráfico que muestre la variación de la velocidad de un punto de la cuerda en
+     función del tiempo.
+     • Explica cómo derivarías la expresión completa de la onda a partir de esta información
+     gráfica.
+  c) • Realiza un esbozo que represente la velocidad de propagación de la onda y la
+     aceleración máxima de un punto de la cuerda.
+     • Explica cómo estos parámetros influyen en la estabilida del material de la cuerda en
+     aplicaciones prácticas.
+                                   USaP                    PAU
+                               2024/25                    2024/25
+                          AZTERKETA EREDUA           MODELO DE EXAMEN
+
+
+                               FISIKA                     FÍSICA
+
+Solución
+a) Esbozo de las ondas en t = 0s y t = 2s: las ondas deben dibujarse correctamente,
+   mostrando su desplazamiento y forma en los dos instantes dados.
+                              2𝜋
+   Frecuencia angular: 𝜔 = 𝑇
+                                                                    2
+   Dado que la onda se ha desplazado 𝛥𝜙 = 10𝜋 en 𝛥𝑡 = 2𝑠 , 𝑇 = 5 𝑠
+
+b) Gráfico de velocidad: el gráfico debe mostrar la velocidad de un punto en función del
+   tiempo, con oscilaciones sinusoidales.
+   Expresión matemática completa:
+                                y(x,t) = 0,1 cos(5πt-4πx) m
+
+c) Diagrama de velocidad y aceleración: los gráficos deben mostrar la relación entre v y a,
+   ambos como funciones sinusoidales.
+   Cálculo de velocidad y aceleración máxima:
+
+                                          Vmax = 𝛚A y amax = 𝛚2A
+   donde A es la amplitud.
+                                  USaP                      PAU
+                                 2024/25                  2024/25
+                           AZTERKETA EREDUA          MODELO DE EXAMEN
+
+
+                                 FISIKA                   FÍSICA
+
+Ejercicio 4: competencias en Física relativista, cuántica, nuclear y de partículas
+
+
+Contexto: los fotómetros de las cámaras fotográficas
+
+El origen del desarrollo de la fotografía por medios electrónicos es el efecto fotoeléctrico, que se
+refiere a la propiedad de los metales y algunos otros materiales de perturbar sus electrones cuando
+son expuestos a la luz, fenómeno descrito en 1905 por Albert Einstein e idea que cambiaría la forma
+de ver a la luz. Esta teoría planteaba que la luz era o se comportaba como un corpúsculo, lo cual
+se percibía en el efecto fotoeléctrico de los materiales.
+
+Fue hasta 1969, en los laboratorios Bell, en Nueva Jersey, Estados Unidos, que dos científicos:
+Willard Boyle y George Smith idearon el primer dispositivo que por medio de la luz fijaba imágenes,
+basándose en la idea teórica del efecto fotoeléctrico de Einstein.
+
+Después de un mes de trabajo estos científicos tuvieron el prototipo y probaron que era posible
+generar imágenes transformando la luz en señales eléctricas. Pero no fue sino en 1975 que Steven
+Sasson construyó la primera cámara digital. Era un modelo muy primitivo para los estándares que
+hoy conocemos, con apenas 100x100 pixeles, pero marcó el inicio de la investigación por Kodak y
+Sony, entre otras firmas, para competir con las cámaras de película.
+
+
+Enunciado: una conocida empresa del mundo de la fotografía está haciendo experimentos con
+metales no utilizados hasta ahora con el objeto de mejorar el fotómetro de un nuevo modelo de
+cámara fotográfica. Así, en uno de esos experimentos, se iluminó una lámina metálica con una
+radiación de longitud de onda λ1 = 500 nm, obteniéndose un potencial de frenado de 0,612 V. En
+cambió, cuando se utilizó una radiación de longitud de onda λ2 = 680,8 nm, el potencial de frenado
+fue de 0,095 V.
+Sabiendo que me=9,1 10-31 kg, e=1,6 10-19c y h=6.626 10-34Js.
+Tu tarea es:
+ a) • Indica la ecuación del efecto fotoeléctrico de Einstein en función de la longitud de onda de
+    los fotones que inciden sobre el metal.
+      • Encuentra la función de trabajo del metal.
+ b) • Indica cuál es la relación entre la función de trabajo y la frecuencia umbral.
+      • Calcula la frecuencia umbral.
+ c) • Indica cuál es la relación entre la energía cinética máxima, el potencial de frenado y la
+    carga del electrón.
+      • Encuentra la velocidad máxima de los fotoelectrones.
+                                USaP                         PAU
+                               2024/25                      2024/25
+                         AZTERKETA EREDUA             MODELO DE EXAMEN
+
+
+                               FISIKA                       FÍSICA
+
+Solución
+a) Ecuación pedida::
+
+                                                   ℎ𝑐 𝑊0
+                                         𝑉𝑠𝑡𝑜𝑝 =      −
+                                                   𝑒𝜆   𝑒
+
+
+                                                  1
+                                         𝑉𝑠𝑡𝑜𝑝 = 𝑎 + 𝑏
+                                                  𝜆
+
+   Función de trabajo: utilizando las dos longitudes de onda y los potenciales de frenado, se
+   calcula el parámetro b y, como consecuencia, W0:
+
+   W0 ≈ 1,33 eV
+
+b) Frecuenci umbral: la frecuencia umbral en el efecto fotoeléctrico es la frecuencia mínima de
+   radiación electromagnética que se requiere para que se produzca el fenómeno de emisión
+   fotoeléctrica desde una superficie metálica
+
+   W0 = hν0   → ν0 ≈ 3,22 1014 Hz
+
+
+c) Máxima velocidad de los fotoelectrones utilizando la expresión clásica para la energía
+   cinética:
+
+                               eVstop = ½ mev2max
+
+                               vmax1 ≈ 4,64 105 ms-1
+                               vmax2 ≈ 1,83 105 ms-1
+                                    2025eko UsaP
+                                      PAU 2025
+                     ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+                      CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+
+
+                                            FISIKA
+
+
+1. Ulermena eta aplikazioa (0,8 puntu):
+    • Koherentzia diskurtsoan: ikasleak konponbidera iristeko egindako urratsak argi eta
+       garbi azaltzen dituen ebaluatzea.
+    • Zehaztasuna terminologian eta kontzeptuetan: dagokion ariketaren oinarrizko
+       jakintzari dagozkion terminoak behar bezala erabiltzen direla egiaztatzea:
+             Zientziaren eta ikerketa zientifikoaren trebetasunak
+            Eremu grabitatorioa
+            Eremu elektromagnetikoa
+            Bibrazioak eta uhinak
+            Fisika erlatibista, kuantikoa, nuklearra eta partikulena
+    • Unitateak egoki adieraztea: egiaztatu unitateak behar bezala adierazita eta bihurtuta
+      daudela, beharrezkoa bada.
+
+2. Pentsamendu kritikoa eta problemak ebaztea (0,8 puntu):
+    • Koherentzia diskurtsoan: ikasleak ekuazioen erabilera eta garrantzia justifikatzeko
+      duen gaitasuna ebaluatzea.
+    • Zehaztasuna terminologian eta kontzeptuetan: ikasleak dagokion ariketaren
+      oinarrizko jakintzari dagozkion kontzeptuak zuzen ulertzen eta aplikatzen dituela
+      egiaztatzea.
+    • Unitateak egoki adieraztea: kalkuluetan unitateak koherenteak direla eta behar
+      bezala erabiltzen direla ziurtatzea.
+
+3. Arrazoiketa matematikoa (0,5 puntu):
+    • Koherentzia diskurtsoan: ikasleak ekuazioen manipulazioan prozesu logiko eta argia
+       jarraitzen duen ebaluatzea.
+    • Zehaztasuna terminologian eta kontzeptuetan: eragiketa matematikoak ondo
+       oinarrituta daudela egiaztatzea.
+    • Unitateak egoki adieraztea: unitateak kalkuluaren urrats bakoitzean behar bezala
+       aplikatuta daudela egiaztatzea.
+
+4. Testuingurua ulertzea (0.4 puntu):
+    • Koherentzia diskurtsoan: ikasleak arazoa bizitza errealeko egoerekin behar bezala
+      erlazionatzen duen ebaluatzea, dagokion ariketaren oinarrizko jakintzari dagokionez.
+    • Zehaztasuna terminologian eta kontzeptuetan: ikasleak kontzeptuak dagokion
+      ariketaren oinarrizko jakintzaren testuinguruan zuzen erabiltzen dituela egiaztatzea.
+    • Unitateak egoki adieraztea: erabilitako unitateak eztabaidatutako testuingururako
+      egokiak direla ziurtatzea.
+                                    2025eko UsaP
+                                      PAU 2025
+                     ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+                      CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+
+
+                                            FÍSICA
+
+
+1. Comprensión y aplicación (0.8 puntos):
+    • Coherencia en el discurso: evaluar si el estudiante explica claramente los pasos
+      seguidos para llegar a la solución.
+    • Precisión en la terminología y conceptos: verificar el uso correcto de los térrminos
+      correspondientes al saber básico del ejercicio en cuestión:
+            Las destrezas de la ciencia y la investigación científica
+            Campo gravitatorio
+            Campo electromagnético
+            Vibraciones y ondas
+            Física relativsta, cuántica, nuclear y de partículas
+    • Indicación adecuada de unidades: comprobar que las unidades están correctamente
+      indicadas y convertidas, si es necesario.
+
+2. Pensamiento crítico y resolución de problemas (0.8 puntos):
+    • Coherencia en el discurso: evaluar la capacidad del estudiante para justificar el uso
+      de las ecuaciones y su relevancia.
+    • Precisión en la terminología y conceptos: verificar que el estudiante entiende y aplica
+      correctamente los conceptos correspondientes al saber básico del ejercicio en
+      cuestión.
+    • Indicación adecuada de unidades: asegurarse de que las unidades en los cálculos
+      sean consistentes y estén correctamente utilizadas.
+
+3. Razonamiento matemático (0.5 puntos):
+    • Coherencia en el discurso: evaluar si el estudiante sigue un proceso lógico y claro
+      en la manipulación de ecuaciones.
+    • Precisión en la terminología y conceptos: verificar que las operaciones matemáticas
+      están bien fundamentadas.
+    • Indicación adecuada de unidades: confirmar que las unidades están correctamente
+      aplicadas en cada paso del cálculo.
+
+4. Comprensión contextual (0.4 puntos):
+    • Coherencia en el discurso: evaluar si el estudiante relaciona adecuadamente el
+      problema con situaciones de la vida real, en relación al saber básico del ejecicio en
+      cuestión.
+    • Precisión en la terminología y conceptos: comprobar que el estudiante usa
+      correctamente los conceptos dentro del contexto del saber básico del ejercicio en
+      cuestión.
+    • Indicación adecuada de unidades: asegurar que las unidades utilizadas son
+      apropiadas para el contexto discutido.
+

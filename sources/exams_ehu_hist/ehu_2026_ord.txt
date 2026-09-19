@@ -1,0 +1,281 @@
+            UNIBERTSITATEAN               PRUEBA DE ACCESO A LA
+            SARTZEKO PROBA                    UNIVERSIDAD
+              2026ko OHIKOA                   ORDINARIA 2026
+                  FISIKA                           FÍSICA
+
+
+                       AZTERKETARAKO ARGIBIDEAK
+Proba idatzi honek 4 ariketa ditu.
+1. eta 2. ariketek ez dute aukerarik.
+3. eta 4. ariketek bi aukera dituzte (a eta b); bi aukeretako bat hautatu.
+Jarraibideetan adierazitakoei baino galdera gehiagori erantzunez gero,
+erantzunak ordenari jarraituta zuzenduko dira.
+Ariketa bakoitzaren balioa 2,5 puntu da.
+Kalkulagailu zientifikoa erabil daiteke.
+Soilik erabil daitezke taulako eta enuntziatuetako datuak.
+
+         Ez ahaztu kodea azterketa-koaderno guztietan idaztea.
+
+
+
+
+  U                INSTRUCCIONES PARA EL EXAMEN
+La prueba escrita consta de 4 problemas.
+Los problemas 1 y 2 no tienen opcionalidad.
+Los problemas 3 y 4 tienen dos opciones (a y b); debes elegir una de
+cada.
+EH
+Si se responde a más cuestiones de las indicadas, se corregirán siguiendo el
+orden.
+El valor de cada problema es de 2.5 puntos.
+Se puede utilizar calculadora científica.
+Solo se pueden utilizar los datos de la tabla y de los enunciados.
+
+No olvides incluir el código en cada uno de los cuadernillos de hojas de
+                                 examen.
+                            UNIBERTSITATEAN                            PRUEBA DE ACCESO A LA
+                            SARTZEKO PROBA                                 UNIVERSIDAD
+                               2026ko OHIKOA                                    ORDINARIA 2026
+                                       FISIKA                                             FÍSICA
+
+                                        DATOS Y CONSTANTES FÍSICAS
+
+
+
+      𝐺𝐺=6.67x10-11 Nm2kg-2             𝑐𝑐=3.00 × 108 ms-1       𝑣𝑣𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 =340 𝑚𝑚𝑚𝑚 -1   𝐾𝐾=9.00 × 109 Nm2 C
+                                                                                                                       -2
+                             24
+      𝑀𝑀𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 =5.97 × 10 𝑘𝑘𝑘𝑘    h = 6.63 × 10 Js
+                                                         −34
+                                                                 𝐼𝐼0 =10-12 Wm-2               𝑚𝑚𝑝𝑝 =1.67 × 10-27 kg
+      𝑅𝑅𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 =6.37 × 106 𝑚𝑚     |𝑞𝑞𝑒𝑒 |=1.60 × 10-19 C   𝑚𝑚𝑒𝑒 =9.11 × 10-31 kg
+
+
+
+
+                                                BLOQUE A: Problema
+
+1.   Problema, BLOQUE A: Campo gravitatorio
+     Este bloque consta de 1 problema. No tiene opcionalidad.
+
+
+
+
+  U
+A1.- En un programa de divulgación científica has visto el siguiente titular alarmista:
+     “Un satélite Starlink que está orbitando la Tierra podría caer, porque existe un alto
+     riesgo de colisión con un meteorito que pasará muy cerca, y podría destruir grandes
+     zonas.”
+     En la realidad, la constelación de satélites Starlink está formada por miles de
+     satélites en órbita alrededor de la Tierra. Para simplificar, supongamos que solo
+     hay tres tipos de satélites Starlink, clasificados según su masa: Tipo V1:
+EH
+     𝑚𝑚1 =300kg, Tipo V2: 𝑚𝑚2 =600kg, Tipo V3: 𝑚𝑚3 =2200kg. Dado que la noticia no lo
+     especifica, supón que el satélite es del tipo V1.
+     Analiza si el titular es físicamente razonable, y responde a las siguientes
+     cuestiones.
+     a) Supón que el satélite describe una órbita geoestacionaria alrededor de la
+        Tierra. (1.00 punto)
+         1. Calcula el radio 𝑟𝑟geo de dicha órbita a partir de la condición de órbita
+            geoestacionaria (𝑇𝑇=24h). (0.50 puntos)
+         2. Calcula la altura ℎ sobre la superficie terrestre. (0.25 puntos)
+         3. Calcula la velocidad orbital 𝑣𝑣orb del satélite. (0.25 puntos)
+     b) Imagina ahora el peor escenario: el meteorito choca contra el satélite. (1.00
+        punto)
+         1. El satélite se dirige hacia la Tierra en caída libre con velocidad inicial
+            nula; calcula la velocidad con la que llegará a la superficie terrestre
+            (despreciando el rozamiento con la atmósfera). (0.50 puntos)
+         2. Compara la energía cinética del satélite al llegar a la superficie de la
+            Tierra con la energía liberada por un petardo potente (del orden de 104 -
+            105 J). ¿Te parece realista que este impacto “destruya grandes zonas”?
+            (0.50 puntos)
+     c) Supón que el satélite fuera de tipo V2 o V3, en lugar de V1. Razona, sin
+        hacer ningún cálculo, si cambiarían los valores de 𝑟𝑟geo , 𝑣𝑣orb y la velocidad de
+                   UNIBERTSITATEAN                  PRUEBA DE ACCESO A LA
+                   SARTZEKO PROBA                       UNIVERSIDAD
+                     2026ko OHIKOA                       ORDINARIA 2026
+                          FISIKA                              FÍSICA
+
+        caída; y si cambiaría la energía mecánica . Justifica tu respuesta. (0.50
+        puntos)
+
+
+
+                                   BLOQUE B: Problema
+
+2.   Problema, BLOQUE B: Campo electromagnético
+     Este bloque consta de 1 problema. No tiene opcionalidad.
+
+B1.- Una estación meteorológica instalada en una zona de montañosa aislada de la
+     red eléctrica alimenta sus sensores con un microgenerador electromagnético.
+     El dispositivo consiste en una espira circular plana de radio 𝑅𝑅=6.0 cm, montada
+     sobre un eje de giro dentro de un campo magnético uniforme.
+
+
+
+
+  U  Durante las pruebas de laboratorio, el equipo de ingeniería ensaya el prototipo
+     en dos configuraciones:
+         • Configuración I (caracterización): La espira permanece fija, inicialmente
+             situada en el plano 𝑋𝑋𝑋𝑋. Un electroimán genera un campo magnético 𝐵𝐵
+             dirigido en el sentido positivo del eje 𝑂𝑂𝑂𝑂, cuyo módulo varía con el
+             tiempo según 𝐵𝐵(𝑡𝑡)=3𝑡𝑡 2 (𝐵𝐵 en teslas, 𝑡𝑡 en segundos).
+         • Configuración II (modo generador): El campo magnético, de módulo
+                                                                                         �⃗
+EH
+             constante 𝐵𝐵0 =8.0 mT, está creado por imanes permanentes y dirigido en
+             el sentido positivo del eje 𝑂𝑂𝑂𝑂. La espira gira alrededor del eje 𝑂𝑂𝑂𝑂 con
+             velocidad angular constante 𝜔𝜔=60 rad/s, partiendo del plano 𝑋𝑋𝑋𝑋 en el
+             instante 𝑡𝑡=0.
+     a) Para diseñar el sistema de detección de la señal eléctrica del generador, los
+        ingenieros necesitan conocer los fundamentos de la inducción
+        electromagnética. (0.50 puntos)
+         1. Expresa matemáticamente el flujo del campo magnético a través de una
+            superficie plana inmersa en un campo uniforme. Escribe su expresión
+            matemática e indica el significado de cada magnitud. (0.25 puntos)
+         2. Enuncia la ley de Faraday-Lenz de la inducción electromagnética y
+            explica el significado físico del signo negativo en la expresión de la
+            fuerza electromotriz inducida. (0.25 puntos)
+     b) Configuración I, Caracterización - electroimán variable (1.00 punto)
+         1. Justifica que, cuando el dispositivo está en esta configuración, el ángulo
+            entre 𝐵𝐵�⃗ y el vector unitario normal a la espira, 𝑛𝑛
+                                                                ^, es constante, e indica su
+            valor. Escribe la expresión del flujo magnético a través de la espira en
+            función del tiempo. (0.25 puntos)
+         2. Deduce, aplicando la ley de Faraday, la expresión de la fuerza
+            electromotriz inducida en la espira en función del tiempo. (0.25 puntos)
+         3. Calcula el valor numérico de la fem inducida en el instante 𝑡𝑡=7.0 ms.
+            Expresa los resultados en notación científica con dos decimales e indica
+            sus unidades. (0.50 puntos)
+                  UNIBERTSITATEAN                 PRUEBA DE ACCESO A LA
+                  SARTZEKO PROBA                      UNIVERSIDAD
+                    2026ko OHIKOA                     ORDINARIA 2026
+                         FISIKA                            FÍSICA
+
+     c) Configuración II - modo generador (1.00 punto)
+        1. Escribe la expresión del flujo magnético a través de la espira en función
+           del tiempo y, a partir de ella, deduce la expresión de la fem inducida.
+           Calcula el valor de la fem en el instante 𝑡𝑡=7.0 ms. (0.50 puntos)
+        2. Las especificaciones técnicas del sensor meteorológico exigen que el
+           generador proporcione una fem máxima de al menos 0.50 mV. Indica si
+           el prototipo actual cumple este requisito. (0.50 puntos)
+
+                              BLOQUES C y D: Problemas
+
+3.   Problema, BLOQUE C: Vibraciones y Ondas, y Óptica
+     Este bloque consta de 2 problemas. Debes responder solo a uno.
+
+C1.- Las cuerdas de un violín miden 𝐿𝐿=32.8 𝑐𝑐𝑐𝑐. Se estudia la primera cuerda, que
+
+
+
+
+  U  emite la nota Mi con una frecuencia 𝑓𝑓Mi =659.3 𝐻𝐻𝐻𝐻 cuando vibra en su modo
+     fundamental.
+     a) Obtén la longitud de onda de la onda estacionaria en la cuerda para el modo
+        fundamental, y la longitud de onda del sonido en el aire correspondiente a
+        esa nota. (0.50 puntos)
+     b) ¿En qué punto (referido a cualquiera de los dos extremos) se debe pisar la
+        cuerda para producir la nota La de frecuencia 𝑓𝑓La =880.0 𝐻𝐻𝐻𝐻? (1.00 punto)
+EH
+     c) En un concierto, el violinista solista toca una melodía emitiendo un sonido de
+        potencia 𝑃𝑃=10-6 𝑊𝑊. Te unes a su lado con un violín que emite exactamente
+        la misma nota y potencia. ¿Cuántos decibelios se medirían a una distancia
+        de 10𝑚𝑚 de vuestra posición, si:
+         • sólo toca el violinista solista;
+         • tocáis ambos a la vez? (1.00 punto)
+
+C2.- Disponemos de dos lentes delgadas: una lupa de potencia 𝑃𝑃1 =+3𝐷𝐷; una lente
+     de gafas de potencia 𝑃𝑃2 =-3𝐷𝐷.
+     a) Indica cuál de las dos lentes sería adecuada para construir un proyector de
+        imágenes (por ejemplo, para proyectar sobre una pantalla la imagen de una
+        diapositiva). Justifica la elección atendiendo al tipo de lente
+        (convergente/divergente) y al tipo de imagen que forma (real/virtual). Calcula
+        la distancia focal imagen 𝑓𝑓′ de la lente elegida (en metros y en centímetros).
+        (1.00 punto)
+     b) Supón ahora que se utiliza la lente elegida para proyectar una diapositiva de
+        altura ℎ=2.40 𝑐𝑐𝑐𝑐 sobre una pantalla situada a una distancia 𝐷𝐷=2.00 𝑚𝑚 de la
+        lente. (0.50 puntos)
+         1. Determina a qué distancia de la lente debe colocarse la diapositiva para
+            que la imagen se forme nítidamente sobre la pantalla. (0.25 puntos)
+         2. Calcula el aumento lateral del sistema y la altura de la imagen
+            proyectada sobre la pantalla. (0.25 puntos)
+     c) Análisis de las propiedades de la imagen: (1.00 punto)
+                  UNIBERTSITATEAN                 PRUEBA DE ACCESO A LA
+                  SARTZEKO PROBA                      UNIVERSIDAD
+                    2026ko OHIKOA                      ORDINARIA 2026
+                         FISIKA                             FÍSICA
+
+        1. Indica la orientación de la imagen obtenida en b) (derecha o invertida) y
+           justifica la respuesta a partir del signo del aumento. (0.25 puntos)
+        2. Si la diapositiva se coloca ahora a una distancia 𝑠𝑠=𝑓𝑓′/2 del centro óptico
+           de la misma lente, determina la posición de la imagen y el aumento
+           lateral aplicando la ecuación de lentes delgadas. (0.50 puntos)
+        3. Compara las propiedades de la imagen en ambas situaciones
+           (proyección y 𝑠𝑠=𝑓𝑓′/2): tipo (real/virtual), orientación y tamaño relativo.
+           (0.25 puntos)
+
+4.   Problema, BLOQUE D: Física nuclear y de partículas
+     Este bloque consta de 2 problemas. Debes responder solo a uno.
+
+D1.- Al iluminar la superficie de un metal con luz de longitud de onda 280 nm, la
+     emisión de fotoelectrones cesa para un potencial de frenado de 1.3 V.
+
+
+
+
+  U  a) (0.50 puntos)
+         1. Escribe la ecuación de Einstein del efecto fotoeléctrico y explica el
+            significado físico de cada término. (0.25 puntos)
+         2. A partir del potencial de frenado, determina la energía cinética máxima
+            de los fotoelectrones emitidos. (0.25 puntos)
+     b) (1.00 punto)
+         1. Calcula la función trabajo 𝑊𝑊0 del metal. (0.50 puntos)
+EH
+         2. Determina la frecuencia umbral 𝜈𝜈um y su longitud de onda
+            correspondiente 𝜆𝜆um de emisión fotoeléctrica para ese metal. (0.50
+            puntos)
+     c) Cuando la superficie del metal se ha oxidado, el potencial de frenado para la
+        misma luz incidente es de 0.7 V. (1.00 punto)
+         1. Determina la nueva energía cinética máxima de los fotoelectrones y
+            compárala con la del metal sin oxidar. (0.25 puntos)
+         2. Calcula la nueva función trabajo del metal oxidado. (0.50 puntos)
+         3. Razona cómo cambia la frecuencia umbral de emisión y explica
+            físicamente por qué la oxidación modifica 𝑊𝑊0 . (0.25 puntos)
+
+D2.- Diez gramos de unos restos óseos contienen actualmente 9.5 × 108 átomos de
+     carbono-14 por gramo. Se sabe que, en el momento de la muerte del animal
+     del que proceden esos huesos, la proporción isotópica era la del carbono
+     atmosférico, es decir, había 6.9 × 109 átomos de C-14 por gramo.
+     a) (1.00 punto)
+         1. Escribe la expresión para la ley de desintegración exponencial radiactiva
+            y explica el significado físico de cada magnitud. (0.25 puntos)
+         2. Haz una representación gráfica cualitativa de la ley; esto es, dibuja la
+            curva e indica en la figura las magnitudes y sus correspondientes
+            unidades. (0.25 puntos)
+             UNIBERTSITATEAN                PRUEBA DE ACCESO A LA
+             SARTZEKO PROBA                     UNIVERSIDAD
+               2026ko OHIKOA                     ORDINARIA 2026
+                    FISIKA                           FÍSICA
+
+    3. Deduce la relación entre la constante de desintegración 𝜆𝜆 y el periodo de
+       semidesintegración 𝑡𝑡1/2 . (0.25 puntos)
+    4. Calcula la constante de desintegración 𝜆𝜆 del C-14, sabiendo que
+       𝑡𝑡1/2 (C-14)=5730𝑎𝑎ñ𝑜𝑜𝑜𝑜. (0.25 puntos)
+b) (0.50 puntos)
+    1. Calcula el número total de átomos de C-14 que contiene actualmente la
+       muestra de 10g. (0.25 puntos)
+    2. Calcula el número total de átomos de C-14 que contenía la misma
+       muestra en el momento de la muerte. (0.25 puntos)
+c) Estima la antigüedad de los restos óseos. (1.00 punto)
+    1. Plantea la ecuación de desintegración con los datos del problema. (0.25
+       puntos)
+    2. Resuelve simbólicamente para obtener la expresión del tiempo 𝑡𝑡. (0.50
+
+
+
+
+  U    puntos)
+    3. Calcula el resultado numérico, y exprésalo en años. (0.25 puntos)
+EH
+

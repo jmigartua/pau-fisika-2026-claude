@@ -69,6 +69,7 @@ python3 scripts/02_analysis.py               # all computations → data/analysi
 python3 scripts/03_plots.py                  # ten figures → plots/
 python3 scripts/04_tables.py                 # Markdown tables → data/tables/
 python3 scripts/07_exam_coding.py            # exam coding, figs 11-12, exam tables (day 2)
+python3 scripts/08_ehu_history.py            # EHU paper history 2010-2026, figs 13-15 (day 2)
 python3 scripts/05_registry.py               # source registry
 quarto render                                # → _site/
 ```

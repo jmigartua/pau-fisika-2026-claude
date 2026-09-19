@@ -1,0 +1,319 @@
+Física
+
+ EAU 2021
+www.ehu.eus
+                             UNIBERTSITATERA SARTZEKO          EVALUACIÓN PARA EL
+                                    EBALUAZIOA               ACCESO A LA UNIVERSIDAD
+                                    2021eko OHIKOA                ORDINARIA 2021
+
+
+                                        FISIKA                        FÍSICA
+
+Proposatutako zortzi ariketa hauetako LAUri erantzun behar diezu.
+
+Ez ahaztu azterketa-orrialde bakoitzean kodea jartzea.
+
+        •   Proba idatzi honek 8 ariketa ditu.
+        •   Ariketak bi multzotan banatuta daude:
+            A multzoa: lau problema ditu, eta 2 ebatzi behar dituzu.
+            B multzoa: lau galdera ditu, eta 2ri erantzun behar diezu.
+            Jarraibideetan adierazitakoei baino galdera gehiagori
+            erantzunez gero, erantzunak ordenari jarraituta zuzenduko
+            dira, harik eta beharrezko kopurura iritsi arte.
+
+        •   Problema bakoitzak 3 puntu balio du. Atal guztiek balio berdina dute.
+            Atal bakoitzaren emaitzak, zuzena zein okerra izan, ez du izango
+            inolako eraginik beste ataletako emaitzen balioespenean.
+
+        •   Galdera bakoitzak, gehienez, 2 puntu balio du.
+        •   Kalkulagailu zientifikoa erabil daiteke.
+
+
+Debes responder a CUATRO de los siguientes ocho ejercicios propuestos.
+
+No olvides incluir el código en cada una de las hojas de examen.
+
+
+        •   Esta prueba escrita se compone de 8 ejercicios.
+        •   Los ejercicios están distribuidos en dos bloques:
+            Bloque A: consta de cuatro problemas, debes responder 2 de
+            ellos.
+            Bloque B: consta de cuatro cuestiones, debes responder 2 de
+            ellas.
+            En caso de responder a más preguntas de las estipuladas, las
+            respuestas se corregirán en orden hasta llegar al número
+            necesario.
+        •   Cada problema tiene un valor de 3 puntos. Todos los apartados
+            tienen igual valor. El resultado, correcto o incorrecto, de cada
+            apartado no influirá en la valoración de los restantes.
+
+        •   Cada cuestión se valora en un máximo de 2 puntos.
+        •   Puede utilizarse una calculadora científica.
+                              UNIBERTSITATERA SARTZEKO             EVALUACIÓN PARA EL
+                                     EBALUAZIOA                  ACCESO A LA UNIVERSIDAD
+                                     2021eko OHIKOA                   ORDINARIA 2021
+
+
+                                         FISIKA                            FÍSICA
+
+
+                              BLOQUE A: Problemas
+                (Consta de cuatro problemas, debes responder a 2 de ellos)
+
+
+A.1.- Alrededor de un planeta está girando un satélite en una órbita circular de radio
+      R y con una velocidad v.
+     Calcular:
+     a) El periodo de rotación.
+     b) La masa del planeta.
+     c) Cuánto valdría el periodo de rotación si se triplicara el radio de la órbita.
+
+Datos:
+R = 15000 km; v = 9 km/s
+Constante de la gravitación universal G = 6,67×10-11 N m2 kg-2
+
+
+A.2.- La velocidad de propagación de una onda que se está moviendo en una cuerda
+      en el eje OX es 8 m/s. La ecuación de la onda es: 𝑦𝑦 = 0,03𝑠𝑠𝑠𝑠𝑠𝑠(16𝜋𝜋𝜋𝜋 + 𝑘𝑘𝑘𝑘) en el
+      sistema SI.
+     Calcula:
+     a) La amplitud, la frecuencia y el sentido de propagación de la onda.
+     b) El valor del número de onda k.
+     c) La velocidad que tiene el punto de la cuerda situado en x = 0,5 m, en el
+         instante t = 60s
+
+A.3.- Se dispone de una lente convergente de distancia focal 30 cm.
+     Realizar el diagrama correspondiente y determinar las características (real-
+     virtual, derecha-invertida, aumentada-reducida), la posición y el tamaño de la
+     imagen formada por la lente en los dos casos siguientes:
+          a) Cuando un objeto de 20 cm se encuentra a 70 cm de la lente.
+          b) Cuando un objeto de 20 cm se encuentra a 20 cm de la lente.
+
+
+A.4.- Una espira circular de radio 20 cm se coloca perpendicularmente a un campo
+      magnético uniforme de 0,4 T. Halla la fuerza electromotriz inducida en la espira
+      si en 0,1s:
+     a) Se duplica el valor del campo magnético.
+     b) Se invierte el sentido del campo magnético.
+     c) Se gira la bobina 90° en torno a un eje perpendicular al campo.
+                            UNIBERTSITATERA SARTZEKO        EVALUACIÓN PARA EL
+                                   EBALUAZIOA             ACCESO A LA UNIVERSIDAD
+                                   2021eko OHIKOA              ORDINARIA 2021
+
+
+                                       FISIKA                      FÍSICA
+
+                               BLOQUE B: Cuestiones
+               (Consta de cuatro cuestiones, debes responder a 2 de ellas)
+
+
+B.1.- Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza
+      electromotriz inducida. Sentido de la corriente.
+
+
+B.2.- Defectos de la visión. Hipermetropía y miopía.
+
+
+B.3.- Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes.
+      Ecuación de la velocidad y de la aceleración.
+
+
+B.4.- Describir el fenómeno de la radiactividad natural. Desintegración radiactiva.
+      Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans. Ejemplos.
+                                                                                             UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                                        EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                                 CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                                ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+                                                       BLOQUE A: Problemas
+A1.-
+
+a) Para calcular el periodo de rotación
+                                                                                                                 2𝜋𝜋
+              𝑣𝑣 = 𝜔𝜔𝜔𝜔                teniendo en cuenta la velocidad angular 𝜔𝜔 = 𝑇𝑇
+
+                                             2𝜋𝜋𝜋𝜋            2𝜋𝜋15106 𝑚𝑚
+              Sustituyendo 𝑇𝑇 =                      ⇒ 𝑇𝑇 =            𝑚𝑚       = 10471,9𝑠𝑠
+                                              𝑣𝑣               9·103
+                                                                        𝑠𝑠
+
+
+
+b) Para calcular la masa del planeta
+La fuerza centrípeta en el satélite y la fuerza de atracción gravitatoria que ejerce el
+planeta sobre el satélite son iguales
+
+F = m an
+
+Sustituyendo la fuerza gravitatoria
+       𝑀𝑀𝑀𝑀                           𝑀𝑀                      𝑀𝑀     𝑣𝑣 2                𝑣𝑣 2 𝑅𝑅
+𝐺𝐺 𝑅𝑅2 = 𝑚𝑚𝑎𝑎𝑛𝑛             ⇒ 𝐺𝐺 𝑅𝑅2 = 𝑎𝑎𝑛𝑛            ⇒ 𝐺𝐺 𝑅𝑅2 = 𝑅𝑅            ⇒ 𝑀𝑀 = 𝐺𝐺
+
+                    𝑚𝑚 2
+              �9·103 � 15·106 𝑚𝑚
+       𝑀𝑀 =          𝑠𝑠
+                                           = 1,82 · 1025 𝑘𝑘𝑘𝑘
+              6,6710−11 𝑁𝑁𝑚𝑚2 𝑘𝑘𝑘𝑘−2
+
+
+c) Si el radio de órbita se triplica, el periodo es el siguiente
+
+Igualando la fuerza gravitatoria y la fuerza centrípeta
+
+       𝑀𝑀𝑀𝑀                                                          4𝜋𝜋 2 𝑅𝑅3               4𝜋𝜋 2 𝑅𝑅 3
+𝐺𝐺 𝑅𝑅2 = 𝑚𝑚𝑎𝑎𝑛𝑛 ⇒ 𝑀𝑀 · 𝐺𝐺 = 𝑣𝑣 2 · 𝑅𝑅 ⇒ 𝑀𝑀 · 𝐺𝐺 =                                 ⇒ 𝑇𝑇 2 = 𝑀𝑀·𝐺𝐺
+                                                                         𝑇𝑇 2
+
+
+Sustituyendo: radio de la órbita = 3·R
+
+                    4𝜋𝜋2 (3·15·106 )3 𝑚𝑚3
+𝑇𝑇 = �1,82·1025 𝑘𝑘𝑘𝑘·6,6710−11 𝑁𝑁𝑚𝑚2 𝑘𝑘𝑘𝑘−2 = 54437,7 s
+
+También se puede calcular aplicando la 3ª ley de Kepler
+
+𝑇𝑇 2                 𝑇𝑇 2      𝑇𝑇 2
+       = 𝐾𝐾 ⇒               = 𝑅𝑅13 ⇒ 𝑅𝑅1 = 3𝑅𝑅            ⇒ 𝑇𝑇12 = 27 · 𝑇𝑇 2 ⇒ 𝑇𝑇1 = √27 · 𝑇𝑇
+𝑅𝑅 3                 𝑅𝑅 3        1
+
+
+A2.- Datos
+
+𝑦𝑦 = 0,03𝑠𝑠𝑠𝑠𝑠𝑠(16𝜋𝜋𝜋𝜋 + 𝑘𝑘𝑘𝑘)
+
+v = 8 m/s
+
+Comparando la ecuación de onda dada con la expresión general
+                                                                             UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                        EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                    CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                   ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+𝑦𝑦 = 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝑘𝑘𝑘𝑘 ± 𝜔𝜔𝜔𝜔 + 𝜑𝜑0 ) expresión general
+
+Tenemos
+
+A = 0,03m; 𝜔𝜔 = 16𝜋𝜋 rad/s; 𝜑𝜑0 = 0
+
+En este caso
+
+   a) A, f y el sentido de propagación de la onda
+      Amplitud de onda: A = 0,03 m
+                             2·𝜋𝜋                      𝜔𝜔   16𝜋𝜋
+       Pulsación 𝜔𝜔 = 𝑇𝑇 = 2𝜋𝜋 · 𝑓𝑓 ⇒ 𝑓𝑓 = 2𝜋𝜋              2𝜋𝜋
+                                                                   = 8 Hz
+       Frecuencia: 𝑓𝑓= 8 Hz
+       Sentido de propagación de la onda: El signo positivo del término “kx” quiere decir
+       que la onda se propaga por el eje negativo de OX
+
+   b) k?
+           2𝜋𝜋
+       𝑘𝑘 =
+            𝜆𝜆
+                                      𝜆𝜆        1
+       Velocidad de propagación: 𝑣𝑣 = 𝑇𝑇 y 𝑇𝑇 = 𝑓𝑓 ⇒T = 0,125 s
+                                       𝑚𝑚
+       Tenemos 𝜆𝜆 = 𝑣𝑣 · 𝑇𝑇 = 8 𝑠𝑠 · 0,125𝑠𝑠 = 1𝑚𝑚
+            2𝜋𝜋
+       𝑘𝑘 =     = 2𝜋𝜋𝑚𝑚−1
+            1𝑚𝑚
+
+   c) La velocidad en el punto de posicion X = 0,5 m en el instante t = 60s
+
+                      𝑑𝑑𝑑𝑑
+       𝑣𝑣(𝑥𝑥, 𝑡𝑡) =        = 0,03 · 16𝜋𝜋𝜋𝜋𝜋𝜋𝜋𝜋(16𝜋𝜋𝜋𝜋 + 𝑘𝑘𝑘𝑘)
+                      𝑑𝑑𝑑𝑑
+       𝑣𝑣(60,0,5) = 0,48𝜋𝜋𝜋𝜋𝜋𝜋𝜋𝜋(16𝜋𝜋 · 60 + 2𝜋𝜋 · 0,5)
+
+   𝑣𝑣 = −0,48𝜋𝜋 = −1,51𝑚𝑚 · 𝑠𝑠 −1
+
+
+
+
+A3.-
+Datos: f = -30 cm; y = 20 cm
+   a) s = -70 cm
+
+
+Diagrama
+                                                                                       UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                                                  EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                                       CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                                      ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+
+
+
+Posición:
+1 1 −1
+   − =
+𝑠𝑠′ 𝑠𝑠 𝑓𝑓
+1            1              −1              1        1      1   1
+𝑠𝑠′
+      − −70 = −30                       ⇒   𝑠𝑠′
+                                                  − −70 = 30 − 70     ⇒ s’ = 52,50 cm
+
+
+
+Tamaño:
+𝑦𝑦           𝑠𝑠                   20        −70
+𝑦𝑦′
+      = 𝑠𝑠′                 ⇒     𝑦𝑦′
+                                        = 52,50      ⇒      y’ = - 15 cm
+
+Figura real, invertida y más pequeña
+       b) s = -20 cm
+                  En este caso:
+                  Posición:
+       1                1         −1
+       𝑠𝑠′
+              − −20 = −30 ⟹s’ = -60
+
+                  Tamaño:
+                  𝑦𝑦         𝑠𝑠              20       −20
+                  𝑦𝑦′
+                        = 𝑠𝑠′           ⇒     𝑦𝑦′
+                                                    = −60   ⇒       y’ = 60 cm
+                  Características de la imagen: virtual, derecha y más grande
+                  Diagrama:
+                                                                    UNIBERTSITATERA SARTZEKO EBALUAZIOA
+                                                               EVALUACIÓN PARA EL ACCESO A LA UNIVERSIDAD
+
+
+                                                 CRITERIOS DE CORRECCIÓN Y CALIFICACIÓN
+                                                ZUZENTZEKO ETA KALIFIKATZEKO IRIZPIDEAK
+
+
+
+
+A4.-
+Datos: B = 0,4 T             R= 20 cm           t = 0,1s
+     −𝛥𝛥𝛥𝛥
+𝜀𝜀 = 𝑡𝑡
+      �⃗ · 𝑆𝑆⃗ = B · S · cos 𝛼𝛼
+𝜙𝜙 = 𝐵𝐵
+𝜙𝜙1 = 𝐵𝐵 · 𝑆𝑆 · 𝑐𝑐𝑐𝑐𝑐𝑐(𝛼𝛼) = 0,4 · 0,22 𝜋𝜋 · 1 = 0,016𝜋𝜋𝜋𝜋𝜋𝜋
+
+a) B = 2 · 0,4 = 0,8T
+𝜙𝜙2 = 0,8 · 0,22 𝜋𝜋 · 1 = 0,032𝜋𝜋𝜋𝜋𝜋𝜋
+     −𝛥𝛥𝛥𝛥   0,032𝜋𝜋−0,016𝜋𝜋
+𝜀𝜀 = 𝑡𝑡 =–                   = −0,16𝜋𝜋 V
+                    0,1
+
+
+b) 𝛼𝛼 = 1800
+𝜙𝜙2 = 0,4 · 0,22 𝜋𝜋 · 𝑐𝑐𝑐𝑐𝑐𝑐180 = −0,016𝜋𝜋𝜋𝜋𝜋𝜋
+      −𝛥𝛥𝛥𝛥  −0,016𝜋𝜋−0,016𝜋𝜋
+𝜀𝜀 = 𝑡𝑡 =–           0,1
+                                = 0,32𝜋𝜋 V
+c) 𝛼𝛼 = 900
+𝜙𝜙2 = 0,4 · 0,22 𝜋𝜋 · 𝑐𝑐𝑐𝑐𝑐𝑐90 = 0𝑊𝑊𝑊𝑊
+     −𝛥𝛥𝛥𝛥   0−0,016𝜋𝜋
+𝜀𝜀 = 𝑡𝑡 =– 0,1 = 0,16𝜋𝜋 V
+

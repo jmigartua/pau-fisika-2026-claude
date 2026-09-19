@@ -123,6 +123,35 @@ for f in sorted(EXAMS.iterdir()):
     kind = "corrector document" if "crit" in f.name else ("transcript" if f.suffix == ".md" else ("zip as published" if f.suffix == ".zip" else "exam paper"))
     rows.append(dict(file=f"exams/{f.name}", bytes=f.stat().st_size, sha256=h,
                      description=f"Física ordinary {yr}, {kind}", url=url, retrieval=how))
+# EHU archive 2010–2026: URL recovered from the download log by file size
+HIST = ROOT / "sources" / "exams_ehu_hist"
+size2url = {}
+for line in (HIST / "urls_tried.log").read_text(errors="replace").splitlines():
+    parts = line.split()
+    if parts and parts[0] == "200":
+        nums = [p for p in parts if p.isdigit()]
+        urls = [p for p in parts if p.startswith("http")]
+        if nums and urls:
+            size2url.setdefault(int(nums[-1]), urls[-1])
+for f in sorted(HIST.iterdir()):
+    if f.suffix != ".pdf":
+        continue
+    h = hashlib.sha256(f.read_bytes()).hexdigest()
+    url = size2url.get(f.stat().st_size, "")
+    stem = f.stem
+    url = {"ehu_2024_ord": "https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica",
+           "ehu_2024_extra": "https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica-1",
+           "ehu_orient_2025_modelo_v0": "https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica_mod_pau25-pdf"}.get(stem, url)
+    if stem.startswith("ehu_orient"):
+        desc = "EHU PAU 2025 model paper / guidance" + (" (Oct 2024 version)" if "v0" in stem else "")
+    else:
+        yr = stem.split("_")[1]
+        sit = "extraordinary" if "extra" in stem else "ordinary"
+        kind = "solucionario" if "crit" in stem else "exam paper"
+        lang = " (Basque version)" if stem.endswith("_eu") else (" (bilingual)" if "bil" in stem else "")
+        desc = f"EHU Física {sit} {yr}, {kind}{lang}"
+    rows.append(dict(file=f"exams_ehu_hist/{f.name}", bytes=f.stat().st_size, sha256=h, description=desc, url=url,
+                     retrieval="curl (search agent), ehu.eus archive pages"))
 for folder in (RAW, MIN):
     for f in sorted(folder.iterdir()):
         if not f.is_file():

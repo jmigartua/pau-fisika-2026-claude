@@ -1,0 +1,520 @@
+                UNIBERTSITATEAN SARTZEKO                     PRUEBA DE ACCESO A LA
+                          PROBA                                  UNIVERSIDAD
+                        2026ko EZOHIKOA                       EXTRAORDINARIA 2026
+                  EBAZPENA ETA IRIZPIDEAK                 SOLUCIONARIO Y CRITERIOS
+                             FISIKA                                     FÍSICA
+
+     Referencia a los criterios generales
+     Se aplican los criterios generales de corrección facilitados a los correctores, en particular:
+
+         •    Cálculo simbólico antes que numérico.
+         •    Unidades ausentes o incorrectas: −0.1 puntos.
+         •    Errores vectoriales simbólicos reiterados: −0.1 puntos.
+         •    Errores de redondeo y cifras significativas: −0.1 puntos.
+         •    Los errores graves (ecuaciones incorrectas, confusión escalar/vectorial, etc.) pueden
+              invalidar el apartado completo.
+         •    Si un apartado requiere el resultado de uno anterior, se usará el valor dado por el/la
+
+
+
+
+                      U
+              alumno/a, salvo resultado físicamente absurdo.
+
+
+     Tabla de datos y constantes físicas
+     La siguiente tabla debe acompañar al enunciado del examen. Contiene todas las constantes
+     necesarias para resolver los ejercicios.
+
+
+DATOS y CONSTANTES
+EH
+FÍSICAS
+𝐺𝐺=6.67 × 10−11 Nm2 kg−2        𝑐𝑐=3.00 × 108 ms−1        ℎ=6.63 × 10−34 Js            𝑛𝑛aire =1
+
+
+𝑀𝑀M =6.39 × 1023 kg             𝑞𝑞𝑒𝑒 =1.60 × 10−19 C      𝑚𝑚𝑒𝑒 =9.11 × 10−31 kg        𝐾𝐾=9.00 × 109 Nm2 C−2
+
+
+1 UA=1.50 × 1011 m              𝜇𝜇0 =4𝜋𝜋 × 10−7 T mA−1    1 u=1.66 × 10−27 kg            1 u=931.5 MeV/𝑐𝑐 2
+
+
+𝐼𝐼0 =10−12 Wm−2                 𝑁𝑁𝐴𝐴 =6.02 × 1023 mol−1
+
+
+
+
+     Ejercicio 1 — Campo gravitatorio (2.50 puntos)
+     Distribución de puntos
+             Apartado                Subapartado                 Puntos           Contenido
+                a)                        a.1                      0.50           Deducción de
+                                                                                  𝑇𝑇=2𝜋𝜋�𝑟𝑟 3 /𝜇𝜇 +
+                                                                                  hipótesis
+                                                                   0.50
+                b)                        b.1                      0.25           Cálculo de 𝑔𝑔(ℎ1 )
+                                                                                  como fracción de 𝑔𝑔0
+
+
+
+                                                                                            EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                           PRUEBA DE ACCESO A LA
+                     PROBA                                        UNIVERSIDAD
+                    2026ko EZOHIKOA                           EXTRAORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                      SOLUCIONARIO Y CRITERIOS
+                           FISIKA                                    FÍSICA
+
+        Apartado                     Subapartado                 Puntos      Contenido
+                                         b.2                      0.50       Cálculo de 𝑣𝑣 y 𝑇𝑇 en la
+                                                                             órbita baja
+                                         b.3                      0.25       Razonamiento
+                                                                             cualitativo 𝑣𝑣 y 𝑇𝑇 en
+                                                                             órbita alta
+                                                                  1.00
+           c)                            c.1                      0.50       Verificar 𝑇𝑇 2 /𝑟𝑟 3 ≈ 𝑐𝑐𝑐𝑐𝑐𝑐
+                                                                             + estimar 𝑀𝑀𝑀𝑀
+                                         c.2                      0.25       Identificar objeto
+
+
+
+
+Datos previos
+                 U                       c.3                      0.25
+
+
+                                                                  1.00
+                                                                             anómalo
+                                                                             Predecir 𝑇𝑇 para
+                                                                             𝑟𝑟=1.50 × 107 𝑚𝑚
+
+
+
+
+                    𝜇𝜇=𝐺𝐺𝑀𝑀𝑀𝑀 =6.67 × 10−11 × 6.39 × 1023 =4.26 × 1013 𝑚𝑚3 𝑠𝑠 −2
+                        𝑟𝑟1 =𝑅𝑅𝑀𝑀 +ℎ1 =3.390 × 106 +0.250 × 106 =3.640 × 106 𝑚𝑚
+EH
+                        𝑟𝑟2 =𝑅𝑅𝑀𝑀 +ℎ2 =3.390 × 106 +6.000 × 106 =9.390 × 106 𝑚𝑚
+
+Solución orientativa y criterios
+a.1 — Deducción de 𝑻𝑻 (0.50)
+Igualando fuerza gravitatoria y la centrípeta: 𝐺𝐺𝐺𝐺𝐺𝐺/𝑟𝑟 2 =𝑚𝑚𝑣𝑣 2 /𝑟𝑟 ⟹ 𝑣𝑣=�𝜇𝜇/𝑟𝑟. Sustituyendo en
+𝑇𝑇=2𝜋𝜋𝜋𝜋/𝑣𝑣:
+
+                                                       𝑟𝑟 3
+                                                𝑇𝑇=2𝜋𝜋�
+                                                        𝜇𝜇
+
+Hipótesis: Masa central mucho mayor que la sonda (𝑀𝑀 ≫ 𝑚𝑚), órbita circular, aproximación de
+masa puntual o distribución esférica.
+
+b.1 — Campo gravitatorio 𝒈𝒈(𝒉𝒉𝟏𝟏 ) (0.25)
+                                         𝜇𝜇  4.26 × 1013
+                                𝑔𝑔(ℎ1 )= 2 =               =3.22 𝑚𝑚𝑚𝑚 −2
+                                        𝑟𝑟1 (3.64 × 106 )2
+
+Comparación: 𝑔𝑔(ℎ1 )/𝑔𝑔0 =3.22/9.8 ≈ 0.33 ≈ 1/3.
+
+Criterio: 0.25 si da el valor y la relación con 𝑔𝑔0 .
+
+b.2 — Velocidad y periodo (0.50 = 0.25 + 0.25)
+                         4.26×1013
+    •    0.25 — 𝑣𝑣1 =� 3.64×106 =3.42 × 103 𝑚𝑚/𝑠𝑠=3.42 𝑘𝑘𝑘𝑘/𝑠𝑠
+                        2𝜋𝜋⋅3.64×106
+    •    0.25 — 𝑇𝑇1 =     3.42×103
+                                     =6690𝑠𝑠 ≈ 1.86 ℎ
+
+                                                                                        EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                       PRUEBA DE ACCESO A LA
+                     PROBA                                    UNIVERSIDAD
+                   2026ko EZOHIKOA                         EXTRAORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                     SOLUCIONARIO Y CRITERIOS
+                            FISIKA                                    FÍSICA
+
+b.3 — Comparación cualitativa (0.25)
+A mayor radio 𝑟𝑟: 𝑣𝑣 ∝ 1/√𝑟𝑟 ⟹ 𝑣𝑣2 <𝑣𝑣1; 𝑇𝑇 ∝ 𝑟𝑟 3/2 ⟹ 𝑇𝑇2 >𝑇𝑇1.
+
+c.1 — Verificación y masa (0.50 = 0.25 + 0.25)
+    •    0.25 — Cálculo de 𝑘𝑘=𝑇𝑇 2 /𝑟𝑟 3 para A, B, C. 𝑘𝑘𝐴𝐴 ≈ 9.26 × 10−13, 𝑘𝑘𝐵𝐵 ≈ 9.28 × 10−13 , 𝑘𝑘𝐶𝐶 ≈
+         9.25 × 10−13. (Valores consistentes).
+    •    0.25 — Estimación masa:
+                            4𝜋𝜋 2                39.48
+                   𝑀𝑀=                ≈         −11
+                                                                   ≈ 6.4 × 1023 𝑘𝑘𝑘𝑘
+                         𝐺𝐺 ⋅ 𝑘𝑘𝑚𝑚𝑚𝑚𝑚𝑚 6.67 × 10    ⋅ 9.26 × 10−13
+
+c.2 — Objeto anómalo (0.25)
+Objeto D: 𝑘𝑘𝐷𝐷 ≈ 1.6 × 10−12 (muy distinto).
+
+
+
+
+                 U
+c.3 — Predicción (0.25)
+Para 𝑟𝑟=1.50 × 107 m:
+
+                   𝑇𝑇=�𝑘𝑘𝑚𝑚𝑚𝑚𝑚𝑚 ⋅ 𝑟𝑟 3 =�9.26 × 10−13 ⋅ (1.5 × 107 )3 ≈ 5.59 × 104 𝑠𝑠
+
+
+Ejercicio 2 — Campo electromagnético (2.50 puntos)
+EH
+Distribución de puntos
+        Apartado                   Subapartado                 Puntos         Contenido
+           a)                           a.1                        0.25       Expresiones
+                                                                              vectoriales de 𝐹𝐹⃗𝐸𝐸 y 𝐹𝐹⃗𝐵𝐵
+                                                                   0.25       Esquema de los
+                                                                              sentidos
+                                        a.2                        0.25       Condición selector y
+                                                                              𝑣𝑣0 =𝐸𝐸/𝐵𝐵
+                                        a.3                        0.25       Cálculo numérico de
+                                                                              𝑣𝑣0
+                                                                   1.00
+           b)                           b.1                        0.25       Describir fuerza y tipo
+                                                                              de trayectoria
+                                        b.2                        0.25       Explicación
+                                                                   0.50
+           c)                           c.1                        0.50       Cálculo del radio
+                                        c.2                        0.50       Relación radios 𝑟𝑟 ∝
+                                                                              𝑚𝑚, y diferencia
+                                                                              relativa
+                                                                   1.00
+
+
+
+                                                                                        EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+            UNIBERTSITATEAN SARTZEKO                             PRUEBA DE ACCESO A LA
+                      PROBA                                          UNIVERSIDAD
+                     2026ko EZOHIKOA                              EXTRAORDINARIA 2026
+            EBAZPENA ETA IRIZPIDEAK                          SOLUCIONARIO Y CRITERIOS
+                            FISIKA                                           FÍSICA
+
+Solución orientativa y criterios
+a.1 — Fuerzas (0.50 = 0.25 + 0.25)
+𝐹𝐹⃗𝐸𝐸 =𝑞𝑞𝐸𝐸�⃗ y 𝐹𝐹⃗𝐵𝐵 =𝑞𝑞�𝑣𝑣⃗ × 𝐵𝐵
+                                �⃗�. Sentidos opuestos para que se anulen (ej. 𝐸𝐸�⃗ arriba, 𝐹𝐹⃗𝐵𝐵 abajo).
+
+a.2 — Selector (0.25)
+                                  �⃗ ⟹ 𝑞𝑞𝑞𝑞=𝑞𝑞𝑞𝑞𝑞𝑞 ⟹ 𝑣𝑣0 =𝐸𝐸/𝐵𝐵.
+Condición de no desviación: ∑𝐹𝐹⃗ =0
+Ecuación vectorial, en una dimensión, ecuación escalar.
+
+a.3 — Cálculo 𝒗𝒗𝟎𝟎 (0.25)
+                                   3.0×104
+Sustitución. Resultado: 𝑣𝑣0 =        0.15
+                                           =2.0 × 105 𝑚𝑚/𝑠𝑠.
+
+
+
+
+    •
+    •
+                   U
+b. — Trayectoria en 𝑩𝑩′ (0.50)
+Fuerza magnética siempre perpendicular a la velocidad (𝐹𝐹⟂𝑣𝑣). No modifica el módulo de 𝑣𝑣,
+solo la dirección → Movimiento Circular Uniforme.
+
+c.1 — Radio (0.50 = 0.25 + 0.25)
+         0.25 — Deducción: 𝑞𝑞𝑞𝑞𝑞𝑞′=𝑚𝑚𝑣𝑣 2 /𝑟𝑟 ⟹ 𝑟𝑟=𝑚𝑚𝑚𝑚/𝑞𝑞𝑞𝑞′.
+         0.25 — Cálculo:
+
+                             𝑟𝑟=
+                                   1.0 × 10−25 ⋅ 2.0 × 105 2 × 10−20
+                                                          =           =0.25𝑚𝑚
+EH
+                                      1.6 × 10−19 ⋅ 0.50    8 × 10−20
+
+c.2 — Medida 𝒎𝒎/𝒒𝒒 (0.50 = 0.25 + 0.25)
+                                     𝑚𝑚 𝑟𝑟𝑟𝑟′
+    •    0.25 — Despejando:             = . Midiendo dónde impacta la partícula (2𝑟𝑟), se obtiene 𝑟𝑟 y
+                                     𝑞𝑞  𝑣𝑣0
+         por tanto la relación masa/carga.
+    •    0.25 — Como 𝑟𝑟 ∝ 𝑚𝑚 (a igual 𝑞𝑞, 𝑣𝑣, 𝐵𝐵′), si 𝑚𝑚2 =1.05𝑚𝑚1, entonces 𝑟𝑟2 =1.05𝑟𝑟1.
+
+         Los radios no son iguales; el más pesado tiene mayor radio.
+
+
+Ejercicio 3 Opción A — MAS (2.50 puntos)
+Distribución de puntos
+        Apartado                   Subapartado                 Puntos              Contenido
+            a)                         a.1                       0.25              Amplitud 𝐴𝐴
+                                       a.2                       0.25              Energía 𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚
+                                       a.3                       0.25              Frecuencia angular
+                                                                                   𝜔𝜔
+                                       a.4                       0.25              Periodo 𝑇𝑇
+                                                                 1.00
+            b)                         b.1                       0.50              Constante elástica
+                                                                                   𝑘𝑘
+                                                                 0.50
+
+
+                                                                                                  EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                        PRUEBA DE ACCESO A LA
+                     PROBA                                     UNIVERSIDAD
+                    2026ko EZOHIKOA                         EXTRAORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                       SOLUCIONARIO Y CRITERIOS
+                          FISIKA                                      FÍSICA
+
+        Apartado              Subapartado                 Puntos           Contenido
+           c)                       c.1                    0.25            Ecuación del
+                                                                           movimiento
+                                    c.2                    0.25            Posición 𝑥𝑥(3)
+                                    c.3                    0.25            Velocidad 𝑣𝑣(3)
+                                    c.4                    0.25            Aceleración 𝑎𝑎(3)
+                                                           1.00
+
+Solución orientativa y criterios
+a) — Parámetros cinemáticos (1.00 = 4 × 0.25)
+    •
+    •
+    •
+
+
+
+
+    •            U
+         0.25 — Amplitud: Distancia entre extremos =2𝐴𝐴=0.50 m ⟹ 𝐴𝐴=0.25 m.
+
+
+
+
+                           𝜔𝜔=�
+                                    1
+         0.25 — Energía: 𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚 = 2 𝑚𝑚𝜔𝜔2 𝐴𝐴2 =15 J.
+         0.25 — Frecuencia angular:
+
+                               2𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚
+                                𝑚𝑚𝐴𝐴2
+                                         = �
+                                                30
+                                            0.30 ⋅ 0.252
+         0.25 — Periodo: 𝑇𝑇=2𝜋𝜋/𝜔𝜔 ≈ 0.157 s.
+                                                         =√1600=40 𝑟𝑟𝑟𝑟𝑟𝑟/𝑠𝑠
+EH
+b) — Constante elástica (0.50 = 0.25 + 0.25)
+    •    0.25 — Fórmula: 𝑘𝑘=𝑚𝑚𝜔𝜔2 .
+                                                                             1
+    •    0.25 — Cálculo: 𝑘𝑘=0.30 ⋅ 1600=480 𝑁𝑁/𝑚𝑚. (Alternativa: 𝐸𝐸𝑡𝑡𝑡𝑡𝑡𝑡 = 2 𝑘𝑘𝐴𝐴2 ⟹ 𝑘𝑘=2𝐸𝐸/𝐴𝐴2 ).
+
+c) — Estado en 𝒕𝒕=𝟑𝟑 s (1.00 = 4 × 0.25)
+Condiciones iniciales: 𝑡𝑡=0 en 𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚 (centro, 𝑥𝑥=0) y 𝑣𝑣>0. Ecuación tipo seno: 𝑥𝑥(𝑡𝑡)=0.25𝑠𝑠𝑠𝑠𝑠𝑠(40𝑡𝑡)
+
+    •    0.25 — Posición: 𝑥𝑥(3)=0.25𝑠𝑠𝑠𝑠𝑠𝑠(120) ≈ 0.25 ⋅ 0.58=0.145 m.
+    •    0.25 — Velocidad: 𝑣𝑣(𝑡𝑡)=10𝑐𝑐𝑐𝑐𝑐𝑐(40𝑡𝑡) ⟹ 𝑣𝑣(3)=10𝑐𝑐𝑐𝑐𝑐𝑐(120) ≈ 8.14 m/s.
+                                                                                    2
+    •    0.25 — Aceleración: 𝑎𝑎(𝑡𝑡)= − 400𝑠𝑠𝑠𝑠𝑠𝑠(40𝑡𝑡) ⟹ 𝑎𝑎(3) ≈ −232 m/s               .
+
+
+Ejercicio 3 Opción B — Lente convergente (2.50
+puntos)
+Distribución de puntos
+        Apartado              Subapartado                 Puntos           Contenido
+           a)                       a.1                    0.50            Trazado de rayos
+                                                                           (𝑠𝑠=4𝑓𝑓)
+                                    a.2                    0.50            Propiedades de la
+                                                                           imagen
+                                                           1.00
+
+
+
+                                                                                            EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+          UNIBERTSITATEAN SARTZEKO                    PRUEBA DE ACCESO A LA
+                    PROBA                                 UNIVERSIDAD
+                  2026ko EZOHIKOA                      EXTRAORDINARIA 2026
+          EBAZPENA ETA IRIZPIDEAK                 SOLUCIONARIO Y CRITERIOS
+                       FISIKA                                  FÍSICA
+
+       Apartado           Subapartado              Puntos          Contenido
+          b)                   b.1                    0.25         Posición de la
+                                                                   imagen
+                               b.2                    0.25         Tamaño relativo
+                                                                   (aumento)
+                                                      0.50
+          c)                   c.1                    0.50         Trazado de rayos
+                                                                   (𝑠𝑠=𝑓𝑓/2)
+                               c.2                    0.50         Propiedades de la
+                                                                   imagen
+
+
+
+
+   •
+   •
+               U
+Solución orientativa y criterios
+a) — Objeto en 𝟒𝟒𝟒𝟒 (1.00 = 2 × 0.50)
+        0.50 — Trazado.
+        0.50 — Propiedades: Real, invertida, menor.
+
+b) — Objeto en 𝟒𝟒𝟒𝟒 (0.50 = 2 × 0.25)
+                                                      1.00
+EH
+   •    0.25 — Posición: 1/𝑠𝑠′ − 1/(−4𝑓𝑓)=1/𝑓𝑓 ⟹ 1/𝑠𝑠′=1/𝑓𝑓 − 1/4𝑓𝑓=3/4𝑓𝑓 ⟹ 𝑠𝑠′=4𝑓𝑓/3.
+   •    0.25 — Tamaño relativo: 𝑀𝑀=𝑠𝑠′/𝑠𝑠=(4𝑓𝑓/3)/(−4𝑓𝑓)= − 1/3. Imagen reducida a un tercio.
+
+c) — Objeto en 𝒇𝒇/𝟐𝟐 (1.00 = 2 × 0.50)
+   •    0.50 — Trazado: Rayos divergen tras la lente. Se prolongan hacia atrás.
+   •    0.50 — Propiedades: Virtual, derecha, mayor.
+
+
+
+
+                                                                                  EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                           PRUEBA DE ACCESO A LA
+                     PROBA                                        UNIVERSIDAD
+                    2026ko EZOHIKOA                            EXTRAORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                      SOLUCIONARIO Y CRITERIOS
+                          FISIKA                                     FÍSICA
+
+Ejercicio 4 Opción A — Efecto fotoeléctrico (2.50
+puntos)
+Distribución de puntos
+        Apartado              Subapartado                 Puntos        Contenido
+           a)                       a.1                       0.50      Justificación de
+                                                                        emisión
+                                                              0.50
+           b)                       b.1                       0.25      Ecuación de
+                                                                        Einstein
+
+
+
+
+           c)
+
+                 U                  b.2
+                                    b.3
+                                    b.4
+
+
+                                    c.1
+                                    c.2
+                                                              0.25
+                                                              0.25
+                                                              0.25
+                                                              1.00
+                                                              0.25
+                                                              0.25
+                                                                        Cálculo de 𝑊𝑊
+                                                                        Cálculo de 𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚
+                                                                        Velocidad máxima
+
+
+                                                                        Nuevo trabajo 𝑊𝑊′
+                                                                        Condición
+                                                                        ℎ𝜈𝜈𝑚𝑚𝑚𝑚𝑚𝑚 =𝑊𝑊′
+EH
+                                    c.3                       0.25      Despeje de 𝜈𝜈𝑚𝑚𝑚𝑚𝑚𝑚
+                                    c.4                       0.25      Resultado
+                                                                        numérico
+                                                              1.00
+
+Solución orientativa y criterios
+a) — Emisión (0.50 = 0.25 + 0.25)
+𝜆𝜆=500 nm, 𝜆𝜆𝑢𝑢𝑢𝑢 =612 nm.
+
+    •    0.25 — Comparación: 𝜆𝜆<𝜆𝜆𝑢𝑢𝑢𝑢 (equiv. 𝑓𝑓>𝑓𝑓𝑢𝑢𝑢𝑢 ).
+    •    0.25 — Conclusión: la energía del fotón supera el trabajo de extracción; sí hay
+         emisión.
+
+b) — Velocidad máxima (1.00 = 4 × 0.25)
+    •    0.25 — Ec. de Einstein: ℎ𝑐𝑐/𝜆𝜆=𝑊𝑊+𝐸𝐸𝑐𝑐𝑐𝑐𝑐𝑐 .
+    •    0.25 — Cálculo 𝑊𝑊: 𝑊𝑊=ℎ𝑐𝑐/𝜆𝜆𝑢𝑢𝑢𝑢 =(6.63 × 10−34 ⋅ 3 × 108 )/612 × 10−9 =3.25 × 10−19 J.
+    •    0.25 — Cálculo 𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚 : 𝐸𝐸𝛾𝛾 =3.98 × 10−19 J ⟹ 𝐾𝐾𝑚𝑚𝑚𝑚𝑚𝑚 =3.98 − 3.25=7.3 × 10−20 J.
+    •    0.25 — Velocidad: 𝑣𝑣=�2𝐾𝐾/𝑚𝑚𝑒𝑒 =�1.46 × 10−19 /9.1 × 10−31 =4.0 × 105 m/s.
+
+c) — Doble trabajo (1.00 = 4 × 0.25)
+    •    0.25 — Nuevo 𝑊𝑊′=2𝑊𝑊=6.50 × 10−19 J.
+    •    0.25 — Condición: ℎ𝜈𝜈𝑚𝑚𝑚𝑚𝑚𝑚 =𝑊𝑊′.
+    •    0.25 — Despeje: 𝜈𝜈𝑚𝑚𝑚𝑚𝑚𝑚 =𝑊𝑊′/ℎ.
+
+                                                                                         EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+           UNIBERTSITATEAN SARTZEKO                    PRUEBA DE ACCESO A LA
+                     PROBA                                 UNIVERSIDAD
+                   2026ko EZOHIKOA                     EXTRAORDINARIA 2026
+           EBAZPENA ETA IRIZPIDEAK                 SOLUCIONARIO Y CRITERIOS
+                          FISIKA                                FÍSICA
+
+    •    0.25 — Resultado: 𝜈𝜈𝑚𝑚𝑚𝑚𝑚𝑚 =6.50 × 10−19 /6.63 × 10−34 =9.8 × 1014 Hz.
+
+
+Ejercicio 4 Opción B — Física nuclear (2.50 puntos)
+Distribución de puntos
+        Apartado             Subapartado             Puntos          Contenido
+           a)                      a.1                0.25           Fórmula de 𝜆𝜆
+                                   a.2                0.25           Cálculo numérico
+                                                      0.50
+           b)                      b.1                0.25           Moles
+
+
+
+
+           c)
+                U                  b.2
+                                   b.3
+                                   b.4
+
+
+
+                                   c.1
+                                                      0.25
+                                                      0.25
+                                                      0.25
+
+
+                                                      1.00
+                                                      0.25
+                                                                     Número de núcleos
+                                                                     Fórmula 𝐴𝐴=𝜆𝜆𝜆𝜆
+                                                                     Resultado
+                                                                     numérico
+
+
+                                                                     Planteamiento
+                                                                     𝑁𝑁/𝑁𝑁0 =0.25
+EH
+                                   c.2                0.25           Relación con
+                                                                     semividas
+                                   c.3                0.25           Cálculo de 𝑡𝑡
+                                   c.4                0.25           Resultado
+                                                                     numérico
+                                                      1.00
+
+Solución orientativa y criterios
+a) — Constante desintegración (0.50 = 0.25 + 0.25)
+    •    0.25 — Fórmula: 𝜆𝜆=𝑙𝑙𝑙𝑙2/𝑇𝑇1/2.
+
+    •    0.25 — Cálculo: 𝑇𝑇1/2 =24200 años ⋅ 3.15 × 107 s/año ≈ 7.6 × 1011 s.
+
+𝜆𝜆 ≈ 9.1 × 10−13 𝑠𝑠 −1.
+
+b) — Actividad (1.00 = 4 × 0.25)
+    •    0.25 — Moles: 𝑛𝑛=10−3 𝑔𝑔/239.05𝑔𝑔/𝑚𝑚𝑚𝑚𝑚𝑚=4.18 × 10−6 mol.
+
+    •    0.25 — Núcleos: 𝑁𝑁=𝑛𝑛 ⋅ 𝑁𝑁𝐴𝐴 =4.18 × 10−6 ⋅ 6.02 × 1023 =2.52 × 1018.
+
+    •    0.25 — Fórmula 𝐴𝐴=𝜆𝜆𝜆𝜆.
+
+    •    0.25 — Resultado: 𝐴𝐴=9.1 × 10−13 ⋅ 2.52 × 1018 ≈ 2.3 × 106 Bq.
+
+c) — Tiempo 25% (1.00 = 4 × 0.25)
+    •    0.25 — Planteamiento: 𝑁𝑁/𝑁𝑁0 =0.25=1/4.
+
+                                                                                     EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+      UNIBERTSITATEAN SARTZEKO                   PRUEBA DE ACCESO A LA
+                PROBA                                UNIVERSIDAD
+              2026ko EZOHIKOA                    EXTRAORDINARIA 2026
+      EBAZPENA ETA IRIZPIDEAK              SOLUCIONARIO Y CRITERIOS
+                     FISIKA                             FÍSICA
+
+•   0.25 — Relación con semividas: 1/4=(1/2)2, por lo que han pasado exactamente 2
+    periodos de semidesintegración.
+
+•   0.25 — Cálculo: 𝑡𝑡=2 ⋅ 𝑇𝑇1/2.
+
+•   0.25 — Resultado: 𝑡𝑡=2 ⋅ 24200=48400 años.
+
+
+
+
+            U
+EH
+
+                                                                       EBAZPENA ETA IRIZPIDEAK/SOLUCIONARIO Y CRITERIOS
+

@@ -1,0 +1,23 @@
+EHU (UPV/EHU) Physics university-entrance exam papers 2010-2026 + PAU 2025 guidance
+Downloaded 2026-09-19 from www.ehu.eus (see urls_tried.log for exact source URL of every file and every 404).
+
+Naming: ehu_<year>_<ord|extra>[_crit][_eu].pdf  (+ .txt = pdftotext -layout)
+  ord   = convocatoria ordinaria (June)      extra = extraordinaria (July; Sept in 2021-2022)
+  _eu   = Basque-language version            _crit = separate "solucionario" (2025-2026 only)
+  2023_extra_bil = bilingual single PDF (eu + es); 2023_ord is also bilingual (eu part first)
+  2012-2024 papers embed "Criterios de corrección y calificación" + worked solutions after the paper
+  2010-2011 papers: statement only (no solutions published)
+
+Source index pages:
+  Archive 2010-2022 (es): https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/pruebas-de-acceso/examenes-de-cursos-anteriores/bachillerato-y-ciclos-formativos-de-grado-superior/<year>
+  Archive 2010-2022 (eu): https://www.ehu.eus/eu/web/unibertsitaterako-sarbidea/sarbide-probak/aurreko-urteetako-azterketak/batxilergoa-eta-goi-mailako-heziketa-zikloak/<year>
+  2023: https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/200
+  2024: https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/vias-de-acceso/bachillerato-y-ciclos-formativos-de-grado-superior/eau-2024/examenes  (eu: .../use-2024/azterketak)
+  2025/2026: .../pau-2025/examenes-convocatoria-{ordinaria,extraordinaria}, .../pau-2026/...
+  Modelos PAU 2025: https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/vias-de-acceso/bachillerato-y-ciclos-formativos-de-grado-superior/pau/nuevos-modelos-examenes
+
+Guidance:
+  ehu_orient_2025_modelo.pdf     = "Modelo de examen Física PAU 2024/25", updated 18-11-2024 (29 pp, eu+es, with general correction criteria + solutions)
+  ehu_orient_2025_modelo_v0.pdf  = first version of the same modelo (29/30-10-2024, 19 pp; 4 compulsory competence problems, rubric 0.8/0.8/0.5/0.4)
+  ehu_orient_2025_ohar_informatiboa_ALLSUBJECTS.pdf = 11-03-2025 note on model updates (NOT physics-specific; Maths II, Greek, Geology, Geography, Ciencias Generales, Empresa)
+No separate EHU "Orientaciones Física 2026" document, no pre-2025 syllabus/theory-list document and no coordination-meeting minutes are published on ehu.eus.
