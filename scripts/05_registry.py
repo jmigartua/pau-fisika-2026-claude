@@ -62,7 +62,67 @@ DASH = [
     ("Canal Extremadura 11 Jun 2026 (UEx release)", "https://www.canalextremadura.es/noticias/extremadura/el-967-de-los-alumnos-presentados-aprueba-la-pau", "press; value in data/regional_fisica_found.csv"),
 ]
 
+CAN25 = "https://www.gobiernodecanarias.org/cmsgob1/export/sites/educacion/web/bachillerato/_galerias/descargas/pau-2025/examenes-PAU-junio-2025/"
+CAN26 = "https://www.gobiernodecanarias.org/cmsgob1/export/sites/educacion/web/bachillerato/_galerias/descargas/pau-2026/examenes-PAU-junio-2026/"
+CAT25 = "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/"
+CAT26 = "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/"
+FQP = "https://gitlab.com/fiquipedia/drive.fiquipedia/-/raw/main/PAUxComunidades/fisica/"
+AND = "https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/examanes_anios_anteriores/selectividad/"
+UCLM = "https://www.uclm.es/perfiles/preuniversitario/acceso/pau/modelosycriteriosdecorreccion/modelospropuestos"
+EXAM_URLS = {
+    "pv_2025_ord.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisika-azterketa-ohikoa-2025", "curl (search agent)"),
+    "pv_2025_ord_crit.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisika-ebazpena-ohikoa-2025", "curl (search agent)"),
+    "pv_2025_ord_es.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica-examen-ord-2025", "curl (search agent)"),
+    "pv_2025_ord_crit_es.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica-solucionario-ord-2025", "curl (search agent)"),
+    "pv_2026_ord.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica-examen-ord-2026", "copy of raw/ehu_fisica_examen_ord_2026.pdf"),
+    "pv_2026_ord_crit.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica-solucionario-ord-2026", "copy of raw/ehu_fisica_solucionario_ord_2026.pdf"),
+    "cat_2025_ord.pdf": (CAT25 + "pau_fisi25jl.pdf", "curl (search agent)"),
+    "cat_2025_ord_crit.pdf": (CAT25 + "pau_fisi25jp.pdf", "curl (search agent)"),
+    "cat_2026_ord.pdf": (CAT26 + "pau_fisi26jl.pdf", "curl (search agent)"),
+    "cat_2026_ord_crit.pdf": ("https://img.beteve.cat/wp-content/uploads/2026/06/correccions-fisica-pau-selectivitat-2026-a.pdf", "Betevé mirror of the official criteria (gencat pau_fisi26jt.pdf returns 404)"),
+    "mad_2025_ord.pdf": ("https://www.ucm.es/file/fisica-18", "curl (search agent); criteria and solutions inside the same PDF"),
+    "mad_2026_ord.pdf": ("https://www.ucm.es/file/fisica-25", "curl (search agent); criteria and solutions inside the same PDF"),
+    "ast_2025_ord.pdf": ("https://www.uniovi.es/documents/39158/109af28d-1286-5ce4-c932-4645b90d10b6", "curl (search agent)"),
+    "ast_2025_ord_crit.pdf": ("https://www.uniovi.es/documents/39158/c71b8148-f18f-0cce-9205-e7f374a142d9", "curl (search agent)"),
+    "ast_2026_ord.pdf": ("https://www.uniovi.es/documents/39158/6362fc30-ac9a-ecf1-4602-59b1a6df9249", "curl (search agent)"),
+    "ast_2026_ord_crit.pdf": ("https://www.uniovi.es/documents/39158/bcb31598-f190-b118-6156-fc818b17818f", "curl (search agent)"),
+    "and_2025.zip": (AND + "sel_2025_fisica.zip", "curl (search agent)"),
+    "and_2026.zip": (AND + "sel_2026_fisica.zip", "curl (search agent)"),
+    "and_2025_ord.pdf": (AND + "sel_2025_fisica.zip", "extracted from the zip (model A)"),
+    "and_2025_ord_B.pdf": (AND + "sel_2025_fisica.zip", "extracted from the zip (model B)"),
+    "and_2025_ord_crit.pdf": (AND + "sel_2025_fisica.zip", "extracted from the zip"),
+    "and_2025_ord_B_crit.pdf": (AND + "sel_2025_fisica.zip", "extracted from the zip"),
+    "and_2026_ord.pdf": (AND + "sel_2026_fisica.zip", "extracted from the zip"),
+    "and_2026_ord_crit.pdf": (AND + "sel_2026_fisica.zip", "extracted from the zip"),
+    "can_2025_ord.pdf": (CAN25 + "examen-fisica-pau-junio-25.pdf", "curl (search agent)"),
+    "can_2025_ord_crit.pdf": (CAN25 + "criterios-correccion-fisica-pau-junio-25.pdf", "curl (search agent)"),
+    "can_2026_ord.pdf": (CAN26 + "examen-fisica-pau-junio-26.pdf", "curl (search agent)"),
+    "can_2026_ord_crit.pdf": (CAN26 + "criterios-correccion-fisica-pau-junio-26.pdf", "curl (search agent)"),
+    "ext_2025_ord.pdf": ("https://drive.google.com/file/d/1f8EIOj_6VpVvZPZjHIjZSV5NatVpRM9_SREobaTkiBo", "Educarex teachers' site (Google Drive export)"),
+    "ext_2025_ord_crit.pdf": ("https://drive.google.com/file/d/1tYIYGUyxWjy9tVjLzPcQaVL1sNkbHxY1/view", "Educarex teachers' site (Google Drive)"),
+    "ext_2026_ord.pdf": (FQP + "extremadura/2026-ord-extremadura-fisica-exam.pdf", "FiQuiPedia GitLab archive of official papers (uex.es behind WAF)"),
+    "ext_2026_ord_crit.pdf": (FQP + "extremadura/2026-ord-extremadura-fisica-criterios.pdf", "FiQuiPedia GitLab archive"),
+    "val_2025_ord.pdf": (FQP + "valencia/2025-ord-valencia-fisica-exam.pdf", "FiQuiPedia GitLab archive (official file overwritten at gva.es; byte-identical to the angelcuesta.com copy)"),
+    "val_2025_ord_crit.pdf": (FQP + "valencia/2025-ord-valencia-fisica-criterios.pdf", "FiQuiPedia GitLab archive"),
+    "val_2025_ord_reserva.pdf": (FQP + "valencia/2025-ord2-valencia-fisica-exam.pdf", "FiQuiPedia GitLab archive (reserve paper, not coded)"),
+    "val_2025_ord_sol_angelcuesta.pdf": ("https://www.angelcuesta.com/data/Examenes%20PAU/CV/FISICA/", "unofficial worked solutions (not used)"),
+    "val_2026_ord.pdf": ("https://universitats.gva.es/documents/389338055/393318629/Examen+FISI+junio+2026.pdf/9a3059a9-7b73-8257-f8f1-b4a08c848c8f", "downloaded from the user's computer (robots-blocked for the cloud fetcher)"),
+    "val_2026_ord_crit.pdf": ("https://universitats.gva.es/documents/389338055/393318644/Criterios+FISI+junio+2026.pdf/0aa84d28-1233-301a-a28e-a55bdde7651e", "downloaded from the user's computer"),
+    "clm_2025_ord_transcript.md": ("https://www.uclm.es/-/media/Files/A04-Gestion-Academica/PDFEstudiantes/PDFEvAU/ModelosPruebas2425/FISICA.ashx?la=es", "read in the built-in browser (WAF blocks automated download); transcribed, abridged"),
+    "clm_2026_ord_transcript.md": ("https://www.uclm.es/-/media/Files/A04-Gestion-Academica/PDFEstudiantes/PDFEvAU/ModelosPruebas2526/Fisica_PAU_2026.ashx?la=es", "read in the built-in browser (WAF blocks automated download); transcribed, abridged"),
+}
+EXAMS = ROOT / "sources" / "exams"
+
 rows = []
+for f in sorted(EXAMS.iterdir()):
+    if not f.is_file() or f.suffix not in (".pdf", ".md", ".zip"):
+        continue
+    h = hashlib.sha256(f.read_bytes()).hexdigest()
+    url, how = EXAM_URLS.get(f.name, ("", "curl (search agent)"))
+    yr = f.name.split("_")[1]
+    kind = "corrector document" if "crit" in f.name else ("transcript" if f.suffix == ".md" else ("zip as published" if f.suffix == ".zip" else "exam paper"))
+    rows.append(dict(file=f"exams/{f.name}", bytes=f.stat().st_size, sha256=h,
+                     description=f"Física ordinary {yr}, {kind}", url=url, retrieval=how))
 for folder in (RAW, MIN):
     for f in sorted(folder.iterdir()):
         if not f.is_file():

@@ -1,0 +1,639 @@
+©Angel Cuesta Arza
+                                  Interacción gravitatoria
+Dos estrellas, A y B, del sistema IK Pegasi se encuentran en la posición indicada en la
+figura, separadas entre sí una distancia 6d. Calcula razonadamente:                                      𝒈𝑩
+                                                                                               𝒈𝑨
+a) El vector campo gravitatorio total en el punto P (0, 4d).                                        𝒈
+b) La energía potencial de un cuerpo de masa 1 kg situado en el punto P.
+¿Qué velocidad mínima deberá tener dicho cuerpo para alejarse indefinidamente del
+sistema estelar, partiendo del punto P?
+Datos: 𝑑 = 5,0 · 109 𝑚; G = 6,67·10−11 N m2 /kg2, 𝑀𝐴 = 3,3 · 1030 𝑘𝑔; 𝑀𝐵 = 2,3 · 1030 𝑘𝑔
+
+Solución: En primer lugar, se hace un estudio gráfico de la situación:
+La dirección y sentido del vector campo gravitatorio en un punto vienen dados por la dirección y sentido de la fuerza que
+experimentaría una masa de prueba colocada en ese punto.
+Para calcular el valor del campo gravitatorio total utilizaremos la fórmula del campo
+gravitatorio y el principio de superposición.
+El principio de superposición indica que el campo gravitatorio generado por las masas
+puntuales no varía por la presencia de otras masas y que el campo resultante es igual a
+la suma de los campos gravitatorios individuales que se generan sobre el punto (0,4d).
+
+𝑔𝑡𝑜𝑡𝑎𝑙 = 𝑔𝐴 + 𝑔𝐵 Calculo a continuación los valores©Angel
+                                                    pedidos.
+                                                          Cuesta Arza
+                    Interacción gravitatoria
+a) El vector campo gravitatorio total en el punto P (0, 4d).
+Datos: 𝑑 = 5,0 · 109 𝑚; G = 6,67·10−11 N m2 /kg2, 𝑀𝐴 = 3,3 · 1030 𝑘𝑔; 𝑀𝐵 = 2,3 · 1030 𝑘𝑔
+                                                                   𝑀
+El vector campo gravitatorio se calcula con la fórmula: 𝑔 = −𝐺 ∙     ∙𝑢
+                                                                   𝑟2 𝑟
+Calcularé en primer lugar 𝑔𝐴 y después 𝑔𝐵 .
+
+Se calcula el vector unitario: 𝑟A = 𝑃 − 𝐴 = 0,4𝑑 − −3𝑑, 0 = 3𝑑, 4𝑑 = 3𝑑 𝑖 + 4𝑑 𝑗 (𝑚)
+                                                       𝑟A 3𝑑 𝑖 + 4𝑑 𝑗 3          4
+𝑟A =     (3𝑑)2 +(4𝑑)2 =     25𝑑 2 = 5𝑑 𝑚             𝑢𝑟A ==              = 𝑖 + 𝑗
+                                                       𝑟A          5𝑑       5    5
+         𝑀𝐴              𝑀𝐴                      −11
+                                                         3,3 ∙ 1030     3     4
+𝑔𝐴 = −𝐺 ∙ 2 ∙ 𝑢𝑟A = −𝐺 ∙    2
+                              ∙ 𝑢𝑟A = −6,67 ∙ 10     ∙            9 2
+                                                                      ∙   𝑖 +   𝑗 = −0,21 𝑖 − 0,28 𝑗 (𝑁Τ𝑘𝑔)
+         𝑟𝐴              5𝑑                             5 ∙ 5 ∙ 10      5     5
+
+Se calcula el vector unitario:    𝑟B = 𝑃 − 𝐵 = 0,4𝑑 − 3𝑑, 0 = −3𝑑, 4𝑑 = −3𝑑 𝑖 + 4𝑑 𝑗 (𝑚)
+                                                               𝑟B −3𝑑 𝑖 + 4𝑑 𝑗   3   4
+  𝑟B =    (−3𝑑)2 +(4𝑑)2 =        25𝑑 2 = 5𝑑 𝑚          𝑢𝑟B =      =            =− 𝑖 + 𝑗
+                                                               𝑟B      5𝑑        5   5
+
+          𝑀𝐵              𝑀𝐵                      −11
+                                                          2,3 ∙ 1030       3     4
+ 𝑔𝐵 = −𝐺 ∙ 2 ∙ 𝑢𝑟B = −𝐺 ∙    2
+                               ∙ 𝑢𝑟B = −6,67 ∙ 10
+                                                ©Angel ∙
+                                                       Cuesta Arza 9 2
+                                                                       ∙ −   𝑖 +   𝑗 = 0,15 𝑖 − 0,20 𝑗 (𝑁Τ𝑘𝑔)
+          𝑟𝐵              5𝑑                             5 ∙ 5 ∙ 10        5     5
+         Interacción gravitatoria
+a) El vector campo gravitatorio total en el punto P (0, 4d).
+
+Recordamos que:
+𝑔𝐴 = −0,21 𝑖 − 0,28 𝑗 (𝑁Τ𝑘𝑔)
+𝑔𝐵 = 0,15 𝑖 − 0,20 𝑗 (𝑁Τ𝑘𝑔)
+
+Se aplica el principio de superposición.
+
+𝑔𝑡𝑜𝑡𝑎𝑙 = 𝑔𝐴 + 𝑔𝐵 = −0,21 𝑖 − 0,28 𝑗 + 0,15 𝑖 − 0,20 𝑗 = −0,06 𝑖 − 0,48 𝑗 (𝑁Τ𝑘𝑔)
+
+
+El campo gravitatorio en P es 𝒈𝒕𝒐𝒕𝒂𝒍 = −𝟎, 𝟎𝟔 𝒊 − 𝟎, 𝟒𝟖 𝒋 (𝑵Τ𝒌𝒈)
+
+
+
+
+                                                         ©Angel Cuesta Arza
+                                 Interacción gravitatoria
+b) La energía potencial de un cuerpo de masa 1 kg situado en el punto P.
+¿Qué velocidad mínima deberá tener dicho cuerpo para alejarse indefinidamente del
+sistema estelar, partiendo del punto P?
+Datos: 𝑑 = 5,0 · 109 𝑚; G = 6,67·10−11 N m2 /kg2, 𝑀𝐴 = 3,3 · 1030 𝑘𝑔; 𝑀𝐵 = 2,3 · 1030 𝑘𝑔
+
+                                                                         𝑚1 ∙ 𝑚2
+Se calcula el valor de la energía potencial utilizando la fórmula: 𝐸𝑝 = −𝐺 ∙
+                                                                              𝑟
+Como hay dos masas que generan potencial gravitatorio, la energía potencial total es la suma de las energías potenciales.
+
+                            𝑀𝐴 ∙ 𝑚     𝑀𝐵 ∙ 𝑚             −11
+                                                                3,3 ∙ 1030 ∙ 1            −11
+                                                                                                2,3 ∙ 1030 ∙ 1
+𝐸𝑝 = 𝐸𝑝 (𝐴) + 𝐸𝑝 (𝐵) = −𝐺 ∙        −𝐺∙       = −6,67 ∙ 10     ∙                − 6,67 ∙ 10    ∙
+                              𝑟𝐴        𝑟𝐵                       5 ∙ 5 ∙ 109                     5 ∙ 5 ∙ 109
+
+𝐸𝑝 = 𝐸𝑝 (𝐴) + 𝐸𝑝 (𝐵) = −1,49 ∙ 1010 𝐽
+
+
+La energía potencial de un cuerpo de masa 1 kg situado en P es −𝟏, 𝟒𝟗 ∙ 𝟏𝟎𝟏𝟎 𝑱
+
+ NOTA: Se puede resolver el ejercicio calculando el potencial gravitatorio en P. Y
+ a partir de dicho valor calcular la energía potencial en dicho punto.
+                                                       ©Angel Cuesta Arza
+                                Interacción gravitatoria
+b) La energía potencial de un cuerpo de masa 1 kg situado en el punto P.
+¿Qué velocidad mínima deberá tener dicho cuerpo para alejarse indefinidamente del
+sistema estelar, partiendo del punto P?
+Datos: 𝑑 = 5,0 · 109 𝑚; G = 6,67·10−11 N m2 /kg2, 𝑀𝐴 = 3,3 · 1030 𝑘𝑔; 𝑀𝐵 = 2,3 · 1030 𝑘𝑔
+
+Se pide que calculemos la velocidad de escape. Puesto que el campo gravitatorio es
+conservativo, se conserva la energía mecánica.
+∆𝐸𝑚 = 0          𝐸𝑐 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 + 𝐸𝑝 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 = 𝐸𝑐 𝑓𝑖𝑛𝑎𝑙 + 𝐸𝑝 𝑓𝑖𝑛𝑎𝑙
+
+Las energías potencial y cinética en el infinito son NULAS. 𝐸𝑐 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 + 𝐸𝑝 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 = 0
+
+1                                                                −2 ∙ 𝐸𝑝 𝑖𝑛𝑖𝑐𝑖𝑎𝑙     −2 ∙ −1,49 ∙ 1010 𝐽
+  ∙ 𝑚 ∙ 𝑣 2 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 + 𝐸𝑝 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 = 0           𝑣 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 =                       =
+2                                                                       𝑚                    1
+
+𝑣 𝑖𝑛𝑖𝑐𝑖𝑎𝑙 = 1,73 ∙ 105 𝑚/𝑠
+
+
+La velocidad mínima que deberá tener dicho cuerpo es 𝟏, 𝟕𝟑 ∙ 𝟏𝟎𝟓 𝒎/𝒔
+
+                                                     ©Angel Cuesta Arza
+©Angel Cuesta Arza
+                                  Interacción gravitatoria
+Una estación espacial gira alrededor de un planeta describiendo una órbita circular con una velocidad v = 6,7 km/s.
+Deduce razonadamente:
+a) La expresión simbólica de la altura, h, a la que se encontrará la estación espacial respecto a la superficie del
+planeta, en función de las magnitudes proporcionadas (v, g₀ y R). Calcula su valor numérico.
+b) La expresión simbólica de la aceleración de la gravedad, g, en función de la altura h y de la aceleración en la
+superficie del planeta, g₀. Calcula su valor numérico para la posición en la que se encuentra la estación espacial.
+Datos: Aceleración de la gravedad en la superficie del planeta, g₀ = 9 m s⁻². Radio del planeta, R = 5500 km
+
+Solución: Deduzco en primer lugar la altura sobre la superficie del planeta en función de v, g₀ y R
+La única fuerza que actúa sobre la estación espacial es la fuerza gravitatoria.
+                                     Puesto que el movimiento de la estación espacial es circular uniforme,
+                    𝐅𝐠               según el segundo principio de la dinámica de Newton, podemos escribir:
+                                                          𝐺 ∙ 𝑀 ∙ 𝑚 𝑚 ∙ 𝑣2                  𝐺∙𝑀            𝐺∙𝑀
+                         r            𝐹𝑔 = 𝑚 ∙ 𝑎𝑐                  =                 𝑣2 =                𝑟= 2
+            R                                                 𝑟2      𝑟                      𝑟              𝑣
+
+                                      Puesto que 𝑟 = 𝑅 + ℎ , podemos escribir que :
+                h                         𝐺∙𝑀                          𝐺∙𝑀
+                                      𝑅+ℎ= 2                     ℎ=           −𝑅
+                                           𝑣            ©Angel Cuesta Arza𝑣 2
+                                 Interacción gravitatoria
+a) La expresión simbólica de la altura, h, a la que se encontrará la estación espacial respecto a la superficie del
+planeta, en función de las magnitudes proporcionadas (v, g₀ y R). Calcula su valor numérico.
+Datos: Aceleración de la gravedad en la superficie del planeta, g₀ = 9 m s⁻². Radio del planeta, R = 5500 km
+                                                                                        𝐺∙𝑀
+Puesto que debemos expresar el valor de la altura en función de g0, recordamos que: 𝑔0 = 𝑅2                𝐺 ∙ 𝑀 = 𝑔0 ∙ 𝑅2
+
+Se sustituye 𝐺 ∙ 𝑀 en la expresión obtenida anteriormente:
+
+  𝐺∙𝑀     𝑔0 ∙ 𝑅2
+ℎ= 2 −𝑅 =         −𝑅
+   𝑣        𝑣2
+Se calcula su valor numérico, pero antes de sustituir expreso las v y R en unidades del S.I.:
+𝑅 = 5500 𝑘𝑚 = 5,5 ∙ 106 𝑚         𝑣 = 6,7 𝑘𝑚/𝑠 = 6700 𝑚/𝑠 = 6,7 ∙ 103 𝑚/𝑠
+
+   9 ∙ 5,5 ∙ 106 2
+ℎ=            3 2  − 5,5 ∙ 106 = 5,65 ∙ 105 𝑚 = 565 𝑘𝑚
+      6,7 ∙ 10
+
+La estación espacial se encuentra a una altura de 565 km.
+                                                        ©Angel Cuesta Arza
+                                   Interacción gravitatoria
+b) La expresión simbólica de la aceleración de la gravedad, g, en función de la altura h y de la aceleración en la
+superficie del planeta, g₀. Calcula su valor numérico para la posición en la que se encuentra la estación espacial.
+Datos: Aceleración de la gravedad en la superficie del planeta, g₀ = 9 m s⁻². Radio del planeta, R = 5500 km
+
+Solución:
+                                          𝐺∙𝑀
+En la superficie del planeta:      𝑔0 =                𝐺 ∙ 𝑀 = 𝑔0 ∙ 𝑅2
+                                           𝑅2
+
+                                         𝐺∙𝑀                                                          2
+                                                                             𝑔0 ∙ 𝑅 2         𝑅
+A una altura h sobre el planeta:   𝑔ℎ =                                𝑔ℎ =           = 𝑔0 ∙
+                                        (𝑅 + ℎ)2                            (𝑅 + ℎ)2         𝑅+ℎ
+                                     2
+      𝑔0 ∙ 𝑅2           5500                           TRUCO: Puedo poner el radio y la altura en km,
+𝑔ℎ =         2 = 9 ∙            = 7,4 𝑚/𝑠 2
+     (𝑅 + ℎ)         5500 + 565                        porque las unidades se cancelan al hacer la división.
+
+La aceleración de la gravedad a la altura a la que se encuentra la estación espacial es 𝟕, 𝟒 𝒎/𝒔𝟐 .
+
+
+
+
+                                                        ©Angel Cuesta Arza
+©Angel Cuesta Arza
+                                        Campo magnético                                                   Eje X
+
+Una trabajadora de una planta de electrólisis para la producción de cloro realiza tareas
+de mantenimiento debajo de un cable conductor, por el que circula una corriente de                                Eje Y
+18 kA que se puede considerar rectilínea e indefinida. El cable se encuentra a 4 m
+sobre el suelo, como muestra la figura.                                                           Eje Z
+Calcula el vector campo magnético sobre la cabeza de la trabajadora (a una altura de
+1,6 m) y representa dicho vector conjuntamente con la corriente que circula por el
+cable.
+Justifica la respuesta, indicando la ley física en que se fundamenta y el significado de
+cada una de las magnitudes que intervienen. El Real Decreto 299/2016, contra los
+riesgos relacionados con la exposición a campos electromagnéticos, establece que la
+exposición a un campo magnético estático no debe superar los 2 T. ¿Está protegida la
+trabajadora en base a esta normativa?
+Dato: permeabilidad magnética en el vacío, 𝜇0 = 4𝜋∙10−7 T m/A
+
+Solución: Aplicando la ley de Biot–Savart (o la de Ampere), se puede demostrar que:
+Un hilo conductor rectilíneo infinito por el que circula una corriente eléctrica genera un campo magnético de módulo:
+     𝜇0 ∙ 𝐼   𝐵: Intensidad del campo magnético;
+𝐵=
+     2𝜋 ∙ 𝑟   𝜇0 : Permeabilidad magnética en el vacío;
+              𝐼: Intensidad de la corriente en el cable;
+              𝑟: Distancia al cable                   ©Angel Cuesta Arza
+                                     Campo magnético
+La dirección del campo magnético se dibuja perpendicular al plano determinado por la
+corriente rectilínea y el punto, y el sentido se determina por la regla del sacacorchos o la
+denominada de la mano derecha.
+En este caso, el campo magnético tendrá un sentido saliente (hacia el observador) en la
+vertical inferior y entrante (hacia la pantalla) en la superior.
+
+             𝑩                            Se realizan ahora los cálculos:
+    Q                                        𝜇0 ∙ 𝐼 4𝜋 ∙ 10−7 ∙ 1,8 ∙ 104
+                                          𝐵=        =                    = 1,5 ∙ 10−3 𝑇
+                                             2𝜋 ∙ 𝑟       2𝜋 ∙ 2,4
+
+                           I              Por lo tanto, habrá un campo magnético 1,5 ∙ 10−3 𝑇 en todos los puntos que
+                                          disten 2,4 m del hilo conductor. Dada la posición de la empleada, aplicando la
+                                          regla de la mano derecha, determinamos que el sentido es el positivo del eje Z.
+
+                                           El vector campo magnético es: 𝑩𝑷 = 𝟏, 𝟓 ∙ 𝟏𝟎−𝟑 𝒌 (𝑻).
+         P
+𝑩                 El campo magnético es inferior al que indica la normativa. Según eso, la
+                  trabajadora está protegida.
+
+                                                     ©Angel Cuesta Arza
+                                      Campo eléctrico
+Se tiene una carga positiva, q, en el origen de coordenadas y otra –q en el punto (a, 0) con a > 0. Obtén
+razonadamente, con ayuda de una representación vectorial, el sentido del campo eléctrico total producido por
+ambas cargas, a la izquierda de la carga positiva (x < 0), a la derecha de la carga negativa (x > a), y en el tramo
+comprendido entre las dos cargas (0 < x < a).
+Solución:
+Se analiza gráficamente cómo será el campo eléctrico neto en los tres tramos que definen las dos cargas eléctricas.
+𝑬𝟏 sale de la carga q1=q y 𝑬𝟐 entra en la carga q2=–q.
+
+                     𝑬𝟏     𝑬𝟐                q1=q C                 q2= −q C        𝑬𝟐     𝑬𝟏
+                                                     𝑬𝟐 𝑬𝟏
+                                                +                       −
+                          𝑥<0                 O       0<𝑥<𝑎                           𝑥>𝑎
+
+Si 𝒙 < 𝟎. Dado que 𝑟1 < 𝑟2 , aunque 𝐸1 y 𝐸2 tienen sentidos opuestos, 𝐸1 > 𝐸2 para todo valor de 𝑥 < 0. El
+sentido del campo será el negativo del eje X. Se expresa: 𝐸𝑇𝑜𝑡𝑎𝑙 = − 𝐸𝑇𝑜𝑡𝑎𝑙 ∙ 𝑖
+Si 𝟎 < 𝒙 < 𝒂. Como se observa, los vectores campo eléctrico tienen el mismo sentido y por eso no puede anularse
+el campo eléctrico en ningún punto de este tramo. El sentido del campo será el positivo del eje X. Se
+expresa: 𝐸𝑇𝑜𝑡𝑎𝑙 = 𝐸𝑇𝑜𝑡𝑎𝑙 ∙ 𝑖
+Si 𝒙 > 𝒂, Dado que 𝑟1 > 𝑟2 , aunque 𝐸1 y 𝐸2 tienen sentidos opuestos, 𝐸1 < 𝐸2 para todo valor
+de 𝑥 < 0. El sentido del campo será el negativo del©Angel
+                                                    eje X.Cuesta Arza
+                                                            Se expresa: 𝐸𝑇𝑜𝑡𝑎𝑙 = − 𝐸𝑇𝑜𝑡𝑎𝑙 ∙ 𝑖
+                           Inducción electromagnética
+Una espira cuadrada de 20 cm de lado se sitúa en el seno de un campo
+magnético uniforme. El módulo del campo magnético varía en función del
+tiempo, como se indica en la figura adjunta, y su dirección es perpendicular
+al plano de la espira.
+Calcula razonadamente el valor de la fuerza electromotriz inducida en la
+espira. Dibuja el campo magnético y la corriente inducida sobre la espira,
+razonando su sentido.
+Solución:
+Para poder explicar el ejercicio debemos tener en cuenta dos leyes de la física referidas a la inducción de una corriente
+eléctrica a partir de un campo magnético.
+Ley de Faraday-Henry: La tensión inducida en un circuito cerrado es directamente proporcional a la rapidez con que
+cambia en el tiempo el flujo magnético que atraviesa una superficie cualquiera con el circuito como borde.
+Ley de Lenz: el sentido de la corriente eléctrica debe ser tal, que el campo magnético generado por ella se opone a la
+variación de flujo que la provocó.
+
+                    Rapidez con que cambia el flujo magnético con el tiempo.
+    𝑑Φ
+𝜀=−
+    𝑑𝑡
+                    El signo negativo, nos indica la oposición  de laArza
+                                                       ©Angel Cuesta   fem al campo inducido.
+       Inducción electromagnética
+Una espira cuadrada de 20 cm de lado se sitúa en el seno de un campo magnético
+uniforme. El módulo del campo magnético varía en función del tiempo, como se indica
+en la figura adjunta, y su dirección es perpendicular al plano de la espira.
+Calcula razonadamente el valor de la fuerza electromotriz inducida en la espira. Dibuja
+el campo magnético y la corriente inducida sobre la espira, razonando su sentido.
+Solución:
+Aplico la ley de Faraday-Lenz. Se recuerda que el flujo magnético es:    Φ = 𝐵 ∙ 𝑆 = 𝐵 ∙ 𝑆 ∙ cos(𝛼)
+       𝑑Φ    𝑑 𝐵 ∙ 𝑆 ∙ cos(𝛼)                 𝑑 𝐵
+𝜀=−       =−                  = −𝑆 ∙ cos(𝛼) ∙
+       𝑑𝑡           𝑑𝑡                         𝑑𝑡
+Calculo la variación del campo magnético frente al tiempo a partir de la pendiente de la recta de la gráfica.
+
+𝑑 𝐵                                                         Δ𝐵 2 ∙ 10−3 − 0 (𝑇)
+    = 𝑝𝑒𝑛𝑑𝑖𝑒𝑛𝑡𝑒 𝑑𝑒 𝑙𝑎 𝑟𝑒𝑐𝑡𝑎 𝑑𝑒 𝑙𝑎 𝑔𝑟á𝑓𝑖𝑐𝑎 𝑑𝑒 𝐵 𝑓𝑟𝑒𝑛𝑡𝑒 𝑎 𝑡 =    =                = 1 ∙ 10−3 𝑇/𝑠
+ 𝑑𝑡                                                         Δ𝑡     2 − 0 (𝑠)
+Se sustituyen los datos: 𝑆 = 𝐿2 = 0,2 2 = 0,04 𝑚2        cos 𝛼 = cos 0° = 1
+
+𝜀 = −0,04 ∙ 1 ∙ 1 ∙ 10−3 = −4 ∙ 10−5 𝑉
+
+El valor de la fuerza electromotriz inducida en la espira es −𝟒 ∙ 𝟏𝟎−𝟓 𝐕
+                                                       ©Angel Cuesta Arza
+       Inducción electromagnética
+Una espira cuadrada de 20 cm de lado se sitúa en el seno de un campo magnético
+uniforme. El módulo del campo magnético varía en función del tiempo, como se indica
+en la figura adjunta, y su dirección es perpendicular al plano de la espira.
+Calcula razonadamente el valor de la fuerza electromotriz inducida en la espira. Dibuja
+el campo magnético y la corriente inducida sobre la espira, razonando su sentido.
+Solución:
+Para contestar la segunda parte de la pregunta, se hace un esquema. Puesto que no se dice nada acerca el sentido
+del campo magnético, voy a suponer que su sentido es el positivo, tal como se muestra en el esquema.
+
+
+                   𝑺         𝑩               Según la ley de Lenz, el sentido de la corriente debe ser tal que genere
+                                             un campo magnético que se oponga a la variación flujo. En este caso
+                                             debería generar campo magnético en el sentido negativo del eje
+                                             vertical. Aplicando la regla de la mano derecha podemos comprobar
+                                             que la corriente eléctrica inducida debe tener sentido horario.
+
+                       𝑰
+
+
+
+                                                    ©Angel Cuesta Arza
+                                                    Ondas
+Una onda armónica transversal se propaga en el sentido
+positivo del eje 𝑋. Las gráficas muestran la elongación de la
+onda en el instante 𝑡=0 s y en la posición 𝑥=0 m. Determina la
+amplitud de la onda, el periodo, la pulsación o frecuencia
+angular, la longitud de onda y la velocidad de propagación.
+
+Solución:
+La ecuación de la onda es: 𝒚(𝒙, 𝒕) = 𝑨 ∙ 𝒔𝒆𝒏 (𝝎 ∙ 𝒕 − 𝒌 ∙ 𝒙 + 𝜽𝟎 ) De las gráficas podemos deducir que:
+𝐴𝑚𝑝𝑙𝑖𝑡𝑢𝑑; 𝐴 = 0,06 𝑚      𝑃𝑒𝑟í𝑜𝑑𝑜; T = 2 𝑠     𝐿𝑜𝑛𝑔𝑖𝑡𝑢𝑑 𝑑𝑒 𝑜𝑛𝑑𝑎; 𝜆 = 0,04 𝑚
+                                                          2𝜋 2𝜋
+A partir del período se obtiene la frecuencia angular. 𝜔 = = = 𝜋 𝑟𝑎𝑑/𝑠
+                                                          𝑇    2
+                                                        𝜆 0,04
+ Calculo la velocidad de propagación de la onda. 𝑣𝑝 = =        = 0,02 𝑚/𝑠
+                                                        𝑇   2
+
+Las magnitudes pedidas son: 𝑨 = 𝟎, 𝟎𝟔 𝒎; T = 𝟐 𝒔 ; 𝝎 = 𝝅 𝒓𝒂𝒅/𝒔; 𝝀 = 𝟎, 𝟎𝟒 𝒎; 𝒗𝒑 = 𝟎, 𝟎𝟐 𝒎/𝒔
+
+
+                                                     ©Angel Cuesta Arza
+                                     INTENSIDAD SONORA
+Dos compresores de aire acondicionado están separados una distancia de 100 m. El primero emite ruido con una
+potencia sonora de 4 μW. El nivel sonoro en el punto equidistante entre ellos es de 25 dB. Calcula en ese punto el
+nivel sonoro debido a cada uno de los compresores. Calcula la potencia sonora emitida por el segundo
+compresor. Desprecia la absorción del aire y el efecto de los objetos situados en el entorno. Considera que las
+ondas sonoras son esféricas.
+Dato: intensidad sonora umbral, 𝐼0=10−12 W/m2
+Solución:
+Primero haré un breve recordatorio teórico para aquellos que no tengáis en la cabeza las fórmulas.
+
+                                                                                                𝑃   𝑃
+La intensidad de una onda esférica se define como la potencia por unidad de superficie.       𝐼= =
+                                                                                                𝑆 4𝜋 ∙ 𝑟 2
+
+                                                                                                       𝐼
+La expresión del nivel sonoro (en dB) en función de la intensidad de un sonido es: 𝛽 = 10 ∙ log
+                                                                                                      𝐼0
+Siendo: β= nivel sonoro (unidad, dB, decibelio)
+            I= Intensidad del sonido (W/m2)
+            I0= Intensidad umbral de referencia (W/m2). Esta intensidad es el límite de sensibilidad del oído
+            humano para una frecuencia de 1 kHz.
+                                                       ©Angel Cuesta Arza
+Se representa un esquema con la situación planteada.
+Se calcula la intensidad de la onda generada por el primer compresor
+en un punto a 50 metros (equidistantes) de ambos:
+       𝑃1       4 ∙ 10−6
+𝐼1 =        2
+              =        2
+                         = 1,27 ∙ 10−10 𝑊/𝑚2
+     4𝜋 ∙ 𝑟     4𝜋 ∙ 50
+
+Se calcula el nivel sonoro debido al primer compresor en un punto a 50
+metros (equidistante) de ambos:
+              𝐼1            1,27 ∙ 10−10
+𝛽1 = 10 ∙ log    = 10 ∙ log              = 21,04 𝑑𝐵
+              𝐼0               10−12
+
+Se calcula la intensidad de la onda generada por ambos compresores, tenemos en cuenta que el nivel sonoro total es 25 dB.
+
+              𝐼          𝛽         𝐼              𝛽   𝐼                             𝛽
+                                                                                         −12
+                                                                                                 25
+𝛽 = 10 ∙ log                = log               10 =
+                                                  10                     𝐼 = 𝐼0 ∙ 10 = 10
+                                                                                    10       ∙ 1010 = 3,16 ∙ 10−10 𝑊/𝑚2
+             𝐼0          10       𝐼0                 𝐼0
+Calculo la intensidad de la onda generada por el segundo compresor.
+
+𝐼 = 𝐼1 + 𝐼2         𝐼2 = 𝐼 − 𝐼1 = 3,16 ∙ 10−10 − 1,27 ∙ 10−10 = 1,89 ∙ 10−10 𝑊/𝑚2
+
+                                                    ©Angel Cuesta Arza
+Calcula en ese punto el nivel sonoro debido a cada uno de los
+compresores. Calcula la potencia sonora emitida por el segundo
+compresor. Dato: intensidad sonora umbral, 𝐼0=10−12 W/m2
+
+Se calcula el nivel sonoro debido al segundo compresor en un punto a
+50 metros (equidistante) de ambos:
+              𝐼2            1,89 ∙ 10−10
+𝛽2 = 10 ∙ log    = 10 ∙ log              = 22,76 𝑑𝐵
+              𝐼0               10−12
+
+El nivel sonoro en el punto P, debido al compresor A es 21,04 dB y el
+debido al compresor B es 22,76 dB. Puedes comprobar que su suma no
+es 25 dB. Esto es debido a que la escala en decibelios es logarítmica.
+
+Calculo la potencia sonora del segundo compresor (B).
+
+𝑃2 = 𝐼2 ∙ 4𝜋 ∙ 𝑟 2 = 1,89 ∙ 10−10 ∙ 4𝜋 ∙ 50 2 = 5,94 ∙ 10−6 𝑊 = 5,94 𝜇𝑊
+
+La potencia sonora emitida por el segundo compresor es: 𝟓, 𝟗𝟒 𝝁𝑾.
+
+
+                                                    ©Angel Cuesta Arza
+                  MOVIMIENTO ARMÓNICO SIMPLE
+La posición de un cuerpo, de masa 𝑚=1,5 g, que oscila respecto a su posición de equilibrio, está descrita por la función
+𝑥(𝑡)=0,10 𝑐𝑜𝑠(10𝜋𝑡+𝜋/2) en unidades del Sistema Internacional.
+a) ¿Qué tipo de movimiento realiza el cuerpo? Calcula el período de oscilación, así como la posición y la velocidad del
+cuerpo para 𝑡=1 s.
+b) Calcula la energía mecánica total del cuerpo, su energía cinética y su energía potencial en el instante en que la
+posición del cuerpo se corresponde con la mitad de la amplitud del movimiento.
+
+Solución: El cuerpo realiza un movimiento armónico simple (MAS)
+La ecuación del MAS: 𝒙(𝒕) = 𝑨 ∙ 𝒄𝒐𝒔 (𝝎 ∙ 𝒕 + 𝜽𝟎 )         De la ecuación del enunciado se deduce que:
+                                                                                      𝜋
+𝐴𝑚𝑝𝑙𝑖𝑡𝑢𝑑; 𝐴 = 0,10 𝑚 𝑓𝑟𝑒𝑐𝑢𝑒𝑛𝑐𝑖𝑎 𝑎𝑛𝑔𝑢𝑙𝑎𝑟; 𝜔 = 10𝜋 𝑟𝑎𝑑/𝑠 𝐷𝑒𝑠𝑓𝑎𝑠𝑒 𝑖𝑛𝑖𝑐𝑖𝑎𝑙; 𝜃0 = 𝑟𝑎𝑑
+                                                                                      2
+                                                            2𝜋 2𝜋
+A partir de la frecuencia angular se calcula el período: 𝑇 = =    = 0,2 𝑠 El período de oscilación es 0,2 s.
+                                                            𝜔 10𝜋
+Calculo la posición del cuerpo para 𝑡 = 1 𝑠, sustituyendo en la ecuación del MAS.
+                           𝜋
+𝑥(1) = 0,1 ∙ 𝑐𝑜𝑠 10𝜋 ∙ 1 +   =0𝑚
+                           2
+Su posición para 𝑡 = 1 𝑠 es 𝒙 = 𝟎 𝒎.                  ©Angel Cuesta Arza
+                  MOVIMIENTO ARMÓNICO SIMPLE
+La posición de un cuerpo, de masa 𝑚=1,5 g, que oscila respecto a su posición de equilibrio, está descrita por la función
+𝑥(𝑡)=0,10 𝑐𝑜𝑠(10𝜋𝑡+𝜋/2) en unidades del Sistema Internacional.
+a) ¿Qué tipo de movimiento realiza el cuerpo? Calcula el período de oscilación, así como la posición y la velocidad del
+cuerpo para 𝑡=1 s.
+
+Se calcula la velocidad derivando la posición respecto del tiempo.
+
+      𝑑𝑥
+𝑣 𝑡 =    = −𝐴 ∙ 𝜔 ∙ 𝑠𝑒𝑛 (𝜔 ∙ 𝑡 + 𝜃0 )
+      𝑑𝑡
+                                     𝜋
+𝑣 1 = −0,1 ∙ 10𝜋 ∙ 𝑠𝑒𝑛 10𝜋 ∙ 1 +       = −𝜋 𝑚/𝑠
+                                     2
+
+Su velocidad para 𝑡 = 1 𝑠 es 𝒗 = −𝝅 𝒎/𝒔.
+
+
+
+
+                                                      ©Angel Cuesta Arza
+                      MOVIMIENTO ARMÓNICO SIMPLE
+b) Calcula la energía mecánica total del cuerpo, su energía cinética y su energía potencial en el instante en que la
+posición del cuerpo se corresponde con la mitad de la amplitud del movimiento.
+La energía mecánica de un cuerpo que lleva a cabo un MAS es igual a la energía potencial máxima (o a la energía
+cinética máxima). El cuerpo alcanza dicha energía cuando 𝑥 = ±𝐴. A partir de la fórmula de la energía potencial se
+deduce la fórmula de la energía mecánica.
+
+     1          𝑥𝑚𝑎𝑥 = 𝐴                      1           𝑘 = 𝑚 ∙ 𝜔2          1
+𝐸𝑝 = ∙ 𝑘 ∙ 𝑥 2                𝐸𝑝,𝑚𝑎𝑥 = 𝐸𝑚 = ∙ 𝑘 ∙ 𝐴   2                 𝐸𝑚 = ∙ 𝑚 ∙ 𝜔2 ∙ 𝐴2
+     2                                        2                               2
+      1
+ 𝐸𝑚 = ∙ 1,5 ∙ 10−3 ∙ 10𝜋 2 ∙ 0,1 2 = 7,4 ∙ 10−3 𝐽 = 7,4 𝑚𝐽        La energía mecánica del cuerpo es 𝟕, 𝟒 ∙ 𝟏𝟎−𝟑 𝑱.
+      2
+                                                    𝐴
+La energía potencial se calcula sustituyendo:    𝑥=
+                                                    2
+                  2
+     1      𝐴         𝑘 = 𝑚 ∙ 𝜔2         1       2
+                                                    𝐴2 1                   0,1 2
+                                                                  −3    2
+ 𝐸𝑝 = ∙ 𝑘 ∙                          𝐸𝑝 = ∙ 𝑚 ∙ 𝜔 ∙   = ∙ 1,5 ∙ 10 ∙ 10𝜋 ∙       = 1,85 ∙ 10−3 𝐽 = 1,85 𝑚𝐽
+     2      2                            2          4  2                    4
+La energía cinética se obtiene a partir de la mecánica y de la potencial.
+
+𝐸𝑚 = 𝐸𝑝 + 𝐸𝑐          𝐸𝑐 = 𝐸𝑚 − 𝐸𝑝 = 7,4 ∙ 10−3 − 1,85 ∙ 10−3 = 5,55 ∙ 10−3 𝐽 = 5,55 𝑚𝐽
+
+La energía potencial es 𝟏, 𝟖𝟓 ∙ 𝟏𝟎−𝟑 𝑱 y la energía cinética es 𝟓, 𝟓𝟓 ∙ 𝟏𝟎−𝟑 𝑱.
+                                                        ©Angel Cuesta Arza
+                                         Óptica geométrica
+Un objeto de 12 cm de altura se sitúa a 15 cm, a la izquierda, de una lente de 4 dioptrías.
+a) Dibuja un esquema de rayos con la posición del objeto, de la lente y de la imagen. Calcula la posición de la imagen
+y su tamaño. Indica las características de la imagen que se forma.
+b) ¿Qué distancia habrá que mover el objeto y en qué sentido, para que la imagen que se forme sea invertida y de
+tamaño 4 cm?
+
+ A partir del enunciado podemos tomar datos (criterio de signo DIN): 𝑠 = −15 𝑐𝑚 𝑦 = 12 𝑐𝑚 𝑃 = 4 𝑑𝑖𝑜𝑝𝑡𝑟í𝑎𝑠
+                                                          1               1 1
+A partir de la potencia se calcula la distancia focal.    𝑃=         𝑓 ′ = = = 0,25 𝑚 = 25 𝑐𝑚
+                                                          𝑓′              𝑃 4
+Puesto que 𝑃 > 0, 𝑓’ > 0. Por lo tanto, la lente es convergente. Antes de hacer el diagrama haré los cálculos. Así me
+será más fácil hacer el diagrama de rayos.
+Aplico la ecuación de las lentes delgadas para calcular la distancia de la imagen a la lente.
+1 1 1                 1 1 1    1   1   −2                                  −75
+  − =                   = + =    +   =                              𝑠′ =       = −37,5 𝑐𝑚
+𝑠′ 𝑠 𝑓′               𝑠′ 𝑠 𝑓′ −15 25 75                                     2
+                                𝑠 ′ 𝑦′                          𝑠 ′ ∙ 𝑦 −37,5 ∙ 12
+Calculo el tamaño de la imagen.    =                     𝑦′ =          =           = 30 𝑐𝑚
+                                𝑠    𝑦                             𝑠      −15
+
+La posición de la imagen está a 37,5 cm a la izquierda ©Angel
+                                                       de la Cuesta
+                                                              lenteArza
+                                                                    y su tamaño es 30 cm.
+                                           Óptica geométrica
+                               Diagrama de rayos                Rayo 1: Parte desde el objeto paralelo al eje. Al
+                                                                refractarse en la lente se acerca al eje óptico y pasa por
+La lente es convergente porque el valor                         el foco f’. Se prolonga el rayo refractado hacia la
+de la distancia focal es positivo.                              izquierda para obtener la imagen virtual.
+                                                                Rayo 2: Parte desde el objeto hacia el centro de la lente.
+                                                                El rayo no se desviará. Se prolonga hacia atrás el rayo
+                                                                refractado. Donde corta al rayo 1, se genera la imagen.
+                                     (1)
+
+                                     (2)
+                                                                             Foco
+                         s’    s
+                     Imagen Objeto                                           f’
+
+
+  La imagen es virtual porque se obtiene
+  a partir de la prolongación de los rayos
+  refractados.
+
+ Se puede observar que la imagen es:
+ derecha, aumentada y virtual.
+                                                   ©Angel Cuesta Arza
+                                      Óptica geométrica
+b) ¿Qué distancia habrá que mover el objeto y en qué sentido, para que la imagen que se forme sea invertida y de
+tamaño 4 cm?
+Recordamos los datos y agregamos los nuevos:       y = 12 𝑐𝑚 𝑦′ = −4 𝑐𝑚 𝑓 ′ = 25 𝑐𝑚
+
+                                                               1 1 1              1 1   1
+                                                                 − =                − =             1 1   1
+                                                               𝑠′ 𝑠 𝑓′            𝑠′ 𝑠 25             − =
+Planteo un sistema de ecuaciones con la ecuación de                                                 𝑠′ 𝑠 25
+las lentes delgadas y la ecuación del aumento lateral.                             𝑠 ′ −4
+                                                                  𝑠 ′ 𝑦′
+                                                                     =                =               𝑠 = −3𝑠′
+                                                                  𝑠    𝑦           𝑠    12
+
+1   1    1                4   1                4 ∙ 25
+  −    =                    =               ′
+                                           𝑠 =        ≈ 33,33 𝑐𝑚              𝑠 = −3𝑠 ′ = −3 ∙ 33,33 = −100 𝑐𝑚
+𝑠′ −3𝑠′ 25               3𝑠′ 25                  3
+
+Dado que inicialmente 𝑠 = −15 𝑐𝑚; habrá que desplazar el objeto 𝟖𝟓 𝒄𝒎 a la izquierda.
+Ahora la imagen sería real, reducida e invertida. (Esto último no se pide).
+
+
+
+
+                                                         ©Angel Cuesta Arza
+                                             FÍSICA NUCLEAR
+El 218
+    84𝑃𝑜 se desintegra con un periodo de semidesintegración de 183 s, emitiendo partículas alfa y se transforma en un
+isótopo del plomo, 𝑎𝑏𝑃𝑏 . Determina razonadamente los números másico y atómico del isótopo del plomo. En un cierto
+instante, en una muestra se determina que hay 1,0 mg de polonio–218, calcula la masa de polonio–218 que había diez
+minutos antes.
+Solución:
+Las partículas se conservan. Se recuerda que una partícula alfa tiene dos protones y dos neutrones.
+
+218     𝑏     4                 218 = 𝑏 + 4            𝑏 = 214           El número atómico del isótopo de plomo es
+ 84𝑃𝑜 → 𝑎𝑃𝑏 + 2𝛼            ቊ                      ቊ
+                                84 = 𝑎 + 2             𝑎 = 82            𝒁 = 𝟖𝟐 y su número másico es 𝑨 = 𝟐𝟏𝟒.
+
+                                                                                                              𝑚
+La ley de desintegración radiactiva en función de la masa establece que: 𝑚 = 𝑚0 ∙ 𝑒 −𝜆∙𝑡              𝑚0 =
+                                                                                                             𝑒 −𝜆∙𝑡
+                                                 𝐿𝑛 2    𝐿𝑛 2
+Se calcula la constante de desintegración:    𝜆=       =      = 3,79 ∙ 10−3 𝑠 −1
+                                                  𝑇1/2    183
+                                                    𝑚      1,0 𝑚𝑔
+Se calcula la masa que había inicialmente: 𝑚0 = −𝜆∙𝑡 =   −3,79∙10 −3 ∙600 = 9,7 𝑚𝑔
+                                               𝑒       𝑒
+
+10 minutos antes había 9,7 mg de polonio–218.             Ojo: 10 minutos son 600 segundos.
+                                                         ©Angel Cuesta Arza
+                                                   BONUS
+ Deducción de la ecuación de desintegración radiactiva.
+𝑑𝑁               La variación del número de núcleos radiactivos con el tiempo es
+   = −𝜆 ∙ 𝑁      proporcional al número de núcleos radiactivos. Es negativa porque el
+𝑑𝑡
+                 número de núcleos disminuye con el tiempo.
+
+La ecuación que hemos escrito arriba es una ecuación diferencial. Para poder
+resolverla, debemos integrarla.
+
+Condiciones iniciales: 𝑡 = 0; 𝑁 = 𝑁0
+                                               𝑑𝑁
+Separo las variables: 𝑑𝑁 = −𝜆 ∙ 𝑁 𝑑𝑡              = −𝜆 𝑑𝑡
+                                               𝑁
+Ahora ya podemos integrar, definiendo los límites de integración con las condiciones iniciales.
+
+ 𝑁         𝑡
+    𝑑𝑁                                       𝑡
+න      = න −𝜆 𝑑𝑡           𝐿𝑛(𝑁ሻ 𝑁
+                                 𝑁0 = −𝜆 ∙ 𝑡 0          𝐿𝑛 𝑁 − 𝐿𝑛 𝑁0 = − 𝜆 ∙ (𝑡 − 0ሻ
+ 𝑁0 𝑁     0
+
+     𝑁                    𝑁                                               Que es la ley que
+𝐿𝑛      = −𝜆 ∙ 𝑡             = 𝑒 −𝜆∙𝑡         𝑁 = 𝑁0 ∙ 𝑒 −𝜆∙𝑡
+     𝑁0                   𝑁0                                              queríamos obtener.
+                                                     ©Angel Cuesta Arza
+                                      TEORÍA DE LA RELATIVIDAD
+Una nave espacial viaja con velocidad 𝑣=2,1∙108 m/s desde la Tierra hasta la estrella de Barnard, situada a una
+distancia 𝑑=5,98 años luz. Se mide la duración del viaje en la Tierra y en la nave, ¿en cuál de estos dos sistemas de
+referencia inerciales se mide el tiempo propio? ¿Qué duración tiene el viaje en cada uno de estos dos sistemas?
+Razona las respuestas.
+Dato: velocidad de la luz en el vacío, 𝑐=3∙108 m/s
+
+Solución: Se calcula en primer lugar la duración del viaje cuando se mide el tiempo desde la Tierra.
+
+    𝑒             𝑒  5,98 ∙ 𝑐 5,98 ∙ 3 ∙ 108                         Recuerda que cuando nos dan distancias en años luz,
+ 𝑣=             𝑡= =          =              = 8,54 𝑎ñ𝑜𝑠             basta con multiplicar por 𝑐 para obtener el espacio.
+    𝑡             𝑣 2,1 ∙ 108   2,1 ∙ 108
+
+Se calcula ahora el tiempo que mide un observador que viaja en la nave. Este será el tiempo propio, ya que el tiempo
+propio es el medido por un reloj que está en el punto de partida y en el punto de llegada.
+
+                               ∆𝑡      ∆𝑡              8,54          8,54    8,54
+ ∆𝑡 = 𝛾 ∙ ∆𝑡𝑝          ∆𝑡𝑝 =      =          =                     =       =      = 6,1 𝑎ñ𝑜𝑠
+                               𝛾       1                 1             1     1,4
+                                        𝑢2                            0,51
+                                      1− 2             2,1 ∙ 108 2
+                                        𝑐         1−
+                                                        3 ∙ 108 2
+
+El tiempo medido desde la Tierra será 8,54 años y el tiempo    medido
+                                                      ©Angel Cuesta Arza desde la nave será 6,1 años.
+

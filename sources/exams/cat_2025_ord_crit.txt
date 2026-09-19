@@ -1,0 +1,313 @@
+                                                                              Pàgina 1 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+
+Sèrie 1
+
+Criteris generals d'avaluació i qualificació
+
+   1. Les respostes s’han d’ajustar a l’enunciat de la pregunta. Es valorarà sobretot que
+       l’alumnat demostri que té clars els conceptes de caràcter físic sobre els quals tracta
+       cada pregunta.
+   2. Es tindrà en compte la claredat en l’exposició dels conceptes, dels processos, dels
+       passos a seguir, de les hipòtesis, l’ordre lògic, l’ús correcte dels termes científics i la
+       conceptualització segons l’enunciat.
+   3. En les respostes cal que l’alumnat mostri una adequada capacitat de comprensió de
+       les qüestions plantejades i organitzi de forma lògica la resposta, tot analitzant i
+       utilitzant les variables en joc. També es valorarà el grau de pertinença de la resposta,
+       el que l’alumnat diu i les mancances manifestes sobre el tema en qüestió.
+   4. Les respostes s’han de raonar i justificar. Un resultat erroni amb un raonament
+       correcte es valorarà. Una resposta correcta sense raonament ni justificació es pot
+       valorar amb un 0.
+   5. Un error no s’ha de penalitzar dues vegades en el mateix problema. Si un apartat
+       necessita un resultat anterior, i aquest és erroni, cal valorar la resposta
+       independentment del seu valor numèric, i tenir en compte el procediment de resolució.
+   6. Si la resolució presentada a l’examen és diferent però correcta i està d’acord amb els
+       requeriments de l’enunciat, s’ha d’avaluar positivament encara que no coincideixi amb
+       la resolució donada a la pauta de correcció.
+   7. Un o més errors d’unitats o no posar-les (resultats intermedis i finals) en un problema
+       es penalitzaran amb 0,25 punts en aquest problema.
+   8. Cal resoldre els exercicis fins al final i no es poden deixar indicades les operacions.
+   9. Cal fer la substitució numèrica en les expressions que s’utilitzen per resoldre les
+       preguntes.
+   10. Un o més resultats amb un nombre molt elevat de xifres significatives (6 xifres
+       significatives) o amb només una xifra significativa es penalitzarà amb 0,1 p. en aquest
+       problema.
+                                                                              Pàgina 2 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 1
+a)
+Trobar l’expressió de la velocitat orbital
+0,5 p. Segons la llei de la gravitació universal, el mòdul de la força sobre la caixa degut a
+l’atracció de la Terra és:
+                                                 𝑀𝑐𝑎 𝑀𝑇
+                                          𝐹=𝐺
+                                                    𝑟2
+La segona llei de Newton estableix que: 𝐹⃗ = 𝑀𝑐𝑎 𝑎⃗
+D’altra banda, considerant que el satèl·lit descriu un moviment circular uniforme al voltant
+de la Terra, la seva acceleració és l’acceleració centrípeta: 𝑎 = 𝑣 2 /𝑟 .
+Com que sobre la caixa sols actua la força de la gravetat:
+                                  𝑀𝑐𝑎 𝑀𝑇                       𝑀𝑇
+                              𝐺       2
+                                         = 𝑀𝑐𝑎 𝑣 2 /𝑟 ⇒ 𝑣 = √𝐺
+                                    𝑟                           𝑟
+0,25 p. El radi 𝑟 = 6,37 · 106 + 4 · 105 = 6,77 · 106 m . Utilitzant l’expressió, obtenim el
+valor de la velocitat orbital de la caixa:
+                              𝑀𝑇                 5,98·1024
+                 𝑣𝑐𝑎 = √𝐺        = √6,67 · 10−11           = 7,68 · 103 m/s
+                               r                  6,77·106
+0,5 p El nombre de voltes al voltant de la Terra que fa la caixa durant un dia. Hem de
+comparar els dos temps.
+                            2𝜋𝑟    2𝜋 6,77·106
+El període de la caixa: 𝑇 =   𝑣
+                                 =   7,68·103
+                                                = 5,54 · 103 s.
+                                   3600 s
+I un dia amb segons: 𝑡𝑑𝑖𝑎 = 24 h 1h = 86,4 · 103 𝑠.
+                                       𝑡       86,4·103
+I el nombre de voltes : 𝑛𝑣𝑜𝑙𝑡𝑒𝑠/𝑑𝑖𝑎 = 𝑑𝑖𝑎𝑇
+                                            =  5,54·103
+                                                        = 15,6 voltes.
+b)
+0,5 p. Calculem l’energia mecànica inicial a l’òrbita de 280 km d’altura: radi 𝑟 = 6,37 ·
+106 + 2,8 · 105 = 6,65 · 106 m.
+L’energia mecànica és la suma de l’energia cinètica i potencial:
+                        1              𝑀𝐸𝐸𝐼 𝑀𝑇 1             𝑀𝑇        𝑀𝐸𝐸𝐼 𝑀𝑇       𝑀𝐸𝐸𝐼 𝑀𝑇
+   𝐸𝑚 𝑖𝑛𝑖 = 𝐸𝑐 + 𝐸𝑝 = 𝑀𝐸𝐸𝐼 𝑣 2 − 𝐺             = 𝑀𝐸𝐸𝐼 𝐺          −𝐺            = −𝐺
+                        2                 𝑟      2            𝑟           𝑟              2𝑟
+                                                        5             24
+                    𝑀𝐸𝐸𝐼 𝑀𝑇                    4,3 · 10   · 5,98 · 10
+       𝐸𝑚 𝑖𝑛𝑖 = −𝐺            = −6,67 · 10−11                            = −1,29 · 1013 J
+                        2𝑟                          2 · 6,65 · 106
+0,25 p. El signe negatiu de l’energia mecànica indica que l’EEI està seguint una òrbita
+tancada (o lligada) al voltant de la Terra.
+0,5 p. Sense tenir en compte l’atmosfera, es conservarà l’energia mecànica durant la
+caiguda, 𝐸𝑚 𝑖𝑛𝑖 = 𝐸𝑚 𝑓𝑖 i l’energia mecànica final és 𝐸𝑚 𝑓𝑖 = 𝐸𝑐 𝑓𝑖 + 𝐸𝑝 𝑓𝑖 . Per tant, l’energia
+cinètica final amb què impactarà a l’aigua serà: 𝐸𝑐 𝑓𝑖 = 𝐸𝑚 𝑓𝑖 − 𝐸𝑝 𝑓𝑖 = 𝐸𝑚 𝑖𝑛𝑖 − 𝐸𝑝 𝑓𝑖 .
+
+L’energia potencial final:
+                     𝑀𝐸𝐸𝐼 𝑀𝑇                   4,3 · 105 · 5,98 · 1024
+       𝐸𝑝 𝑓𝑖 = −𝐺              = −6,67 · 10−11                         = −2,69 · 1013 J
+                        𝑅𝑇                            6,37 · 106
+Per tant, l’energia cinètica final amb què impacta a l’aigua serà:
+            𝐸𝑐 𝑓𝑖 = 𝐸𝑚 𝑓𝑖 − 𝐸𝑝 𝑓𝑖 = −12,896 · 1012 + 26,925 · 1012 𝐽 = 1,40 · 1013 J
+                                                                              Pàgina 3 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 2, opció 1
+a)
+0,25 p. Esquema: han d’aparèixer les plaques
+metàl·liques horitzontals, el voltatge i les dues forces que
+actuen sobre l’electró.
+0,25 p. Les dues plaques formen un condensador pla. La
+placa superior ha de tenir una càrrega positiva i la
+inferior negativa per crear un camp elèctric vertical i
+dirigit cap avall de manera que creï una força vertical cap amunt en la càrrega negativa de
+la gota per contrarestar el pes dirigit cap avall.
+
+0,5 p. El potencial elèctric és l’integral del camp elèctric i en aquest cas on el camp és
+                  𝑉   2000
+homogeni, |𝐸⃗⃗ | = =𝑑
+                           = 105 V/m.
+                          0,02
+0,25 p. El camp elèctric és homogeni i dirigit cap avall; per tant, les línies de camp seran
+línies verticals equiespaiades i cap avall.
+
+b)
+0,75 p. El pes de la gota és 𝑃 = 𝑚 · 𝑔, i la massa la calculem amb la densitat i el volum de la
+                          4           4
+gota esfèrica: 𝑚 = 𝜌 · 3 𝜋𝑟 3 = 923 · 3 𝜋(1,08 · 10−6 )3 = 4,87 · 10−15 kg.
+La força elèctrica és |𝐹⃗𝑒 | = 𝑞|𝐸|.
+En l’equilibri la força elèctrica sobre la gota ha de ser igual al seu pes: 𝐹𝑒 = 𝑃.
+                                                          𝑚·𝑔  4,87·10  −15
+                                                                        ·9,8
+Igualant les dues forces: |𝐹⃗𝑒 | = 𝑃 = 𝑚 · 𝑔, per tant 𝑞 = 𝐸 =      105
+                                                                             = 4,77 · 10−19 C
+0,25 p. Dividint la càrrega per la càrrega de l’electró |𝑒| trobem el número d’electrons n:
+                                        4,77 · 10−19 C
+                                   𝑛=                    =3
+                                        1,602 · 10−19 C
+0,25 p. Si la gota perd un electró, el mòdul de la força elèctrica esdevé menor que el pes, i
+la gota cau: |𝐹⃗𝑒 | = 𝑞|𝐸| < 𝑃.
+Alternativament, l’alumne/a ho pot justificar calculant la força elèctrica per dos electrons i
+el pes: |𝐹⃗𝑒 | = 𝑞|𝐸| = 3,20 · 10−14 N, 𝑃 = 𝑚𝑔 = 4,87 · 10−15 · 9,8 = 4,77 · 10−14 N. I, per
+tant, |𝐹⃗𝑒 | < 𝑃, i la gota cau.
+                                                                              Pàgina 4 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 2, opció 2
+a)
+0,5 p. El flux del camp magnètic és el producte escalar del camp magnètic per l’àrea del
+circuit. Calculem primer l’àrea del circuit en funció del temps: 𝐴(𝑡) = 0,25(0,3 − 5,0 𝑡).
+El camp magnètic és perpendicular al circuit; per tant, paral·lel al vector de superfície i, en
+conseqüència, 𝜙(𝑡) = 𝐵 · 𝐴(𝑡) = 2 · 0,25(0,3 − 5,0 𝑡) = (0,15 − 2,5 𝑡)Wb .
+                                          𝑑𝜙
+0,35 p. La força electromotriu és 𝜀 = −      =2,5 V.
+                                          𝑑𝑡
+0,4 p. El corrent induït sempre és contrari a la variació de
+flux de camp magnètic. En aquest cas, es redueix el flux i, per
+tant, el corrent induït crearà un camp magnètic en la mateixa
+direcció que el camp ja existent. Consegüentment, la intensitat
+induïda gira en sentit antihorari.
+
+b)
+0,25 p. Aplicant la llei d’Ohm, trobem la intensitat que circula pel circuit deguda a la força
+                              𝜀
+electromotriu induïda: 𝐼 = 𝑅 = 2,5/50 = 0,05 A=50 mA.
+0,5 p. La força magnètica que actua sobre la barra és
+𝐹⃗ = 𝐼𝑙⃗ × 𝐵
+           ⃗⃗. La longitud de la barra i el camp magnètic
+són perpendiculars; per tant, el mòdul de la força
+magnètica serà: 𝐹 = 𝐼𝑙𝐵 = 0,05 · 0,25 · 2 = 0,025 N.
+0,5 p. La direcció de la força és perpendicular a la
+barra i al camp i la regla de la mà dreta ens indica que és
+cap amunt en el pla del paper.
+També es pot justificar a partir de la llei de Lenz: la
+força ha d’actuar de tal manera que s’oposi al
+moviment; com que es mou cap avall, la força apunta
+cap amunt.
+                                                                              Pàgina 5 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 3, opció 1
+a)
+0,5 p. L’angle límit (o crític) és l’angle d’incidència respecte de la normal de la interfície
+pel qual l’angle de refracció és de 90 o , també respecte de la normal. A partir de la llei de
+Snell: 𝑛𝑏𝑙𝑜𝑐 𝑠𝑖𝑛𝜃𝑖 = 𝑛𝑎𝑖𝑟𝑒 𝑠𝑖𝑛𝜃𝑟 .
+                                                                         𝑛               𝑛
+Si l’angle refractat és 90o , l’angle d’incidència compleix: 𝑠𝑖𝑛𝜃𝑙í𝑚𝑖𝑡 = 𝑛𝑎𝑖𝑟𝑒 𝑠𝑖𝑛90o = 𝑛𝑎𝑖𝑟𝑒 .
+                                                                          𝑏𝑙𝑜𝑐              𝑏𝑙𝑜𝑐
+                                               𝑛
+Per tant, l’angle límit serà: 𝜃𝑙í𝑚𝑖𝑡 = 𝑎𝑟𝑐𝑠𝑖𝑛 ( 𝑎𝑖𝑟𝑒 ).
+                                               𝑛𝑏𝑙𝑜𝑐
+                                                                              1
+0,25 p. L’angle límit per a les dades del problema és: 𝜃𝑙í𝑚𝑖𝑡 = 𝑎𝑟𝑐𝑠𝑖𝑛 ( 1,58) = 39,3 o .
+0,5 p. El fenomen de la reflexió total i l’angle límit no es pot donar si invertim els medis. En
+aquest cas, la llum passaria d’un índex de refracció petit a un índex gran i, per tant, l’angle
+refractat seria menor que l’incident. Matemàticament, es pot deduir de la llei de Snell:
+𝑛1 𝑠𝑖𝑛𝜃1 = 𝑛2 𝑠𝑖𝑛𝜃2 , recordant que la funció sinus creix amb l’angle per angles petits. Per al
+                                                                       1,58
+nostre cas concret, l’angle límit hauria de complir 𝜃𝑙í𝑚𝑖𝑡 = 𝑎𝑟𝑐𝑠𝑖𝑛 ( 1 ), que no té solució.
+
+
+b)
+0,75 p. Per poder veure la moneda, la distància ha
+de ser menor que la que correspon a l’angle límit.
+Per a distàncies més grans, tindrem reflexió total i
+no podrem veure la moneda.
+La relació entre la distància d i l’angle d’incidència
+𝜃𝑖 és:
+                                 𝑑
+                      𝑡𝑔(𝜃𝑖 ) =
+                                 2
+Calculem la distància màxima, la d per l’angle límit
+𝜃𝑙í𝑚𝑖𝑡 = 39,3o : 𝑑𝑚𝑎𝑥 = 2 · 𝑡𝑔(𝜃𝑙í𝑚𝑖𝑡 ) = 2 · 𝑡𝑔(39,3o ) =
+1,635 m
+
+0,5 p. Esquema: angle reflectit igual a l’incident i angle
+refractat de 90 o
+També és correcte indicar que no hi ha raig refractat.
+                                                                              Pàgina 6 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 3, opció 2
+a)
+0,25 p. Ens diuen que la flauta travessera és un tub obert pels dos extrems. Les longituds
+                         2𝐿                                                                𝑣
+ressonants seran: 𝜆𝑛 = 𝑛 i utilitzant 𝜆 · 𝑓 = 𝑣 ; les freqüències ressonants seran 𝑓𝑛 =n 2 𝐿 =
+  343
+𝑛 2·0,67 = 𝑛 · 256 Hz . Per tant, el primer harmònic serà 𝑓1 =256 Hz.
+0,25 p. Igualment, per al tercer harmònic : 𝑓3 =3 · 256 𝐻𝑧 = 768 Hz.
+
+0,25 p. Tub amb els dos extrems oberts; té els ventres als extrems i la distància entre
+                                                                             λ
+ventres de l’ona estacionària és mitja longitud d’ona, posició 𝑥𝑉 = 𝑛 . Els nodes entre
+                                                                             2
+                                          λ
+ventres a mitja distància, 𝑥𝑁 = (2𝑛 + 1) 4 .
+                                    𝜆
+0,25 p. Per al primer harmònic: 1 = 0,67 m; per tant: primer ventre: 𝑥𝑉1 = 0; segon ventre:
+                                    2
+𝑥𝑉2 = 0,67 m , Node : 𝑥𝑁1 = 0,335 m.
+
+0,25 p. Per        al     tercer
+          𝜆
+harmònic: 23 = 0,223 m; per
+tant:
+Primer ventre: 𝑥𝑉1 = 0
+Segon ventre: 𝑥𝑉2 = 0,223 m
+Tercer ventre: 𝑥𝑉3 = 0,447 m
+Quart ventre: 𝑥𝑉4 = 0,67 m
+Primer node : 𝑥𝑁1 = 0,112 m
+Segon node : 𝑥𝑁2 = 0,335 m
+Tercer node : 𝑥𝑁3 = 0,558 m
+
+b)
+0,4 p. En el cas extrem tancat - extrem obert, la longitud d’ona de les ones estacionàries
+              4𝐿                                                  𝑣      𝑣
+compleix 𝜆𝑛 = 𝑛 i les seves freqüències corresponents són 𝑓𝑛 = 𝜆 = n 4 𝐿 amb n=1,3,5.
+                                                                  𝑛
+                                                                                  4 0,67
+Per tant, el primer mode de vibració correspon a n=1 i té longitud d’ona: 𝜆1 =      1
+                                                                                         = 2,68 m
+                   343
+i freqüència 𝑓𝑛1 = 2,68 = 128 Hz.
+                                                                                 4 0,67
+0,35 p. El segon mode de vibració correspon a n=3 i té longitud d’ona: 𝜆3 =        3
+                                                                                        = 0,893 m
+                   343
+i freqüència 𝑓3 = 0,893 = 384 Hz.
+
+
+0,25 p. Dibuix del primer mode de
+vibració, harmònic fonamental.
+0,25 p. Dibuix del segon mode de
+vibració.
+                                                                              Pàgina 7 de 7
+                                                                                     Física
+Proves d’accés a la Universitat 2025, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 4
+a)
+0,25 p. Ens diuen que el nucli inicial té un excés de neutrons; per tant, s’estabilitzarà
+convertint un neutró en protó. Com que tindrem un protó de més, Z passa d’11 a 12 i, per
+tant, el nou element serà el magnesi-24.
+
+1,0 p. En la reacció de transformació d’un neutró en un protó, s’emet un electró per
+respectar la conservació de la càrrega elèctrica.
+O alternativament, 10𝑛 → 11𝑝 + −10𝑒 + 00𝜈̅𝑒 .
+Per tant, la reacció serà:
+                                24         24     0    0
+                                11𝑁𝑎 → 12𝑀𝑔 + −1𝑒 + 0𝜈̅𝑒
+
+
+b)
+0,75 p. Per trobar l’activitat al cap de 10 h, necessitem el coeficient de desintegració 𝜆 que
+obtenim del temps de semidesintegració, que és el temps en reduir l’activitat a la meitat:
+       𝐴                                  𝑙𝑛2
+𝐴(𝑡) = 20 = 𝐴0 𝑒 −𝜆𝑡1/2 i per tant, 𝑡1/2 = 𝜆 .
+Directament obtenim:
+                                   𝑙𝑛2 𝑙𝑛2
+                              𝜆=       =   = 4,62 · 10−2 h−1
+                                   𝑡1/2 15
+L’activitat després de 10 hores:
+                                                      −2
+                    𝐴 = 𝐴0 𝑒 −𝜆𝑡 = 5,80 · 105 𝑒 −4,62·10 ·10 = 3,65 · 105 Bq
+0,5 p. Després de 10 h, l’isòtop de sodi injectat s’ha dissolt en tot el volum de sang. Sabent
+que l’activitat de 1,00 mL són 60 Bq i que la de tot el volum de sang és l’activitat que acabem
+de calcular, podem calcular el volum total de sang, ja que la proporció serà la mateixa:
+                                    3,65 · 105 Bq 60 Bq
+                                                    =
+                                         𝑉𝑡𝑜𝑡𝑎𝑙        1 mL
+Per tant:
+                                                1 mL      1L
+                       𝑉𝑡𝑜𝑡𝑎𝑙 = 3,65 · 105 Bq ·                 = 6,09 L
+                                                60 Bq 1000 mL
+

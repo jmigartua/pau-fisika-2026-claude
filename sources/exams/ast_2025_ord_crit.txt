@@ -1,0 +1,576 @@
+                                                                                                                                                                                     Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                                CURSO 2024-25
+
+
+
+
+                                                                               FÍSICA (Examen resuelto y criterios de corrección)
+
+  ➢ Responda en el pliego en blanco a cinco preguntas cualesquiera a elegir de las ocho que se proponen. Todas las preguntas se calificarán con un máximo de 2 puntos.
+  ➢ Agrupaciones de preguntas que sumen más de 10 puntos o que no coincidan con las indicadas conllevarán la anulación de la(s) última(s) pregunta(s) seleccionada(s) y/o respondida(s).
+
+                                                                                              DATOS y CONSTANTES FÍSICAS
+
+ RT = 6370 km                                             k = 9.0x109 N·m2·C-2                                   mp+ = 1.710-27 kg                                      c = 3.0108 m·s-1
+
+ MTierra = 5.971024 kg                                   |qe-| = |qp+| = 1.610-19 C                            me- = 9.110-31 kg                                      h = 6.6310-34 J·s
+
+ G = 6.6710-11 N·m2·kg-2                                 0 = 410-7 T·m·A-1                                   I0 = 10-12 W·m-2                                        vsonido = 340 m·s -1
+
+ MSol = 1.991030 kg                                      1 ua = 1.51011 m                                      NA = 6.021023 mol-1                                    naire = 1
+
+
+
+Pregunta 1
+
+Dos masas puntuales de 5 kg y 20 kg se hallan situadas en los puntos de coordenadas A (-2,0) m y B (4,0) m, respectivamente.
+
+a) Realiza un esquema y determina la intensidad del campo gravitatorio debido a ambas masas en el punto C (0,0) m. (1 punto)
+
+b) Calcula el potencial gravitatorio en el punto C (0,0) m. (0.5 puntos)
+
+c) Determina el trabajo necesario para llevar una tercera masa de 1 kg desde el punto C hasta el punto D (3,0) m. Justifica el signo del trabajo y razona si su valor depende de la trayectoria seguida por la masa. (0.5 puntos)
+
+
+SOLUCIÓN:
+a) El campo gravitatorio en el origen C (0, 0) debido a las dos masas puntuales se representa en el esquema adjunto, donde aplicando el principio de superposición, en el punto C se cumplirá que los campos gravitatorios
+de ambos cuerpos tienen sentidos opuestos. Dado que m2 = 4 m1 y que el punto C del eje OX se halla situado entre las dos partículas a una distancia x2 = 2x1, los campos gravitatorios de ambas partículas y por tanto el
+campo gravitatorio resultante están dirigidos según la recta del eje X:
+                                                                                                                                                              g1        g2
+                  𝐺 ∙ 𝑚1       𝐺 ∙ 𝑚2         𝐺 ∙ 𝑚1   𝐺 ∙ 4𝑚1     𝐺 ∙ 𝑚1   𝐺 ∙ 4𝑚1
+𝑔𝑚1 𝐶 + 𝑔𝑚2 𝐶 = −     2  𝑢𝑟1 −     2  𝑢𝑟2 ≡ −     2 𝑖 + 2𝑥 2 𝑖 = −     2 𝑖+         𝑖=0
+                    𝑟1           𝑟2             𝑥1          1        𝑥1       4𝑥12                                                                                                                               X
+                                                                                                                                                                   C (x = 0)
+                                                                                                                                               m1 = 5 kg                                        m2 = 20 kg
+Luego, el campo gravitatorio resultante debido a las dos masas puntuales en el origen C (0, 0) se anula.
+                                                                                                                                               A (x1 = -2 m)                                    B (x2 = 4 m)
+
+b) El potencial gravitatorio es la energía almacenada por unidad de masa en un punto del campo gravitatorio y suponiendo el origen de potenciales en el infinito, se calcularía aplicando el principio superposición. Así, el
+potencial V producido por ambas partículas puntuales en el punto C (0, 0), será:
+     VC = V1C + V2C
+De donde:
+                                                                                                                                                                                       Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                                  CURSO 2024-25
+
+
+
+
+                                                                                𝐺 ∙ 𝑚1 𝐺 ∙ 𝑚2    𝐺 ∙ 𝑚1 𝐺 ∙ 4𝑚1        𝐺 ∙ 𝑚1
+                                                          𝑉𝐶 = 𝑉1𝐶 + 𝑉2𝐶 = −          −       =−       −        = −3 ∙        =
+                                                                                 𝑟1𝐶    𝑟2𝐶        𝑥1    2𝑥1             𝑥1
+
+
+                                                             3 ∙ 6.67 × 10−11 N ∙ m2 ∙ kg −2 ∙ 5 kg
+                                                          =−                                        ≈ −50.025 × 10−11 J ∙ kg −1 ≡ −5.002 × 10−10 J ∙ kg −1
+                                                                            2∙𝑚
+
+
+
+
+c) Para calcular el trabajo realizado para desplazar la masa m3 desde el origen C al punto D, se debe obtener en primer lugar el potencial gravitatorio debido a las dos masas puntuales en el punto D. El potencial gravitatorio
+producido por ambas partículas en el punto xD= 3 m será, análogamente:
+
+                                                                                          𝐺 ∙ 𝑚1 𝐺 ∙ 𝑚2    𝐺 ∙ 𝑚1 𝐺 ∙ 4𝑚1           1 4    21
+                                                                    𝑉𝐷 = 𝑉1𝐷 + 𝑉2𝐷 = −          −       =−       −        = −𝐺 ∙ 𝑚1  +  = − 𝐺 ∙ 𝑚1 =
+                                                                                           𝑟1𝐷    𝑟2𝐷       𝑥1𝐷    𝑥2𝐷              5 1    5
+
+
+                                                                         21 ∙ 6.67 × 10−11 N ∙ m2 ∙ kg −2 ∙ 5 kg
+                                                                    =−                                           = −140.07 × 10−11 J ∙ kg −1 ≡ −1.40 × 10−9 J ∙ kg −1
+                                                                                         5𝑚
+
+Teniendo en cuenta que la fuerza gravitatoria es conservativa, el trabajo realizado para desplazar la masa m3 desde C hasta D, será, a partir de la energía potencial: 𝑊C→D = −∆𝐸𝑝C→D = −(𝐸𝑝D – 𝐸𝑝C) = 𝐸𝑝C – 𝐸𝑝D = 𝑚3 𝑉C −
+𝑚3 𝑉D = 𝑚3 (𝑉C – 𝑉D). Por lo que el trabajo realizado entre los dos puntos, aplicando el principio de superposición: 𝑊C→D = 𝑚3 (𝑉C − 𝑉D):
+
+                                                              𝑊𝐶→𝐷 = 𝑚3 ∙ 𝑉𝐶 − 𝑉𝐷 = 1 𝑘𝑔 ∙ −50.025 − −140.07              × 10−11 J ∙ kg −1 = 9.004 × 10−10 J
+
+
+El trabajo es positivo, luego es realizado por el campo gravitatorio del sistema de masas puntuales. Dado que la fuerza gravitatoria es conservativa, el trabajo realizado por el campo gravitatorio será independiente del
+camino seguido para llevar la partícula m3 desde C hasta D.
+
+
+
+Pregunta 2
+
+El satélite meteorológico de tercera generación Meteosat 12 (MTG-I1) tiene una masa de 3600 kg y describe una órbita circular alrededor de la Tierra a una altura de 35.8 km.
+
+a) Determina el período de la órbita y la velocidad orbital alrededor de la Tierra. (1 punto)
+
+b) Calcula la energía mínima que hay que suministrar al satélite desde su órbita para que escape de la atracción del campo gravitatorio terrestre. (1 punto)
+
+
+SOLUCIÓN:
+a) La velocidad orbital y el período de rotación orbital del satélite alrededor de la Tierra se obtienen a partir de la relación entre las fuerzas gravitatoria y central de rotación, donde se debe determinar la velocidad orbital del
+satélite en función del radio de la órbita del satélite al centro de la Tierra: rSat = RT + hSat.
+                                                                                                                                                                                   Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                              CURSO 2024-25
+
+
+
+
+                                                        2
+                                                       𝑣𝑜𝑟𝑏    𝑚𝑆𝑎𝑡 ∙ 𝑀T              𝐺𝑀𝑇
+                                     𝐹C = 𝐹G ⟹ 𝑚𝑆𝑎𝑡         =𝐺    2      ⟹ 𝑣𝑜𝑟𝑏 =
+                                                       𝑟𝑆𝑎𝑡      𝑟𝑆𝑎𝑡                 𝑟𝑆𝑎𝑡
+
+Sustituyendo datos:
+
+
+                                 6.67 × 10−11 𝑁 ∙ 𝑚2 ∙ 𝑘𝑔−2 ∙ 5.97 × 1024 𝑘𝑔           𝑚              𝑚
+                      ⟹ 𝑣𝑜𝑟𝑏 =                                               ≈ 7.884.3   ≅ 7.88 ∙ 103
+                                                6.405.800 𝑚                            𝑠              𝑠
+
+
+
+El período de rotación orbital del satélite a dicha distancia será entonces, suponiendo que realiza una órbita circular alrededor de la Tierra:
+
+
+
+
+         2𝜋 𝑟𝑆𝑎𝑡           2𝜋 𝑟𝑆𝑎𝑡           𝑟𝑆𝑎𝑡 3                6.4058 × 106 3 ∙ 𝑚3
+𝑣𝑜𝑟𝑏 =             ⟹ 𝑇=              = 2𝜋           = 2𝜋                                             ≈ 5104.93 𝑠 ≅ 5.1 × 103 𝑠 ≡ 1.42 ℎ
+            𝑇               𝐺 ∙ 𝑀𝑇          𝐺 ∙ 𝑀𝑇       6.67 × 10−11 𝑁 ∙ 𝑚2 ∙ 𝑘𝑔−2 ∙ 5.97 × 1024 𝑘𝑔
+                             𝑟𝑆𝑎𝑡
+
+
+b) la Energía mínima que se debe suministrar al satélite para que éste logre escapar de la atracción gravitatoria de la Tierra desde la órbita, situada a una distancia rSat = RT + hSat, se obtiene a partir de la conservación de
+ la energía mecánica, donde la energía cinética mínima necesaria para que el satélite escape desde su órbita actual de la influencia de la atracción gravitatoria del planeta será igual a la energía potencial gravitatoria del
+ satélite en dicha órbita, menos la energía debida a la rotación del satélite alrededor de la Tierra:
+                                                   𝑓
+       𝑖
+      𝐸𝑀 = 𝐸𝐶𝑖 𝑀𝑖𝑛 + 𝐸𝐶𝑖 ó𝑟𝑏𝑖𝑡𝑎 + 𝐸𝑃𝑖 ó𝑟𝑏𝑖𝑡𝑎 = 𝐸𝑀 = 0 ⟹ 𝐸𝐶𝑖 𝑀𝑖𝑛 + 𝐸𝐶𝑖 ó𝑟𝑏𝑖𝑡𝑎 + 𝐸𝑃𝑖 ó𝑟𝑏𝑖𝑡𝑎 = 0
+
+                   1            𝐺 ∙ 𝑀𝑇             𝑚𝑆𝑎𝑡 ∙ 𝑀𝑇                        𝑚𝑆𝑎𝑡 ∙ 𝑀𝑇
+   ⟹ 𝐸𝐶𝑖 𝑀𝑖𝑛 +       ∙ 𝑚𝑆𝑎𝑡 ∙              + −𝐺 ∙              = 0 ⟹ 𝐸𝐶𝑖 𝑀𝑖𝑛 = 𝐺 ∙
+                   2          (𝑅𝑇 + ℎ𝑆𝑎𝑡 )        (𝑅𝑇 + ℎ𝑆𝑎𝑡 )                     2(𝑅𝑇 + ℎ𝑆𝑎𝑡 )
+
+                           6.6710−11 Nm2 𝑘𝑔−2  3.6103 𝑘𝑔 × 5.971024 𝑘𝑔
+             ⟹ 𝐸𝐶𝑖 𝑀𝑖𝑛 =                                                     ~ 1.121011 𝐽
+                                     2 ∙ 6.37106 + 35.8103 𝑚
+
+
+
+Pregunta 3
+
+Dos cargas puntuales q1 = 9 C y q2 = -16 C se hallan en el vacío y separadas entre si una distancia horizontal d = 1 m. Calcula:
+
+a) el punto A donde se anula el campo eléctrico. (1 punto)
+
+b) el punto B donde se anula el potencial electrostático. (0.5 puntos)
+
+c) el trabajo para llevar una carga puntual q3 = 5 C desde el punto A hasta el punto B. Justifica si el trabajo se realiza por el campo eléctrico del sistema de cargas o en contra del campo del sistema. (0.5 puntos)
+
+
+SOLUCIÓN:
+                                                                                                                                                                                    Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                               CURSO 2024-25
+
+
+
+
+a) Suponiendo que las dos cargas puntuales q1 y q2, de distinto valor y signo, se hallan dispuestas a lo largo del eje OX, y que la carga positiva q1 de menor valor está situada a la izquierda de la negativa y de mayor valor,
+q2, a una distancia relativa d = 1 m, el campo eléctrico generado por el sistema de cargas se anulará en un punto A situado a la izquierda de la carga positiva, según se indica en la figura, dado que, aplicando el principio
+de superposición, se tiene que los vectores de campo eléctrico de cada carga en el punto A tienen sentidos opuestos.
+
+El campo eléctrico resultante en el punto A será:
+                                                                                                                                                       E2                                                           E1
+                                             𝑞1     𝑞2       𝑞1     𝑞2                                                                                                   E1        E2
+𝐸𝑇𝐴 = 𝐸1𝐴 + 𝐸2𝐴 = 𝐸1𝐴 −𝑖 + 𝐸2𝐴 𝑖 = 0  − 𝐾    2𝑖+𝐾 𝑑+𝑥 2𝑖=0𝐾 2𝑖=𝐾 𝑑+𝑥 2𝑖                                                                        A     E1                                                           E2 C X
+                                             𝑥𝐴        𝐴     𝑥𝐴        𝐴                                                                                                      B
+                                                                                                                                                         q1 = 9 C                d=1m                  q2 = -16 C
+Considerando el módulo de los vectores, dado que ambos campos llevan la misma dirección, según el eje OX:                                                (x1 = 0 m)                                     (x2 = 1 m)
+
+     𝑞1       𝑞2     𝑞1     𝑞2                                          𝑞2                            𝑑
+      2 = 𝐾 𝑑 + 𝑥 2  2 = 𝑑 + 𝑥 2  𝑞1 ∙ 𝑑 + 𝑥𝐴   = 𝑞2 ∙ 𝑥𝐴2              − 1 ∙ 𝑥𝐴 = 𝑑  𝑥𝐴 =
+                                                2
+ 𝐾
+     𝑥𝐴          𝐴   𝑥𝐴        𝐴                                        𝑞1                          𝑞2
+                                                                                                       −1
+                                                                                                    𝑞1
+
+Y sustituyendo valores, la distancia del punto A, respecto de la carga q1, será:
+        1𝑚
+𝑥𝐴 =            =3m
+        16
+           −1
+         9
+
+
+
+En el caso en que sea el punto B, que se halla entre las dos cargas puntuales, el campo eléctrico resultante debido a las dos cargas no puede anularse en B, dado que ambos campos tienen la misma dirección y sentido.
+
+Para el caso del tercer punto C, el campo eléctrico resultante debido al de las dos cargas puntuales podría anularse, dado que los campos debidos a cada carga tienen sentidos opuestos y distinto valor, pero el resultado
+es incongruente, dado que en C el campo eléctrico de la carga q2 es mucho más intenso que el de la carga q1.
+
+b) El potencial eléctrico debido a las dos cargas puntuales se anulará en dos puntos: B1 situado a la izquierda de la carga q1 y B2 situado entre las dos cargas.
+
+Para determinar el primer punto B1:
+
+  1       1      1          𝑞1       𝑞2       𝑞1        𝑞2                                                                       −𝑞1
+𝑉𝑇𝐵 = 𝑉1𝐵 + 𝑉2𝐵 = 0  𝐾          +𝐾       =0      +          = 0  𝑞1 ∙ 𝑑𝐵 1 + 1 = −𝑞2 ∙ 𝑑𝐵 1  𝑑𝐵 1 ∙ 𝑞1 + 𝑞2 = −𝑞1  𝑑𝐵 1 =
+                           𝑑1𝐵 1    𝑑2𝐵 1     𝑑𝐵 1   𝑑𝐵 1 + 1                                                                  𝑞1 + 𝑞2
+
+Y sustituyendo valores:
+
+                                            −𝑞1       −9     −9
+                                 𝑑𝐵 1 =           =        =    ≈ 1.29 𝑚
+                                          𝑞1 + 𝑞2   9 − 16   −7
+
+Para el punto B2 situado entre las dos cargas puntuales:
+
+  2       2      2          𝑞1       𝑞2       𝑞1       𝑞2                                                                        𝑞1
+𝑉𝑇𝐵 = 𝑉1𝐵 + 𝑉2𝐵 = 0  𝐾          +𝐾       =0      +          = 0  𝑞1 ∙ 1 − 𝑑𝐵 2 = −𝑞2 ∙ 𝑑𝐵 2  𝑑𝐵 2 ∙ 𝑞1 − 𝑞2 = 𝑞1  𝑑𝐵 2 =
+                           𝑑1𝐵 2    𝑑2𝐵 2     𝑑𝐵 2   1 − 𝑑𝐵 2                                                                 𝑞1 − 𝑞2
+
+Y sustituyendo valores:
+
+                                  𝑞1         9           9
+                      𝑑𝐵 2 =           =             =      = 0.36 𝑚
+                               𝑞1 − 𝑞2   9 − −16         25
+
+c) Para determinar el trabajo para llevar a la carga puntual q3 = 5 C desde el punto A hasta el punto B, se necesita calcular el potencial eléctrico en dichos puntos. El potencial en el punto inicial A:
+                                                                                                                                                                            Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                       CURSO 2024-25
+
+
+
+
+                      𝑞1     𝑞2     𝑞1     𝑞2                                 9 ∙ 10−6 C 16 ∙ 10−6 C
+𝑉𝑇𝐴 = 𝑉1𝐴 + 𝑉2𝐴 = 𝐾       +𝐾     =𝐾    +            = 9 ∙ 109 N ∙ m2 ∙ C −2             −            = −9 ∙ 103 V
+                      𝑑1𝐴    𝑑2𝐴    𝑑𝐴   𝑑𝐴 + 1                                   3m         4m
+
+
+Y el potencial en el punto final B (B1o B2 equivalentemente):
+                           1    1     1
+                        𝑉𝑇𝐵 = 𝑉1𝐵 + 𝑉2𝐵 = 0
+
+De donde el trabajo para llevar a la carga q3 desde A a B (B1o B2 equivalentemente), será:
+
+𝑊𝐴→𝐵 = −∆𝐸𝑃 𝐵𝐴 = +𝑞3 ∙ 𝑉𝐴 − 𝑉𝐵 = 5 ∙ 10−6 C × −9 − 0 ∙ 103 V = −45 ∙ 10−3 J = −45 mJ = −4.5 ∙ 10−2 J
+
+El trabajo tiene signo negativo luego es un trabajo a realizar externamente, en contra del campo eléctrico del sistema de cargas puntuales.
+
+
+
+Pregunta 4
+
+Por dos hilos conductores rectilíneos paralelos y de longitud indefinida que se hallan separados una distancia d = 10 cm, circulan sendas corrientes de igual intensidad. Realiza un esquema y determina razonadamente si
+se puede anular el campo magnético resultante en algún punto entre los dos hilos conductores, suponiendo que las corrientes circulan en sentidos:
+
+a) iguales. (0.5 puntos)
+
+b) opuestos. (0.5 puntos)
+
+c) Si dichos conductores rectilíneos se atraen con una fuerza por unidad de longitud de 410-8 N m-1, justifica cual es el sentido de la corriente que circula por ambos hilos conductores, representando en un esquema el
+campo magnético y la fuerza ejercida entre ambos. (0.5 puntos)
+
+d) Calcula el valor de la intensidad de corriente que circula por cada conductor. (0.5 puntos)
+
+
+SOLUCIÓN:
+
+a) Suponiendo que los dos hilos conductores paralelos están contenidos en el plano XY y dispuestos verticalmente según el eje OY. Si las corrientes por ambos conductores son iguales y
+                                                                                                                                                                                              OY
+circulan en el mismo sentido, aplicando el principio de superposición, el campo magnético resultante se anulará únicamente en algún punto X situado entre ambos conductores, según se
+                                                                                                                                                                                             I1=I                     I2=I
+ilustra en la figura adjunta:
+
+Donde solamente en el punto X situado entre ambos conductores, 𝑩𝟏 y 𝑩𝟐 tienen la misma dirección (según el eje Z), pero sentidos contrarios, para poder anularse:
+
+                                                                                      𝐵𝑇 𝑋 = 𝐵1 𝑋 + 𝐵2 𝑋
+
+Siendo el módulo del campo magnético de cada conductor:                                                                                                                                             X = 0.05 m
+
+                                                                                              𝜇0 ∙ 𝐼𝑖
+                                                                                       𝐵𝑖 =           , (𝑖 = 1, 2)
+                                                                                              2𝜋 ∙ 𝑥𝑖
+                                                                                                                                                                                                    d = 0.1 m
+Si ambos conductores están separados una distancia d = 0.1 m, el punto X en el que se anulará el campo resultante será, X1 = x; X2 = d-x:
+
+                                                                                   𝜇0 𝐼1            𝜇0 𝐼2                𝜇0 𝐼1           𝜇0 𝐼2
+                                                                      𝐵𝑇 𝑋 = −             𝑘 +                  𝑘 =0⟹            𝑘 =              𝑘 ; 𝐼1 = 𝐼2 = 𝐼
+                                                                                  2𝜋 𝑥            2𝜋 𝑑 − 𝑥              2𝜋 𝑥           2𝜋 𝑑 − 𝑥
+                                                                                                                                                                                     Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                                CURSO 2024-25
+
+
+
+
+Como el campo magnético generado por cada uno de los conductores en los puntos del plano XY y a lo largo de la recta que los une, lleva la misma dirección (según el eje Z), en este caso se tiene que:
+
+                          𝜇0 𝐼1   𝜇0 𝐼2  1   1                   𝑑
+𝐵1 𝑋 = 𝐵2 𝑑 − 𝑋 ⟹               =       ⟹ =     ⟹ 𝑥 = 𝑑 − 𝑥 ⟹ 𝑥 = = 0.05 𝑚
+                          2𝜋 𝑥 2𝜋 𝑑 − 𝑥  𝑥  𝑑−𝑥                  2
+
+b) Si las intensidades son iguales, pero circulan en sentido contrario, el campo magnético resultante se anulará sólo si el punto X está a una distancia mayor que la de los dos conductores, pues del análisis indicado en la
+figura se desprende que el campo magnético resultante no se anula en ningún punto comprendido entre ambos conductores, dado que en esa región, ambos campos tienen la misma dirección y sentido y por tanto no se
+cancelan. Y en la zona exterior a ambos conductores, donde los campos de los conductores son opuestos, X1 = x; X2 = x-d:                                                                            OY
+                  𝜇0 𝐼1           𝜇0 𝐼2                         𝜇0 𝐼1               𝜇0 𝐼2
+    𝐵𝑇 𝑋 = −              𝑘 +                 𝑘 =0⟹                        𝑘 =                𝑘 ; 𝐼1 = 𝐼2 = 𝐼                                                                                      I1=I                          I2=-I
+                 2𝜋 𝑥           2𝜋 𝑥 − 𝑑                       2𝜋 𝑥               2𝜋 𝑥 − 𝑑
+
+El sentido opuesto de la corriente ya se ha tenido en cuenta en el cálculo del campo magnético, y despejando el valor del punto X, se obtiene una incongruencia, dado que tampoco es
+posible que el campo se anule en puntos X > d:
+
+                             𝜇0 𝐼1   𝜇0 𝐼2  1   1
+    𝐵1 𝑋 = 𝐵2 𝑋 − 𝑑 ⟹              =       ⟹ =     ⟹ 𝑥 = 𝑥 − 𝑑 ⟹ 𝐼𝑛𝑐𝑜𝑛𝑔𝑟𝑢𝑒𝑛𝑐𝑖𝑎
+                             2𝜋 𝑥 2𝜋 𝑥 − 𝑑  𝑥  𝑥−𝑑                                                                                                                                                          X
+                                                                                                                                                                                                                          X-d
+Por lo tanto, el campo magnético resultante solo puede anularse en un punto entre ambos conductores en el caso en que la corriente circula por ambos en el mismo sentido.
+
+
+                                                                                                                                                                                                          d = 0.1 m
+
+
+c) La fuerza de interacción magnética entre los dos conductores separados una distancia d será atractiva si ambas corrientes circulan en el mismo sentido (i, j = 1, 2):
+
+                                             𝜇0 𝐼𝑗                 𝜇0 ∙ 𝐼𝑖 ∙ 𝐼𝑗 ∙ 𝑙𝑖                                                                                                            OY
+𝐹𝑖𝑗 𝑑 = 𝐼𝑖 ∙ 𝑙𝑖 × 𝐵𝑗 𝑖 𝑑 = 𝐼𝑖 ∙ 𝑙𝑖 ∙ 𝑗 × ∓         𝑘       =∓                        𝑖
+                                             2𝜋𝑑                        2𝜋𝑑
+
+Y las fuerzas atractivas por unidad de longitud ejercidas entre los dos conductores, según se ilustra en la siguiente figura, serán, respectivamente:
+                                                                                                                                                                                                I1=I
+                                                                                                      𝐹𝑖𝑗 𝑑    𝜇0 ∙ 𝐼𝑖 ∙ 𝐼𝑗
+                                                                                                            =∓              𝑖                                                                                             I2=I
+                                                                                                         𝑙       2𝜋𝑑
+
+Donde la fuerza ejercida sobre cada conductor será, respectivamente:
+                                                           𝜇 0 𝐼1 ∙𝐼2                                                𝜇 0 𝐼1 ∙𝐼2
+               𝐹12 𝑑 = 𝐼1 ∙ 𝑙 ∙ 𝑗 × 𝐵21 𝑑 𝑘            =                𝑙 ∙ 𝑖; 𝐹21 𝑑 = 𝐼2 ∙ 𝑙 ∙ 𝑗 × 𝐵12 𝑑 −𝑘     =                𝑙 ∙ −𝑖
+                                                             2𝜋𝑑                                                       2𝜋𝑑
+
+
+                                                                                                                                                                                                           d = 0.1 m
+Y la fuerza será atractiva solo si las intensidades de corriente tienen el mismo sentido de circulación (I1 = I2), (si circulasen en sentidos opuestos, la fuerza sería repulsiva:
+
+
+
+d) La intensidad de corriente, a partir del módulo de la fuerza de interacción magnética entre los dos conductores, será:
+
+                    𝐹12 𝑑    𝐹21 𝑑   𝐹12 𝑑                         𝐹21 𝑑          𝜇0 ∙ 𝐼1 ∙ 𝐼2 4𝜋 ∙ 10−7 𝑁 ∙ 𝐴−2 ∙ 𝐼 2
+                          =−       ⟹                         ≡                =               =                        = 4 ∙ 10−8 𝑁 ∙ 𝑚−1  𝐼 =   2 ∙ 10−2 𝐴 ≈ 0.14 𝐴
+                       𝑙        𝑙       𝑙                             𝑙              2𝜋𝑑             2𝜋 ∙ 0.1 𝑚
+                                                                                                                                                                                    Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                               CURSO 2024-25
+
+
+
+
+Pregunta 5
+
+Un centro de observación de fauna salvaje de la Cordillera Cantábrica dispone de un dispositivo telescópico de avistamiento que consta de un espejo cóncavo con una focal de 60 mm.
+
+a) Determina mediante el trazado de rayos correspondiente, dónde se formará la imagen de un objeto situado a 18 cm del vértice del espejo y las características de la misma (real o virtual; derecha o invertida). (1 punto)
+
+b) Calcula el tamaño de la imagen proporcionada por el espejo del objeto situado a la distancia indicada. (1 punto)
+
+
+SOLUCIÓN:
+a) Como se tiene un espejo esférico cóncavo, f´ < 0. La distancia a la que se encuentra el objeto también es negativa (s < 0), que en este caso es mayor que el radio de curvatura del espejo (R = 2 f), El diagrama de rayos
+correspondiente será:
+
+
+
+
+                                                                                                                  s
+                                                                                y                                                        f
+                                                                                                                        R
+                                                                                                                                                 O
+                                                                                                        C       y                    s
+                                                                                                                             F
+
+
+
+
+La imagen formada será real (s’ < 0), invertida y de menor tamaño que el objeto.
+
+b) Siendo f’ = -60 mm = -0.06 m, s = -18 cm = -0.18 m, la posición en la que se forma la imagen del objeto, s´, será, a partir de la ecuación fundamental para espejos esféricos:
+
+    1 1 2 1     1       1       1      1    1       2       1
+      ′
+        + = ≡ ′⟹ ′ =−       +       =     −     =−      =-      ⟹ 𝑠 ′ = − 0.09 𝑚
+    𝑠    𝑠 𝑅 𝑓  𝑠     −0.18   −0.06   0.18 0.06    0.18    0.09
+
+Por lo que la imagen formada del objeto es real (s’ < 0), y está situada entre la focal y el centro de curvatura del espejo. La relación del tamaño entre el objeto y la imagen será entonces:
+
+  𝑦′   𝑠′ 𝑦′ −0.09    1         𝑦
+     =− ⟹ =−       = − ⇒ 𝑦 ′ = − = −0.5 𝑦
+  𝑦    𝑠  𝑦  −0.18    2         2
+
+Por lo tanto, la imagen formada tiene la mitad de tamaño que el objeto y está invertida.
+                                                                                                                                                                                             Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                                        CURSO 2024-25
+
+
+
+
+Pregunta 6
+
+El jefe de la estación de tren de Campomanes está sentado en un banco del andén mientras escucha el pitido de la locomotora de un tren emitido con una frecuencia de 1000 Hz, que se aleja de la estación dirigiéndose
+hacia el túnel de una montaña cercana, con una velocidad de 70 km/h.
+
+a) Justifica adecuadamente si la frecuencia del pitido que percibe el jefe de estación es igual, menor o mayor que la del pitido emitido directamente por la locomotora. (0.5 puntos)
+
+Mientras la locomotora se acerca al túnel, el sonido del pitido emitido se refleja en la montaña cercana. Compara la frecuencia del pitido de la locomotora que recibe la montaña, con la propia frecuencia del eco del pitido
+que perciben los siguientes observadores:
+
+b) el jefe de estación. (0.75 puntos)
+
+c) un viajero del tren. (0.75 puntos)
+
+
+SOLUCIÓN:
+a) El cambio del tono o frecuencia percibido por el observador del sonido emitido por la fuente sonora, dependerá de las velocidades del movimiento relativo entre el emisor y receptor respecto del medio, obtenido a partir
+del fenómeno conocido como efecto Doppler, que establece:
+
+                                                                  𝑣𝑠 + 𝑣𝑅
+                                 𝑓𝑅𝑒𝑐𝑒𝑝𝑡𝑜𝑟 = 𝑓𝐸𝑚𝑖𝑠𝑜𝑟 ∙                    ; donde: 𝑣𝑠 = velocidad del sonido, 𝑣𝑅 = velocidad del observador receptor , 𝑣𝐸 = velocidad del foco emisor del sonido, respectivamente.
+                                                                  𝑣𝑠 + 𝑣𝐸
+
+Estableciéndose además el siguiente criterio de signos para las velocidades del receptor y emisor, en función de su movimiento relativo respecto al medio (aire): Si el receptor de acerca al emisor  VR > 0; y VR < 0 cuando
+el receptor se aleja del emisor. Si el emisor se aleja del receptor  VE > 0; y VE < 0 cuando el emisor se acerca al receptor.
+
+En este caso el tren, cuya locomotora emite el pitido con una frecuencia inicial fE, se aleja del observador, el cual permanece sentado en reposo en la estación. El jefe de estación percibirá una frecuencia del
+pitido del tren menor que la emitida por la locomotora, puesto que el tren se aleja de la estación con una velocidad vE = vTren, mientras el jefe de estación permanece en reposo, vR = 0.
+
+La velocidad del tren es de 70 km/h = 70km/h1000 m/km1h/3600 s  19.4 m/s.
+
+La frecuencia percibida por el jefe de estación será en este caso:
+
+          𝑣 +𝑣𝑅              𝑣𝑠 +0                 𝑣𝑠                                                           340 𝑚 𝑠
+𝑓𝑅 = 𝑓𝐸 ∙ 𝑠        = 𝑓𝐸 ∙             = 𝑓𝐸 ∙                 < 𝑓𝐸 ; Y sustituyendo datos: 𝑓𝑅 = 1000 𝐻𝑧 ∙        𝑚         𝑚 ≈ 946 𝐻𝑧
+          𝑣𝑠 +𝑣𝐸             𝑣𝑠 +𝑣𝐸            𝑣𝑠 +𝑣𝑇𝑟 𝑒𝑛                                                   340   𝑠 +19.4  𝑠
+
+
+b) La frecuencia recibida por la montaña del pitido que emite el tren que se acerca al túnel, será ahora mayor que la propia frecuencia del pitido emitido por la locomotora, al acercarse el tren (vE = vTren) a la
+montaña (en reposo, vR = 0):
+
+          𝑣 +𝑣𝑅              𝑣𝑠 +0                 𝑣𝑠                                                           340 𝑚 𝑠
+𝑓𝑅′ = 𝑓𝐸 ∙ 𝑠       = 𝑓𝐸 ∙             = 𝑓𝐸 ∙                 > 𝑓𝐸 ; Y sustituyendo datos: 𝑓𝑅′ = 1000 𝐻𝑧 ∙       𝑚         𝑚 ≈ 1060.66 𝐻𝑧
+          𝑣𝑠 +𝑣𝐸             𝑣𝑠 −𝑣𝐸            𝑣𝑠 −𝑣𝑇𝑟 𝑒𝑛                                                   340   𝑠 −19.4  𝑠
+
+La montaña se convierte ahora en nueva emisora del eco reflejado con la misma frecuencia que la recibida del pitido del tren, que es mayor que la inicial emitida por la locomotora. Por lo tanto, la nueva
+frecuencia que percibe el jefe de estación que permanece sentado en reposo (vR = 0), del eco que le llega reflejado desde la montaña (vE = 0) será igual a la del propio eco reflejado por la montaña:
+
+                    𝑣 +𝑣𝑅              𝑣 +0             𝑣                                                                 340 𝑚 𝑠 +0
+𝑓𝑅𝐸𝑠𝑡𝑎𝑐𝑖ó𝑛 = 𝑓𝐸′ ∙ 𝑠         = 𝑓𝐸′ ∙ 𝑠         = 𝑓𝐸′ ∙ 𝑠 = 𝑓𝐸′ ≡ 𝑓𝑅′ ; Y sustituyendo datos: 𝑓𝑅𝐸𝑠𝑡𝑎𝑐𝑖ó𝑛 ≅ 1060.66 𝐻𝑧 ∙               ≈ 1060.66 𝐻𝑧
+                    𝑣𝑠 +𝑣𝐸             𝑣𝑠 +0            𝑣𝑠                                                                340 𝑚 𝑠 +0
+                                                                                                                                                                                                                 Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                                                            CURSO 2024-25
+
+
+
+
+c) Y en el caso en que el observador que recibe el eco reflejado por la montaña sea un viajero sentado en un vagón del propio tren, la frecuencia que percibe este receptor que se acerca a la montaña (vR =
+vTren), de la frecuencia del eco del pitido reflejado por la montaña (en reposo, vE = 0), será mucho mayor aún que la de la del eco de la montaña y la del propio pitido emitido por la locomotora:
+
+              𝑣 +𝑣𝑅           𝑣 +𝑣𝑅            𝑣 +𝑣𝑇𝑟 𝑒𝑛                                                                     340 𝑚 𝑠 +19.4𝑚 𝑠
+𝑓𝑅𝑇𝑟𝑒𝑛 = 𝑓𝐸′ ∙ 𝑠       = 𝑓𝐸′ ∙ 𝑠        = 𝑓𝐸′ ∙ 𝑠            > 𝑓𝐸′ ≡ 𝑓𝑅′ ; Y sustituyendo datos: 𝑓𝑅𝑇𝑟𝑒𝑛 ≅ 1060.66 𝐻𝑧 ∙                        ≈ 1121.32 𝐻𝑧
+              𝑣𝑠 +𝑣𝐸          𝑣𝑠 +0                 𝑣𝑠                                                                          340 𝑚 𝑠 +0
+
+
+
+
+Pregunta 7
+
+En un laboratorio de materiales nucleares se investigan las propiedades de una sustancia radiactiva mediante un detector de radiación Geiger-Müller, cuya medida de la actividad inicial del radioisótopo arroja un valor de
+12.96 kBq. Un día después se vuelve a medir la actividad del radioisótopo y se obtiene un nuevo valor de 9.63 kBq.
+
+a) Determina el período de semidesintegración del isótopo radiactivo de la sustancia. (1 punto)
+
+b) Si la masa inicial del radioisótopo es de 24 g, calcula la masa de la sustancia que habría al día siguiente en el laboratorio. (0.5 puntos)
+
+c) ¿Cuál sería la vida media de un núcleo de este isótopo radiactivo? (0.5 puntos)
+
+
+SOLUCIÓN:
+
+a) A partir de la relación entre la actividad inicial del radioisótopo y la actividad cuando ha transcurrido un intervalo de tiempo de un día, se puede obtener la constante de semidesintegración, .
+
+La actividad de la masa inicial: A(t=0)  A0 = 12.96 kBq = 12960 Bq; A1 = 9.63 kBq = 9630 Bq; t = 1 día = 24 h 3600 s/h = 86400 s = 8.64104 s
+
+De donde:
+
+                                                                                                                                        𝐴                  12960
+                                                                                                                                    𝐿𝑛 (𝐴0 )           𝐿𝑛 ( 9630 )
+                                                                                                                     −𝜆𝑡                       1
+                                                                                                      𝐴 𝑡 = 𝐴0 ∙ 𝑒         ⟹ 𝜆=                    ≡                  ≈ 3.44 × 10−6 𝑠 −1
+                                                                                                                                          ∆𝑡           8.64 × 104 𝑠
+
+Y de la relación para el período de semidesintegración, T1/2:
+                                                         𝐴
+                                                    𝐿𝑛(𝐴0 )
+                                                           0
+             𝐴             −𝜆𝑇1⁄                                   𝐿𝑛 2         𝐿𝑛2                                                                           𝐿𝑛2              𝐿𝑛2         𝐿𝑛2
+𝐴 (𝑇1⁄ ) = 20 = 𝐴0 ∙ 𝑒             2   ⟹ 𝑇1⁄ =           𝜆
+                                                          2
+                                                               =     𝜆
+                                                                          ≅ 3.44×10−6 𝑠−1 ≈ 2.01 × 105 𝑠 ≡ 56 ℎ;           O bien directamente: 𝜆 = 𝑇                ⟹ 𝑇1 2 = 𝜆 ≅ 3.44×10−6 𝑠−1 ≈ 2.01 × 105 𝑠
+      2                                       2                                                                                                                1 2
+
+b) La masa del radioisótopo cuando ha transcurrido un día, a partir de la masa inicial y la relación de la actividad:
+                                                                                                                           −6 ∙8.64×104
+𝐴 𝑡 = 𝐴0 ∙ 𝑒 −𝜆𝑡 ⇒ 𝑁 𝑡 = 𝑁0 ∙ 𝑒 −𝜆𝑡 ⇒ 𝑚 𝑡 = 𝑚0 ∙ 𝑒 −𝜆𝑡 ⟹ 𝑚1 = 𝑚0 ∙ 𝑒 −𝜆 1 𝑑𝑖𝑎 ≡ 24𝑔 ∙ 𝑒 − 3.44×10                                         ≅ 17.83 𝑔 ≡ 1.78 × 10−2 𝑘𝑔
+
+De otra forma:
+
+                       𝐴1 𝑁1 𝑚1   9630   𝑚 1 𝑑𝑖𝑎)               9630
+          𝑒 −𝜆∙∆𝑡 =      ≡  ≡   ⇒      =          ⇒ 𝑚1 = 24 𝑔 ∙       ≅ 17.83 𝑔 ≡ 1.78 × 10−2 𝑘𝑔
+                       𝐴0 𝑁0 𝑚0 12960      24 𝑔                 12960
+
+c) El tiempo de vida media de un núcleo del radioisótopo se obtiene directamente de la relación con la constante de semidesintegración radiactiva:
+
+                                                                                                        1     𝐿𝑛2      𝑇1 2 1       1
+                                                                                                          =𝜆=      ⟹𝜏=     = ≅                ≈ 2.91 × 105 𝑠
+                                                                                                        𝜏     𝑇1 2     𝐿𝑛2 𝜆 3.44 × 10−6 𝑠 −1
+                                                                                                                                                                                        Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                                   CURSO 2024-25
+
+
+
+
+Pregunta 8
+
+Si la energía total relativista de un protón es el triple de su energía en estado de reposo, determina:
+
+a) ¿Cuál es el valor de la energía en reposo del protón? (0.5 puntos)
+
+b) ¿Qué velocidad lleva el protón? (1 punto)
+
+c) ¿Que energía cinética tiene el protón? (0.5 puntos)
+
+
+SOLUCIÓN:
+a) La energía de la masa en reposo del protón viene dada por:
+
+     𝐸𝑝 = 𝑚𝑝 · 𝑐 2 ⟹ 𝐸𝑝 ≅ 1.7 × 10−27 𝑘𝑔 ∙ 3 × 108 𝑚 ∙ 𝑠 −1 2 ≈ 1.53 × 10−10 𝐽
+        0      0          0
+
+
+b) A partir de la energía relativista de la partícula y comparándola con la energía de su masa en reposo se obtiene para el protón:
+
+                                                                                                               1                      8      2∙ 2
+                    𝐸𝑝 = 𝑚𝑝 ∙ 𝑐 2 = 𝛾 ∙ 𝑚𝑝 ∙ 𝑐 2 = 𝛾 ∙ 𝐸𝑝 ; Luego si: 𝐸𝑝 = 3 ∙ 𝐸𝑝 ≡ 𝛾 ∙ 𝐸𝑝 ⟹ 𝛾 = 3 ⟹                     = 3 ⟹ 𝑣𝑝 =     ∙𝑐 =      ∙ 3 × 108 𝑚 𝑠 ≈ 2.83 × 108 𝑚 ∙ 𝑠 −1
+                                          0            0                       0           0
+                                                                                                                    𝑣2                9        3
+                                                                                                              1 −
+                                                                                                                    𝑐2
+
+c) La energía cinética del protón se puede obtener a partir de la relación entre la energía relativista de la partícula y la de su masa en reposo:
+
+                                       𝐸𝑝 = 𝐸𝑝 + 𝐸𝐶 ⟹ 𝐸𝐶 = 𝐸𝑝 − 𝐸𝑝 = 𝛾 ∙ 𝐸𝑝 − 𝐸𝑝 = 3 ∙ 𝐸𝑝 − 𝐸𝑝 = 2 ∙ 𝐸𝑝 ⟹ 𝐸𝐶 = 2 ∙ 𝑚𝑝 ∙ 𝑐 2 ≅ 2 ∙ 1.7 × 10−27 𝑘𝑔 ∙ 3 × 108 𝑚 𝑠 2 ≈ 3.06 × 10−10 𝐽
+                                               0                       0           0   0         0        0              0            0
+                                                                                                                                                                                Prueba de acceso a la Universidad (PAU)
+                                                                                                                                                                                           CURSO 2024-25
+
+
+
+
+Criterios de corrección comunes:
+
+En todos los apartados de los ejercicios que soliciten cálculos de magnitudes físicas se penalizará con 0.25 puntos no expresar la unidad correcta de la magnitud calculada, no se exige (se aconseja) la expresión explícita
+de unidades en los cálculos previos, tal y como aparecen en el examen resuelto, pero sí que las magnitudes se expresen en la unidad adecuada conforme a las constantes utilizadas. Una errónea expresión de las magnitudes
+utilizadas conduce a un error del resultado final, que no será imputable a un error de cálculo (menor penalización). Se valorará positivamente el planteamiento correcto, la justificación de las respuestas, la coherencia con
+los conceptos físicos y el correcto empleo de la terminología científica propia de la materia. Obligatoriedad de dibujar trazado de rayos e indicar el sentido de los mismos con las flechas correspondientes, en los problemas
+de óptica geométrica. Empleo de cifras significativas adecuadas en la expresión de magnitudes y redondeo.
+

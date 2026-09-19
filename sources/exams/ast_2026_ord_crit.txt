@@ -1,0 +1,276 @@
+                                                                  Prueba de Acceso a la Universidad (PAU)
+                                                                             CURSO 2025-26
+
+
+                                         EXAMEN A RESUELTO
+
+1. Nos encontramos en la superficie del planeta Júpiter y al medir el peso de un melón que en
+   la superficie de la Tierra era de 150 N, obtenemos un valor de 380 N. Calcule:
+
+  a. El valor de la aceleración de la gravedad en la superficie de Júpiter. (1 punto)
+  b. La masa de Júpiter. (1 punto)
+
+
+SOLUCIÓN
+a. Para calcular la masa del melón debemos determinar la gravedad en la superficie de la Tierra
+
+                                                            𝑀!
+                                                   𝑔! = 𝐺
+                                                            𝑅!"
+                                                             5.97𝑥10"% 𝑘𝑔
+                         𝑔! = 6.67 × 10#$$ N · m" · kg #"                 = 9.8 m · s#"
+                                                            (6.37𝑥10& 𝑚)"
+Masa del melón:
+
+                                           𝑃!   150 N
+                                     𝑚=       =           ⟹ 𝑚 = 15.31 kg
+                                           𝑔! 9.8 m · s#"
+Gravedad en Júpiter:
+
+                                        𝑃'         380 N
+                                 𝑔' =      ⟹ 𝑔' =          ⟹ 𝑔' = 24.8 m · s#"
+                                        𝑚         15.31 kg
+
+b. Masa de Júpiter
+                        𝑀'         𝑔' 𝑅(" 24.8 m · s#" · (7.14 × 10) m)"
+               𝑔' = 𝐺       ⟹ 𝑀' =       =                               ⟹ 𝑀' ≈ 1.9 × 10") kg
+                        𝑅'"         𝐺      6.67 × 10#$$ N · m" · kg #"
+                                                                   Prueba de Acceso a la Universidad (PAU)
+                                                                               CURSO 2025-26
+
+
+2. Dos calabazas cuyas masas respectivas son mA = 8 kg y mB = 6 kg, se encuentran en reposo
+   sobre una mesa a una distancia de 1 m medida entre los centros de las calabazas. Colocamos
+   una manzana, cuya masa es m = 200 g, en el punto medio entre ambas calabazas. Las únicas
+   fuerzas que actúan sobre la manzana son las fuerzas gravitatorias debidas a las calabazas.
+   Calcule:
+
+     a. La intensidad de campo gravitatorio en el punto en el que inicialmente hemos colocado la
+        manzana. (1 punto)
+     b. El trabajo que hemos de realizar para mover la manzana hasta un punto situado a 20 cm
+        del centro de la calabaza con mayor masa. Razone si este desplazamiento de la manzana
+        será espontáneo. (1 punto)
+
+
+SOLUCIÓN
+a.
+
+
+
+
+                                              𝐺                     6.67 × 10#$$ N m" kg #"
+         𝑔⃗ = 𝑔⃗* + 𝑔⃗+ ⟹ 𝑔 = 𝑔* − 𝑔+ ⟹ 𝑔 =     (𝑚   − 𝑚   ) ⟹ 𝑔 =                          × (8 kg − 6 kg)
+                                              𝑑" *       +
+                                                                           (0.5 m)"
+                                              𝑔 = 5.34 × 10#$, N kg #$
+
+b.
+                                                             𝑚* 𝑚+      𝑚* 𝑚+
+                      𝑊-→/ = −∆𝐸0 = 𝐸0- − 𝐸0/ = −𝐺𝑚1234232 HI   +   J−K   +   LM
+                                                              𝑑   𝑑     𝑑* 𝑑+
+                                                                 8 kg   6 kg      8 kg   6 kg
+               𝑊-→/ = −6.67 × 10#$$ N · m" · kg #" × 0.2 kg × HK      +      L−K       +      LM
+                                                                0.5 m 0.5 m      0.2 m 0.8 m
+                                               𝑊-→/ = 2.6 × 10#$, J
+W > 0, luego la manzana se moverá de forma espontánea hacia la calabaza de mayor masa.
+                                                                              Prueba de Acceso a la Universidad (PAU)
+                                                                                                   CURSO 2025-26
+
+
+3. Dos cargas puntuales de igual magnitud, pero distinto signo (q1 = +10 µC y q2 = -10 µC)
+   forman lo que conocemos como un dipolo eléctrico. La distancia entre las cargas es de 6 cm.
+   Calcule:
+
+     a. El módulo, la dirección y el sentido del campo eléctrico en un punto P equidistante de
+        ambas cargas y situado a una distancia de 5 cm de cada una de las cargas. (1.5 puntos)
+     b. El potencial eléctrico en el punto P si ambas cargas fueran positivas. (0.5 puntos)
+
+
+SOLUCIÓN
+a.
+
+
+
+
+                                          |𝑞$ | = |𝑞" |      𝑑$ = 𝑑"           Q𝐸R⃗$ Q = Q𝐸R⃗" Q
+                                                                                                                     𝑞$
+        𝐸R⃗$ = 𝐸$ cos𝛼 𝚤⃗ + 𝐸$ sen𝛼 𝚥⃗ 𝐸R⃗" = 𝐸" cos𝛼 𝚤⃗ − 𝐸" sen𝛼 𝚥⃗    ⟹ 𝐸R⃗ = 𝐸R⃗$ + 𝐸R⃗" = 2𝐸$ cos𝛼 𝚤⃗ = 2 × 𝐾       cos𝛼 𝚤⃗
+                                                                                                                     𝑑$"
+                                       N m"    10 × 10#& C   3 × 10#" m
+                   𝐸R⃗ = 2 × 9 × 105        ×              ×            𝚤⃗ ⟹ 𝐸R⃗ = 4.32 × 10) N C#$ 𝚤⃗
+                                        C"    (5 × 10#" m)" 5 × 10#" m
+
+
+b.
+                                                                                                        𝑞$
+                               𝑉 = 𝑉$ + 𝑉"           𝑞$ = 𝑞"            𝑑$ = 𝑑"           𝑉 =2×𝐾
+                                                                                                        𝑑$
+                                                     N m" 10 × 10#& C
+                                  𝑉 = 2 × 9 × 105        ×            ⟹ 𝑉 = 3.6 × 10& V
+                                                      C"   5 × 10#" m
+                                                               Prueba de Acceso a la Universidad (PAU)
+                                                                          CURSO 2025-26
+
+
+4. Una partícula alfa (núcleo de He con dos protones y dos neutrones) se mueve con velocidad
+   constante v0 = 2´105 m/s a lo largo del eje +y. Calcule:
+
+     a. El módulo, la dirección y el sentido del campo magnético que habría que aplicar para que
+        la partícula alfa describiera una trayectoria circular de diámetro 2 m en sentido horario. (1
+        punto)
+     b. El radio de la trayectoria y el sentido de giro de un electrón moviéndose a la misma
+        velocidad bajo la acción del mismo campo magnético. (1 punto)
+
+
+SOLUCIÓN
+a.
+   𝐹⃑ = 𝑞 𝑣⃑Ù 𝐵
+              R⃑ Para que la partícula a describa una trayectoria circular la dirección del campo
+       magnético 𝐵R⃑ debe ser perpendicular a su velocidad 𝑣⃑. Para que describa la trayectoria en
+                                                           R⃑ deben ser los indicados en el dibujo.
+       sentido horario en el plano XY los sentidos de 𝑣⃑ y 𝐵
+
+
+                                𝑣,"      𝑚𝑣, 6.67 × 10#") kg × 2 × 107 m s#$
+         𝐹6 = 𝐹- ⟹ 𝑞𝑣, 𝐵 = 𝑚        ⟹ 𝐵=    =                                ⟹ 𝐵 = 4.2 × 10#8 T
+                                𝑅        𝑞𝑅      2 × 1.6 × 10#$5 C × 1 m
+       en el sentido positivo del eje Z.
+
+
+
+
+b.
+
+                             𝑚9 𝑣, 9.1 × 10#8$ kg × 2 × 107 m s#$
+                        𝑅=          =                              ⟹ 𝑅 = 2.7 × 10#% m
+                             |𝑞9 |𝐵   1.6 × 10#$5 C × 4.2 × 10#8 T
+
+El sentido de giro del electrón sería antihorario
+                                                                   Prueba de Acceso a la Universidad (PAU)
+                                                                              CURSO 2025-26
+
+
+5. Me encuentro practicando piragüismo cerca de la playa de Cudillero y percibo que la piragua
+   se mueve periódicamente arriba y abajo impulsada por las olas en la superficie del mar. El
+   desplazamiento de la piragua entre el punto más alto y el más bajo es de 80 cm, con una
+   duración de 4 s. La distancia entre dos crestas de ola consecutivas es de 12 m.
+
+     a. ¿Cuál es la velocidad a la que se desplazan las olas? (0.5 puntos)
+     b. Si consideramos que la piragua tiene desplazamiento nulo respecto al mar en calma y
+        velocidad ascendente en el instante inicial en el que se producen las olas, escriba la
+        ecuación de la onda asociada a las olas en la superficie del mar. (1.5 puntos)
+
+
+SOLUCIÓN
+a. El tiempo que transcurre entre los puntos de máximo y mínimo desplazamiento es la mitad
+   del periodo:
+                     𝑇                                  𝜆 12 m
+                       = 4 s ⟹ 𝑇 = 8 s; 𝜆 = 12 m ⟹ 𝑣 = =       = 1.5 m s#$
+                     2                                  𝑇   8s
+
+b.
+                                                                     2𝜋 𝜋 #$    2𝜋 𝜋
+           𝑦(0,0) = 0 m 2𝐴 = 80 cm 𝐴 = 40 cm 𝐴 = 0.40 𝑚 𝑘 =             = m  𝜔=   = rad s#$
+                                                                      𝜆  6      𝑇  4
+
+                             1ª 𝑜𝑝𝑐𝑖ó𝑛 𝑑𝑒 𝑟𝑒𝑠𝑝𝑢𝑒𝑠𝑡𝑎: 𝑦(𝑥, 𝑡) = 𝐴 sen(𝜔𝑡 − 𝑘𝑥 + 𝜙, )
+
+                                   𝜋   𝜋
+                𝑦(𝑥, 𝑡) = 0.4 sen I 𝑡 − 𝑥 + 𝜙, J ⟹ 𝑦(0,0) = 0 ⟹ 0.4 sen(𝜙, ) = 0 ⟹ 𝜙, = 0 𝑜 𝜋
+                                   4   6
+                                                          𝝅    𝝅
+𝑣(𝑥, 𝑡) > 0 ⟹ cos𝜙, > 0 ⟹ 𝜙, = 0 ⟹ 𝒚(𝒙, 𝒕) = 𝟎. 𝟒 𝐬𝐞𝐧 I𝟒 𝒕 − 𝟔 𝒙J en unidades S.I.
+
+                              2ª 𝑜𝑝𝑐𝑖ó𝑛 𝑑𝑒 𝑟𝑒𝑠𝑝𝑢𝑒𝑠𝑡𝑎: 𝑦(𝑥, 𝑡) = 𝐴 cos(𝜔𝑡 − 𝑘𝑥 + 𝜙, )
+
+                                  𝜋   𝜋                                               𝜋 3𝜋
+               𝑦(𝑥, 𝑡) = 0.4 cos I 𝑡 − 𝑥 + 𝜙, J ⟹ 𝑦(0,0) = 0 ⟹ 0.4 cos(𝜙, ) = 0 ⟹ 𝜙, = 𝑜
+                                  4   6                                               2  2
+                                  =                       𝝅    𝝅     𝝅
+𝑣(𝑥, 𝑡) > 0 ⟹ sen𝜙, > 0 ⟹ 𝜙, = " ⟹ 𝒚(𝒙, 𝒕) = 𝟎. 𝟒 𝐜𝐨𝐬 I𝟒 𝒕 − 𝟔 𝒙 + 𝟐 J en unidades S.I.
+                                                                          Prueba de Acceso a la Universidad (PAU)
+                                                                                      CURSO 2025-26
+
+
+
+
+6. Frente a un espejo cóncavo de distancia focal 12 cm se sitúa una figurita de porcelana de 3
+   cm de altura a una distancia de 30 cm del vértice del espejo.
+
+     a. Realice el trazado de rayos e indique si la imagen es real o virtual, derecha o invertida,
+        mayor o menor que la figurita. (1 punto)
+     b. Determine la posición y tamaño de la imagen. (1 punto)
+
+
+SOLUCIÓN
+a. La imagen se forma entre el foco y el centro de curvatura del espejo, es real, invertida y
+   menor que la figurita de porcelana.
+
+
+
+
+b.
+                 1 1 1    1      1         1       1
+                   + =  ⟹ ?+          =          ⟹ ? = −5 𝑚#$ ⟹ 𝑠 ? = −0.20 m
+                 𝑠′ 𝑠 𝑓   𝑠  (−0.30 m) (−0.12 m)   𝑠
+                                                              s´< 0 imagen real
+
+                                   𝑦 ? −𝑠 ?     𝑦?     −(−0.20 m)
+                                      =     ⟹        =            ⟹ 𝑦 ? = −0.02 m
+                                   𝑦    𝑠     0.03 m   (−0.30 m)
+
+                                                                  y´< 0 imagen invertida y ôy´ô<ôyômenor
+
+La imagen se forma a 20 cm del vértice del espejo, entre el foco y el centro de curvatura del
+   espejo con una altura de 2 cm.
+
+7. Nos encontramos en un laboratorio con la intención de realizar un experimento de difracción
+   de electrones para caracterizar un material que estamos investigando. En dicho experimento
+   los electrones que inciden sobre el material objeto de estudio poseen una longitud de onda,
+   le = 2´10-10 m.
+     a. ¿Cuál es la velocidad de los electrones que inciden sobre el material? (1 punto)
+     b. Supongamos que una partícula de masa m = 5´10-15 kg se desplaza con la misma velocidad
+        que el haz de electrones del apartado anterior. ¿Cuál será la longitud de onda de De Broglie
+        asociada a dicha partícula? (1 punto)
+
+
+SOLUCIÓN
+a.
+                      ℎ            ℎ          6.626 × 10#8% J · s
+              𝜆@ =         ⟹ 𝑣9 =      =                             ⟹ 𝑣9 = 3.64 × 10& m · s#$
+                     𝑚9 𝑣9        𝑚9 𝜆9 9.1 × 10#8$ kg × 2 × 10#$, m
+
+b.
+                               ℎ                    6.626 × 10#8% J · s
+           𝜆ABCDEFGHB =                  =                                       ⟹ 𝜆ABCDEFGHB = 3.64 × 10#"& m
+                          𝑚ABCDEFGHB 𝑣       5 × 10#$7 kg × 3.64 × 10& m · s#$
+                                                                   Prueba de Acceso a la Universidad (PAU)
+                                                                                CURSO 2025-26
+
+
+8. Sabemos que el periodo de semidesintegración del isótopo más común del uranio, el 238U con
+   Z = 92, es de 4.47´109 años, decayendo a 234Th mediante la emisión de una partícula alfa.
+
+     a. Calcule la constante de desintegración radiactiva. (1 punto)
+     b. ¿Qué tiempo debe transcurrir para que la actividad de una roca que contiene 238U se
+        reduzca a un tercio de la actual? (1 punto)
+
+
+SOLUCIÓN
+a. Es conveniente en primer lugar convertir el período de semidesintegración a segundos y luego
+   calcular la constante de desintegración, l:
+                  𝐿𝑛2           𝐿𝑛2      1 año    1 día    1 hora
+             𝜆=        ⟹𝜆=        5
+                                       ×        ×        ×        ⟹ 𝜆 = 4.92 × 10#$J s#$
+                  𝑇$⁄"     4.47´10 años 365 días 24 horas 3600 s
+
+
+b.
+                                     𝐴,             𝜆 𝑁,                𝑁,             1
+      𝐴, = 𝜆 𝑁,   𝐴K = 𝜆 𝑁K   𝐴K =         𝜆 𝑁K =          𝑁, 𝑒 #LD =        𝑒 #LD =     ⟹ 𝑒 LD = 3 ⟹ 𝜆 𝑡 = Ln3
+                                     3                3                 3              3
+
+                                                 Ln3
+                                      𝑡=                    = 2.23 × 10$) s
+                                           4.92 × 10#$J s#$
+

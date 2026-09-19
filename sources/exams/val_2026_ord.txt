@@ -1,0 +1,238 @@
+                                                         PROVA D’ACCÉS A LA UNIVERSITAT
+                                                      PRUEBA DE ACCESO A LA UNIVERSIDAD
+
+
+
+          CONVOCATÒRIA: ORDINÀRIA 2026                                      CONVOCATORIA: ORDINARIA 2026
+
+ ASSIGNATURA: FÍSICA                                                 ASIGNATURA: FÍSICA
+
+ El alumnado realizará 4 preguntas: el apartado etiquetado como opción única más una de las opciones de cada uno de los otros
+ tres apartados propuestos. La puntuación máxima de cada apartado se indica en los enunciados. Se permite el uso de
+ calculadoras siempre que no sean gráficas o programables y que no puedan realizar cálculo simbólico ni almacenar datos o
+ fórmulas en memoria. Los resultados deberán estar siempre debidamente justificados. Realiza primero el cálculo simbólico
+ y después obtén el resultado numérico. TACHA CLARAMENTE todo aquello que no deba ser evaluado.
+
+APARTADO 1 – CAMPO GRAVITATORIO.
+OPCIÓN ÚNICA (2 puntos)
+El satélite Deimos-2 se utiliza en España por entidades comerciales, científicas y de respuesta a desastres,
+porque proporciona imágenes de la Tierra fiables y de muy alta resolución. Su altura orbital desde la superficie
+terrestre es ℎ = 620 km.
+   a) Deduce razonadamente la expresión de la velocidad orbital del satélite y calcula su valor numérico. (1
+      punto)
+   b) Deduce la expresión de la aceleración de la gravedad, 𝑔𝑔, en función de ℎ, del radio terrestre 𝑅𝑅 y de la
+      aceleración en la superficie de la Tierra, 𝑔𝑔0 . Calcula su valor numérico para la posición en la que se
+      encuentra el satélite. (1 punto)
+Datos: aceleración de la gravedad en la superficie de la Tierra, 𝑔𝑔0 = 9,8 m s −2 ; radio de la Tierra, 𝑅𝑅 = 6400 km.
+
+APARTADO 2 – CAMPO ELECTROMAGNÉTICO. Contesta solo a una de las dos opciones 2A o 2B.
+OPCIÓN 2A (3 puntos)
+Sobre los vértices 𝐴𝐴(𝑎𝑎, 0) y 𝐵𝐵(0, 𝑎𝑎) de un cuadrado de lado 𝑎𝑎 = 3,0 m, se fijan sendas cargas eléctricas
+puntuales idénticas 𝑄𝑄 = 2,0 nC.
+  a) Calcula razonadamente el potencial eléctrico generado por estas dos cargas en los puntos 𝐶𝐶(0,0) y
+     𝐷𝐷(𝑎𝑎, 𝑎𝑎). Justifica si la diagonal del cuadrado entre los puntos 𝐶𝐶 y 𝐷𝐷 sería una línea equipotencial. (1 punto)
+  b) Calcula razonadamente el campo eléctrico total generado en el vértice 𝐷𝐷 debido a las dos cargas situadas
+     en 𝐴𝐴 y 𝐵𝐵. ¿Qué carga 𝑄𝑄𝑐𝑐 se deberá colocar sobre el vértice 𝐶𝐶 para que el campo eléctrico se anule en el
+     𝐷𝐷? (1 punto)
+  c) Enuncia la ley de Gauss para el campo eléctrico. Razona cuál será el flujo eléctrico a través de una
+     superficie esférica de radio 𝑟𝑟 = 1 m centrada en el punto 𝐴𝐴. (1 punto)
+                                         1
+Dato: constante de Coulomb, 𝑘𝑘𝑒𝑒 =              = 9 · 109 N m2 / C 2 .
+                                       4𝜋𝜋𝜀𝜀0
+
+OPCIÓN 2B (3 puntos)
+La figura muestra dos conductores rectilíneos, indefinidos y paralelos entre sí, en el
+plano 𝑌𝑌𝑌𝑌. Los conductores, por los que circulan sendas corrientes de intensidades
+𝐼𝐼1 = 𝐼𝐼2 = 1,0 A, están separados una distancia 𝑑𝑑 = 2,0 cm.
+    a) Calcula el vector campo magnético 𝐵𝐵    �⃗ en el punto 𝑃𝑃 (ver la figura) debido a
+        ambas corrientes. (1 punto)
+    b) Si una carga 𝑞𝑞 = 2,0 µC pasa por el punto 𝑃𝑃 con una velocidad 𝑣𝑣⃗ = 105 𝑘𝑘�⃗ m⁄s,
+        calcula la fuerza 𝐹𝐹⃗ (módulo, dirección y sentido) sobre ella. Representa los
+                      �⃗ y 𝐹𝐹⃗ . (1 punto)
+        vectores 𝑣𝑣⃗, 𝐵𝐵
+  c) Suponiendo que 𝐼𝐼1 mantiene su valor, determina razonadamente la corriente 𝐼𝐼2 para que en un punto 𝑆𝑆
+      situado entre los conductores, a una distancia 𝑑𝑑′ = 0,5 cm del conductor 𝐼𝐼1 , el campo magnético total sea
+      �⃗′ = −15 𝚤𝚤⃗ μT. (1 punto)
+      𝐵𝐵
+Dato: permeabilidad magnética del vacío, 𝜇𝜇0 = 4 𝜋𝜋 · 10−7 T m/A.
+
+                                                                 1
+APARTADO 3 – VIBRACIONES Y ONDAS. Contesta solo a una de las dos opciones 3A o 3B.
+OPCIÓN 3A (3 puntos)
+Se agita el extremo de una cuerda generando una onda armónica
+de frecuencia, 𝑓𝑓 = 2 Hz. Se realiza una fotografía en el instante
+t = 2 s. A la vista de la figura y utilizando la función seno:
+   a) Determina la longitud de onda, la amplitud, la velocidad de
+      la onda en la cuerda y la fase inicial. (1 punto)
+   b) Escribe la función de onda en unidades del Sistema
+      Internacional. Para un instante dado la diferencia de fase
+                                           𝜋𝜋
+      entre dos puntos de la cuerda es rad, ¿qué distancia horizontal mínima separa dichos puntos? (1 punto)
+                                        2
+   c) ¿Qué posición vertical, qué velocidad y qué aceleración tendrá un punto de la cuerda situado en 𝑥𝑥 =
+      40 cm para t = 1 s? (1 punto)
+
+OPCIÓN 3B (3 puntos)
+Un haz laser, que se propaga por el aire, incide sobre la cara plana de un material cuyo índice de refracción es
+𝑛𝑛2 . En el esquema adjunto sólo vemos el rayo reflejado y el refractado, pero no el incidente.
+     a) Determina el índice de refracción 𝑛𝑛2 y la velocidad de
+        la luz en ese medio utilizando la información del
+        esquema adjunto. (1 punto)
+     b) Si el índice de refracción 𝑛𝑛2 tuviera un valor mayor
+        que el obtenido en el apartado a), los ángulos de
+        reflexión y de refracción serían ¿iguales, mayores o
+        menores? Justifica la respuesta. (1 punto)
+     c) Se fabrica una lente de distancia focal imagen 𝑓𝑓′ =
+        40 cm. Calcula la posición y el aumento de la imagen
+        que se formará de un objeto situado a 15 cm de la
+        lente. (1 punto)
+Dato: velocidad de la luz en el aire, 𝑐𝑐 = 3,0 · 108 m/s.
+
+APARTADO 4 – FÍSICA RELATIVISTA, CUÁNTICA, NUCLEAR Y DE PARTÍCULAS. Contesta solo a una
+de las dos opciones 3A o 3B.
+OPCIÓN 4A (2 puntos)
+El tecnecio-99m es el radioisótopo más utilizado en medicina nuclear para diagnóstico por imagen y tiene un
+periodo de semidesintegración 𝑇𝑇 = 6,0 h. Para obtener la resolución deseada, la actividad de la sustancia
+inyectada, en el momento de realizar la prueba, debe ser de 400 MBq. Entre la producción del radiofármaco y
+la realización de la prueba transcurren 5,0 h. Calcula:
+    a) La constante de desintegración y la actividad que debe tener el radioisótopo en el momento de su
+       producción. (1 punto)
+    b) El número núcleos y la masa de dicho isótopo que es necesario producir. (1 punto)
+Datos: número de Avogadro, 𝑁𝑁𝐴𝐴 = 6,02 · 1023 mol−1 ; masa molar del isótopo, 𝑚𝑚𝑀𝑀 = 99 g/mol.
+
+OPCIÓN 4B (2 puntos)
+En un experimento de efecto fotoeléctrico hay un tubo de vacío con un
+cátodo. El cátodo tiene una longitud de onda umbral de 790 nm y sobre
+su superficie incide un haz de luz de longitud de onda 320 nm.
+   a) Calcula razonadamente el trabajo de extracción de los
+      fotoelectrones emitidos desde el cátodo y su energía cinética
+      máxima. (1 punto)
+   b) La gráfica representa la energía cinética máxima de los electrones
+      en función de la frecuencia de los fotones incidentes. Razona el
+      significado de la pendiente de la recta y de los cortes con los ejes.
+      (1 punto)
+Datos: constante de Planck, ℎ = 6,63 · 10−34 J s; velocidad de la luz en el vacío, 𝑐𝑐 = 3,0 · 108 m s −1 .
+
+
+
+
+                                                         2
+                                                         PROVA D’ACCÉS A LA UNIVERSITAT
+                                                       PRUEBA DE ACCESO A LA UNIVERSIDAD
+
+
+
+          CONVOCATÒRIA: ORDINÀRIA 2026                                       CONVOCATORIA: ORDINARIA 2026
+
+ ASSIGNATURA: FÍSICA                                                  ASIGNATURA: FÍSICA
+
+
+ L'alumnat ha de respondre 4 preguntes: l'apartat etiquetat com a opció única més una de les opcions de cadascun dels altres
+ tres apartats proposats. La puntuació màxima de cada apartat s'indica en els enunciats. Es permet l'ús de calculadores sempre
+ que no siguen gràfiques o programables i que no puguen realitzar càlcul simbòlic ni emmagatzemar dades o fórmules en
+ memòria. Els resultats han d'estar sempre degudament justificats. Realitzeu primer el càlcul simbòlic i després obtingueu el
+ resultat numèric. RATLLEU CLARAMENT tot allò que no haja de ser avaluat.
+
+APARTAT 1 – CAMP GRAVITATORI.
+OPCIÓ ÚNICA (2 punts)
+El satèl·lit Deimos-2 és utilitzat a Espanya per entitats comercials, científiques i de resposta a desastres, perquè
+proporciona imatges de la Terra fiables i de molt alta resolució. La seua alçada orbital des de la superfície
+terrestre és ℎ = 620 km.
+   a) Deduïu raonadament l'expressió de la velocitat orbital del satèl·lit i calculeu el seu valor numèric. (1 punt)
+   b) Deduïu l'expressió de l'acceleració de la gravetat, 𝑔𝑔, en funció de ℎ, del radi terrestre i de l'acceleració a
+      la superfície de la Terra, 𝑔𝑔0 . Calculeu el seu valor numèric per a la posició en què es troba el satèl·lit. (1
+      punt)
+Dades: acceleració de la gravetat a la superfície de la Terra, 𝑔𝑔0 = 9,8 m s −2 ; radi de la Terra, 𝑅𝑅 = 6400 km.
+
+APARTAT 2 – CAMP ELECTROMAGNÈTIC. Contesteu només una de les dues opcions 2A o 2B.
+OPCIÓ 2A (3 punts)
+Sobre els vèrtexs 𝐴𝐴(𝑎𝑎, 0) i 𝐵𝐵(0, 𝑎𝑎) d'un quadrat de costat 𝑎𝑎 = 3,0 m, es fixen sengles càrregues elèctriques
+puntuals idèntiques 𝑄𝑄 = 2,0 nC.
+  a) Calculeu raonadament el potencial elèctric generat per aquestes dues càrregues en els punts 𝐶𝐶(0,0) i
+     𝐷𝐷(𝑎𝑎, 𝑎𝑎). Justifiqueu si la diagonal del quadrat entre els punts 𝐶𝐶 i 𝐷𝐷 seria una línia equipotencial. (1 punt)
+  b) Calculeu raonadament el camp elèctric total generat en el vèrtex 𝐷𝐷 a causa de les dues càrregues situades
+     en 𝐴𝐴 i 𝐵𝐵. Quina càrrega 𝑄𝑄𝑐𝑐 s'haurà de col·locar sobre el vèrtex 𝐶𝐶 perquè el camp elèctric s’anul·le en el
+     𝐷𝐷? (1 punt)
+  c) Enuncieu la llei de Gauss per al camp elèctric. Raoneu quin serà el flux elèctric a través d'una superfície
+     esfèrica de radi 𝑟𝑟 = 1 m centrada en el punt 𝐴𝐴. (1 punt)
+                                         1
+Dada: constant de Coulomb, 𝑘𝑘𝑒𝑒 =               = 9 · 109 N m2 / C 2 .
+                                       4𝜋𝜋𝜀𝜀0
+
+
+OPCIÓ 2B (3 punts)
+La figura mostra dos conductors rectilinis, indefinits i paral·lels entre si, en el pla 𝑌𝑌𝑌𝑌.
+Els conductors, pels quals circulen sengles corrents d'intensitats 𝐼𝐼1 = 𝐼𝐼2 =
+1,0 A, estan separats una distància 𝑑𝑑 = 2,0 cm.
+   a) Calculeu el vector camp magnèti0c 𝐵𝐵   �⃗ en el punto 𝑃𝑃 (vegeu la figura) a causa
+       d'ambdós corrents. (1 punt)
+   b) Si una càrrega 𝑞𝑞 = 2 µC passa pel punt 𝑃𝑃 amb una velocitat 𝑣𝑣⃗ = 105 𝑘𝑘�⃗ m⁄s,
+       calculeu la força 𝐹𝐹⃗ (mòdul, direcció i sentit) sobre aquesta. Representeu els
+                    �⃗ y 𝐹𝐹⃗ . (1 punt)
+       vectors 𝑣𝑣⃗, 𝐵𝐵
+  c) Suposant que 𝐼𝐼1 manté el seu valor, determineu raonadament el corrent 𝐼𝐼2 perquè en un punt 𝑆𝑆 situat entre
+                                                                                                  �⃗′ = −15 𝚤𝚤⃗ μT. (1
+     els conductors, a una distància 𝑑𝑑′ = 0,5 cm del conductor 𝐼𝐼1 , el camp magnètic total siga 𝐵𝐵
+     punt)
+Dada: permeabilitat magnètica del buit, 𝜇𝜇0 = 4 𝜋𝜋 · 10−7 T m/A.
+
+                                                                  3
+APARTAT 3 – VIBRACIONS I ONES. Contesteu només una de les dues opcions 3A o 3B.
+OPCIÓ 3A (3 punts)
+S'agita l'extrem d'una corda i es genera una ona harmònica de
+freqüència, 𝑓𝑓 = 2 Hz. Es realitza una fotografia a l'instant t = 2 s.
+A la vista de la figura i utilitzant la funció sinus:
+   a) Determineu la longitud d'ona, l'amplitud, la velocitat de l'ona
+      en la corda i la fase inicial. (1 punt)
+   b) Escriviu la funció d'ona en unitats del Sistema Internacional.
+      Per a un instant donat la diferència de fase entre dos punts
+                       𝜋𝜋
+      de la corda és rad, quina distància horitzontal mínima separa aquests punts? (1 punt)
+                      2
+   c) Quina posició vertical, quina velocitat i quina acceleració tindrà un punt de la corda situat a 𝑥𝑥 = 40 cm per
+      a t = 1 s? (1 punt)
+
+OPCIÓ 3B (3 punts)
+Un feix làser, que es propaga per l'aire, incideix sobre la cara plana d'un material l'índex de refracció del qual
+és 𝑛𝑛2 . En l'esquema adjunt només veiem el raig reflectit i el refractat, però no l'incident.
+   a) Determineu l'índex de refracció 𝑛𝑛2 i la velocitat de la
+        llum en aquest medi utilitzant la informació de
+        l'esquema adjunt. (1 punt)
+   b) Si l'índex de refracció 𝑛𝑛2 tingués un valor més gran
+        que l'obtingut en l'apartat a), els angles de reflexió i
+        de refracció serien ¿iguals, majors o menors?
+        Justifiqueu la resposta. (1 punt)
+   c) Es fabrica una lent de distància focal imatge 𝑓𝑓′ =
+        40 cm. Calculeu la posició i l'augment de la imatge
+        que es formarà d'un objecte situat a 15 cm de la lent.
+        (1 punt)
+Dada: velocitat de la llum en l'aire, 𝑐𝑐 = 3,0 · 108 m/s.
+
+APARTAT 4 – FÍSICA RELATIVISTA, QUÀNTICA, NUCLEAR I DE PARTÍCULES. Contesteu només una de
+les dues opcions 3A o 3B.
+OPCIÓ 4A (2 punts)
+El tecneci-99m és el radioisòtop més utilitzat en medicina nuclear per a diagnòstic per imatge i té un període de
+semidesintegració 𝑇𝑇 = 6,0 h. Per obtenir la resolució desitjada, l'activitat de la substància injectada, en el
+moment de realitzar la prova, ha de ser de 400 MBq. Entre la producció del radiofàrmac i la realització de la
+prova transcorren 5,0 h. Calculeu:
+    a) La constant de desintegració i l'activitat que ha de tenir el radioisòtop en el moment de la seua producció.
+       (1 punt)
+    b) El nombre de nuclis i la massa d'aquest isòtop que cal produir. (1 punt)
+Dades: número d'Avogadro, 𝑁𝑁𝐴𝐴 = 6,02 · 1023 mol−1 ; massa molar de l'isòtop, 𝑚𝑚𝑀𝑀 = 99 g/mol.
+
+OPCIÓ 4B (2 punts)
+En un experiment d'efecte fotoelèctric hi ha un tub de buit amb un
+càtode. El càtode té una longitud d'ona llindar de 790 nm i sobre la seua
+superfície incideix un feix de llum de longitud d'ona 320 nm.
+   a) Calculeu raonadament el treball d'extracció dels fotoelectrons
+      emesos des del càtode i la seua energia cinètica màxima. (1 punt)
+   b) La gràfica representa l'energia cinètica màxima dels electrons en
+      funció de la freqüència dels fotons incidents. Raoneu el significat
+      del pendent de la recta i dels talls amb els eixos. (1 punt)
+Dades: constant de Planck, ℎ = 6,63 · 10−34 J s; velocitat de la llum en el buit, 𝑐𝑐 = 3,0 · 108 m s −1 .
+
+
+
+
+                                                          4
+

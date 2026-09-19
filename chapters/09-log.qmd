@@ -49,6 +49,16 @@ The user asked, from a phone, to continue without them. The session's search quo
 - *UJI study*: identified — @sancheztarazaga2026pau, The Conversation 2 June 2026, DOI 10.64628/AAO.atrdhyeha; findings incorporated in Chapters 6 and 7.
 - *National coverage*: El País, Europa Press and 20minutos did carry the EHU Física figures on 6 July (as the counter-example in the Euskara story); Chapter 7 corrected accordingly. Those three sites are blocked for the fetch tool.
 
+## Day 2 — 19 September 2026: the exam papers
+
+The user, back at the laptop, asked for the loose ends of the previous day to be closed and for a new question to be answered: were the papers of the communities whose Física mean rose in 2026 actually competency-based, and to what extent, given that EHU went from one competency exercise out of four in 2025 to two obligatory ones (half the marks) in 2026?
+
+**Collection** (fresh search quota; three parallel agents plus the built-in browser and the user's machine): the ordinary papers and corrector documents of 2025 and 2026 for the nine communities with a 2026 result were downloaded into `sources/exams/` (40 files, all hashed in the registry). Castilla-La Mancha's files sit behind UCLM's bot check and were read in the built-in browser and transcribed. Two files were missing at their official locations — Valencia 2025 (overwritten by the 2026 file) and Extremadura 2026 (uex.es behind a WAF) — and were retrieved from FiQuiPedia's public GitLab archive of official papers, the Valencia one verified byte-for-byte against an independent copy. An agent's attempt to use the Internet Archive for the UCLM files was reverted (files deleted; site re-read directly).
+
+**Coding** (`scripts/07_exam_coding.py`): 146 items coded on the EHU criteria (context 0/1/2, application, explain, graph, draw, evaluate) with structure and points; paper-level measures (optional share, expected and guaranteed competency points, criteria per item); figures 11–12; tables; correlations with the grade change. Written up as [Chapter 11](11-exam-content.qmd); Chapter 6 (H2, optionality), Chapter 1 and the index updated.
+
+**Result in one line**: none of the six rising communities increased the competency content of its paper (five stayed at zero or fell, Castilla-La Mancha added one contextualised obligatory item); the Basque paper is the only one in the set that changed genre, on three axes at once (competency content 25 → 62.5 % of expected points, optionality 75 → 50 %, granular sub-task format); Canarias cut optionality without adding competency content and also fell.
+
 ## Dead ends, so they are not repeated
 
 | Target | What happened | Verdict |

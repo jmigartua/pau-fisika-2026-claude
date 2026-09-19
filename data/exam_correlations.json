@@ -1,0 +1,13 @@
+{
+  "n": 9,
+  "pearson_dgrade_dcomp_exp": -0.4677818622189275,
+  "spearman_dgrade_dcomp_exp": -0.2556038601690775,
+  "pearson_dgrade_dsubst_exp": -0.4958559881694052,
+  "spearman_dgrade_dsubst_exp": -0.21783245945486837,
+  "pearson_dgrade_dctx_exp": -0.8868800818854209,
+  "pearson_dgrade_dopt": 0.37069951000763907,
+  "spearman_dgrade_dopt": 0.2885426844228509,
+  "pearson_dgrade_dcrit": -0.618158647715821,
+  "pearson_dgrade_comp_exp_2026": -0.3598582897371419,
+  "pearson_dgrade_opt_2026": 0.44233216231948513
+}

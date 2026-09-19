@@ -52,6 +52,7 @@ website:
             - chapters/04-distributions.qmd
             - chapters/05-subjects-sittings.qmd
             - chapters/06-interpretation.qmd
+            - chapters/11-exam-content.qmd
         - section: "Evidence"
           contents:
             - chapters/01-data-hunt.qmd

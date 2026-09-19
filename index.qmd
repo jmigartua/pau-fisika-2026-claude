@@ -56,7 +56,7 @@ The July 2026 package in this project (`fisica_pau_ehu_package`, `hist_evolution
 
 **Log and sources** ([Chapters 8–9](chapters/08-sources.qmd)). Every figure on this site can be traced to a URL, a page number or a dashboard filter, and every dead end is recorded so that the next update does not repeat it.
 
-## Five findings in one paragraph each {.unnumbered}
+## Six findings in one paragraph each {.unnumbered}
 
 **1. The 2025 fall was national; the 2026 fall is regional.** Across the 17 communities the ordinary-sitting Physics mean changed by $-0.81$ points on average between 2024 and 2025 (14 of 17 fell), the first year of the LOMLOE competency exam. Euskadi's $-0.62$ that year was *milder* than the national move. In 2026 most communities that have reported bounced back ($+0.5$ to $+1.1$: Asturias, Madrid, Castilla-La Mancha, Cataluña, C. Valenciana, Andalucía), while Euskadi ($-1.48$), Canarias ($-0.83$) and Extremadura ($-0.82$) fell further. The reform explains 2025; it does not explain 2026. ([Chapter 3](chapters/03-spain-2026.qmd))
 
@@ -67,6 +67,8 @@ The July 2026 package in this project (`fisica_pau_ehu_package`, `hist_evolution
 **4. In Euskadi the damage is concentrated in the science-technical block; elsewhere the pattern differs by subject.** Euskadi 2025→2026: Física $-1.48$, Matemáticas II $-1.67$, Historia $-0.83$, Euskara $-0.48$, Química $-0.21$, Biología $+0.15$. Cataluña: Física $+0.80$ but Matemàtiques $-1.94$. Madrid: Física $+1.1$, Matemáticas II $+0.5$. Andalucía: Física $+0.17$, Matemáticas II $-0.59$. The subject-by-region pattern is not the signature of a single national exam-model effect; it is the signature of regional paper design and marking, subject by subject. ([Chapter 5](chapters/05-subjects-sittings.qmd))
 
 **5. The same students carry a school Physics mark of 7.09.** The Basque Inspectorate's *Resultados escolares 2024-25* gives 2º Bachillerato Física: 4 541 students, 98.1 % pass, mean 7.09 (public 7.04, private/concertada 7.15; models A/B/D 6.93/7.31/7.09). Roughly 45–48 % of them sit PAU Física. The school-to-exam gap was 1.6 points in 2025 and, if school marks did not move, 3.1 points in 2026. ([Chapter 5](chapters/05-subjects-sittings.qmd))
+
+**6. The papers of the communities that rose did not become more competency-oriented; the Basque paper did, and changed genre.** Coding every exercise of the eighteen 2025 and 2026 ordinary papers (nine communities) on the EHU competency criteria: Asturias, Madrid and Andalucía had no competency-style exercise in either year; Cataluña was already fully contextualised in 2025 and did not change; Valencia replaced its 2025 competency-style obligatory item with a lighter one; only Castilla-La Mancha added one contextualised obligatory item (0 → 20 % of expected points). Euskadi went from 25 % to 62.5 % of expected points in competency-style exercises, from 2.5 to 5 guaranteed points, halved its optionality (75 % → 50 %) and moved to a granular sub-task format — three changes at once, and the largest change of any paper in the set. Canarias, which cut choice without adding competency content, fell too. ([Chapter 11](chapters/11-exam-content.qmd))
 
 ## What is still missing {.unnumbered}
 

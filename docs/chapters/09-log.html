@@ -368,6 +368,12 @@ div.csl-indent {
  <span class="menu-text">Interpretation and the 2027 question</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The papers themselves</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -434,9 +440,10 @@ div.csl-indent {
   <ul>
   <li><a href="#chronology" id="toc-chronology" class="nav-link active" data-scroll-target="#chronology"><span class="header-section-number">1</span> Chronology</a></li>
   <li><a href="#evening-follow-up-same-day-user-away" id="toc-evening-follow-up-same-day-user-away" class="nav-link" data-scroll-target="#evening-follow-up-same-day-user-away"><span class="header-section-number">2</span> Evening follow-up (same day, user away)</a></li>
-  <li><a href="#dead-ends-so-they-are-not-repeated" id="toc-dead-ends-so-they-are-not-repeated" class="nav-link" data-scroll-target="#dead-ends-so-they-are-not-repeated"><span class="header-section-number">3</span> Dead ends, so they are not repeated</a></li>
-  <li><a href="#watch-list-for-the-next-update" id="toc-watch-list-for-the-next-update" class="nav-link" data-scroll-target="#watch-list-for-the-next-update"><span class="header-section-number">4</span> Watch-list for the next update</a></li>
-  <li><a href="#files-in-this-folder" id="toc-files-in-this-folder" class="nav-link" data-scroll-target="#files-in-this-folder"><span class="header-section-number">5</span> Files in this folder</a></li>
+  <li><a href="#day-2-19-september-2026-the-exam-papers" id="toc-day-2-19-september-2026-the-exam-papers" class="nav-link" data-scroll-target="#day-2-19-september-2026-the-exam-papers"><span class="header-section-number">3</span> Day 2 — 19 September 2026: the exam papers</a></li>
+  <li><a href="#dead-ends-so-they-are-not-repeated" id="toc-dead-ends-so-they-are-not-repeated" class="nav-link" data-scroll-target="#dead-ends-so-they-are-not-repeated"><span class="header-section-number">4</span> Dead ends, so they are not repeated</a></li>
+  <li><a href="#watch-list-for-the-next-update" id="toc-watch-list-for-the-next-update" class="nav-link" data-scroll-target="#watch-list-for-the-next-update"><span class="header-section-number">5</span> Watch-list for the next update</a></li>
+  <li><a href="#files-in-this-folder" id="toc-files-in-this-folder" class="nav-link" data-scroll-target="#files-in-this-folder"><span class="header-section-number">6</span> Files in this folder</a></li>
   </ul>
 </nav>
     </div>
@@ -513,8 +520,15 @@ div.csl-indent {
 <li><em>National coverage</em>: El País, Europa Press and 20minutos did carry the EHU Física figures on 6 July (as the counter-example in the Euskara story); Chapter 7 corrected accordingly. Those three sites are blocked for the fetch tool.</li>
 </ul>
 </section>
-<section id="dead-ends-so-they-are-not-repeated" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="dead-ends-so-they-are-not-repeated"><span class="header-section-number">3</span> Dead ends, so they are not repeated</h2>
+<section id="day-2-19-september-2026-the-exam-papers" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="day-2-19-september-2026-the-exam-papers"><span class="header-section-number">3</span> Day 2 — 19 September 2026: the exam papers</h2>
+<p>The user, back at the laptop, asked for the loose ends of the previous day to be closed and for a new question to be answered: were the papers of the communities whose Física mean rose in 2026 actually competency-based, and to what extent, given that EHU went from one competency exercise out of four in 2025 to two obligatory ones (half the marks) in 2026?</p>
+<p><strong>Collection</strong> (fresh search quota; three parallel agents plus the built-in browser and the user’s machine): the ordinary papers and corrector documents of 2025 and 2026 for the nine communities with a 2026 result were downloaded into <code>sources/exams/</code> (40 files, all hashed in the registry). Castilla-La Mancha’s files sit behind UCLM’s bot check and were read in the built-in browser and transcribed. Two files were missing at their official locations — Valencia 2025 (overwritten by the 2026 file) and Extremadura 2026 (uex.es behind a WAF) — and were retrieved from FiQuiPedia’s public GitLab archive of official papers, the Valencia one verified byte-for-byte against an independent copy. An agent’s attempt to use the Internet Archive for the UCLM files was reverted (files deleted; site re-read directly).</p>
+<p><strong>Coding</strong> (<code>scripts/07_exam_coding.py</code>): 146 items coded on the EHU criteria (context 0/1/2, application, explain, graph, draw, evaluate) with structure and points; paper-level measures (optional share, expected and guaranteed competency points, criteria per item); figures 11–12; tables; correlations with the grade change. Written up as <a href="../chapters/11-exam-content.html">Chapter 11</a>; Chapter 6 (H2, optionality), Chapter 1 and the index updated.</p>
+<p><strong>Result in one line</strong>: none of the six rising communities increased the competency content of its paper (five stayed at zero or fell, Castilla-La Mancha added one contextualised obligatory item); the Basque paper is the only one in the set that changed genre, on three axes at once (competency content 25 → 62.5 % of expected points, optionality 75 → 50 %, granular sub-task format); Canarias cut optionality without adding competency content and also fell.</p>
+</section>
+<section id="dead-ends-so-they-are-not-repeated" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="dead-ends-so-they-are-not-repeated"><span class="header-section-number">4</span> Dead ends, so they are not repeated</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -602,8 +616,8 @@ div.csl-indent {
 </tbody>
 </table>
 </section>
-<section id="watch-list-for-the-next-update" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="watch-list-for-the-next-update"><span class="header-section-number">4</span> Watch-list for the next update</h2>
+<section id="watch-list-for-the-next-update" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="watch-list-for-the-next-update"><span class="header-section-number">5</span> Watch-list for the next update</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -686,8 +700,8 @@ div.csl-indent {
 </tbody>
 </table>
 </section>
-<section id="files-in-this-folder" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="files-in-this-folder"><span class="header-section-number">5</span> Files in this folder</h2>
+<section id="files-in-this-folder" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="files-in-this-folder"><span class="header-section-number">6</span> Files in this folder</h2>
 <ul>
 <li><code>index.qmd</code>, <code>chapters/*.qmd</code>, <code>_quarto.yml</code>, <code>styles.scss</code>, <code>styles-dark.scss</code>, <code>assets/</code>: the site.</li>
 <li><code>data/</code>: <code>regional_fisica_found.csv</code>, <code>found_*.csv</code> (dashboard transcriptions), <code>ministry_fisica_*.csv</code> (parsed cubes), <code>original/</code> (July package copies), <code>analysis/</code> (all computed outputs + <code>results.json</code>), <code>tables/</code> (Markdown tables included by the chapters).</li>

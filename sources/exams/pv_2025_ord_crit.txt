@@ -1,0 +1,504 @@
+A.- 1
+Altuera, orbita zirkularrean (H )
+Satelitea higidura zirkular uniformean dago, eta azelerazio normalari eusteko behar den
+indar normalak eta satelitearen gaineko indar grabitatorioakberdinakizan behar dute,
+satelitearen higidura zirkularra uniformea izan dadin: F grabitatorioa =F normala
+                                         G M Lurra m               m v2
+Adierazpenak kontuan hartuta:                             2
+                                                            =
+                                                                R Lurra + H .
+                                        ( R Lurra + H )
+Adierazpen horretan:
+
+
+
+
+               U
+                                                     G M Lurra m
+  •     F grabitatorioa da indar grabitatorioa (                              2   ), Newton-en grabitazio unibertsalaren
+                                                    ( R Lurra + H )
+        legearen arabera.
+  •     F normala da indar normala, higidura zirkularrean dabilen gorputzean eragiten duen
+                                               m v2
+        azelerazio normalak sortutakoa (                ).
+                                            R Lurra + H
+
+Sinplifikatuta, satelitearen mmasa kenduz, eta H altuera bakanduz:
+                   G M Lurra                               G M Lurra                      G M Lurra
+                               =v 2       R Lurra + H =                              H=               − R Lurra.
+                   R Lurra + H                                    v   2
+                                                                                              v2
+EH
+Abiadura orbitala ( v )
+
+                                                                                                              G M Lurra
+Abiadura orbitala lortzeko, honako adierazpen hau erabiliko dugu: v=
+                                                                                                          √   R Lurra + H
+                                                                                                                          .
+
+
+                                ( 6 , 67 × 10− 11 )( 5 , 98 ×1024 )
+Balioak ordezkatuta: v=
+                            √                 6
+                                 6 , 37 × 10 +2,3222×10                   7
+                                                                                    v ≈ 3,671×103 m/ s=3,671 km/ s
+
+Beharrezkoa den energia osoa ( E osoa)
+Beharrezkoa den energia osoa hau da: energia potentzial grabitatorioaren aldaketaren (
+Δ U ) eta higidura zirkularrari eusteko behar den energia zinetikoaren E z arteko batura.
+                                                                                    G M Lurra m
+Energia potentzial grabitatorioa honako hau da: U =−                                            .
+                                                                                        r
+Eta energia potentzial grabitatorioaren aldaketa, satelitea Lurraren gainazaletik (r=R Lurra)
+H (r=R Lurra + H ) altuerara eramandakoan, honako hau da: Δ U =U H −U gainazala.
+
+                                    ( 6 ,67 ×10− 11 )( 5 ,98 ×1024 ) ( 700 ) ( 6 ,67 ×10− 11 )( 5 ,98 ×1024 ) ( 700 )
+Balioak ordezkatuta: Δ U =−                                                               +                                   ;
+                                         6 ,37 ×106 +2,3222 ×107                                          6 ,37 ×106
+                                    Δ U =U H −U gainazala ≈ 3,44 ×1010 J .
+
+                                                                               1   2
+Higidura zirkular uniformea mantentzeko beharrezkoa den energia hauxe da: E z = m v .
+                                                                               2
+                          1                 2
+Balioak ordezkatuta: E z = ( 700 ) ( 3671 )       E z ≈ 4,72×109 J .
+                          2
+Satelitea H altueran kokatzeko eta higidura zirkular uniformeari eusteko behar den
+energia osoa hauxe da: E osoa = Δ U + E z .
+                                           10               9                    10
+Balioak ordezkatuta: E osoa =3,44 × 10 +4,72 × 10               E osoa ≈ 3,91 × 10 J .
+
+
+
+
+               U
+Periodoa (T )
+Periodoa lortzeko, Kepler-en legeak eta dinamika grabitatorioaren kontzeptuak hartuko
+ditugu kontuan. Kepler-en hirugarren legearen arabera, honako hau dugu: T 2 ∝ r 3.
+Orbita zirkularrean dagoen satelitearen kasuan, periodoa honako era honetan adieraz
+                      r3
+dezakegu: T =2 π
+                   √
+                   G M Lurra
+                             .
+
+Kalkulua
+  1.    Orbitaren erradioa: r=R Lurra + H .
+EH
+        Balioak ordezkatuz: r=6 ,37 ×106 m+2,3222×107 m                   r=2,9592×107 m.
+  2.    Periodoaren adierazpenean ordezkatuz:
+                                                        3
+                                      ( 2,9592×107 )
+                       T =2 π
+                               √
+                              ( 6 ,67 ×10− 11 )( 5 ,98 ×1024 )
+                                                                     T ≈ 5 ,06 ×10 4 s .
+
+                                   5 ,06 × 10 4
+  3.    Ordutan emanda: T ≈                     ≈ 14 ,06 ordu.
+                                      3600
+B.- 1
+Korronteak sorrarazitako eremu magnetikoa
+Eroale luze batek sorraraziko duen eremu magnetikoa kalkulatzeko, Biot-Savart-en legea
+                        μ I
+erabili behar dugu: B= 0 .
+                       2π r
+Eskuin-eskuaren arau erabiliz:
+   •     Eroalearen inguruan, zirkularra da eremu magnetikoaren norazkoa.
+
+   •     Bi eroaleen arteko gunean, kontrakoak dira korronteek sorrarazitako eremu
+
+
+
+
+                 U
+         magnetikoen norabideak.
+Eroaleen arteko indar magnetikoa
+                                                                                                       μ0 I 1 I 2
+Paraleloak diren bi eroaleen arteko luzera-unitateko indar magnetikoa: F / L=                                     .
+                                                                                                        2π d
+I 1 eta I 2 dira eroaleetako korronteak; d=0 , 06 m da eroaleen arteko distantzia.
+
+Korronteen noranzkoak berdinak direnez, eroaleek elkar erakarriko dute.
+Eremu magnetiko erresultantea, erdiko puntuan.
+Bi eroaleak lotzen dituen lerroaren erdiko puntuan, r=0 , 03 m da, bi eroaleen kasuan:
+EH
+                                                       μ 0 I 1 4 π ⋅ 10− 7 ⋅ 9        −5
+   •     I 1=9 A korronteko eroaleak: B 1=                    =                =6 ⋅ 10 T
+                                                       2π r     2 π ⋅ 0 , 03
+                                                            μ 0 I 2 4 π ⋅ 10− 7 ⋅ 15
+   •     I 2 =15 A korronteko eroaleak: B 2 =                      =                 =10 ⋅ 10− 5 T
+                                                            2π r      2 π ⋅ 0 , 03
+Erdiko puntuan, eremuen noranzkoak kontrakoak dira; ondorioz, eremu erresultantea
+                                                          −5      −5
+honako hau da: B erresultantea =B 2 − B 1= ( 10 − 6 ) ⋅ 10 =4 ⋅ 10 T .
+
+Eremu magnetikoaren deuseztapena, eroaleen arteko gunean.
+Bi eroaleen arteko gunean, eremu magnetikoa nulua izango da I 1=9 A korronteko eroaletik
+r distantziara, puntu horretan honako hau betetzen baita: B 1=B 2.
+                                                                 μ0 I 1   μ0 I 2         I1   I
+Adierazpenak ordezkatuz, B 1 eta B 2 kasuetan:                          =                   = 2 .
+                                                                 2 π r 2 π (d −r )       r d −r
+                                                                      I1d         9 ⋅ 0 , 06 0 ,54
+Bakanduz r : I 1 ( d − r ) =I 2 r   I 1 d=r ( I 1 + I 2 )      r=            : r=           =      =0 , 0225 m.
+                                                                    I 1+ I 2       9+15       24
+B.- 2
+Karga puntual batek, q , karga bera dagoen puntutik r distantziara dagoen puntuan
+                                                                         q
+sorrarazten potentzial elektrikoaren adierazpena honako hau da: V =K ⋅ .
+                                                                         r
+Edozein puntutan, bi kargek sorrarazitako potentziala kargek sorrarazitako potentzialen
+batura aljebraikoa da: V osoa =V A +V B.
+Karga puntua batek, q, karga bera dagoen puntutik r distantziara dagoen puntuan
+                                                                          q
+sorrarazten duen eremu elektrikoaren adierazpena honako hau da: ⃗  E =K ⋅ 2 ⋅ r^ .
+                                                                         r
+
+
+
+
+                  U
+Adierazpen horretan, puntua eta karga lotzen dituen lerroko unitate-bektorea da r^ .
+
+Kargek sorrarazitako eremu bektorialen batura da eremu osoa, honako hau: ⃗
+                                                                         E osoa = ⃗  E B.
+                                                                                  EA+⃗
+
+Kalkulua, jatorrian: ( 0 , 0 )
+  1.        Kargetatik jatorrirako distantzia:
+
+              −    q A kargarainoko distantzia: r A = √ ( − 4 )2 +02=4 c m=0 , 04 m.
+
+              −    q B kargarainoko distantzia: r B = √ ( 4 )2 +02 =4 c m=0 , 04 m.
+
+  2.        Potentzial elektrikoa, jatorrian:
+EH
+                       qA            5 ⋅ 10− 9                   q         9 −5 ⋅ 10
+                                                                                     −9
+            V A =K ⋅      =9 ⋅ 109 ⋅           =1125 V ; V B =K ⋅ B =9 ⋅ 10 ⋅           =−1125 V ;
+                       rA             0 , 04                     rB           0 , 04
+
+                                      V osoa =V A +V B =1125 − 1125=0 V .
+
+  3.        Eremu elektrikoa, jatorrian:
+                                                      qA              5 ⋅ 10− 9
+        −     q A kargak sorrarazitakoa: E A =K ⋅      2
+                                                         =9 ⋅ 109 ⋅              2
+                                                                                   =28125 N /C .
+                                                      rA              ( 0 , 04 )
+
+              Norabidea: q A kargatik kanporantz, eskuinerantz (i^ unitate-bektorea).
+                                                     qB              −5 ⋅ 10− 9
+        −     q B kargak sorrarazitakoa: E B =K ⋅     2
+                                                        =9 ⋅ 109 ⋅               2
+                                                                                   =28125 N /C .
+                                                     rB               ( 0 , 04 )
+
+              Norabide: q B kargarantz, eskuinerantz (i^ unitate-bektorea).
+
+        −     Eremu osoa: ⃗
+                          E osoa = ⃗
+                                   EA+⃗          ^
+                                      E B =28125 i+28125 ^
+                                                         i=56250 i^ N /C.
+Kalkulua, ( 0 , 3 ) cm puntuan:
+  1.   ( 0 , 3 ) cm puntutik kargetarainoko ditantzia:
+
+          −    q A kargaraino: r A = √ ( − 4 )2 +32 = √ 16+9=5 c m=0 , 05 m.
+
+          −    q B kargaraino: r B = √ ( 4 )2 +32 = √ 16+9=5 c m=0 , 05 m.
+
+  2.   Potentzial elektrikoa, ( 0 , 3 ) c m puntuan:
+                   qA            5 ⋅ 10− 9                  q         9 −5 ⋅ 10
+                                                                                −9
+        V A =K ⋅      =9 ⋅ 109 ⋅           =900 V ; V B =K ⋅ B =9 ⋅ 10 ⋅           =− 900 V ;
+                   rA             0 , 05                    rB           0 , 05
+
+
+
+
+              U
+                                     V osoa =V A +V B =900 − 900=0 V .
+
+  3.   Eremu elektrikoa ( 0 , 3 ) cm puntuan:
+                                                     qA               5 ⋅ 10− 9
+   −   q A kargak sorrarazitakoa: E A =K ⋅             2
+                                                         =9 ⋅ 109 ⋅              2
+                                                                                   =18000 N /C .
+                                                     rA               ( 0 , 05 )
+
+                                                                                               (4 ,3)
+       Norabidea: q A kargatik ( 0 , 3 ) punturantz. Unitate-bektorea:^r A =                          = ( 0 , 8 , 0 , 6 );
+                                                                                                 5
+                              ⃗                    ^ , 6 ^j ) =( 14400 i^ ,1080 0 ^j ) N /C
+                              E A =18000 ⋅ ( 0 , 8 i+0
+
+                                                    qB
+EH
+   −   q Bkargak sorrarazitakoa: E B =K ⋅                  =18000 N /C .
+                                                    r 2B
+
+                                                                           ( 4 ,− 3 )
+       Norabidea: q B kargarantz. Unitate-bektorea): r^ B =                           = ( 0 , 8 ,− 0 , 6 )
+                                                                                5
+
+                        E B =18000 ⋅ ( 0 , 8 i^ − 0 , 6 ^j ) = ( 14400 i^ , − 10800 ^j ) N /C
+                        ⃗
+
+   −   Eremu osoa:
+        ⃗
+        E osoa = ⃗
+                 EA+⃗                     ^ ( 10800 −10800 ) ^j;⃗
+                    E B = ( 14400+14400 ) i+                    E osoa =28800 i^ N /C.
+C.- 1
+Izpien diagrama egiteko
+   •    Marraztu ispilu ahurra eta ardatz nagusia
+
+   •    markatu fokuaren posizioa ( f =50 cm) eta kurbaduraren erdia (C=2 f =100 cm).
+
+   •    Ipini objektua hemen: d o =25 cm.
+
+   • Marraztu deskribatutako izpiak, eta zehaztu zein puntutan gurutzatzen diren. Hor
+eratuko da irudia.
+
+
+
+
+              U
+Irudiaren posizioa eta tamaina:
+                                                                         1 1 1
+  •     Ispiluaren ekuazioa erabiliz kalkulatuko dugu irudiaren posizioa: = + .
+                                                                         f do di
+
+        Adierazpen horretan, datu hauek ditugu: f : foku-distantzia (50 cm); d o: objektua
+        dagoen distantzia( 25 cm ); d i: irudia dagoen distantzia (kalkulatu beharrekoa).
+                        1 1 1 1
+        Bakan dezagun     : = − .
+                        di di f do
+
+                              1 1     1     1 1     2  1
+        Balioak ordezkatuz:      = −           = − =− ∴ d i =−50 cm.
+EH
+                              d i 50 25     d i 50 50 50
+
+        Irudia birtuala da, lortutako zeinua negatiboa baita.
+                                                                                 hi   d
+  •     Handipenen erlazioa erabiliz kalkulatuko dugu irudiaren tamaina: M =        =− i .
+                                                                                 ho   do
+
+        Adierazpen horretan, datu hauek ditugu: M : handipena; hi: irudiaren altuera ; ho :
+        objektuaren altuera ( 1 cm ) dira.
+                                   −50                h
+        Balioak ordezkatuz: M =−       =2; eta, beraz: i =2 ⟹ hi =2 cm.
+                                    25                1
+        Irudiaren altuera da 2 cm; gainera, birtuala eta zuzena da, eta handituta dago.
+C.- 2
+Uhin-zenbakiaren, k , eta hasierako fasearen ϕ 0 kalkulua:
+  •     Hedatze-abiadura ( v ), uhin-bektorea, (k ), eta maiztasun angeluarraren eta (
+                                                              ω       ω       200 π π
+        ω=200 π rad / s ) arteko erlazioa honako hau da: v=       k=      k=       = rad /m.
+                                                              k       v        400 2
+  •     Hasierako fasea, ϕ 0, lortzeko, hasierako egoera hartuko dugu kontuan, hau da,
+        y ( 0 , 0 ) =1 ,5 c m: y ( 0 , 0 ) =3 sen ( ϕ 0 ) =1 ,5.
+
+                                                   1 ,5                                          π
+        Bakan dezagun sin ( ϕ 0 ): sen ( ϕ 0 ) =        =0 ,5; eta, beraz: ϕ 0 =arcsin ( 0 ,5 ) = .
+                                                    3                                            6
+
+
+
+
+                U
+        Gainera, badakigu t =0 eta x=0 betetzen denean oszilazio-abiadura positiboa dela.
+        Oszilazio-abiadura y ( x , t ) -ren denborarekiko deribatua da, honako hau:
+                                  ∂y
+                                     =− 3 ⋅ 200 π cos ( k x − 200 π t +ϕ 0 ).
+                                  ∂t
+                                               ∂y
+        Eta, x=0 eta t = 0 balioetarako:          ( 0 , 0 ) =− 3 ⋅ 200 π cos ( ϕ 0 ).
+                                               ∂t
+        Abiadura positiboa izateko, cos ( ϕ 0 ) <0 bete behar da; eta honako balio honetan
+                           π 5π                    5π
+        beteko da: ϕ 0 =π − = ; beraz, ϕ 0 = .
+                           6 6                      6
+EH
+Oszilazio-azelerazio maximoa:
+Azelerazioa y ( x , t )-ren denborarekiko bigarren deribatua da, honako hau:
+
+                                ∂2 y                 2
+                                   2
+                                     =− 3 ⋅ ( 200 π ) sen ( k x − 200 π t +ϕ 0 ).
+                                ∂t
+
+Azelerazioa maximoa lortuko da honako hau betetzen denean: sin ( kx − 200 πt +ϕ 0 ) =± 1
+|am a x )=3 ⋅ ( 200 π )2.
+Balioak ordezkatuz:
+
+|am a x )=3 ⋅ ( 200 π )2=3 ⋅ 40000 π 2 |amax ) ≈ 3 ⋅ 40000 ⋅ 9 ,87=1 ,18 ⋅ 106 c m/ s2 |amax ) ≈ 1 ,18 ⋅ 104 m/ s2
+D.- 1
+Egiaztatu efektu fotoelektrikoa gertatuko den edo ez:
+Erauzte-lana, Φ , da metalaren gainazaletik elektroi bat askatzeko beharrezkoa den energia
+minimoa; gure kasuan, honako hau: Φ=2 , 29 eV.
+Energia hori jouletan: 1 eV=1 , 6 ⋅ 10− 19 J ; Φ=2 , 29 ⋅ 1 , 6 ⋅ 10− 19 J=3 , 66 ⋅ 10− 19 J .
+                                                                                                        h⋅c
+Erradiazio erasotzailearen energia lortzeko, hauxe erabiliko dugu: E fotoia =                               .
+                                                                                                         λ
+
+                               6 , 6 ⋅ 10− 34 ⋅ 3 ⋅ 108
+Balioak ordezkatuz: E fotoia =                          =9 , 9 ⋅ 10− 19 J .
+
+
+
+
+                 U
+                                                −6
+                                     0 , 2 ⋅ 10
+Erauzte-lana baino handiago izan behar du fotoiaren energiak, efektu fotoelektrikoa ager
+dadin: E fotoia >Φ .
+
+Balioei erreparatuz: 9 , 9 ⋅ 10− 19 J>3 , 66 ⋅ 10− 19 J , esan dezakegu gertatu egingo dela efektu
+fotoelektrikoa.
+Igorritako elektroien abiadura:
+Behin elektroia askatuta, haren energia zinetiko maximoa ( E k ) lortzeko, fotoiaren
+energiaren eta erauzte-lanaren arteko diferentzia kalkulatuko dugu: E k =E fotoia − Φ
+
+                             E k =9 , 9 ⋅ 10− 19 J − 3 , 66 ⋅ 10− 19 J=6 , 24 ⋅ 10− 19 J.
+EH
+                                                  1                                            2 Ek
+Eta elektroiaren abiadura (v) honako hau da: E k = me v 2
+                                                  2
+                                                                                      v=
+                                                                                           √    me
+                                                                                                    .
+
+
+                                  2 ⋅ 6 , 24 ⋅ 10− 19
+Balioak ordezkatuz: v=
+                              √      9 ,1 ⋅ 10− 31
+                                                            v= √ 1 , 372 ⋅ 1012         v ≈ 1 , 2 ⋅ 106 m/s.
+
+Atari-maiztasuna:
+                                                                                Φ
+Atari-maiztasuna ( ν 0) honako hau da: Φ=h ⋅ ν 0                         ν 0=     .
+                                                                                h
+
+                               3 , 66 ⋅ 10− 19
+Balioak ordezkatuz: ν 0 =                           ν 0 ≈ 5 , 5 ⋅ 1014 Hz .
+                               6 , 6 ⋅ 10− 34
+Elektroiak balaztatzeko beharrezkoa den energia:
+                                                                                        Ek
+Balaztatze-potentziala, (V s) honako hau da: e ⋅ V s =E k                        V s=      .
+                                                                                        e
+
+                          6 , 24 ⋅ 10− 19
+Balioak ordezkatuz: V s =                               V s ≈ 3 , 9 V.
+                           1 , 6 ⋅ 10− 19
+D.- 2
+Erauzte-lanaren kalkulua, (Φ)
+Lehenengo neurketan, argia erasotzailearen uhin-luzera λ=700 n m da. Fotoiaren energia
+                                                            h⋅c
+kalkulatzeko, honako ekuazio hau erabiliko dugu: E fotoia =     .
+                                                             λ
+Fotoiaren energia erlazionatuta dago erauzte-lanarekin (Φ ) eta elektroiaren energia
+zinetiko maximoarekin ( E k ) efektu fotoelektrikoaren bidez: E fotoia =Φ+ E k Φ=E fotoia − E k .
+                           h⋅c                     h⋅c
+Ordezkatuz E fotoia : Φ=       − Ek        Φ=          − Ek .
+                            λ                       λ1         1
+
+
+
+
+                U
+Bigarren neurketan erabilitako argiaren maiztasuna
+Bigarren neurketan, elektroiaren energia zinetiko maximoa honako hau da: E k =1 , 49 eV .
+Beraz, fotoiaren energia hauxe da: E fotoia =Φ+ E k .
+                                                                                       h⋅c
+Adierazpenenean, Φ dagoeneko ezaguna da, orokorrean: Φ=                                    − Ek .
+                                                                                        λ       1
+
+
+
+
+                                                                   h⋅c
+Eta Φ fotoiaren ekuazioan ordezkatuz: E fotoia 2 =             (    λ1
+                                                                       − Ek + Ek .
+                                                                               1   )   2
+
+
+
+
+  •      E k lehen neurketako energia zinetiko maximoa da (0 , 45 eV ).
+            1
+EH
+  •      E k bigarren neurketako energia zinetiko maximoa da(1 , 49 eV ).
+            2
+
+
+
+
+Fotoiaren maiztasuna eta haren energiaren arteko erlazioa:
+                                         h⋅c
+
+E fotoia 2 =h ⋅ ν 2 ν 2 =
+                          E fotón 2    (
+                                    ν 2=
+                                          λ1
+                                             − Ek + Ek
+                                                       .
+                                                       1   )       2
+
+
+
+
+                             h                h
+Atari-maiztasuna(ν 0)
+Atari-maiztasuna eta erauzte-lanaren arteko erlazioa honako hau da:
+                         h⋅c
+
+Φ=h ⋅ ν 0 ν 0 =
+                Φ
+                    ν 0=
+                          λ1 (− Ek
+                                   .       1   )
+                h            h
+Balioen ordezkatzea eta zenbakizko kalkuluak, h konstantearen balioa erabiliz gero.
+
+                                       ( 6,63 ×10− 34 ) ⋅ ( 3 ×108 )                                − 19
+      1. Erauzte-lana (Φ) E fotoia =                           −9
+                                                                              E fotoia =2,84 × 10          J
+                                                   700 ×10
+                                           − 19                    − 20
+         Jouletan: E k =0,45 × 1,6 × 10
+                     1
+                                                   J=7,2 × 10             J
+
+         Jouletan Φ : Φ=2,84 ×10− 19 J −7,2×10− 20 J=2,12×10− 19 J
+                 2,12 ×10− 19
+   eV-etan: Φ=                =1,33 eV
+                 1,6 ×10− 19
+                                                              − 19                 − 19
+2. Maiztasuna, bigarren neurketan: E k =1,49 × 1,6 × 10
+                                         2
+                                                                     J=2,38 × 10          J
+
+                  E fotoia =Φ+ E k =2,12×10− 19 J+2,38 ×10− 19 J=4,50 ×10− 19 J
+                                 2
+
+
+
+                    E fotoia 4,50 ×10− 19
+   Maiztasuna: ν=           =               =6 ,79 ×1014 Hz
+                       h      6,63 ×10 − 34
+
+
+
+                             Φ 2,12×10− 19
+3. Atari-maiztasuna: ν 0 =    =             =3,20 ×1014 Hz
+                             h 6,63 ×10− 34
+
+
+
+
+          U
+EH
+

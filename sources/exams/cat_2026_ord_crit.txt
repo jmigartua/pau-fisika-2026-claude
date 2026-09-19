@@ -1,0 +1,400 @@
+                                                                              Pàgina 1 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+
+Sèrie 1
+
+Criteris generals d'avaluació i qualificació
+
+    1. Les respostes s’han d’ajustar a l’enunciat de la pregunta. Es valorarà sobretot que
+        l’alumnat demostri que té clars els conceptes de caràcter físic sobre els quals tracta cada
+        pregunta.
+    2. Es tindrà en compte la claredat en l’exposició dels conceptes, dels processos, dels passos
+        a seguir, de les hipòtesis, l’ordre lògic, l’ús correcte dels termes científics i la
+        conceptualització segons l’enunciat.
+    3. En les respostes cal que l’alumnat mostri una adequada capacitat de comprensió de les
+        qüestions plantejades i organitzi de forma lògica la resposta, tot analitzant i utilitzant
+        les variables en joc. També es valorarà el grau de pertinença de la resposta, el que
+        l’alumnat diu i les mancances manifestes sobre el tema en qüestió.
+    4. Les respostes s’han de raonar i justificar. Un resultat erroni amb un raonament correcte
+        es valorarà. Una resposta correcta sense raonament ni justificació es pot valorar amb un
+        0.
+    5. Un error no s’ha de penalitzar dues vegades en el mateix problema. Si un apartat
+        necessita un resultat anterior, i aquest és erroni, cal valorar la resposta
+        independentment del seu valor numèric, i tenir en compte el procediment de resolució.
+    6. Si la resolució presentada a l’examen és diferent però correcta i està d’acord amb els
+        requeriments de l’enunciat, s’ha d’avaluar positivament encara que no coincideixi amb
+        la resolució donada a la pauta de correcció.
+    7. Un o més errors d’unitats o no posar-les (resultats intermedis i finals) en un problema es
+        penalitzaran amb 0,25 punts en aquest problema.
+    8. Cal resoldre els exercicis fins al final i no es poden deixar indicades les operacions.
+    9. Cal fer la substitució numèrica en les expressions que s’utilitzen per resoldre les
+        preguntes.
+    10. Un o més resultats amb un nombre molt elevat de xifres significatives (6 xifres
+        significatives) o amb només una xifra significativa es penalitzarà amb 0,1 p. en aquest
+        problema.
+                                                                              Pàgina 2 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 1, opció 1
+Trobar l’expressió del període orbital
+0,75 p Segons la llei de la gravitació universal, el mòdul de la força sobre el satèl·lit a causa
+de l’atracció de la Terra és:
+                                                 𝑚𝑠 𝑀𝑇
+                                         𝐹=𝐺
+                                                    𝑟2
+La segona llei de Newton estableix que: 𝐹⃗ = 𝑚𝑠 𝑎⃗
+D'altra banda, considerant que el nanosatèl·lit descriu un moviment circular uniforme al
+                                                                            𝑣2
+voltant de la Terra, la seva acceleració és l’acceleració centrípeta: 𝑎 = 𝑟 = 𝜔2 𝑟.
+Com que sobre el nanosatèl·lit només actua la força de la gravetat:
+                                 𝑚𝑠 𝑀𝑇                        𝑀𝑇
+                              𝐺     2
+                                        = 𝑚𝑠 𝑣 2 /𝑟 ⇒ 𝑣 2 = 𝐺
+                                  𝑟                            𝑟
+El període orbital està relacionat amb la velocitat mitjançant:
+                                                 2π𝑟
+                                           𝑇=
+                                                  𝑣
+Substituint l'expressió de la velocitat obtenim:
+                                           𝑟        𝑟3
+                                  𝑇 = 2𝜋𝑟√    = 2𝜋√
+                                          𝐺𝑀𝑇      𝐺𝑀𝑇
+0,5 p El radi 𝑟 = 𝑅𝑇 + ℎ = (6370 + 500) km = 6,87 · 106 m.
+Utilitzant l’expressió obtenim el valor del període orbital per al nanosatèl·lit:
+                                         (6,87×106 )3
+                          𝑇 = 2𝜋√(6,67×10−11 )(5,98×1024 ) = 5,66 · 103 s
+b)
+0,5 p L'energia potencial gravitatòria d'un cos de massa 𝑚 a una distància 𝑟 del centre de
+la Terra és:
+                                                𝑚𝑠 𝑀𝑇
+                                    𝑈(𝑟) = −𝐺
+                                                  𝑟
+L'increment d'energia potencial en passar de la superfície terrestre a l'òrbita és:
+                                                           1 1
+                       Δ𝑈 = 𝑈(𝑟) − 𝑈(𝑅𝑇 ) = −𝐺𝑚𝑠 𝑀𝑇 ( − )
+                                                           𝑟 𝑅𝑇
+Radi: 𝑟 = 6,37 · 10 + 5,0 · 10 = 6,87 · 10 m
+                   6          5            6
+
+                                                                     1              1
+    Δ𝑈 = 𝑈(𝑟) − 𝑈(𝑅𝑇 ) = −6,67 × 10−11 · 11,1 · 5,98 × 1024 (               −         )
+                                                                6,87 · 106 6,37 · 106
+                   = 5,06 × 107 J
+0,5 p L’energia mecànica és suma de l’energia cinètica i potencial: 𝐸𝑚 = 𝐸𝑐 + 𝑈.
+                          𝑀𝑇
+La velocitat és: 𝑣 = √𝐺    𝑟
+                             = 7,62 × 103 m/s
+                             1
+L’energia cinètica és: 𝐸𝑐 = 𝑚𝑠 𝑣 2 = 3,22 × 108 J
+                             2
+                                  𝑚 𝑀
+I l’energia potencial és: 𝑈 = −𝐺 𝑠𝑟 𝑇 = −6,44 × 108 J
+I l’energia mecànica per al satèl·lit: 𝐸𝑚 = 𝐸𝑐 + 𝑈 = −3,22 × 108 J
+                                                                 1 𝑚𝑠 𝑀𝑇
+Alternativament, es pot calcular directament com: 𝐸𝑚 = −𝐺 2         𝑟
+                                                                         = −3,22 × 108 J
+0,25 p El signe negatiu de l’energia mecànica indica que el nanosatèl·lit segueix una òrbita
+tancada (o lligada) al voltant de la Terra.
+                                                                              Pàgina 3 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 1, opció 2
+a)
+0,25 p Cal dibuixar una el·lipse amb el Sol en un dels focus. El periheli i l’afeli estan
+a l’el·lipse, sobre l’eix major; l’afeli se situa al punt més allunyat i el periheli, al punt
+més proper:
+
+
+
+
+0,25 p El semieix major 𝑎 es calcula a partir de les distàncies al periheli i a l’afeli:
+                       𝑟𝑝 + 𝑟𝑎 0,575 + 35,3
+                  𝑎=          =             = 17,94 ua =2,69 × 1012 m
+                          2         2
+0,5 p La tercera llei de Kepler estableix que el quadrat del període orbital és
+proporcional al cub del semieix major de la seva òrbita. La constant de
+proporcionalitat és:
+                       (2𝜋)2
+                             = 2,97 × 10−19 s2 m−3 = 1,00 anys 2 ua−3
+                       𝐺𝑀Sol
+Es considerarà correcte tant si l’estudiant calcula la constant com si dona
+directament el seu valor.
+Llavors el període és:
+                 (2𝜋)2 3
+             𝑇=√      𝑎 = √2,97 × 10−19 · (2,69 × 1012 )3 = 2,41 × 109 s
+                𝐺𝑀Sol
+o
+               𝑇 = √𝑎3 = √(17,94)3 = 76,0 anys
+0,25 p L’Edmon Halley va néixer el 1656, per tant, va poder veure el cometa per
+primer cop l’any 1682. La següent aparició del cometa Halley va tenir lloc l’any 1758,
+16 anys després de la defunció d’Edmond Halley, per tant, només va poder observar
+el cometa una vegada, l’any 1682.
+
+b)
+0,75 p La velocitat serà màxima al punt més proper al Sol, és a dir, al periheli.
+Aquesta conclusió es pot justificar de dues maneres diferents, qualsevol d’elles és
+vàlida:
+    • Segona llei de Kepler. La segona llei de Kepler estableix que un segment
+        rectilini que uneix el planeta i el Sol escombra àrees iguals en temps iguals.
+        Per tant, per escombrar la mateixa àrea quan està al punt més proper, cal que
+        recorri una distància més gran per mantenir l’àrea constant.
+                                                                              Pàgina 4 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+    •   Conservació de l’energia mecànica. L’energia mecànica s’expressa com 𝐸𝑚 =
+        1          𝑚 𝑀
+          𝑚 𝑣 2 − 𝐺 𝐻 𝑟 𝑆𝑜𝑙 .
+        2 𝐻
+                                Com que l’energia mecànica és constant, la velocitat serà
+                                     𝑚𝐻 𝑀𝑆𝑜𝑙
+        màxima quan el terme 𝐺               sigui màxim, és a dir, quan la distància 𝑟 sigui
+                                        𝑟
+        mínima.
+Per altra banda, és parcialment correcte:
+    • Conservació del moment angular. El mòdul del moment angular és
+                                       𝐿 = 𝑚 𝑟 𝑣 𝑠𝑖𝑛𝜃
+        on 𝜃 és l’angle que formen 𝑟⃗ i 𝑣⃗. Com el moment angular és constant, 𝑣 𝑠𝑖𝑛𝜃 serà
+        màxim quan la distància 𝑟 sigui mínima. Aquest argument és parcialment correcte
+        atès que al periheli 𝑠𝑖𝑛𝜃 és màxim per tant no podem garantir que la velocitat sigui
+        màxima. En aquest cas es valorarà com 0,5 p.
+
+0,5 p Com al periheli i a l’afeli 𝑟⃗ i 𝑣⃗ son perpendiculars, 𝜃 = 𝜋/2 i 𝑠𝑖𝑛𝜃 = 1.
+Per tant, si imposem la conservacio del moment angular entre el periheli i l’afeli tenim:
+                                            𝑟𝐴       35,3
+              𝑚𝐻 𝑟𝑃 𝑣𝑃 = 𝑚𝐻 𝑟𝐴 𝑣𝐴 ⇒ 𝑣𝑃 = 𝑣𝐴 = 896           = 5,5 × 104 m/s.
+                                           𝑟𝑃        0,575
+Nota per als correctors: no es penalitzarà el fet que l’estudiant utilitzi directament
+l’expressió 𝐿 = 𝑚 𝑟 𝑣 sense justificar-la.
+
+Alternativament, es pot plantejar la conservacio de l’energia mecanica:
+
+                           1            𝑚𝐻 𝑀𝑆𝑜𝑙 1              𝑚𝐻 𝑀𝑆𝑜𝑙
+                             𝑚𝐻 𝑣𝐴2 − 𝐺          = 𝑚𝐻 𝑣𝑃2 − 𝐺
+                           2                𝑟𝐴    2              𝑟𝑃
+Si simplifiquem la massa del cometa tenim:
+                                  1 2        𝑀𝑆𝑜𝑙 1 2     𝑀𝑆𝑜𝑙
+                                     𝑣𝐴 − 𝐺      = 𝑣𝑃 − 𝐺
+                                  2           𝑟𝐴  2         𝑟𝑃
+I si aïllem la velocitat al periheli:
+                       1  1            2 × 6,67 × 10−11 × 1,99 × 1030 1       1
+𝑣𝑃 = √𝑣𝐴2 + 2𝐺𝑀𝑆𝑜𝑙 (     − ) = √8962 +                    11
+                                                                     (     −      )
+                       𝑟𝑃 𝑟𝐴                     1,50 × 10             35,3 0,575
+                = 5,5 × 104 m/s
+                                                                              Pàgina 5 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 2
+a)
+              ∆𝑉 70.000
+0,5 p |𝐸⃗⃗ | = =
+               𝑑
+                        = 3,5 × 106 V/m = 3,5 × 106 N/C
+                      0,02
+0,25 p |𝐹⃗ | = 𝑒𝐸 = 1,602 × 10−19 × 3,5 × 106 = 5,61 × 10−13 N
+
+0,5 p Cal dibuixar correctament les línies de camp, perpendiculars a les plaques, dirigides
+cap el càtode i equidistants atès que el camp és uniforme. Si el sentit és incorrecte, cal restar
+0,2 punts; si no es dibuixen equidistants o simplement es representa el camp amb un únic
+vector enlloc de línies de camp, cal restar 0,2 punts.
+Com que la càrrega de l’electró és negativa, el sentit d’𝐸⃗⃗ és l’oposat del de la força 𝐹⃗ . Si no és
+representa correctament 𝐹⃗ , cal restar 0,1 punts.
+
+
+
+
+b)
+0,75 p Es poden abordar dos plantejaments diferents: un basat en les energies i un altre
+en les forces.
+Per energies: segons el teorema de les forces vives, la variació d’energia cinètica és igual
+al treball del camp elèctric:
+    ∆𝐸𝐶 = 𝑊𝑒 = −∆𝑈 = −𝑞∆𝑉 = |𝑒|∆𝑉 = 1,602 × 10−19 × 70.000 = 1,12 × 10−14 J
+                1                      2∙1,12×10−14
+        ∆𝐸𝐶 = 2 𝑚𝑣 2 − 0 ⟹ 𝑣 = √ 9,11×10−31 = 1,57 × 108 m/s
+
+
+Per forces: segons la segona llei de Newton.
+                              𝐹 5,61 × 10−13
+                          𝑎= =                  = 6,15 × 1017 m/s2
+                             𝑚 9,11 × 10−31
+      𝑣 2 − 0 = 2 · 𝑎 · 𝑑 ⇒ 𝑣 = √2 · 𝑎 · 𝑑 = √2 · 6,15 × 1017 · 0,02 = 1,57 × 108 m/s
+
+0,25 p L’energia del fotó és:
+                               𝑐              −34
+                                                  3,00 × 108
+                 𝐸𝑓 = ℎ𝑓 = ℎ = 6,63 × 10                      = 1,99 × 10−16 J
+                               𝜆                  1,00 × 10−9
+0,25 p Per conservació de l’energia, podem calcular l’energia cinètica després del xoc:
+        𝐸𝐶,𝑖 = 𝐸𝐶,𝑓 + 𝐸𝑓 ⟹ 𝐸𝐶,𝑓 = 1,121 × 10−14 J − 1,99 × 10−16 J = 1,10 × 10−14 J
+I la velocitat de l’electró després del xoc és:
+                                   2 ∙ 1,101 × 10−14
+                             𝑣𝑓 = √                  = 1,56 × 108 m/s
+                                     9,11 × 10−31
+                                                                              Pàgina 6 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 3
+a)
+Primera opció:
+      0,5 p Equació del MHS:
+                                       𝑦(𝑡) = 𝐴 sin(𝜔𝑡 + 𝜑0 )
+       Paràmetres:𝜔 = 2𝜋𝑓 = 300𝜋 rad/s, 𝑦0 = 𝑦(𝑡 = 0) = 0 m.
+                            0 = 𝐴 𝑠𝑖𝑛(𝜑0 ) ⇒ 𝜑0 = 𝐴𝑟𝑐𝑆𝑖𝑛(0) = 0 o 𝜋 rad.
+       Finalment l’equació del moviment és:
+                 𝑦(𝑡) = 2,0 × 10−3 𝑠𝑖𝑛(300𝜋𝑡), y en m i t en s.
+Una fase inicial de 𝜋 rad també és correcte atès que no s’indica el sentit de la velocitat inicial.
+Alternativament:
+       0,5 p Equació del MHS:
+                                       𝑦(𝑡) = 𝐴 𝑐𝑜𝑠(𝜔𝑡 + 𝜑0 )
+       Paràmetres:𝜔 = 2𝜋𝑓 = 300𝜋 rad/s, 𝑦0 = 𝑦(𝑡 = 0) = 0 m.
+                                                               𝜋          𝜋
+                        0 = 𝐴 𝑐𝑜𝑠(𝜑0 ) ⇒ 𝜑0 = 𝐴𝑟𝑐𝐶𝑜𝑠(0) = rad o − rad.
+                                                               2           2
+       Finalment, l’equació del moviment és:
+                                                    𝜋
+                𝑦(𝑡) = 2,0 × 10−3 𝑐𝑜𝑠 (300𝜋𝑡 − ), y en m i t en s.
+                                                    2
+Una fase inicial de 𝜋/2 rad també és correcta, atès que no s’indica el sentit de la velocitat
+inicial.
+
+Si no s’analitza la condició de posició inicial nul·la, cal restar 0,25 p.
+
+                                    𝑣       3200
+0,25 p La longitud d’ona és: 𝜆 = 𝑓 = 150 = 21,3 m
+                                                   2𝜋
+0,5 p El nombre d’ona s’expressa com: 𝑘 = 𝜆 = 0,294 m−1
+L’equació d’ona s’expressa com: 𝑦(𝑥, 𝑡) = 𝐴 ∙ 𝑠𝑖𝑛[𝑘𝑥 − 𝜔𝑡 + 𝜑0 ]
+
+                                                     0 rad
+Condició inicial: 𝑦(0,0) = 0 ⟹ 𝑠𝑖𝑛[𝜑0 ] = 0 ⟹ 𝜑0 = {
+                                                    𝜋 rad
+       𝑦(𝑥, 𝑡) = 2,0 × 10−3 ∙ 𝑠𝑖𝑛[0,294𝑥 − 300𝜋𝑡] amb y i x en m i t en s.
+                                                                                   𝜋
+També es pot expressar com: 𝑦(𝑥, 𝑡) = 2,0 × 10−3 ∙ 𝑐𝑜𝑠 [0,294𝑥 − 300𝜋𝑡 − 2 ] amb y i x en
+m i t en s.
+Si no s’analitza la condició de posició inicial nul·la, no penalitzem la nota, atès que ja s’ha
+tingut en compte al MHS.
+Si el terme de fase és 𝑘𝑥 + 𝜔𝑡, es penalitzarà amb 0,25 punts.
+b)
+0,5 p Si el so es propaga de forma isotròpica amb un el front d’ona és esfèric, la intensitat
+a una distància 𝑟 es calcula com:
+                                 𝑃     10−3
+                           𝐼=        =        = 8,84 × 10−6 W/m2
+                               4𝜋𝑟 2 4𝜋32
+0,75 p El nivell d'intensitat sonora es defineix com:
+                                        𝐼          8,84 ×10−6
+                          𝛽 = 10 log 𝐼 = 10 log       10−12
+                                                              = 69,5 dB
+                                        0
+                                                                              Pàgina 7 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 4, opció 1
+a)
+0,75 p Es tracta d’una desintegració 𝛽 − , per tant, s’emeten un electró i un antineutrí.
+A més, la reacció ha de complir la conservació del nombre màssic nuclear i, a més, ha de
+conservar la càrrega; amb aquestes premisses, la reacció de desintegració serà:
+                                   137      𝑥         0
+                                    55Cs → 𝑦Ba + −1𝑒 + 𝜈̅𝑒
+Per una banda, es compleix la conservació del nombre màssic:
+                                137 = 𝑥 + 0 ⇒ 𝑥 = 137
+I per a la conservació de càrrega:
+                                  55 = 𝑦 − 1 ⇒ 𝑦 = 56
+
+Per tant, la reacció completa és:
+                               137       137        0
+                                55Cs → 56Ba + −1𝑒 + 𝜈̅𝑒
+Alternativament, es pot escriure −10𝛽 o 𝑒 − enlloc de −10𝑒.
+Si no s’indica l’antineutrí, cal restar 0,25 p.
+No cal que l’estudiant detalli les operacions relacionades amb la conservació de la càrrega i
+del nombre màssic, són operacions molt senzilles que es poden fer de cap; per tant, només
+es valorarà si ha estat capaç de deduir correctament els diferents termes de la reacció.
+
+0,25 p El nombre de nuclis al cap d’un temps ve donada per:
+                                         𝑁 = 𝑁0 𝑒 −𝜆𝑡
+El coeficient de desintegració 𝜆 s’obté del temps de semidesintegració:
+        𝑁                                 𝑙𝑛2
+𝑁(𝑡) = 20 = 𝑁0 𝑒 −𝜆𝑡1/2 i per tant, 𝑡1/2 = 𝜆 .
+I obtenim:
+                       𝑡1/2 = 30,17 × 365 × 24 × 3600 = 9,51 × 108 s
+                                𝑙𝑛2        𝑙𝑛2
+                          𝜆=         =             = 7,28 × 10−10 s −1
+                                𝑡1/2 9,51 × 108
+0,25 p Per tant, l’activitat al cap de 40 anys és:
+                                   𝑡 = 40 anys = 1,26 × 109 s
+                                                          −10       9
+              𝑁(40 anys) = 100% 𝑒 −𝜆𝑡 = 100% 𝑒 −7,28×10 ×1,26×10 = 39,9 %
+No cal que l’estudiant faci els càlculs dins el SI; per exemple, si ha operat amb anys també
+es considerarà correcte.
+b)
+0,5 p L’activitat al cap d’un temps ve donada per:
+                                          𝐴 = 𝐴0 𝑒 −𝜆𝑡
+Si aïllem el temps:
+                𝐴                    𝐴                    1    𝐴      1    𝐴0
+                    = 𝑒 −𝜆𝑡 ⟹ 𝑙𝑛 ( ) = −𝜆𝑡 ⟹ 𝑡 = − 𝑙𝑛 ( ) = 𝑙𝑛 ( )
+                𝐴0                  𝐴0                    𝜆   𝐴0      𝜆     𝐴
+0,5 p I si substituïm:
+              1   𝐴0              1           6,00 × 105
+         𝑡 = 𝑙𝑛 ( ) =                    𝑙𝑛 (            ) = 3,82 × 109 s = 121 anys
+              𝜆     𝐴     7,28 × 10−10        3,70 × 104
+0,25 p Per tant, hauran de passar aproximadament 121 anys des de l'accident perquè la
+zona sigui habitable, és a dir, fins aproximadament el 2107.
+                                                                              Pàgina 8 de 8
+                                                                                     Física
+Proves d’accés a la Universitat 2026, convocatòria ordinària. Criteri específic d'avaluació
+
+EXERCICI 4, opció 2
+a)
+0,25 p L'energia del fotó incident és:
+                           𝑐                 3,00 × 108
+          𝐸𝑓𝑜𝑡𝑜𝑛𝑠 = ℎ𝑓 = ℎ = 6,63 · 10−34                 = 4,32 × 10−19 J = 2,70 eV
+                           𝜆                 460 × 10−9
+0,5 p L’energia cinètica màxima que poden adquirir els electrons emesos per efecte
+fotoelèctric depèn de l’energia dels fotons 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 i la funció de treball del metall, 𝑊, de la
+manera següent:
+                                    E𝐶,𝑚à𝑥 = 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑊
+El potencial de frenada és el potencial elèctric mínim que cal aplicar entre el metall emissor
+i l'ànode receptor per aturar completament els electrons emesos. Això impedeix que els
+electrons arribin a l'ànode. Per tant, el potencial de frenada, 𝑉𝑓 , es relaciona amb l’energia
+cinètica màxima dels electrons:
+                                         E𝐶,𝑚à𝑥 = 𝑒𝑉𝑓
+Combinant les dues expressions anteriors tenim:
+                         𝑒𝑉𝑓 = 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑊 ⟹ 𝑊 = 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑒𝑉𝑓
+I si substituïm:
+    𝑊 = 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑒𝑉𝑓 = 4,32 × 10−19 − 0,5 × 1,602 × 10−19 = 3,52 × 10−19 J = 2,20 eV
+No és necessari que l’estudiant doni el resultat en J i eV. També es poden fer els càlculs
+directament en eV.
+
+0,5 p L’energia cinètica màxima és:
+                             E𝐶,𝑚à𝑥 = 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑊 = 8,01 · 10−20 J
+I la velocitat d’aquests electrons és:
+                      2 𝐸𝐶,𝑚à𝑥    2 × 8,01 × 10−20
+                  𝑣= √         = √                 = 4,19 × 105 m/s
+                         𝑚𝑒         9,11 × 10−31
+b)
+0,25 p A partir de les expressions anteriors, podem calcular el potencial de frenada com:
+                                            𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑊
+                                      𝑉𝑓 =
+                                                  𝑒
+0,5 p Per a la llum verda:
+                           𝑐                   3,00 × 108
+          𝐸𝑓𝑜𝑡𝑜𝑛𝑠 = ℎ𝑓 = ℎ = 6,63 · 10−34                  = 3,82 · 10−19 J = 2,39 eV
+                           𝜆                  520 × 10−9
+                      𝐸𝑓𝑜𝑡𝑜𝑛𝑠 − 𝑊 3,82 × 10−19 − 3,52 × 10−19
+                 𝑉𝑓 =              =                                  = 0,19 V
+                            𝑒                  1,602 × 10−19
+0,5 p Per a la llum vermella:
+                           𝑐                   3,00 × 108
+          𝐸𝑓𝑜𝑡𝑜𝑛𝑠 = ℎ𝑓 = ℎ = 6,63 · 10−34                  = 3,06 · 10−19 J = 1,91 eV
+                           𝜆                  650 × 10−9
+Tenim que 𝐸𝑓𝑜𝑡𝑜𝑛𝑠 < 𝑊; els fotons no tenen prou energia per arrencar electrons del càtode.
+Per tant, no es produeix efecte fotoelèctric i no cal aplicar cap potencial de frenada.
+

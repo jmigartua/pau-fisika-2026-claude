@@ -8,17 +8,18 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 
 | Path | Content |
 |---|---|
-| `index.qmd`, `chapters/01…10-*.qmd` | The report: overview; data hunt; Euskadi series; Spain 2026; distributions; subjects/sittings/participation/groups; interpretation & 2027; literature; sources; log; methods & reproduction |
+| `index.qmd`, `chapters/01…11-*.qmd` | The report: overview; data hunt; Euskadi series; Spain 2026; distributions; subjects/sittings/participation/groups; interpretation & 2027; literature; sources; log; methods & reproduction; the papers themselves (exam-content coding, day 2) |
 | `_quarto.yml`, `styles.scss`, `styles-dark.scss`, `assets/`, `references.bib`, `apa.csl` | Site configuration, theme, bibliography (45 entries) |
 | `_site/` | Rendered site (Quarto 1.7.32) |
 | `data/regional_fisica_found.csv` | **The consolidated regional Física dataset** located in this study (80 rows, with denominator, source type and URL) |
 | `data/found_clm_powerbi.csv`, `data/found_canarias_ull_powerbi.csv`, `data/found_canarias_ull_history.csv`, `data/found_canarias_ulpgc_powerbi.csv` | Transcriptions of the UCLM, ULL and ULPGC dashboards (Física 2021–2026, histograms, zeros, tens, means by sex) |
+| `data/exam_coding_2025_2026.csv`, `exam_structure_2025_2026.csv`, `exam_change_vs_grade.csv`, `exam_correlations.json` | Hand coding of every exercise of the 2025 and 2026 ordinary papers of nine communities on the EHU competency criteria, paper-level measures and their relation to the grade change (day 2) |
 | `data/ministry_fisica_panel.csv`, `ministry_fisica_distr.csv`, `ministry_fisica_ord_ccaa.csv` | Ministry EPAU Física panel 2015–2025, all CCAA, parsed here from the PC-Axis cubes |
 | `data/original/` | Copies of the July package CSVs (validation targets) |
 | `data/analysis/` | All computed outputs; `results.json` holds every scalar quoted in the text |
 | `data/tables/` | Markdown tables included by the chapters (generated) |
-| `sources/raw/` | 37 downloaded documents (PDF/XLSX/HTML) · `sources/ministry/` 3 cubes · `sources/text/` extractions · `sources/agent_extractions/` the search agents' raw CSVs · `sources/source_registry.csv` |
-| `scripts/` | `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py` |
+| `sources/raw/` | 37 downloaded documents (PDF/XLSX/HTML) · `sources/exams/` the 2025 and 2026 Física papers and corrector documents of nine communities (day 2) · `sources/ministry/` 3 cubes · `sources/text/` extractions · `sources/agent_extractions/` the search agents' raw CSVs · `sources/source_registry.csv` |
+| `scripts/` | `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py` |
 | `plots/` | Ten figures, PNG (200 dpi) and SVG |
 | `logs/WORK_LOG.md`, `logs/SEARCH_REPORTS.md` | Chronological log; the five search agents' full reports |
 
@@ -26,7 +27,7 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 
 ```bash
 python3 scripts/01_build_ministry_panel.py && python3 scripts/02_analysis.py && python3 scripts/03_plots.py \
-  && python3 scripts/04_tables.py && python3 scripts/05_registry.py && quarto render
+  && python3 scripts/04_tables.py && python3 scripts/07_exam_coding.py && python3 scripts/05_registry.py && quarto render
 ```
 
 Python ≥ 3.10 with numpy, pandas, scipy, matplotlib; Quarto ≥ 1.4; no Jupyter needed (static includes).

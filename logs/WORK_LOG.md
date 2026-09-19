@@ -32,6 +32,7 @@ Study the project in depth; since it started (6 July 2026) new data have been pu
 | 17:00 | Corrections after self-review: 15/17 → 14/17 communities down in 2025; the "parallel shift" claim in Chapter 4 was wrong and was replaced by the correct statement (three moments cannot distinguish a J-shape from a floor-compressed bell; they do exclude a subgroup effect); presentation-rate range 64–76 % | — |
 | 17:20 | Copied the folder to the user's computer; rendered there as well; project index written | — |
 | 18:05 | User (on the phone) asks to continue unattended. Watch-list poll (`scripts/06_poll_watchlist.py`): nothing new. Browser searches on the open leads: UJI study identified (Sánchez-Tarazaga & Gimeno Rovira 2026, DOI 10.64628/AAO.atrdhyeha; País Vasco rated among the most competency-oriented PAU systems 2015–2025) and folded into Chapters 6–7; national coverage of the Basque Física figures corrected in Chapter 7; Parliament search still not drivable; no 2026 Física figure for the eight missing communities; EHU July Física still unpublished. Blocked sites listed in Chapter 9. Site re-rendered and re-copied to the Mac | — |
+| 19 Sep 07:00–09:30 | **Day 2.** Exam papers 2025/2026 for nine communities collected (`sources/exams/`, 40 files); CLM read in the browser and transcribed; Valencia 2025 and Extremadura 2026 recovered from FiQuiPedia's GitLab archive; every item coded (`scripts/07_exam_coding.py`, 146 rows); figures 11–12; Chapter 11 written; Chapters 1, 6, 9, index, registry, README updated; site re-rendered and copied to the Mac | Rising communities did not move towards the competency model; Euskadi's paper changed genre on three axes; Canarias cut optionality and fell |
 
 ## Decisions
 
@@ -48,5 +49,8 @@ Study the project in depth; since it started (6 July 2026) new data have been pu
 - Chapter 5 presentation-rate range 2017–2024 corrected from 68–76 % to 64–76 %.
 
 ## Open items (see Chapter 9 watch-list for URLs and dates)
+
+Item-level marks of the 2026 Basque Física scripts (by sub-task, exercise and option); comparison of the 2024 and earlier Basque papers on the same coding; second coder for `data/exam_coding_2025_2026.csv`; CLM 2026 PDF file (only transcribed); Cataluña official 2026 criteria file (404).
+
 
 EHU July 2026 Física; EHU tribunal-level Física; Física revision statistics; Física by sex/language/territory 2023–2026; Basque *Resultados escolares 2025-26*; Cataluña Recull 2026; Canarias PAU-2027 minutes; Andalucía ponencias 2026-27; Murcia Informe 2026; Aragón/Navarra/Cantabria 2026 files; Galicia working-group report; Ministry EPAU 2026 (June 2027); Basque Parliament initiatives (manual BOPV check).

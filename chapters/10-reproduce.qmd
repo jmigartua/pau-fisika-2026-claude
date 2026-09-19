@@ -68,6 +68,7 @@ python3 scripts/01_build_ministry_panel.py   # parses the cubes, validates again
 python3 scripts/02_analysis.py               # all computations → data/analysis/
 python3 scripts/03_plots.py                  # ten figures → plots/
 python3 scripts/04_tables.py                 # Markdown tables → data/tables/
+python3 scripts/07_exam_coding.py            # exam coding, figs 11-12, exam tables (day 2)
 python3 scripts/05_registry.py               # source registry
 quarto render                                # → _site/
 ```

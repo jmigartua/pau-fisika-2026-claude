@@ -1,0 +1,667 @@
+             UNIVERSIDADES PÚBLICAS DE LA COMUNIDAD DE MADRID
+                     PRUEBA DE ACCESO A LA UNIVERSIDAD
+                               Curso 2025-2026
+                              MATERIA: FÍSICA
+ INSTRUCCIONES GENERALES Y CALIFICACIÓN
+ Después de leer atentamente todas las preguntas, responda a cuatro preguntas siguiendo las indicaciones
+ dadas al inicio de cada bloque.
+ CALIFICACIÓN: Cada pregunta se valorará sobre 2,5 puntos y cada apartado se calificará según la puntua-
+ ción indicada en el mismo.
+ TIEMPO: 90 minutos.
+
+Bloque Campo electromagnético (Esta pregunta no tiene opcionalidad)
+Pregunta 1.- Se han colocado dos placas paralelas
+perpendiculares a la dirección x. Una de ellas se ha      0
+cargado con carga positiva y la otra con igual carga,
+pero de signo negativo. Mediante una sonda se ha me-     -5
+
+
+
+
+                                                                     Potencial (V)
+dido el potencial electrostático en la región entre las
+                                                        -10
+placas 0 ≤ x ≤ 10 m. Los valores del potencial se
+representan en la figura. A partir de ella se ha deter- -15
+minado que el potencial electrostático en el intervalo,
+0 ≤ x ≤ 10 m, viene dado por la expresión:              -20
+
+                                                                                     -25
+                         V (x) = −3x
+                                                                                     -30
+donde x está expresado en metros y V en voltios. La                                     0   1   2   3   4   5   6   7   8   9 10
+intensidad del campo eléctrico está relacionada con el                                                      x (m)
+potencial, para el caso unidimensional, mediante la ex-
+presión:
+                                                                  dV
+                                                      E(x) = −
+                                                                  dx
+   a) (1 punto) Calcule el campo eléctrico en el intervalo 0 ≤ x ≤ 10 m.
+   b) (0,5 puntos) Determine la aceleración que tendría una carga de 10 nC y masa 6 · 10−10 kg que se
+      situara en el punto x = 5 m.
+   c) (1 puntos) Si la carga de 10 nC y masa 6 · 10−10 kg se deja en reposo en el origen de coordenadas
+      determine su velocidad en el punto x = 5 m.
+
+
+
+Bloque Campo gravitatorio (Elija una entre las preguntas 2.A. y 2.B.)
+
+Pregunta 2.A.- Se ha situado un satélite de comunicaciones de masa 1500 kg en una órbita circular
+alrededor de la Tierra. La energía mecánica del satélite en su órbita es −4,51 · 1010 J.
+
+   a) (1 punto) Calcule el radio de la órbita y la velocidad del satélite en ella.
+   b) (0,8 puntos) ¿Cuántas vueltas alrededor de la Tierra da el satélite en un día?
+   c) (0,7 puntos) Determine la velocidad de escape del satélite desde su órbita.
+Datos: Constante de la Gravitación Universal, G = 6,67 · 10−11 N m2 kg−2 ; Masa de la Tierra, MT = 5,97 · 1024 kg.
+
+Pregunta 2.B.- Dos masas puntuales, m1 = 2 kg y m2 = 4 kg están situadas en el origen de coordena-
+das y en el punto (4, 0) m del plano xy, respectivamente. Calcule:
+
+   a) (1,5 puntos) El punto del eje x entre ambas masas en el que el campo gravitatorio creado por las
+      dos masas es nulo.
+   b) (1 punto) El campo gravitatorio total debido a ambas masas en el punto (0, 2) m.
+Dato: Constante de la Gravitación Universal, G = 6,67 · 10−11 N m2 kg−2 .
+Bloque Vibraciones y Ondas (Elija una entre las preguntas 3.A. y 3.B.)
+
+Pregunta 3.A.- La ecuación de una onda transversal que se propaga a lo largo de la dirección positiva
+del eje x viene dada por la expresión y(x, t) = A sen (ωt − kx + ϕ). En la figura (a) se representa el
+desplazamiento de los diferentes puntos del medio en el instante t = 0. En la figura (b) se representa la
+velocidad de oscilación del punto x = 0 del medio en función del tiempo. Determine:
+
+         a) (1 punto) La amplitud de la onda A y el número de ondas k.
+         b) (1 punto) La fase de la onda ϕ y el valor máximo de la velocidad de oscilación.
+         c) (0,5 puntos) La velocidad de propagación de la onda.
+
+                                     (a )      t = 0                                                        (b )      x = 0
+                         5
+                         4
+                         3                                                                 0 .0 5
+
+
+
+
+                                                                       )
+                                                                 - 1
+
+
+                                                                       s
+                         2
+ y (x ,0 ) (c m )
+
+
+
+
+                                                                       ( c m
+                         1
+                         0
+                                                                       )
+                                                                                           0 .0 0
+                                                                 t     ,
+                                                                       ( 0
+                    -1
+                                                                               n
+                                                                               c i ó
+                    -2                                                         s c i l a
+
+
+
+
+                    -3
+                                                                               o
+
+
+
+
+                                                                                  -0 .0 5
+                                                                 v
+
+
+                    -4
+                    -5
+                             0   3            6        9   1 2                                      0   3                     6           9
+                                            x (m )                                                                 t (s )
+
+
+                                                                                                                                    Enunciado ondas 3B
+Pregunta 3.B.- Un rayo de luz incide desde el aire sobre una lámina de es-
+                                                                                                                                                 (1)
+pesor e = 3 cm, con un ángulo de incidencia de 48◦ . El índice de refracción                                                                             (2)
+de la lámina es n = 1, 7. El rayo, tras sufrir refracción en la cara superior,                                                    Aire             x
+se refleja en la cara inferior de la lámina y vuelve a salir al aire, tal y como
+se muestra en la figura. Determine:
+                                                                                                                                   e
+                                                                                          Aire
+         a) (0,5 puntos) El ángulo de refracción en la cara superior.
+         b) (1 punto) El tiempo que tarda el rayo refractado en llegar a la cara inferior de la lámina.
+         c) (1 punto) La separación x entre los rayos (1) y (2).
+Datos: Velocidad de la luz en el vacío, c = 3 · 108 m s−1 ; Índice de refracción del aire, n = 1.
+
+
+
+Bloque Física relativista, cuántica, nuclear y de partículas (Elija una entre las preguntas 4.A. y 4.B.)
+
+
+Pregunta 4.A.- Cuando una lámina de plata se ilumina con luz de 150 nm se necesita un potencial de
+3,55 V para frenar los electrones emitidos. Sin embargo, si se usa una luz de 200 nm, el potencial para
+frenar los electrones es de 1,48 V. A partir de estos datos, determine:
+
+         a) (1,5 puntos) El valor de la constante de Planck.
+         b) (1 punto) El trabajo de extracción de los electrones de la lámina de plata en eV.
+Datos: Velocidad de la luz en el vacío, c = 3 · 108 m s−1 ; Valor absoluto de la carga del electrón, e = 1,6 · 10−19 C.
+
+Pregunta 4.B.- En el primer paso del proceso de desintegración, cada núcleo del isótopo 228 Ra se
+transmuta en un núcleo del isótopo 228 Ac y se emite una partícula β − . Si se tiene una muestra de 30 g
+de 228 Ra cuya actividad inicial es de 3,03 · 1014 Bq, determine:
+
+         a) (0,5 puntos) El número de partículas β − por segundo que emite inicialmente la muestra de 228 Ra.
+         b) (1 punto) La constante de desintegración y el periodo de semidesintegración.
+         c) (1 punto) La masa del isótopo 228 Ra que se habrá transformado en 228 Ac cuando hayan transcu-
+            rrido 10 años.
+Datos: Número de Avogadro, NA = 6,02 · 1023 mol−1 ; Masa atómica del isótopo 228 Ra, M = 228 u.
+                        CRITERIOS ESPECÍFICOS DE CORRECCIÓN
+                                       FÍSICA
+
+⋆ Las preguntas deben contestarse razonadamente, valorando en su resolución una adecuada es-
+  tructuración y el rigor en su desarrollo.
+
+⋆ Se valorará positivamente la inclusión de pasos detallados, así como la realización de diagramas,
+  dibujos y esquemas.
+
+⋆ En la corrección de las preguntas se tendrá en cuenta el proceso seguido en la resolución de las
+  mismas, valorándose positivamente la identificación de los principios y leyes físicas involucradas.
+
+⋆ Se valorará la destreza en la obtención de resultados numéricos y el uso correcto de las unidades
+  en el Sistema Internacional.
+
+⋆ Se evaluará la coherencia, la cohesión, la corrección gramatical, léxica y ortográfica de los textos
+  producidos, así como su presentación.
+
+⋆ Cada pregunta, debidamente justificada y razonada con la solución correcta, se calificará con un
+  máximo de 2,5 puntos.
+
+⋆ En las preguntas que consten de varios apartados, la calificación máxima será la misma para
+  cada uno de ellos (desglosada en múltiplos de 0,1 puntos).
+                                 SOLUCIONES - FÍSICA
+                            (Documento de trabajo orientativo)
+
+Pregunta 1.- Se han colocado dos placas paralelas
+perpendiculares a la dirección x. Una de ellas se ha                        0
+cargado con carga positiva y la otra con igual carga,
+pero de signo negativo. Mediante una sonda se ha me-                        -5
+
+
+
+
+                                                           Potencial (V)
+dido el potencial electrostático en la región entre las
+                                                                           -10
+placas 0 ≤ x ≤ 10 m. Los valores del potencial se
+representan en la figura. A partir de ella se ha deter-                    -15
+minado que el potencial electrostático en el intervalo,
+0 ≤ x ≤ 10 m, viene dado por la expresión:                                 -20
+
+                     V (x) = −3x                                           -25
+
+donde x está expresado en metros y V en voltios. La                        -30
+                                                                              0   1   2   3   4   5   6   7   8   9 10
+intensidad del campo eléctrico está relacionada con el                                            x (m)
+potencial, para el caso unidimensional, mediante la ex-
+presión:
+                                                          dV
+                                              E(x) = −
+                                                          dx
+  a) (1 punto) Calcule el campo eléctrico en el intervalo 0 ≤ x ≤ 10 m.
+  b) (0,5 puntos) Determine la aceleración que tendría una carga de 10 nC y masa 6 · 10−10 kg que se
+     situara en el punto x = 5 m.
+  c) (1 puntos) Si la carga de 10 nC y masa 6 · 10−10 kg se deja en reposo en el origen de coordenadas
+     determine su velocidad en el punto x = 5 m.
+
+Solución:
+
+  a) Determinamos el campo eléctrico a partir de la expresión dada en el enunciado. Por otro lado,
+     como todo sucede en una sola dimensión no es necesario escribir vectores.
+                                               dV    d(−3x)
+                                    E(x) = −      =−        = 3 V m−1
+                                               dx      dx
+     Por tanto, el campo eléctrico es:
+                                               E(x) = 3 V m−1
+     puesto que V estaba en voltios y x en metros.
+
+  b) Calculamos la aceleración que tendría un carga de 10 nC y masa 6 · 10−10 kg que se situara en el
+     punto x = 5 m. Sabemos que:
+                                                              qE
+                                          F = qE = ma =⇒ a =
+                                                              m
+     El campo eléctrico es uniforme en la zona entre las placas, tiene el mismo valor en todos los
+     puntos, y va en la dirección positiva, luego:
+                                              10 · 10−9 · 3
+                                         a=                 = 50 m s−2
+                                               6 · 10−10
+     Por tanto la aceleración en x = 5 m es a = 50 m s−2 .
+
+  c) Determinamos la velocidad que tiene la partícula en el punto x = 5 m. Como la fuerza eléctrica
+     es conservativa, la energía total se conserva. Podemos escribir:
+                                             1               1
+                               E(0) = E(x) =⇒ mv02 + qV (0) = mv 2 + qV
+                                             2               2
+     Como la velocidad en el origen es cero y el potencial electrostático en el origen también es cero:
+                                                                                     r
+                     1   2                          1   2             1    2            6qx
+                0 = mv + qV (x) =⇒ −qV (x) = mv =⇒ 3qx = mv =⇒ v =
+                     2                              2                 2                  m
+                                   r
+                                       6 · 10 · 10−9 · 5
+                              v=                         = 22,36 m s−1
+                                           6 · 10−10
+Por tanto, la velocidad en el punto x = 5 m es v = 22, 36 m s−1
+Pregunta 2.A.- Se ha situado un satélite de comunicaciones de masa 1500 kg en una órbita circular
+alrededor de la Tierra. La energía mecánica del satélite en su órbita es −4,51 · 1010 J.
+
+   a) (1 punto) Calcule el radio de la órbita y la velocidad del satélite en ella.
+   b) (0,8 puntos) ¿Cuántas vueltas alrededor de la Tierra da el satélite en un día?
+   c) (0,7 puntos) Determine la velocidad de escape del satélite desde su órbita.
+Datos: Constante de la Gravitación Universal, G = 6,67 · 10−11 N m2 kg−2 ; Masa de la Tierra, MT = 5,97 · 1024 kg.
+
+Solución:
+
+   a) El satélite se encuentra en una órbita circular, luego:
+
+                                                 GMT m   mv 2          GMT
+                                           F =      2
+                                                       =      =⇒ v 2 =
+                                                  r       r             r
+      Por otro lado, la energía mecánica total del satélite es:
+                                                             
+                            1       Gm MT       1 Gm MT           Gm MT    1 Gm MT
+                        E = mv 2 −           =                  −       =−
+                            2          r        2       r           r      2   r
+                                 Gm MT          6, 67 · 10−11 · 5, 97 · 1024 · 1500
+                    =⇒ r = −           =⇒ r = −                                     = 6,62 · 106 m
+                                  2E                    2 · (−4, 51 · 1010 )
+      La velocidad del satélite en su órbita será:
+                               r           s
+                                  GMT         6, 67 · 10−11 · 5, 97 · 1024
+                          v=            =                                  = 7754,6 m s−1
+                                    r                  6, 62 · 106
+
+      Por tanto, el radio de la órbita es 6,62 · 106 m y su velocidad es 7,75 · 103 m s−1
+
+   b) Calculamos el número de vueltas que da en un día (24 horas). Calculamos en primer lugar el
+      periodo:
+                                2πr    2π · 6, 62 · 106
+                           T =      =                   = 5365,456 s = 1,49 h
+                                 v         7754, 6
+      El número de vueltas que el satélite da en un día es:
+                                                    24    24
+                                              N=       =       = 16,10 vueltas
+                                                    T    1, 49
+
+      Luego el satélite da 16,10 vueltas alrededor de la Tierra en un día.
+
+   c) Calculamos la velocidad de escape del satélite desde su órbita. Debe cumplirse que su energía
+      mecánica debe ser cero, luego:
+                                                                                    r
+                            1      2   Gm MT                  2    2GMT               2GMT
+                       E = mv −                   = 0 =⇒ v =              =⇒ v =
+                            2               r                        r                   r
+                           s
+                              2 · 6, 67 · 10−11 · 5, 97 · 1024
+                      v=                                        = 10966, 62 = 1,1 · 104 m s−1
+                                        6, 62 · 10−6
+      Por tanto, la velocidad de escape desde su órbita es 1,1 · 104 m s−1
+Pregunta 2.B.- Dos masas puntuales, m1 = 2 kg y m2 = 4 kg están situadas en el origen de coordena-
+das y en el punto (4, 0) m del plano xy, respectivamente. Calcule:
+
+   a) (1,5 puntos) El punto del eje x entre ambas masas en el que el campo gravitatorio creado por las
+      dos masas es nulo.
+   b) (1 punto) El campo gravitatorio total debido a ambas masas en el punto (0, 2) m.
+Dato: Constante de la Gravitación Universal, G = 6,67 · 10−11 N m2 kg−2 .
+
+Solución:
+
+   a) Para hallar el punto en el que el campo gravitatorio es nulo, igualamos los campos generados por
+      cada masa:
+                                                              m1          m2
+                                 g1 (x, 0) = g2 (4 − x, 0) ⇒ G 2 = G
+                                                              x        (4 − x)2
+      Despejando:
+
+                  m2 x2 = m1 (4 − x)2 = m1 (16 − 8x + x2 ) ⇒ (m2 − m1 )x2 + 8m1 x − 16m1 = 0
+
+      Sustituyendo los valores:
+                                             Solucion 2B apartado a
+
+                                       2x2 + 16x − 32 = 0 ⇒ x = −9, 66 ó 1, 66 m
+
+      El punto está entre ambas masas, por lo que debe ser positivo; luego es x = 1,66 m.
+
+
+                                         y
+
+
+                                                            4m                    m2
+                                    m1
+                                                                                    x
+                                                      x                       (4,0)
+                                              Solucion 2B apartado b
+
+   b) Calculamos el campo gravitatorio debido a ambas masas en el punto (0, 2) m
+
+
+                                              y
+                                     (0,2)
+                                        g1                 q
+                                                      g2
+
+
+                                          m1
+                                                                   q         m2
+                                                                                    x
+                                                                            (4,0)
+Según el principio de superposición:
+
+                                              ⃗g (0, 2) = g⃗1 (0, 2) + g⃗2 (0, 2)
+
+Para la masa m1 , si tenemos en cuenta la figura:
+
+                                                                    Gm1 ⃗
+                                                   g⃗1 (0, 2) = −        j
+                                                                     r12
+
+Dado que r1 = 2 m
+
+                                             6, 67 · 10−11 · 2 ⃗
+                          g⃗1 (0, 2) = −                       j = −3, 34 · 10−11 ⃗j N kg−1
+                                                     22
+Para la masa m2 , si tenemos en cuenta la figura:
+
+                                                        Gm2        ⃗i − sen θ ⃗j
+                                                                                  
+                                         g⃗2 (0, 2) =         cos θ
+                                                         r22
+como:
+
+                                                   r22 = 22 + 42 = 20
+                                                           4      2
+                                                cos θ = √ = √
+                                                           20      5
+                                                           2      1
+                                                sen θ = √ = √                                                   (1)
+                                                           20      5
+Se cumple:
+
+                     4 · 6, 67 · 10−11
+                                                            
+                                              2     1                                                
+        g⃗2 (0, 2) =                         √ ⃗i − √ ⃗j         = 1, 19 · 10−11 ⃗i − 0, 60 · 10−11 ⃗j N kg−1
+                             20                5     5
+Por tanto:
+                                                                                                       
+⃗g (0, 2) = g⃗1 (0, 2)+ g⃗2 (0, 2) = −3, 34·10−11 ⃗j+1, 19·10−11 ⃗i−0, 60·10−11 ⃗j = 1, 19 ⃗i − 3, 94 ⃗j ·10−11
+                                                          
+                          ⇒ ⃗g (0, 2) = 1, 19 ⃗i − 3, 94 ⃗j · 10−11 N kg−1
+                                                                       
+Luego el campo gravitatorio en el punto (0, 2) m es 1, 19 ⃗i − 3, 94 ⃗j · 10−11 N kg−1
+Pregunta 3.A.- La ecuación de una onda transversal que se propaga a lo largo de la dirección positiva
+del eje x viene dada por la expresión y(x, t) = A sen (ωt − kx + ϕ). En la figura (a) se representa el
+desplazamiento de los diferentes puntos del medio en el instante t = 0. En la figura (b) se representa la
+velocidad de oscilación del punto x = 0 del medio en función del tiempo. Determine:
+
+         a) (1 punto) La amplitud de la onda A y el número de ondas k.
+         b) (1 punto) La fase de la onda ϕ y el valor máximo de la velocidad de oscilación.
+         c) (0,5 puntos) La velocidad de propagación de la onda.
+
+                                          (a )      t = 0                                                                            (b )       x = 0
+                         5
+                         4
+                         3                                                                                  0 .0 5
+
+
+
+
+                                                                                        )
+                                                                                  - 1
+
+
+                                                                                        s
+                         2
+ y (x ,0 ) (c m )
+
+
+
+
+                                                                                        ( c m
+                         1
+                         0
+
+
+
+                                                                                        )
+                                                                                                            0 .0 0
+
+
+
+                                                                                  t     ,
+                                                                                        ( 0
+                    -1
+
+
+
+                                                                                                n
+                                                                                                c i ó
+                    -2
+
+                                                                                                s c i l a
+                    -3
+                                                                                                o
+                                                                                                   -0 .0 5
+                    -4                                                            v
+                    -5
+                             0        3            6           9       1 2                                           0           3                        6   9
+                                                 x (m )                                                                                     t (s )
+
+
+
+Solución:
+
+         a) Calculamos en primer lugar la amplitud y el número de ondas de la onda transversal. Según
+            la figura (a), el desplazamiento máximo de un punto del medio material es de 4 cm, luego la
+            amplitud es A = 4 cm. Por otro lado, como se ve en la figura (a), la distancia entre dos máximos
+            consecutivos es de 6 m, luego la longitud de onda es λ = 6 m. El número de ondas será:
+                                                                                  2π   2π  π
+                                                                             k=      =    = rad m−1
+                                                                                   λ    6  3
+            Por tanto, la amplitud es A = 4 cm y el número de ondas es π3 rad m−1
+         b) Para obtener la fase de la onda y el valor máximo de la velocidad de oscilación necesitamos
+            escribir las expresiones de la ecuación de la onda y de la velocidad de oscilación.
+                                                                                                                         dy(x, t)
+                                                  y(x, t) = A sen (ωt − kx + ϕ) ⇒                                                 = Aω cos (ωt − kx + ϕ)
+                                                                                                                           dt
+                             Para el desplazamiento del punto x = 0 en t = 0 se cumple, según la figura (a):
+
+                                                                   y(0, 0) = A sen (+ϕ) = 0 ⇒ ϕ = 0 o π
+
+                             Si tenemos en cuenta la velocidad de oscilación para x = 0 en t = 0, según la figura (b):
+                                                                    dy(0, 0)
+                                                                             = Aω cos (ϕ) = Aω ⇒ ϕ = 0
+                                                                      dt
+                             Por otro lado:                                                                                                          
+                                                                   dy(0, t)                                                                     2πt
+                                                                            = Aω cos (ωt) = Aω cos
+                                                                     dt                                                                          T
+                             Luego, el periodo es la distancia temporal entre dos máximos en la figura (b), T = 4 s. El valor
+                             máximo de la velocidad de oscilación es:
+                                                                             2πA   2π · 4 · 10−2
+                                                            vmax = Aω =          =               = 6,28 · 10−2 m s−1
+                                                                              T          4
+             Por tanto, la fase es ϕ = 0◦ y la velocidad máxima de oscilación es 6,28 · 10−2 m s−1
+          c) La velocidad de propagación es:
+                                                         λ   6
+                                                    v = = = 1,5 m s−1
+                                                        T    4
+                                                                                                      Enunciado ondas 3B
+                                                                                                                           Enunciado on
+Pregunta 3.B.- Un rayo de luz incide desde el aire sobre una lámina de es-
+                                                                                                                   (1)
+pesor e = 3 cm, con un ángulo de incidencia de 48◦ . El índice de refracción                                                   (2)
+de la lámina es n = 1, 7. El rayo, tras sufrir refracción en la cara superior,                      Aire             x
+                                                                                                                                     θi
+se refleja en la cara inferior de la lámina y vuelve a salir al aire, tal y como
+se muestra en la figura. Determine:
+                                                                                                     e
+                                                                                                         Aire
+   a) (0,5 puntos) El ángulo de refracción en la cara superior.
+
+                                                                                                                    e
+   b) (1 punto) El tiempo que tarda el rayo refractado en llegar a la cara inferior de la lámina.
+
+                                                                                                                                          θr
+   c) (1 punto) La separación x entre los rayos (1) y (2).
+Datos: Velocidad de la luz en el vacío, c = 3 · 108 m s−1 ; Índice de refracción del aire, n = 1.
+
+
+Solución:
+                                                                                                                           Aire
+   a) Calculamos el ángulo de refracción. Para ello utilizamos la ley de Snell:
+
+                                                   n1 sen θi   1 · sen(48)
+           n1 sen θi = n2 sen θr ⇒ sen θr =                  =             = 0, 4371 ⇒ arc sen(0, 4371) = 25, 92◦
+                                                      n2            1, 7
+
+       Luego el ángulo de refracciónsolucion
+                                     es 25, 92◦ . ondas 3B
+
+
+
+
+                                                        θi
+                                                                          Aire
+                                         e                     θr d
+                                             Aire
+   b) Según la figura, la distancia recorrida por el rayo en el interior de la lámina puede obtenerse
+      mediante la expresión:
+                                              e            e
+                                    cos(θr ) = ⇒ d =             = 3,34 cm
+                                              d         cos(θr )
+       Por otro lado:
+                                                      d     d
+                                                        ⇒t=v=
+                                                      t     v
+       La velocidad del haz en el interior de la lámina es:
+                                                    c      c
+                                               n=     ⇒ v = = 1,76 · 108 m s−1
+                                                    v      n
+       Por tanto, el tiempo que tarda el haz en recorrer la distancia d será:
+
+                                               nd   3, 34 · 10−2 · 1, 7
+                                          t=      =                     = 1,89 · 10−10 s
+                                                c         3 · 108
+       Luego el haz tarda 1,89 · 10−10 s en llegar a la cara inferior de la lámina.
+Aire
+
+                                               solucion ondas 3c
+c) Calculamos la separación entre los rayos (1) y (2). Según la figura:
+
+                                                              (1)
+                                             θi                           (2)
+                            Aire                          x
+                                 e                 θr θr
+                                                  θr
+                               Aire                a a
+                                     a
+                        tan(θr ) =     ⇒ a = e tan(θr ) = 3 · tan 25, 92◦ = 1,46 cm
+                                     e
+   Luego:
+                                              x = 2a = 2,92 cm
+   Por consiguiente la separación entre los rayos (1) y (2) es de 2,92 cm.
+Pregunta 4.A.- Cuando una lámina de plata se ilumina con luz de 150 nm se necesita un potencial de
+3,55 V para frenar los electrones emitidos. Sin embargo, si se usa una luz de 200 nm, el potencial para
+frenar los electrones es de 1,48 V. A partir de estos datos, determine:
+
+   a) (1,5 puntos) El valor de la constante de Planck.
+   b) (1 punto) El trabajo de extracción de los electrones de la lámina de plata en eV.
+Datos: Velocidad de la luz en el vacío, c = 3 · 108 m s−1 ; Valor absoluto de la carga del electrón, e = 1,6 · 10−19 C.
+
+Solución:
+
+   a) Determinamos el valor de la constante de Planck. Para el efecto fotoelétrico, la ecuación funda-
+      mental es:
+                                    hc                    hc
+                                       = Wexl + Tmax ⇒       = Wex + eV
+                                     λ                    λ
+      donde V es el potencial de frenado para los electrones que salen con la energía cinética máxima.
+      Como se ilumina con dos haces de luz de longitud de onda diferente, si λ1 = 150 nm y λ2 =
+      200 nm, se tiene:
+                                              hc
+                                                  = Wex + eV1
+                                              λ1
+                                                          hc
+                                                             = Wex + eV2
+                                                          λ2
+       Hallando la diferencia entre ambas ecuaciones:
+                                          hc hc                      e (V1 − V2 )
+                                            −   = e (V1 − V2 ) ⇒ h =          
+                                          λ1 λ2                         c    c
+                                                                          −
+                                                                       λ1 λ2
+
+       Luego:
+                                            1, 6 · 10−19 (3, 55 − 1, 48)
+                                      h=                               = 6,62 · 10−34 J s
+                                                             1      1
+                                            3 · 108 · 109       −
+                                                            150 200
+      Por tanto, el valor de la constante de Planck es h = 6,62 · 10−34 J s
+   b) El trabajo de extracción puede obtenerse a partir de la ecuación fundamental del efecto fotoeléc-
+      trico:
+                                      hc                           hc
+                                          = Wex + Tmax ⇒ Wex =        − eV
+                                      λ1                           λ1
+                                                  6, 62 · 10−34 · 3 · 108
+                                     ⇒ Wex =                               − 3, 55 = 4,73 eV
+                                                 150 · 10−9 · 1, 6 · 10−19
+       Por tanto, el trabajo de extracción es de 4,73 eV
+Pregunta 4.B.- En el primer paso del proceso de desintegración, cada núcleo del isótopo 228 Ra se
+transmuta en un núcleo del isótopo 228 Ac y se emite una partícula β − . Si se tiene una muestra de 30 g
+de 228 Ra cuya actividad inicial es de 3,03 · 1014 Bq, determine:
+
+  a) (0,5 puntos) El número de partículas β − por segundo que emite inicialmente la muestra de 228 Ra.
+  b) (1 punto) La constante de desintegración y el periodo de semidesintegración.
+  c) (1 punto) La masa del isótopo 228 Ra que se habrá transformado en 228 Ac cuando hayan transcu-
+     rrido 10 años.
+Datos: Número de Avogadro, NA = 6,02 · 1023 mol−1 ; Masa atómica del isótopo 228 Ra, M = 228 u.
+
+Solución:
+
+  a) La actividad es 3,03 · 1014 Bq; la unidad Bq significa una desintegración del isótopo por segundo.
+     Como en cada desintegración se emite una partícula β − , eso significa que el número de partícu-
+     las β − emitidas inicialmente coincide con la actividad de la muestra inicial. Por tanto, el número
+     de partículas β − emitidas por segundo es 3,03 · 1014 .
+
+  b) La actividad de la muestra es A = λN , donde N es el número total de isótopos presentes en la
+     muestra. Luego:
+                                                mNA         Ma A
+                                     A = λN = λ      ⇒λ=
+                                                 Ma         mNA
+      Luego:
+
+                                              228 · 3, 03 · 1014
+                                         λ=                      = 3,83 · 10−9 s−1
+                                              30 · 6, 02 · 1023
+      El periodo de semidesintegración puede obtenerse a partir de la constante de desintegración,
+      pues:
+                                ln 2          ln 2       ln 2
+                           λ=        ⇒ T1/2 =      =              = 1,81 · 108 s
+                               T1/2            λ     3, 83 · 10−9
+      Luego, la constante de desintegración es λ = 3,83 · 10−9 s−1 y el periodo de semidesintegración
+      es T1/2 = 1,81 · 108 s
+
+   c) Para obtener la masa que se ha transformado tras 10 años tenemos en cuenta la ley de desinte-
+      gración:
+                                                                  −9
+                     m(t = 10 años) = m0 e(−λ t) = 30 e(−3,83 · 10 ·10·365·24·3600) = 8,98 g
+      Esta es la masa que queda tras 10 años. Por tanto, la masa que se ha transformado en 10 años
+      es:
+                                mtrans = m0 − m = 30 − 8, 97 = 21,02 g
+      Luego, a los 10 años se han transformado 21,02 g
+
