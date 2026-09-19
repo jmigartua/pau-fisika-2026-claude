@@ -2,19 +2,27 @@
 """Are the cohorts arriving less prepared, year after year?
 
 The intuition is specific and testable: Física is a voluntary subject whose
-examined population grew by 59 % over this decade, from 30,839 to 49,010, and a
+examined population grew by 30 % over this decade, from 37,661 to 49,010, and a
 subject that recruits more widely should recruit further down the distribution.
 If so, part of what 2025 and 2026 show would be a slow drift rather than an event.
 
-Three tests, and the honest answer is "a little, and the data cannot say more".
+Three tests, and the composition mechanism fails all of the ones that can see it.
+
+A warning about the counts, because an earlier version of this script got it wrong.
+Física appears in BOTH phases until 2016 and only in the specific phase from 2017,
+so a specific-phase-only count understates 2015 and 2016 by about 18 % (30,839
+against a true 37,661 in 2015). Those two years then look like small-cohort years
+with high means, and a dilution effect appears that is not there: r = -0.212,
+p = 0.032 on the undercounted series against r = -0.064, p = 0.525 on the pooled
+one. Every count here is pooled across phases.
 
 1. The pre-COVID trend. 2015–2019 falls at −0.071 points a year (p = 0.058,
    R² = 0.75). Extrapolated to 2025 it predicts 5.20; the actual 2025 mean is
    5.67, +0.47 above it. The early decline did not continue at that rate.
-2. Dilution within regions. Comparing each community with itself, years in which
-   more of its students sat the paper are years with a lower mean: r = −0.212,
-   p = 0.032 across the non-plateau years. Real, but it accounts for about 4 % of
-   the within-region variance.
+2. Dilution within regions. None detectable. Comparing each community with itself
+   over the non-plateau years, cohort size and the mean are unrelated (r = -0.064,
+   p = 0.525), and so are take-up and the mean (r = -0.020, p = 0.839). Take-up
+   itself barely moved: 0.222 of PAU candidates in 2015, 0.241 in 2025.
 3. Shape. The conditional top-band share shows no significant trend at all
    (−0.0029 a year, p = 0.082), so whatever is drifting is not obviously the
    composition of the top.
@@ -54,6 +62,12 @@ m = (panel[(panel.sitting == "ordinary") & (panel.phase == "specific")]
             on=["ccaa", "year", "sitting", "phase"]))
 m = m[~m.ccaa.isin(["Total", "Estado"])].dropna(
     subset=["mean", "pass_pct", "presented"]).copy()
+# Pooled presented: the specific-phase figure undercounts 2015–16 (see the warning
+# in the docstring), which is enough on its own to manufacture a dilution effect.
+_pool = panel[(panel.sitting == "ordinary") & (panel.phase == "pooled")][
+    ["ccaa", "year", "presented"]].rename(columns={"presented": "presented_pooled"})
+m = m.merge(_pool, on=["ccaa", "year"], how="left")
+m["presented"] = m.presented_pooled.fillna(m.presented)
 m["top"] = m["[8-9)"] + m["[9-10]"]
 m["ratio"] = m.top / m.pass_pct
 nc = m[~m.year.isin(PLATEAU)]
@@ -76,8 +90,24 @@ dil_fit = np.polyfit(nc.d_presented, nc.d_mean, 1)
 ratio_by_year = nc.groupby("year").ratio.mean()
 ratio_tr = stats.linregress(ratio_by_year.index, ratio_by_year.values)
 
-fig, (ax, axd) = plt.subplots(1, 2, figsize=(12.4, 5.2),
-                              gridspec_kw=dict(width_ratios=[1.35, 1.0], wspace=0.28))
+# Take-up, computed by 14_take_up.py, which must run first: it needs the full cube
+# rather than the Física extract, so it is kept in its own script.
+TAKE_UP = A / "take_up.csv"
+if not TAKE_UP.exists():
+    raise SystemExit("run scripts/14_take_up.py first — it builds data/analysis/take_up.csv")
+tu = pd.read_csv(TAKE_UP)
+tu_summary = json.load(open(A / "take_up.json", encoding="utf-8"))
+tu_nc = tu[~tu.year.isin(PLATEAU)].dropna(subset=["d_take_up", "d_mean"])
+tu_r = stats.pearsonr(tu_nc.d_take_up, tu_nc.d_mean)
+tu_fit = np.polyfit(tu_nc.d_take_up, tu_nc.d_mean, 1)
+tu_nat = pd.Series({int(k): v for k, v in tu_summary["national_take_up_by_year"].items()})
+tu_sd = tu.groupby("ccaa").take_up.std().mean()
+tu_change = tu_nat.loc[2025] - tu_nat.loc[2015]
+tu_effect = tu_fit[0] * tu_change / tu_sd
+
+fig, (ax, axt, axd) = plt.subplots(1, 3, figsize=(16.8, 5.2),
+                                   gridspec_kw=dict(width_ratios=[1.35, 1.0, 1.0],
+                                                    wspace=0.30))
 
 # --- a. the series, the early trend, and what the plateau costs -------------------
 ax.axvspan(2019.5, 2024.5, color=C["yellow"], alpha=0.12, lw=0, zorder=0)
@@ -114,19 +144,38 @@ axp.annotate("presented: %d to %d (+%.0f %%)"
              xy=(2015.1, presented.loc[2015] / 1000 + 1.0), fontsize=7.6,
              color=C["violet"])
 
-# --- b. the dilution test --------------------------------------------------------
+# --- b. the composition trajectory ------------------------------------------------
+axt.axvspan(2019.5, 2024.5, color=C["yellow"], alpha=0.12, lw=0, zorder=0)
+for ccaa, g in tu.groupby("ccaa"):
+    g = g.sort_values("year")
+    axt.plot(g.year, g.take_up, color=MUTED, alpha=0.30, lw=0.8, zorder=1)
+axt.plot(tu_nat.index, tu_nat.values, color=INK2, lw=2.0, marker="o", ms=5, zorder=3,
+         label="All communities pooled")
+axt.annotate("%.3f to %.3f\n(%+.0f %% relative)"
+             % (tu_nat.loc[2015], tu_nat.loc[2025],
+                100 * (tu_nat.loc[2025] / tu_nat.loc[2015] - 1)),
+             xy=(2016.2, 0.30), fontsize=7.8, color=INK2)
+axt.set_xticks(range(2015, 2027, 2))
+axt.set_xlabel("Year")
+axt.set_ylabel("Física enrolled / PAU candidates")
+axt.set_title("b. Take-up barely moved: 0.222 to 0.241 in a decade")
+axt.legend(loc="lower right", fontsize=7.6)
+
+# --- c. the dilution test --------------------------------------------------------
 axd.axhline(0, color=INK2, lw=0.9, zorder=1)
 axd.axvline(0, color=INK2, lw=0.9, zorder=1)
-axd.scatter(nc.d_presented, nc.d_mean, s=16, color=MUTED, alpha=0.65, lw=0, zorder=2)
-xs = np.linspace(nc.d_presented.min(), nc.d_presented.max(), 50)
-axd.plot(xs, np.polyval(dil_fit, xs), color=C["red"], lw=1.5, zorder=3)
-axd.annotate("$r = %+.3f$, $p = %.3f$, $n = %d$\nabout %.0f %% of the within-region variance"
-             % (dil[0], dil[1], len(nc), 100 * dil[0] ** 2),
-             xy=(0.97, 0.96), xycoords="axes fraction", fontsize=7.8, color=C["red"],
+axd.scatter(tu_nc.d_take_up, tu_nc.d_mean, s=16, color=MUTED, alpha=0.65, lw=0,
+            zorder=2)
+xs = np.linspace(tu_nc.d_take_up.min(), tu_nc.d_take_up.max(), 50)
+axd.plot(xs, np.polyval(tu_fit, xs), color=C["red"], lw=1.5, zorder=3)
+axd.annotate("$r = %+.3f$, $p = %.3f$, $n = %d$\n"
+             "raw cohort size is no better: $r = %+.3f$, $p = %.3f$"
+             % (tu_r[0], tu_r[1], len(tu_nc), dil[0], dil[1]),
+             xy=(0.97, 0.96), xycoords="axes fraction", fontsize=7.8, color=INK2,
              ha="right", va="top")
-axd.set_xlabel("Cohort size that year, relative to the region's own average (SD)")
+axd.set_xlabel("Take-up that year, relative to the community's own average (SD)")
 axd.set_ylabel("Mean mark, relative to the region's own average")
-axd.set_title("b. Within a community, bigger cohorts score a little lower")
+axd.set_title("c. And it has no relationship with the mean")
 
 fig.text(0.005, 0.015,
          "Ministry EPAU, Física, ordinary sitting, specific phase. Panel b uses the "
@@ -136,7 +185,7 @@ fig.text(0.005, 0.015,
          "(%+.4f/yr, p = %.3f),\nso whatever drifts is not obviously the composition of "
          "the top." % (len(nc), ratio_tr.slope, ratio_tr.pvalue),
          fontsize=7, color=MUTED, linespacing=1.5)
-fig.subplots_adjust(bottom=0.26, top=0.91, left=0.07, right=0.93)
+fig.subplots_adjust(bottom=0.26, top=0.91, left=0.055, right=0.955)
 _save(fig, "fig20_cohort_drift", P, dpi=200)
 
 json.dump({

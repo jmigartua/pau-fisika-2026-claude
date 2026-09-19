@@ -226,7 +226,8 @@ for ax, col, coef, sd, marker, ylab, title, ehu26_y, overlay in panels:
             alpha=0.75, zorder=2, label="same locus, plateau removed")
     # The cloud is split at the 2017 regime change. Until 2016 Física could also be
     # sat in the general phase; from 2017 LOMCE left it in the voluntary phase only,
-    # and the presented cohort then grew 59 % (30,839 to 49,010). Showing the two
+    # and the presented cohort then grew 30 % (37,661 to 49,010, pooled across phases;
+# a specific-phase-only count understates 2015-16 by ~18 %). Showing the two
     # regimes separately is the point: they lie on the SAME locus, so the mapping
     # from mean to pass rate is a property of the marking scale rather than of who
     # sits the paper — which is what licenses reading a 2026 point off it at all.

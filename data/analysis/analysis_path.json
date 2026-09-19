@@ -56,9 +56,15 @@
     },
     {
       "step": "8. Testing the slow version of H4",
-      "claim": "Do cohorts arrive less prepared each year? A little: dilution is real but small.",
+      "claim": "Do cohorts arrive less prepared each year? Not detectably — take-up is flat.",
       "status": "stood",
-      "fate": "bounds the drift at roughly a tenth of what 2026 needs explaining, and shows the plateau leaves only six clean year-points to measure it"
+      "fate": "kills the recruitment mechanism, and corrects a dilution effect this study had itself reported from a phase-undercount of 2015–16"
+    },
+    {
+      "step": "9. Bringing in an outside instrument",
+      "claim": "PISA 2022 (the PAU 2024 cohort): Basque top performers fall to 0.67 of Spain.",
+      "status": "stood",
+      "fate": "separates a thinner cohort from a stricter paper for one cohort — but it is the pandemic cohort, so it argues against the slow-drift reading"
     }
   ]
 }

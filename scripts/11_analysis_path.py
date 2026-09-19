@@ -68,12 +68,16 @@ steps = [
      STOOD, "strengthens step 3, shows the plateau reshaped rather than lifted, "
             "and finds a Basque turn in 2024 — before either candidate cause"),
     ("8. Testing the slow version of H4",
-     "Do cohorts arrive less prepared each year? A little: dilution is real but small.",
-     STOOD, "bounds the drift at roughly a tenth of what 2026 needs explaining, "
-            "and shows the plateau leaves only six clean year-points to measure it"),
+     "Do cohorts arrive less prepared each year? Not detectably — take-up is flat.",
+     STOOD, "kills the recruitment mechanism, and corrects a dilution effect this "
+            "study had itself reported from a phase-undercount of 2015–16"),
+    ("9. Bringing in an outside instrument",
+     "PISA 2022 (the PAU 2024 cohort): Basque top performers fall to 0.67 of Spain.",
+     STOOD, "separates a thinner cohort from a stricter paper for one cohort — but "
+            "it is the pandemic cohort, so it argues against the slow-drift reading"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 10.4),
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 11.0),
                               gridspec_kw=dict(height_ratios=[1.0, 1.45], hspace=0.34))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
