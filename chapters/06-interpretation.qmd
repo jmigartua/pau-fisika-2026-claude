@@ -76,6 +76,27 @@ One of three is what chance produces. The 2022/2024 match, which this section wa
 
 What survives is worth more than what was lost, and it supports the drift reading rather than the event reading. There is a real, large and sustained deterioration in Basque science attainment beginning in 2015, visible to an external instrument, which the PAU Física series does not show — Euskadi's Física mean sits near its own baseline through 2024. Two conclusions follow. The PAU is not a good detector of whatever PISA is measuring, which is unsurprising given that Física is sat by a self-selected quarter of the cohort. And the slow-drift version of H4, which the [previous section](#is-the-drift-real) could not find in the PAU data, is clearly present in the schooling that precedes it. Those are compatible: a decade-long weakening of the base need not show in a subject whose takers are drawn from the top of it.
 
+### Do the two instruments fall at the same rate? {#do-the-two-instruments-fall-at-the-same-rate}
+
+The cohort test above compares single years and finds noise. A gentler question is whether the two series, taken whole, descend at the same rate — whether @fig-drift's panel a and @fig-pisa's panel a are parallel. That is a better question than whether they correlate, which three overlapping points cannot answer, and it turns out to have a more interesting answer than the cohort test did.
+
+It needs a common scale. Each series is divided by its own student-level standard deviation: 2.34 marks for PAU Física, the median of the thirteen published regional standard deviations and consistent with the Beta fits of [Chapter 4](04-distributions.qmd); about 90 points for PISA science, from the p10–p90 spread of the 2015 tables. A slope in standard deviations per decade is then the same quantity on both instruments.
+
+![**a** — the PAU Física mean and the PISA science score for Spain and for Euskadi, each centred on its own mean and divided by its own student-level standard deviation, with the fitted trends. PAU plateau years are shaded and excluded from the fits. **b** — the four slopes with their 95 % intervals.](../plots/fig22_slope_compare.png){#fig-slopes}
+
+| Series | Slope, SD per decade | 95 % interval |
+|---|---|---|
+| PAU Física, Spain | $-0.092$ | $[-0.251,\ +0.068]$ |
+| PISA science, Spain | $-0.147$ | $[-0.381,\ +0.086]$ |
+| PAU Física, Euskadi | $-0.157$ | $[-0.601,\ +0.286]$ |
+| PISA science, Euskadi | $-0.245$ | $[-0.785,\ +0.296]$ |
+
+The point estimates are strikingly consistent. All four decline; the PAU and PISA slopes for the same population differ by $+0.06$ and $+0.09$ SD per decade, differences that no test could distinguish from zero ($p = 0.48$ and $p = 0.67$). And the relative figure is closer still: **Euskadi falls 1.72 times as fast as Spain on the PAU and 1.66 times as fast on PISA**. Two instruments with nothing in common — different ages, different subjects, different markers, different scales — put the Basque disadvantage at the same multiple of the national one.
+
+That is worth stating because it tempers a claim made in the previous section. There it was said that PISA shows a deterioration the PAU Física series does not. On *cohorts* that stands, and the matching is one of three. On *trend* it overstates: the PAU does decline, at a rate whose point estimate sits comfortably inside PISA's interval, and the reason it looked absent is that the plateau hides it in the raw series and the six surviving year-points cannot make it significant.
+
+The honest summary is the one panel b is drawn to make unavoidable: **every interval includes zero**. With four PISA rounds and six usable PAU years, these data are consistent with two instruments measuring one common decline at the same rate — and equally consistent with no decline at all in either. The agreement of four point estimates, and of two independently computed ratios to within 4 %, is the kind of coincidence that is worth recording and is not worth believing on its own. It is a reason to keep measuring both, which is the recommendation of the next section, rather than a finding.
+
 The 2025 round was administered in spring 2026 and reaches the PAU in 2027, which makes it the only forward-looking instrument available for the question in the next section. It should be read when it is published — the Basque science score against Spain's is the number to look at, and on the record above the base rate is not encouraging.
 
 **H5 — "Students under-prepare Física because the weighting rules make it dispensable."** *Plausible as a slow driver, not as a 2026 trigger.* This is the Canarian coordinators' hypothesis for their own decline (few degrees need a high Física mark; Matemáticas II carries the weighting; Física is examined last on a long day). It fits the ten-year erosion of the top decile better than a one-year fall of 1.5 points, and it is the hypothesis most directly addressable by the Basque ponderación table and the exam timetable for 2027.

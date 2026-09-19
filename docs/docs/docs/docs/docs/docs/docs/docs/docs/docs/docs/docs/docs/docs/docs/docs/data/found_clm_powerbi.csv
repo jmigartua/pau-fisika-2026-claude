@@ -1,0 +1,29 @@
+region,university,year,sitting,subject,province,passed,failed,not_presented,presented,pass_pct,mean,denominator_definition,source_url,access_method,access_date
+Castilla-La Mancha,UCLM,2026,ordinary,Física,All,1426,355,132,1781,80.07,6.80,"% aprobados and nota media over presented (aprobados+no aprobados); dashboard 'Estadística de Aprobados y Nota Media por Materia/Centro/Campus en la PAU', curso 2025-26",https://app.powerbi.com/view?r=eyJrIjoiZGEwMGQwNWQtOTdiZC00YzA4LTgyNzUtNDJkODg4Mjc2MmQzIiwidCI6ImM0MmNiYWU2LTYxZjQtNDk4Yy05MTA3LTZhOGNmNWYwMWU1NiIsImMiOjh9&pageName=87447e2977a330d0fc56,Power BI dashboard read in browser (linked from https://www.uclm.es/perfiles/preuniversitario/orientadores/estadisticaspruebasacceso),2026-09-18
+Castilla-La Mancha,UCLM,2026,extraordinary,Física,All,58,84,23,142,40.85,3.97,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,ordinary,Física,All,1170,614,175,1784,65.58,5.86,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,extraordinary,Física,All,81,80,25,161,50.31,4.62,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2024,ordinary,Física,All,1374,421,203,1795,76.55,6.57,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2024,extraordinary,Física,All,73,82,44,155,47.10,4.48,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2023,ordinary,Física,All,1247,504,204,1751,71.22,5.97,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2023,extraordinary,Física,All,73,110,45,183,39.89,4.00,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2022,ordinary,Física,All,1283,425,232,1708,75.12,6.48,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2022,extraordinary,Física,All,70,125,53,195,35.90,3.98,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2021,ordinary,Física,All,1139,450,194,1589,71.68,6.08,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2021,extraordinary,Física,All,80,72,42,152,52.63,4.72,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,ordinary,Física,Albacete,265,73,28,338,78.40,6.75,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,ordinary,Física,Ciudad Real,426,94,27,520,81.92,6.91,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,ordinary,Física,Cuenca,126,33,26,159,79.25,6.68,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,ordinary,Física,Toledo,609,155,51,764,79.71,6.77,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,extraordinary,Física,Albacete,13,9,6,22,59.09,5.32,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,extraordinary,Física,Ciudad Real,15,19,3,34,44.12,4.04,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,extraordinary,Física,Cuenca,7,6,3,13,53.85,4.51,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2026,extraordinary,Física,Toledo,23,50,11,73,31.51,3.43,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,ordinary,Física,Albacete,261,151,35,412,63.35,5.74,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,ordinary,Física,Ciudad Real,319,166,38,485,65.77,5.95,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,ordinary,Física,Cuenca,125,58,21,183,68.31,5.98,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,ordinary,Física,Toledo,465,239,81,704,66.05,5.84,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,extraordinary,Física,Albacete,20,13,4,33,60.61,5.52,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,extraordinary,Física,Ciudad Real,23,19,4,42,54.76,4.60,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,extraordinary,Física,Cuenca,9,1,3,10,90.00,6.25,same,same,same,2026-09-18
+Castilla-La Mancha,UCLM,2025,extraordinary,Física,Toledo,29,47,14,76,38.16,4.03,same,same,same,2026-09-18

@@ -75,9 +75,13 @@ steps = [
      "PISA 2006–2022: Basque science goes from +9 above Spain to −5, breaking in 2015.",
      STOOD, "the drift is real and pre-pandemic, but the cohorts do not match the PAU "
             "(1 of 3), which retracts the triangulation step 9 first claimed"),
+    ("10. Comparing the two slopes",
+     "On one scale, all four series fall; Euskadi is 1.7x Spain on BOTH instruments.",
+     WEAK, "tempers step 9's 'the PAU does not show it' — but every interval "
+            "includes zero, so the agreement is recorded, not believed"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 11.0),
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 11.6),
                               gridspec_kw=dict(height_ratios=[1.0, 1.45], hspace=0.34))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
