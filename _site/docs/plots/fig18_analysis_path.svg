@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="761.904pt" height="760.105311pt" viewBox="0 0 761.904 760.105311" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="761.904pt" height="797.905311pt" viewBox="0 0 761.904 797.905311" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-19T15:21:10.182155</dc:date>
+    <dc:date>2026-09-19T15:32:37.638561</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,8 +21,8 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 760.105311 
-L 761.904 760.105311 
+   <path d="M 0 797.905311 
+L 761.904 797.905311 
 L 761.904 0 
 L 0 0 
 z
@@ -30,38 +30,38 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 107.424 245.100945 
-L 754.704 245.100945 
+    <path d="M 107.424 256.70534 
+L 754.704 256.70534 
 L 754.704 20.749296 
 L 107.424 20.749296 
 z
 " style="fill: #fcfcfb"/>
    </g>
    <g id="line2d_1">
-    <path d="M 107.424 67.583647 
-L 754.704 67.583647 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #52514e; stroke-linecap: square"/>
+    <path d="M 107.424 70.006114 
+L 754.704 70.006114 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #52514e; stroke-linecap: square"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_2">
-      <path d="M 191.330667 245.100945 
+      <path d="M 191.330667 256.70534 
 L 191.330667 20.749296 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_3">
       <defs>
-       <path id="mac347b537e" d="M 0 0 
+       <path id="m7c30ef99e5" d="M 0 0 
 L 0 3.5 
 " style="stroke: #52514e; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mac347b537e" x="191.330667" y="245.100945" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#m7c30ef99e5" x="191.330667" y="256.70534" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
       <!-- As published: -->
-      <g style="fill: #52514e" transform="translate(165.607693 257.728614) scale(0.082 -0.082)">
+      <g style="fill: #52514e" transform="translate(165.607693 269.33301) scale(0.082 -0.082)">
        <defs>
         <path id="LMRoman17-Regular-41" d="M 4282 -13 
 L 4282 153 
@@ -329,7 +329,7 @@ z
        <use xlink:href="#LMRoman17-Regular-3a" transform="translate(515.466582 0) scale(0.996264)"/>
       </g>
       <!-- year-on-year -->
-      <g style="fill: #52514e" transform="translate(167.935823 266.070236) scale(0.082 -0.082)">
+      <g style="fill: #52514e" transform="translate(167.935823 277.674632) scale(0.082 -0.082)">
        <defs>
         <path id="LMRoman17-Regular-79" d="M 3034 2593 
 L 3034 2752 
@@ -484,18 +484,18 @@ z
     </g>
     <g id="xtick_2">
      <g id="line2d_4">
-      <path d="M 431.064 245.100945 
+      <path d="M 431.064 256.70534 
 L 431.064 20.749296 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_5">
       <g>
-       <use xlink:href="#mac347b537e" x="431.064" y="245.100945" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#m7c30ef99e5" x="431.064" y="256.70534" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
       <!-- This study: -->
-      <g style="fill: #52514e" transform="translate(409.435999 257.728614) scale(0.082 -0.082)">
+      <g style="fill: #52514e" transform="translate(409.435999 269.33301) scale(0.082 -0.082)">
        <defs>
         <path id="LMRoman17-Regular-54" d="M 4090 2918 
 L 3981 4326 
@@ -554,7 +554,7 @@ z
        <use xlink:href="#LMRoman17-Regular-3a" transform="translate(429.328434 0) scale(0.996264)"/>
       </g>
       <!-- 2026 cross-section -->
-      <g style="fill: #52514e" transform="translate(397.231992 266.070297) scale(0.082 -0.082)">
+      <g style="fill: #52514e" transform="translate(397.231992 277.674693) scale(0.082 -0.082)">
        <defs>
         <path id="LMRoman17-Regular-32" d="M 2669 989 
 L 2554 989 
@@ -661,18 +661,18 @@ z
     </g>
     <g id="xtick_3">
      <g id="line2d_6">
-      <path d="M 670.797333 245.100945 
+      <path d="M 670.797333 256.70534 
 L 670.797333 20.749296 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_7">
       <g>
-       <use xlink:href="#mac347b537e" x="670.797333" y="245.100945" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#m7c30ef99e5" x="670.797333" y="256.70534" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
       <!-- Re-baselined: -->
-      <g style="fill: #52514e" transform="translate(645.638916 257.728614) scale(0.082 -0.082)">
+      <g style="fill: #52514e" transform="translate(645.638916 269.33301) scale(0.082 -0.082)">
        <defs>
         <path id="LMRoman17-Regular-52" d="M 4365 503 
 C 4365 540 4365 585 4307 585 
@@ -726,7 +726,7 @@ z
        <use xlink:href="#LMRoman17-Regular-3a" transform="translate(503.249928 0) scale(0.996264)"/>
       </g>
       <!-- vs 2015- -19 norm -->
-      <g style="fill: #52514e" transform="translate(638.822444 266.070236) scale(0.082 -0.082)">
+      <g style="fill: #52514e" transform="translate(638.822444 277.674632) scale(0.082 -0.082)">
        <defs>
         <path id="LMRoman17-Regular-76" d="M 3034 2560 
 L 3034 2719 
@@ -889,23 +889,23 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_8">
-      <path d="M 107.424 218.662198 
-L 754.704 218.662198 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+      <path d="M 107.424 228.899072 
+L 754.704 228.899072 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_9">
       <defs>
-       <path id="mb32b41e227" d="M 0 0 
+       <path id="mf07a78bfc5" d="M 0 0 
 L -3.5 0 
 " style="stroke: #52514e; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mb32b41e227" x="107.424" y="218.662198" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#mf07a78bfc5" x="107.424" y="228.899072" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
       <!-- $\mathdefault{−2.0}$ -->
-      <g style="fill: #52514e" transform="translate(82.533585 221.579033) scale(0.085 -0.085)">
+      <g style="fill: #52514e" transform="translate(82.533585 231.815907) scale(0.085 -0.085)">
        <defs>
         <path id="LMMathSymbols10-Regular-0" d="M 4442 1600 
 C 4442 1728 4320 1728 4230 1728 
@@ -933,18 +933,18 @@ z
     </g>
     <g id="ytick_2">
      <g id="line2d_10">
-      <path d="M 107.424 180.89256 
-L 754.704 180.89256 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+      <path d="M 107.424 189.175833 
+L 754.704 189.175833 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_11">
       <g>
-       <use xlink:href="#mb32b41e227" x="107.424" y="180.89256" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#mf07a78bfc5" x="107.424" y="189.175833" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
       <!-- $\mathdefault{−1.5}$ -->
-      <g style="fill: #52514e" transform="translate(82.533585 183.809395) scale(0.085 -0.085)">
+      <g style="fill: #52514e" transform="translate(82.533585 192.092667) scale(0.085 -0.085)">
        <use xlink:href="#LMMathSymbols10-Regular-0" transform="scale(0.996264)"/>
        <use xlink:href="#LMRoman17-Regular-31" transform="translate(77.487468 0) scale(0.996264)"/>
        <use xlink:href="#LMMathItalic12-Regular-3a" transform="translate(123.178416 0) scale(0.996264)"/>
@@ -954,18 +954,18 @@ L 754.704 180.89256
     </g>
     <g id="ytick_3">
      <g id="line2d_12">
-      <path d="M 107.424 143.122923 
-L 754.704 143.122923 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+      <path d="M 107.424 149.452593 
+L 754.704 149.452593 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_13">
       <g>
-       <use xlink:href="#mb32b41e227" x="107.424" y="143.122923" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#mf07a78bfc5" x="107.424" y="149.452593" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
       <!-- $\mathdefault{−1.0}$ -->
-      <g style="fill: #52514e" transform="translate(82.533585 146.039757) scale(0.085 -0.085)">
+      <g style="fill: #52514e" transform="translate(82.533585 152.369427) scale(0.085 -0.085)">
        <use xlink:href="#LMMathSymbols10-Regular-0" transform="scale(0.996264)"/>
        <use xlink:href="#LMRoman17-Regular-31" transform="translate(77.487468 0) scale(0.996264)"/>
        <use xlink:href="#LMMathItalic12-Regular-3a" transform="translate(123.178416 0) scale(0.996264)"/>
@@ -975,18 +975,18 @@ L 754.704 143.122923
     </g>
     <g id="ytick_4">
      <g id="line2d_14">
-      <path d="M 107.424 105.353285 
-L 754.704 105.353285 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+      <path d="M 107.424 109.729353 
+L 754.704 109.729353 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_15">
       <g>
-       <use xlink:href="#mb32b41e227" x="107.424" y="105.353285" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#mf07a78bfc5" x="107.424" y="109.729353" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
       <!-- $\mathdefault{−0.5}$ -->
-      <g style="fill: #52514e" transform="translate(82.533585 108.270119) scale(0.085 -0.085)">
+      <g style="fill: #52514e" transform="translate(82.533585 112.646188) scale(0.085 -0.085)">
        <use xlink:href="#LMMathSymbols10-Regular-0" transform="scale(0.996264)"/>
        <use xlink:href="#LMRoman17-Regular-30" transform="translate(77.487468 0) scale(0.996264)"/>
        <use xlink:href="#LMMathItalic12-Regular-3a" transform="translate(123.178416 0) scale(0.996264)"/>
@@ -996,18 +996,18 @@ L 754.704 105.353285
     </g>
     <g id="ytick_5">
      <g id="line2d_16">
-      <path d="M 107.424 67.583647 
-L 754.704 67.583647 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+      <path d="M 107.424 70.006114 
+L 754.704 70.006114 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_17">
       <g>
-       <use xlink:href="#mb32b41e227" x="107.424" y="67.583647" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#mf07a78bfc5" x="107.424" y="70.006114" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
       <!-- $\mathdefault{0.0}$ -->
-      <g style="fill: #52514e" transform="translate(89.302908 70.500482) scale(0.085 -0.085)">
+      <g style="fill: #52514e" transform="translate(89.302908 72.922948) scale(0.085 -0.085)">
        <use xlink:href="#LMRoman17-Regular-30" transform="scale(0.996264)"/>
        <use xlink:href="#LMMathItalic12-Regular-3a" transform="translate(45.690948 0) scale(0.996264)"/>
        <use xlink:href="#LMRoman17-Regular-30" transform="translate(72.788125 0) scale(0.996264)"/>
@@ -1016,18 +1016,18 @@ L 754.704 67.583647
     </g>
     <g id="ytick_6">
      <g id="line2d_18">
-      <path d="M 107.424 29.814009 
-L 754.704 29.814009 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
+      <path d="M 107.424 30.282874 
+L 754.704 30.282874 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #e6e5e1; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_19">
       <g>
-       <use xlink:href="#mb32b41e227" x="107.424" y="29.814009" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+       <use xlink:href="#mf07a78bfc5" x="107.424" y="30.282874" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
       <!-- $\mathdefault{0.5}$ -->
-      <g style="fill: #52514e" transform="translate(89.302908 32.730844) scale(0.085 -0.085)">
+      <g style="fill: #52514e" transform="translate(89.302908 33.199708) scale(0.085 -0.085)">
        <use xlink:href="#LMRoman17-Regular-30" transform="scale(0.996264)"/>
        <use xlink:href="#LMMathItalic12-Regular-3a" transform="translate(45.690948 0) scale(0.996264)"/>
        <use xlink:href="#LMRoman17-Regular-35" transform="translate(72.788125 0) scale(0.996264)"/>
@@ -1036,7 +1036,7 @@ L 754.704 29.814009
     </g>
     <g id="text_10">
      <!-- Change in the mean Física mark -->
-     <g style="fill: #52514e" transform="translate(76.596422 204.157762) rotate(-90) scale(0.1 -0.1)">
+     <g style="fill: #52514e" transform="translate(76.596422 209.959959) rotate(-90) scale(0.1 -0.1)">
       <defs>
        <path id="LMRoman17-Regular-43" d="M 3974 1461 
 C 3974 1524 3974 1550 3917 1550 
@@ -1212,22 +1212,22 @@ z
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 107.424 245.100945 
+    <path d="M 107.424 256.70534 
 L 107.424 20.749296 
 " style="fill: none; stroke: #e6e5e1; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 107.424 245.100945 
-L 754.704 245.100945 
+    <path d="M 107.424 256.70534 
+L 754.704 256.70534 
 " style="fill: none; stroke: #e6e5e1; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="line2d_20">
-    <path d="M 191.330667 128.77046 
-L 431.064 54.79233 
-L 670.797333 65.988929 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #52514e; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 191.330667 134.357762 
+L 431.064 56.553176 
+L 670.797333 68.32891 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #52514e; stroke-width: 2; stroke-linecap: square"/>
     <defs>
-     <path id="m7c4a474857" d="M 0 3.5 
+     <path id="meb2b6d86d8" d="M 0 3.5 
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -1239,19 +1239,19 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: #52514e"/>
     </defs>
-    <g clip-path="url(#pd66bc74f35)">
-     <use xlink:href="#m7c4a474857" x="191.330667" y="128.77046" style="fill: #52514e; stroke: #52514e"/>
-     <use xlink:href="#m7c4a474857" x="431.064" y="54.79233" style="fill: #52514e; stroke: #52514e"/>
-     <use xlink:href="#m7c4a474857" x="670.797333" y="65.988929" style="fill: #52514e; stroke: #52514e"/>
+    <g clip-path="url(#pa7e019548e)">
+     <use xlink:href="#meb2b6d86d8" x="191.330667" y="134.357762" style="fill: #52514e; stroke: #52514e"/>
+     <use xlink:href="#meb2b6d86d8" x="431.064" y="56.553176" style="fill: #52514e; stroke: #52514e"/>
+     <use xlink:href="#meb2b6d86d8" x="670.797333" y="68.32891" style="fill: #52514e; stroke: #52514e"/>
     </g>
    </g>
    <g id="line2d_21">
-    <path d="M 191.330667 179.381775 
-L 431.064 179.381775 
-L 670.797333 213.525528 
-" clip-path="url(#pd66bc74f35)" style="fill: none; stroke: #4a3aa7; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 191.330667 187.586903 
+L 431.064 187.586903 
+L 670.797333 223.496712 
+" clip-path="url(#pa7e019548e)" style="fill: none; stroke: #4a3aa7; stroke-width: 2; stroke-linecap: square"/>
     <defs>
-     <path id="m00dd9f2179" d="M 0 3.5 
+     <path id="ma61600fb85" d="M 0 3.5 
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -1263,15 +1263,15 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: #4a3aa7"/>
     </defs>
-    <g clip-path="url(#pd66bc74f35)">
-     <use xlink:href="#m00dd9f2179" x="191.330667" y="179.381775" style="fill: #4a3aa7; stroke: #4a3aa7"/>
-     <use xlink:href="#m00dd9f2179" x="431.064" y="179.381775" style="fill: #4a3aa7; stroke: #4a3aa7"/>
-     <use xlink:href="#m00dd9f2179" x="670.797333" y="213.525528" style="fill: #4a3aa7; stroke: #4a3aa7"/>
+    <g clip-path="url(#pa7e019548e)">
+     <use xlink:href="#ma61600fb85" x="191.330667" y="187.586903" style="fill: #4a3aa7; stroke: #4a3aa7"/>
+     <use xlink:href="#ma61600fb85" x="431.064" y="187.586903" style="fill: #4a3aa7; stroke: #4a3aa7"/>
+     <use xlink:href="#ma61600fb85" x="670.797333" y="223.496712" style="fill: #4a3aa7; stroke: #4a3aa7"/>
     </g>
    </g>
    <g id="text_11">
     <!-- $-$0.81 -->
-    <g style="fill: #52514e" transform="translate(180.20956 117.77046) scale(0.085 -0.085)">
+    <g style="fill: #52514e" transform="translate(180.20956 123.357762) scale(0.085 -0.085)">
      <defs>
       <path id="LMRoman17-Regular-2e" d="M 1062 261 
 C 1062 420 934 522 800 522 
@@ -1318,7 +1318,7 @@ z
    </g>
    <g id="text_12">
     <!-- $+$0.17 -->
-    <g style="fill: #52514e" transform="translate(419.942847 43.79233) scale(0.085 -0.085)">
+    <g style="fill: #52514e" transform="translate(419.942847 45.553176) scale(0.085 -0.085)">
      <defs>
       <path id="LMRoman17-Regular-2b" d="M 4307 1580 
 C 4307 1695 4205 1695 4109 1695 
@@ -1368,7 +1368,7 @@ z
    </g>
    <g id="text_13">
     <!-- $+$0.02 -->
-    <g style="fill: #52514e" transform="translate(659.676181 54.988929) scale(0.085 -0.085)">
+    <g style="fill: #52514e" transform="translate(659.676181 57.32891) scale(0.085 -0.085)">
      <use xlink:href="#LMRoman17-Regular-2b" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-30" transform="translate(71.71602 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(117.406968 0) scale(0.996264)"/>
@@ -1378,7 +1378,7 @@ z
    </g>
    <g id="text_14">
     <!-- $-$1.48 -->
-    <g style="fill: #4a3aa7" transform="translate(180.20956 196.381775) scale(0.085 -0.085)">
+    <g style="fill: #4a3aa7" transform="translate(180.20956 204.586903) scale(0.085 -0.085)">
      <defs>
       <path id="LMRoman17-Regular-34" d="M 2803 1114 
 L 2803 1280 
@@ -1416,7 +1416,7 @@ z
    </g>
    <g id="text_15">
     <!-- $-$1.48 -->
-    <g style="fill: #4a3aa7" transform="translate(419.942893 196.381775) scale(0.085 -0.085)">
+    <g style="fill: #4a3aa7" transform="translate(419.942893 204.586903) scale(0.085 -0.085)">
      <use xlink:href="#LMMathSymbols10-Regular-0" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-31" transform="translate(77.487468 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(123.178416 0) scale(0.996264)"/>
@@ -1426,7 +1426,7 @@ z
    </g>
    <g id="text_16">
     <!-- $-$1.93 -->
-    <g style="fill: #4a3aa7" transform="translate(659.676226 230.525528) scale(0.085 -0.085)">
+    <g style="fill: #4a3aa7" transform="translate(659.676226 240.496712) scale(0.085 -0.085)">
      <defs>
       <path id="LMRoman17-Regular-33" d="M 2720 1085 
 C 2720 1707 2208 2157 1600 2227 
@@ -1466,7 +1466,7 @@ z
    </g>
    <g id="text_17">
     <!-- the national number changes sign -->
-    <g style="fill: #e34948" transform="translate(358.47878 90.24543) scale(0.078 -0.078)">
+    <g style="fill: #e34948" transform="translate(358.47878 93.840057) scale(0.078 -0.078)">
      <use xlink:href="#LMRoman17-Regular-74" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-68" transform="translate(35.281528 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-65" transform="translate(86.178615 0) scale(0.996264)"/>
@@ -1957,17 +1957,17 @@ z
    </g>
    <g id="legend_1">
     <g id="line2d_22">
-     <path d="M 114.624 222.401575 
-L 122.624 222.401575 
-L 130.624 222.401575 
+     <path d="M 114.624 234.005971 
+L 122.624 234.005971 
+L 130.624 234.005971 
 " style="fill: none; stroke: #52514e; stroke-width: 2; stroke-linecap: square"/>
      <g>
-      <use xlink:href="#m7c4a474857" x="122.624" y="222.401575" style="fill: #52514e; stroke: #52514e"/>
+      <use xlink:href="#meb2b6d86d8" x="122.624" y="234.005971" style="fill: #52514e; stroke: #52514e"/>
      </g>
     </g>
     <g id="text_19">
      <!-- The national headline -->
-     <g transform="translate(137.024 225.201575) scale(0.08 -0.08)">
+     <g transform="translate(137.024 236.805971) scale(0.08 -0.08)">
       <use xlink:href="#LMRoman17-Regular-54" transform="scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-68" transform="translate(66.509789 0) scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-65" transform="translate(117.406877 0) scale(0.996264)"/>
@@ -1990,17 +1990,17 @@ L 130.624 222.401575
      </g>
     </g>
     <g id="line2d_23">
-     <path d="M 114.624 233.55126 
-L 122.624 233.55126 
-L 130.624 233.55126 
+     <path d="M 114.624 245.155655 
+L 122.624 245.155655 
+L 130.624 245.155655 
 " style="fill: none; stroke: #4a3aa7; stroke-width: 2; stroke-linecap: square"/>
      <g>
-      <use xlink:href="#m00dd9f2179" x="122.624" y="233.55126" style="fill: #4a3aa7; stroke: #4a3aa7"/>
+      <use xlink:href="#ma61600fb85" x="122.624" y="245.155655" style="fill: #4a3aa7; stroke: #4a3aa7"/>
      </g>
     </g>
     <g id="text_20">
      <!-- The Basque headline -->
-     <g transform="translate(137.024 236.35126) scale(0.08 -0.08)">
+     <g transform="translate(137.024 247.955655) scale(0.08 -0.08)">
       <defs>
        <path id="LMRoman17-Regular-42" d="M 3885 1164 
 C 3885 1741 3360 2233 2675 2233 
@@ -2081,63 +2081,68 @@ z
   </g>
   <g id="axes_2">
    <g id="patch_5">
-    <path d="M 107.424 663.853296 
-L 754.704 663.853296 
-L 754.704 338.543406 
-L 107.424 338.543406 
+    <path d="M 107.424 697.117296 
+L 754.704 697.117296 
+L 754.704 354.981033 
+L 107.424 354.981033 
 z
 " style="fill: #fcfcfb"/>
    </g>
    <g id="line2d_24">
-    <path d="M 115.19136 372.786553 
-L 115.19136 378.078675 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 387.850019 
+L 115.19136 392.929771 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_25">
-    <path d="M 115.19136 403.916686 
-L 115.19136 409.208808 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 417.730915 
+L 115.19136 422.810667 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_26">
-    <path d="M 115.19136 435.046819 
-L 115.19136 440.338941 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 447.611811 
+L 115.19136 452.691564 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_27">
-    <path d="M 115.19136 466.176952 
-L 115.19136 471.469074 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 477.492708 
+L 115.19136 482.57246 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_28">
-    <path d="M 115.19136 497.307085 
-L 115.19136 502.599207 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 507.373604 
+L 115.19136 512.453357 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_29">
-    <path d="M 115.19136 528.437218 
-L 115.19136 533.72934 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 537.254501 
+L 115.19136 542.334253 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_30">
-    <path d="M 115.19136 559.567351 
-L 115.19136 564.859473 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 567.135397 
+L 115.19136 572.215149 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_31">
-    <path d="M 115.19136 590.697484 
-L 115.19136 595.989606 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 597.016293 
+L 115.19136 602.096046 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="line2d_32">
-    <path d="M 115.19136 621.827617 
-L 115.19136 627.119739 
-" clip-path="url(#pbc4a45b5cf)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+    <path d="M 115.19136 626.89719 
+L 115.19136 631.976942 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_33">
+    <path d="M 115.19136 656.778086 
+L 115.19136 661.857839 
+" clip-path="url(#pce301eaec5)" style="fill: none; stroke: #8a8983; stroke-linecap: square"/>
    </g>
    <g id="matplotlib.axis_3"/>
    <g id="matplotlib.axis_4"/>
    <g id="PathCollection_1">
     <defs>
-     <path id="m60c6bf00b3" d="M 0 5.477226 
+     <path id="mfe2673e85a" d="M 0 5.477226 
 C 1.452577 5.477226 2.845856 4.900111 3.872983 3.872983 
 C 4.900111 2.845856 5.477226 1.452577 5.477226 0 
 C 5.477226 -1.452577 4.900111 -2.845856 3.872983 -3.872983 
@@ -2150,12 +2155,12 @@ z
 " style="stroke: #e34948"/>
     </defs>
     <g>
-     <use xlink:href="#m60c6bf00b3" x="115.19136" y="358.777993" style="fill: #e34948; stroke: #e34948"/>
+     <use xlink:href="#mfe2673e85a" x="115.19136" y="374.403615" style="fill: #e34948; stroke: #e34948"/>
     </g>
    </g>
    <g id="text_21">
     <!-- 1. The July framing -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 354.670137) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 370.545607) scale(0.086 -0.086)">
      <defs>
       <path id="LMRoman17-Regular-4a" d="M 2682 4160 
 L 2682 4320 
@@ -2226,7 +2231,7 @@ z
    </g>
    <g id="text_22">
     <!-- Euskadi Física fell 1.48 points; the new competency model is to blame. -->
-    <g style="fill: #52514e" transform="translate(136.5516 363.189475) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 378.715159) scale(0.078 -0.078)">
      <defs>
       <path id="LMRoman17-Regular-45" d="M 3885 1615 
 L 3770 1615 
@@ -2375,7 +2380,7 @@ z
    </g>
    <g id="text_23">
     <!-- $\rightarrow$ overturned at step 2: six of nine communities rose in 2026 under the same model -->
-    <g style="fill: #e34948" transform="translate(136.5516 371.18481) scale(0.074 -0.074)">
+    <g style="fill: #e34948" transform="translate(136.5516 386.385692) scale(0.074 -0.074)">
      <defs>
       <path id="LMMathSymbols10-Regular-21" d="M 6035 1600 
 C 6035 1632 6010 1658 5984 1664 
@@ -2507,7 +2512,7 @@ z
    </g>
    <g id="PathCollection_2">
     <defs>
-     <path id="me30ba9ac1f" d="M 0 5.477226 
+     <path id="m90b8fac71b" d="M 0 5.477226 
 C 1.452577 5.477226 2.845856 4.900111 3.872983 3.872983 
 C 4.900111 2.845856 5.477226 1.452577 5.477226 0 
 C 5.477226 -1.452577 4.900111 -2.845856 3.872983 -3.872983 
@@ -2520,12 +2525,12 @@ z
 " style="stroke: #eda100"/>
     </defs>
     <g>
-     <use xlink:href="#me30ba9ac1f" x="115.19136" y="389.908126" style="fill: #eda100; stroke: #eda100"/>
+     <use xlink:href="#m90b8fac71b" x="115.19136" y="404.284512" style="fill: #eda100; stroke: #eda100"/>
     </g>
    </g>
    <g id="text_24">
     <!-- 2. The 2026 cross-section -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 385.80027) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 400.426503) scale(0.086 -0.086)">
      <use xlink:href="#LMRoman17-Regular-32" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-54" transform="translate(111.048807 0) scale(0.996264)"/>
@@ -2552,7 +2557,7 @@ z
    </g>
    <g id="text_25">
     <!-- The 2026 fall is regional, not national. H1 survives only as a description of 2025. -->
-    <g style="fill: #52514e" transform="translate(136.5516 394.319608) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 408.596055) scale(0.078 -0.078)">
      <defs>
       <path id="LMRoman17-Regular-2c" d="M 1126 -87 
 C 1126 124 1101 522 800 522 
@@ -2675,7 +2680,7 @@ z
    </g>
    <g id="text_26">
     <!-- $\rightarrow$ its premise - - - that 2025 was a national collapse - - - is overturned at step 6 -->
-    <g style="fill: #eda100" transform="translate(136.5516 402.314943) scale(0.074 -0.074)">
+    <g style="fill: #eda100" transform="translate(136.5516 416.266589) scale(0.074 -0.074)">
      <defs>
       <path id="LMRoman17-Regular-16" d="M 5939 1664 
 L 5939 1766 
@@ -2749,12 +2754,12 @@ z
    </g>
    <g id="PathCollection_3">
     <g>
-     <use xlink:href="#me30ba9ac1f" x="115.19136" y="421.038259" style="fill: #eda100; stroke: #eda100"/>
+     <use xlink:href="#m90b8fac71b" x="115.19136" y="434.165408" style="fill: #eda100; stroke: #eda100"/>
     </g>
    </g>
    <g id="text_27">
     <!-- 3. Shape against location -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 416.930403) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 430.3074) scale(0.086 -0.086)">
      <defs>
       <path id="LMRoman17-Regular-53" d="M 2970 1124 
 C 2970 1454 2848 1708 2778 1823 
@@ -2815,7 +2820,7 @@ z
    </g>
    <g id="text_28">
     <!-- Canarias 2026 sits on the historical locus: the whole distribution moved down. -->
-    <g style="fill: #52514e" transform="translate(136.5516 425.449772) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 438.476982) scale(0.078 -0.078)">
      <use xlink:href="#LMRoman17-Regular-43" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-61" transform="translate(66.509789 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-6e" transform="translate(112.200738 0) scale(0.996264)"/>
@@ -2887,7 +2892,7 @@ z
    </g>
    <g id="text_29">
     <!-- $\rightarrow$ weakened at steps 4 and 5 -->
-    <g style="fill: #eda100" transform="translate(136.5516 433.445076) scale(0.074 -0.074)">
+    <g style="fill: #eda100" transform="translate(136.5516 446.147485) scale(0.074 -0.074)">
      <use xlink:href="#LMMathSymbols10-Regular-21" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-77" transform="translate(129.702823 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-65" transform="translate(193.610159 0) scale(0.996264)"/>
@@ -2913,7 +2918,7 @@ z
    </g>
    <g id="PathCollection_4">
     <defs>
-     <path id="m01e2ddd40f" d="M 0 5.477226 
+     <path id="m3e23c33299" d="M 0 5.477226 
 C 1.452577 5.477226 2.845856 4.900111 3.872983 3.872983 
 C 4.900111 2.845856 5.477226 1.452577 5.477226 0 
 C 5.477226 -1.452577 4.900111 -2.845856 3.872983 -3.872983 
@@ -2926,12 +2931,12 @@ z
 " style="stroke: #1baf7a"/>
     </defs>
     <g>
-     <use xlink:href="#m01e2ddd40f" x="115.19136" y="452.168392" style="fill: #1baf7a; stroke: #1baf7a"/>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="464.046304" style="fill: #1baf7a; stroke: #1baf7a"/>
     </g>
    </g>
    <g id="text_30">
     <!-- 4. Where the evidence lies -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 448.060536) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 460.188296) scale(0.086 -0.086)">
      <defs>
       <path id="LMRoman17-Regular-57" d="M 6048 4160 
 L 6048 4326 
@@ -2998,7 +3003,7 @@ z
    </g>
    <g id="text_31">
     <!-- Only 2 of 187 region-years sit below mean 4.5; the locus there is extrapolated. -->
-    <g style="fill: #52514e" transform="translate(136.5516 456.579874) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 468.357848) scale(0.078 -0.078)">
      <defs>
       <path id="LMRoman17-Regular-4f" d="M 4307 2135 
 C 4307 3437 3366 4416 2304 4416 
@@ -3084,7 +3089,7 @@ z
    </g>
    <g id="text_32">
     <!-- $\rightarrow$ the claim of step 3 becomes 'consistent with', not 'demonstrated' -->
-    <g style="fill: #1baf7a" transform="translate(136.5516 464.575209) scale(0.074 -0.074)">
+    <g style="fill: #1baf7a" transform="translate(136.5516 476.028381) scale(0.074 -0.074)">
      <defs>
       <path id="LMRoman17-Regular-27" d="M 1146 3811 
 C 1146 3952 1133 4426 800 4426 
@@ -3160,12 +3165,12 @@ z
    </g>
    <g id="PathCollection_5">
     <g>
-     <use xlink:href="#m01e2ddd40f" x="115.19136" y="483.298525" style="fill: #1baf7a; stroke: #1baf7a"/>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="493.927201" style="fill: #1baf7a; stroke: #1baf7a"/>
     </g>
    </g>
    <g id="text_33">
     <!-- 5. The two distributions, decoupled -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 479.190669) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 490.069192) scale(0.086 -0.086)">
      <use xlink:href="#LMRoman17-Regular-35" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-54" transform="translate(111.048807 0) scale(0.996264)"/>
@@ -3201,7 +3206,7 @@ z
    </g>
    <g id="text_34">
     <!-- The pass rate is normal; the 8- -10 share is not, so its SD units are not calibrated. -->
-    <g style="fill: #52514e" transform="translate(136.5516 487.710038) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 498.238775) scale(0.078 -0.078)">
      <defs>
       <path id="LMRoman17-Regular-44" d="M 4224 2141 
 C 4224 3346 3411 4352 2368 4352 
@@ -3297,7 +3302,7 @@ z
    </g>
    <g id="text_35">
     <!-- $\rightarrow$ top-band residuals are directional only -->
-    <g style="fill: #1baf7a" transform="translate(136.5516 495.705342) scale(0.074 -0.074)">
+    <g style="fill: #1baf7a" transform="translate(136.5516 505.909278) scale(0.074 -0.074)">
      <use xlink:href="#LMMathSymbols10-Regular-21" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-74" transform="translate(129.702823 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-6f" transform="translate(164.984351 0) scale(0.996264)"/>
@@ -3338,12 +3343,12 @@ z
    </g>
    <g id="PathCollection_6">
     <g>
-     <use xlink:href="#m01e2ddd40f" x="115.19136" y="514.428658" style="fill: #1baf7a; stroke: #1baf7a"/>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="523.808097" style="fill: #1baf7a; stroke: #1baf7a"/>
     </g>
    </g>
    <g id="text_36">
     <!-- 6. Re-baselining to pre-COVID -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 510.320802) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 519.950089) scale(0.086 -0.086)">
      <defs>
       <path id="LMRoman17-Regular-56" d="M 4365 4160 
 L 4365 4338 
@@ -3416,7 +3421,7 @@ z
    </g>
    <g id="text_37">
     <!-- 2020- -24 was a plateau, not a decline; 2025 returned to the 2015- -19 norm. -->
-    <g style="fill: #52514e" transform="translate(136.5516 518.840171) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 528.119671) scale(0.078 -0.078)">
      <use xlink:href="#LMRoman17-Regular-32" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-30" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-32" transform="translate(91.381897 0) scale(0.996264)"/>
@@ -3481,7 +3486,7 @@ z
    </g>
    <g id="text_38">
     <!-- $\rightarrow$ reverses the sign of the national story and enlarges the Basque one -->
-    <g style="fill: #1baf7a" transform="translate(136.5516 526.835475) scale(0.074 -0.074)">
+    <g style="fill: #1baf7a" transform="translate(136.5516 535.790174) scale(0.074 -0.074)">
      <use xlink:href="#LMMathSymbols10-Regular-21" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-72" transform="translate(129.702823 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-65" transform="translate(164.984351 0) scale(0.996264)"/>
@@ -3543,12 +3548,12 @@ z
    </g>
    <g id="PathCollection_7">
     <g>
-     <use xlink:href="#m01e2ddd40f" x="115.19136" y="545.558791" style="fill: #1baf7a; stroke: #1baf7a"/>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="553.688994" style="fill: #1baf7a; stroke: #1baf7a"/>
     </g>
    </g>
    <g id="text_39">
     <!-- 7. Conditioning on passing -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 541.450935) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 549.830985) scale(0.086 -0.086)">
      <use xlink:href="#LMRoman17-Regular-37" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-43" transform="translate(111.048807 0) scale(0.996264)"/>
@@ -3576,7 +3581,7 @@ z
    </g>
    <g id="text_40">
     <!-- Among passers, the top-band share: the one measure not dominated by the level. -->
-    <g style="fill: #52514e" transform="translate(136.5516 549.970274) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 558.000537) scale(0.078 -0.078)">
      <use xlink:href="#LMRoman17-Regular-41" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-6d" transform="translate(69.069678 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-6f" transform="translate(145.991837 0) scale(0.996264)"/>
@@ -3647,7 +3652,7 @@ z
    </g>
    <g id="text_41">
     <!-- $\rightarrow$ strengthens step 3, shows the plateau reshaped rather than lifted, and finds a Basque turn in 2024 - - - before either candidate cause -->
-    <g style="fill: #1baf7a" transform="translate(136.5516 557.965608) scale(0.074 -0.074)">
+    <g style="fill: #1baf7a" transform="translate(136.5516 565.671071) scale(0.074 -0.074)">
      <defs>
       <path id="LMRoman17-Regular-1c" d="M 2989 -13 
 L 2989 153 
@@ -3799,12 +3804,12 @@ z
    </g>
    <g id="PathCollection_8">
     <g>
-     <use xlink:href="#m01e2ddd40f" x="115.19136" y="576.688924" style="fill: #1baf7a; stroke: #1baf7a"/>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="583.56989" style="fill: #1baf7a; stroke: #1baf7a"/>
     </g>
    </g>
    <g id="text_42">
     <!-- 8. Testing the slow version of H4 -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 572.581068) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 579.711882) scale(0.086 -0.086)">
      <use xlink:href="#LMRoman17-Regular-38" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-54" transform="translate(111.048807 0) scale(0.996264)"/>
@@ -3836,7 +3841,7 @@ z
    </g>
    <g id="text_43">
     <!-- Do cohorts arrive less prepared each year? Not detectably - - - take-up is flat. -->
-    <g style="fill: #52514e" transform="translate(136.5516 581.100407) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 587.881434) scale(0.078 -0.078)">
      <defs>
       <path id="LMRoman17-Regular-3f" d="M 2464 3600 
 C 2464 4117 2074 4480 1318 4480 
@@ -3997,7 +4002,7 @@ z
    </g>
    <g id="text_44">
     <!-- $\rightarrow$ kills the recruitment mechanism, and corrects a dilution effect this study had itself reported from a phase-undercount of 2015- -16 -->
-    <g style="fill: #1baf7a" transform="translate(136.5516 589.095741) scale(0.074 -0.074)">
+    <g style="fill: #1baf7a" transform="translate(136.5516 595.551967) scale(0.074 -0.074)">
      <defs>
       <path id="LMRoman17-Regular-1b" d="M 3578 4067 
 C 3578 4308 3347 4454 3091 4454 
@@ -4162,12 +4167,12 @@ z
    </g>
    <g id="PathCollection_9">
     <g>
-     <use xlink:href="#m01e2ddd40f" x="115.19136" y="607.819057" style="fill: #1baf7a; stroke: #1baf7a"/>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="613.450786" style="fill: #1baf7a; stroke: #1baf7a"/>
     </g>
    </g>
    <g id="text_45">
     <!-- 9. Bringing in an outside instrument -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 603.711201) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 609.592778) scale(0.086 -0.086)">
      <use xlink:href="#LMRoman17-Regular-39" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-42" transform="translate(111.048807 0) scale(0.996264)"/>
@@ -4203,7 +4208,7 @@ z
    </g>
    <g id="text_46">
     <!-- PISA 2006- -2022: Basque science goes from $+$9 above Spain to $-$5, breaking in 2015. -->
-    <g style="fill: #52514e" transform="translate(136.5516 612.23054) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 617.76233) scale(0.078 -0.078)">
      <defs>
       <path id="LMRoman17-Regular-50" d="M 3718 3184 
 C 3718 3791 3130 4352 2291 4352 
@@ -4302,7 +4307,7 @@ z
    </g>
    <g id="text_47">
     <!-- $\rightarrow$ the drift is real and pre-pandemic, but the cohorts do not match the PAU (1 of 3), which retracts the triangulation step 9 first claimed -->
-    <g style="fill: #1baf7a" transform="translate(136.5516 620.246389) scale(0.074 -0.074)">
+    <g style="fill: #1baf7a" transform="translate(136.5516 625.453378) scale(0.074 -0.074)">
      <defs>
       <path id="LMRoman17-Regular-55" d="M 4102 4160 
 L 4102 4326 
@@ -4471,12 +4476,12 @@ z
    </g>
    <g id="PathCollection_10">
     <g>
-     <use xlink:href="#me30ba9ac1f" x="115.19136" y="638.94919" style="fill: #eda100; stroke: #eda100"/>
+     <use xlink:href="#m90b8fac71b" x="115.19136" y="643.331683" style="fill: #eda100; stroke: #eda100"/>
     </g>
    </g>
    <g id="text_48">
     <!-- 10. Comparing the two slopes -->
-    <g style="fill: #0b0b0b" transform="translate(136.5516 634.841334) scale(0.086 -0.086)">
+    <g style="fill: #0b0b0b" transform="translate(136.5516 639.473674) scale(0.086 -0.086)">
      <use xlink:href="#LMRoman17-Regular-31" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-30" transform="translate(45.690948 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-2e" transform="translate(91.381897 0) scale(0.996264)"/>
@@ -4505,7 +4510,7 @@ z
    </g>
    <g id="text_49">
     <!-- On one scale, all four series fall; Euskadi is 1.7x Spain on BOTH instruments. -->
-    <g style="fill: #52514e" transform="translate(136.5516 643.360703) scale(0.078 -0.078)">
+    <g style="fill: #52514e" transform="translate(136.5516 647.643257) scale(0.078 -0.078)">
      <use xlink:href="#LMRoman17-Regular-4f" transform="scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-6e" transform="translate(71.71602 0) scale(0.996264)"/>
      <use xlink:href="#LMRoman17-Regular-6f" transform="translate(152.689256 0) scale(0.996264)"/>
@@ -4575,7 +4580,7 @@ z
    </g>
    <g id="text_50">
     <!-- $\rightarrow$ tempers step 9's 'the PAU does not show it' - - - but every interval includes zero, so the agreement is recorded, not believed -->
-    <g style="fill: #eda100" transform="translate(136.5516 651.356007) scale(0.074 -0.074)">
+    <g style="fill: #eda100" transform="translate(136.5516 655.31376) scale(0.074 -0.074)">
      <defs>
       <path id="LMRoman17-Regular-7a" d="M 2381 1152 
 L 2266 1152 
@@ -4700,9 +4705,234 @@ z
      <use xlink:href="#LMRoman17-Regular-64" transform="translate(4965.068311 0) scale(0.996264)"/>
     </g>
    </g>
+   <g id="PathCollection_11">
+    <g>
+     <use xlink:href="#m3e23c33299" x="115.19136" y="673.212579" style="fill: #1baf7a; stroke: #1baf7a"/>
+    </g>
+   </g>
    <g id="text_51">
+    <!-- 11. Forecasting 2027 from PISA 2025 -->
+    <g style="fill: #0b0b0b" transform="translate(136.5516 669.354571) scale(0.086 -0.086)">
+     <use xlink:href="#LMRoman17-Regular-31" transform="scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-31" transform="translate(45.690948 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2e" transform="translate(91.381897 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-46" transform="translate(156.739756 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(208.916149 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(254.607098 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(289.888626 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(330.373435 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(370.858244 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(416.549192 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(452.35243 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(487.633958 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6e" transform="translate(512.505974 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-67" transform="translate(563.403062 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-32" transform="translate(639.170159 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-30" transform="translate(684.861107 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-32" transform="translate(730.552056 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-37" transform="translate(776.243004 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-66" transform="translate(852.010101 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(879.482276 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(914.763804 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(960.454752 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-50" transform="translate(1067.45306 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-49" transform="translate(1130.036609 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-53" transform="translate(1162.674638 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-41" transform="translate(1213.571726 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-32" transform="translate(1312.717553 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-30" transform="translate(1358.408501 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-32" transform="translate(1404.099449 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-35" transform="translate(1449.790398 0) scale(0.996264)"/>
+    </g>
+   </g>
+   <g id="text_52">
+    <!-- Basque science falls to 458.5; top performers halve. Cohort term: $-$0.36 marks. -->
+    <g style="fill: #52514e" transform="translate(136.5516 677.524153) scale(0.078 -0.078)">
+     <use xlink:href="#LMRoman17-Regular-42" transform="scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(65.189606 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(110.880554 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-71" transform="translate(146.683792 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-75" transform="translate(194.975005 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(245.872093 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(316.433051 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(352.236289 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(392.721098 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(417.593114 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6e" transform="translate(458.077923 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(508.975011 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(549.45982 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-66" transform="translate(620.020778 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(647.492952 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6c" transform="translate(693.183901 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6c" transform="translate(718.055917 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(742.927933 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(808.80732 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(844.088848 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-34" transform="translate(919.855945 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-35" transform="translate(965.546893 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-38" transform="translate(1011.237842 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2e" transform="translate(1056.92879 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-35" transform="translate(1081.800806 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-3b" transform="translate(1127.491755 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(1182.43992 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(1217.721447 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-70" transform="translate(1263.412396 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-70" transform="translate(1344.385632 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(1397.885158 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(1438.369968 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-66" transform="translate(1473.651495 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(1501.12367 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(1546.814619 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(1582.096146 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(1659.018305 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(1699.503115 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(1734.784642 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-68" transform="translate(1800.664029 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(1851.561117 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6c" transform="translate(1897.252065 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-76" transform="translate(1922.124081 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(1967.812841 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2e" transform="translate(2008.29765 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-43" transform="translate(2073.655509 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(2140.165298 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-68" transform="translate(2185.856246 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(2236.753334 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(2282.444282 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(2317.72581 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(2383.083487 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(2418.365015 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(2458.849824 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(2494.131352 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-3a" transform="translate(2571.053511 0) scale(0.996264)"/>
+     <use xlink:href="#LMMathSymbols10-Regular-0" transform="translate(2636.41137 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-30" transform="translate(2713.898838 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2e" transform="translate(2759.589786 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-33" transform="translate(2784.461802 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-36" transform="translate(2830.152751 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(2905.919848 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(2982.842007 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(3028.532955 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6b" transform="translate(3063.814483 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(3112.105696 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2e" transform="translate(3147.908934 0) scale(0.996264)"/>
+    </g>
+   </g>
+   <g id="text_53">
+    <!-- $\rightarrow$ the paper term is 6.5x larger, so 2027 is a policy outcome, not a prediction - - - the estimator's value is attribution after the fact -->
+    <g style="fill: #1baf7a" transform="translate(136.5516 685.194656) scale(0.074 -0.074)">
+     <use xlink:href="#LMMathSymbols10-Regular-21" transform="translate(14.94396 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(144.832504 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-68" transform="translate(180.114032 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(231.011119 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-70" transform="translate(301.757797 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(352.654885 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-70" transform="translate(398.345833 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(451.84536 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(492.330169 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(557.873566 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(593.155093 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(633.639903 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(668.92143 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(776.105474 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(800.97749 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-36" transform="translate(867.042597 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2e" transform="translate(912.733545 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-35" transform="translate(937.605561 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-78" transform="translate(983.29651 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6c" transform="translate(1061.849592 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(1086.721608 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(1132.412556 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-67" transform="translate(1167.694084 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(1213.385033 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(1253.869842 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2c" transform="translate(1289.15137 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(1344.331681 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(1380.134919 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-32" transform="translate(1456.087736 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-30" transform="translate(1501.778685 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-32" transform="translate(1547.469633 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-37" transform="translate(1593.160581 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(1669.113414 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(1693.98543 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(1760.050537 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-70" transform="translate(1836.003354 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(1889.50288 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6c" transform="translate(1935.193829 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(1960.065845 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(1984.937861 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-79" transform="translate(2025.42267 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(2103.975753 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-75" transform="translate(2149.666701 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(2200.563789 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(2235.845316 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(2276.330126 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(2322.021074 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(2398.943233 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-2c" transform="translate(2439.428042 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6e" transform="translate(2494.608369 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(2545.505456 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(2591.196405 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(2656.739801 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-70" transform="translate(2732.692619 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(2783.589706 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(2818.871234 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-64" transform="translate(2859.356043 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(2910.253131 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(2935.125147 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(2975.609956 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(3010.891484 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(3035.7635 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6e" transform="translate(3081.454449 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-16" transform="translate(3162.613405 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(3284.257171 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-68" transform="translate(3319.538699 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(3370.435786 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(3441.182465 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(3481.667274 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(3517.470512 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(3552.752039 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6d" transform="translate(3577.624056 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(3654.546215 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(3700.237163 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(3735.518691 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(3781.209639 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-27" transform="translate(3816.491167 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(3841.363183 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-76" transform="translate(3907.42829 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(3950.514687 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6c" transform="translate(3996.205635 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-75" transform="translate(4021.077651 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(4071.974739 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(4142.721432 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-73" transform="translate(4167.593448 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(4233.658555 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(4279.349504 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(4314.631031 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(4349.912559 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(4385.194087 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-62" transform="translate(4410.066103 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-75" transform="translate(4460.963191 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(4511.860279 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-69" transform="translate(4547.141806 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(4572.013823 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-6e" transform="translate(4617.704771 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(4698.863728 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-66" transform="translate(4744.554676 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(4772.026851 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(4807.308378 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-72" transform="translate(4847.793188 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(4913.336584 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-68" transform="translate(4948.618112 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-65" transform="translate(4999.5152 0) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-66" transform="translate(0 -88.440321) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-61" transform="translate(27.472175 -88.440321) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-63" transform="translate(73.163123 -88.440321) scale(0.996264)"/>
+     <use xlink:href="#LMRoman17-Regular-74" transform="translate(113.647932 -88.440321) scale(0.996264)"/>
+    </g>
+   </g>
+   <g id="text_54">
     <!-- \textbf{b. The order the questions were asked in, and what each answer did to the one before} -->
-    <g style="fill: #0b0b0b" transform="translate(197.775783 332.543406) scale(0.11 -0.11)">
+    <g style="fill: #0b0b0b" transform="translate(197.775783 348.981033) scale(0.11 -0.11)">
      <defs>
       <path id="LMRoman12-Bold-62" d="M 3750 1431 
 C 3750 2305 3149 2880 2272 2880 
@@ -4879,9 +5109,9 @@ z
     </g>
    </g>
    <g id="legend_2">
-    <g id="line2d_33">
+    <g id="line2d_34">
      <defs>
-      <path id="md0cf8e0b99" d="M 0 4 
+      <path id="m4101e1b39b" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -4894,12 +5124,12 @@ z
 " style="stroke: #e34948"/>
      </defs>
      <g>
-      <use xlink:href="#md0cf8e0b99" x="639.77272" y="630.850368" style="fill: #e34948; stroke: #e34948"/>
+      <use xlink:href="#m4101e1b39b" x="639.77272" y="664.114368" style="fill: #e34948; stroke: #e34948"/>
      </g>
     </g>
-    <g id="text_52">
+    <g id="text_55">
      <!-- overturned by a later step -->
-     <g transform="translate(653.81272 633.580368) scale(0.078 -0.078)">
+     <g transform="translate(653.81272 666.844368) scale(0.078 -0.078)">
       <use xlink:href="#LMRoman17-Regular-6f" transform="scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-76" transform="translate(43.088494 0) scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-65" transform="translate(88.777254 0) scale(0.996264)"/>
@@ -4924,9 +5154,9 @@ z
       <use xlink:href="#LMRoman17-Regular-70" transform="translate(984.044513 0) scale(0.996264)"/>
      </g>
     </g>
-    <g id="line2d_34">
+    <g id="line2d_35">
      <defs>
-      <path id="m658d5cd647" d="M 0 4 
+      <path id="m260699b735" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -4939,12 +5169,12 @@ z
 " style="stroke: #eda100"/>
      </defs>
      <g>
-      <use xlink:href="#m658d5cd647" x="639.77272" y="641.721364" style="fill: #eda100; stroke: #eda100"/>
+      <use xlink:href="#m260699b735" x="639.77272" y="674.985364" style="fill: #eda100; stroke: #eda100"/>
      </g>
     </g>
-    <g id="text_53">
+    <g id="text_56">
      <!-- weakened by a later step -->
-     <g transform="translate(653.81272 644.451364) scale(0.078 -0.078)">
+     <g transform="translate(653.81272 677.715364) scale(0.078 -0.078)">
       <use xlink:href="#LMRoman17-Regular-77" transform="scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-65" transform="translate(63.907335 0) scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-61" transform="translate(104.392145 0) scale(0.996264)"/>
@@ -4967,9 +5197,9 @@ z
       <use xlink:href="#LMRoman17-Regular-70" transform="translate(934.297441 0) scale(0.996264)"/>
      </g>
     </g>
-    <g id="line2d_35">
+    <g id="line2d_36">
      <defs>
-      <path id="mf5a5389088" d="M 0 4 
+      <path id="m2a0659346a" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -4982,12 +5212,12 @@ z
 " style="stroke: #1baf7a"/>
      </defs>
      <g>
-      <use xlink:href="#mf5a5389088" x="639.77272" y="652.592361" style="fill: #1baf7a; stroke: #1baf7a"/>
+      <use xlink:href="#m2a0659346a" x="639.77272" y="685.856361" style="fill: #1baf7a; stroke: #1baf7a"/>
      </g>
     </g>
-    <g id="text_54">
+    <g id="text_57">
      <!-- stands -->
-     <g transform="translate(653.81272 655.322361) scale(0.078 -0.078)">
+     <g transform="translate(653.81272 688.586361) scale(0.078 -0.078)">
       <use xlink:href="#LMRoman17-Regular-73" transform="scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-74" transform="translate(35.803238 0) scale(0.996264)"/>
       <use xlink:href="#LMRoman17-Regular-61" transform="translate(71.084766 0) scale(0.996264)"/>
@@ -4998,9 +5228,9 @@ z
     </g>
    </g>
   </g>
-  <g id="text_55">
+  <g id="text_58">
    <!-- Every value is read from the JSON written by the script that computed it (results.json, shape\_locus.json, reference\_frames.json), -->
-   <g style="fill: #8a8983" transform="translate(7.2 742.599619) scale(0.07 -0.07)">
+   <g style="fill: #8a8983" transform="translate(7.2 780.399619) scale(0.07 -0.07)">
     <defs>
      <path id="LMRoman17-Regular-6a" d="M 1165 -340 
 L 1165 2790 
@@ -5147,7 +5377,7 @@ z
     <use xlink:href="#LMRoman17-Regular-2c" transform="translate(481.671849 -100.446796) scale(0.996264)"/>
    </g>
    <!-- so this figure cannot drift from the analysis it narrates. -->
-   <g style="fill: #8a8983" transform="translate(7.2 751.549296) scale(0.07 -0.07)">
+   <g style="fill: #8a8983" transform="translate(7.2 789.349296) scale(0.07 -0.07)">
     <use xlink:href="#LMRoman17-Regular-73" transform="scale(0.996264)"/>
     <use xlink:href="#LMRoman17-Regular-6f" transform="translate(35.803238 0) scale(0.996264)"/>
     <use xlink:href="#LMRoman17-Regular-74" transform="translate(111.570335 0) scale(0.996264)"/>
@@ -5200,11 +5430,11 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pd66bc74f35">
-   <rect x="107.424" y="20.749296" width="647.28" height="224.351648"/>
+  <clipPath id="pa7e019548e">
+   <rect x="107.424" y="20.749296" width="647.28" height="235.956044"/>
   </clipPath>
-  <clipPath id="pbc4a45b5cf">
-   <rect x="107.424" y="338.543406" width="647.28" height="325.30989"/>
+  <clipPath id="pce301eaec5">
+   <rect x="107.424" y="354.981033" width="647.28" height="342.136264"/>
   </clipPath>
  </defs>
 </svg>

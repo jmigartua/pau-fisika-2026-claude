@@ -77,6 +77,12 @@
       "claim": "Basque science falls to 458.5; top performers halve. Cohort term: −0.36 marks.",
       "status": "stood",
       "fate": "the paper term is 6.5x larger, so 2027 is a policy outcome, not a prediction — the estimator's value is attribution after the fact"
+    },
+    {
+      "step": "12. Measuring the reading load",
+      "claim": "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
+      "status": "weakened",
+      "fate": "but length and competency content correlate at +0.87, so it is a better instrument for the same change, not a second cause"
     }
   ]
 }

@@ -21,8 +21,8 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 | `data/tables/` | Markdown tables included by the chapters (generated) |
 | `sources/pisa/` | INEE PISA data tables, chapter 2 of the Spanish reports for 2015, 2018, 2022 and 2025 (science means and proficiency levels by community) |
 | `sources/raw/` | 37 downloaded documents (PDF/XLSX/HTML) · `sources/exams/` the 2025 and 2026 Física papers and corrector documents of nine communities (day 2) · `sources/exams_ehu_hist/` all EHU Física papers 2010–2026 and the PAU 2025 model documents · `sources/ministry/` 3 cubes · `sources/text/` extractions · `sources/agent_extractions/` the search agents' raw CSVs · `sources/source_registry.csv` |
-| `scripts/` | `plot_style.py` (shared LaTeX figure style), `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py`, `08_ehu_history.py`, `09_shape_locus.py`, `10_reference_frames.py`, `11_analysis_path.py`, `12_conditional_top.py`, `13_cohort_drift.py`, `14_take_up.py`, `15_pisa_link.py`, `16_slope_compare.py`, `17_pau2027_estimator.py` |
-| `plots/` | Twenty-three figures, PNG (200 dpi) and SVG, all matplotlib with LaTeX-typeset text |
+| `scripts/` | `plot_style.py` (shared LaTeX figure style), `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py`, `08_ehu_history.py`, `09_shape_locus.py`, `10_reference_frames.py`, `11_analysis_path.py`, `12_conditional_top.py`, `13_cohort_drift.py`, `14_take_up.py`, `15_pisa_link.py`, `16_slope_compare.py`, `17_pau2027_estimator.py`, `18_reading_load.py` |
+| `plots/` | Twenty-four figures, PNG (200 dpi) and SVG, all matplotlib with LaTeX-typeset text |
 | `logs/WORK_LOG.md`, `logs/SEARCH_REPORTS.md` | Chronological log; the five search agents' full reports |
 
 ## Rebuild
@@ -32,7 +32,7 @@ python3 scripts/01_build_ministry_panel.py && python3 scripts/02_analysis.py && 
   && python3 scripts/04_tables.py && python3 scripts/07_exam_coding.py && python3 scripts/08_ehu_history.py \
   && python3 scripts/09_shape_locus.py && python3 scripts/10_reference_frames.py \
   && python3 scripts/11_analysis_path.py && python3 scripts/12_conditional_top.py && python3 scripts/14_take_up.py \
-  && python3 scripts/13_cohort_drift.py && python3 scripts/15_pisa_link.py && python3 scripts/16_slope_compare.py && python3 scripts/17_pau2027_estimator.py \
+  && python3 scripts/13_cohort_drift.py && python3 scripts/15_pisa_link.py && python3 scripts/16_slope_compare.py && python3 scripts/17_pau2027_estimator.py && python3 scripts/18_reading_load.py \
   && python3 scripts/05_registry.py && quarto render
 ```
 

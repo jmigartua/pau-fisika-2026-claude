@@ -97,6 +97,29 @@ That is worth stating because it tempers a claim made in the previous section. T
 
 The honest summary is the one panel b is drawn to make unavoidable: **every interval includes zero**. With four PISA rounds and six usable PAU years, these data are consistent with two instruments measuring one common decline at the same rate — and equally consistent with no decline at all in either. The agreement of four point estimates, and of two independently computed ratios to within 4 %, is the kind of coincidence that is worth recording and is not worth believing on its own. It is a reason to keep measuring both, which is the recommendation of the next section, rather than a finding.
 
+### How much of the paper is reading? {#how-much-of-the-paper-is-reading}
+
+::: {.callout-note}
+## Disclosure
+The author of this study was involved in setting the 2026 Basque Física paper, and specifically chose to expand the statement of its second exercise — spelling out each requirement and repeating it — because a competency-style *saber básico* was entering the examined set for the first time. That account is the origin of the hypothesis tested in this section, and it is first-hand evidence no amount of text analysis could have supplied: it establishes that the length was deliberate rather than accidental. It also means this section examines a decision its author made. The provenance note in [Methods](10-reproduce.qmd) records the same fact.
+:::
+
+Every section so far has treated the paper as a single variable — harder or easier, more or less competency-oriented. It has another dimension that is objective, easy to measure and so far unexamined: how much text a candidate must read before answering. The competency reform pushes in exactly that direction, because contextualised items carry a scenario and the scenario has to be written down.
+
+That matters more if the cohort's reading has weakened, and the Basque cohort's has, far more than its science. Over the decade to 2025 the País Vasco PISA reading score falls **72 points**, from 491.4 to 419.1, against a science fall of 24.5. The gap to Spain widens from $-4.1$ to $-32.2$. Whatever else is true of these students, reading is where they have lost most ground. (There is no 2018 point: the Spanish PISA 2018 report contains mathematics and science only, because the OECD withheld Spain's 2018 reading results over anomalous response patterns.)
+
+![**a** — change in the length of each community's ordinary Física paper between 2025 and 2026, in per cent, against the change in its mean mark. Only each community's change against itself is used, since structures differ. **b** — PISA reading and science for País Vasco, with Spain's reading for comparison.](../plots/fig24_reading_load.png){#fig-reading}
+
+The association is the strongest this study has found between any property of a paper and the movement of its grade: **$r = -0.84$, $p = 0.008$** across the eight communities with both a 2026 result and an archived pair of papers, and $\rho = -0.76$, $p = 0.028$ on ranks. Stripping rubric and constant tables from the word counts leaves it unchanged at $-0.84$. Asturias and the Comunitat Valenciana shortened their papers and rose; Extremadura, Canarias and País Vasco lengthened theirs and fell. The Basque paper lengthened **39.5 %**, from 1,452 words to 2,026, and fell furthest.
+
+Three cautions, and the second is the one that matters.
+
+The word count includes everything on the page, and papers that offer more choice print more text for the same student workload. That is why only within-community change is used, and it is why Madrid's 4,070 words sit unremarked next to Asturias's 899.
+
+**Length and competency content are not independent.** The competency measure of [The papers themselves](11-exam-content.qmd) correlates with the length change at $r = +0.87$. Contextualised items are longer items, so the two are largely one signal seen twice, and with eight points they cannot be separated. What length adds is not a second cause but a better instrument: it is a count, reproducible by anyone with the PDFs, where the competency coding is a judgement made by one reader. That the objective measure correlates twice as strongly with the outcome ($-0.84$ against $-0.47$) is a reason to prefer it as the measurement, not a reason to believe a new mechanism.
+
+And the interaction that motivated the section — long papers hurting weak readers more than strong ones — is not tested here. Testing it needs the reading level of each community crossed with its length change, and with eight communities an interaction term would be fitting noise. It remains a hypothesis, and a cheap one to settle: the 2027 paper could be set with its statement length recorded, and the Basque reading collapse means that number now carries more weight than it did.
+
 ### What PISA 2025 says about PAU 2027 {#what-pisa-2025-says-about-pau-2027}
 
 PISA 2025 was published on 8 September 2026, eleven days before this chapter was written, and science was its major domain. It is the cohort that sits the PAU in 2027, so for the first time in this study a genuinely forward-looking measurement exists, and it is worth asking what estimate it supports.

@@ -1,0 +1,164 @@
+{
+  "papers": {
+    "Andalucía": [
+      "and_2025_ord",
+      "and_2026_ord"
+    ],
+    "Asturias (Principado de)": [
+      "ast_2025_ord",
+      "ast_2026_ord"
+    ],
+    "Canarias": [
+      "can_2025_ord",
+      "can_2026_ord"
+    ],
+    "Cataluña": [
+      "cat_2025_ord",
+      "cat_2026_ord"
+    ],
+    "Extremadura": [
+      "ext_2025_ord",
+      "ext_2026_ord"
+    ],
+    "Madrid (Comunidad de)": [
+      "mad_2025_ord",
+      "mad_2026_ord"
+    ],
+    "País Vasco": [
+      "pv_2025_ord_es",
+      "pv_2026_ord"
+    ],
+    "Comunitat Valenciana": [
+      "val_2025_ord",
+      "val_2026_ord"
+    ]
+  },
+  "length_table": [
+    {
+      "ccaa": "Andalucía",
+      "file_2025": "and_2025_ord",
+      "file_2026": "and_2026_ord",
+      "words_2025": 1199,
+      "words_2026": 1246,
+      "words_2025_nb": 1173,
+      "words_2026_nb": 1135,
+      "len_change": 3.9199332777314355,
+      "len_change_nb": -3.239556692242118,
+      "delta": 0.17
+    },
+    {
+      "ccaa": "Asturias (Principado de)",
+      "file_2025": "ast_2025_ord",
+      "file_2026": "ast_2026_ord",
+      "words_2025": 1000,
+      "words_2026": 899,
+      "words_2025_nb": 967,
+      "words_2026_nb": 843,
+      "len_change": -10.099999999999998,
+      "len_change_nb": -12.823164426059975,
+      "delta": 1.13
+    },
+    {
+      "ccaa": "Canarias",
+      "file_2025": "can_2025_ord",
+      "file_2026": "can_2026_ord",
+      "words_2025": 813,
+      "words_2026": 922,
+      "words_2025_nb": 684,
+      "words_2026_nb": 851,
+      "len_change": 13.40713407134071,
+      "len_change_nb": 24.415204678362578,
+      "delta": -0.832
+    },
+    {
+      "ccaa": "Cataluña",
+      "file_2025": "cat_2025_ord",
+      "file_2026": "cat_2026_ord",
+      "words_2025": 1548,
+      "words_2026": 1628,
+      "words_2025_nb": 1548,
+      "words_2026_nb": 1628,
+      "len_change": 5.167958656330751,
+      "len_change_nb": 5.167958656330751,
+      "delta": 0.8
+    },
+    {
+      "ccaa": "Extremadura",
+      "file_2025": "ext_2025_ord",
+      "file_2026": "ext_2026_ord",
+      "words_2025": 1233,
+      "words_2026": 1473,
+      "words_2025_nb": 1152,
+      "words_2026_nb": 1416,
+      "len_change": 19.4647201946472,
+      "len_change_nb": 22.916666666666675,
+      "delta": -0.82
+    },
+    {
+      "ccaa": "Madrid (Comunidad de)",
+      "file_2025": "mad_2025_ord",
+      "file_2026": "mad_2026_ord",
+      "words_2025": 3737,
+      "words_2026": 4070,
+      "words_2025_nb": 3333,
+      "words_2026_nb": 3727,
+      "len_change": 8.910891089108919,
+      "len_change_nb": 11.821182118211816,
+      "delta": 1.05
+    },
+    {
+      "ccaa": "País Vasco",
+      "file_2025": "pv_2025_ord_es",
+      "file_2026": "pv_2026_ord",
+      "words_2025": 1452,
+      "words_2026": 2026,
+      "words_2025_nb": 1395,
+      "words_2026_nb": 1926,
+      "len_change": 39.53168044077135,
+      "len_change_nb": 38.064516129032256,
+      "delta": -1.48
+    },
+    {
+      "ccaa": "Comunitat Valenciana",
+      "file_2025": "val_2025_ord",
+      "file_2026": "val_2026_ord",
+      "words_2025": 2485,
+      "words_2026": 2325,
+      "words_2025_nb": 2394,
+      "words_2026_nb": 2239,
+      "len_change": -6.438631790744465,
+      "len_change_nb": -6.474519632414366,
+      "delta": 0.506
+    }
+  ],
+  "length_vs_grade": {
+    "pearson_r": -0.8435069832036122,
+    "pearson_p": 0.008491951053875737,
+    "spearman_rho": -0.7619047619047621,
+    "spearman_p": 0.028004939153071794,
+    "pearson_r_boilerplate_stripped": -0.8443952065234395,
+    "n": 8
+  },
+  "collinearity_with_competency_change": {
+    "r": 0.8722304463913664,
+    "p": 0.02344466550439392
+  },
+  "pisa_reading": {
+    "2015": {
+      "pv": 491.448,
+      "es": 495.5764
+    },
+    "2022": {
+      "pv": 466.28937,
+      "es": 474.3071
+    },
+    "2025": {
+      "pv": 419.1100142379164,
+      "es": 451.3557527337459
+    }
+  },
+  "pais_vasco_decade_fall": {
+    "reading": 72.33798576208358,
+    "science": 24.530210910288588
+  }
+}

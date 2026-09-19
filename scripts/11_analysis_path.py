@@ -83,9 +83,13 @@ steps = [
      "Basque science falls to 458.5; top performers halve. Cohort term: −0.36 marks.",
      STOOD, "the paper term is 6.5x larger, so 2027 is a policy outcome, not a "
             "prediction — the estimator's value is attribution after the fact"),
+    ("12. Measuring the reading load",
+     "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
+     WEAK, "but length and competency content correlate at +0.87, so it is a better "
+            "instrument for the same change, not a second cause"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 12.2),
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 12.8),
                               gridspec_kw=dict(height_ratios=[1.0, 1.45], hspace=0.34))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
