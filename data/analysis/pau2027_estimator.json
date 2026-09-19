@@ -4,6 +4,7 @@
   "pisa_move_points": -20.98231491028855,
   "pisa_move_sd": -0.23313683233653945,
   "cohort_term_marks": -0.36369345844500145,
+  "cohort_term_marks_from_2026_baseline": -0.18184672922250072,
   "decade_cohort_term_marks": -1.225258083667503,
   "annual_paper_sd": 0.8548951481238588,
   "paper_band_95_2y": 2.3696484532520854,
@@ -12,6 +13,6 @@
   "pau_2026": 3.99,
   "scenarios": {
     "2027 paper like 2025's": 5.106306541554998,
-    "2027 paper like 2026's": 3.6263065415549987
+    "2027 paper like 2026's": 3.8081532707774994
   }
 }

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,16 +11,10 @@
 
 <title>Methods, checks and reproduction – PAU Física 2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -72,6 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../chapters/13-audit.html" rel="next">
 <link href="../chapters/09-log.html" rel="prev">
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -80,14 +75,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2a39badd227d94093ce4d8316f203092.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -133,7 +128,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -321,8 +316,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -507,6 +501,13 @@ window.Quarto = {
  <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -560,6 +561,12 @@ window.Quarto = {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 19, 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -572,7 +579,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="provenance-and-interest">Provenance and interest</h2>
 <p>The author of this study was involved in setting the 2026 Basque Física paper, and in particular chose to expand the statement of its second exercise — writing out each requirement and repeating it — because a competency-style <em>saber básico</em> entered the examined set for the first time that year.</p>
 <p>This is recorded for three reasons. It is a material interest: several chapters reach conclusions about that paper, and a reader is entitled to know that its analyst helped write it. It is also evidence, and evidence of a kind no measurement could supply — it establishes that the unusual length of that statement was a deliberate pedagogical decision rather than an accident of drafting, which is what makes the reading-load hypothesis of <a href="../chapters/06-interpretation.html#how-much-of-the-paper-is-reading">Chapter 6</a> worth testing at all. And the direction matters: the hypothesis it produced points at the paper, and at one of the author’s own choices within it, rather than away from them.</p>
-<p>Nothing in the analysis depends on privileged access. Every paper used is public and archived under <code>sources/exams/</code>; every figure is regenerated from those files by a script in <code>scripts/</code>; the word counts that carry the argument can be reproduced by anyone with the PDFs. Where the author’s own knowledge is used rather than the documents, as in the paragraph above, it is stated as such.</p>
+<p>Nothing in the analysis depends on privileged access, with one documented exception: the official list of theory titles used in <a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a>, which EHU no longer publishes and which the author supplied from his own files (archived as <code>sources/exams_ehu_hist/ehu_theory_list_official.pdf</code>). Every paper used is public and archived under <code>sources/exams/</code> and <code>sources/exams_ehu_hist/</code>; every figure is regenerated from those files by a script in <code>scripts/</code>; the word counts that carry the argument can be reproduced by anyone with the PDFs. Where the author’s own knowledge is used rather than the documents, as in the paragraph above, it is stated as such.</p>
 </section>
 <section id="definitions" class="level2">
 <h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
@@ -594,7 +601,7 @@ window.Quarto = {
 <p><strong>Ministry parse.</strong> The PC-Axis cubes are read by <code>scripts/pxparse.py</code>, which parses <code>STUB</code>, <code>HEADING</code> and <code>VALUES</code> and lays the <code>DATA</code> block out in row-major order over the declared dimensions (cell count asserted: 551 760, 827 640 and 1 655 280 cells). The Euskadi specific-phase ordinary series produced by <code>01_build_ministry_panel.py</code> is compared with <code>fisica_pau_ministerio_2015_2025.csv</code> of the July package: 11/11 means and 11/11 presented counts identical (assertion in the script). Spot checks of the pooled ordinary means against independently found sources: Aragón 2025 6.47 vs 6.469 (UNIZAR); Navarra 5.36 vs 5.36 (UPNA); Cantabria 5.42 vs 5.44 (UC, Bachillerato only); Castilla-La Mancha 5.86 vs 5.86 (UCLM); Comunitat Valenciana 5.89 vs 5.889 (GVA); Canarias 5.08 vs the ULL/ULPGC presented-weighted 5.08; Andalucía 5.69 vs 5.69 (ponencias); La Rioja 2022 7.43 vs 7.430 (UR). Murcia 5.31 vs 5.33 (COPAU, final post-claims) is the largest discrepancy and is within revision-stage differences.</p>
 <p><strong>Found data.</strong> Every histogram transcribed from the ULL and ULPGC dashboards sums to the displayed number of exams (683, 97, 796, 731; 712, 758, 796). Bin-midpoint means recomputed from the histograms are within 0.02–0.07 of the published means (the midpoint approximation biases slightly upward when the density falls within bins). UCLM presented = aprobados + no aprobados, and the displayed pass percentages are reproduced from those counts. Valencia page-43 figures were re-extracted from freshly downloaded PDFs and agree with the earlier session’s extraction. The EHU 2026 figures were re-read from the text of the 6 July deck (pages 3–8).</p>
 <p><strong>EHU 2026 counts.</strong> With <span class="math inline">\(N = 2\,066\)</span> and percentages rounded to one decimal, the compatible integer counts are 822–823 passes (39.8 %), 506–507 exams at ≤ 2 (24.5 %) and 66–67 zeros (3.2 %). These intervals are reported instead of point counts.</p>
-<p><strong>Plots.</strong> All ten figures were rendered and inspected on a contact sheet; label collisions found in a first pass (regime labels, axis footnotes, legend overlap) were corrected before the final render.</p>
+<p><strong>Plots.</strong> All twenty-four figures were rendered and inspected on a contact sheet (figures 1–10 on 18 September; 11–24 on 19 September, and all of them again in the audit); label collisions found in a first pass (regime labels, axis footnotes, legend overlap) were corrected before the final render.</p>
 </section>
 <section id="data-dictionary" class="level2">
 <h2 class="anchored" data-anchor-id="data-dictionary">Data dictionary</h2>
@@ -702,7 +709,7 @@ window.Quarto = {
 </section>
 <section id="rebuild" class="level2">
 <h2 class="anchored" data-anchor-id="rebuild">Rebuild</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> claude_analysis_2026-09-18</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> claude_analysis_2026-09-18</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/01_build_ministry_panel.py   <span class="co"># parses the cubes, validates against the July package</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/02_analysis.py               <span class="co"># all computations → data/analysis/</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/03_plots.py                  <span class="co"># ten figures → plots/</span></span>
@@ -719,14 +726,17 @@ window.Quarto = {
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/16_slope_compare.py          <span class="co"># PAU vs PISA slope comparison, fig 22 (day 2)</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/17_pau2027_estimator.py      <span class="co"># PAU 2027 estimator from PISA 2025, fig 23 (day 2)</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/18_reading_load.py           <span class="co"># paper length + PISA reading, fig 24 (day 2)</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/05_registry.py               <span class="co"># source registry</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render                                <span class="co"># → _site/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/19_audit_checks.py           <span class="co"># plateau by subject, turn base rate, 2026 vs norm (audit)</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/05_registry.py               <span class="co"># source registry</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/20_build_onepage.py          <span class="co"># onepage.qmd from index + chapters (audit)</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render                                <span class="co"># → _site/</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render onepage.qmd                    <span class="co"># → onepage.html (self-contained)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Requirements: Python ≥ 3.10 with <code>numpy</code>, <code>pandas</code>, <code>scipy</code>, <code>matplotlib</code>; Quarto ≥ 1.4 (the site uses no execution engine — every table is a static include, so no Jupyter kernel is needed). <code>pdftotext</code> (poppler) only for re-extracting the archived PDFs. A <strong>LaTeX installation</strong> with <code>latex</code> and <code>dvipng</code> on <code>PATH</code> is required for the figures: every figure sets <code>text.usetex</code>, so the plotting scripts abort rather than silently falling back to a substitute font.</p>
 </section>
 <section id="the-figures" class="level2">
 <h2 class="anchored" data-anchor-id="the-figures">The figures</h2>
 <p>All twenty-four figures are matplotlib, generated by <code>scripts/03_plots.py</code> (1–10), <code>scripts/07_exam_coding.py</code> (11–12), <code>scripts/08_ehu_history.py</code> (13–15) <code>scripts/09_shape_locus.py</code> (16) <code>scripts/10_reference_frames.py</code> (17) <code>scripts/11_analysis_path.py</code> (18) <code>scripts/12_conditional_top.py</code> (19) <code>scripts/13_cohort_drift.py</code> (20) <code>scripts/15_pisa_link.py</code> (21) <code>scripts/16_slope_compare.py</code> (22) <code>scripts/17_pau2027_estimator.py</code> (23) and <code>scripts/18_reading_load.py</code> (24) from the CSVs in <code>data/</code> and <code>data/analysis/</code>, and written to <code>plots/</code> as PNG (200 dpi, or 170 dpi for 11–15) and SVG under the exact filenames the chapters include. Nothing in the site is a hand-drawn or externally sourced image.</p>
-<p>Every piece of figure text — titles, axis labels, tick labels, legends, annotations — is typeset by LaTeX rather than by a system font, so the figures match the mathematics in the prose. All styling lives in one module, <code>scripts/plot_style.py</code>: the rcParams, the font sizes derived from a single <code>BASE</code> constant, the colour registry shared by the three scripts, and a text guard that escapes every label on its way into matplotlib. That guard is not cosmetic. This study’s labels are full of percentages, and under <code>usetex</code> an unescaped <code>%</code> opens a LaTeX comment that silently swallows the rest of the line — “Euskadi 39.8 % pass” renders as “Euskadi 39.8”, with no error. The guard also maps the Greek and mathematical characters that appear in the data (<code>Δ</code>, <code>λ</code>, <code>→</code>, <code>≤</code>, <code>±</code>, <code>×</code>), which LaTeX rejects outright in text mode, and promotes the sign of a signed number to a true minus while leaving the hyphens in names like Castilla-La Mancha alone.</p>
+<p>Every piece of figure text — titles, axis labels, tick labels, legends, annotations — is typeset by LaTeX rather than by a system font, so the figures match the mathematics in the prose. All styling lives in one module, <code>scripts/plot_style.py</code>: the rcParams, the font sizes derived from a single <code>BASE</code> constant, the colour registry shared by the twelve plotting scripts, and a text guard that escapes every label on its way into matplotlib. That guard is not cosmetic. This study’s labels are full of percentages, and under <code>usetex</code> an unescaped <code>%</code> opens a LaTeX comment that silently swallows the rest of the line — “Euskadi 39.8 % pass” renders as “Euskadi 39.8”, with no error. The guard also maps the Greek and mathematical characters that appear in the data (<code>Δ</code>, <code>λ</code>, <code>→</code>, <code>≤</code>, <code>±</code>, <code>×</code>), which LaTeX rejects outright in text mode, and promotes the sign of a signed number to a true minus while leaving the hyphens in names like Castilla-La Mancha alone.</p>
 </section>
 <section id="limits" class="level2">
 <h2 class="anchored" data-anchor-id="limits">Limits</h2>
@@ -800,14 +810,13 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1161,13 +1170,16 @@ window.Quarto = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../chapters/13-audit.html" class="pagination-link" aria-label="Audit">
+        <span class="nav-page-text">Audit</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Independent analysis prepared 18 September 2026 · all figures reproducible from <code>scripts/</code></p>
+<p>Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from <code>scripts/</code></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

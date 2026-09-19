@@ -10,6 +10,12 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "sources" / "raw"
 MIN = ROOT / "sources" / "ministry"
 
+PISA_URLS = {
+    "pisa2015_cap2_tablas.xls": ("https://www.educacionfpydeportes.gob.es/inee/evaluaciones-internacionales/pisa/pisa-2015.html", "INEE PISA 2015 Informe español, tablas capítulo 2 (science, reading; back-series 2006–2015 by community)", "downloaded on the user's machine, 19 Sep 2026 (landing page given; file URL not recorded)"),
+    "pisa2018_cap2_tablas.xlsx": ("https://www.educacionfpydeportes.gob.es/inee/evaluaciones-internacionales/pisa/pisa-2018.html", "INEE PISA 2018 Informe español, tablas capítulo 2", "downloaded on the user's machine, 19 Sep 2026 (landing page given; file URL not recorded)"),
+    "pisa2022_cap2_tablas.xlsx": ("https://www.educacionfpydeportes.gob.es/inee/evaluaciones-internacionales/pisa/pisa-2022.html", "INEE PISA 2022 Informe español, tablas capítulo 2", "downloaded on the user's machine, 19 Sep 2026 (landing page given; file URL not recorded)"),
+    "pisa2025_cap2_tablas.xlsx": ("https://www.educacionfpydeportes.gob.es/inee/evaluaciones-internacionales/pisa/pisa-2025.html", "INEE PISA 2025 Informe español, tablas capítulo 2 (published 8 Sep 2026)", "downloaded on the user's machine, 19 Sep 2026 (landing page given; file URL not recorded)"),
+}
 URLS = {
     "ehu_20260706_notak_po.pdf": ("https://www.ehu.eus/documents/d/campusa/20260706-notak-po", "EHU presentation 6 Jul 2026", "curl (search agent)"),
     "ehu_informe_pau_2025.pdf": ("https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/informe-pau_2025-1-", "EHU annual summary 2025", "curl (search agent)"),
@@ -157,6 +163,13 @@ for f in sorted(HIST.iterdir()):
         desc = f"EHU Física {sit} {yr}, {kind}{lang}"
     rows.append(dict(file=f"exams_ehu_hist/{f.name}", bytes=f.stat().st_size, sha256=h, description=desc, url=url,
                      retrieval="curl (search agent), ehu.eus archive pages"))
+PISA = ROOT / "sources" / "pisa"
+for f in sorted(PISA.iterdir()):
+    if f.suffix not in (".xls", ".xlsx"):
+        continue
+    h = hashlib.sha256(f.read_bytes()).hexdigest()
+    url, desc, how = PISA_URLS.get(f.name, ("", "INEE PISA tables", "curl"))
+    rows.append(dict(file=f"pisa/{f.name}", bytes=f.stat().st_size, sha256=h, description=desc, url=url, retrieval=how))
 for folder in (RAW, MIN):
     for f in sorted(folder.iterdir()):
         if not f.is_file():

@@ -114,7 +114,7 @@ for ax, c in zip(axes.flat, order):
         col = C["red"] if d26["mean"].iloc[0] < d[d.year == 2025]["mean"].iloc[0] else C["aqua"]
         ax.plot([2025, 2026], [d[d.year == 2025]["mean"].iloc[0], d26["mean"].iloc[0]], color=col, lw=1.9, zorder=3)
         ax.scatter([2026], d26["mean"], s=48, facecolor=col, edgecolor=SURF, zorder=4)
-        ax.text(2026.15, d26["mean"].iloc[0], f"{d26['mean'].iloc[0]:.2f}", fontsize=8, va="center", color=INK)
+        ax.text(2026.45, d26["mean"].iloc[0], f"{d26['mean'].iloc[0]:.2f}", fontsize=8, va="center", color=INK, zorder=6)
     ax.set_title(short.get(c, c) + (" (aptes basis)" if c == "Cataluña" else ""), fontsize=9.5)
     ax.set_ylim(3.4, 8.8)
     ax.set_xticks([2015, 2018, 2021, 2024, 2026])

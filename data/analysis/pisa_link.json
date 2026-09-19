@@ -56,21 +56,21 @@
       "pisa_year": 2015,
       "pau_year": 2017,
       "pisa_gap": -9.728399999999965,
-      "pau_conditional_vs_field_sd": 0.7038229279987382,
+      "pau_conditional_vs_field_sd": 0.7038229279987377,
       "same_sign": false
     },
     {
       "pisa_year": 2018,
       "pau_year": 2020,
       "pisa_gap": 4.124764837792043,
-      "pau_conditional_vs_field_sd": -0.8161152132460037,
+      "pau_conditional_vs_field_sd": -0.8161152132460043,
       "same_sign": false
     },
     {
       "pisa_year": 2022,
       "pau_year": 2024,
       "pisa_gap": -5.023844000000054,
-      "pau_conditional_vs_field_sd": -0.959736279695222,
+      "pau_conditional_vs_field_sd": -0.9597362796952205,
       "same_sign": true
     }
   ]

@@ -3,6 +3,7 @@ title: "Log"
 subtitle: "What was done on 18 September 2026, in order, with the dead ends and the watch-list"
 description: "Chronological work log of the data hunt and analysis, the sources that could not be read and why, the leads left open, and the URLs to poll for the next update with their expected dates."
 date: 2026-09-18
+date-modified: 2026-09-19
 categories: [log]
 ---
 
@@ -61,6 +62,8 @@ The user, back at the laptop, asked for the loose ends of the previous day to be
 
 **Afternoon, 19 September — the paper's own history.** The user added the institutional background of the Basque paper (two-option format with theory questions from a published list; the de facto restriction of block-E problems to the photoelectric effect; the 2025 and 2026 decisions). One agent downloaded the full EHU archive 2010–2026 (34 papers, 77 PDFs) and the 2025 model documents; every problem and theory question was inventoried (`scripts/08_ehu_history.py`, 146 problems, 118 questions, 22 theory titles); the marking rules of all corrector documents in hand were tabulated; a selection-premium simulation quantified each format's choice; figures 13–15 and [Chapter 12](12-ehu-paper-history.qmd) were written; Chapter 6, the index and this log updated; site re-rendered and copied to the Mac. The user then supplied the official EHU–Department list of theory titles (*Cuestiones teóricas*, 22 titles with development guide); it matches the reconstruction title for title and is archived in `sources/exams_ehu_hist/`.
 
+**Evening, 19 September — the audit.** Before the site is shown to anyone, the user asked for an exhaustive and critical audit of everything: every number, figure, table, dataset and interpretation, with special attention to Chapter 6 and its account of the path the analysis took. Seven layers were run — a clean re-execution of the pipeline, delegated recomputation of every number in Chapters 2–5 and in Chapter 6 from the raw files, a blind second coding of the eighteen papers, a figure-by-figure and table-by-table check, a sourcing and cross-chapter consistency check, and a reasoning audit of Chapter 6 with four new tests (`scripts/19_audit_checks.py`). The findings, the corrections and the questions still open are in [Chapter 13](13-audit.qmd); the layer reports are in `logs/audit/`. The single-page edition, which had been assembled by hand and had lagged the chapters, is now generated from them (`scripts/20_build_onepage.py`). Site re-rendered and copied to the Mac.
+
 ## Dead ends, so they are not repeated
 
 | Target | What happened | Verdict |
@@ -102,7 +105,7 @@ The user, back at the laptop, asked for the loose ends of the previous day to be
 
 - `index.qmd`, `chapters/*.qmd`, `_quarto.yml`, `styles.scss`, `styles-dark.scss`, `assets/`: the site.
 - `data/`: `regional_fisica_found.csv`, `found_*.csv` (dashboard transcriptions), `ministry_fisica_*.csv` (parsed cubes), `original/` (July package copies), `analysis/` (all computed outputs + `results.json`), `tables/` (Markdown tables included by the chapters).
-- `sources/`: `raw/` (37 downloaded documents), `ministry/` (3 cubes), `text/` (extractions), `agent_extractions/` (the search agents' CSVs, unmodified), `source_registry.csv`, `literature_new.bib`, `references_core.bib`.
-- `scripts/`: `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`.
-- `plots/`: ten figures, PNG and SVG.
-- `logs/`: `WORK_LOG.md` (this chapter as a standalone file), `SEARCH_REPORTS.md` (the five agents' full reports).
+- `sources/`: `raw/` (41 downloaded documents), `ministry/` (3 cubes), `text/` (extractions), `agent_extractions/` (the search agents' CSVs, unmodified), `source_registry.csv`, `literature_new.bib`, `references_core.bib`.
+- `scripts/`: `pxparse.py`, `plot_style.py` and the numbered scripts `01`–`20` (see [Methods](10-reproduce.qmd) for the run order; `19` are the audit checks, `20` builds the single-page edition).
+- `plots/`: twenty-four figures, PNG and SVG.
+- `logs/`: `WORK_LOG.md` (this chapter as a standalone file), `SEARCH_REPORTS.md` (the five agents' full reports), `AUDIT_2026-09-19.md` and `audit/` (the audit report and its seven layer reports, see [Audit](13-audit.qmd)).

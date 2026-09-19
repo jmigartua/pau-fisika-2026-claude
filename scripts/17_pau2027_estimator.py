@@ -66,6 +66,10 @@ PAU_2025, PAU_2026 = float(eus.loc[2025]), 3.99
 # separate the two PAU cohorts.
 pisa_move_sd = (pv[2025] - pv[2022]) / SD_PISA
 cohort_term = pisa_move_sd * SD_PAU * (2 / 3)
+# By the same alignment PAU 2026 is fed by a notional PISA 2024, one year before the
+# PAU 2027 cohort, so the term to add to the 2026 mark is one third of the move
+# (audit, 19 Sep 2026: the first version added the two-thirds term to both scenarios).
+cohort_term_from_2026 = pisa_move_sd * SD_PAU * (1 / 3)
 
 # The paper term, over the two years from 2025 to 2027.
 paper_sd_2y = sd_annual * np.sqrt(2)
@@ -73,7 +77,7 @@ band = 1.96 * paper_sd_2y
 
 scenarios = {
     "2027 paper like 2025's": PAU_2025 + cohort_term,
-    "2027 paper like 2026's": PAU_2026 + cohort_term,
+    "2027 paper like 2026's": PAU_2026 + cohort_term_from_2026,
 }
 
 fig, (ax, axb) = plt.subplots(1, 2, figsize=(12.8, 5.2),
@@ -96,15 +100,15 @@ ax.set_xticks(range(2015, 2029, 2))
 ax.set_xlim(2014.4, 2029.6)
 ax.set_xlabel("Year")
 ax.set_ylabel("Mean Física mark, ordinary sitting")
-ax.set_title("a. Two scenarios for 2027, with the paper term as the error bar")
+ax.set_title("a. Two scenarios for 2027; the error bar is the year-to-year term, not a prediction interval")
 ax.legend(loc="lower left", fontsize=7.8)
 
 # --- b. the size of each term ----------------------------------------------------
 terms = [("Cohort, from PISA 2025\n(prorated 2022→2025)", abs(cohort_term), C["aqua"]),
          ("Decade of cohort drift\n(PISA 2012→2025, full)",
           abs((pv[2025] - pv[2012]) / SD_PISA * SD_PAU), C["violet"]),
-         ("Paper and marking, one year\n(Euskadi's own SD)", sd_annual, MUTED),
-         ("Paper and marking, 2025→2027\n(95 % band)", band, INK2),
+         ("Everything else, one year\n(Euskadi's own year-to-year SD)", sd_annual, MUTED),
+         ("Everything else, 2025→2027\n(95 % band, random-walk assumption)", band, INK2),
          ("What 2026 actually did\nin a single year", 1.48, C["red"])]
 ypos = np.arange(len(terms))[::-1]
 for y, (lab, val, colr) in zip(ypos, terms):
@@ -138,6 +142,7 @@ json.dump({
     "pisa_2025_pais_vasco": pv[2025], "pisa_2022_pais_vasco": pv[2022],
     "pisa_move_points": pv[2025] - pv[2022], "pisa_move_sd": pisa_move_sd,
     "cohort_term_marks": cohort_term,
+    "cohort_term_marks_from_2026_baseline": cohort_term_from_2026,
     "decade_cohort_term_marks": (pv[2025] - pv[2012]) / SD_PISA * SD_PAU,
     "annual_paper_sd": sd_annual, "paper_band_95_2y": band,
     "noise_to_signal": band / abs(cohort_term),

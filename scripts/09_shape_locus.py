@@ -104,7 +104,10 @@ def regime_test(df):
 
 regimes = {"all_years": regime_test(hist),
            "excluding_covid_2020_21": regime_test(hist[~hist.year.isin([2020, 2021])])}
-cohort = {int(y): int(hist[hist.year == y].presented.sum()) for y in (2015, 2025)}
+# Pooled across phases (audit 19 Sep 2026): Física sat in both phases until 2016, so the
+# specific-phase count alone understates 2015 by 18 % (30,839 against 37,661).
+_pooled = panel[(panel.sitting == "ordinary") & (panel.phase == "pooled") & (~panel.ccaa.isin(["Estado", "Total"]))]
+cohort = {int(y): int(_pooled[_pooled.year == y].presented.sum()) for y in (2015, 2025)}
 
 
 def band_share_8_10(row, total):
@@ -452,10 +455,12 @@ summary = {"n_region_years": int(len(hist)), "sd_pass_pp": sd_pass, "sd_top_pp":
            "covid_plateau_years": COVID_PLATEAU,
            "mean_axis": {
                "skew": float(skew(means)), "excess_kurtosis": float(kurtosis(means)),
-               "shapiro_p": float(sw.pvalue),
-               "anderson_A2": float(ad.statistic),
-               "anderson_crit_5pct": float(ad.critical_values[2]),
-               "normal": bool(ad.statistic < ad.critical_values[2]),
+               # audit 19 Sep 2026: these were previously the leftover `sw`/`ad` of the
+               # last marginal loop (the plateau-removed ratio); recomputed on the means.
+               "shapiro_p": float(shapiro(means).pvalue),
+               "anderson_A2": float(anderson(means, "norm").statistic),
+               "anderson_crit_5pct": float(anderson(means, "norm").critical_values[2]),
+               "normal": bool(anderson(means, "norm").statistic < anderson(means, "norm").critical_values[2]),
                "n_below_4_5": int((means < 4.5).sum()),
                "n_below_5_0": int((means < 5.0).sum()),
                "locus_ci95_pp_at_mean_4_08": float(

@@ -5,9 +5,9 @@ project:
     - index.qmd
     - chapters/*.qmd
   resources:
-    - plots/*
-    - data/analysis/*.csv
-    - data/*.csv
+    - /plots/*
+    - /data/analysis/*.csv
+    - /data/*.csv
 
 website:
   title: "PAU Física 2026"
@@ -86,8 +86,11 @@ website:
           - href: chapters/10-reproduce.qmd
             text: "Reproduce the study"
             icon: code-slash
+          - href: chapters/13-audit.qmd
+            text: "Audit"
+            icon: shield-check
   page-footer:
-    left: "Independent analysis prepared 18 September 2026 · all figures reproducible from `scripts/`"
+    left: "Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from `scripts/`"
     right: "Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR"
 
 format:

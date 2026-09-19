@@ -74,8 +74,30 @@ BOILER = re.compile(
     r"Responda|Jarraibide|OPTATIVIDAD|ESTRUCTURA)", re.I)
 
 
-def words(path: Path, strip_boiler: bool = False) -> int:
+def statement_only(text: str, stem: str) -> str:
+    """Keep the examination statement only (audit of 19 Sep 2026).
+
+    Three archived files carry text that is not the statement the candidate reads:
+    the Madrid PDFs embed the marking criteria and full worked solutions after the
+    paper (about 70 % of their words); the Valencia PDFs are bilingual, Spanish
+    pages first then the Valencian repeat; the EHU Spanish files open with the
+    Basque instruction block before the Spanish one. Each is cut at its marker.
+    """
+    if stem.startswith("mad_"):
+        text = text.split("CRITERIOS ESPECÍFICOS", 1)[0]
+    elif stem.startswith("val_"):
+        parts = re.split(r"PROVA D[’']ACC[ÉE]S", text)
+        text = parts[1] if len(parts) > 2 else text          # the Spanish half only
+    elif stem.startswith("pv_"):
+        parts = text.split("INSTRUCCIONES PARA EL EXAMEN", 1)
+        text = parts[1] if len(parts) == 2 else text          # drop the Basque instruction block
+    return text
+
+
+def words(path: Path, strip_boiler: bool = False, raw: bool = False) -> int:
     text = path.read_text(encoding="utf-8", errors="replace")
+    if not raw:
+        text = statement_only(text, path.stem)
     if strip_boiler:
         text = "\n".join(l for l in text.splitlines() if not BOILER.search(l))
     return len(re.findall(r"\b[\wáéíóúüñÁÉÍÓÚÜÑ]+\b", text))
@@ -89,10 +111,12 @@ for ccaa, (f25, f26) in PAPERS.items():
         continue
     rows.append({"ccaa": ccaa, "file_2025": f25, "file_2026": f26,
                  "words_2025": words(p25), "words_2026": words(p26),
-                 "words_2025_nb": words(p25, True), "words_2026_nb": words(p26, True)})
+                 "words_2025_nb": words(p25, True), "words_2026_nb": words(p26, True),
+                 "words_2025_raw": words(p25, raw=True), "words_2026_raw": words(p26, raw=True)})
 length = pd.DataFrame(rows)
 length["len_change"] = 100 * (length.words_2026 / length.words_2025 - 1)
 length["len_change_nb"] = 100 * (length.words_2026_nb / length.words_2025_nb - 1)
+length["len_change_raw"] = 100 * (length.words_2026_raw / length.words_2025_raw - 1)
 
 reg = pd.read_csv(A / "regions_2026_vs_2025.csv")[["ccaa", "delta"]]
 length = length.merge(reg, on="ccaa", how="left")
@@ -102,6 +126,8 @@ ok = length.dropna(subset=["delta"])
 r_len = stats.pearsonr(ok.len_change, ok.delta)
 r_len_nb = stats.pearsonr(ok.len_change_nb, ok.delta)
 r_sp = stats.spearmanr(ok.len_change, ok.delta)
+r_raw = stats.pearsonr(ok.len_change_raw, ok.delta)          # the pre-audit count, for the record
+r_excl_pv = stats.pearsonr(ok[ok.ccaa != "País Vasco"].len_change, ok[ok.ccaa != "País Vasco"].delta)
 
 # Is length just restating the competency coding of chapter 11?
 coding = pd.read_csv(DATA / "exam_coding_2025_2026.csv")
@@ -199,7 +225,9 @@ json.dump({
     "length_vs_grade": {"pearson_r": r_len[0], "pearson_p": r_len[1],
                         "spearman_rho": float(r_sp.statistic),
                         "spearman_p": float(r_sp.pvalue),
-                        "pearson_r_boilerplate_stripped": r_len_nb[0], "n": int(len(ok))},
+                        "pearson_r_boilerplate_stripped": r_len_nb[0], "n": int(len(ok)),
+                        "pearson_r_raw_files_pre_audit": r_raw[0], "pearson_p_raw_files_pre_audit": r_raw[1],
+                        "pearson_r_excl_pais_vasco": r_excl_pv[0], "pearson_p_excl_pais_vasco": r_excl_pv[1]},
     "collinearity_with_competency_change": {"r": r_collin[0], "p": r_collin[1]},
     "pisa_reading": reading,
     "pais_vasco_decade_fall": {"reading": reading[2015]["pv"] - reading[2025]["pv"],

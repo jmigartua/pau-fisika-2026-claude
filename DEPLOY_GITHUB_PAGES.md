@@ -18,7 +18,8 @@ The site is at https://jmigartua.github.io/pau-fisika-2026-claude/.
 ## After any re-render
 
 ```bash
-quarto render                 # the 13 website pages -> _site/
+python3 scripts/20_build_onepage.py   # regenerate onepage.qmd from index + chapters
+quarto render                 # the 14 website pages -> _site/
 quarto render onepage.qmd     # the standalone single-page edition -> onepage.html
 rm -rf docs && cp -R _site docs
 cp onepage.html docs/onepage.html

@@ -1,7 +1,7 @@
 {
   "headlines": {
     "national": {
-      "year_on_year": -0.8099999999999997,
+      "year_on_year": -0.6466666666666656,
       "cross_section_2026": 0.16933333333333245,
       "vs_baseline": 0.02111111111111086
     },
@@ -50,9 +50,9 @@
     },
     {
       "step": "7. Conditioning on passing",
-      "claim": "Among passers, the top-band share: the one measure not dominated by the level.",
-      "status": "stood",
-      "fate": "strengthens step 3, shows the plateau reshaped rather than lifted, and finds a Basque turn in 2024 — before either candidate cause"
+      "claim": "Among passers, the top-band share: the one measure least dominated by the level.",
+      "status": "weakened",
+      "fate": "strengthens step 3; its two further claims — a plateau that reshaped, and a Basque turn in 2024 — were withdrawn at step 13"
     },
     {
       "step": "8. Testing the slow version of H4",
@@ -69,20 +69,26 @@
     {
       "step": "10. Comparing the two slopes",
       "claim": "On one scale, all four series fall; Euskadi is 1.7x Spain on BOTH instruments.",
-      "status": "weakened",
-      "fate": "tempers step 9's 'the PAU does not show it' — but every interval includes zero, so the agreement is recorded, not believed"
+      "status": "overturned",
+      "fate": "on 2012–22 every interval includes zero; with PISA 2025 the PISA slopes are significant and the ratio is 2.1 — the records are steps, not slopes (step 13)"
     },
     {
       "step": "11. Forecasting 2027 from PISA 2025",
       "claim": "Basque science falls to 458.5; top performers halve. Cohort term: −0.36 marks.",
       "status": "stood",
-      "fate": "the paper term is 6.5x larger, so 2027 is a policy outcome, not a prediction — the estimator's value is attribution after the fact"
+      "fate": "the two-year band of year-to-year variation is 6.5x larger, so 2027 is a policy outcome, not a prediction — the estimator's value is attribution after the fact"
     },
     {
       "step": "12. Measuring the reading load",
       "claim": "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
       "status": "weakened",
-      "fate": "but length and competency content correlate at +0.87, so it is a better instrument for the same change, not a second cause"
+      "fate": "but length and competency content correlate at +0.9, so it is a better instrument for the same change, not a second cause; the Madrid count was 70 % solutions — corrected at step 13 (r = −0.91)"
+    },
+    {
+      "step": "13. The audit (19 Sep, evening)",
+      "claim": "Re-run everything, second-code the papers, recompute every number, read the logic.",
+      "status": "stood",
+      "fate": "withdrew the plateau reshaping (a level effect), the Basque 2024 signal (5 of 17 communities show it), the slope agreement (stale window); fixed the 2027 proration and the Madrid count; found the plateau in every subject"
     }
   ]
 }

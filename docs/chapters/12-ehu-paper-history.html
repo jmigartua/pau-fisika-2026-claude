@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,16 +11,10 @@
 
 <title>Sixteen years of one paper – PAU Física 2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -46,14 +40,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2a39badd227d94093ce4d8316f203092.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -99,7 +93,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -287,8 +281,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -473,6 +466,13 @@ window.Quarto = {
  <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -486,7 +486,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#why-the-papers-own-history-matters" id="toc-why-the-papers-own-history-matters" class="nav-link active" data-scroll-target="#why-the-papers-own-history-matters">Why the paper’s own history matters</a></li>
-  <li><a href="#three-formats-in-sixteen-years" id="toc-three-formats-in-sixteen-years" class="nav-link" data-scroll-target="#three-formats-in-sixteen-years">Three formats in sixteen years</a></li>
+  <li><a href="#four-formats-in-sixteen-years" id="toc-four-formats-in-sixteen-years" class="nav-link" data-scroll-target="#four-formats-in-sixteen-years">Four formats in sixteen years</a></li>
   <li><a href="#forty-per-cent-of-the-marks-from-a-list-of-titles" id="toc-forty-per-cent-of-the-marks-from-a-list-of-titles" class="nav-link" data-scroll-target="#forty-per-cent-of-the-marks-from-a-list-of-titles">Forty per cent of the marks from a list of titles</a></li>
   <li><a href="#the-de-facto-syllabus-which-problems-were-actually-set" id="toc-the-de-facto-syllabus-which-problems-were-actually-set" class="nav-link" data-scroll-target="#the-de-facto-syllabus-which-problems-were-actually-set">The de facto syllabus: which problems were actually set</a></li>
   <li><a href="#the-marking-rules-year-by-year-and-community-by-community" id="toc-the-marking-rules-year-by-year-and-community-by-community" class="nav-link" data-scroll-target="#the-marking-rules-year-by-year-and-community-by-community">The marking rules, year by year and community by community</a></li>
@@ -541,8 +541,8 @@ window.Quarto = {
 <p><a href="../chapters/11-exam-content.html">Chapter 11</a> compared the 2025 and 2026 papers of nine communities and found that the Basque paper was the only one that changed genre between the two years. That comparison is horizontal. This chapter is vertical: it reads the Basque paper against <em>itself</em>, from 2010 to 2026, because the students who sat in June 2026 were prepared by teachers whose expectations were shaped by fifteen years of a very stable exam — and the account of that stability given by the coordinator, who has held the Física coordination since the 2018 edition (a two-option paper with two problems and two “theory questions”; theory drawn from a published list of titles; problems drawn, by long-standing convention, from a small subset of the syllabus; the modern-physics problem always photoelectric by a decision of the coordinators taken some twenty years ago and confirmed by the teachers’ meeting of 2024 for the 2025 paper, then lifted for 2026) can be checked against the papers.</p>
 <p>All 34 papers (ordinary and extraordinary sittings, 2010–2026) and the guidance documents that EHU published for the 2025 model were downloaded from ehu.eus on 19 September (<a href="../chapters/01-data-hunt.html">Data hunt</a>; files in <code>sources/exams_ehu_hist/</code>, hashed in the <a href="../chapters/08-sources.html">source registry</a>). Every problem and every theory question was inventoried by sub-topic (<code>data/ehu_problem_inventory_2010_2026.csv</code>, <code>data/ehu_theory_inventory.csv</code>; script <code>scripts/08_ehu_history.py</code>). The official list of theory titles, which EHU no longer publishes online, was supplied by the coordinator and is archived with the papers. Two things could <em>not</em> be verified from documents and are reported as the coordinator’s account: the minutes of the 2024 and 2025 coordination meetings (EHU does not publish them) and the origin of the photoelectric convention. The papers themselves settle the rest.</p>
 </section>
-<section id="three-formats-in-sixteen-years" class="level2">
-<h2 class="anchored" data-anchor-id="three-formats-in-sixteen-years">Three formats in sixteen years</h2>
+<section id="four-formats-in-sixteen-years" class="level2">
+<h2 class="anchored" data-anchor-id="four-formats-in-sixteen-years">Four formats in sixteen years</h2>
 <div id="tbl-formats" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-formats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -780,7 +780,7 @@ Table&nbsp;2: The 22 titles of the official list <em>Evaluación para el Acceso 
 </div>
 </figure>
 </div>
-<p>Until 2024, four of the ten points were awarded for two theory questions, and the questions were not questions in the usual sense: they reproduced, verbatim, the title of an entry in a syllabus list — “Lupa. Descripción. Esquema de la formación de imágenes. Aumento.” (July 2022), “Defectos de la visión. Hipermetropía y miopía.” (June 2019), “Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total.” (June 2024). The list was an official document: a bilingual sheet issued jointly by the university and the Basque Department of Education, <em>Cuestiones teóricas</em>, which states that the questions “aparecerán (tal y como están escritas) en la Evaluación para el Acceso a la Universidad”, gives for each title a guide to the content a student should include, and was sent to the correctors as their marking reference. It has 22 titles, and the inventory reconstructed from the papers before the document was in hand recovers exactly those 22: every title was set at least once between 2010 and 2024 (the photographic camera and the Biot–Savart title once each; radioactivity twelve times, Kepler ten, the photoelectric effect nine); the most frequent five — radioactivity, Kepler’s laws, the photoelectric effect, simple harmonic motion, Faraday–Lenz — account for 46 of the 118 questions. The document is no longer online, but any teacher who kept it, or the papers, had the whole of the theory component in advance, together with the marking guide. Under the A/B format a student who could reproduce two entries from that list held 4 points before touching a problem; under the four-of-eight format, with four titles on the paper and two to be chosen, the same 4 points were even more accessible. In 2025 this component disappeared in a single step. The other communities’ 2025–2026 papers offer no exact analogue: Andalucía keeps a large share of short “razone” conceptual items (about 5–6 of 10 expected points), Valencia had 1.5-point “cuestiones” in 2025 and dropped them in 2026, Castilla-La Mancha’s 2026 paper has two fixed 0.5-point items, and Asturias, Madrid, Cataluña, Extremadura and Canarias set none in either year — so removing theory is not, by itself, what separates Euskadi from the communities that rose; what is specific to Euskadi is going from 4 points of closed-list theory to none in one year.</p>
+<p>Until 2024, four of the ten points were awarded for two theory questions, and the questions were not questions in the usual sense: they reproduced, verbatim, the title of an entry in a syllabus list — “Lupa. Descripción. Esquema de la formación de imágenes. Aumento.” (July 2022), “Defectos de la visión. Hipermetropía y miopía.” (June 2019), “Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total.” (June 2024). The list was an official document: a bilingual sheet issued jointly by the university and the Basque Department of Education, <em>Cuestiones teóricas</em>, which states that the questions “aparecerán (tal y como están escritas) en la Evaluación para el Acceso a la Universidad”, gives for each title a guide to the content a student should include, and was sent to the correctors as their marking reference. It has 22 titles, and the inventory reconstructed from the papers before the document was in hand recovers exactly those 22: every title was set at least once between 2010 and 2024 (the photographic camera once, the Biot–Savart title twice; radioactivity twelve times, Kepler ten, the photoelectric effect nine); the most frequent five — radioactivity, Kepler’s laws, the photoelectric effect, simple harmonic motion, Faraday–Lenz — account for 46 of the 118 questions. The document is no longer online, but any teacher who kept it, or the papers, had the whole of the theory component in advance, together with the marking guide. Under the A/B format a student who could reproduce two entries from that list held 4 points before touching a problem; under the four-of-eight format, with four titles on the paper and two to be chosen, the same 4 points were even more accessible. In 2025 this component disappeared in a single step. The other communities’ 2025–2026 papers offer no exact analogue: Andalucía keeps a large share of short “razone” conceptual items (about 5–6 of 10 expected points), Valencia had 1.5-point “cuestiones” in 2025 and dropped them in 2026, Castilla-La Mancha’s 2026 paper has two fixed 0.5-point items, and Asturias, Madrid, Cataluña, Extremadura and Canarias set none in either year — so removing theory is not, by itself, what separates Euskadi from the communities that rose; what is specific to Euskadi is going from 4 points of closed-list theory to none in one year.</p>
 </section>
 <section id="the-de-facto-syllabus-which-problems-were-actually-set" class="level2">
 <h2 class="anchored" data-anchor-id="the-de-facto-syllabus-which-problems-were-actually-set">The de facto syllabus: which problems were actually set</h2>
@@ -1133,7 +1133,7 @@ Table&nbsp;4: Marking rules as printed in the corrector documents (EHU 2012–20
 </figure>
 </div>
 <p>From 2012 to 2024 the EHU criteria, printed after each paper, were two qualitative paragraphs: a <em>cuestión</em> is worth up to 2 points for a precise definition with rigour; a <em>problema</em> up to 3, later sections independent of earlier ones; planteamiento, laws, diagrams and units are valued; “purely mathematical developments without physical justification”, missing units and incoherent results “se penalizarán” — with no amounts. The 2025 model (18 November 2024) introduced, for the first time, numerical penalties: −0.1 per spelling error from the third, up to 1 point per exam; up to −0.5 for syntax, coherence and presentation; units mandatory in the final answer; significant figures and exponent notation “penalised”; conceptual errors weighing more than arithmetic ones; a correct result counting only if justified. The 2026 solucionarios add the rest of the list the coordinator describes: symbolic solution before numerical substitution; −0.1 for missing or wrong units, for repeated vector-symbol errors, for rounding and significant figures; grave errors (wrong equations, scalar/vector confusion) voiding the whole section; sub-tasks marked at 0.25-point resolution against a printed table.</p>
-<p>Set against the other communities, none of these rules is unique to Euskadi, but their combination is. Canarias applies the full CRUE minor-error list (−0.1 for units, vector symbols, prefixes, factors of ten, transcription and rounding; grave errors void the section) in both 2025 and 2026, and Canarias is the other community whose mean collapsed. Comunitat Valenciana has required the symbolic calculation first since 2025 and marks it at 60 % of each section, and rose. Extremadura’s language penalty is worded identically to EHU’s 2025 rule (−0.1 from the third fault, cap 1 point; syntax up to −0.5), and fell. Cataluña, Asturias and Andalucía cap the unit penalty at −0.25 per problem or section; Madrid states no amounts. The marking regime is thus a candidate contributor, not a discriminator, on this evidence; the observation that the two communities applying the full penalty list in 2026 (Euskadi, Canarias) are the two with J-shaped distributions and 22–25 % of exams below 2 (<a href="../chapters/04-distributions.html">Chapter 4</a>) is the kind of coincidence that only item-level marks can turn into a finding or dismiss.</p>
+<p>Set against the other communities, none of these rules is unique to Euskadi, but their combination is. Canarias applies the full CRUE minor-error list (−0.1 for units, vector symbols, prefixes, factors of ten, transcription and rounding; grave errors void the section) in both 2025 and 2026, and Canarias is the other community whose mean collapsed. Comunitat Valenciana has required the symbolic calculation first since 2025 and marks it at 60 % of each section, and rose. Extremadura’s language penalty is worded identically to EHU’s 2025 rule (−0.1 from the third fault, cap 1 point; syntax up to −0.5), and fell. Cataluña, Asturias and Andalucía cap the unit penalty at −0.25 per problem or section; Madrid states no amounts. The marking regime is thus a candidate contributor, not a discriminator, on this evidence; the observation that the two communities applying the full penalty list in 2026 (Euskadi, Canarias) are the two with flat, low-skewed distributions and 22–25 % of exams below 2 (<a href="../chapters/04-distributions.html">Chapter 4</a>) is the kind of coincidence that only item-level marks can turn into a finding or dismiss.</p>
 </section>
 <section id="what-choice-alone-is-worth" class="level2">
 <h2 class="anchored" data-anchor-id="what-choice-alone-is-worth">What choice alone is worth</h2>
@@ -1286,14 +1286,13 @@ Figure&nbsp;3: Selection premium of each EHU format under the same population an
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1656,7 +1655,7 @@ Figure&nbsp;3: Selection premium of each EHU format under the same population an
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Independent analysis prepared 18 September 2026 · all figures reproducible from <code>scripts/</code></p>
+<p>Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from <code>scripts/</code></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

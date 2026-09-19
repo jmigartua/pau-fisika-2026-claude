@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,16 +11,10 @@
 
 <title>The data hunt – PAU Física 2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -66,14 +60,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2a39badd227d94093ce4d8316f203092.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +100,7 @@ div.csl-indent {
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -119,7 +113,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -307,8 +301,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -493,6 +486,13 @@ window.Quarto = {
  <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -545,6 +545,12 @@ window.Quarto = {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 19, 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -570,7 +576,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>What made the difference
+What made the difference
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -736,7 +742,7 @@ window.Quarto = {
 </section>
 <section id="the-exam-papers-added-19-september-2026" class="level2">
 <h2 class="anchored" data-anchor-id="the-exam-papers-added-19-september-2026">The exam papers (added 19 September 2026)</h2>
-<p>For the content audit of <a href="../chapters/11-exam-content.html">Chapter 11</a> the ordinary-sitting Física papers of 2025 and 2026 were collected for the nine communities with a 2026 result: EHU (both years, with the corrector documents, from ehu.eus), Cataluña (Generalitat exam archive; the 2026 corrector document from the Betevé mirror, the official file returning 404), Madrid (UCM archive, criteria in the same PDF), Asturias (Uniovi archive with criteria), Andalucía (Junta archive: 2025 models A and B with criteria, 2026 with criteria), Canarias (Gobierno de Canarias archive with criteria), Extremadura 2025 (Educarex teachers’ site, Google Drive), Comunitat Valenciana 2026 (universitats.gva.es, downloaded from the user’s machine), and Castilla-La Mancha (both years read in the built-in browser behind UCLM’s bot check and transcribed to <code>sources/exams/clm_20xx_ord_transcript.md</code>). Two papers were not at their official location — Valencia 2025 had been overwritten by the 2026 file, and Extremadura 2026 sits behind UEx’s WAF — and were retrieved from FiQuiPedia’s public GitLab archive of official PAU papers, with the Valencia copy checked byte-for-byte against an independent teacher’s copy. All files are in <code>sources/exams/</code> and hashed in the <a href="../chapters/08-sources.html">source registry</a>. No archive or mirror of a blocked site was used.</p>
+<p>For the content audit of <a href="../chapters/11-exam-content.html">Chapter 11</a> the ordinary-sitting Física papers of 2025 and 2026 were collected for the nine communities with a 2026 result: EHU (both years, with the corrector documents, from ehu.eus), Cataluña (Generalitat exam archive; the 2026 corrector document from the Betevé mirror, the official file returning 404), Madrid (UCM archive, criteria in the same PDF), Asturias (Uniovi archive with criteria), Andalucía (Junta archive: 2025 models A and B with criteria, 2026 with criteria), Canarias (Gobierno de Canarias archive with criteria), Extremadura 2025 (Educarex teachers’ site, Google Drive), Comunitat Valenciana 2026 (universitats.gva.es, downloaded from the user’s machine), and Castilla-La Mancha (both years read in the built-in browser behind UCLM’s bot check and transcribed to <code>sources/exams/clm_20xx_ord_transcript.md</code>). Two papers were not at their official location — Valencia 2025 had been overwritten by the 2026 file, and Extremadura 2026 sits behind UEx’s WAF — and were retrieved from FiQuiPedia’s public GitLab archive of official PAU papers, with the Valencia copy checked byte-for-byte against an independent teacher’s copy. All files are in <code>sources/exams/</code> and hashed in the <a href="../chapters/08-sources.html">source registry</a>. No Internet Archive copy of a blocked site was used; the two files taken from FiQuiPedia’s public archive of official papers are flagged as such in the registry.</p>
 <p>For <a href="../chapters/12-ehu-paper-history.html">Chapter 12</a> the complete EHU archive was downloaded from ehu.eus: the 34 Física papers 2010–2026 (June and July, Spanish and Basque versions where both exist; criteria embedded in the 2012–2024 papers; separate solucionarios for 2025–2026), the PAU 2025 model paper of 18 November 2024 with its general correction criteria, and the earlier October 2024 version of that model. No pre-2025 theory-title document, no “Orientaciones Física 2026” and no coordination-meeting minutes are published on the site; the official list of 22 theory titles was supplied by the coordinator from his own files and is archived as <code>ehu_theory_list_official.pdf</code>. Files in <code>sources/exams_ehu_hist/</code> (77 PDFs), URLs in its <code>urls_tried.log</code>.</p>
 </section>
 <section id="sources-that-exist-but-could-not-be-read" class="level2">
@@ -894,14 +900,13 @@ Universidad Pública de Navarra. (2025). <em>Informe <span>PAU</span> 2024–25<
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1264,7 +1269,7 @@ Universidad Pública de Navarra. (2025). <em>Informe <span>PAU</span> 2024–25<
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Independent analysis prepared 18 September 2026 · all figures reproducible from <code>scripts/</code></p>
+<p>Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from <code>scripts/</code></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

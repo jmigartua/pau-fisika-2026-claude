@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-19">
+<meta name="description" content="The audit of 19 September 2026: reproducibility of the pipeline, number-by-number verification of all chapters, a blind second coding of the exam papers, a figure-by-figure check, a sourcing check, and a reasoning audit of the interpretation chapter, with the corrections applied and the questions that remain.">
+
+<title>Audit – PAU Física 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/10-reproduce.html" rel="prev">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2a39badd227d94093ce4d8316f203092.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PAU Física</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/08-sources.html"> 
+<span class="menu-text">Sources &amp; methods</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/13-audit.html">Audit</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evidence and results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The papers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Research context</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
+ <span class="menu-text">Sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-and-how" id="toc-why-and-how" class="nav-link active" data-scroll-target="#why-and-how">Why and how</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
+  <li><a href="#what-was-wrong" id="toc-what-was-wrong" class="nav-link" data-scroll-target="#what-was-wrong">What was wrong</a></li>
+  <li><a href="#what-held" id="toc-what-held" class="nav-link" data-scroll-target="#what-held">What held</a></li>
+  <li><a href="#what-the-audit-added" id="toc-what-the-audit-added" class="nav-link" data-scroll-target="#what-the-audit-added">What the audit added</a></li>
+  <li><a href="#corrections-applied" id="toc-corrections-applied" class="nav-link" data-scroll-target="#corrections-applied">Corrections applied</a></li>
+  <li><a href="#still-open-and-for-the-author-to-decide" id="toc-still-open-and-for-the-author-to-decide" class="nav-link" data-scroll-target="#still-open-and-for-the-author-to-decide">Still open, and for the author to decide</a></li>
+  <li><a href="#what-this-audit-could-not-do" id="toc-what-this-audit-could-not-do" class="nav-link" data-scroll-target="#what-this-audit-could-not-do">What this audit could not do</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/13-audit.html">Audit</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Audit</h1>
+<p class="subtitle lead">Every number recomputed, every figure re-derived, the argument read step by step — what was wrong, what was corrected, what is still open</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">audit</div>
+    <div class="quarto-category">methods</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    The audit of 19 September 2026: reproducibility of the pipeline, number-by-number verification of all chapters, a blind second coding of the exam papers, a figure-by-figure check, a sourcing check, and a reasoning audit of the interpretation chapter, with the corrections applied and the questions that remain.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="why-and-how" class="level2">
+<h2 class="anchored" data-anchor-id="why-and-how">Why and how</h2>
+<p>Before this site is shown to anyone else, the whole of it was audited in one evening, with the explicit brief to be exhaustive and critical: every number, figure, table, dataset and interpretation. The audit was organised in seven layers, each run independently of the others and each producing a written report that is archived verbatim in <code>logs/audit/</code>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>What was done</th>
+<th>Report</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A. Reproducibility</td>
+<td>All eighteen numbered scripts re-run from the raw sources in a clean environment; every JSON, CSV, table and figure compared with the committed version</td>
+<td>this chapter, §Reproducibility</td>
+</tr>
+<tr class="even">
+<td>B. Numbers, Chapters 2–5 and the overview</td>
+<td>Every numeric claim located, recomputed from the cubes, the July package and the archived documents, and given a verdict</td>
+<td><code>B_numbers_ch2-5_index.md</code></td>
+</tr>
+<tr class="odd">
+<td>C. Numbers, Chapter 6</td>
+<td>Every statistic of the locus, drift, PISA, slope, reading-load and 2027 sections recomputed; PISA values checked cell by cell in the INEE workbooks; word counts recomputed from the PDFs</td>
+<td><code>C_numbers_ch6.md</code></td>
+</tr>
+<tr class="even">
+<td>D. Reasoning, Chapter 6</td>
+<td>The argument read in the order it was built; confounds, missing base rates, missing sub-questions; three new tests run</td>
+<td><code>D_reasoning_ch6.md</code></td>
+</tr>
+<tr class="odd">
+<td>E. Chapters 11–12</td>
+<td>A blind second coding of all 146 exam items by a second reader; agreement measured; structure facts re-verified</td>
+<td><code>E_second_coding_report.md</code>, <code>E_second_coding.csv</code></td>
+</tr>
+<tr class="even">
+<td>F. Figures and tables</td>
+<td>All 24 figures opened and checked against their data, captions and the prose about them; all included tables checked against their CSVs</td>
+<td><code>F_figures_tables.md</code></td>
+</tr>
+<tr class="odd">
+<td>G. Sources and consistency</td>
+<td>Citation keys, registry hashes, cross-chapter consistency of every headline quantity, internal links, dates, provenance statements, the rendered site</td>
+<td><code>G_sources_consistency.md</code></td>
+</tr>
+</tbody>
+</table>
+<p>Layers B, C, E, F and G were delegated to independent readers working only from the files; layer D and the consolidation were done by the lead. Nothing below was fixed silently: every correction is listed with the wrong statement, the right one and where it was applied, and the interpretive changes are marked as such so the author can reverse them.</p>
+</section>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p>The pipeline reproduces. With the LaTeX text stack installed (<code>cm-super</code>, <code>lmodern</code>, <code>dvipng</code>) and <code>xlrd</code> for the 2015 PISA workbook, all scripts ran in the documented order, and the regenerated outputs were byte- or value-identical to the committed ones — 162 of 162 registry hashes, every table, every figure to the pixel — with one exception. <code>data/analysis/slope_compare.json</code> and <code>plots/fig22_slope_compare.png</code> differed from the text of Chapter 6: the chapter’s slope table was computed on PISA 2012–2022 (four rounds), but PISA 2025 had since been appended to the series for the 2027 section and the script re-run, so the committed figure and JSON carried five rounds — on which both PISA slopes are significant and the Basque-to-Spanish ratio is 2.1, not 1.7, and the figure’s own panel title (“every interval includes zero”) was false in the picture. That is the most serious single finding: a figure that looked finished, whose text had been written before its data changed. The fix pins the fit to 2012–2022 with the reason stated, reports the five-round result alongside, and rewrites the section’s conclusion (§Corrections).</p>
+<p>Two script defects that had not yet reached the text were also found and fixed: <code>09_shape_locus.py</code> wrote the normality statistics of the last marginal loop into the <code>mean_axis</code> block of its JSON (the chapter quoted the right values, the JSON held wrong ones), and its presented counts were the specific-phase undercount that the chapter itself rejects; <code>11_analysis_path.py</code> used the seventeen-community 2024→2025 change (−0.81) as the first point of a figure captioned “all computed on the same nine communities” (the nine-community value is −0.65).</p>
+</section>
+<section id="what-was-wrong" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-wrong">What was wrong</h2>
+<p>Ninety-odd claims were checked in Chapters 2–5 and the overview, seventy-two in Chapter 6. Most were right. The ones that were not, in order of consequence:</p>
+<p><strong>Claims withdrawn (interpretation).</strong> Three sentences of Chapter 6 that a reader would have quoted did not survive. (1) <em>“The plateau reshaped the distribution”</em> — the conditional top-band ratio rose from 0.353 to 0.466 through 2020–2024, but the ratio tracks the mean at <span class="math inline">\(r = 0.905\)</span>; the locus predicts 0.356 → 0.442 from the level alone, the residual excess is <span class="math inline">\(+0.02\)</span> with <span class="math inline">\(p = 0.17\)</span> on year means, carried by 2020. The plateau was a lift. (2) <em>“A Basque signal that arrives a year early”</em> — Euskadi’s conditional residual was not “eight consecutive years on the other side” (2015, 2020 and 2021 were negative), and the two-year negative turn of 2024–25 is shared by Aragón, Castilla y León, Comunitat Valenciana and La Rioja: five of seventeen communities, nine of seventeen with some such run. It is not a Basque signal. (3) <em>“The two instruments fall at the same rate; Euskadi 1.72 × Spain on the PAU and 1.66 × on PISA, within 4 %”</em> — stale (above), and ill-posed: both records are steps (2015, 2025 in PISA; the plateau’s end and 2026 in the PAU), not slopes, and the ratio is of two slopes with <span class="math inline">\(p\)</span>-values of 0.19 and 0.38.</p>
+<p><strong>Errors of fact (numbers and statements).</strong> Chapter 2: 2025’s 5.47 was said to fall “just outside” the 5.45–6.49 band (it is inside; the <em>residual</em> is outside); the list of the seven changes as negative as −1.48 named six (Cantabria 2025, −1.51, missing — the <code>results.json</code> list was truncated); “the only case in the panel with two consecutive falls summing to more than two points” (Extremadura and Baleares 2023–25 both qualify); “never a top region” (three fourth places). Chapter 3: Canarias’ path “one point higher” than Euskadi’s (it is lower in 2024–25, higher in 2026); Extremadura “highest in 2021–2023” (second in 2021); Castilla-La Mancha’s July sitting “2–3 points lower every year” (1.2–2.8); La Rioja pass rates “settling at 66–80 %” (66–94 %); “both jumped two points in 2012” (La Rioja in two steps). Chapter 4: the fitted 2026 density described as “highest near the origin and decreasing monotonically” — Beta(1.27, 1.81) is zero at the origin with a mode near 2.5, not J-shaped; the failing band “25–34 % in every normal year” (36.4 % in 2015); the top band “17–20 % in 2018–2023” (15.4 % in 2019, 36.0 % in 2021). Chapter 5: “Biología rose in Asturias” (no value exists); the July sitting “1.5 to 3 points below June” in every dataset (Tenerife 2026: 0.81); “90.6 % in July 2025” (EHU’s own report gives 83.2 % for July 2025; 90.6 % is July 2024); “some 400 candidates” (200–370); women outscore men “every year” (2014: −0.01). Overview: “lowest since 2010–11” (lowest of the whole series); “four of the nine from dashboards” (two); “twelve years of Ministry data” (eleven); “+0.5 to +1.1” for six risers (Andalucía +0.17). Chapter 6: “more than double the previous worst” PISA gap (1.92 ×); Basque top-band share “below Spain’s in two rounds of three” (all three); “thirteen published regional standard deviations” (thirteen Comunitat Valenciana figures); the nine-community plateau “+0.4 to +1.0 … all about +0.65” (seventeen-community figures; the nine give +0.5 to +1.05, and +0.62/+0.53/+0.50); the 2027 estimator added the same cohort term to both scenarios when the 2026-based one should carry half (3.63 → 3.81); the reading-load section’s Madrid figure — 4,070 words, explained by “more choice” — was 70 % embedded solutions and criteria: the statement went from 1,127 to 1,093 words, a shortening. Chapter 12: “three formats” (four); the Biot–Savart title “once” (twice).</p>
+<p><strong>Stale or inconsistent presentation.</strong> The deployed site (<code>_site/</code>, <code>docs/</code>, the single-page edition) was rendered at 09:33 and did not contain the afternoon’s Chapter 6, its disclosure, or figures 16–24; <code>docs/</code> also carried an 11 MB stale copy of itself (<code>docs/docs/</code>), picked up by an unanchored resource glob. The path section narrated seven steps against a twelve-step figure. Figure 19 was generated but included nowhere. Figure captions said “2006 to 2022” for a series that ran to 2025, and named the wrong panel; figure 13’s footer mixed per-year and per-paper counts and contradicted its own row for decibels. The Madrid Física change appeared as +1.05 (Ministry baseline) and +1.10 (chart-label baseline) in different tables without comment. Front-matter dates said 18 September on chapters with 19 September content. The PISA workbooks were not in the source registry. The Chapter 6 disclosure and Chapter 12’s “the coordinator” were never reconciled. Chapter 1 said “no archive or mirror of a blocked site was used” in the same paragraph that described two files retrieved from FiQuiPedia’s public archive.</p>
+</section>
+<section id="what-held" class="level2">
+<h2 class="anchored" data-anchor-id="what-held">What held</h2>
+<p>The Basque headline numbers (3.99, 39.8 %, 24.5 % ≤ 2, 3.2 % zeros, 2 066) and the 2010–2026 series; the Ministry panel (170 changes, SD 0.74, <span class="math inline">\(z = -1.97\)</span>, 7 of 170; 14 of 17 in 2025, −0.81; ranks; levels); the 2026 regional table and its cross-checks (the Canarias pooled 2025 equals the Ministry’s 5.08 exactly; La Rioja’s chart readings coincide with the cube for 2015–2022); the Beta fits (stable from three starting points); every Canarian histogram statistic; the school-marks block (verified line by line in the Inspectorate PDF); the subject tables; the ordinary–extraordinary relation; the locus construction and its caveats; the drift tests; every PISA mean and top-band share against the INEE workbook cells; the 2027 arithmetic; every citation key; every internal link; every registry hash.</p>
+<p>The exam-content coding of Chapter 11 was put to the hardest test available — a blind second coder over all 146 items — and held: agreement κ = 0.76 on the competency flag and 0.83–1.00 on draw, graph, evaluate and explain; every direction of change 2025 → 2026 identical under both coders; País Vasco 25 → 62.5 % and Castilla-La Mancha 0 → 20 % identical; the ten papers of Asturias, Madrid, Andalucía, Canarias and Extremadura at zero under both. The one coder-sensitive quantity is Cataluña’s absolute level (75 → 38 % for the first coder, 37.5 → 25 % for the stricter second), which the chapter now states.</p>
+</section>
+<section id="what-the-audit-added" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-audit-added">What the audit added</h2>
+<p>Three tests that the interpretation chapter should have run were run, and are now part of it (<code>scripts/19_audit_checks.py</code>, <code>data/audit/</code>):</p>
+<div id="tbl-audit-plateau" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-plateau-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: The 2020–2024 plateau and its end in 2025, subject by subject: each subject’s mean over the seventeen communities against its own 2015–2019 norm. The plateau is in every subject; in 2025 every science subject returned to within <span class="math inline">\(\pm 0.2\)</span> of its norm, while the humanities kept part of the lift.
+</figcaption>
+<div aria-describedby="tbl-audit-plateau-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subject (17 communities, unweighted)</th>
+<th>2019</th>
+<th>2020</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Física</td>
+<td>-0.17</td>
+<td>+0.41</td>
+<td>+0.92</td>
+<td>+0.59</td>
+<td>+0.56</td>
+<td>+0.71</td>
+<td>-0.06</td>
+</tr>
+<tr class="even">
+<td>Matemáticas II</td>
+<td>-0.09</td>
+<td>+0.48</td>
+<td>+0.96</td>
+<td>+0.50</td>
+<td>+0.76</td>
+<td>+0.63</td>
+<td>+0.11</td>
+</tr>
+<tr class="odd">
+<td>Química</td>
+<td>+0.05</td>
+<td>+0.58</td>
+<td>+0.94</td>
+<td>+0.69</td>
+<td>+0.69</td>
+<td>+0.82</td>
+<td>+0.20</td>
+</tr>
+<tr class="even">
+<td>Biología</td>
+<td>+0.03</td>
+<td>+0.33</td>
+<td>+0.55</td>
+<td>+0.46</td>
+<td>+0.43</td>
+<td>+0.17</td>
+<td>-0.21</td>
+</tr>
+<tr class="odd">
+<td>Historia de España</td>
+<td>+0.07</td>
+<td>+0.29</td>
+<td>+0.65</td>
+<td>+0.48</td>
+<td>+0.62</td>
+<td>+0.74</td>
+<td>+0.53</td>
+</tr>
+<tr class="even">
+<td>Lengua Castellana</td>
+<td>+0.06</td>
+<td>+0.23</td>
+<td>+0.32</td>
+<td>+0.38</td>
+<td>+0.39</td>
+<td>+0.47</td>
+<td>+0.13</td>
+</tr>
+<tr class="odd">
+<td>Dibujo Técnico II</td>
+<td>-0.15</td>
+<td>+0.45</td>
+<td>+0.59</td>
+<td>+0.57</td>
+<td>+0.67</td>
+<td>+0.44</td>
+<td>+0.18</td>
+</tr>
+<tr class="even">
+<td>Geografía</td>
+<td>-0.21</td>
+<td>+0.21</td>
+<td>+0.62</td>
+<td>+0.51</td>
+<td>+0.65</td>
+<td>+0.50</td>
+<td>+0.24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-audit-turn" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-turn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Base rate of the two-year negative turn on the conditional top-band residual that had been read as a Basque signal.
+</figcaption>
+<div aria-describedby="tbl-audit-turn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Statistic</th>
+<th>n</th>
+<th>of</th>
+<th>Communities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>communities with residual &lt; −0.5 SD in both 2024 and 2025</td>
+<td>5</td>
+<td>17</td>
+<td>Aragón, Castilla y León, Comunitat Valenciana, País Vasco, Rioja (La)</td>
+</tr>
+<tr class="even">
+<td>communities with any two consecutive years below −0.5 SD</td>
+<td>9</td>
+<td>17</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>communities with ≥ 7 positive years in 2016–2023 (Euskadi: 6)</td>
+<td>3</td>
+<td>17</td>
+<td>Balears (Illes), Extremadura, Galicia</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-audit-basque" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-basque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Euskadi’s subjects against their own 2015–2019 norms: in 2025 Física is the only Basque science subject clearly below its norm (<span class="math inline">\(-0.39\)</span>; Química sits on it at <span class="math inline">\(-0.01\)</span>, Matemáticas II and Biología above it).
+</figcaption>
+<div aria-describedby="tbl-audit-basque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Euskadi subject</th>
+<th>2015–19 mean</th>
+<th>2020</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Física</td>
+<td>5.86</td>
+<td>+0.58</td>
+<td>+1.82</td>
+<td>+0.20</td>
+<td>+0.44</td>
+<td>+0.23</td>
+<td>-0.39</td>
+</tr>
+<tr class="even">
+<td>Matemáticas II</td>
+<td>6.48</td>
+<td>+1.12</td>
+<td>+1.48</td>
+<td>+0.14</td>
+<td>+0.72</td>
+<td>+0.39</td>
+<td>+0.27</td>
+</tr>
+<tr class="odd">
+<td>Química</td>
+<td>6.23</td>
+<td>+0.82</td>
+<td>+1.06</td>
+<td>+0.74</td>
+<td>+0.98</td>
+<td>+0.53</td>
+<td>-0.01</td>
+</tr>
+<tr class="even">
+<td>Biología</td>
+<td>6.13</td>
+<td>+1.18</td>
+<td>+1.61</td>
+<td>+0.98</td>
+<td>+1.36</td>
+<td>+0.59</td>
+<td>+0.31</td>
+</tr>
+<tr class="odd">
+<td>Historia de España</td>
+<td>6.41</td>
+<td>+0.27</td>
+<td>+0.44</td>
+<td>+0.34</td>
+<td>+0.41</td>
+<td>+0.38</td>
+<td>+0.51</td>
+</tr>
+<tr class="even">
+<td>Lengua Castellana</td>
+<td>6.25</td>
+<td>+0.49</td>
+<td>+0.31</td>
+<td>+0.46</td>
+<td>+0.76</td>
+<td>+0.60</td>
+<td>+0.13</td>
+</tr>
+<tr class="odd">
+<td>Dibujo Técnico II</td>
+<td>6.17</td>
+<td>+1.56</td>
+<td>+1.88</td>
+<td>+1.57</td>
+<td>+0.89</td>
+<td>+0.60</td>
+<td>+0.87</td>
+</tr>
+<tr class="even">
+<td>Geografía</td>
+<td>5.92</td>
+<td>+0.79</td>
+<td>+1.16</td>
+<td>+1.24</td>
+<td>+1.10</td>
+<td>+1.03</td>
+<td>+1.66</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-audit-baseline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: The nine communities with a 2026 result against their own pre-COVID norms (Ministry pooled means; Cataluña’s 2026 value on its aptes basis). The “+0.02” nine-community average of Chapter 6 hides a dispersion of two points.
+</figcaption>
+<div aria-describedby="tbl-audit-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Community</th>
+<th>2015–19 mean</th>
+<th>2024 vs norm</th>
+<th>2025 vs norm</th>
+<th>2026 vs norm</th>
+<th>2025 → 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Madrid (Comunidad de)</td>
+<td>5.68</td>
+<td>+0.59</td>
+<td>-0.03</td>
+<td>+1.02</td>
+<td>+1.05</td>
+</tr>
+<tr class="even">
+<td>Castilla-La Mancha</td>
+<td>5.94</td>
+<td>+0.63</td>
+<td>-0.08</td>
+<td>+0.86</td>
+<td>+0.94</td>
+</tr>
+<tr class="odd">
+<td>Cataluña</td>
+<td>6.21</td>
+<td>-0.27</td>
+<td>-0.17</td>
+<td>+0.63</td>
+<td>+0.80</td>
+</tr>
+<tr class="even">
+<td>Andalucía</td>
+<td>5.38</td>
+<td>+0.34</td>
+<td>+0.31</td>
+<td>+0.48</td>
+<td>+0.17</td>
+</tr>
+<tr class="odd">
+<td>Asturias (Principado de)</td>
+<td>6.14</td>
+<td>+0.90</td>
+<td>-0.65</td>
+<td>+0.48</td>
+<td>+1.13</td>
+</tr>
+<tr class="even">
+<td>Comunitat Valenciana</td>
+<td>6.06</td>
+<td>+1.00</td>
+<td>-0.17</td>
+<td>+0.34</td>
+<td>+0.51</td>
+</tr>
+<tr class="odd">
+<td>Extremadura</td>
+<td>6.05</td>
+<td>+0.40</td>
+<td>+0.04</td>
+<td>-0.78</td>
+<td>-0.82</td>
+</tr>
+<tr class="even">
+<td>Canarias</td>
+<td>5.11</td>
+<td>+0.78</td>
+<td>-0.03</td>
+<td>-0.86</td>
+<td>-0.83</td>
+</tr>
+<tr class="odd">
+<td>País Vasco</td>
+<td>5.90</td>
+<td>+0.19</td>
+<td>-0.43</td>
+<td>-1.91</td>
+<td>-1.48</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The first table strengthens the reference-frame argument of Chapter 6 and, at the same time, keeps its confound honest: the 2025 return to norm was subject-general, so it is not a Física effect of the competency model, but it happened in the first LOMLOE year and cannot be separated from the reform. The second removes a section. The third is the cleanest within-Basque comparison the data allow, and it points at the Física paper: whatever PISA measures in the Basque science base, the Basque PAU sees it in one subject and only from 2025.</p>
+</section>
+<section id="corrections-applied" class="level2">
+<h2 class="anchored" data-anchor-id="corrections-applied">Corrections applied</h2>
+<p>All corrections are in the text of the chapters; the interpretive ones are also visible in the “audit” callout at the head of Chapter 6 and in the rewritten last section of that chapter, which now ends with the audit as its thirteenth step. In summary:</p>
+<ul>
+<li>Chapter 6: the plateau-reshaping paragraph rewritten around the locus residual (figure 19 rebuilt to show it, and included); the Basque-signal section rewritten around the base rate; the slope section pinned to 2012–2022 with the five-round result and the steps-not-slopes objection added; the reading-load numbers replaced by statement-text counts (<span class="math inline">\(r = -0.91\)</span>, <span class="math inline">\(\rho = -0.86\)</span>; Basque paper +45 %; Madrid −3 %) with the pre-audit figures kept in the JSON; the 2027 table corrected (3.81 for the 2026-paper scenario, cohort term ±0.12) and its “paper term” relabelled as the year-to-year term; H1’s verdict reworded around the coincidence with the end of a subject-general plateau; the hypothesis ranking updated; the orphan sentence removed; the identity of the author and the coordinator stated in the disclosure; captions corrected.</li>
+<li>Chapters 2, 3, 4, 5, 11, 12 and the overview: the factual corrections listed above, each in place.</li>
+<li>Scripts: <code>09</code> (normality leak; pooled presented counts), <code>11</code> (nine-community first point; step texts for 7, 10, 12; step 13 added), <code>12</code> (panel b as residual), <code>16</code> (window pinned; five-round fit written), <code>17</code> (2026-scenario proration; labels), <code>18</code> (statement-only counts; pre-audit counts retained), <code>08</code>, <code>13</code>, <code>03</code> (footers, labels), <code>05</code> (PISA workbooks registered), <code>19</code> (new).</li>
+<li>Site: dates carry <code>date-modified</code>; the footer states the audit; the single-page edition is now generated from the chapters by <code>scripts/20_build_onepage.py</code> rather than maintained by hand, so it cannot go stale again; the site was re-rendered and <code>docs/</code> refreshed.</li>
+</ul>
+</section>
+<section id="still-open-and-for-the-author-to-decide" class="level2">
+<h2 class="anchored" data-anchor-id="still-open-and-for-the-author-to-decide">Still open, and for the author to decide</h2>
+<ul>
+<li>The structure of Chapter 6. The corrections keep the author’s step-by-step construction, but the chapter now carries its history inside its argument in several places. The audit’s recommendation (<code>D_reasoning_ch6.md</code>, §0) is a three-part structure — verdicts, tests in logical order, history in one place — which is a rewrite rather than a correction and was not made.</li>
+<li>The slope comparison. It has been made consistent and honest; whether it should remain at all, given that neither record is a slope, is a judgement.</li>
+<li>The reading-load section. It survives with stronger numbers, but it is a post-hoc variable chosen with knowledge of the author’s own paper, and the interaction it was built to test (length × reading level) is untested. The audit’s view is that it should be presented as exploratory and kept short.</li>
+<li>Which “national mean”. The drift section uses an unweighted mean of seventeen communities (5.67 in 2025), the Ministry’s Total is 5.65, a presented-weighted mean is 5.73. One should be declared and used throughout.</li>
+<li>Unverifiable press figures. Extremadura 5.27; Asturias 6.62 / 76.87 % and its Matemáticas II and Química values; the EHU July 2026 71.40 % / 1 332 / 624; Cataluña’s 2 057 revision requests; the 2017 Basque cohort ≈ 9 900. All are flagged in the text as press-sourced; none is in <code>sources/</code>. They should be archived when the pages can be reached, or dropped.</li>
+<li>The July-package flaw: the 2014 language enrolment columns of <code>fisica_pau_ehu_2010_2022.csv</code> sum to 2 195 rather than 2 495, so the 61.5 % euskera share for 2014 is not reproducible. The original informe should be re-read.</li>
+<li>Colour meaning is not constant across figures (Euskadi blue in 1–10 and violet in 16–23; “fell” red in 3–4 and orange in 11). Cosmetic, listed in <code>F_figures_tables.md</code> with the other visual notes.</li>
+<li>Chapter numbers in prose (“Chapter 11”) have no counterpart in the unnumbered sidebar; the links resolve, the numbers do not help a reader.</li>
+</ul>
+</section>
+<section id="what-this-audit-could-not-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-audit-could-not-do">What this audit could not do</h2>
+<p>It could not verify anything that lives only in the press, in dashboards read visually (the transcriptions are internally consistent and cross-validate against the cube where they overlap, which is the best available check), or in the author’s account of unpublished coordination decisions. It did not re-read the PISA tables’ sampling design beyond the standard errors they print. It did not attempt the item-level analysis of the 2026 scripts, which remains the one dataset that would decide between the surviving hypotheses.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/10-reproduce.html" class="pagination-link" aria-label="Reproduce the study">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reproduce the study</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from <code>scripts/</code></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

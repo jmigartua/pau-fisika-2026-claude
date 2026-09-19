@@ -368,8 +368,8 @@ ax.set_title("EHU Física papers 2010–2026: number of problems set per sub-top
 ax.tick_params(length=0)
 for sp in ax.spines.values():
     sp.set_visible(False)
-fig.text(0.01, 0.005, "Each year pools the June and July papers (8 problems in 2010–24, 7 in 2025, 6 in 2026; every option counted).\n"
-         "Rows that never carried a problem before 2025: spherical mirrors (2025), standing waves and decibels, radioactive decay (2026), the mass spectrometer (July 2026).",
+fig.text(0.01, 0.005, "Each year pools the June and July papers: 8 problems a year (4 per paper) in 2010–24, 14 (7 per paper) in 2025, 12 (6 per paper) in 2026; every option counted.\n"
+         "Rows that never carried a problem before 2025: spherical mirrors (2025), standing waves (with sound levels, coded under W3) and radioactive decay (2026), the mass spectrometer (July 2026).",
          fontsize=7.5, color=GREY)
 fig.tight_layout(rect=(0, 0.045, 1, 1))
 fig.savefig(PLOTS / "fig13_ehu_topics.png", dpi=170)

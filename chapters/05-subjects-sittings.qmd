@@ -3,6 +3,7 @@ title: "Subjects, sittings, participation and groups"
 subtitle: "Física against its neighbours, June against July, exam marks against school marks, and the sex and language dimensions"
 description: "The science-subject block 2025→2026 in the five regions with subject means for both years; the ordinary/extraordinary relationship; Física participation in Euskadi; the school-mark/exam-mark gap from the Basque Inspectorate's report; gender and language gaps 2010–2022 and the 2026 Canarias figures by sex."
 date: 2026-09-18
+date-modified: 2026-09-19
 categories: [findings, subjects, participation]
 ---
 
@@ -24,13 +25,13 @@ Ordinary-sitting mean, 2026, same sources.
 
 ![Change of the ordinary-sitting mean 2025 → 2026 for the four science subjects, by region.](../plots/fig07_subjects_by_region.png){#fig-subjects}
 
-Read by rows, @tbl-subj-delta says that **no subject moved the same way everywhere**. Física fell in Euskadi and rose in the other four; Matemáticas II fell in Euskadi, Cataluña and Andalucía and rose in Madrid and Asturias; Química fell slightly in four of five and rose in Asturias; Biología rose in Euskadi, Madrid and Asturias and fell in Cataluña. Read by columns, Euskadi is the only community where the two hardest quantitative subjects fell together by more than a point and a half ($-1.48$, $-1.67$) while Química ($-0.21$), Biología ($+0.15$) and Lengua ($+0.03$) barely moved. The Basque 2026 problem is a *science-technical block* problem, and within that block it is a Física-and-Matemáticas problem, not a general marking or cohort problem — Química is marked by tribunals drawn from the same pool of secondary teachers.
+Read by rows, @tbl-subj-delta says that **no subject moved the same way everywhere**. Física fell in Euskadi and rose in the other four; Matemáticas II fell in Euskadi, Cataluña and Andalucía and rose in Madrid and Asturias; Química fell slightly in four of five and rose in Asturias; Biología rose in Euskadi and Madrid and fell in Cataluña (not published for Andalucía and Asturias). Read by columns, Euskadi is the only community where the two hardest quantitative subjects fell together by more than a point and a half ($-1.48$, $-1.67$) while Química ($-0.21$), Biología ($+0.15$) and Lengua ($+0.03$) barely moved. The Basque 2026 problem is a *science-technical block* problem, and within that block it is a Física-and-Matemáticas problem, not a general marking or cohort problem — Química is marked by tribunals drawn from the same pool of secondary teachers.
 
 Cataluña shows the mirror image: a Matemàtiques paper that produced the lowest subject mean of a decade (4.18) and 2 057 revision requests, next to a Física paper that produced the best Física mean in five years (6.84). Two subjects, one exam authority, one cohort, opposite outcomes: the paper is the variable.
 
 ## Ordinary versus extraordinary
 
-The July sitting is a different population — candidates who failed or did not sit in June — and every dataset in this study shows it 1.5 to 3 points below June.
+The July sitting is a different population — candidates who failed or did not sit in June — and every dataset in this study shows it below June — by $1.85 \pm 0.86$ points across the Ministry community-years, and by as little as 0.8 (Tenerife 2026) or as much as 4 in individual cases.
 
 ::: {#tbl-oe}
 {{< include ../data/tables/euskadi_ord_extra.md >}}
@@ -40,7 +41,7 @@ Euskadi Física, ordinary and extraordinary means (Ministry cube, pooled phases)
 
 ![Extraordinary against ordinary Física mean, every community and year 2015–2025 (grey), Euskadi (blue), and the three 2026 extraordinary values located (red). The dotted line is $y = x - 1.85$, the panel-mean gap.](../plots/fig08_ordinary_vs_extraordinary.png){#fig-oe}
 
-Across the 187 community-years the gap averages $1.85 \pm 0.86$ points. The three 2026 extraordinary values found — Comunitat Valenciana 4.16 (777 presented), Castilla-La Mancha 3.97 (142), Tenerife 3.27 (97) — sit exactly on the historical relation. **EHU has not published the July 2026 Física mean**; only the global July pass rate (71.40 % of 1 332 presented, against 90.6 % in July 2025) and the observation that the 624 candidates who re-sat to *improve* a June mark chose "sobre todo Matemáticas II, Biología y Química" [@donostitik2026extra]. If the historical gap held, the Basque July Física mean would be near 2, which would be the lowest in the panel; if the July paper was pitched differently, it would not. This single number is the most informative unpublished Basque figure after the tribunal spread.
+Across the 187 community-years the gap averages $1.85 \pm 0.86$ points. The three 2026 extraordinary values found — Comunitat Valenciana 4.16 (777 presented), Castilla-La Mancha 3.97 (142), Tenerife 3.27 (97) — sit on the historical relation, Tenerife at its low edge (gap 0.81, 1.2 SD below the mean gap). **EHU has not published the July 2026 Física mean**; only the global July pass rate (71.40 % of 1 332 presented, against 83.2 % in July 2025 and 90.6 % in July 2024 according to EHU's own annual reports; the press comparison quoted 90.6 % as the 2025 figure) and the observation that the 624 candidates who re-sat to *improve* a June mark chose "sobre todo Matemáticas II, Biología y Química" [@donostitik2026extra]. If the historical gap held, the Basque July Física mean would be near 2, which would be the lowest in the panel; if the July paper was pitched differently, it would not. This single number is the most informative unpublished Basque figure after the tribunal spread.
 
 ## Who sits Física, and how many
 
@@ -50,7 +51,7 @@ Across the 187 community-years the gap averages $1.85 \pm 0.86$ points. The thre
 Euskadi Física, specific phase, ordinary sitting: enrolled, presented and presentation rate (Ministry cube; 2026 from the EHU deck, enrolment not published).
 :::
 
-Two structural facts. First, Física enrolment in Euskadi has been flat at 2 300–2 600 since 2017 while the Basque PAU cohort grew from ≈ 9 900 to ≈ 12 300, so Física's share of the cohort fell from about a quarter to about a fifth. Second, the presentation rate jumped from 64–76 % (2017–2024) to 84 % in 2025: under the 2025 rules far fewer enrolled students skipped the Física exam. The 2025 pool therefore contained some 400 candidates who, under the previous incentives, would not have sat — plausibly the weakest — and the 2025 fall of $-0.62$ is partly this compositional change. For 2026 the enrolment is unpublished; 2 066 presented is 6 % fewer than in 2025 and 16 % more than in 2024.
+Two structural facts. First, Física enrolment in Euskadi has been flat at 2 300–2 600 since 2017 while the Basque PAU cohort grew from ≈ 9 900 to ≈ 12 300, so Física's share of the cohort fell from about a quarter to about a fifth. Second, the presentation rate jumped from 64–76 % (2017–2024) to 84 % in 2025: under the 2025 rules far fewer enrolled students skipped the Física exam. The 2025 pool therefore contained some 200–370 candidates (depending on which earlier rate is taken as the counterfactual) who, under the previous incentives, would not have sat — plausibly the weakest — and the 2025 fall of $-0.62$ is partly this compositional change. For 2026 the enrolment is unpublished; 2 066 presented is 6 % fewer than in 2025 and 16 % more than in 2024.
 
 ## School marks against exam marks
 
@@ -72,4 +73,4 @@ Euskadi Física, ordinary sitting, by sex and by exam language, 2010–2022 (EHU
 
 ![Euskadi Física, ordinary sitting: women − men (left) and euskera − castellano track (right) differences in the mean, 2010–2022.](../plots/fig09_gender_language_euskadi.png){#fig-gl}
 
-Women are 31–36 % of Basque Física enrolment and, from 2011, outscore men every year by $+0.21$ on average, with the gap widening after 2016 ($+0.34$ in 2017, $+0.51$ in 2021, $+0.38$ in 2022). The Canarian dashboards show the same sign in 2026 under collapse conditions: ULL women 4.09 vs men 4.07, ULPGC women 4.50 vs men 4.38. The euskera track rose from 61 % to 75 % of Física candidates over 2010–2022; its mean was below the castellano track by 0.1–0.3 in most years, and above it in 2012, 2020 and 2021. Neither dimension has been published for Física since 2022, and EHU's 6 July statement that its global 2026 analysis found no bias by linguistic model or network referred to Euskara II, not Física.
+Women are 31–36 % of Basque Física enrolment and, from 2011, outscore men in every year but 2014 ($-0.01$) by $+0.21$ on average, with the gap widening after 2016 ($+0.34$ in 2017, $+0.51$ in 2021, $+0.38$ in 2022). The Canarian dashboards show the same sign in 2026 under collapse conditions: ULL women 4.09 vs men 4.07, ULPGC women 4.50 vs men 4.38. The euskera track rose from 61 % to 75 % of Física candidates over 2010–2022; its mean was below the castellano track by 0.1–0.3 in most years, and above it in 2012, 2020 and 2021. Neither dimension has been published for Física since 2022, and EHU's 6 July statement that its global 2026 analysis found no bias by linguistic model or network referred to Euskara II, not Física.

@@ -121,31 +121,41 @@ ax.set_ylabel("Top-band share among those who passed")
 ax.set_title("a. $P(x \\geq 8 \\mid x \\geq 5)$ against the mean")
 ax.legend(loc="upper left", fontsize=7.2)
 
-# --- b. the same quantity by year ------------------------------------------------
+# --- b. the same quantity by year, against what the level predicts ----------------
+# Audit of 19 Sep 2026: the first version of this panel compared the raw ratio across
+# regimes and called the plateau a change of shape (p = 4e-11). The ratio tracks the
+# mean at r = 0.905, so most of that difference is the level itself. The panel now
+# shows the residual from the locus, which is the only part that can be called shape.
 years = sorted(hist.year.unique())
+hist["resid"] = hist.ratio - np.polyval(coef, hist["mean"])
 for y in years:
-    v = hist[hist.year == y].ratio.values
+    v = hist[hist.year == y].resid.values
     colr = C["yellow"] if y in PLATEAU else MUTED
     axy.scatter(np.full(len(v), y) + np.random.default_rng(y).normal(0, 0.07, len(v)),
                 v, s=12, color=colr, alpha=0.55, lw=0, zorder=2)
     axy.plot([y - 0.28, y + 0.28], [v.mean()] * 2, color=INK2, lw=1.8, zorder=3)
-pre = hist[hist.year <= 2019].ratio
-plateau_v = hist[hist.year.isin(PLATEAU)].ratio
-y25 = hist[hist.year == 2025].ratio
-t_plate = ttest_ind(plateau_v, pre, equal_var=False)
-t_25 = ttest_ind(y25, pre, equal_var=False)
-axy.axhline(pre.mean(), color=INK2, lw=1.0, ls=(0, (5, 3)), zorder=1,
-            label="2015--19 mean (%.3f)" % pre.mean())
+pre = hist[hist.year <= 2019]
+plateau_v = hist[hist.year.isin(PLATEAU)]
+y25 = hist[hist.year == 2025]
+t_plate = ttest_ind(plateau_v.ratio, pre.ratio, equal_var=False)          # raw ratio (level-contaminated)
+t_25 = ttest_ind(y25.ratio, pre.ratio, equal_var=False)
+t_plate_res = ttest_ind(plateau_v.resid, pre.resid, equal_var=False)      # residual, region-years
+ym = hist.groupby("year").resid.mean()
+t_plate_res_years = ttest_ind(ym.loc[2020:2024], ym.loc[2015:2019], equal_var=False)
+pred_pre = float(np.polyval(coef, pre["mean"].mean()))
+pred_plateau = float(np.polyval(coef, plateau_v["mean"].mean()))
+axy.axhline(0, color=INK2, lw=1.0, ls=(0, (5, 3)), zorder=1, label="locus (what the level predicts)")
 axy.axvspan(2019.5, 2024.5, color=C["yellow"], alpha=0.10, lw=0, zorder=0)
-axy.annotate("plateau %.3f\n$p = %.0e$ vs pre-COVID" % (plateau_v.mean(), t_plate.pvalue),
-             xy=(2022, 0.70), fontsize=7.6, color="#8a6a00", ha="center")
-axy.annotate("2025 back to %.3f\n($p = %.2f$)" % (y25.mean(), t_25.pvalue),
-             xy=(2025, 0.63), fontsize=7.6, color=INK2, ha="center")
+axy.annotate("raw ratio %.3f vs %.3f pre-COVID;\nthe locus predicts %.3f vs %.3f\n"
+             "residual excess %+.3f ($p = %.2f$ on year means)"
+             % (plateau_v.ratio.mean(), pre.ratio.mean(), pred_plateau, pred_pre,
+                plateau_v.resid.mean() - pre.resid.mean(), t_plate_res_years.pvalue),
+             xy=(2019.6, -0.125), fontsize=7.2, color="#8a6a00", ha="left")
 axy.set_xticks(years[::2])
 axy.set_xlabel("Year")
-axy.set_ylabel("Top-band share among those who passed")
-axy.set_title("b. The plateau was a change of shape, not only of level")
-axy.legend(loc="lower left", fontsize=7.4)
+axy.set_ylabel("Residual of the conditional ratio from the locus")
+axy.set_title("b. Against the locus, the plateau is a lift, not a reshaping")
+axy.legend(loc="upper left", fontsize=7.4)
 
 fig.text(0.005, 0.015,
          "Ministry EPAU, Física, ordinary sitting, specific phase, 17 communities, "
@@ -165,9 +175,15 @@ summary = {
     "r_mean_ratio": float(hist["mean"].corr(hist.ratio)),
     "r_mean_pass": float(hist["mean"].corr(hist.pass_pct)),
     "r_mean_top": float(hist["mean"].corr(hist.top)),
-    "pre_covid_mean": float(pre.mean()), "plateau_mean": float(plateau_v.mean()),
-    "y2025_mean": float(y25.mean()),
-    "plateau_vs_pre": {"t": float(t_plate.statistic), "p": float(t_plate.pvalue)},
+    "pre_covid_mean": float(pre.ratio.mean()), "plateau_mean": float(plateau_v.ratio.mean()),
+    "y2025_mean": float(y25.ratio.mean()),
+    "plateau_vs_pre_raw_ratio": {"t": float(t_plate.statistic), "p": float(t_plate.pvalue),
+                                 "note": "level-contaminated: the ratio tracks the mean at r = 0.905"},
+    "locus_predicted_ratio": {"at_pre_covid_mean": pred_pre, "at_plateau_mean": pred_plateau},
+    "plateau_vs_pre_locus_residual": {"excess": float(plateau_v.resid.mean() - pre.resid.mean()),
+                                      "p_region_years": float(t_plate_res.pvalue),
+                                      "p_year_means_5v5": float(t_plate_res_years.pvalue),
+                                      "year_mean_residuals": {int(k): float(v) for k, v in ym.items()}},
     "y2025_vs_pre": {"t": float(t_25.statistic), "p": float(t_25.pvalue)},
     "points": {},
 }

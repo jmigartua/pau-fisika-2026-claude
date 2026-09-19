@@ -23,62 +23,62 @@
     {
       "item_sd": 0.1,
       "format": "no choice (4 × 2.5)",
-      "expected_score": 5.486297554762271,
+      "expected_score": 5.486297554762269,
       "premium_vs_no_choice": 0.0
     },
     {
       "item_sd": 0.1,
       "format": "2010–19: better of two options",
       "expected_score": 5.768192121317894,
-      "premium_vs_no_choice": 0.28189456655562317
+      "premium_vs_no_choice": 0.28189456655562495
     },
     {
       "item_sd": 0.1,
       "format": "2020–24: best 2 of 4 + best 2 of 4",
       "expected_score": 6.135238067707522,
-      "premium_vs_no_choice": 0.6489405129452503
+      "premium_vs_no_choice": 0.6489405129452521
     },
     {
       "item_sd": 0.1,
       "format": "2025: 1 obligatory + 3 × best of 2",
-      "expected_score": 5.900603828974761,
-      "premium_vs_no_choice": 0.4143062742124899
+      "expected_score": 5.900603828974762,
+      "premium_vs_no_choice": 0.41430627421249255
     },
     {
       "item_sd": 0.1,
       "format": "2026: 2 obligatory + 2 × best of 2",
-      "expected_score": 5.762140738551337,
-      "premium_vs_no_choice": 0.2758431837890658
+      "expected_score": 5.762140738551339,
+      "premium_vs_no_choice": 0.27584318378906936
     },
     {
       "item_sd": 0.2,
       "format": "no choice (4 × 2.5)",
-      "expected_score": 5.4566655684864696,
+      "expected_score": 5.45666556848647,
       "premium_vs_no_choice": 0.0
     },
     {
       "item_sd": 0.2,
       "format": "2010–19: better of two options",
       "expected_score": 5.99391642531123,
-      "premium_vs_no_choice": 0.5372508568247607
+      "premium_vs_no_choice": 0.5372508568247598
     },
     {
       "item_sd": 0.2,
       "format": "2020–24: best 2 of 4 + best 2 of 4",
       "expected_score": 6.697714494622286,
-      "premium_vs_no_choice": 1.2410489261358162
+      "premium_vs_no_choice": 1.2410489261358153
     },
     {
       "item_sd": 0.2,
       "format": "2025: 1 obligatory + 3 × best of 2",
       "expected_score": 6.245297063269193,
-      "premium_vs_no_choice": 0.7886314947827238
+      "premium_vs_no_choice": 0.7886314947827229
     },
     {
       "item_sd": 0.2,
       "format": "2026: 2 obligatory + 2 × best of 2",
-      "expected_score": 5.9830568179994295,
-      "premium_vs_no_choice": 0.5263912495129599
+      "expected_score": 5.983056817999431,
+      "premium_vs_no_choice": 0.5263912495129608
     },
     {
       "item_sd": 0.3,
@@ -89,8 +89,8 @@
     {
       "item_sd": 0.3,
       "format": "2010–19: better of two options",
-      "expected_score": 6.149062468927716,
-      "premium_vs_no_choice": 0.7373283550640757
+      "expected_score": 6.149062468927714,
+      "premium_vs_no_choice": 0.7373283550640739
     },
     {
       "item_sd": 0.3,
@@ -107,8 +107,8 @@
     {
       "item_sd": 0.3,
       "format": "2026: 2 obligatory + 2 × best of 2",
-      "expected_score": 6.13995604707991,
-      "premium_vs_no_choice": 0.72822193321627
+      "expected_score": 6.139956047079908,
+      "premium_vs_no_choice": 0.7282219332162674
     }
   ]
 }

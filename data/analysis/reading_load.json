@@ -42,8 +42,11 @@
       "words_2026": 1246,
       "words_2025_nb": 1173,
       "words_2026_nb": 1135,
+      "words_2025_raw": 1199,
+      "words_2026_raw": 1246,
       "len_change": 3.9199332777314355,
       "len_change_nb": -3.239556692242118,
+      "len_change_raw": 3.9199332777314355,
       "delta": 0.17
     },
     {
@@ -54,8 +57,11 @@
       "words_2026": 899,
       "words_2025_nb": 967,
       "words_2026_nb": 843,
+      "words_2025_raw": 1000,
+      "words_2026_raw": 899,
       "len_change": -10.099999999999998,
       "len_change_nb": -12.823164426059975,
+      "len_change_raw": -10.099999999999998,
       "delta": 1.13
     },
     {
@@ -66,8 +72,11 @@
       "words_2026": 922,
       "words_2025_nb": 684,
       "words_2026_nb": 851,
+      "words_2025_raw": 813,
+      "words_2026_raw": 922,
       "len_change": 13.40713407134071,
       "len_change_nb": 24.415204678362578,
+      "len_change_raw": 13.40713407134071,
       "delta": -0.832
     },
     {
@@ -78,8 +87,11 @@
       "words_2026": 1628,
       "words_2025_nb": 1548,
       "words_2026_nb": 1628,
+      "words_2025_raw": 1548,
+      "words_2026_raw": 1628,
       "len_change": 5.167958656330751,
       "len_change_nb": 5.167958656330751,
+      "len_change_raw": 5.167958656330751,
       "delta": 0.8
     },
     {
@@ -90,58 +102,74 @@
       "words_2026": 1473,
       "words_2025_nb": 1152,
       "words_2026_nb": 1416,
+      "words_2025_raw": 1233,
+      "words_2026_raw": 1473,
       "len_change": 19.4647201946472,
       "len_change_nb": 22.916666666666675,
+      "len_change_raw": 19.4647201946472,
       "delta": -0.82
     },
     {
       "ccaa": "Madrid (Comunidad de)",
       "file_2025": "mad_2025_ord",
       "file_2026": "mad_2026_ord",
-      "words_2025": 3737,
-      "words_2026": 4070,
-      "words_2025_nb": 3333,
-      "words_2026_nb": 3727,
-      "len_change": 8.910891089108919,
-      "len_change_nb": 11.821182118211816,
+      "words_2025": 1127,
+      "words_2026": 1093,
+      "words_2025_nb": 960,
+      "words_2026_nb": 917,
+      "words_2025_raw": 3737,
+      "words_2026_raw": 4070,
+      "len_change": -3.0168589174800364,
+      "len_change_nb": -4.479166666666668,
+      "len_change_raw": 8.910891089108919,
       "delta": 1.05
     },
     {
       "ccaa": "País Vasco",
       "file_2025": "pv_2025_ord_es",
       "file_2026": "pv_2026_ord",
-      "words_2025": 1452,
-      "words_2026": 2026,
-      "words_2025_nb": 1395,
-      "words_2026_nb": 1926,
-      "len_change": 39.53168044077135,
-      "len_change_nb": 38.064516129032256,
+      "words_2025": 1335,
+      "words_2026": 1940,
+      "words_2025_nb": 1290,
+      "words_2026_nb": 1854,
+      "words_2025_raw": 1452,
+      "words_2026_raw": 2026,
+      "len_change": 45.31835205992509,
+      "len_change_nb": 43.72093023255814,
+      "len_change_raw": 39.53168044077135,
       "delta": -1.48
     },
     {
       "ccaa": "Comunitat Valenciana",
       "file_2025": "val_2025_ord",
       "file_2026": "val_2026_ord",
-      "words_2025": 2485,
-      "words_2026": 2325,
-      "words_2025_nb": 2394,
-      "words_2026_nb": 2239,
-      "len_change": -6.438631790744465,
-      "len_change_nb": -6.474519632414366,
+      "words_2025": 1226,
+      "words_2026": 1150,
+      "words_2025_nb": 1135,
+      "words_2026_nb": 1064,
+      "words_2025_raw": 2485,
+      "words_2026_raw": 2325,
+      "len_change": -6.199021207177813,
+      "len_change_nb": -6.255506607929517,
+      "len_change_raw": -6.438631790744465,
       "delta": 0.506
     }
   ],
   "length_vs_grade": {
-    "pearson_r": -0.8435069832036122,
-    "pearson_p": 0.008491951053875737,
-    "spearman_rho": -0.7619047619047621,
-    "spearman_p": 0.028004939153071794,
-    "pearson_r_boilerplate_stripped": -0.8443952065234395,
-    "n": 8
+    "pearson_r": -0.9049249780004873,
+    "pearson_p": 0.0019982298082658364,
+    "spearman_rho": -0.8571428571428572,
+    "spearman_p": 0.0065300172547152905,
+    "pearson_r_boilerplate_stripped": -0.9380782906825529,
+    "n": 8,
+    "pearson_r_raw_files_pre_audit": -0.8435069832036121,
+    "pearson_p_raw_files_pre_audit": 0.008491951053875771,
+    "pearson_r_excl_pais_vasco": -0.8834106160453326,
+    "pearson_p_excl_pais_vasco": 0.0083641593264581
   },
   "collinearity_with_competency_change": {
-    "r": 0.8722304463913664,
-    "p": 0.02344466550439392
+    "r": 0.8977892780216314,
+    "p": 0.015136648205362105
   },
   "pisa_reading": {
     "2015": {

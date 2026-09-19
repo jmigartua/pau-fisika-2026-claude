@@ -57,8 +57,13 @@ pisa_pv = {int(k): v for k, v in pisa["pais_vasco"].items()}
 pisa_es = {int(k): v for k, v in pisa["espana"].items()}
 
 # The PISA window starts at 2012 so that both instruments cover the same decade;
-# the 2006–2009 rounds predate every PAU year in this study.
+# the 2006–2009 rounds predate every PAU year in this study. It ends at 2022 because
+# 2025 is the round the 2027 estimator treats as forward-looking, and because the
+# PAU series compared here also ends at 2025 (its 2026 point is not in the cube).
+# The fit including 2025 is computed too and written to the JSON (audit, 19 Sep 2026):
+# with five rounds both PISA slopes are significant on their own.
 PISA_FROM = 2012
+PISA_TO = 2022
 
 
 def fit(years, values, sd):
@@ -72,7 +77,8 @@ def fit(years, values, sd):
 
 pau_years_es = [y for y in pau_es.index if y not in PLATEAU]
 pau_years_pv = [y for y in pau_pv.index if y not in PLATEAU]
-pisa_years = [y for y in sorted(pisa_es) if y >= PISA_FROM]
+pisa_years = [y for y in sorted(pisa_es) if PISA_FROM <= y <= PISA_TO]
+pisa_years_all = [y for y in sorted(pisa_es) if y >= PISA_FROM]
 
 fits = {
     "PAU Física, Spain": fit(pau_years_es, [pau_es.loc[y] for y in pau_years_es], SD_PAU),
@@ -160,7 +166,7 @@ axf.grid(axis="y", visible=False)
 fig.text(0.005, 0.015,
          "PAU: ministry EPAU, Física, ordinary sitting, specific phase, mean of the 17 "
          "communities; plateau years excluded, so six year-points. PISA: INEE Spanish "
-         "reports,\nscience, 2012–2022, four rounds. Each series is divided by its own "
+         "reports,\nscience, 2012–2022, four rounds (2025 held out; with it both PISA slopes are significant: see the JSON). Each series is divided by its own "
          "student-level standard deviation — %.2f marks for the PAU, %.0f points for "
          "PISA — so the\nslopes are comparable. Agreement of the point estimates is not "
          "evidence of a common cause; with four and six points the test has very little "
@@ -169,8 +175,15 @@ fig.text(0.005, 0.015,
 fig.subplots_adjust(bottom=0.26, top=0.90, left=0.075, right=0.985)
 _save(fig, "fig22_slope_compare", P, dpi=200)
 
+fits_incl_2025 = {
+    "PISA science, Spain": fit(pisa_years_all, [pisa_es[y] for y in pisa_years_all], SD_PISA),
+    "PISA science, Euskadi": fit(pisa_years_all, [pisa_pv[y] for y in pisa_years_all], SD_PISA),
+}
+fits_incl_2025["euskadi_over_spain_slope_ratio"] = (fits_incl_2025["PISA science, Euskadi"]["slope_sd_decade"]
+                                                    / fits_incl_2025["PISA science, Spain"]["slope_sd_decade"])
 json.dump({"sd_pau_marks": SD_PAU, "sd_pisa_points": SD_PISA,
-           "pisa_window_from": PISA_FROM, "fits": fits, "slope_difference_tests": tests,
+           "pisa_window_from": PISA_FROM, "pisa_window_to": PISA_TO,
+           "pisa_fits_2012_2025_incl_2025_round": fits_incl_2025, "fits": fits, "slope_difference_tests": tests,
            "euskadi_over_spain_slope_ratio": ratios},
           open(A / "slope_compare.json", "w", encoding="utf-8"), indent=2,
           ensure_ascii=False)

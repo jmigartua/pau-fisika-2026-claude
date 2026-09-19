@@ -3,6 +3,7 @@ title: "The shape of the collapse"
 subtitle: "What the published moments imply about the 2026 grade distribution, checked against the Canarias histograms"
 description: "A Beta-mixture reconstruction of the Basque 2025 and 2026 Physics grade distributions from the published mean, pass rate and low-score share; the Ministry grade bands 2015–2025; and the observed 2024–2026 histograms of Tenerife and Las Palmas as an empirical mirror."
 date: 2026-09-18
+date-modified: 2026-09-19
 categories: [findings, distributions, model]
 ---
 
@@ -27,9 +28,9 @@ Beta-mixture fits to the published Euskadi Física moments. "SD (model)" and the
 
 ![Left: implied grade densities for Euskadi 2025 and 2026 (Beta-mixture fits; the point mass at zero is not drawn). Right: observed histograms of the Tenerife (ULL) Física exam, June 2024, 2025 and 2026, from the ULL statistics dashboard.](../plots/fig05_distributions.png){#fig-dist}
 
-The 2025 fit is a mild bell with mode near 6 ($a = 2.0,\ b = 1.6$). The 2026 fit has $a = 1.27 < b = 1.81$: a density that is highest near the origin and decreases monotonically, with an implied median of 3.8, an implied share of marks above 7 that falls from 30 % to 15 %, and a share above 9 that falls from 6 % to 2 %.
+The 2025 fit is a mild bell with mode near 6 ($a = 2.0,\ b = 1.6$). The 2026 fit has $a = 1.27 < b = 1.81$: a density skewed towards the low end, zero at the origin, with its mode near 2.5 (against 6.2 in 2025) and roughly flat band shares of 12–13 % across $[0,5)$ before declining, with an implied median of 3.8, an implied share of marks above 7 that falls from 30 % to 15 %, and a share above 9 that falls from 6 % to 2 %.
 
-Three moments cannot, however, distinguish a J-shaped density from a bell that has been pushed down against the floor: shifting the 2025 fit by $-1.48$ and letting the mass below zero pile up in the lowest band reproduces $P(x \le 2) \approx 0.23$ and $P(x \ge 5) \approx 0.38$, close to the published 0.245 and 0.398. What the moments *do* establish is the opposite of a subgroup effect. If 2026 had been a normal year for most candidates and a disaster for a minority — say, the scripts of a few of the 41 tribunals — the low tail would be a lump added to an otherwise 2025-like distribution, and a quarter of all candidates could not end up at two points or less while the pass rate stayed near 40 %. The 2026 numbers describe a **cohort-wide displacement of roughly one and a half points** with the lower part of the cohort compressed into the 0–2 band. Whatever the cause, it acted on almost everyone.
+Three moments cannot, however, distinguish a low-skewed density from a bell that has been pushed down against the floor: shifting the 2025 fit by $-1.48$ and letting the mass below zero pile up in the lowest band reproduces $P(x \le 2) \approx 0.23$ and $P(x \ge 5) \approx 0.38$, close to the published 0.245 and 0.398. What the moments *do* establish is the opposite of a subgroup effect. If 2026 had been a normal year for most candidates and a disaster for a minority — say, the scripts of a few of the 41 tribunals — the low tail would be a lump added to an otherwise 2025-like distribution, and a quarter of all candidates could not end up at two points or less while the pass rate stayed near 40 %. The 2026 numbers describe a **cohort-wide displacement of roughly one and a half points** with the lower part of the cohort compressed into the 0–2 band. Whatever the cause, it acted on almost everyone.
 
 ## The Ministry grade bands, 2015–2025
 
@@ -43,7 +44,7 @@ Share of Basque Física examinees by grade band, ordinary sitting, 2015–2025 (
 
 ![Grade-band shares of Basque Física examinees, 2015–2025 (observed, Ministry) and 2026 (implied by the fitted distribution, dashed outline).](../plots/fig06_euskadi_grade_bands.png){#fig-bands}
 
-Two things stand out. The failing band $[0,5)$ had been 25–34 % in every normal year and 37.7 % in 2025; the 2026 fit puts it near 65 %. And the **top band $[9,10]$ had already collapsed in 2025** (6.7 %, from 10.3 % in 2024 and 17–20 % in 2018–2023) before the mean did: the first year of the competency model removed the top of the Basque distribution, the second removed the middle.
+Two things stand out. The failing band $[0,5)$ had been 25–36 % in every normal year (36.4 % in 2015, 24.9 % in 2020) and 37.7 % in 2025; the 2026 fit puts it near 65 %. And the **top band $[9,10]$ had already collapsed in 2025** (6.7 %, from 10.3 % in 2024 and 15–20 % in 2018–2023 outside the 36 % of 2021) before the mean did: the first year of the competency model removed the top of the Basque distribution, the second removed the middle.
 
 ## The Canarias mirror: observed histograms
 
@@ -61,11 +62,11 @@ Física, June sitting, Tenerife (ULL) and Las Palmas (ULPGC), 2024–2026, read 
 Percentage of exams per one-point band, same sources.
 :::
 
-The 2026 Tenerife histogram — 683 exams, 15 % in $[0,1)$, 25 % below 2, 61 % below 5, 3 % at or above 9, mean 4.08 — is, band for band, what the Basque fit predicts for 2026 (13 % in $[0,1)$, 26 % below 2, 65 % below 5, 2 % above 9). Las Palmas 2026 (22.6 % below 2, 57 % below 5, mean 4.41) is the same shape one step less severe. Both islands had a bell-shaped 2024 (ULL mode at $[5,6)$, ULPGC mode at $[9,10]$), a flattened 2025, and a J-shaped 2026.
+The 2026 Tenerife histogram — 683 exams, 15 % in $[0,1)$, 25 % below 2, 61 % below 5, 3 % at or above 9, mean 4.08 — is, band for band, what the Basque fit predicts for 2026 (13 % in $[0,1)$, 26 % below 2, 65 % below 5, 2 % above 9). Las Palmas 2026 (22.6 % below 2, 57 % below 5, mean 4.41) is the same shape one step less severe. Both islands had a 2024 concentrated in the upper half (ULL modal at $[5,6)$; ULPGC rising monotonically to a mode at $[9,10]$), a flattened 2025, and a 2026 that is flat-to-decreasing across the scale with a heavy $[0,2)$ tail.
 
 Two details of the Canarian histograms are worth carrying back to Euskadi:
 
-- **The pass-line pile-up disappeared.** In 2024 and 2025 the $[5,6)$ band is the modal band at ULL (17.5 %, 16.2 %) — the familiar signature of markers rounding borderline scripts up to 5. In 2026 it is 11.9 %, no larger than its neighbours. Whatever happened in 2026, it did not include a benevolent hand at the threshold.
+- **The pass-line pile-up disappeared.** In 2024 and 2025 the $[5,6)$ band is the modal band at ULL (17.5 %, 16.2 %) — the familiar signature of markers rounding borderline scripts up to 5. In 2026 it is 11.9 %, still the fourth-largest band but no longer a peak that stands out from its neighbours (10.0 % and 9.7 %). Whatever happened in 2026, it did not include a benevolent hand at the threshold.
 - **Zeros multiplied.** ULL: 5 → 18 → 30 zeros (0.7 % → 2.3 % → 4.4 % of exams). Euskadi 2026: 3.2 %. Zeros in a four-problem paper are not students who tried and failed; they are blank or near-blank scripts, i.e. a decision by the candidate. Their growth is a participation signal (students sitting Física because they enrolled for it, then giving up) as much as a difficulty signal.
 
 ## Variance, not only level

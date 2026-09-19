@@ -3,6 +3,7 @@ title: "Euskadi 2010–2026: the series and the break"
 subtitle: "Level, pass rate and regimes of the Physics exam at UPV/EHU"
 description: "The 17-year Basque Physics series consolidated from three sources, its structural regimes, a trend model, and how the 2026 value compares with the historical variability of regional Physics means."
 date: 2026-09-18
+date-modified: 2026-09-19
 categories: [findings, Euskadi]
 ---
 
@@ -36,7 +37,7 @@ $$
 \hat{x}_{2026} = 6.17, \qquad x_{2026} - \hat{x}_{2026} = -2.18 \approx -7.0\,\sigma_\varepsilon ,
 $$
 
-and the 2025 residual was already $-0.69 \approx -2.2\,\sigma_\varepsilon$. In plain words: for thirteen years the Basque exam produced means between 5.45 and 6.49 in normal years; 2025 fell just outside that band and 2026 fell far outside it. The only comparable level in the series is the 2010–11 start of the two-phase PAU (4.45, 4.44), when Física was the lowest-scoring modality subject in the Basque system and roughly half of the candidates passed — and, as [Chapter 3](03-spain-2026.qmd) shows with the newly found La Rioja series, that 2010–11 trough was itself a national feature, not a Basque one.
+and the 2025 residual was already $-0.69 \approx -2.2\,\sigma_\varepsilon$. In plain words: for thirteen years the Basque exam produced means between 5.45 and 6.49 in normal years; 2025 (5.47) sat at the bottom of that band, 2.2 residual standard deviations below the trend, and 2026 fell far outside it. The only comparable level in the series is the 2010–11 start of the two-phase PAU (4.45, 4.44), when Física was the lowest-scoring modality subject in the Basque system and roughly half of the candidates passed — and, as [Chapter 3](03-spain-2026.qmd) shows with the newly found La Rioja series, that 2010–11 trough was itself a national feature, not a Basque one.
 
 ## How unusual is a −1.48 change?
 
@@ -50,9 +51,9 @@ $$
 z = \frac{-1.48 - \bar{\Delta}}{s_\Delta} = -1.97,
 $$
 
-and only 7 of the 170 observed changes were as negative: Extremadura 2024 ($-2.10$), Cantabria 2017 ($-1.94$), Canarias 2019 ($-1.76$), Baleares 2025 ($-1.65$), Euskadi 2022 ($-1.62$, the post-COVID normalisation), Asturias 2025 ($-1.55$). Regional Physics means are volatile — a typical community moves by ±0.7 points from one June to the next — so a fall of this size, while rare (≈ 4 % of transitions), has precedents. The Basque series' own year-to-year standard deviation before 2026 is 0.85.
+and only 7 of the 170 observed changes were as negative: Extremadura 2024 ($-2.10$), Cantabria 2017 ($-1.94$), Canarias 2019 ($-1.76$), Baleares 2025 ($-1.65$), Euskadi 2022 ($-1.62$, the post-COVID normalisation), Asturias 2025 ($-1.55$), Cantabria 2025 ($-1.51$). Regional Physics means are volatile — the standard deviation of the annual change is 0.74 and the median absolute change 0.5 points — so a fall of this size, while rare (≈ 4 % of transitions), has precedents. The Basque series' own year-to-year standard deviation before 2026 is 0.85.
 
-What has fewer precedents is the **level**. Among the 187 community-year ordinary means in the cube, only Canarias 2019 (3.60) lies below 3.99; the next lowest are Baleares 2025 (4.45), Andalucía 2018 (4.65) and Galicia 2023 (4.67). And the Basque case is the only one in the panel with two consecutive falls summing to more than two points ($6.09 \to 5.47 \to 3.99$).
+What has fewer precedents is the **level**. Among the 187 community-year ordinary means in the cube, only Canarias 2019 (3.60) lies below 3.99; the next lowest are Baleares 2025 (4.45), Andalucía 2018 (4.65) and Galicia 2023 (4.67). Two consecutive falls summing to more than two points have precedents in the panel — Extremadura $8.55 \to 6.45 \to 6.09$ and Baleares $6.49 \to 6.10 \to 4.45$, both over 2023–2025 — but Euskadi's ($6.09 \to 5.47 \to 3.99$) ends a point and a half lower than either.
 
 ::: {#tbl-changes}
 {{< include ../data/tables/changes_by_year.md >}}
@@ -70,7 +71,7 @@ The last row of @tbl-changes is the first key result of this study: **2025 was a
 Rank of Euskadi among the 17 communities by ordinary-sitting Physics mean (1 = highest), Ministry cube.
 :::
 
-Euskadi has never been a top region in Physics: its median rank over 2015–2025 is 7–8, with a low of 15th in 2015 and 13th in 2024. In 2025 it ranked 12th with 5.47, 0.18 below the national mean. Among the nine communities with 2026 data Euskadi is last; if the 2025 values are kept for the eight that have not published, Euskadi 2026 would still be last, 0.46 below Baleares 2025.
+Euskadi has been a mid-table region in Physics: its median rank over 2015–2025 is 8, with three years in fourth place (2016, 2018, 2021) and lows of 15th in 2015 and 13th in 2024. In 2025 it ranked 12th with 5.47, 0.18 below the national mean. Among the nine communities with 2026 data Euskadi is last; if the 2025 values are kept for the eight that have not published, Euskadi 2026 would still be last, 0.46 below Baleares 2025.
 
 ::: {#tbl-wide}
 {{< include ../data/tables/ministry_wide.md >}}

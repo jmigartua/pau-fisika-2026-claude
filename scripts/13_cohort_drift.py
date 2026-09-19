@@ -152,7 +152,7 @@ for ccaa, g in tu.groupby("ccaa"):
 axt.plot(tu_nat.index, tu_nat.values, color=INK2, lw=2.0, marker="o", ms=5, zorder=3,
          label="All communities pooled")
 axt.annotate("%.3f to %.3f\n(%+.0f %% relative)"
-             % (tu_nat.loc[2015], tu_nat.loc[2025],
+             % (round(tu_nat.loc[2015], 3), round(tu_nat.loc[2025], 3),
                 100 * (tu_nat.loc[2025] / tu_nat.loc[2015] - 1)),
              xy=(2016.2, 0.30), fontsize=7.8, color=INK2)
 axt.set_xticks(range(2015, 2027, 2))
@@ -178,7 +178,7 @@ axd.set_ylabel("Mean mark, relative to the region's own average")
 axd.set_title("c. And it has no relationship with the mean")
 
 fig.text(0.005, 0.015,
-         "Ministry EPAU, Física, ordinary sitting, specific phase. Panel b uses the "
+         "Ministry EPAU, Física, ordinary sitting, specific phase. Panel c uses the "
          "non-plateau years only (n = %d) and expresses both variables as deviations "
          "from each\ncommunity's own average, so it compares a community with itself. "
          "The conditional top-band share shows no significant trend over the same years "

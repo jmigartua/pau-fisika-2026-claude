@@ -16,6 +16,7 @@ Writes: plots/fig18_analysis_path.(png|svg), data/analysis/analysis_path.json
 from __future__ import annotations
 
 import json
+import textwrap
 from pathlib import Path
 
 import numpy as np
@@ -34,7 +35,7 @@ locus = json.load(open(A / "shape_locus.json", encoding="utf-8"))
 frames = json.load(open(A / "reference_frames.json", encoding="utf-8"))
 
 fr = {f["frame"]: f["delta"] for f in frames["frames"]}
-nat_2025 = float(results["annual_change_dist_2025"]["mean"])          # -0.81
+nat_2025 = fr["2024 → 2025, nine communities"]                   # -0.65 (same nine communities as the other frames)
 nat_2026 = fr["2025 → 2026, nine communities"]                   # +0.17
 nat_base = fr["2015–19 baseline → 2026, nine communities"]  # +0.02
 ehu_yoy = fr["2025 → 2026, Euskadi"]                             # -1.48
@@ -64,9 +65,9 @@ steps = [
      "2020–24 was a plateau, not a decline; 2025 returned to the 2015–19 norm.",
      STOOD, "reverses the sign of the national story and enlarges the Basque one"),
     ("7. Conditioning on passing",
-     "Among passers, the top-band share: the one measure not dominated by the level.",
-     STOOD, "strengthens step 3, shows the plateau reshaped rather than lifted, "
-            "and finds a Basque turn in 2024 — before either candidate cause"),
+     "Among passers, the top-band share: the one measure least dominated by the level.",
+     WEAK, "strengthens step 3; its two further claims — a plateau that reshaped, and a "
+           "Basque turn in 2024 — were withdrawn at step 13"),
     ("8. Testing the slow version of H4",
      "Do cohorts arrive less prepared each year? Not detectably — take-up is flat.",
      STOOD, "kills the recruitment mechanism, and corrects a dilution effect this "
@@ -77,20 +78,26 @@ steps = [
             "(1 of 3), which retracts the triangulation step 9 first claimed"),
     ("10. Comparing the two slopes",
      "On one scale, all four series fall; Euskadi is 1.7x Spain on BOTH instruments.",
-     WEAK, "tempers step 9's 'the PAU does not show it' — but every interval "
-            "includes zero, so the agreement is recorded, not believed"),
+     OVER, "on 2012–22 every interval includes zero; with PISA 2025 the PISA slopes are "
+           "significant and the ratio is 2.1 — the records are steps, not slopes (step 13)"),
     ("11. Forecasting 2027 from PISA 2025",
      "Basque science falls to 458.5; top performers halve. Cohort term: −0.36 marks.",
-     STOOD, "the paper term is 6.5x larger, so 2027 is a policy outcome, not a "
-            "prediction — the estimator's value is attribution after the fact"),
+     STOOD, "the two-year band of year-to-year variation is 6.5x larger, so 2027 is a policy "
+            "outcome, not a prediction — the estimator's value is attribution after the fact"),
     ("12. Measuring the reading load",
      "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
-     WEAK, "but length and competency content correlate at +0.87, so it is a better "
-            "instrument for the same change, not a second cause"),
+     WEAK, "but length and competency content correlate at +0.9, so it is a better "
+            "instrument for the same change, not a second cause; the Madrid count was "
+            "70 % solutions — corrected at step 13 (r = −0.91)"),
+    ("13. The audit (19 Sep, evening)",
+     "Re-run everything, second-code the papers, recompute every number, read the logic.",
+     STOOD, "withdrew the plateau reshaping (a level effect), the Basque 2024 signal "
+            "(5 of 17 communities show it), the slope agreement (stale window); fixed the "
+            "2027 proration and the Madrid count; found the plateau in every subject"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 12.8),
-                              gridspec_kw=dict(height_ratios=[1.0, 1.45], hspace=0.34))
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 15.0),
+                              gridspec_kw=dict(height_ratios=[1.0, 2.4], hspace=0.16))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
 stages = ["As published:\nyear-on-year", "This study:\n2026 cross-section",
@@ -122,24 +129,26 @@ ax.set_title("a. The same two headlines, as the reference frame widens")
 ax.legend(loc="lower left", fontsize=8)
 
 # --- b. the ladder of claims and what happened to each --------------------------
-ypos = np.arange(len(steps))[::-1]
+STEP = 1.32                                   # vertical pitch: room for two-line fates
+ypos = np.arange(len(steps))[::-1] * STEP
 for y, (title, claim, status, fate) in zip(ypos, steps):
     colr = STATUS_COLOR[status]
     axl.scatter([0.012], [y], s=120, color=colr, zorder=3, clip_on=False)
     axl.annotate(title, xy=(0.045, y + 0.20), fontsize=8.6, color=INK, va="center",
                  fontweight="normal")
     axl.annotate(claim, xy=(0.045, y - 0.08), fontsize=7.8, color=INK2, va="center")
-    axl.annotate("→ " + fate, xy=(0.045, y - 0.34), fontsize=7.4, color=colr,
-                 va="center")
+    fate_txt = textwrap.fill("→ " + fate, width=125, subsequent_indent="   ")
+    axl.annotate(fate_txt, xy=(0.045, y - 0.24), fontsize=7.4, color=colr,
+                 va="top", linespacing=1.15)
     if y > 0:
-        axl.plot([0.012, 0.012], [y - 0.45, y - 0.62], color=MUTED, lw=1.0, zorder=1)
+        axl.plot([0.012, 0.012], [y - 0.72, y - 0.92], color=MUTED, lw=1.0, zorder=1)
 handles = [plt.Line2D([], [], marker="o", ls="", ms=8, color=STATUS_COLOR[s], label=lab)
            for s, lab in [(OVER, "overturned by a later step"),
                           (WEAK, "weakened by a later step"),
                           (STOOD, "stands")]]
-axl.legend(handles=handles, loc="lower right", fontsize=7.8)
+axl.legend(handles=handles, loc="upper right", fontsize=7.8)
 axl.set_xlim(0, 1)
-axl.set_ylim(-0.8, len(steps) - 0.35)
+axl.set_ylim(-0.5, (len(steps) - 1) * STEP + 0.5)
 axl.set_yticks([])
 axl.set_xticks([])
 for side in ("left", "bottom"):
