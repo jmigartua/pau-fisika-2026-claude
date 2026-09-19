@@ -1,0 +1,16 @@
+{
+  "presented_2015": 30839,
+  "presented_2025": 49010,
+  "growth_pct": 58.92214403839296,
+  "pre_covid_trend_per_year": -0.071,
+  "pre_covid_trend_p": 0.05840210658599936,
+  "pre_covid_trend_r2": 0.7480104044295827,
+  "projected_2025": 5.201176470588251,
+  "actual_2025": 5.671764705882353,
+  "actual_minus_projected": 0.47058823529410176,
+  "dilution_r": -0.21208415578932335,
+  "dilution_p": 0.03235850928944573,
+  "dilution_n": 102,
+  "ratio_trend_per_year": -0.002875645524489958,
+  "ratio_trend_p": 0.08238748807219205
+}

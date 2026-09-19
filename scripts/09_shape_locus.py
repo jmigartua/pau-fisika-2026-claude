@@ -131,6 +131,7 @@ fit = results["beta_fits"]["EHU_2026"]
 ehu26_mean, ehu26_pass = 3.99, 39.8
 ehu26_top = float((1 - beta_dist.cdf(0.8, fit["a"], fit["b"])) * 100)
 
+COVID_PLATEAU_PRE = [2020, 2021, 2022, 2023, 2024]
 PASS_MARK, TOP_MARK, RATIO_MARK = "o", "s", "^"   # C7b: one marker per quantity
 COL_CLOUD, COL_EHU = MUTED, C["violet"]
 COL_OBS, COL_MODEL = C["aqua"], C["red"]
@@ -214,6 +215,15 @@ for ax, col, coef, sd, marker, ylab, title, ehu26_y, overlay in panels:
                     zorder=1, lw=0, label="locus, 95 % CI of the fit")
     ax.plot(grid, curve, color=INK2, lw=1.2, zorder=2,
             label="2015--2025 locus (17 regions)")
+    # The same locus refitted without the 2020–24 plateau. A full extra row of
+    # panels would have been three near-copies: the curve moves by up to ~2
+    # residual SD in the middle of the range but only 0.06–0.43 SD at mean 4,
+    # where the 2026 cohorts sit — so the 2026 readings do not depend on the
+    # plateau, and that is worth showing inside the panel rather than beside it.
+    coef_nc = np.polyfit(hist[~hist.year.isin(COVID_PLATEAU_PRE)]["mean"],
+                         hist[~hist.year.isin(COVID_PLATEAU_PRE)][col], 2)
+    ax.plot(grid, np.polyval(coef_nc, grid), color=INK2, lw=1.1, ls=(0, (4, 2)),
+            alpha=0.75, zorder=2, label="same locus, plateau removed")
     # The cloud is split at the 2017 regime change. Until 2016 Física could also be
     # sat in the general phase; from 2017 LOMCE left it in the voluntary phase only,
     # and the presented cohort then grew 59 % (30,839 to 49,010). Showing the two
@@ -292,7 +302,6 @@ marginals = [
 # The counts are left as counts rather than densities: with a shared axis the
 # shorter bars in e and f are the honest signal that 85 of 187 region-years were
 # removed, which a density normalisation would hide.
-COVID_PLATEAU_PRE = [2020, 2021, 2022, 2023, 2024]
 _peaks = []
 for _, _col, _bins, *_ in marginals:
     _peaks.append(np.histogram(hist[_col].values, bins=_bins)[0].max())
