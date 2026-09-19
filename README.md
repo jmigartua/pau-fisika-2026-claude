@@ -20,8 +20,8 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 | `data/analysis/` | All computed outputs; `results.json` holds every scalar quoted in the text |
 | `data/tables/` | Markdown tables included by the chapters (generated) |
 | `sources/raw/` | 37 downloaded documents (PDF/XLSX/HTML) · `sources/exams/` the 2025 and 2026 Física papers and corrector documents of nine communities (day 2) · `sources/exams_ehu_hist/` all EHU Física papers 2010–2026 and the PAU 2025 model documents · `sources/ministry/` 3 cubes · `sources/text/` extractions · `sources/agent_extractions/` the search agents' raw CSVs · `sources/source_registry.csv` |
-| `scripts/` | `plot_style.py` (shared LaTeX figure style), `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py`, `08_ehu_history.py`, `09_shape_locus.py` |
-| `plots/` | Sixteen figures, PNG (200 dpi) and SVG, all matplotlib with LaTeX-typeset text |
+| `scripts/` | `plot_style.py` (shared LaTeX figure style), `pxparse.py`, `01_build_ministry_panel.py`, `02_analysis.py`, `03_plots.py`, `04_tables.py`, `05_registry.py`, `06_poll_watchlist.py`, `07_exam_coding.py`, `08_ehu_history.py`, `09_shape_locus.py`, `10_reference_frames.py` |
+| `plots/` | Seventeen figures, PNG (200 dpi) and SVG, all matplotlib with LaTeX-typeset text |
 | `logs/WORK_LOG.md`, `logs/SEARCH_REPORTS.md` | Chronological log; the five search agents' full reports |
 
 ## Rebuild
@@ -29,7 +29,8 @@ Prepared 18 September 2026. Everything in this folder was produced in this sessi
 ```bash
 python3 scripts/01_build_ministry_panel.py && python3 scripts/02_analysis.py && python3 scripts/03_plots.py \
   && python3 scripts/04_tables.py && python3 scripts/07_exam_coding.py && python3 scripts/08_ehu_history.py \
-  && python3 scripts/09_shape_locus.py && python3 scripts/05_registry.py && quarto render
+  && python3 scripts/09_shape_locus.py && python3 scripts/10_reference_frames.py \
+  && python3 scripts/05_registry.py && quarto render
 ```
 
 Python ≥ 3.10 with numpy, pandas, scipy, matplotlib; Quarto ≥ 1.4; no Jupyter needed (static includes).

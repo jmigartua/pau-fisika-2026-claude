@@ -507,6 +507,7 @@ window.Quarto = {
   <ul>
   <li><a href="#the-hypotheses-one-by-one" id="toc-the-hypotheses-one-by-one" class="nav-link active" data-scroll-target="#the-hypotheses-one-by-one">The hypotheses, one by one</a></li>
   <li><a href="#was-2026-a-shift-or-a-change-of-shape" id="toc-was-2026-a-shift-or-a-change-of-shape" class="nav-link" data-scroll-target="#was-2026-a-shift-or-a-change-of-shape">Was 2026 a shift or a change of shape?</a></li>
+  <li><a href="#what-you-compare-against-decides-what-you-find" id="toc-what-you-compare-against-decides-what-you-find" class="nav-link" data-scroll-target="#what-you-compare-against-decides-what-you-find">What you compare against decides what you find</a></li>
   <li><a href="#the-institutional-record-since-6-july" id="toc-the-institutional-record-since-6-july" class="nav-link" data-scroll-target="#the-institutional-record-since-6-july">The institutional record since 6 July</a></li>
   <li><a href="#what-to-ask-for-in-order-of-value" id="toc-what-to-ask-for-in-order-of-value" class="nav-link" data-scroll-target="#what-to-ask-for-in-order-of-value">What to ask for, in order of value</a></li>
   <li><a href="#design-questions-for-2027-that-the-data-already-inform" id="toc-design-questions-for-2027-that-the-data-already-inform" class="nav-link" data-scroll-target="#design-questions-for-2027-that-the-data-already-inform">Design questions for 2027 that the data already inform</a></li>
@@ -586,6 +587,67 @@ Figure&nbsp;1: <strong>a, b</strong> — Pass rate and the 8–10 band share aga
 <p>That bears on the ranking above in one direction and one only. It is evidence against <strong>H4</strong>: a cohort that had become differently composed would be expected to sit off the locus, and Canarias does not. It does not discriminate between <strong>H2</strong> and <strong>H3</strong>, because a harder paper and a uniformly severer marking scheme produce the same signature here — both move the distribution without reshaping it. What it weighs against is any mechanism acting <em>strongly</em> and selectively on one part of the range.</p>
 <p>The Basque case cannot be put to this test with what is published. The 2026 band shares shown in <a href="../chapters/04-distributions.html">Chapter 4</a> are output of the Beta fitted to the mean, the pass rate and the zero count; plotting them here as evidence would be circular, which is why the EHU 2026 marker in <a href="#fig-locus" class="quarto-xref">Figure&nbsp;1</a> is drawn hollow. Its apparent residual of <span class="math inline">\(-0.05\)</span> SD on the top band is the model agreeing with itself and should not be read as a result. Resolving the Basque case the same way needs one thing: the observed 2026 grade histogram, which is item 2 of the data requests below.</p>
 <p>One data caveat surfaced in building this. The Ministry’s own cube is internally inconsistent for two of the 187 region-years — Galicia 2015 and 2016 — where the published pass rate and the published <span class="math inline">\([0,5)\)</span> share disagree by 5.64 and 4.48 pp; these are the two years in which Física appeared in both phases, so the cells are carried on different bases. Every band row sums to 100.0 and the remaining 185 agree to rounding, so the two points are kept rather than discarded, and they are recorded in <code>data/analysis/shape_locus.json</code>.</p>
+</section>
+<section id="what-you-compare-against-decides-what-you-find" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-compare-against-decides-what-you-find">What you compare against decides what you find</h2>
+<p>Every number in this report is a change measured from some reference point, and the reference point is almost never argued for. It is usually the previous year, because that is what the sources publish and what the press quotes. Reading the same series against a different baseline does not merely adjust the size of the effect — in this case it reverses the sign of the national story.</p>
+<div id="fig-frames" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-frames-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig17_reference_frames.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-frames-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: <strong>a</strong> — mean Física mark, ordinary sitting, for the nine communities that have published a 2026 result (the same nine in every year, so nothing here depends on which regions reported) and for Euskadi separately, against their own 2015–2019 baselines. The shaded years are the COVID-era plateau. Dotted segments carry 2026, which is not in the ministry cube and is assembled in this study. <strong>b</strong> — the same underlying data measured five ways, with the conclusion each measurement invites.
+</figcaption>
+</figure>
+</div>
+<p>The pattern in panel a of <a href="#fig-frames" class="quarto-xref">Figure&nbsp;2</a> is not a decline. It is a plateau that ended. The nine communities sit +0.4 to +1.0 above their pre-COVID baseline in every year from 2020 to 2024, peaking in 2021, and then return to it in 2025. The relaxation did not decay gradually, which is what “returning to normal” would look like; it held for three full years after the peak — 2022, 2023 and 2024 are all about +0.65 — and then ended in a single step. Whatever produced the COVID-era marking regime was still producing it in 2024, and stopped in 2025.</p>
+<p>That is enough to change the reading of three separate claims in this report.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Measured as</th>
+<th>Change</th>
+<th>Invites the conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2024 → 2025, nine communities</td>
+<td><span class="math inline">\(-0.65\)</span></td>
+<td>“A national collapse; the competency model bites.”</td>
+</tr>
+<tr class="even">
+<td>2025 → 2026, nine communities</td>
+<td><span class="math inline">\(+0.17\)</span></td>
+<td>“A recovery everywhere, so 2026 is a Basque problem.”</td>
+</tr>
+<tr class="odd">
+<td>2015–19 baseline → 2026, nine communities</td>
+<td><span class="math inline">\(+0.02\)</span></td>
+<td>“Nothing has happened; Spain is where it was a decade ago.”</td>
+</tr>
+<tr class="even">
+<td>2025 → 2026, Euskadi</td>
+<td><span class="math inline">\(-1.48\)</span></td>
+<td>“The Basque fall is one and a half points.”</td>
+</tr>
+<tr class="odd">
+<td>2015–19 baseline → 2026, Euskadi</td>
+<td><span class="math inline">\(-1.93\)</span></td>
+<td>“The Basque fall is nearly two points — a third larger.”</td>
+</tr>
+</tbody>
+</table>
+<p>Rows one and three are the uncomfortable pair. Both are true of the same nine communities and the same ministry series, and they are not reconcilable as statements of fact about “what happened to Physics in Spain”: one says the subject collapsed, the other that it is exactly where it was in 2015–2019, <span class="math inline">\(+0.02\)</span> away after eleven years. The contradiction is entirely in the choice of reference year, and the year-on-year framing is the one that misleads, because 2024 was not a normal year to measure from.</p>
+<p>This weakens <strong>H1</strong> further than <a href="#the-hypotheses-one-by-one">the hypothesis review above</a> already did. That section could say only that the competency model explains 2025 and not 2026. Measured from the pre-COVID baseline, it does not clearly explain 2025 either: the 2025 sitting did not fall below the historical norm, it returned to it. A model introduced in 2025 that leaves the national mean 0.15 below where it sat in 2015–2019 is not obviously doing anything at all to the national mean; the visible <span class="math inline">\(-0.81\)</span> is the withdrawal of five years of COVID-era leniency, and would have appeared in 2025 under any marking scheme that stopped being lenient.</p>
+<p>It also makes the Basque case worse, not better. The headline everyone quoted is <span class="math inline">\(-1.48\)</span>, measured from 2025. Against Euskadi’s own pre-COVID baseline of 5.92 the 2026 fall is <span class="math inline">\(-1.93\)</span> — a third larger than the number in circulation — because 2025 was already 0.45 below that baseline. The Basque series did not fall once; it fell twice, and only the second fall was reported as news.</p>
+<p>None of this is a criticism of the sources. The Ministry publishes years, the universities publish years, and a year-on-year change is the only comparison most readers can make from what is published. But it means the honest form of every claim in this report carries its reference point on its face, and that the three sentences most likely to be quoted from this study — “the 2025 fall was national”, “the 2026 fall is regional”, “Euskadi fell 1.48” — are each true only in the frame that produced them.</p>
 </section>
 <section id="the-institutional-record-since-6-july" class="level2">
 <h2 class="anchored" data-anchor-id="the-institutional-record-since-6-july">The institutional record since 6 July</h2>

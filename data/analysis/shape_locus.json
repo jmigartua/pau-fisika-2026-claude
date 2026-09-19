@@ -70,12 +70,39 @@
       "normal_at_5pct": false
     }
   },
+  "y_normality_excl_covid_plateau": {
+    "pass_pct": {
+      "n": 102,
+      "skew": -0.2506159226900042,
+      "excess_kurtosis": 1.537515229276524,
+      "shapiro_p": 0.08512359112501144,
+      "anderson_A2": 0.559435843579891,
+      "anderson_A2_all_years": 0.5821284205270558,
+      "normal_at_5pct": true
+    },
+    "top": {
+      "n": 102,
+      "skew": 1.3117705202189518,
+      "excess_kurtosis": 4.466733756765291,
+      "shapiro_p": 1.1590291251195595e-05,
+      "anderson_A2": 1.5257304266790044,
+      "anderson_A2_all_years": 5.804937634615641,
+      "normal_at_5pct": false
+    }
+  },
+  "covid_plateau_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
   "mean_axis": {
     "skew": 0.6037225952733428,
     "excess_kurtosis": 0.8798806025103127,
-    "shapiro_p": 8.383013727630839e-10,
-    "anderson_A2": 5.804937634615641,
-    "anderson_crit_5pct": 0.771,
+    "shapiro_p": 1.1590291251195595e-05,
+    "anderson_A2": 1.5257304266790044,
+    "anderson_crit_5pct": 0.759,
     "normal": false,
     "n_below_4_5": 2,
     "n_below_5_0": 9,

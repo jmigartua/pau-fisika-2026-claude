@@ -149,10 +149,11 @@ def locus_ci(xq, coef, xs, ys, deg=2):
     return 1.96 * se
 
 
-fig = plt.figure(figsize=(11.6, 7.4))
-gs = fig.add_gridspec(2, 2, height_ratios=[3.0, 1.35], hspace=0.46, wspace=0.22)
+fig = plt.figure(figsize=(11.6, 10.4))
+gs = fig.add_gridspec(3, 2, height_ratios=[3.0, 1.35, 1.35], hspace=0.62, wspace=0.22)
 axes = [fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])]
 margs = [fig.add_subplot(gs[1, 0]), fig.add_subplot(gs[1, 1])]
+margs_nc = [fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1])]
 grid = np.linspace(hist["mean"].min() - 0.15, hist["mean"].max() + 0.15, 200)
 ehu = hist[hist.ccaa == "País Vasco"].sort_values("year")
 obs = observed_2026()
@@ -303,6 +304,61 @@ for axm, col, bins, xlab, title, marker in marginals:
     axm.set_title(title)
     axm.legend(loc="upper left", fontsize=7.4)
 
+# ---------------------------------------------------------------------------
+# Panels e and f — the same two distributions with the COVID-era cohorts removed.
+#
+# The window is 2020–2024, not 2020–2022. The national mean sits +0.41, +1.03,
+# +0.63, +0.61 and +0.71 above the 2015–2019 baseline in those five years and then
+# returns to it in 2025 (−0.10): the relaxation does not decay year by year, it
+# holds on a plateau for three years after the 2021 peak and ends in one step. The
+# cut therefore follows the data rather than the calendar of the pandemic.
+#
+# The question this answers: do the distributions become normal once that regime is
+# taken out? The pass rate was already normal and stays so. The 8–10 share does not
+# become normal — but its Anderson–Darling statistic falls from 5.80 to 1.53, where
+# the 2020–2022 cut alone leaves it at 4.20. What remains is the intrinsic skew of a
+# tail quantity bounded at zero, not a COVID artefact.
+# ---------------------------------------------------------------------------
+COVID_PLATEAU = [2020, 2021, 2022, 2023, 2024]
+nc = hist[~hist.year.isin(COVID_PLATEAU)]
+
+normality_nc = {}
+for axm, col, bins, xlab, title_all, marker in marginals:
+    idx = 0 if col == "pass_pct" else 1
+    axn = margs_nc[idx]
+    v_all, v_nc = hist[col].values, nc[col].values
+    sw, ad = shapiro(v_nc), anderson(v_nc, "norm")
+    is_normal = bool(ad.statistic < ad.critical_values[2])
+    ad_all = anderson(v_all, "norm")
+    normality_nc[col] = {"n": int(len(v_nc)), "skew": float(skew(v_nc)),
+                         "excess_kurtosis": float(kurtosis(v_nc)),
+                         "shapiro_p": float(sw.pvalue),
+                         "anderson_A2": float(ad.statistic),
+                         "anderson_A2_all_years": float(ad_all.statistic),
+                         "normal_at_5pct": is_normal}
+    # All years, dimmed, as the reference the reader just looked at one row above.
+    axn.hist(v_all, bins=bins, color=COL_CLOUD, alpha=0.20, lw=0,
+             label="all years (as above)")
+    axn.hist(v_nc, bins=bins, color=COL_CLOUD, alpha=0.70, lw=0,
+             label="excluding 2020--2024")
+    xs = np.linspace(bins[0], bins[-1], 400)
+    width = bins[1] - bins[0]
+    axn.plot(xs, norm.pdf(xs, v_nc.mean(), v_nc.std(ddof=1)) * len(v_nc) * width,
+             color=INK2, lw=1.2, label="normal, same mean and SD")
+    axn.annotate(
+        "skew $%+.2f$, excess kurtosis $%+.2f$\n"
+        "Anderson--Darling $A^2$: $%.2f \\rightarrow %.2f$ (5 %% crit. %.2f)\n%s"
+        % (normality_nc[col]["skew"], normality_nc[col]["excess_kurtosis"],
+           ad_all.statistic, ad.statistic, ad.critical_values[2],
+           "still normal" if is_normal else "closer to normal, still not normal"),
+        xy=(0.97, 0.92), xycoords="axes fraction", fontsize=7.2,
+        color=INK2 if is_normal else COL_MODEL, ha="right", va="top")
+    axn.set_xlabel(xlab)
+    axn.set_ylabel("Region-years")
+    axn.set_title(("e." if idx == 0 else "f.") +
+                  title_all.split(".", 1)[1] + ", COVID plateau removed")
+    axn.legend(loc="upper left", fontsize=7.0)
+
 note = (
     "Ministry EPAU, Física, ordinary sitting, specific phase, 17 communities, "
     "n = %d region-years. Hollow markers in a and b: 2015–16, when Física could still "
@@ -327,6 +383,8 @@ summary = {"n_region_years": int(len(hist)), "sd_pass_pp": sd_pass, "sd_top_pp":
            "regime_change_2017": regimes,
            "presented_2015_2025": cohort,
            "y_normality": normality,
+           "y_normality_excl_covid_plateau": normality_nc,
+           "covid_plateau_years": COVID_PLATEAU,
            "mean_axis": {
                "skew": float(skew(means)), "excess_kurtosis": float(kurtosis(means)),
                "shapiro_p": float(sw.pvalue),
