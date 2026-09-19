@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Sixteen years of one paper – PAU Física 2026</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6a3ca9ab01c0de29e82d083f58a2981d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c07cefc3e6b4ffd37a3d4fc762d735ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,9 +81,12 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -90,7 +99,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -278,10 +287,11 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física" class="navbar-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">PAU Física 2026</span>
+    <span class="navbar-title">PAU Física</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -291,32 +301,24 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../chapters/02-euskadi.html" aria-current="page"> 
-<span class="menu-text">Findings</span></a>
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../chapters/01-data-hunt.html"> 
-<span class="menu-text">Data hunt</span></a>
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/08-sources.html"> 
-<span class="menu-text">Sources &amp; log</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img" aria-label="Repository (placeholder)">
-</i> 
-<span class="menu-text"></span></a>
+<span class="menu-text">Sources &amp; methods</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="" title="Theme" class="quarto-navigation-tool px-1" aria-label="Theme"><i class="bi bi-moon"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -326,7 +328,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Findings</a></li><li class="breadcrumb-item"><a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/11-exam-content.html">The papers</a></li><li class="breadcrumb-item"><a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -338,10 +340,17 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Findings</span></a>
+ <span class="menu-text">Evidence and results</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -349,44 +358,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Euskadi 2010–2026: the series and the break</span></a>
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Spain 2026: nine communities, three directions</span></a>
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The shape of the collapse</span></a>
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Subjects, sittings, participation and groups</span></a>
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interpretation and the 2027 question</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The papers themselves</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Sixteen years of one paper</span></a>
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
   </div>
 </li>
       </ul>
@@ -394,7 +396,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Evidence</span></a>
+ <span class="menu-text">The papers</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -402,14 +404,16 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The data hunt</span></a>
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature: what exists and what does not</span></a>
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
   </div>
 </li>
       </ul>
@@ -417,7 +421,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Sources &amp; log</span></a>
+ <span class="menu-text">Research context</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -425,20 +429,48 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
  <span class="menu-text">Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Log</span></a>
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Methods, checks and reproduction</span></a>
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
       </ul>
@@ -453,14 +485,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-the-papers-own-history-matters" id="toc-why-the-papers-own-history-matters" class="nav-link active" data-scroll-target="#why-the-papers-own-history-matters"><span class="header-section-number">1</span> Why the paper’s own history matters</a></li>
-  <li><a href="#three-formats-in-sixteen-years" id="toc-three-formats-in-sixteen-years" class="nav-link" data-scroll-target="#three-formats-in-sixteen-years"><span class="header-section-number">2</span> Three formats in sixteen years</a></li>
-  <li><a href="#forty-per-cent-of-the-marks-from-a-list-of-titles" id="toc-forty-per-cent-of-the-marks-from-a-list-of-titles" class="nav-link" data-scroll-target="#forty-per-cent-of-the-marks-from-a-list-of-titles"><span class="header-section-number">3</span> Forty per cent of the marks from a list of titles</a></li>
-  <li><a href="#the-de-facto-syllabus-which-problems-were-actually-set" id="toc-the-de-facto-syllabus-which-problems-were-actually-set" class="nav-link" data-scroll-target="#the-de-facto-syllabus-which-problems-were-actually-set"><span class="header-section-number">4</span> The de facto syllabus: which problems were actually set</a></li>
-  <li><a href="#the-marking-rules-year-by-year-and-community-by-community" id="toc-the-marking-rules-year-by-year-and-community-by-community" class="nav-link" data-scroll-target="#the-marking-rules-year-by-year-and-community-by-community"><span class="header-section-number">5</span> The marking rules, year by year and community by community</a></li>
-  <li><a href="#what-choice-alone-is-worth" id="toc-what-choice-alone-is-worth" class="nav-link" data-scroll-target="#what-choice-alone-is-worth"><span class="header-section-number">6</span> What choice alone is worth</a></li>
-  <li><a href="#reading-2025-and-2026-together" id="toc-reading-2025-and-2026-together" class="nav-link" data-scroll-target="#reading-2025-and-2026-together"><span class="header-section-number">7</span> Reading 2025 and 2026 together</a></li>
-  <li><a href="#for-the-record-what-is-documented-and-what-is-testimony" id="toc-for-the-record-what-is-documented-and-what-is-testimony" class="nav-link" data-scroll-target="#for-the-record-what-is-documented-and-what-is-testimony"><span class="header-section-number">8</span> For the record: what is documented and what is testimony</a></li>
+  <li><a href="#why-the-papers-own-history-matters" id="toc-why-the-papers-own-history-matters" class="nav-link active" data-scroll-target="#why-the-papers-own-history-matters">Why the paper’s own history matters</a></li>
+  <li><a href="#three-formats-in-sixteen-years" id="toc-three-formats-in-sixteen-years" class="nav-link" data-scroll-target="#three-formats-in-sixteen-years">Three formats in sixteen years</a></li>
+  <li><a href="#forty-per-cent-of-the-marks-from-a-list-of-titles" id="toc-forty-per-cent-of-the-marks-from-a-list-of-titles" class="nav-link" data-scroll-target="#forty-per-cent-of-the-marks-from-a-list-of-titles">Forty per cent of the marks from a list of titles</a></li>
+  <li><a href="#the-de-facto-syllabus-which-problems-were-actually-set" id="toc-the-de-facto-syllabus-which-problems-were-actually-set" class="nav-link" data-scroll-target="#the-de-facto-syllabus-which-problems-were-actually-set">The de facto syllabus: which problems were actually set</a></li>
+  <li><a href="#the-marking-rules-year-by-year-and-community-by-community" id="toc-the-marking-rules-year-by-year-and-community-by-community" class="nav-link" data-scroll-target="#the-marking-rules-year-by-year-and-community-by-community">The marking rules, year by year and community by community</a></li>
+  <li><a href="#what-choice-alone-is-worth" id="toc-what-choice-alone-is-worth" class="nav-link" data-scroll-target="#what-choice-alone-is-worth">What choice alone is worth</a></li>
+  <li><a href="#reading-2025-and-2026-together" id="toc-reading-2025-and-2026-together" class="nav-link" data-scroll-target="#reading-2025-and-2026-together">Reading 2025 and 2026 together</a></li>
+  <li><a href="#for-the-record-what-is-documented-and-what-is-testimony" id="toc-for-the-record-what-is-documented-and-what-is-testimony" class="nav-link" data-scroll-target="#for-the-record-what-is-documented-and-what-is-testimony">For the record: what is documented and what is testimony</a></li>
   </ul>
 </nav>
     </div>
@@ -468,7 +500,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Findings</a></li><li class="breadcrumb-item"><a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/11-exam-content.html">The papers</a></li><li class="breadcrumb-item"><a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Sixteen years of one paper</h1>
 <p class="subtitle lead">The Basque Física exam 2010–2026: format, theory questions, the de facto syllabus and the marking rules — and what 2025 and 2026 changed</p>
@@ -504,13 +536,13 @@ window.Quarto = {
 </header>
 
 
-<section id="why-the-papers-own-history-matters" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="why-the-papers-own-history-matters"><span class="header-section-number">1</span> Why the paper’s own history matters</h2>
+<section id="why-the-papers-own-history-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-papers-own-history-matters">Why the paper’s own history matters</h2>
 <p><a href="../chapters/11-exam-content.html">Chapter 11</a> compared the 2025 and 2026 papers of nine communities and found that the Basque paper was the only one that changed genre between the two years. That comparison is horizontal. This chapter is vertical: it reads the Basque paper against <em>itself</em>, from 2010 to 2026, because the students who sat in June 2026 were prepared by teachers whose expectations were shaped by fifteen years of a very stable exam — and the account of that stability given by the coordinator, who has held the Física coordination since the 2018 edition (a two-option paper with two problems and two “theory questions”; theory drawn from a published list of titles; problems drawn, by long-standing convention, from a small subset of the syllabus; the modern-physics problem always photoelectric by a decision of the coordinators taken some twenty years ago and confirmed by the teachers’ meeting of 2024 for the 2025 paper, then lifted for 2026) can be checked against the papers.</p>
 <p>All 34 papers (ordinary and extraordinary sittings, 2010–2026) and the guidance documents that EHU published for the 2025 model were downloaded from ehu.eus on 19 September (<a href="../chapters/01-data-hunt.html">Data hunt</a>; files in <code>sources/exams_ehu_hist/</code>, hashed in the <a href="../chapters/08-sources.html">source registry</a>). Every problem and every theory question was inventoried by sub-topic (<code>data/ehu_problem_inventory_2010_2026.csv</code>, <code>data/ehu_theory_inventory.csv</code>; script <code>scripts/08_ehu_history.py</code>). The official list of theory titles, which EHU no longer publishes online, was supplied by the coordinator and is archived with the papers. Two things could <em>not</em> be verified from documents and are reported as the coordinator’s account: the minutes of the 2024 and 2025 coordination meetings (EHU does not publish them) and the origin of the photoelectric convention. The papers themselves settle the rest.</p>
 </section>
-<section id="three-formats-in-sixteen-years" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="three-formats-in-sixteen-years"><span class="header-section-number">2</span> Three formats in sixteen years</h2>
+<section id="three-formats-in-sixteen-years" class="level2">
+<h2 class="anchored" data-anchor-id="three-formats-in-sixteen-years">Three formats in sixteen years</h2>
 <div id="tbl-formats" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-formats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -587,8 +619,8 @@ Figure&nbsp;1: The ordinary-sitting Física mean 2010–2026 with the paper’s 
 <p>From 2010 to 2019 the paper offered two complete options, A and B, each with two three-point problems and two two-point “cuestiones”; the student chose one option and could not mix. The COVID paper of 2020 replaced this with a four-of-eight format — any two of four problems and any two of four questions — and, as the coordinator notes, the format was never withdrawn: it ran unchanged through 2024. Both formats made the whole paper optional in the sense used in Chapter 11 (every mark comes from a slot where the student chooses), but the 2020–2024 rule gave far more choice than the A/B rule, and it coincides with the highest means of the series (7.69 in 2021, 6.45 in 2020).</p>
 <p>The 2025 paper broke with both: seven problems in four blocks of 2.5 points, no theory questions at all, one block (A, gravitation) obligatory and written as a contextualised “competencial” exercise, the other three blocks with a choice of one problem out of two. The 2026 paper went one step further: six items, blocks A and B (gravitation, electromagnetism) both obligatory and competencial, blocks C and D with options a/b, a constants table on the paper, and every exercise split into six to nine numbered sub-tasks carrying explicit 0.25-point marks.</p>
 </section>
-<section id="forty-per-cent-of-the-marks-from-a-list-of-titles" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="forty-per-cent-of-the-marks-from-a-list-of-titles"><span class="header-section-number">3</span> Forty per cent of the marks from a list of titles</h2>
+<section id="forty-per-cent-of-the-marks-from-a-list-of-titles" class="level2">
+<h2 class="anchored" data-anchor-id="forty-per-cent-of-the-marks-from-a-list-of-titles">Forty per cent of the marks from a list of titles</h2>
 <div id="tbl-theory" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-theory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -750,8 +782,8 @@ Table&nbsp;2: The 22 titles of the official list <em>Evaluación para el Acceso 
 </div>
 <p>Until 2024, four of the ten points were awarded for two theory questions, and the questions were not questions in the usual sense: they reproduced, verbatim, the title of an entry in a syllabus list — “Lupa. Descripción. Esquema de la formación de imágenes. Aumento.” (July 2022), “Defectos de la visión. Hipermetropía y miopía.” (June 2019), “Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total.” (June 2024). The list was an official document: a bilingual sheet issued jointly by the university and the Basque Department of Education, <em>Cuestiones teóricas</em>, which states that the questions “aparecerán (tal y como están escritas) en la Evaluación para el Acceso a la Universidad”, gives for each title a guide to the content a student should include, and was sent to the correctors as their marking reference. It has 22 titles, and the inventory reconstructed from the papers before the document was in hand recovers exactly those 22: every title was set at least once between 2010 and 2024 (the photographic camera and the Biot–Savart title once each; radioactivity twelve times, Kepler ten, the photoelectric effect nine); the most frequent five — radioactivity, Kepler’s laws, the photoelectric effect, simple harmonic motion, Faraday–Lenz — account for 46 of the 118 questions. The document is no longer online, but any teacher who kept it, or the papers, had the whole of the theory component in advance, together with the marking guide. Under the A/B format a student who could reproduce two entries from that list held 4 points before touching a problem; under the four-of-eight format, with four titles on the paper and two to be chosen, the same 4 points were even more accessible. In 2025 this component disappeared in a single step. The other communities’ 2025–2026 papers offer no exact analogue: Andalucía keeps a large share of short “razone” conceptual items (about 5–6 of 10 expected points), Valencia had 1.5-point “cuestiones” in 2025 and dropped them in 2026, Castilla-La Mancha’s 2026 paper has two fixed 0.5-point items, and Asturias, Madrid, Cataluña, Extremadura and Canarias set none in either year — so removing theory is not, by itself, what separates Euskadi from the communities that rose; what is specific to Euskadi is going from 4 points of closed-list theory to none in one year.</p>
 </section>
-<section id="the-de-facto-syllabus-which-problems-were-actually-set" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="the-de-facto-syllabus-which-problems-were-actually-set"><span class="header-section-number">4</span> The de facto syllabus: which problems were actually set</h2>
+<section id="the-de-facto-syllabus-which-problems-were-actually-set" class="level2">
+<h2 class="anchored" data-anchor-id="the-de-facto-syllabus-which-problems-were-actually-set">The de facto syllabus: which problems were actually set</h2>
 <div id="tbl-topics" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-topics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -979,8 +1011,8 @@ Figure&nbsp;2: Number of problems per sub-topic and year, June and July papers p
 </ul>
 <p>Two features of this are worth stating precisely for the 2027 discussion. First, the narrowing was <em>de facto</em>: no document ever excluded mirrors, standing waves or nuclear decay; they simply were never set, and fifteen years of never being set is a stronger signal to a school than any syllabus. Second, in 2026 the new sub-topics all sit in <em>optional</em> slots: a student could answer 3b (lenses) and 4a (photoelectric) and never meet a standing wave or a decay law. The inertia the coordinator describes therefore acted through preparation — schools that had to cover block E in full for the first time, and blocks C and D in a form that made the option unpredictable — rather than through an unavoidable item. The obligatory novelty of 2026 is not a topic but a genre (the two competencial exercises), and, in July, a device never examined before (the mass spectrometer).</p>
 </section>
-<section id="the-marking-rules-year-by-year-and-community-by-community" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="the-marking-rules-year-by-year-and-community-by-community"><span class="header-section-number">5</span> The marking rules, year by year and community by community</h2>
+<section id="the-marking-rules-year-by-year-and-community-by-community" class="level2">
+<h2 class="anchored" data-anchor-id="the-marking-rules-year-by-year-and-community-by-community">The marking rules, year by year and community by community</h2>
 <div id="tbl-marking" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-marking-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1103,8 +1135,8 @@ Table&nbsp;4: Marking rules as printed in the corrector documents (EHU 2012–20
 <p>From 2012 to 2024 the EHU criteria, printed after each paper, were two qualitative paragraphs: a <em>cuestión</em> is worth up to 2 points for a precise definition with rigour; a <em>problema</em> up to 3, later sections independent of earlier ones; planteamiento, laws, diagrams and units are valued; “purely mathematical developments without physical justification”, missing units and incoherent results “se penalizarán” — with no amounts. The 2025 model (18 November 2024) introduced, for the first time, numerical penalties: −0.1 per spelling error from the third, up to 1 point per exam; up to −0.5 for syntax, coherence and presentation; units mandatory in the final answer; significant figures and exponent notation “penalised”; conceptual errors weighing more than arithmetic ones; a correct result counting only if justified. The 2026 solucionarios add the rest of the list the coordinator describes: symbolic solution before numerical substitution; −0.1 for missing or wrong units, for repeated vector-symbol errors, for rounding and significant figures; grave errors (wrong equations, scalar/vector confusion) voiding the whole section; sub-tasks marked at 0.25-point resolution against a printed table.</p>
 <p>Set against the other communities, none of these rules is unique to Euskadi, but their combination is. Canarias applies the full CRUE minor-error list (−0.1 for units, vector symbols, prefixes, factors of ten, transcription and rounding; grave errors void the section) in both 2025 and 2026, and Canarias is the other community whose mean collapsed. Comunitat Valenciana has required the symbolic calculation first since 2025 and marks it at 60 % of each section, and rose. Extremadura’s language penalty is worded identically to EHU’s 2025 rule (−0.1 from the third fault, cap 1 point; syntax up to −0.5), and fell. Cataluña, Asturias and Andalucía cap the unit penalty at −0.25 per problem or section; Madrid states no amounts. The marking regime is thus a candidate contributor, not a discriminator, on this evidence; the observation that the two communities applying the full penalty list in 2026 (Euskadi, Canarias) are the two with J-shaped distributions and 22–25 % of exams below 2 (<a href="../chapters/04-distributions.html">Chapter 4</a>) is the kind of coincidence that only item-level marks can turn into a finding or dismiss.</p>
 </section>
-<section id="what-choice-alone-is-worth" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="what-choice-alone-is-worth"><span class="header-section-number">6</span> What choice alone is worth</h2>
+<section id="what-choice-alone-is-worth" class="level2">
+<h2 class="anchored" data-anchor-id="what-choice-alone-is-worth">What choice alone is worth</h2>
 <p>Optionality has been a recurring suspect since Chapter 6, so it is worth putting a number on it. A student who chooses among items scores, on average, more than the same student answering fixed items, because the choice picks up item-to-item luck. A simple simulation makes the size of this <em>selection premium</em> explicit for each EHU format: 200 000 simulated students with ability <span class="math inline">\(a \sim \mathcal N(0.55,\,0.20)\)</span> clipped to <span class="math inline">\([0,1]\)</span>; each item scored as <span class="math inline">\(p_i \cdot \operatorname{clip}(a+\varepsilon_i,0,1)\)</span> with <span class="math inline">\(\varepsilon_i \sim \mathcal N(0,\sigma)\)</span>; the student answers the best items each rule allows. Holding the population and the items fixed and changing only the rule:</p>
 <div id="tbl-premium" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1175,15 +1207,15 @@ Figure&nbsp;3: Selection premium of each EHU format under the same population an
 </div>
 <p>Three readings. The four-of-eight format of 2020–2024 was by a wide margin the most generous ever used (+1.2 points at <span class="math inline">\(\sigma = 0.2\)</span>), which is consistent with those years carrying the highest means of the series without any change in the population. The 2025 format still gave more through choice (+0.8) than the classical A/B paper (+0.5), and the 2026 format (+0.5) is, in terms of choice, a return to the 2010–2019 level — years in which the mean sat between 5.5 and 6.5. And the step from 2025 to 2026 removes about a quarter of a point through choice, a fifth of the observed <span class="math inline">\(-1.48\)</span>. Optionality is real, measurable and worth restoring where it is cheap, but it cannot carry the 2026 result; the earlier chapters’ suspicion is confirmed and bounded at the same time.</p>
 </section>
-<section id="reading-2025-and-2026-together" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="reading-2025-and-2026-together"><span class="header-section-number">7</span> Reading 2025 and 2026 together</h2>
+<section id="reading-2025-and-2026-together" class="level2">
+<h2 class="anchored" data-anchor-id="reading-2025-and-2026-together">Reading 2025 and 2026 together</h2>
 <p>The most useful thing the sixteen-year record does is to separate what changed in 2025 from what changed in 2026, because the grade series reacts very differently to the two steps.</p>
 <p><strong>2025</strong> was the larger structural break: the theory questions (4 points from a closed list) vanished; the A/B and four-of-eight choice gave way to one obligatory competencial block and three binary choices; the problem count and weights changed; numerical language penalties and a justification-first rule appeared. The 2025 Basque mean fell by <span class="math inline">\(0.62\)</span> — <em>less</em> than the national average fall of <span class="math inline">\(0.81\)</span> in the first LOMLOE year, when fourteen of seventeen communities fell (<a href="../chapters/03-spain-2026.html">Chapter 3</a>). Whatever the 2025 changes cost, the Basque cohort absorbed them at least as well as the Spanish average did.</p>
 <p><strong>2026</strong> changed less on paper and more in kind. Every feature of the 2026 step is an intensification of something already present in 2025, plus two novelties: the competencial genre went from a quarter of the marks to half and from one obligatory exercise to two; choice fell from three binary options to two; the marking moved from qualitative rules with two numerical penalties to a printed −0.1 list, symbolic-first, and 0.25-point sub-tasks; and the de facto syllabus was opened — block E to any topic, blocks C and D to standing waves, decibels and mirrors. None of these alone is large by the yardsticks this study can apply (the choice premium is a quarter of a point; the new topics are avoidable; the marking rules are shared with communities that rose). What is not shared with any community that rose is the <em>joint</em> movement of content type, exposure, format and marking in a single year, on top of a 2025 break that the schools had had one cycle to adapt to — and the coordinator’s account adds the missing mechanism: a school system trained for fifteen years on a paper whose theory came from a list and whose problems came from a dozen templates had, for 2026, to teach the whole of block E and the un-set corners of blocks C and D, while its students met an exam whose obligatory half asked them to read, judge and explain rather than to recognise.</p>
 <p>That reading is consistent with everything the earlier chapters found — the cohort-wide displacement rather than a subgroup effect (<a href="../chapters/04-distributions.html">Chapter 4</a>), the concentration of the damage in Física and Matemáticas II (<a href="../chapters/05-subjects-sittings.html">Chapter 5</a>), the Canarian twin with the same penalty list and a structural cut of choice (<a href="../chapters/03-spain-2026.html">Chapter 3</a>) — and it is still not a causal estimate. It is, however, a precise statement of what an item-level analysis of the 2026 scripts should be able to confirm or refute: whether the marks were lost (i) in the two obligatory competencial exercises rather than in the options, (ii) in the explain/evaluate sub-tasks rather than in the calculations, (iii) through accumulated −0.1 penalties and voided sections, or (iv) in the newly-examined topics for those who chose them. Each of those has a different remedy for 2027, and only the first two would justify touching the competency design itself.</p>
 </section>
-<section id="for-the-record-what-is-documented-and-what-is-testimony" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="for-the-record-what-is-documented-and-what-is-testimony"><span class="header-section-number">8</span> For the record: what is documented and what is testimony</h2>
+<section id="for-the-record-what-is-documented-and-what-is-testimony" class="level2">
+<h2 class="anchored" data-anchor-id="for-the-record-what-is-documented-and-what-is-testimony">For the record: what is documented and what is testimony</h2>
 <p>Documented on ehu.eus and archived here: the 34 papers; the criteria embedded in the 2012–2024 papers; the 2025 model paper of 18 November 2024 with its general criteria (and its earlier October version, which proposed four obligatory competencial exercises with a rubric and was withdrawn); the 2025 and 2026 solucionarios with the 2026 corrector rules. Documented by the coordinator’s own file and archived here: the official EHU–Department list of 22 theory titles with its development guide. Testimony of the coordinator, consistent with the papers but not independently documented: the decision of the coordinators’ meeting some twenty years ago restricting block-E problems to the photoelectric effect (borne out by 14 of 15 problems 2010–2024 and all four of 2025), the 2024 teachers’ meeting confirming that restriction for 2025 against the coordinator’s position, and the 2025 decision to open block E for 2026 (borne out by the 2026 papers). No coordination-meeting minutes are published; if the Department or the university asks for the record, these two decisions are the ones to document.</p>
 
 
@@ -1254,13 +1286,14 @@ Figure&nbsp;3: Selection premium of each EHU format under the same population an
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1275,7 +1308,7 @@ Figure&nbsp;3: Selection premium of each EHU format under the same population an
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.org\/pau-fisika-2026");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

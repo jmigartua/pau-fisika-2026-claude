@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>The data hunt – PAU Física 2026</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -60,14 +66,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6a3ca9ab01c0de29e82d083f58a2981d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c07cefc3e6b4ffd37a3d4fc762d735ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,9 +101,12 @@ div.csl-indent {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -110,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -298,10 +307,11 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física" class="navbar-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">PAU Física 2026</span>
+    <span class="navbar-title">PAU Física</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -311,32 +321,24 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../chapters/02-euskadi.html" aria-current="page"> 
-<span class="menu-text">Findings</span></a>
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../chapters/01-data-hunt.html"> 
-<span class="menu-text">Data hunt</span></a>
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/08-sources.html"> 
-<span class="menu-text">Sources &amp; log</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img" aria-label="Repository (placeholder)">
-</i> 
-<span class="menu-text"></span></a>
+<span class="menu-text">Sources &amp; methods</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="" title="Theme" class="quarto-navigation-tool px-1" aria-label="Theme"><i class="bi bi-moon"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -346,7 +348,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">Evidence</a></li><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">The data hunt</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">Research context</a></li><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">The data hunt</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -358,10 +360,17 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Findings</span></a>
+ <span class="menu-text">Evidence and results</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -369,44 +378,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Euskadi 2010–2026: the series and the break</span></a>
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Spain 2026: nine communities, three directions</span></a>
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The shape of the collapse</span></a>
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Subjects, sittings, participation and groups</span></a>
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interpretation and the 2027 question</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The papers themselves</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sixteen years of one paper</span></a>
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
   </div>
 </li>
       </ul>
@@ -414,7 +416,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Evidence</span></a>
+ <span class="menu-text">The papers</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -422,14 +424,16 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">The data hunt</span></a>
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature: what exists and what does not</span></a>
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
   </div>
 </li>
       </ul>
@@ -437,7 +441,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Sources &amp; log</span></a>
+ <span class="menu-text">Research context</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -445,20 +449,48 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
  <span class="menu-text">Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Log</span></a>
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Methods, checks and reproduction</span></a>
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
       </ul>
@@ -473,12 +505,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#design-of-the-search" id="toc-design-of-the-search" class="nav-link active" data-scroll-target="#design-of-the-search"><span class="header-section-number">1</span> Design of the search</a></li>
-  <li><a href="#coverage-matrix-18-september-2026" id="toc-coverage-matrix-18-september-2026" class="nav-link" data-scroll-target="#coverage-matrix-18-september-2026"><span class="header-section-number">2</span> Coverage matrix, 18 September 2026</a></li>
-  <li><a href="#euskadi-everything-found-after-6-july-2026" id="toc-euskadi-everything-found-after-6-july-2026" class="nav-link" data-scroll-target="#euskadi-everything-found-after-6-july-2026"><span class="header-section-number">3</span> Euskadi: everything found after 6 July 2026</a></li>
-  <li><a href="#the-exam-papers-added-19-september-2026" id="toc-the-exam-papers-added-19-september-2026" class="nav-link" data-scroll-target="#the-exam-papers-added-19-september-2026"><span class="header-section-number">4</span> The exam papers (added 19 September 2026)</a></li>
-  <li><a href="#sources-that-exist-but-could-not-be-read" id="toc-sources-that-exist-but-could-not-be-read" class="nav-link" data-scroll-target="#sources-that-exist-but-could-not-be-read"><span class="header-section-number">5</span> Sources that exist but could not be read</a></li>
-  <li><a href="#numbers-that-must-not-be-mixed" id="toc-numbers-that-must-not-be-mixed" class="nav-link" data-scroll-target="#numbers-that-must-not-be-mixed"><span class="header-section-number">6</span> Numbers that must not be mixed</a></li>
+  <li><a href="#design-of-the-search" id="toc-design-of-the-search" class="nav-link active" data-scroll-target="#design-of-the-search">Design of the search</a></li>
+  <li><a href="#coverage-matrix-18-september-2026" id="toc-coverage-matrix-18-september-2026" class="nav-link" data-scroll-target="#coverage-matrix-18-september-2026">Coverage matrix, 18 September 2026</a></li>
+  <li><a href="#euskadi-everything-found-after-6-july-2026" id="toc-euskadi-everything-found-after-6-july-2026" class="nav-link" data-scroll-target="#euskadi-everything-found-after-6-july-2026">Euskadi: everything found after 6 July 2026</a></li>
+  <li><a href="#the-exam-papers-added-19-september-2026" id="toc-the-exam-papers-added-19-september-2026" class="nav-link" data-scroll-target="#the-exam-papers-added-19-september-2026">The exam papers (added 19 September 2026)</a></li>
+  <li><a href="#sources-that-exist-but-could-not-be-read" id="toc-sources-that-exist-but-could-not-be-read" class="nav-link" data-scroll-target="#sources-that-exist-but-could-not-be-read">Sources that exist but could not be read</a></li>
+  <li><a href="#numbers-that-must-not-be-mixed" id="toc-numbers-that-must-not-be-mixed" class="nav-link" data-scroll-target="#numbers-that-must-not-be-mixed">Numbers that must not be mixed</a></li>
   </ul>
 </nav>
     </div>
@@ -486,7 +518,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">Evidence</a></li><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">The data hunt</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">Research context</a></li><li class="breadcrumb-item"><a href="../chapters/01-data-hunt.html">The data hunt</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">The data hunt</h1>
 <p class="subtitle lead">What was searched, what exists, what was found, what is still unpublished</p>
@@ -521,8 +553,8 @@ window.Quarto = {
 </header>
 
 
-<section id="design-of-the-search" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="design-of-the-search"><span class="header-section-number">1</span> Design of the search</h2>
+<section id="design-of-the-search" class="level2">
+<h2 class="anchored" data-anchor-id="design-of-the-search">Design of the search</h2>
 <p>The search was organised as five parallel investigations, each with an explicit brief, followed by a second pass with a real browser session on the user’s computer for the sites that reject automated readers (Power BI dashboards, WAF-protected university sites, rate-limited servers). The five briefs were:</p>
 <ol type="1">
 <li><strong>Euskadi / EHU</strong> — anything published after 6 July 2026: extraordinary sitting, revisions, tribunal data, Basque Government, Parliament, unions, press in Spanish and Basque, Open Data Euskadi, Eustat, ISEI-IVEI, the Inspectorate’s school results.</li>
@@ -538,7 +570,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-What made the difference
+<span class="screen-reader-only">Tip</span>What made the difference
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -546,8 +578,8 @@ What made the difference
 </div>
 </div>
 </section>
-<section id="coverage-matrix-18-september-2026" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="coverage-matrix-18-september-2026"><span class="header-section-number">2</span> Coverage matrix, 18 September 2026</h2>
+<section id="coverage-matrix-18-september-2026" class="level2">
+<h2 class="anchored" data-anchor-id="coverage-matrix-18-september-2026">Coverage matrix, 18 September 2026</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 17%">
@@ -695,20 +727,20 @@ What made the difference
 </tbody>
 </table>
 </section>
-<section id="euskadi-everything-found-after-6-july-2026" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="euskadi-everything-found-after-6-july-2026"><span class="header-section-number">3</span> Euskadi: everything found after 6 July 2026</h2>
+<section id="euskadi-everything-found-after-6-july-2026" class="level2">
+<h2 class="anchored" data-anchor-id="euskadi-everything-found-after-6-july-2026">Euskadi: everything found after 6 July 2026</h2>
 <p><strong>Numerical.</strong> The EHU deck of 6 July <span class="citation" data-cites="ehu2026notak">(<a href="#ref-ehu2026notak" role="doc-biblioref">Euskal Herriko Unibertsitatea, 2026</a>)</span> remains the only source of Física 2026 figures. It also gives the other subjects’ means, pass rates and low-score shares, revision requests for four subjects (not Física), and the global PAU counts: 12 080 presented, 41 tribunals, 848 evaluators, 4 223 revision requests covering 8 127 exams, 313 zeros (2.6 %). The extraordinary sitting was reported on 7 July through the press (1 332 presented, 951 passed, 71.40 %; Araba 77.9 %, Bizkaia 64.3 %, Gipuzkoa 79.8 %; euskera 75.7 %, castellano 61.7 %) with <strong>no subject breakdown</strong> <span class="citation" data-cites="donostitik2026extra">(<a href="#ref-donostitik2026extra" role="doc-biblioref">Donostitik, 2026</a>)</span>. The annual <em>Informe</em> archive still ends at 2025 (two-page summaries since 2023, with no subject tables).</p>
 <p><strong>A genuinely new dataset.</strong> The Basque Inspectorate’s <em>Resultados escolares 2024-2025</em> <span class="citation" data-cites="gv_resultados_escolares_2425">(<a href="#ref-gv_resultados_escolares_2425" role="doc-biblioref">Gobierno Vasco, Inspección de Educación, 2025</a>)</span> tabulates 2º Bachillerato Física by territory, network and linguistic model: 4 541 students evaluated, 4 455 passed (98.11 %), mean 7.09. This is the first time the project has the school marks of a PAU cohort (<a href="../chapters/05-subjects-sittings.html">Chapter 5</a>).</p>
 <p><strong>Institutional narrative.</strong> The Education Counsellor’s interview of 12 July <span class="citation" data-cites="pedrosa2026entrevista">(<a href="#ref-pedrosa2026entrevista" role="doc-biblioref">Alonso, 2026</a>)</span> is the key post-6-July document: the Department has “only the report the university made public”, will “ask for more data”, will review “all subjects” for 2027 “in the short term”, and has no diagnosis yet. The Science and Universities Counsellor admitted a “déficit de confianza” in the marking system (7 July). The rector’s press conference, as reported in Basque by Argia <span class="citation" data-cites="argia2026ehu">(<a href="#ref-argia2026ehu" role="doc-biblioref">Argia, 2026</a>)</span>, acknowledged significant variation between evaluation panels in Física and other subjects. As of 7 September nothing had been sent to schools for PAU 2027 beyond the Euskara II instructions. The 22 June <em>agerraldia</em> referenced in the deck’s footer was not located.</p>
 <p><strong>Not found.</strong> No Ararteko file, no union or physics-teacher statement on Física, no Open Data Euskadi or Eustat PAU dataset, no parliamentary initiative text (the Parliament’s search interface could not be driven from this session — a lead, not a negative), no EHU 2027 Física orientations, no per-territory or per-language Física figure for 2026.</p>
 </section>
-<section id="the-exam-papers-added-19-september-2026" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="the-exam-papers-added-19-september-2026"><span class="header-section-number">4</span> The exam papers (added 19 September 2026)</h2>
+<section id="the-exam-papers-added-19-september-2026" class="level2">
+<h2 class="anchored" data-anchor-id="the-exam-papers-added-19-september-2026">The exam papers (added 19 September 2026)</h2>
 <p>For the content audit of <a href="../chapters/11-exam-content.html">Chapter 11</a> the ordinary-sitting Física papers of 2025 and 2026 were collected for the nine communities with a 2026 result: EHU (both years, with the corrector documents, from ehu.eus), Cataluña (Generalitat exam archive; the 2026 corrector document from the Betevé mirror, the official file returning 404), Madrid (UCM archive, criteria in the same PDF), Asturias (Uniovi archive with criteria), Andalucía (Junta archive: 2025 models A and B with criteria, 2026 with criteria), Canarias (Gobierno de Canarias archive with criteria), Extremadura 2025 (Educarex teachers’ site, Google Drive), Comunitat Valenciana 2026 (universitats.gva.es, downloaded from the user’s machine), and Castilla-La Mancha (both years read in the built-in browser behind UCLM’s bot check and transcribed to <code>sources/exams/clm_20xx_ord_transcript.md</code>). Two papers were not at their official location — Valencia 2025 had been overwritten by the 2026 file, and Extremadura 2026 sits behind UEx’s WAF — and were retrieved from FiQuiPedia’s public GitLab archive of official PAU papers, with the Valencia copy checked byte-for-byte against an independent teacher’s copy. All files are in <code>sources/exams/</code> and hashed in the <a href="../chapters/08-sources.html">source registry</a>. No archive or mirror of a blocked site was used.</p>
 <p>For <a href="../chapters/12-ehu-paper-history.html">Chapter 12</a> the complete EHU archive was downloaded from ehu.eus: the 34 Física papers 2010–2026 (June and July, Spanish and Basque versions where both exist; criteria embedded in the 2012–2024 papers; separate solucionarios for 2025–2026), the PAU 2025 model paper of 18 November 2024 with its general correction criteria, and the earlier October 2024 version of that model. No pre-2025 theory-title document, no “Orientaciones Física 2026” and no coordination-meeting minutes are published on the site; the official list of 22 theory titles was supplied by the coordinator from his own files and is archived as <code>ehu_theory_list_official.pdf</code>. Files in <code>sources/exams_ehu_hist/</code> (77 PDFs), URLs in its <code>urls_tried.log</code>.</p>
 </section>
-<section id="sources-that-exist-but-could-not-be-read" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="sources-that-exist-but-could-not-be-read"><span class="header-section-number">5</span> Sources that exist but could not be read</h2>
+<section id="sources-that-exist-but-could-not-be-read" class="level2">
+<h2 class="anchored" data-anchor-id="sources-that-exist-but-could-not-be-read">Sources that exist but could not be read</h2>
 <ul>
 <li><strong>unex.es</strong> (Extremadura statistics) and <strong>uclm.es</strong> return 403 to automated readers; UCLM was solved with the browser, UEx’s <code>alumnado.unex.es/pau/</code> page turned out to contain no statistics section at all.</li>
 <li><strong>estadisticas.ciencia.gob.es</strong> (Ministry PC-Axis host) serves an incomplete TLS chain; the July copies already in the project (byte-identical to the September re-download made by the earlier session) were used.</li>
@@ -718,8 +750,8 @@ What made the difference
 <li><strong>Deia / Noticias de Gipuzkoa / Noticias de Álava</strong> return 406; worked around with a browser user-agent. <strong>El Correo</strong> and <strong>El Diario Vasco</strong> are paywalled and were not retrieved.</li>
 </ul>
 </section>
-<section id="numbers-that-must-not-be-mixed" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="numbers-that-must-not-be-mixed"><span class="header-section-number">6</span> Numbers that must not be mixed</h2>
+<section id="numbers-that-must-not-be-mixed" class="level2">
+<h2 class="anchored" data-anchor-id="numbers-that-must-not-be-mixed">Numbers that must not be mixed</h2>
 <ul>
 <li><strong>Cataluña</strong> means are over <em>students eligible for university assignment</em>, and the ordinary-only figure (6.04 for 2025) differs from the full-year Recull figure (5.85). The 2026 dossier’s back-series is the ordinary-only one.</li>
 <li><strong>Valencia</strong> publishes six differently-scoped 2025 reports (Ordinaria/JUNIO/Extraordinaria/JULIO/JULIO finales/GLOBALES) whose Física means differ at the second decimal; the JUNIO files are used here for both years.</li>
@@ -862,13 +894,14 @@ Universidad Pública de Navarra. (2025). <em>Informe <span>PAU</span> 2024–25<
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -883,7 +916,7 @@ Universidad Pública de Navarra. (2025). <em>Informe <span>PAU</span> 2024–25<
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.org\/pau-fisika-2026");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1222,8 +1255,8 @@ Universidad Pública de Navarra. (2025). <em>Informe <span>PAU</span> 2024–25<
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/07-literature.html" class="pagination-link" aria-label="Literature: what exists and what does not">
-        <span class="nav-page-text">Literature: what exists and what does not</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/07-literature.html" class="pagination-link" aria-label="Literature &amp; regulation">
+        <span class="nav-page-text">Literature &amp; regulation</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -12,66 +12,80 @@ project:
 website:
   title: "PAU Física 2026"
   description: "Independent data hunt and analysis of Physics results in the Spanish university-entrance exam, with Euskadi (UPV/EHU) 2010–2026 at the centre."
-  site-url: "https://example.org/pau-fisika-2026"
   favicon: assets/favicon.svg
-  page-navigation: true
-  back-to-top-navigation: true
   bread-crumbs: true
   search:
     location: navbar
     type: overlay
   navbar:
+    title: "PAU Física"
     logo: assets/favicon.svg
-    logo-alt: "PAU Física"
+    logo-alt: "PAU Física 2026"
     pinned: true
+    background: light
     left:
-      - text: "Overview"
-        href: index.qmd
-      - text: "Findings"
-        href: chapters/02-euskadi.qmd
-      - text: "Data hunt"
-        href: chapters/01-data-hunt.qmd
-      - text: "Sources & log"
-        href: chapters/08-sources.qmd
-    right:
-      - icon: github
-        href: "https://github.com/"
-        aria-label: "Repository (placeholder)"
-    tools:
-      - icon: moon
-        text: "Theme"
+      - href: index.qmd
+        text: Overview
+      - href: chapters/02-euskadi.qmd
+        text: The Euskadi break
+      - href: chapters/03-spain-2026.qmd
+        text: Spain 2026
+      - href: chapters/08-sources.qmd
+        text: Sources & methods
+  page-navigation: true
+  back-to-top-navigation: true
   sidebar:
-    - title: "Findings"
-      style: docked
-      collapse-level: 2
-      contents:
-        - section: "Findings"
-          contents:
-            - chapters/02-euskadi.qmd
-            - chapters/03-spain-2026.qmd
-            - chapters/04-distributions.qmd
-            - chapters/05-subjects-sittings.qmd
-            - chapters/06-interpretation.qmd
-            - chapters/11-exam-content.qmd
-            - chapters/12-ehu-paper-history.qmd
-        - section: "Evidence"
-          contents:
-            - chapters/01-data-hunt.qmd
-            - chapters/07-literature.qmd
-        - section: "Sources & log"
-          contents:
-            - chapters/08-sources.qmd
-            - chapters/09-log.qmd
-            - chapters/10-reproduce.qmd
-    - title: "Data hunt"
-      contents:
-        - chapters/01-data-hunt.qmd
-        - chapters/07-literature.qmd
-    - title: "Sources & log"
-      contents:
-        - chapters/08-sources.qmd
-        - chapters/09-log.qmd
-        - chapters/10-reproduce.qmd
+    title: "Research dossier"
+    style: docked
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Findings
+        icon: house
+      - section: Evidence and results
+        contents:
+          - href: chapters/02-euskadi.qmd
+            text: "Euskadi 2010–2026"
+            icon: bar-chart-line
+          - href: chapters/03-spain-2026.qmd
+            text: "Spain 2026"
+            icon: globe-europe-africa
+          - href: chapters/04-distributions.qmd
+            text: "Shape of the collapse"
+            icon: graph-up
+          - href: chapters/05-subjects-sittings.qmd
+            text: "Subjects & participation"
+            icon: people
+          - href: chapters/06-interpretation.qmd
+            text: "Interpretation & 2027"
+            icon: compass
+      - section: The papers
+        contents:
+          - href: chapters/11-exam-content.qmd
+            text: "The papers themselves"
+            icon: file-earmark-text
+          - href: chapters/12-ehu-paper-history.qmd
+            text: "Sixteen years of one paper"
+            icon: clock-history
+      - section: Research context
+        contents:
+          - href: chapters/01-data-hunt.qmd
+            text: "The data hunt"
+            icon: search
+          - href: chapters/07-literature.qmd
+            text: "Literature & regulation"
+            icon: journal-text
+      - section: Sources and reproducibility
+        contents:
+          - href: chapters/08-sources.qmd
+            text: "Sources"
+            icon: archive
+          - href: chapters/09-log.qmd
+            text: "Work log"
+            icon: list-check
+          - href: chapters/10-reproduce.qmd
+            text: "Reproduce the study"
+            icon: code-slash
   page-footer:
     left: "Independent analysis prepared 18 September 2026 · all figures reproducible from `scripts/`"
     right: "Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR"
@@ -79,26 +93,30 @@ website:
 format:
   html:
     theme:
-      light: [flatly, styles.scss]
-      dark: [darkly, styles.scss, styles-dark.scss]
+      light: [default, styles.scss]
+      dark: [darkly, styles.scss]
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&display=swap" rel="stylesheet">
     toc: true
     toc-depth: 3
-    toc-location: right
-    toc-title: "On this page"
-    number-sections: true
+    number-sections: false
+    code-copy: true
+    code-overflow: wrap
     code-fold: true
     code-tools: false
-    smooth-scroll: true
     link-external-newwindow: true
+    html-math-method: mathjax
+    smooth-scroll: true
     fig-cap-location: bottom
     tbl-cap-location: top
-    html-math-method: mathjax
     lang: en
     grid:
-      sidebar-width: 280px
-      body-width: 860px
+      sidebar-width: 310px
+      body-width: 720px
       margin-width: 260px
-      gutter-width: 1.6rem
 
 bibliography: references.bib
 csl: apa.csl

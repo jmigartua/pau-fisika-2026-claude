@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Sources – PAU Física 2026</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -59,14 +65,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6a3ca9ab01c0de29e82d083f58a2981d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c07cefc3e6b4ffd37a3d4fc762d735ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,6 +100,9 @@ div.csl-indent {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
 
 </head>
@@ -268,10 +277,11 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física" class="navbar-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">PAU Física 2026</span>
+    <span class="navbar-title">PAU Física</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -281,32 +291,24 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../chapters/02-euskadi.html" aria-current="page"> 
-<span class="menu-text">Findings</span></a>
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../chapters/01-data-hunt.html"> 
-<span class="menu-text">Data hunt</span></a>
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/08-sources.html"> 
-<span class="menu-text">Sources &amp; log</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img" aria-label="Repository (placeholder)">
-</i> 
-<span class="menu-text"></span></a>
+<span class="menu-text">Sources &amp; methods</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="" title="Theme" class="quarto-navigation-tool px-1" aria-label="Theme"><i class="bi bi-moon"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -316,7 +318,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources &amp; log</a></li><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -328,10 +330,17 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Findings</span></a>
+ <span class="menu-text">Evidence and results</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -339,44 +348,37 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Euskadi 2010–2026: the series and the break</span></a>
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Spain 2026: nine communities, three directions</span></a>
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The shape of the collapse</span></a>
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Subjects, sittings, participation and groups</span></a>
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interpretation and the 2027 question</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The papers themselves</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sixteen years of one paper</span></a>
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
   </div>
 </li>
       </ul>
@@ -384,7 +386,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Evidence</span></a>
+ <span class="menu-text">The papers</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -392,14 +394,16 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The data hunt</span></a>
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature: what exists and what does not</span></a>
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
   </div>
 </li>
       </ul>
@@ -407,7 +411,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Sources &amp; log</span></a>
+ <span class="menu-text">Research context</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -415,20 +419,48 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-archive" role="img">
+</i> 
  <span class="menu-text">Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Log</span></a>
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Methods, checks and reproduction</span></a>
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
       </ul>
@@ -443,10 +475,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#raw-files-archived-in-sources" id="toc-raw-files-archived-in-sources" class="nav-link active" data-scroll-target="#raw-files-archived-in-sources"><span class="header-section-number">1</span> Raw files archived in <code>sources/</code></a></li>
-  <li><a href="#the-consolidated-regional-dataset" id="toc-the-consolidated-regional-dataset" class="nav-link" data-scroll-target="#the-consolidated-regional-dataset"><span class="header-section-number">2</span> The consolidated regional dataset</a></li>
-  <li><a href="#datasets-carried-over-from-the-july-package" id="toc-datasets-carried-over-from-the-july-package" class="nav-link" data-scroll-target="#datasets-carried-over-from-the-july-package"><span class="header-section-number">3</span> Datasets carried over from the July package</a></li>
-  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography"><span class="header-section-number">4</span> Bibliography</a></li>
+  <li><a href="#raw-files-archived-in-sources" id="toc-raw-files-archived-in-sources" class="nav-link active" data-scroll-target="#raw-files-archived-in-sources">Raw files archived in <code>sources/</code></a></li>
+  <li><a href="#the-consolidated-regional-dataset" id="toc-the-consolidated-regional-dataset" class="nav-link" data-scroll-target="#the-consolidated-regional-dataset">The consolidated regional dataset</a></li>
+  <li><a href="#datasets-carried-over-from-the-july-package" id="toc-datasets-carried-over-from-the-july-package" class="nav-link" data-scroll-target="#datasets-carried-over-from-the-july-package">Datasets carried over from the July package</a></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliography</a></li>
   </ul>
 </nav>
     </div>
@@ -454,7 +486,7 @@ div.csl-indent {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources &amp; log</a></li><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Sources</h1>
 <p class="subtitle lead">Every file, dashboard and page used, with URL, retrieval method and fingerprint</p>
@@ -488,8 +520,8 @@ div.csl-indent {
 </header>
 
 
-<section id="raw-files-archived-in-sources" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="raw-files-archived-in-sources"><span class="header-section-number">1</span> Raw files archived in <code>sources/</code></h2>
+<section id="raw-files-archived-in-sources" class="level2">
+<h2 class="anchored" data-anchor-id="raw-files-archived-in-sources">Raw files archived in <code>sources/</code></h2>
 <div id="tbl-registry" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-registry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1683,8 +1715,8 @@ Table&nbsp;1: Files in <code>sources/raw/</code> and <code>sources/ministry/</co
 </figure>
 </div>
 </section>
-<section id="the-consolidated-regional-dataset" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="the-consolidated-regional-dataset"><span class="header-section-number">2</span> The consolidated regional dataset</h2>
+<section id="the-consolidated-regional-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="the-consolidated-regional-dataset">The consolidated regional dataset</h2>
 <p>Every regional Física figure used in this study, with its denominator and source type, is in <code>data/regional_fisica_found.csv</code> (hand-coded from the sources above and from the dashboards; the search agents’ raw extractions are kept unchanged in <code>sources/agent_extractions/</code> for provenance).</p>
 <div id="tbl-found" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -2781,12 +2813,12 @@ Table&nbsp;2: Regional Física results located in this study. “Source type” 
 </figure>
 </div>
 </section>
-<section id="datasets-carried-over-from-the-july-package" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="datasets-carried-over-from-the-july-package"><span class="header-section-number">3</span> Datasets carried over from the July package</h2>
+<section id="datasets-carried-over-from-the-july-package" class="level2">
+<h2 class="anchored" data-anchor-id="datasets-carried-over-from-the-july-package">Datasets carried over from the July package</h2>
 <p>Used unchanged, copied to <code>data/original/</code>: <code>fisica_pau_ehu_2010_2022.csv</code> (EHU annual reports, with sex, language and network splits), <code>fisica_pau_ministerio_2015_2025.csv</code> (the July parse of the Ministry cube, used only as a validation target), <code>fisica_tables.csv</code>, <code>catalunya_materias_2014_2026.csv</code> and <code>comparativa_materias_2026.csv</code> from <code>hist_evolution</code>. The three Ministry PC-Axis cubes are the July copies (<code>nota</code>, <code>matric</code>) plus the grade-distribution cube downloaded on 18 September by the earlier session (<code>distr</code>); the September re-download of the first two was byte-identical to the July copies.</p>
 </section>
-<section id="bibliography" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="bibliography"><span class="header-section-number">4</span> Bibliography</h2>
+<section id="bibliography" class="level2">
+<h2 class="anchored" data-anchor-id="bibliography">Bibliography</h2>
 <p>The reference list below is generated from <code>references.bib</code> (45 entries: 10 new academic references, 9 classic ones, 26 official and press sources) with the APA style (<code>apa.csl</code>).</p>
 <div id="refs" role="list">
 
@@ -2860,13 +2892,14 @@ Table&nbsp;2: Regional Física results located in this study. “Source type” 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -2881,7 +2914,7 @@ Table&nbsp;2: Regional Física results located in this study. “Source type” 
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.org\/pau-fisika-2026");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -3215,13 +3248,13 @@ Table&nbsp;2: Regional Física results located in this study. “Source type” 
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/07-literature.html" class="pagination-link" aria-label="Literature: what exists and what does not">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Literature: what exists and what does not</span>
+      <a href="../chapters/07-literature.html" class="pagination-link" aria-label="Literature &amp; regulation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Literature &amp; regulation</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/09-log.html" class="pagination-link" aria-label="Log">
-        <span class="nav-page-text">Log</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/09-log.html" class="pagination-link" aria-label="Work log">
+        <span class="nav-page-text">Work log</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

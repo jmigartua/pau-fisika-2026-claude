@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Euskadi 2010–2026: the series and the break – PAU Física 2026</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -52,6 +58,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../chapters/03-spain-2026.html" rel="next">
+<link href="../index.html" rel="prev">
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -59,14 +66,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6a3ca9ab01c0de29e82d083f58a2981d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f9bd6e3554e59631090df615afca0c0c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c07cefc3e6b4ffd37a3d4fc762d735ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dd0417445b71b53e57531a9890920c9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,9 +101,12 @@ div.csl-indent {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -109,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -297,10 +307,11 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física" class="navbar-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">PAU Física 2026</span>
+    <span class="navbar-title">PAU Física</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -310,32 +321,24 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../chapters/02-euskadi.html" aria-current="page"> 
-<span class="menu-text">Findings</span></a>
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../chapters/01-data-hunt.html"> 
-<span class="menu-text">Data hunt</span></a>
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/08-sources.html"> 
-<span class="menu-text">Sources &amp; log</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img" aria-label="Repository (placeholder)">
-</i> 
-<span class="menu-text"></span></a>
+<span class="menu-text">Sources &amp; methods</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="" title="Theme" class="quarto-navigation-tool px-1" aria-label="Theme"><i class="bi bi-moon"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -345,7 +348,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Findings</a></li><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Euskadi 2010–2026: the series and the break</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Evidence and results</a></li><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Euskadi 2010–2026</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -357,10 +360,17 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Findings</span></a>
+ <span class="menu-text">Evidence and results</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -368,44 +378,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Euskadi 2010–2026: the series and the break</span></a>
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Spain 2026: nine communities, three directions</span></a>
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The shape of the collapse</span></a>
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Subjects, sittings, participation and groups</span></a>
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interpretation and the 2027 question</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The papers themselves</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sixteen years of one paper</span></a>
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
   </div>
 </li>
       </ul>
@@ -413,7 +416,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Evidence</span></a>
+ <span class="menu-text">The papers</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -421,14 +424,16 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The data hunt</span></a>
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature: what exists and what does not</span></a>
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
   </div>
 </li>
       </ul>
@@ -436,7 +441,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Sources &amp; log</span></a>
+ <span class="menu-text">Research context</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -444,20 +449,48 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
  <span class="menu-text">Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Log</span></a>
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Methods, checks and reproduction</span></a>
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
       </ul>
@@ -472,11 +505,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-consolidated-series" id="toc-the-consolidated-series" class="nav-link active" data-scroll-target="#the-consolidated-series"><span class="header-section-number">1</span> The consolidated series</a></li>
-  <li><a href="#regimes-rather-than-a-trend" id="toc-regimes-rather-than-a-trend" class="nav-link" data-scroll-target="#regimes-rather-than-a-trend"><span class="header-section-number">2</span> Regimes rather than a trend</a></li>
-  <li><a href="#how-unusual-is-a-1.48-change" id="toc-how-unusual-is-a-1.48-change" class="nav-link" data-scroll-target="#how-unusual-is-a-1.48-change"><span class="header-section-number">3</span> How unusual is a −1.48 change?</a></li>
-  <li><a href="#euskadis-position-among-the-communities" id="toc-euskadis-position-among-the-communities" class="nav-link" data-scroll-target="#euskadis-position-among-the-communities"><span class="header-section-number">4</span> Euskadi’s position among the communities</a></li>
-  <li><a href="#what-the-series-does-and-does-not-say" id="toc-what-the-series-does-and-does-not-say" class="nav-link" data-scroll-target="#what-the-series-does-and-does-not-say"><span class="header-section-number">5</span> What the series does and does not say</a></li>
+  <li><a href="#the-consolidated-series" id="toc-the-consolidated-series" class="nav-link active" data-scroll-target="#the-consolidated-series">The consolidated series</a></li>
+  <li><a href="#regimes-rather-than-a-trend" id="toc-regimes-rather-than-a-trend" class="nav-link" data-scroll-target="#regimes-rather-than-a-trend">Regimes rather than a trend</a></li>
+  <li><a href="#how-unusual-is-a-1.48-change" id="toc-how-unusual-is-a-1.48-change" class="nav-link" data-scroll-target="#how-unusual-is-a-1.48-change">How unusual is a −1.48 change?</a></li>
+  <li><a href="#euskadis-position-among-the-communities" id="toc-euskadis-position-among-the-communities" class="nav-link" data-scroll-target="#euskadis-position-among-the-communities">Euskadi’s position among the communities</a></li>
+  <li><a href="#what-the-series-does-and-does-not-say" id="toc-what-the-series-does-and-does-not-say" class="nav-link" data-scroll-target="#what-the-series-does-and-does-not-say">What the series does and does not say</a></li>
   </ul>
 </nav>
     </div>
@@ -484,7 +517,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Findings</a></li><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Euskadi 2010–2026: the series and the break</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Evidence and results</a></li><li class="breadcrumb-item"><a href="../chapters/02-euskadi.html">Euskadi 2010–2026</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Euskadi 2010–2026: the series and the break</h1>
 <p class="subtitle lead">Level, pass rate and regimes of the Physics exam at UPV/EHU</p>
@@ -519,8 +552,8 @@ window.Quarto = {
 </header>
 
 
-<section id="the-consolidated-series" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="the-consolidated-series"><span class="header-section-number">1</span> The consolidated series</h2>
+<section id="the-consolidated-series" class="level2">
+<h2 class="anchored" data-anchor-id="the-consolidated-series">The consolidated series</h2>
 <p>The Euskadi Physics series is spliced from three sources: the EHU annual reports for 2010–2022 (all Physics takers, both phases) <span class="citation" data-cites="ehu_informes">(<a href="#ref-ehu_informes" role="doc-biblioref">Universidad del País Vasco / Euskal Herriko Unibertsitatea, 2025</a>)</span>, the Ministry EPAU cube for 2023–2025 (specific/admission phase, which is where Física sits since 2017 — the two agree to ±0.02 on the overlap 2017–2022) <span class="citation" data-cites="siiu_epau2025">(<a href="#ref-siiu_epau2025" role="doc-biblioref">Ministerio de Ciencia, Innovación y Universidades (SIIU), 2026</a>)</span>, and the EHU presentation of 6 July 2026 for the last point <span class="citation" data-cites="ehu2026notak">(<a href="#ref-ehu2026notak" role="doc-biblioref">Euskal Herriko Unibertsitatea, 2026</a>)</span>. The splice is validated in <a href="../chapters/10-reproduce.html">Chapter 10</a>.</p>
 <div id="fig-series" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -777,8 +810,8 @@ Table&nbsp;1: Euskadi Física, ordinary sitting, 2010–2026. Pass rate over pre
 </div>
 <p>Two features of the table matter for everything that follows. First, the <strong>2011 presented count (2 610) is an artefact</strong> of the 2011 report, which prints an implausible ten no-shows; the pass rate for that year should be read as roughly 55 % rather than 49.6 %. Second, from 2017 the presented/enrolled ratio drops sharply (from ≈ 89 % to ≈ 70 %) because Física became an optional admission-phase subject that many students enrol in and then skip; <strong>2025 reversed this</strong> (2 189 of 2 597, 84 %), so the 2025 and 2026 means are computed over a <em>larger and less self-selected</em> pool than 2017–2024. Part of the 2025 drop is therefore compositional; the 2026 drop, on a slightly smaller pool (2 066), is not.</p>
 </section>
-<section id="regimes-rather-than-a-trend" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="regimes-rather-than-a-trend"><span class="header-section-number">2</span> Regimes rather than a trend</h2>
+<section id="regimes-rather-than-a-trend" class="level2">
+<h2 class="anchored" data-anchor-id="regimes-rather-than-a-trend">Regimes rather than a trend</h2>
 <p>The series is not stationary; it is a sequence of plateaus separated by policy changes — the two-phase PAU of RD 1892/2008 (2010), the EAU under LOMCE (2017), the COVID flexibility (2020–21), and the LOMLOE competency model of RD 534/2024 (2025) <span class="citation" data-cites="rd534_2024">(<a href="#ref-rd534_2024" role="doc-biblioref">Gobierno de España, 2024</a>)</span>. Averaging within each regime:</p>
 <div id="tbl-regimes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -843,8 +876,8 @@ Table&nbsp;2: Regime means, Euskadi Física, ordinary sitting.
 \]</span></p>
 <p>and the 2025 residual was already <span class="math inline">\(-0.69 \approx -2.2\,\sigma_\varepsilon\)</span>. In plain words: for thirteen years the Basque exam produced means between 5.45 and 6.49 in normal years; 2025 fell just outside that band and 2026 fell far outside it. The only comparable level in the series is the 2010–11 start of the two-phase PAU (4.45, 4.44), when Física was the lowest-scoring modality subject in the Basque system and roughly half of the candidates passed — and, as <a href="../chapters/03-spain-2026.html">Chapter 3</a> shows with the newly found La Rioja series, that 2010–11 trough was itself a national feature, not a Basque one.</p>
 </section>
-<section id="how-unusual-is-a-1.48-change" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="how-unusual-is-a-1.48-change"><span class="header-section-number">3</span> How unusual is a −1.48 change?</h2>
+<section id="how-unusual-is-a-1.48-change" class="level2">
+<h2 class="anchored" data-anchor-id="how-unusual-is-a-1.48-change">How unusual is a −1.48 change?</h2>
 <p>A single region’s history is a small sample. The Ministry cube offers a much larger reference set: the year-to-year change of the ordinary-sitting Physics mean for each of the 17 communities over 2015–2025, <span class="math inline">\(n = 170\)</span> changes.</p>
 <div id="fig-changes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -967,8 +1000,8 @@ Table&nbsp;3: Year-to-year changes of the ordinary-sitting Physics mean across t
 </div>
 <p>The last row of <a href="#tbl-changes" class="quarto-xref">Table&nbsp;3</a> is the first key result of this study: <strong>2025 was a national fall</strong>. Fourteen of seventeen communities went down, by <span class="math inline">\(-0.81\)</span> on average; Euskadi’s <span class="math inline">\(-0.62\)</span> was milder than the typical move. Whatever the new exam model did to Physics marks, it did it everywhere in 2025.</p>
 </section>
-<section id="euskadis-position-among-the-communities" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="euskadis-position-among-the-communities"><span class="header-section-number">4</span> Euskadi’s position among the communities</h2>
+<section id="euskadis-position-among-the-communities" class="level2">
+<h2 class="anchored" data-anchor-id="euskadis-position-among-the-communities">Euskadi’s position among the communities</h2>
 <div id="tbl-rank" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rank-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1306,8 +1339,8 @@ Table&nbsp;5: Ordinary-sitting Física mean by community, 2015–2025 (Ministry 
 </figure>
 </div>
 </section>
-<section id="what-the-series-does-and-does-not-say" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="what-the-series-does-and-does-not-say"><span class="header-section-number">5</span> What the series does and does not say</h2>
+<section id="what-the-series-does-and-does-not-say" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-series-does-and-does-not-say">What the series does and does not say</h2>
 <p>The series establishes three facts. The 2026 value is the lowest since the start of the two-phase PAU; it is the second consecutive fall; and the size of the single-year fall is at the edge of, but inside, the range of regional Physics volatility in Spain. It does not, by itself, identify a cause: a change of exam difficulty, of marking severity, of the students’ preparation, or of who sits the exam all produce the same summary statistic. <a href="../chapters/03-spain-2026.html">Chapter 3</a> uses the other communities to narrow the field; <a href="../chapters/04-distributions.html">Chapter 4</a> uses the shape of the distribution.</p>
 
 
@@ -1392,13 +1425,14 @@ Universidad del País Vasco / Euskal Herriko Unibertsitatea. (2025). <em>Informe
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1413,7 +1447,7 @@ Universidad del País Vasco / Euskal Herriko Unibertsitatea. (2025). <em>Informe
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.org\/pau-fisika-2026");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1747,10 +1781,13 @@ Universidad del País Vasco / Euskal Herriko Unibertsitatea. (2025). <em>Informe
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Findings">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Findings</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/03-spain-2026.html" class="pagination-link" aria-label="Spain 2026: nine communities, three directions">
-        <span class="nav-page-text">Spain 2026: nine communities, three directions</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/03-spain-2026.html" class="pagination-link" aria-label="Spain 2026">
+        <span class="nav-page-text">Spain 2026</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

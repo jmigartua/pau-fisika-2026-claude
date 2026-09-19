@@ -1,102 +1,193 @@
 /*-- scss:defaults --*/
-// Zensical / Material-like documentation look for Quarto (light mode defaults)
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
-$font-family-sans-serif: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
-$font-family-monospace: "JetBrains Mono", "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-$font-size-root: 15px;
-$headings-font-weight: 600;
-$line-height-base: 1.6;
-
-$primary: #3f51b5;          // indigo (Material / Zensical accent)
-$secondary: #536dfe;
-$link-color: #3949ab;
-$body-bg: #ffffff;
-$body-color: #1f2328;
-$border-radius: 6px;
-$navbar-bg: #3f51b5;
-$navbar-fg: #ffffff;
-$sidebar-bg: #ffffff;
-$code-bg: #f5f6fa;
-$code-color: #4c3bb5;
-$table-striped-bg: #f7f8fc;
+// Quarto adaptation of zensical.org/docs/get-started/ (modern).
+// Layout, typography and structure follow the companion Codex-side site
+// (pau-fisika-2026-codex) exactly; only the colour palette differs.
+//
+// Palette: UPV/EHU. The corporate identity manual specifies Pantone Process
+// Black and white as the sole corporate colours, so black/white carry text,
+// headings and surfaces. The single accent is the institutional blue EHU
+// deploys on ehu.eus (#0066b3 links, #004980 hover), used only where the
+// layout structurally needs one: active navigation, active TOC entry, links
+// on hover, and key-figure numerals.
+$font-family-sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-family-monospace: "JetBrains Mono", SFMono-Regular, Consolas, monospace;
+$font-size-base: 13px;
+$line-height-base: 1.8;
+$headings-font-weight: 700;
+$primary: #0066b3;
+$link-color: #004980;
+$border-radius: .45rem;
+$navbar-bg: #fff;
+$navbar-fg: #000;
 
 /*-- scss:rules --*/
 :root {
-  --zs-accent: #{$primary};
-  --zs-accent-soft: rgba(63, 81, 181, 0.08);
-  --zs-surface: #ffffff;
-  --zs-surface-2: #f5f6fa;
-  --zs-ink-2: #5a6270;
-  --zs-border: #e3e6ee;
-  --zs-shadow: 0 2px 8px rgba(20, 24, 40, 0.10);
+  --zs-bg: #fff; --zs-fg: #292a2e; --zs-muted: #6b6c73;
+  --zs-heading: #000; --zs-line: #ededf0; --zs-surface: #f5f5f7;
+  --zs-accent: #0066b3; --zs-active-bg: #e8f1f9; --zs-link: #004980;
+  --zs-header: rgba(255,255,255,.96);
+}
+body.quarto-dark {
+  --zs-bg: #0b0c10; --zs-fg: #c5c6ce; --zs-muted: #a0a2ad;
+  --zs-heading: #fff; --zs-line: #23252e; --zs-surface: #191b23;
+  --zs-accent: #4da3e8; --zs-active-bg: #112432; --zs-link: #8fc7f0;
+  --zs-header: rgba(11,12,16,.96);
+}
+body { background: var(--zs-bg); color: var(--zs-fg); letter-spacing: -.012em; -webkit-font-smoothing: antialiased; }
+h1,h2,h3,h4 { color: var(--zs-heading); font-weight: 700; letter-spacing: -.025em; }
+h1.title { font-size: 1.875em; line-height: 1.3; margin-bottom: 1rem; }
+main h2 { font-size: 1.5em; line-height: 1.4; margin-top: 2.5rem; border: 0; padding-bottom: 0; }
+main h3 { font-size: 1.25em; margin-top: 2rem; }
+main.content { padding-top: 2.5rem; }
+main.content a { color: var(--zs-link); text-decoration: underline; text-underline-offset: .15em; }
+main.content a:hover { color: var(--zs-accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--zs-accent); outline-offset: 3px; }
+p,li { max-width: 78ch; }
+.quarto-title .subtitle { font-size: 1em; line-height: 1.6; color: var(--zs-muted); }
+.quarto-title-meta { color: var(--zs-muted); font-size: 12px; }
+.quarto-title-meta-heading { font-size: .72rem !important; letter-spacing: .06em; }
+#title-block-header { margin-bottom: 2rem; }
+
+// Two-row documentation header: identity and search, then section tabs.
+#quarto-header { background: var(--zs-header); backdrop-filter: blur(10px); }
+.navbar, .navbar[data-bs-theme] {
+  --bs-navbar-color: var(--zs-muted); --bs-navbar-hover-color: var(--zs-heading);
+  --bs-navbar-active-color: var(--zs-heading); --bs-navbar-brand-color: var(--zs-heading);
+  --bs-navbar-brand-hover-color: var(--zs-heading);
+  background: transparent !important; padding: 0; border-bottom: 1px solid var(--zs-line); box-shadow: none;
+}
+.navbar .navbar-container { display: flex; flex-wrap: wrap; align-items: center; max-width: 1440px; margin: auto; padding: 0 2rem; }
+.navbar .navbar-brand-container { order: 1; flex: 1 1 auto; min-height: 64px; margin: 0 !important; display: flex; align-items: center; }
+.navbar .navbar-brand { color: var(--zs-heading); font-size: .9rem; font-weight: 700; letter-spacing: -.025em; }
+.navbar-logo { max-height: 28px; margin-right: .7rem; }
+.navbar .quarto-navbar-tools { order: 2; margin-right: 1rem; }
+.navbar #quarto-search { order: 3; margin-left: 0; }
+.navbar .navbar-toggler { order: 4; border: 0; color: var(--zs-heading); }
+.navbar .navbar-collapse { order: 5; flex-basis: 100% !important; width: 100%; }
+.navbar .navbar-nav { flex-wrap: wrap; gap: 0 1.7rem; margin: 0; }
+.navbar .nav-link { font-size: 11.9px; padding: .65rem 0 .85rem !important; border-bottom: 2px solid transparent; }
+.navbar .nav-link.active { color: var(--zs-heading); border-bottom-color: var(--zs-heading); }
+.navbar .quarto-color-scheme-toggle { color: var(--zs-muted); }
+#quarto-search .aa-DetachedSearchButton { background: var(--zs-surface); color: var(--zs-muted); border: 0; border-radius: .5rem; padding: .45rem .75rem; min-width: 175px; justify-content: flex-start; }
+#quarto-search .aa-DetachedSearchButton::after { content: "Search"; font: 400 12px Inter, sans-serif; padding-left: .6rem; }
+
+// Rounded navigation items, deliberately distinct from the page contents.
+#quarto-sidebar { background: var(--zs-bg) !important; border-right: 0; padding-top: 2.4rem; }
+#quarto-sidebar .sidebar-title { color: var(--zs-muted); font-size: .83rem; font-weight: 600; margin-bottom: 1rem; }
+.sidebar-menu-container > ul { padding-right: .4rem; }
+.sidebar-item { margin-bottom: .15rem; }
+#quarto-sidebar .sidebar-item-container { border-radius: .45rem; }
+#quarto-sidebar a.sidebar-item-text { color: var(--zs-fg); font-size: .88rem; line-height: 1.45; padding: .42rem .7rem; border-radius: .45rem; }
+#quarto-sidebar a.sidebar-item-text .bi { margin-right: .5rem; color: var(--zs-muted); }
+#quarto-sidebar a.sidebar-item-text:hover { background: var(--zs-surface); color: var(--zs-heading); }
+#quarto-sidebar a.sidebar-item-text.active { background: var(--zs-active-bg); color: var(--zs-accent); font-weight: 500; }
+#quarto-sidebar a.sidebar-item-text.active .bi { color: var(--zs-accent); }
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container { margin-top: 1.2rem; }
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a { font-size: .82rem; font-weight: 600; color: var(--zs-muted); }
+#quarto-sidebar .sidebar-section { padding-left: 0; }
+.sidebar-item-toggle { color: var(--zs-muted); }
+#quarto-margin-sidebar { background: transparent; padding-top: 2.8rem; }
+#TOC { font-size: 12px; line-height: 1.65; }
+#TOC h2 { font-size: 12px; font-weight: 600; color: var(--zs-heading); border: 0; }
+#TOC a { color: var(--zs-muted); border: 0; padding: .25rem 0; }
+#TOC a.active { color: var(--zs-accent) !important; border: 0 !important; }
+.quarto-page-breadcrumbs { font-size: 11.9px; color: var(--zs-muted); }
+.quarto-page-breadcrumbs a { color: var(--zs-muted); }
+
+// Scientific content remains legible in both schemes.
+code,kbd { font-family: $font-family-monospace; font-size: .86em; color: var(--zs-fg); background: var(--zs-surface); border-radius: .25rem; }
+div.sourceCode, pre { background: var(--zs-surface); border: 1px solid var(--zs-line); border-radius: .4rem; }
+table { font-size: .86em; }
+th,td { padding: .7rem .8rem !important; vertical-align: top; border-color: var(--zs-line) !important; }
+thead th { font-weight: 600; }
+.table { --bs-table-color: var(--zs-fg); --bs-table-bg: transparent; --bs-table-border-color: var(--zs-line); }
+.quarto-figure { margin: 2rem 0; }
+.quarto-figure img { width: 100%; border: 1px solid var(--zs-line); border-radius: .35rem; background: #fff; }
+figcaption { color: var(--zs-muted) !important; font-size: 12.24px; line-height: 1.6; }
+.callout { border-radius: .5rem; border-color: var(--zs-line); }
+.summary-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin: 1.8rem 0 2.4rem; }
+.summary-box { border: 1px solid var(--zs-line); border-radius: .55rem; padding: 1.15rem; background: var(--zs-surface); }
+.summary-number { display: block; font-size: 1.75em; line-height: 1.2; font-weight: 700; color: var(--zs-accent); }
+.summary-label { display: block; font-size: .9em; margin-top: .6rem; line-height: 1.6; }
+.evidence-line { color: var(--zs-muted); font-size: .9rem; }
+.nav-footer { background: var(--zs-surface); color: var(--zs-muted); border-top: 1px solid var(--zs-line); font-size: .8rem; }
+.nav-page a { color: var(--zs-fg); font-size: .9rem; }
+.nav-page { border-top: 1px solid var(--zs-line); padding-top: 1rem; }
+@media(max-width: 991.98px) {
+  .navbar .navbar-container { padding: 0 1rem; }
+  .navbar .navbar-collapse { padding-bottom: .7rem; }
+  .navbar .navbar-nav { gap: 0; }
+  .navbar .nav-link { padding: .55rem .2rem !important; border: 0; }
+  .navbar .quarto-navbar-tools { margin-right: .6rem; }
+  #quarto-sidebar { padding-top: 1rem; }
+  main.content { padding-top: 1.4rem; }
+}
+@media(max-width: 575.98px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  h1.title { font-size: 1.75em; }
+  #quarto-search .aa-DetachedSearchButton { min-width: auto; padding: .4rem; }
+  #quarto-search .aa-DetachedSearchButton::after { content: none; }
+  .navbar .navbar-brand { font-size: 1rem; }
+  .navbar-logo { max-height: 24px; margin-right: .3rem; }
+  .navbar .navbar-container { padding: 0 .75rem; }
 }
 
-// ---------- header: two-row Material header (title row + tabs row)
-.navbar {
-  box-shadow: var(--zs-shadow);
-  padding-top: 0.35rem;
-  padding-bottom: 0.35rem;
-  .navbar-brand { font-weight: 700; letter-spacing: 0.01em; font-size: 1.05rem; }
-  .navbar-brand img { height: 26px; margin-right: 0.5rem; }
-  .nav-link { font-weight: 500; text-transform: none; letter-spacing: 0.01em; opacity: 0.92; border-bottom: 2px solid transparent; }
-  .nav-link.active, .nav-link:hover { opacity: 1; border-bottom-color: #ffffff; }
+// Override Quarto's compact-navbar sizing, which assumes an icon-only search.
+html { font-size: 15px; }
+// Match the rendered Zemansky example (13px Sass base with Quarto scaling).
+body { font-size: 13.8125px; }
+.navbar .navbar-logo { width: 28px; height: 28px; max-width: none; }
+.navbar #quarto-search { width: 180px; flex: 0 0 180px; }
+.navbar #quarto-search .aa-DetachedSearchButton { display: flex; align-items: center; width: 180px; height: 34px; min-height: 0; }
+.navbar #quarto-search .aa-DetachedSearchButtonIcon { display: flex; align-items: center; }
+#quarto-sidebar { padding-left: 12px; padding-right: 12px; }
+#quarto-sidebar .sidebar-menu-container { padding: 0; }
+#quarto-sidebar .sidebar-item-text { display: flex; align-items: baseline; }
+#quarto-sidebar .sidebar-item-text .bi { flex: 0 0 16px; }
+#quarto-sidebar .sidebar-item-text .menu-text { flex: 1; }
+#quarto-content main.content { padding-top: 2.4rem; }
+@media(max-width: 575.98px) {
+  .navbar #quarto-search { width: 34px; flex-basis: 34px; }
+  .navbar #quarto-search .aa-DetachedSearchButton { width: 34px; min-width: 34px; }
+  #quarto-content main.content { padding-top: 1.2rem; }
 }
-.navbar .aa-DetachedSearchButton, .navbar .quarto-search { border-radius: 8px; background: rgba(255,255,255,0.14); }
+#quarto-sidebar .sidebar-item { margin-top: 0; margin-bottom: .1rem; }
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container { margin-top: .75rem; }
+#quarto-sidebar a.sidebar-item-text { font-size: 12.5px; padding: .36rem .6rem; }
+#quarto-sidebar .sidebar-item-text .menu-text { font-size: inherit; line-height: inherit; }
+body.quarto-dark { color-scheme: dark; }
+body.quarto-dark .quarto-color-scheme-toggle .bi::before { filter: invert(1); }
+body.quarto-dark #quarto-search .aa-SubmitIcon { fill: var(--zs-muted) !important; }
 
-// ---------- sidebar (section navigation)
-#quarto-sidebar {
-  border-right: 1px solid var(--zs-border);
-  .sidebar-item-container .sidebar-link { font-size: 0.9rem; padding: 0.28rem 0.5rem; border-radius: 6px; }
-  .sidebar-item-container .sidebar-link.active { background: var(--zs-accent-soft); color: var(--zs-accent); font-weight: 600; }
-  .sidebar-item-section .sidebar-item-text { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72rem; color: var(--zs-ink-2); font-weight: 600; }
-}
+// ---------------------------------------------------------------------------
+// Components this study's chapters depend on, in the same idiom as the above.
+// ---------------------------------------------------------------------------
 
-// ---------- right TOC
-#quarto-margin-sidebar .sidebar nav#TOC ul > li > a { font-size: 0.82rem; color: var(--zs-ink-2); }
-#quarto-margin-sidebar nav#TOC ul > li > a.active { color: var(--zs-accent); border-left-color: var(--zs-accent); font-weight: 600; }
-#TOC .toc-title, .toc-actions { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72rem; color: var(--zs-ink-2); }
-
-// ---------- typography
-h1.title { font-size: 2rem; font-weight: 700; letter-spacing: -0.01em; }
-.subtitle { color: var(--zs-ink-2); font-size: 1.05rem; }
-h2 { font-size: 1.45rem; margin-top: 2.2rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--zs-border); }
-h3 { font-size: 1.15rem; margin-top: 1.6rem; }
-.header-section-number { color: var(--zs-ink-2); font-weight: 500; margin-right: 0.35em; }
-p { max-width: 74ch; }
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-// ---------- callouts, tables, figures (Material cards)
-.callout { border-radius: 8px; box-shadow: var(--zs-shadow); border-left-width: 4px; }
-.callout-note { border-left-color: var(--zs-accent); }
-.table { font-size: 0.86rem; }
-.table thead th { background: var(--zs-surface-2); border-bottom: 2px solid var(--zs-border); font-weight: 600; }
-.figure, .quarto-figure { background: var(--zs-surface); border: 1px solid var(--zs-border); border-radius: 8px; padding: 0.6rem; box-shadow: var(--zs-shadow); }
-.figure img, .quarto-figure img { max-width: 100%; height: auto; }
-figcaption, .figure-caption { color: var(--zs-ink-2); font-size: 0.84rem; margin-top: 0.4rem; }
-code { font-size: 0.85em; padding: 0.1em 0.3em; border-radius: 4px; }
-pre code { font-size: 0.82rem; }
-
-// ---------- key-figure tiles
-.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem; margin: 1rem 0 1.4rem; }
-.kpi { background: var(--zs-surface-2); border: 1px solid var(--zs-border); border-radius: 8px; padding: 0.7rem 0.9rem; }
+// Key-figure tiles (.kpi-row / .kpi / .v / .l) — the summary-box treatment
+// applied to the compact, auto-fitting grid the chapters already use.
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 1rem; margin: 1.8rem 0 2.4rem; }
+.kpi { border: 1px solid var(--zs-line); border-radius: .55rem; padding: 1.15rem; background: var(--zs-surface); }
 .kpi .v, .kpi .l { display: block; }
-.kpi .v { font-size: 1.7rem; font-weight: 700; color: var(--zs-accent); line-height: 1.1; }
-.kpi .l { font-size: 0.78rem; color: var(--zs-ink-2); margin-top: 0.25rem; }
-.kpi.bad .v { color: #d13c3c; }
-.kpi.good .v { color: #1a8f5c; }
+.kpi .v { font-size: 1.75em; line-height: 1.2; font-weight: 700; color: var(--zs-accent); }
+.kpi .l { font-size: .9em; margin-top: .6rem; line-height: 1.6; color: var(--zs-muted); }
 
-// ---------- status pills used in the source registry
-.pill { display: inline-block; padding: 0.05em 0.55em; border-radius: 999px; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.02em; }
-.pill.ok { background: #e3f6ec; color: #1a7a4c; }
+// Direction-of-travel semantics. These are data semantics, not brand colour:
+// a fall must not read as a rise. Tuned to sit beside the EHU blue.
+.kpi.good .v { color: #1a7a4c; }
+.kpi.bad  .v { color: #b02a2a; }
+body.quarto-dark .kpi.good .v { color: #5ad39b; }
+body.quarto-dark .kpi.bad  .v { color: #ff9a9a; }
+
+// Status pills used in the source registry.
+.pill { display: inline-block; padding: .08em .6em; border-radius: 999px; font-size: .74rem; font-weight: 600; letter-spacing: .02em; }
+.pill.ok    { background: #e3f6ec; color: #1a7a4c; }
 .pill.press { background: #fff3d6; color: #9a6b00; }
-.pill.gap { background: #fde5e5; color: #b02a2a; }
-.pill.model { background: #e9e7fb; color: #4c3bb5; }
+.pill.gap   { background: #fde5e5; color: #b02a2a; }
+.pill.model { background: var(--zs-active-bg); color: var(--zs-accent); }
+body.quarto-dark .pill.ok    { background: #16342a; color: #7fe0b0; }
+body.quarto-dark .pill.press { background: #3a2f10; color: #ffd36b; }
+body.quarto-dark .pill.gap   { background: #3c1c1c; color: #ff9a9a; }
 
-// ---------- footer
-.nav-footer { border-top: 1px solid var(--zs-border); font-size: 0.8rem; color: var(--zs-ink-2); }
-
-@media (max-width: 991px) {
-  p { max-width: none; }
-}
+// Figures are rendered on a light canvas by matplotlib; keep them legible
+// against the dark page rather than letting them punch a white hole in it.
+body.quarto-dark .quarto-figure img { background: #f7f7f5; }

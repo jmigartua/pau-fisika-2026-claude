@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .DS_Store
 _update.tgz
+
+/.quarto/
+**/*.quarto_ipynb
