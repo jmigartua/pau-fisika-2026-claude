@@ -1,0 +1,17 @@
+{
+  "pisa_2025_pais_vasco": 458.5274890897114,
+  "pisa_2022_pais_vasco": 479.509804,
+  "pisa_move_points": -20.98231491028855,
+  "pisa_move_sd": -0.23313683233653945,
+  "cohort_term_marks": -0.36369345844500145,
+  "decade_cohort_term_marks": -1.225258083667503,
+  "annual_paper_sd": 0.8548951481238588,
+  "paper_band_95_2y": 2.3696484532520854,
+  "noise_to_signal": 6.515510241464596,
+  "pau_2025": 5.47,
+  "pau_2026": 3.99,
+  "scenarios": {
+    "2027 paper like 2025's": 5.106306541554998,
+    "2027 paper like 2026's": 3.6263065415549987
+  }
+}

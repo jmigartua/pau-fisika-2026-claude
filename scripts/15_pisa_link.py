@@ -51,14 +51,18 @@ A = DATA / "analysis"
 SRC = ROOT / "sources" / "pisa"
 P = ROOT / "plots"
 
-F15, F18, F22 = (SRC / "pisa2015_cap2_tablas.xls",
-                 SRC / "pisa2018_cap2_tablas.xlsx",
-                 SRC / "pisa2022_cap2_tablas.xlsx")
+F15, F18, F22, F25 = (SRC / "pisa2015_cap2_tablas.xls",
+                      SRC / "pisa2018_cap2_tablas.xlsx",
+                      SRC / "pisa2022_cap2_tablas.xlsx",
+                      SRC / "pisa2025_cap2_tablas.xlsx")
 
 
-def _row(path: Path, sheet: str, name: str, cols: list[int]) -> list[float]:
+def _row(path: Path, sheet: str, name: str, cols: list[int],
+         keycol: int = 1) -> list[float]:
+    """One jurisdiction's row. The 2025 workbook puts names in column 0 where the
+    2015–2022 ones use column 1, so the key column is a parameter."""
     d = pd.read_excel(path, sheet_name=sheet, header=None)
-    hit = d[d.iloc[:, 1].astype(str).str.strip().str.startswith(name)]
+    hit = d[d.iloc[:, keycol].astype(str).str.strip().str.startswith(name)]
     if hit.empty:
         raise KeyError(f"{name!r} not in {path.name}/{sheet}")
     return [float(hit.iloc[0, c]) for c in cols]
@@ -74,13 +78,19 @@ mean_pv[2018] = _row(F18, "2.3", "País Vasco", [2])[0]
 mean_es[2018] = _row(F18, "2.3", "España", [2])[0]
 mean_pv[2022] = _row(F22, "2.21", "País Vasco", [2])[0]
 mean_es[2022] = _row(F22, "2.21", "España", [2])[0]
+# PISA 2025, published 8 September 2026; science was that cycle's major domain.
+mean_pv[2025] = _row(F25, "Figura 2.1", "País Vasco", [1], keycol=0)[0]
+mean_es[2025] = _row(F25, "Figura 2.1", "España", [1], keycol=0)[0]
 
 # Proficiency levels 5+6, available by community from 2015 onwards.
 top_pv, top_es = {}, {}
-for yr, path, sheet in [(2015, F15, "Tabla 2.2"), (2018, F18, "2.9"), (2022, F22, "2.24")]:
-    a, b = _row(path, sheet, "País Vasco", [14, 16])
+for yr, path, sheet, kc, c5, c6 in [(2015, F15, "Tabla 2.2", 1, 14, 16),
+                                    (2018, F18, "2.9", 1, 14, 16),
+                                    (2022, F22, "2.24", 1, 14, 16),
+                                    (2025, F25, "Figura 2.4", 0, 13, 15)]:
+    a, b = _row(path, sheet, "País Vasco", [c5, c6], keycol=kc)
     top_pv[yr] = a + b
-    a, b = _row(path, sheet, "España", [14, 16])
+    a, b = _row(path, sheet, "España", [c5, c6], keycol=kc)
     top_es[yr] = a + b
 
 years = sorted(mean_pv)
@@ -107,7 +117,7 @@ ax.plot(years, [mean_es[y] for y in years], color=INK2, lw=1.9, marker="o", ms=5
         zorder=3, label="Spain")
 ax.plot(years, [mean_pv[y] for y in years], color=C["violet"], lw=1.9, marker="o",
         ms=5, zorder=4, label="País Vasco")
-ax.axvspan(2019.5, 2022.5, color=C["yellow"], alpha=0.12, lw=0, zorder=0)
+ax.axvspan(2019.5, 2023.5, color=C["yellow"], alpha=0.12, lw=0, zorder=0)
 ax.annotate("schools closed\n2020–21", xy=(2021, 474), fontsize=7.4,
             color="#8a6a00", ha="center")
 ax.annotate("the break is here:\nPV $-22.6$, Spain $-3.7$", xy=(2016.0, 501),

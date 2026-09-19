@@ -97,7 +97,30 @@ That is worth stating because it tempers a claim made in the previous section. T
 
 The honest summary is the one panel b is drawn to make unavoidable: **every interval includes zero**. With four PISA rounds and six usable PAU years, these data are consistent with two instruments measuring one common decline at the same rate — and equally consistent with no decline at all in either. The agreement of four point estimates, and of two independently computed ratios to within 4 %, is the kind of coincidence that is worth recording and is not worth believing on its own. It is a reason to keep measuring both, which is the recommendation of the next section, rather than a finding.
 
-The 2025 round was administered in spring 2026 and reaches the PAU in 2027, which makes it the only forward-looking instrument available for the question in the next section. It should be read when it is published — the Basque science score against Spain's is the number to look at, and on the record above the base rate is not encouraging.
+### What PISA 2025 says about PAU 2027 {#what-pisa-2025-says-about-pau-2027}
+
+PISA 2025 was published on 8 September 2026, eleven days before this chapter was written, and science was its major domain. It is the cohort that sits the PAU in 2027, so for the first time in this study a genuinely forward-looking measurement exists, and it is worth asking what estimate it supports.
+
+The measurement itself is severe. Basque science falls to **458.5**, against a Spanish **477.1** and an OECD **481.9**. The gap to Spain, which was $+9.2$ in 2012 and $-5.0$ in 2022, is now $-18.6$ — the largest in the series and more than double the previous worst. At the top of the distribution the Basque share at levels 5–6 **halves, from 3.32 % to 1.83 %**, against a Spanish figure that holds near 4.2 %. On the instrument that does not depend on Basque marking, the cohort now sitting in 1º Bachillerato is the weakest this series has recorded.
+
+![**a** — the Euskadi Física series with two scenarios for 2027. The error bar on each is the paper-and-marking term alone, not a confidence interval on a prediction. **b** — the size of each contribution to the 2027 mark, on the same scale.](../plots/fig23_pau2027.png){#fig-2027}
+
+Converting that into a PAU estimate is arithmetic, and the arithmetic is what makes the answer honest. The Basque PISA fall of 21.0 points is $0.233$ of a student standard deviation; transferred one-for-one to the PAU — the relation [figure 22](#do-the-two-instruments-fall-at-the-same-rate) could neither reject nor establish — and prorated over the two years separating the PAU 2025 and PAU 2027 cohorts, it is a **cohort term of $-0.36$ marks**.
+
+Set that against what else moves the number. The standard deviation of Euskadi's own year-to-year change in the Física mean, excluding 2026, is **0.855 marks**; over two years the 95 % band on that alone is **$\pm 2.37$**. The cohort term is **6.5 times smaller than the band it has to be read against**. And 2026 itself moved the mean by $-1.48$ in a single year on a changed paper — four times the cohort term, and more than the whole decade of PISA drift converted the same way ($1.23$ marks from 2012 to 2025).
+
+So the estimate exists and is this:
+
+| If the 2027 paper resembles | Central estimate | 95 % band from the paper term alone |
+|---|---|---|
+| the 2025 paper | **5.11** | $[2.74,\ 7.48]$ |
+| the 2026 paper | **3.63** | $[1.26,\ 6.00]$ |
+
+The two scenarios differ by 1.48 marks, which is the size of the 2026 event; the cohort contributes 0.36 to both. That is the finding, and it is not the one the question was hoping for. **PAU 2027 is not something PISA predicts. It is something the 2027 paper and its marking scheme decide**, with the cohort supplying a slow downward nudge an order of magnitude smaller than the choice. A forecast whose interval spans 2.7 to 7.5 is not a forecast; it is a restatement that the exam is the dominant variable.
+
+Two things follow that are worth acting on rather than reading. The cohort term, small as it is, points the same way as every other measure in this section, so the sensible default for 2027 is that the intake will be slightly weaker than 2025's and considerably weaker than the decade's average — which argues for the paper being set with that in mind rather than against a remembered cohort. And the honest use of PISA 2025 here is not prediction but *attribution after the fact*: when the 2027 result arrives, the $-0.36$ is the part that should not be blamed on the paper, and everything beyond it is the part that should be explained.
+
+That round has since been published, and [the section below](#what-pisa-2025-says-about-pau-2027) reads it.
 
 **H5 — "Students under-prepare Física because the weighting rules make it dispensable."** *Plausible as a slow driver, not as a 2026 trigger.* This is the Canarian coordinators' hypothesis for their own decline (few degrees need a high Física mark; Matemáticas II carries the weighting; Física is examined last on a long day). It fits the ten-year erosion of the top decile better than a one-year fall of 1.5 points, and it is the hypothesis most directly addressable by the Basque ponderación table and the exam timetable for 2027.
 
