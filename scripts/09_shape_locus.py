@@ -270,6 +270,18 @@ marginals = [
      "d. Distribution of the 8–10 band share", TOP_MARK),
 ]
 
+# A single y-limit for panels c–f so bar heights mean the same thing in all four.
+# The counts are left as counts rather than densities: with a shared axis the
+# shorter bars in e and f are the honest signal that 85 of 187 region-years were
+# removed, which a density normalisation would hide.
+COVID_PLATEAU_PRE = [2020, 2021, 2022, 2023, 2024]
+_peaks = []
+for _, _col, _bins, *_ in marginals:
+    _peaks.append(np.histogram(hist[_col].values, bins=_bins)[0].max())
+    _peaks.append(np.histogram(hist[~hist.year.isin(COVID_PLATEAU_PRE)][_col].values,
+                               bins=_bins)[0].max())
+Y_MAX = float(max(_peaks)) * 1.42
+
 normality = {}
 for axm, col, bins, xlab, title, marker in marginals:
     v = hist[col].values
@@ -299,6 +311,7 @@ for axm, col, bins, xlab, title, marker in marginals:
            "normality cannot be rejected" if is_normal else "not normal"),
         xy=(0.97, 0.92), xycoords="axes fraction", fontsize=7.2,
         color=INK2 if is_normal else COL_MODEL, ha="right", va="top")
+    axm.set_ylim(0, Y_MAX)
     axm.set_xlabel(xlab)
     axm.set_ylabel("Region-years")
     axm.set_title(title)
@@ -338,21 +351,27 @@ for axm, col, bins, xlab, title_all, marker in marginals:
                          "normal_at_5pct": is_normal}
     # All years, dimmed, as the reference the reader just looked at one row above.
     axn.hist(v_all, bins=bins, color=COL_CLOUD, alpha=0.20, lw=0,
-             label="all years (as above)")
+             label="all years")
     axn.hist(v_nc, bins=bins, color=COL_CLOUD, alpha=0.70, lw=0,
-             label="excluding 2020--2024")
+             label="excluding 2020--24")
     xs = np.linspace(bins[0], bins[-1], 400)
     width = bins[1] - bins[0]
+    # Dimmed: the all-years fit from the row above, kept at the same scale so the two
+    # curves can be read against each other — this row is a before-and-after.
+    axn.plot(xs, norm.pdf(xs, v_all.mean(), v_all.std(ddof=1)) * len(v_all) * width,
+             color=INK2, lw=1.1, alpha=0.30, ls=(0, (4, 2)),
+             label="normal, all years")
     axn.plot(xs, norm.pdf(xs, v_nc.mean(), v_nc.std(ddof=1)) * len(v_nc) * width,
-             color=INK2, lw=1.2, label="normal, same mean and SD")
+             color=INK2, lw=1.2, label="normal, excl. 2020--24")
     axn.annotate(
         "skew $%+.2f$, excess kurtosis $%+.2f$\n"
         "Anderson--Darling $A^2$: $%.2f \\rightarrow %.2f$ (5 %% crit. %.2f)\n%s"
         % (normality_nc[col]["skew"], normality_nc[col]["excess_kurtosis"],
            ad_all.statistic, ad.statistic, ad.critical_values[2],
            "still normal" if is_normal else "closer to normal, still not normal"),
-        xy=(0.97, 0.92), xycoords="axes fraction", fontsize=7.2,
+        xy=(0.985, 0.995), xycoords="axes fraction", fontsize=7.2,
         color=INK2 if is_normal else COL_MODEL, ha="right", va="top")
+    axn.set_ylim(0, Y_MAX)
     axn.set_xlabel(xlab)
     axn.set_ylabel("Region-years")
     axn.set_title(("e." if idx == 0 else "f.") +
