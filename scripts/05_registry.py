@@ -142,6 +142,11 @@ for f in sorted(HIST.iterdir()):
     url = {"ehu_2024_ord": "https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica",
            "ehu_2024_extra": "https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica-1",
            "ehu_orient_2025_modelo_v0": "https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/fisica_mod_pau25-pdf"}.get(stem, url)
+    if stem == "ehu_theory_list_official":
+        desc = "Official EHU–Departamento de Educación list of 22 theory titles with development guide (pre-2025 'cuestiones teóricas', bilingual)"
+        rows.append(dict(file=f"exams_ehu_hist/{f.name}", bytes=f.stat().st_size, sha256=h, description=desc, url="",
+                         retrieval="provided by the coordinator (not published online), 19 Sep 2026"))
+        continue
     if stem.startswith("ehu_orient"):
         desc = "EHU PAU 2025 model paper / guidance" + (" (Oct 2024 version)" if "v0" in stem else "")
     else:

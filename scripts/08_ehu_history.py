@@ -136,29 +136,32 @@ prob["subtopic"] = prob["sub"].map(lambda s: SUB[s][1])
 prob.to_csv(DATA / "ehu_problem_inventory_2010_2026.csv", index=False)
 
 # ----------------------------------------------------------------------------- theory questions
+# Official list "Evaluación para el Acceso a la Universidad: Cuestiones teóricas" (UPV/EHU – Departamento de
+# Educación; bilingual, 22 titles with a development guide each, also sent to correctors); provided by the
+# coordinator on 19 Sep 2026: sources/exams_ehu_hist/ehu_theory_list_official.pdf. T-codes map to its numbering.
 T = {
-    "T01": "Radioactivity: types of emission, displacement laws, decay law",
-    "T02": "Kepler's laws; derivation of the third law",
-    "T03": "Photoelectric effect: threshold frequency, work function",
-    "T04": "Simple harmonic motion: equation, velocity, acceleration",
-    "T05": "Faraday–Lenz laws: induced emf, direction of the current",
-    "T06": "Coulomb's law; field and potential of a point charge; field lines and equipotentials",
-    "T07": "Nuclear fission: mass defect, Einstein relation",
-    "T08": "Magnifier: description, image formation, magnification",
-    "T09": "Reflection and refraction: laws, refractive index, limit angle, total reflection",
-    "T10": "Force on a charge and on a conductor in a uniform magnetic field",
-    "T11": "Forces between parallel currents; definition of the ampere",
-    "T12": "Newton's law of gravitation; field of a point mass",
-    "T13": "Eye defects: myopia, hyperopia and their correction",
-    "T14": "The human eye as an optical system",
-    "T15": "One-dimensional wave motion: transverse and longitudinal waves",
-    "T16": "Field lines and equipotential surfaces of the gravitational field",
-    "T17": "Conservative fields; gravitational potential energy and potential; mechanical energy",
-    "T18": "Nuclear fusion",
-    "T19": "The alternator",
-    "T20": "Standing waves",
-    "T21": "The photographic camera",
-    "T22": "Magnetic field created by currents (wire, loop) — 2010 and 2019 only",
+    "T04": (1, "Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración."),
+    "T15": (2, "Movimiento ondulatorio en una dimensión. Ecuación. Definición de las magnitudes. Velocidad de propagación. Distinción entre ondas transversales y longitudinales."),
+    "T09": (3, "Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total."),
+    "T20": (4, "Ondas estacionarias. Definición y ejemplos."),
+    "T08": (5, "Lupa. Descripción. Esquema de la formación de imágenes. Aumento."),
+    "T21": (6, "Cámara fotográfica. Descripción. Esquema de la formación de imágenes."),
+    "T14": (7, "El ojo humano. Descripción. Esquema de la formación de imágenes."),
+    "T13": (8, "Defectos de la visión. Hipermetropía y miopía."),
+    "T12": (9, "Ley de Gravitación Universal de Newton. Intensidad de campo. Campo creado por una masa puntual (o esférica). Ejemplo: el campo gravitatorio terrestre."),
+    "T17": (10, "Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía."),
+    "T02": (11, "Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación."),
+    "T16": (12, "Líneas de fuerza y superficies equipotenciales en el campo gravitatorio creado por una masa puntual (o esférica)."),
+    "T06": (13, "Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza."),
+    "T10": (14, "Fuerza ejercida dentro de un campo magnético uniforme: a) sobre una carga puntual en movimiento; b) sobre un conductor lineal de corriente."),
+    "T11": (15, "Fuerzas entre corrientes eléctricas. Dos hilos rectos, paralelos e infinitos. Definición de amperio."),
+    "T22": (16, "Campos magnéticos producidos por corrientes. Ley de Biot-Savart: a) corriente recta e infinita; b) corriente circular (espira)."),
+    "T05": (17, "Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente."),
+    "T19": (18, "Generador de corrientes alternas sinusoidales (alternador)."),
+    "T03": (19, "Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción."),
+    "T01": (20, "Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."),
+    "T07": (21, "Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein."),
+    "T18": (22, "Fusión nuclear. Descripción y ejemplos. Bombas y posibles centrales nucleares. Pérdida de masa. Ecuación de Einstein."),
 }
 Q = [
     (2010, "ord", "A.C1", "T22"), (2010, "ord", "A.C2", "T06"), (2010, "ord", "B.C1", "T02"), (2010, "ord", "B.C2", "T07"),
@@ -193,7 +196,8 @@ Q = [
     (2024, "extra", "B1", "T04"), (2024, "extra", "B2", "T02"), (2024, "extra", "B3", "T16"), (2024, "extra", "B4", "T19"),
 ]
 theo = pd.DataFrame(Q, columns=["year", "sitting", "slot", "title_id"])
-theo["title"] = theo.title_id.map(T)
+theo["official_no"] = theo.title_id.map(lambda k: T[k][0])
+theo["title"] = theo.title_id.map(lambda k: T[k][1])
 theo.to_csv(DATA / "ehu_theory_inventory.csv", index=False)
 
 # ----------------------------------------------------------------------------- formats
@@ -269,13 +273,13 @@ def md(df_, cols, headers, fmts):
 # theory titles with counts (2012–2024 = the stable list) and all years
 cnt_all = theo.groupby("title_id").size()
 cnt_1224 = theo[theo.year.between(2012, 2024)].groupby("title_id").size()
-tt = pd.DataFrame({"title_id": list(T.keys()), "title": list(T.values())})
+tt = pd.DataFrame({"title_id": list(T.keys()), "no": [v[0] for v in T.values()], "title": [v[1] for v in T.values()]})
 tt["n_2012_2024"] = tt.title_id.map(cnt_1224).fillna(0).astype(int)
 tt["n_2010_2024"] = tt.title_id.map(cnt_all).fillna(0).astype(int)
-tt = tt.sort_values(["n_2012_2024", "title_id"], ascending=[False, True])
-(TABLES / "ehu_theory_titles.md").write_text(md(tt, ["title", "n_2012_2024", "n_2010_2024"],
-                                                ["Theory title (as printed on the papers)", "Times set 2012–2024", "Times set 2010–2024"],
-                                                ["{}", "{}", "{}"]))
+tt = tt.sort_values("no")
+(TABLES / "ehu_theory_titles.md").write_text(md(tt, ["no", "title", "n_2012_2024", "n_2010_2024"],
+                                                ["No.", "Title in the official list (Spanish version, abridged)", "Times set 2012–2024", "Times set 2010–2024"],
+                                                ["{}", "{}", "{}", "{}"]))
 
 # problem sub-topic counts by period
 prob["period"] = pd.cut(prob.year, [2009, 2019, 2024, 2025, 2026], labels=["2010–19", "2020–24", "2025", "2026"])
