@@ -54,6 +54,11 @@ hist = (
 )
 hist = hist[~hist.ccaa.isin(AGGREGATES)].dropna(subset=["mean", "pass_pct"]).copy()
 hist["top"] = hist["[8-9)"] + hist["[9-10]"]
+# P(x >= 8 | x >= 5): the share of those who passed who reached the top band. Both
+# components are level quantities tracking the mean at r ~ 0.97; their ratio is
+# conditional on passing and tracks it at r = 0.905, so it is the column of this
+# figure that can separate a distribution that moved from one that was reshaped.
+hist["ratio"] = hist.top / hist.pass_pct
 
 # The two published quantities should agree: the pass rate is 100 - the [0,5) share.
 # They do for 185 of 187 region-years, to floating-point. The exceptions are Galicia
@@ -75,6 +80,8 @@ coef_pass = np.polyfit(hist["mean"], hist.pass_pct, 2)
 coef_top = np.polyfit(hist["mean"], hist.top, 2)
 sd_pass = float((hist.pass_pct - np.polyval(coef_pass, hist["mean"])).std())
 sd_top = float((hist.top - np.polyval(coef_top, hist["mean"])).std())
+coef_ratio = np.polyfit(hist["mean"], hist.ratio, 2)
+sd_ratio = float((hist.ratio - np.polyval(coef_ratio, hist["mean"])).std())
 
 # Does the locus survive the 2017 regime change? Física left the general phase under
 # LOMCE, and the presented cohort grew by more than half, so if the relation depended
@@ -124,7 +131,7 @@ fit = results["beta_fits"]["EHU_2026"]
 ehu26_mean, ehu26_pass = 3.99, 39.8
 ehu26_top = float((1 - beta_dist.cdf(0.8, fit["a"], fit["b"])) * 100)
 
-PASS_MARK, TOP_MARK = "o", "s"          # C7b: one marker per quantity, both panels
+PASS_MARK, TOP_MARK, RATIO_MARK = "o", "s", "^"   # C7b: one marker per quantity
 COL_CLOUD, COL_EHU = MUTED, C["violet"]
 COL_OBS, COL_MODEL = C["aqua"], C["red"]
 # The pre-2017 regime is a property of the background cloud, not a quantity of its
@@ -149,11 +156,11 @@ def locus_ci(xq, coef, xs, ys, deg=2):
     return 1.96 * se
 
 
-fig = plt.figure(figsize=(11.6, 10.4))
-gs = fig.add_gridspec(3, 2, height_ratios=[3.0, 1.35, 1.35], hspace=0.62, wspace=0.22)
-axes = [fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])]
-margs = [fig.add_subplot(gs[1, 0]), fig.add_subplot(gs[1, 1])]
-margs_nc = [fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1])]
+fig = plt.figure(figsize=(16.4, 10.8))
+gs = fig.add_gridspec(3, 3, height_ratios=[3.0, 1.35, 1.35], hspace=0.62, wspace=0.26)
+axes = [fig.add_subplot(gs[0, i]) for i in range(3)]
+margs = [fig.add_subplot(gs[1, i]) for i in range(3)]
+margs_nc = [fig.add_subplot(gs[2, i]) for i in range(3)]
 grid = np.linspace(hist["mean"].min() - 0.15, hist["mean"].max() + 0.15, 200)
 ehu = hist[hist.ccaa == "País Vasco"].sort_values("year")
 obs = observed_2026()
@@ -167,6 +174,9 @@ panels = [
     (axes[1], "top", coef_top, sd_top, TOP_MARK,
      "Share in the 8–10 band (%)", "b. Top band against the mean",
      ehu26_top, [(lab, mu, tp) for lab, mu, _, tp in obs]),
+    (axes[2], "ratio", coef_ratio, sd_ratio, RATIO_MARK,
+     "Top-band share among those who passed", "c. Top band among passers, against the mean",
+     ehu26_top / ehu26_pass, [(lab, mu, tp / pa) for lab, mu, pa, tp in obs]),
 ]
 
 # Annotation offsets are per point AND per panel: the four 2026 labels crowd the
@@ -177,6 +187,11 @@ OFFSETS = {
         "ULL (Tenerife) 2026": (9, -3),
         "ULPGC (Las Palmas) 2026": (9, 3),
         "model": (-9, -20),
+    },
+    "c. Top band among passers, against the mean": {
+        "ULL (Tenerife) 2026": (7, 7),
+        "ULPGC (Las Palmas) 2026": (8, -12),
+        "model": (-9, -22),
     },
     "b. Top band against the mean": {
         # ULL sits at mean 4.08 and the EHU model marker at 3.99, so a left-going
@@ -265,9 +280,12 @@ n_below = int((means < 4.5).sum())
 
 marginals = [
     (margs[0], "pass_pct", np.arange(30, 100, 3.0), "Pass rate (% of presented)",
-     "c. Distribution of the pass rate", PASS_MARK),
+     "d. Pass rate", PASS_MARK),
     (margs[1], "top", np.arange(0, 80, 3.0), "Share in the 8–10 band (%)",
-     "d. Distribution of the 8–10 band share", TOP_MARK),
+     "e. 8–10 band share", TOP_MARK),
+    (margs[2], "ratio", np.arange(0.10, 0.90, 0.03),
+     "Top-band share among those who passed",
+     "f. Top band among passers", RATIO_MARK),
 ]
 
 # A single y-limit for panels c–f so bar heights mean the same thing in all four.
@@ -280,7 +298,7 @@ for _, _col, _bins, *_ in marginals:
     _peaks.append(np.histogram(hist[_col].values, bins=_bins)[0].max())
     _peaks.append(np.histogram(hist[~hist.year.isin(COVID_PLATEAU_PRE)][_col].values,
                                bins=_bins)[0].max())
-Y_MAX = float(max(_peaks)) * 1.42
+Y_MAX = float(max(_peaks)) * 1.85
 
 normality = {}
 for axm, col, bins, xlab, title, marker in marginals:
@@ -297,8 +315,12 @@ for axm, col, bins, xlab, title, marker in marginals:
     axm.plot(xs, norm.pdf(xs, v.mean(), v.std(ddof=1)) * len(v) * width,
              color=INK2, lw=1.2, label="normal, same mean and SD")
     # Where the three 2026 cohorts fall on this quantity.
-    vals = ([pa for _, _, pa, _ in obs] + [ehu26_pass]) if col == "pass_pct" \
-        else ([tp for _, _, _, tp in obs] + [ehu26_top])
+    if col == "pass_pct":
+        vals = [pa for _, _, pa, _ in obs] + [ehu26_pass]
+    elif col == "top":
+        vals = [tp for _, _, _, tp in obs] + [ehu26_top]
+    else:
+        vals = [tp / pa for _, _, pa, tp in obs] + [ehu26_top / ehu26_pass]
     for val, colr in zip(vals, [COL_OBS, COL_OBS, COL_MODEL]):
         axm.axvline(val, color=colr, lw=1.1, ymax=0.55)
     axm.annotate(
@@ -315,7 +337,7 @@ for axm, col, bins, xlab, title, marker in marginals:
     axm.set_xlabel(xlab)
     axm.set_ylabel("Region-years")
     axm.set_title(title)
-    axm.legend(loc="upper left", fontsize=7.4)
+    axm.legend(loc="center right", fontsize=7.4)
 
 # ---------------------------------------------------------------------------
 # Panels e and f — the same two distributions with the COVID-era cohorts removed.
@@ -335,9 +357,20 @@ for axm, col, bins, xlab, title, marker in marginals:
 COVID_PLATEAU = [2020, 2021, 2022, 2023, 2024]
 nc = hist[~hist.year.isin(COVID_PLATEAU)]
 
+# Euskadi's conditional ratio measured against the field in the same year: the
+# locus residual minus the mean locus residual of all communities that year. This
+# removes the year effect, so what is left is Euskadi against its peers.
+_res = (hist.ratio - np.polyval(coef_ratio, hist["mean"])) / sd_ratio
+hist["resid_ratio"] = _res
+_field = hist.groupby("year").resid_ratio.mean()
+_eus = hist[hist.ccaa == "País Vasco"].set_index("year").resid_ratio
+euskadi_vs_field = {int(y): float(_eus.loc[y] - _field.loc[y]) for y in _eus.index}
+euskadi_vs_field["mean_2016_2023"] = float(
+    np.mean([euskadi_vs_field[y] for y in range(2016, 2024)]))
+
 normality_nc = {}
 for axm, col, bins, xlab, title_all, marker in marginals:
-    idx = 0 if col == "pass_pct" else 1
+    idx = {"pass_pct": 0, "top": 1, "ratio": 2}[col]
     axn = margs_nc[idx]
     v_all, v_nc = hist[col].values, nc[col].values
     sw, ad = shapiro(v_nc), anderson(v_nc, "norm")
@@ -374,17 +407,20 @@ for axm, col, bins, xlab, title_all, marker in marginals:
     axn.set_ylim(0, Y_MAX)
     axn.set_xlabel(xlab)
     axn.set_ylabel("Region-years")
-    axn.set_title(("e." if idx == 0 else "f.") +
-                  title_all.split(".", 1)[1] + ", COVID plateau removed")
+    axn.set_title("ghi"[idx] + "." + title_all.split(".", 1)[1] +
+                  ", plateau removed")
     axn.legend(loc="upper left", fontsize=7.0)
 
 note = (
     "Ministry EPAU, Física, ordinary sitting, specific phase, 17 communities, "
-    "n = %d region-years. Hollow markers in a and b: 2015–16, when Física could still "
-    "be sat in the general phase;\nthe two regimes share one locus (pass p = %.2f, top "
-    "band p = %.2f, excluding COVID). Tinted strip: only %d of %d region-years have a "
-    "mean below 4.5, where all three 2026 cohorts sit.\nPanels c and d show each joint "
-    "panel's own y variable — not the mean, which is the same variable on both x axes."
+    "n = %d region-years. Hollow markers in a–c: 2015–16, when Física could still be "
+    "sat in the general phase;\nthe two regimes share one locus (pass p = %.2f, top band "
+    "p = %.2f, excluding COVID). Tinted strip: only %d of %d region-years have a mean "
+    "below 4.5, where all three 2026 cohorts sit.\nColumn c is the ratio of b to a, so it "
+    "is conditional on passing and is the column that separates a distribution that moved "
+    "from one that was reshaped.\nPanels d–i share one vertical scale; in g–i the dashed "
+    "curve is the normal fitted to all years and the solid one the normal fitted without "
+    "the plateau."
     % (len(hist), regimes["excluding_covid_2020_21"]["pass"]["p"],
        regimes["excluding_covid_2020_21"]["top"]["p"], n_below, len(hist))
 )
@@ -417,6 +453,7 @@ summary = {"n_region_years": int(len(hist)), "sd_pass_pp": sd_pass, "sd_top_pp":
                "locus_ci95_pp_at_mean_6_00": float(
                    locus_ci(6.00, coef_pass, hist["mean"].values, hist.pass_pct.values)[0]),
            },
+           "euskadi_conditional_vs_field": euskadi_vs_field,
            "points": {}}
 for lab, mu, pa, tp in obs + [("EHU 2026 (model)", ehu26_mean, ehu26_pass, ehu26_top)]:
     summary["points"][lab] = {

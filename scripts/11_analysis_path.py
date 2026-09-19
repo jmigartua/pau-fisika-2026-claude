@@ -63,10 +63,14 @@ steps = [
     ("6. Re-baselining to pre-COVID",
      "2020–24 was a plateau, not a decline; 2025 returned to the 2015–19 norm.",
      STOOD, "reverses the sign of the national story and enlarges the Basque one"),
+    ("7. Conditioning on passing",
+     "Among passers, the top-band share: the one measure not dominated by the level.",
+     STOOD, "strengthens step 3, shows the plateau reshaped rather than lifted, "
+            "and finds a Basque turn in 2024 — before either candidate cause"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 9.0),
-                              gridspec_kw=dict(height_ratios=[1.0, 1.25], hspace=0.34))
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 9.8),
+                              gridspec_kw=dict(height_ratios=[1.0, 1.45], hspace=0.34))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
 stages = ["As published:\nyear-on-year", "This study:\n2026 cross-section",
