@@ -1,0 +1,52 @@
+{
+  "headlines": {
+    "national": {
+      "year_on_year": -0.8099999999999997,
+      "cross_section_2026": 0.16933333333333245,
+      "vs_baseline": 0.02111111111111086
+    },
+    "euskadi": {
+      "year_on_year": -1.4799999999999995,
+      "cross_section_2026": -1.4799999999999995,
+      "vs_baseline": -1.9320000000000004
+    }
+  },
+  "steps": [
+    {
+      "step": "1. The July framing",
+      "claim": "Euskadi Física fell 1.48 points; the new competency model is to blame.",
+      "status": "overturned",
+      "fate": "overturned at step 2: six of nine communities rose in 2026 under the same model"
+    },
+    {
+      "step": "2. The 2026 cross-section",
+      "claim": "The 2026 fall is regional, not national. H1 survives only as a description of 2025.",
+      "status": "weakened",
+      "fate": "its premise — that 2025 was a national collapse — is overturned at step 6"
+    },
+    {
+      "step": "3. Shape against location",
+      "claim": "Canarias 2026 sits on the historical locus: the whole distribution moved down.",
+      "status": "weakened",
+      "fate": "weakened at steps 4 and 5"
+    },
+    {
+      "step": "4. Where the evidence lies",
+      "claim": "Only 2 of 187 region-years sit below mean 4.5; the locus there is extrapolated.",
+      "status": "stood",
+      "fate": "the claim of step 3 becomes 'consistent with', not 'demonstrated'"
+    },
+    {
+      "step": "5. The two distributions, decoupled",
+      "claim": "The pass rate is normal; the 8–10 share is not, so its SD units are not calibrated.",
+      "status": "stood",
+      "fate": "top-band residuals are directional only"
+    },
+    {
+      "step": "6. Re-baselining to pre-COVID",
+      "claim": "2020–24 was a plateau, not a decline; 2025 returned to the 2015–19 norm.",
+      "status": "stood",
+      "fate": "reverses the sign of the national story and enlarges the Basque one"
+    }
+  ]
+}
