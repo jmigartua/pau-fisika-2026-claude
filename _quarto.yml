@@ -75,6 +75,14 @@ website:
           - href: chapters/07-literature.qmd
             text: "Literature & regulation"
             icon: journal-text
+      - section: Briefing
+        contents:
+          - href: chapters/14-briefing.qmd
+            text: "For the Admissions Office"
+            icon: envelope-paper
+          - href: chapters/14-briefing-es.qmd
+            text: "Informe (castellano)"
+            icon: translate
       - section: Sources and reproducibility
         contents:
           - href: chapters/08-sources.qmd

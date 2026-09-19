@@ -88,7 +88,7 @@ steps = [
      "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
      WEAK, "but length and competency content correlate at +0.9, so it is a better "
             "instrument for the same change, not a second cause; the Madrid count was "
-            "70 % solutions — corrected at step 13 (r = −0.91)"),
+            "70 % solutions — corrected at step 13 (r = −0.905)"),
     ("13. The audit (19 Sep, evening)",
      "Re-run everything, second-code the papers, recompute every number, read the logic.",
      STOOD, "withdrew the plateau reshaping (a level effect), the Basque 2024 signal "

@@ -1,0 +1,257 @@
+---
+title: "Briefing for the Admissions Office"
+subtitle: "PAU Física 2026 at UPV/EHU: the facts, their interpretation, and what they imply for the design of the 2027 paper"
+description: "A self-contained summary of the dossier for the head of admissions: every established fact with its source class, the interpretation the evidence supports and the ones it does not, the audit's corrections, the data that would settle the open questions, and the design levers for 2027 that the data already inform."
+author:
+  - name: "Josu M. Igartua"
+    affiliation: "Física coordinator, PAU · UPV/EHU — from the dossier *Physics in the PAU, 2026*, audited 19 September 2026"
+date: 2026-09-19
+date-format: "D MMMM YYYY"
+categories: [briefing, 2027]
+format:
+  html: default
+  pdf:
+    pdf-engine: xelatex
+    documentclass: scrartcl
+    papersize: a4
+    mainfont: "TeX Gyre Pagella"
+    sansfont: "TeX Gyre Heros"
+    monofont: "Latin Modern Mono"
+    fontsize: 10.5pt
+    geometry:
+      - margin=24mm
+    number-sections: true
+    toc: true
+    toc-depth: 2
+    colorlinks: true
+    fig-pos: "htbp"
+    cite-method: citeproc
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \setlength{\emergencystretch}{3em}
+        \KOMAoptions{headings=small}
+---
+
+::: {.callout-note title="How to read this document"}
+Every statement below carries one of four evidence classes: **official** (a published figure of a university, a government or the Ministry, archived in the dossier with its hash), **press** (a figure reported by the media and not yet verifiable at an official source), **modelled** (a quantity computed in the dossier from published aggregates, labelled as such), or **testimony** (the coordinator's own account of decisions that were never published). Nothing in it is a causal estimate: the data are cohort statistics of different papers marked by different tribunals, and the paper changes every year. The complete evidence, the scripts that recompute every number, and the audit that checked them are on the dossier site; section numbers in brackets refer to its chapters.
+:::
+
+## The result
+
+In the ordinary sitting of June 2026, 2 066 candidates sat Física at UPV/EHU. The mean was **3.99** and the pass rate **39.8 %**; **24.5 %** of the scripts scored two points or less (10 % in 2025) and **3.2 %** scored zero. The 2025 figures were 5.47 and 62.3 % on 2 189 candidates (official, EHU deck of 6 July and Ministry EPAU cube). EHU has not published the pass *count* (the published rate implies 822–823 passes), the July 2026 Física result, the tribunal-level Física table, the revision statistics for Física, nor any split by sex, language or territory — all of which it published for other subjects or in earlier years.
+
+![Física in the Basque university-entrance exam, ordinary sitting, 2010–2026, with the exam regimes shaded and the Spanish total from the Ministry cube (2015–2025) in grey.](../plots/fig01_euskadi_series.png){#fig-b-series}
+
+Three facts about the level, from the 2010–2026 series [Ch. 2]:
+
+- **3.99 is the lowest value of the whole series**, below the 2010–11 start of the two-phase PAU (4.45, 4.44). From 2012 to 2024 the exam produced means between 5.45 and 6.49 in every non-COVID year; a flat trend fitted to 2012–2024 leaves 2025 at $-0.69$ (2.2 residual standard deviations) and 2026 at $-2.18$ (seven).
+- **It is the second consecutive fall**: $6.09 \to 5.47 \to 3.99$. The first fall was reported as part of a national movement; the second as news. Measured against Euskadi's own pre-COVID norm (2015–2019 mean ≈ 5.9), the 2026 sitting is **$-1.93$**, a third larger than the $-1.48$ in circulation, because 2025 was already 0.45 below that norm. (The same comparison on the Ministry's pooled means, used in the cross-regional table below, gives $-1.91$; the small difference is the phase pooling, not a discrepancy.)
+- **A single-year change of $-1.48$ is rare but not unprecedented.** Across the 17 communities and the ten transitions 2015→2025 in the Ministry panel (170 changes, standard deviation 0.74) only seven were as negative: Extremadura 2024 ($-2.10$), Cantabria 2017 ($-1.94$), Canarias 2019 ($-1.76$), Baleares 2025, Euskadi 2022 ($-1.62$, the post-COVID normalisation), Asturias 2025 and Cantabria 2025 ($-1.51$). The Basque change sits at $z = -1.97$. What is exceptional is the *level*, and the two falls in a row.
+
+By regime, the Basque means were 4.45 (2010–11), 5.99 (2012–16), 5.98 (2017–19), 7.07 (2020–21, COVID flexibility), 6.15 (2022–24) and 4.73 (2025–26) — pass rates 48, 70, 68, 82, 71 and 51 %.
+
+## What happened elsewhere in Spain
+
+### 2025 was national, 2026 is regional
+
+In 2025, the first year of the LOMLOE competency exam, the Física mean fell in **14 of 17** communities, by $-0.81$ on average; Euskadi's $-0.62$ was *milder* than the national move. In 2026, nine communities have a published result (official unless stated):
+
+| Community | 2025 | 2026 | Δ | Basis |
+|---|---:|---:|---:|---|
+| Asturias | 5.49 | 6.62 | $+1.13$ | presented (76.9 % pass) |
+| Madrid | 5.65 | 6.70 | $+1.05$ | chart labels, one decimal |
+| Castilla-La Mancha | 5.86 | 6.80 | $+0.94$ | presented, n = 1 781 |
+| Cataluña | 6.04 | 6.84 | $+0.80$ | eligible students ("aptes"), n = 8 021 |
+| Comunitat Valenciana | 5.89 | 6.40 | $+0.51$ | presented, n = 5 259 |
+| Andalucía | 5.69 | 5.86 | $+0.17$ | presented |
+| Extremadura | 6.09 | 5.27 | $-0.82$ | press |
+| Canarias (ULL + ULPGC) | 5.08 | 4.25 | $-0.83$ | presented, n = 1 395 |
+| País Vasco | 5.47 | 3.99 | $-1.48$ | presented, n = 2 066 |
+
+: The nine 2026 results found, against the 2025 Ministry baseline [Ch. 3]. {#tbl-b-regions tbl-colwidths="[24,11,11,11,43]"}
+
+![2025 → 2026 by community: open circle 2025, filled 2026; red fell, green rose.](../plots/fig03_regions_2026_vs_2025.png){#fig-b-regions}
+
+Six communities rose under the same national model in the same year; three fell. A national cause cannot produce opposite signs in the same year, so **the competency model can at most describe 2025; it does not explain 2026** [Ch. 3, Ch. 6 H1]. The eight remaining communities have published nothing; the Ministry's 2026 cube is due in June 2027.
+
+### The reference year decides the story
+
+The year-on-year framing hides something the Ministry cube shows plainly once each community is measured against its own 2015–2019 norm [Ch. 6, "What you compare against"]:
+
+- **2020–2024 was a plateau, not a decline.** The nine communities with a 2026 result sat $+0.5$ to $+1.05$ above their pre-COVID norm in every year from 2020 to 2024 (2022–24: $+0.62$, $+0.53$, $+0.50$) and returned to it in 2025 in a single step.
+- **The plateau was in every subject.** Run on all subjects in the cube (17 communities, each subject against its own norm), Matemáticas II sat $+0.5$ to $+1.0$ above, Química $+0.6$ to $+0.9$, Biología $+0.2$ to $+0.5$, Historia $+0.3$ to $+0.7$, Lengua $+0.2$ to $+0.5$; in 2025 every science subject came back to about $\pm 0.2$ of its norm (Física $-0.06$, Matemáticas II $+0.11$, Química $+0.20$, Biología $-0.21$), while Historia kept most of its lift ($+0.53$). The 2025 "fall" was the simultaneous end of a subject-general regime.
+- **So 2025 was a return to normal, not a collapse.** Measured from the pre-COVID norm, the nine communities finish 2026 at $+0.02$ — Spain is where it was a decade ago — but that average hides a two-point spread: Madrid $+1.02$, Castilla-La Mancha $+0.86$, Cataluña $+0.63$, Andalucía and Asturias $+0.48$, Valencia $+0.34$ above their norms; Extremadura $-0.78$, Canarias $-0.86$ and **País Vasco $-1.91$** below.
+
+![The nine communities and Euskadi against their own 2015–2019 baselines (a), and the same data measured five ways (b).](../plots/fig17_reference_frames.png){#fig-b-frames}
+
+The consequence for the reform hypothesis is precise: the first LOMLOE papers arrived in the same year as the end of the plateau, and nothing in the PAU series separates the two. The reform coincides with a subject-general return to norm; it does not explain the Basque 2026 result, which is the one this briefing is about.
+
+## The shape of the collapse
+
+Euskadi publishes three summary numbers; the two Canarian universities publish full histograms and are the closest empirical picture of the same event [Ch. 4].
+
+| University, June | Exams | Mean | % < 2 | % < 5 | % in [5, 6) | % ≥ 9 |
+|---|---:|---:|---:|---:|---:|---:|
+| ULL 2024 | 731 | 5.60 | 10.5 | 36.8 | 17.5 | 9.8 |
+| ULL 2025 | 796 | 4.92 | 19.1 | 46.6 | 16.2 | 8.9 |
+| ULL 2026 | 683 | 4.08 | 25.2 | 61.5 | 11.9 | 3.1 |
+| ULPGC 2024 | 796 | 6.15 | 6.5 | 32.0 | 12.6 | 16.1 |
+| ULPGC 2025 | 758 | 5.25 | 14.0 | 45.4 | 13.3 | 12.5 |
+| ULPGC 2026 | 712 | 4.41 | 22.6 | 57.2 | 12.8 | 4.9 |
+
+: The Canarian histograms, read from the ULL and ULPGC dashboards (official). {#tbl-b-canarias}
+
+![Left: the grade densities implied for Euskadi 2025 and 2026 (modelled). Right: the observed Tenerife histograms, June 2024–2026.](../plots/fig05_distributions.png){#fig-b-shape}
+
+What they show, and what the Basque aggregates are consistent with:
+
+- **Canarias 2026 is the Basque twin**: ULL 4.08 / 38.5 % pass / 25.2 % below 2 / 30 zeros; ULPGC 4.41 / 42.8 % / 22.6 % below 2 — against Euskadi's 3.99 / 39.8 % / 24.5 % at or below 2.
+- **The whole distribution moved down.** On the 187 community-years of the Ministry panel, pass rate and top-band share are near-deterministic functions of the mean ($r = 0.974$ and $0.961$). Both Canarian cohorts sit on that historical relation, and on the measure least dominated by the level — the share of *passers* who reach the 8–10 band — they sit slightly above it. Nothing thinned the top of the cohort relative to its middle. This is evidence against a compositional or subgroup explanation, and it does not distinguish a harder paper from uniformly stricter marking, which leave the same signature.
+- **The pass-line pile-up thinned.** At the ULL the share of scripts in [5, 6), where borderline scripts are customarily rounded up, fell from 17.5 % (2024) and 16.2 % (2025) to 11.9 % in 2026; at the ULPGC, which never had the same pile-up, it barely moved (12.6 → 13.3 → 12.8 %). Whether that is desirable is a policy question; that it moves the pass rate by several points is an empirical one.
+- **For Euskadi the picture is modelled, not observed.** A Beta distribution fitted to the published mean, pass rate and zero count gives, for 2026, a density that is zero at the origin with its mode near 2.5, a median of 3.8, 14.6 % of scripts at 7 or above (30 % in 2025) and 2.1 % at 9 or above (5.9 %). Three moments cannot separate a J-shape from a bell compressed against the floor; they do exclude a small-subgroup effect. Only the observed 2026 histogram, in one-point bands with zeros and tens, would replace the model with data.
+
+The Basque band structure, observed 2015–2025 (Ministry), makes the 2025 step visible before the 2026 one: the failing band ran between 24.9 % and 33.8 % in every year from 2016 to 2024 except 2021 (10.6 %), and 37.7 % in 2025; the 9–10 band ran between 10.3 % and 20.2 % in 2017–2024 except 2021 (36.0 %), and 6.7 % in 2025.
+
+## Inside the Basque system
+
+### Subjects
+
+The damage is confined to the science-technical block [Ch. 5]. Euskadi 2025 → 2026: **Física $-1.48$, Matemáticas II $-1.67$**, Historia $-0.83$, Euskara II $-0.48$, Hª Filosofía $-0.29$, Química $-0.21$, Biología $+0.15$, Lengua Castellana $+0.03$. Cataluña shows the mirror image with the same authority and the same cohort (Física $+0.80$, Matemàtiques $-1.94$); Madrid rose in both (Física $+1.10$ on its own chart labels, $+1.05$ against the Ministry 2025 baseline; Matemáticas II $+0.50$); Andalucía split (Física $+0.17$, Matemáticas II $-0.59$). The subject-by-region pattern is the signature of regional paper design and marking, subject by subject, not of a single national model.
+
+The same holds against Euskadi's own history. Relative to their 2015–2019 norms, Basque Matemáticas II, Química and Biología sat $+0.1$ to $+1.6$ above through 2021–2024 and at $+0.27$, $-0.01$ and $+0.31$ in 2025; **Física was the only Basque science subject clearly below its norm in 2025 ($-0.39$)** — a year before the 2026 event. Whatever changed in the Basque science base, the PAU sees it in Física only, and from 2025.
+
+### The school marks of the same students
+
+The Basque Inspectorate's *Resultados escolares 2024-25* gives, for 2º Bachillerato Física across all networks and linguistic models: **4 541 students, 98.1 % passed, mean 7.09** (public 7.04, private/concertada 7.15; models A/B/D 6.93/7.31/7.09; Araba 7.09, Bizkaia 7.11, Gipuzkoa 7.08) [Ch. 5, official].
+
+![The same subject measured three times: school marks of the 2024-25 cohort, PAU Física 2025 and PAU Física 2026.](../plots/fig10_school_vs_pau.png){#fig-b-school}
+
+Three consequences. Only 45–48 % of Bachillerato Física students sit PAU Física ($2\,189/4\,541$ and $2\,066/4\,541$), presumably the half that needs the weighting for engineering and physics degrees. Even that self-selected half scored 1.6 points below its school mark in 2025 and, if school marks did not move, 3.1 points below in 2026. The school pass rate is 98 %; the exam pass rate was 40 %. Whatever the 2026 paper measured, it is not what Bachillerato Física teachers certify. The 2025-26 school results, due in the coming months, will give the matched cohort.
+
+### Participation, sittings, groups
+
+Presentation among those enrolled has been 64–84 % since 2017 (84.3 % in 2025, the highest of the decade); the 2026 enrolment is unpublished, so the 6 % fall in candidates (2 189 → 2 066) cannot be separated into enrolment and abstention. Nationally, the Física population grew 30 % over the decade (37 661 → 49 010 presented) but its take-up — the share of all PAU candidates sitting Física — barely moved (0.222 in 2015, 0.241 in 2025) and, within a community, is unrelated to the mean ($r = -0.02$). Física is not visibly recruiting further down the distribution [Ch. 6, "Is the drift real?"].
+
+The extraordinary sitting runs $1.85 \pm 0.86$ points below the ordinary one across Spain 2015–2025; the three July 2026 values found (Valencia 4.16, Castilla-La Mancha 3.97, Tenerife 3.27) sit on that relation. EHU's July 2026 result is a global pass rate of 71.4 % on 1 332 candidates, with no subject breakdown (press).
+
+Women are 30.6–36 % of Basque Física enrolment and, from 2011, outscore men in every year but 2014 by $+0.21$ on average; the Canarian dashboards show the same sign under collapse conditions in 2026 (ULL 4.09 vs 4.07; ULPGC 4.50 vs 4.38). The 2010–2022 euskera/castellano differences are a few tenths in both directions. Nothing published for Física 2026 speaks to language, network or sex; EHU's 2026 bias analysis was run for Euskara II.
+
+## The papers themselves
+
+The question the July debate turned on — were the papers of the communities that rose competency-based? — was answered by coding every exercise and option of the eighteen ordinary papers of 2025 and 2026 in the nine communities with a 2026 result (146 items) on the EHU competency criteria: context (none / decorative / substantive), application, explanation, graph reading, drawing, evaluation, plus structure and points. A competency-style item is one with substantive context *and* an explain or evaluate demand. A blind second coder repeated the exercise in the audit: agreement κ = 0.76 on the competency flag, 0.83–1.00 on drawing, graph reading, evaluation and explanation, 0.76 on application and 0.61 on the three-level context code (whose 1/2 boundary is the least reliable element of the scheme), and every direction of change 2025 → 2026 identical [Ch. 11, Ch. 13].
+
+| Community | Δ mean | Optional % 2025 → 2026 | Competency-style points, % of expected, 2025 → 2026 | Obligatory competency points 2025 → 2026 |
+|---|---:|---:|---:|---:|
+| Asturias | $+1.13$ | 100 → 100 | 0 → 0 | 0 → 0 |
+| Madrid | $+1.05$ | 75 → 75 | 0 → 0 | 0 → 0 |
+| Castilla-La Mancha | $+0.94$ | 100 → 70 | 0 → 20 | 0 → 2.0 |
+| Cataluña | $+0.80$ | 50 → 50 | 75 → 38 | 5.0 → 0 |
+| C. Valenciana | $+0.51$ | 85 → 80 | 15 → 0 | 1.5 → 0 |
+| Andalucía | $+0.17$ | 60 → 75 | 0 → 0 | 0 → 0 |
+| Extremadura | $-0.82$ | 75 → 75 | 0 → 0 | 0 → 0 |
+| Canarias | $-0.83$ | 100 → 70 | 0 → 0 | 0 → 0 |
+| **País Vasco** | $\mathbf{-1.48}$ | **75 → 50** | **25 → 62.5** | **2.5 → 5.0** |
+
+: Structure and competency content of the eighteen papers, and the grade change [Ch. 11]. {#tbl-b-papers tbl-colwidths="[22,12,22,24,20]"}
+
+![Change in the mean against (a) the change in expected competency points, (b) the change in optionality, (c) the 2026 level of competency points. Orange fell, red is Euskadi.](../plots/fig11_exam_content.png){#fig-b-exam}
+
+The findings:
+
+- **None of the six rising communities increased the competency content of its paper.** Asturias, Madrid and Andalucía had no competency-style exercise in either year (Asturias' contexts are whimsical and decorative; Madrid's one obligatory 2026 item is a graph reading). Cataluña was already fully contextualised in 2025, as it has been for a decade, and did not change genre. Valencia replaced its 2025 competency-style obligatory item with a plainer one. Only Castilla-La Mancha added a contextualised obligatory item (0 → 20 % of expected points) — and rose 0.94.
+- **The Basque paper is the only one in the set that changed genre**, and it did so on three axes at once: competency-style content from 25 % to 62.5 % of expected points, obligatory competency points from 2.5 to 5, optionality halved from 75 % to 50 %, and a granular sub-task format with the highest count of marking criteria per item of the eighteen papers (2.67; Cataluña 2.33).
+- **Canarias cut choice without adding competency content and also fell.** Across the nine communities, the grade change correlates $-0.47$ with the change in competency points, $+0.37$ with the change in optionality and $-0.89$ with the change in contextualised points (n = 9; none significant on its own).
+- **Reading load.** Counting statement text only (rubrics, solutions and the Basque instruction block stripped), the Basque paper lengthened **45 %**, from 1 335 to 1 940 words; Asturias, Madrid and Valencia shortened theirs and rose; Extremadura, Canarias and País Vasco lengthened theirs and fell. Across the eight communities with archived pairs the correlation with the grade change is $r = -0.905$ ($p = 0.002$). Two cautions: length and competency content correlate at $+0.90$ (contextualised items are longer items, so this is largely one signal measured twice, with an objective count where the coding is a judgement), and the hypothesis was suggested by the coordinator's knowledge of his own paper, so the result is exploratory however small its $p$-value. The interaction it was meant to test — long papers hurting weak readers more — is untested with eight communities. The Basque PISA reading score fell 72 points over the decade to 2025 (491 → 419; gap to Spain $-4$ → $-32$), far more than its science.
+
+## The Basque paper in its own history
+
+The dossier holds all 34 EHU Física papers 2010–2026 and the corrector material that exists for them (criteria embedded in the 2012–2024 papers, separate solucionarios for 2025 and 2026; nothing published for 2010–2011), the 2025 model paper, and the official EHU–Department list of theory titles [Ch. 12, official; the account of unpublished decisions is testimony].
+
+![The Basque series with the paper's format shaded; below, the points awarded through closed-list theory questions and the optional share of the paper.](../plots/fig14_ehu_formats_series.png){#fig-b-formats}
+
+- **Four formats since 2010.** 2010–2019: two whole options A/B, each with two problems (3 pts) and two theory questions (2 pts). 2020–2024: the COVID "four-of-eight" (any 2 of 4 problems, any 2 of 4 questions), kept for five years. 2025: four problems of 2.5, block A competency-style and obligatory, blocks B–D one of two, no theory. 2026: exercises 1 and 2 competency-style and obligatory, 3 and 4 with a choice of two.
+- **Forty per cent of the marks came from a list of titles.** All 118 theory questions of 2010–2024 reproduce verbatim titles from a closed official list of 22, every one of which was set at least once; the list, with its development guide, was in the hands of teachers and correctors.
+- **A de facto syllabus.** Of the 146 problems set between 2010 and 2026, 18 of the 29 gravitation problems of 2010–2024 are the circular orbit and 14 of the 15 modern-physics problems of those years are the photoelectric effect (the exception a de Broglie problem in July 2022); all four modern-physics problems of 2025 were photoelectric too, so 18 of 19 up to 2025 are; spherical mirrors were first set in June 2025; standing waves and sound levels in June 2026; a mass spectrometer, obligatory, in July 2026; nuclear mass–energy, relativity and Doppler never. The restriction of block E to the photoelectric effect was a coordinators' decision of some twenty years' standing, confirmed by the 2024 teachers' meeting for the 2025 paper against the coordinator's proposal, and lifted for 2026 (testimony).
+- **Marking rules.** 2012–2024: qualitative ("se penalizará" missing units, purely mathematical developments, incoherent results, no amounts). 2025: units mandatory in the final answer; language penalties $-0.1$ from the third error (cap 1 point) and up to $-0.5$ for syntax; conceptual errors weigh more than calculation errors. 2026: symbolic-first; $-0.1$ for units, repeated vector-symbol errors and rounding; grave errors void the section; 0.25-point sub-items; a constants table on the paper. None of these rules is unique: Canarias applies the full CRUE $-0.1$ list in 2025 and 2026 and also fell; Valencia requires symbolic-first (60/40) and rose; Extremadura has the same spelling rule as EHU 2025 and fell; Cataluña, Asturias and Andalucía deduct 0.25 per unit error.
+- **What choice alone is worth** (modelled: same population, same items, item spread 0.2 points). The expected gain from selecting the better option is $+1.24$ under the 2020–24 four-of-eight format, $+0.79$ under 2025, $+0.54$ under 2010–19 and $+0.53$ under 2026. The 2025 → 2026 cut in choice is worth about $-0.26$ of the $-1.48$; the 2020–24 format was the most generous the exam ever had and coincides with the highest means in the series.
+
+![Selection premium of each EHU format under the same population and items (modelled).](../plots/fig15_selection_premium.png){#fig-b-premium}
+
+Read together, the two steps behave differently. **The 2025 break was the larger structural change** (theory gone, new structure, first numerical penalties) and the Basque cohort absorbed it *better* than the national average ($-0.62$ against $-0.81$). **The 2026 step changed less on paper and more in kind**: every feature is an intensification of 2025 — competency-style content from a quarter to half of the marks and from one obligatory exercise to two; choice from three binary options to two; marking from qualitative rules to a printed penalty list, symbolic-first and 0.25-point granularity — plus the opening of the de facto syllabus. No single element is large by the yardsticks available (the choice premium is a quarter of a point; the new topics sat in optional slots; the marking rules are shared with communities that rose). What no rising community did is move on content type, exposure, format and marking in the same year, on top of a 2025 break that schools had had one cycle to absorb. The coordinator's account supplies the mechanism: a school system trained for fifteen years on a paper whose theory came from a list and whose problems came from a dozen templates had, for 2026, to teach the whole of block E and the un-set corners of blocks C and D, while its students met an obligatory half that asked them to read, judge and explain rather than to recognise.
+
+## The hypotheses, with verdicts
+
+| Hypothesis | Verdict | Grounds |
+|---|---|---|
+| H1 The competency model is to blame | Describes 2025 at most; does not explain 2026 | Applied in all 17 communities both years; 14/17 fell in 2025 with Euskadi milder than average; 6 of 9 rose in 2026. 2025 was also the end of a subject-general plateau, inseparable from the reform in the PAU series. The only systematic rating of PAU papers' competency orientation (Universitat Jaume I, six communities, 2015–2025, published in *The Conversation*; the primary article has not been located) places País Vasco and Cataluña among the *most* competency-oriented systems before the reform; Cataluña rose. |
+| H2 The 2026 Basque paper was harder or differently pitched than its own 2025 paper and than other 2026 papers | Consistent with everything; first-order variable | Cohort-wide displacement; damage confined to Física and Matemáticas II; Catalan mirror image; the only paper in the set that changed genre; three axes moved at once; reading load $+45$ % and its correlation with the grade change $r = -0.905$; choice halved (≈ $-0.26$ by simulation). The July package also noted a validity issue in the 2026 gravitational problem's energy comparison. |
+| H3 Tribunals marked more severely | Possible, unmeasured, acknowledged by EHU | The rector reported "significant variation between panels" in Física; the 6 July deck gave tribunal ranges for Euskara (2.88–4.43), Lengua (5.80–6.92) and Inglés (6.65–7.56) but not for Física. The cohort-wide shape says severity, if present, was general rather than confined to a few panels. Only the Física tribunal table settles it. |
+| H4 A weaker or differently composed cohort | Weak inside the PAU; real outside it | Presentation fell 6 % (enrolment unpublished); the same students held Química and Biología; take-up flat; the Canarian cohorts sit on the historical locus. But PISA shows a decade-long Basque decline (next section) which the PAU sees only in Física and only from 2025. |
+| H5 Students under-prepare Física because the weighting makes it dispensable | Plausible slow driver, not a 2026 trigger | The Canarian coordinators' own hypothesis for their own decline; fits a slow erosion better than a 1.5-point fall; addressable through the ponderación table and the timetable. |
+| H6 Language or network bias | No evidence either way for Física | Only the Euskara II bias analysis was run; the 2010–2022 differences are small and of both signs. |
+
+: Ranking: H2 first; H3 unresolved and testable; H5 background; H1 a 2025 coincidence with the end of the plateau; H4 unsupported as a Basque-specific PAU cohort effect; H6 unsupported [Ch. 6]. {#tbl-b-hyp tbl-colwidths="[24,14,62]"}
+
+## The cohort question, and what PISA 2025 says about 2027
+
+An instrument marked outside the Basque system exists and can be aligned by birth cohort: PISA tests 15-year-olds who reach the PAU two years later, though it samples the whole age cohort while Física is sat by about a quarter of PAU candidates [Ch. 6].
+
+![Basque and Spanish science in every PISA round 2006–2025 (a); the gap, with the PAU year each cohort reaches (b); the three cohorts inside the study window (c).](../plots/fig21_pisa_link.png){#fig-b-pisa}
+
+- **A standing Basque advantage in science became a deficit a decade ago.** País Vasco ran $+6.2$, $+6.4$ and $+9.2$ points above Spain in 2006, 2009 and 2012; between 2012 and 2015 it fell 22.6 points while Spain fell 3.7; it has not recovered ($-9.7$ in 2015, $+4.1$ in 2018, $-5.0$ in 2022, within sampling error of each other). The break is in the 2015 round, five years before the school closures.
+- **PISA 2025 (published 8 September 2026) is the cohort that sits PAU 2027, and it is the weakest recorded.** Basque science 458.5 against Spain 477.1 and the OECD 481.9; a gap of $-18.6 \pm 4.7$, nearly double the previous worst; the Basque share at proficiency levels 5–6 falls from 3.32 % to 1.83 % (Spain 4.9 → 4.2 %).
+- **The PAU is a poor detector of this.** Euskadi's Física mean sat near its own baseline through 2024; the cohort-by-cohort match between the PISA gap and the PAU's top-band measure agrees in one case of three, which is chance. A weakening base need not show in a subject whose takers come from the top of it — until, as in 2025, it does in one subject.
+
+![The Basque series with two 2027 scenarios; the bar is the year-to-year term, not a confidence interval (a); the size of each contribution (b).](../plots/fig23_pau2027.png){#fig-b-2027}
+
+Converting PISA 2025 into a PAU estimate is arithmetic, and the arithmetic is the finding. The Basque PISA fall of 21 points is 0.23 of a student standard deviation; transferred one-for-one to the PAU and prorated over the two years between the 2025 and 2027 cohorts it is a **cohort term of $-0.36$ marks** ($\pm 0.12$ from PISA's sampling error alone), or $-0.18$ measured from the 2026 cohort. Against that, the standard deviation of Euskadi's own year-to-year change (excluding 2026) is 0.855 marks, and 2026 alone moved the mean by $-1.48$ on a changed paper — four times the cohort term.
+
+| If the 2027 paper resembles | Cohort term | Central estimate |
+|---|---:|---:|
+| the 2025 paper | $-0.36$ | **5.11** |
+| the 2026 paper | $-0.18$ | **3.81** |
+
+: Two scenarios for PAU Física 2027 (modelled); the two-year band from year-to-year variation alone is $\pm 2.4$ marks around either. {#tbl-b-2027}
+
+**PAU 2027 is not something PISA predicts; it is something the 2027 paper and its marking scheme decide**, with the cohort supplying a downward nudge four to seven times smaller than that choice. Two practical uses follow: the intake should be assumed slightly weaker than 2025's and considerably weaker than the decade's average, and the paper set with that in mind rather than against a remembered cohort; and when the 2027 result arrives, about $-0.36$ is the part that should not be attributed to the paper, and everything beyond it is the part that must be explained.
+
+## What the evidence does not establish, and how it was checked
+
+The dossier was audited before this briefing was written [Ch. 13]: every script re-run from the raw sources, every number in every chapter recomputed independently, every figure re-derived, a blind second coding of the papers, and the interpretation read step by step. Three interpretive claims of an earlier version were withdrawn (that the COVID plateau reshaped the distribution — it lifted it; that Euskadi showed a distinctive early turn on a conditional measure — four other communities show the same; that PAU and PISA fall at the same rate — the records are steps, not slopes), and some forty errors of number and fact were corrected. Everything above is the audited version.
+
+What remains genuinely open:
+
+- **H2 against H3 cannot be separated from published data.** A harder paper and uniformly stricter marking leave the same cohort-wide signature. The Física tribunal table (which EHU computed) separates them in one step.
+- **The Basque 2026 distribution is modelled.** Only the observed histogram would say whether the Basque cohort, like the Canarian ones, moved without reshaping.
+- **Which part of the 2026 paper cost the marks is unknown.** Whether they were lost (i) in the two obligatory competency exercises rather than in the options, (ii) in the explain/evaluate sub-tasks rather than in the calculations, (iii) through accumulated $-0.1$ penalties and voided sections, or (iv) in the newly examined topics — each has a different remedy for 2027, and only the first two would justify touching the competency design itself. Item-level marks of a sample of scripts decide this.
+- **Several figures are press-sourced** (Extremadura 5.27; Asturias' subject values; the EHU July figures) and should be confirmed at their official source before being quoted onward.
+
+## Data to request, in order of value
+
+1. **Física by tribunal, 2025 and 2026**: $n_j$, $\bar{x}_j$, $s_j$ and the school composition of each tribunal's scripts. Separates H2 from H3 in one table.
+2. **The full Física grade histogram, 2024–2026**, in one-point bands with zeros and tens, as ULL and ULPGC publish routinely. Replaces the model with data.
+3. **July 2026 Física**: presented, passed, mean — whether the July paper was pitched like the June one.
+4. **Revision statistics for Física 2026**: requests, share raised, mean change (published for four subjects, not for the one with the lowest mean).
+5. **Física by sex, language and territory for 2023–2026**, the breakdowns the annual reports carried until 2022.
+6. **Problem-level marks** (four exercises, options a/b, sub-tasks) for a sample of 2026 scripts — the evidence that distinguishes "the paper was hard" from "the paper was unanswerable", and what the Canarian subcommittee planned for 2026.
+
+## Design levers for 2027 that the data already inform
+
+None of these is a recommendation to abandon the competency model, which the evidence does not indict: the most competency-oriented papers in Spain (Cataluña's, for a decade) sit in communities that rose. They are the levers on which the record is informative.
+
+1. **Pace the deployment.** The one paper that moved content type, exposure, format and marking in a single year fell furthest; the 2025 break, taken alone, was absorbed better than the Spanish average. Whatever is changed for 2027, change one axis and announce it; 2028 is the year the model is to be fully deployed.
+2. **Optionality.** The 2026 paper fixed exercises 1 and 2 with no alternative (optional share 75 → 50 %). By simulation that cut is worth about a quarter of a point of expected mark, and the 2020–24 format, the most generous the exam ever had, coincides with the highest means in the series. Cutting choice does not by itself predict the direction: Canarias cut it by 30 points and fell, Castilla-La Mancha cut it by the same 30 points and rose 0.94 — but Castilla-La Mancha spent the recovered space on one obligatory contextualised item and changed nothing else. A choice *within* the obligatory competency exercises — two contexts, same *saber básico* — restores the premium without giving up the genre.
+3. **Exposure of the syllabus.** For fifteen years block E meant the photoelectric effect, and mirrors, standing waves and decibels were never set. Opening the syllabus is legitimate; opening it unannounced in the same year as everything else is not what the record recommends. An explicit, published statement of which *saberes* can carry a problem in 2027, with model items, is the cheapest instrument available.
+4. **Statement length.** The 2026 statement was 45 % longer than 2025's, and the Basque cohort's reading has fallen further than its science. Set a target length per exercise, record it, and keep the scenario to what the physics needs.
+5. **Marking rules.** The $-0.1$ list, symbolic-first and 0.25-point sub-tasks are each shared with a community that rose or fell, so none is indicted alone; their joint introduction in one year is. Two things are worth deciding explicitly: whether grave-error clauses that void a whole section are applied uniformly across tribunals (the tribunal table will show it), and whether the borderline rounding that the Canarian histograms show vanishing in 2026 is wanted or not — it is worth 5–8 points of pass rate.
+6. **Calibrate against a target.** The Ministry cube gives a full band distribution for every subject, community and year. A target for Física — for example the 2017–2024 Basque structure, [0, 5) ≈ 30 %, [9, 10] ≈ 15 % — can be written into the coordination instructions and checked by pre-testing the paper on a sample of Bachillerato students, as some communities' ponencias already do informally.
+7. **Timetable.** Física is sat in the last slot of the science day in several communities; the Tenerife minutes name this as a factor. The Basque timetable is a free parameter.
+8. **Second marking and external review.** Galicia's 2027 reform (peer review of papers, double marking) is the model the July "déficit de confianza" language points toward; Rasch equating of tribunals, as practised in the Comunitat Valenciana, is the statistical complement.
+9. **Attribute 2027 honestly.** Record the paper's parameters (length, competency share, optional share, penalty rules, topics) before the sitting, and read the result against the PISA cohort term ($-0.36$) so that the paper's contribution is measured rather than argued.
+10. **Keep a monitoring set.** Mean, pass rate, band shares and the conditional top-band ratio $P(x \ge 8 \mid x \ge 5)$ for every year, by tribunal — the last is the published quantity least dominated by the level, and it is what would have shown in 2025 that Física alone was below its norm.
+
+## Sources and reproducibility
+
+The dossier archives 166 source files with hashes (EHU decks and annual reports, the Ministry EPAU cubes 2015–2025, the Basque Inspectorate's school results, the dashboards of ULL, ULPGC and UCLM, the 2025–2026 papers and corrector documents of nine communities, the complete EHU archive 2010–2026, the official theory list, the INEE PISA tables 2006–2025). Every number in this briefing is produced by a script in `scripts/` from those files and can be regenerated in one command; the audit of 19 September and its layer reports are in `logs/audit/`. Everything is on the dossier site, chapter by chapter, with the single-page edition for reading offline.

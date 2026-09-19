@@ -1,0 +1,119 @@
+year,sitting,slot,title_id,official_no,title
+2010,ord,A.C1,T22,16,Campos magnéticos producidos por corrientes. Ley de Biot-Savart: a) corriente recta e infinita; b) corriente circular (espira).
+2010,ord,A.C2,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2010,ord,B.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2010,ord,B.C2,T07,21,Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2010,extra,A.C1,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2010,extra,A.C2,T15,2,Movimiento ondulatorio en una dimensión. Ecuación. Definición de las magnitudes. Velocidad de propagación. Distinción entre ondas transversales y longitudinales.
+2010,extra,B.C1,T17,10,Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía.
+2010,extra,B.C2,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2011,ord,A.C1,T10,14,Fuerza ejercida dentro de un campo magnético uniforme: a) sobre una carga puntual en movimiento; b) sobre un conductor lineal de corriente.
+2011,ord,A.C2,T08,5,Lupa. Descripción. Esquema de la formación de imágenes. Aumento.
+2011,ord,B.C1,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2011,ord,B.C2,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2011,extra,A.C1,T11,15,"Fuerzas entre corrientes eléctricas. Dos hilos rectos, paralelos e infinitos. Definición de amperio."
+2011,extra,A.C2,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2011,extra,B.C1,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2011,extra,B.C2,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2012,ord,A.C1,T09,3,"Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total."
+2012,ord,A.C2,T07,21,Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2012,ord,B.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2012,ord,B.C2,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2012,extra,A.C1,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2012,extra,A.C2,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2012,extra,B.C1,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2012,extra,B.C2,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2013,ord,A.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2013,ord,A.C2,T07,21,Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2013,ord,B.C1,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2013,ord,B.C2,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2013,extra,A.C1,T13,8,Defectos de la visión. Hipermetropía y miopía.
+2013,extra,A.C2,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2013,extra,B.C1,T15,2,Movimiento ondulatorio en una dimensión. Ecuación. Definición de las magnitudes. Velocidad de propagación. Distinción entre ondas transversales y longitudinales.
+2013,extra,B.C2,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2014,ord,A.C1,T08,5,Lupa. Descripción. Esquema de la formación de imágenes. Aumento.
+2014,ord,A.C2,T11,15,"Fuerzas entre corrientes eléctricas. Dos hilos rectos, paralelos e infinitos. Definición de amperio."
+2014,ord,B.C1,T18,22,Fusión nuclear. Descripción y ejemplos. Bombas y posibles centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2014,ord,B.C2,T12,9,Ley de Gravitación Universal de Newton. Intensidad de campo. Campo creado por una masa puntual (o esférica). Ejemplo: el campo gravitatorio terrestre.
+2014,extra,A.C1,T17,10,Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía.
+2014,extra,A.C2,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2014,extra,B.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2014,extra,B.C2,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2015,ord,A.C1,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2015,ord,A.C2,T19,18,Generador de corrientes alternas sinusoidales (alternador).
+2015,ord,B.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2015,ord,B.C2,T14,7,El ojo humano. Descripción. Esquema de la formación de imágenes.
+2015,extra,A.C1,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2015,extra,A.C2,T12,9,Ley de Gravitación Universal de Newton. Intensidad de campo. Campo creado por una masa puntual (o esférica). Ejemplo: el campo gravitatorio terrestre.
+2015,extra,B.C1,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2015,extra,B.C2,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2016,ord,A.C1,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2016,ord,A.C2,T07,21,Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2016,ord,B.C1,T08,5,Lupa. Descripción. Esquema de la formación de imágenes. Aumento.
+2016,ord,B.C2,T12,9,Ley de Gravitación Universal de Newton. Intensidad de campo. Campo creado por una masa puntual (o esférica). Ejemplo: el campo gravitatorio terrestre.
+2016,extra,A.C1,T10,14,Fuerza ejercida dentro de un campo magnético uniforme: a) sobre una carga puntual en movimiento; b) sobre un conductor lineal de corriente.
+2016,extra,A.C2,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2016,extra,B.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2016,extra,B.C2,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2017,ord,A.C1,T07,21,Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2017,ord,A.C2,T11,15,"Fuerzas entre corrientes eléctricas. Dos hilos rectos, paralelos e infinitos. Definición de amperio."
+2017,ord,B.C1,T16,12,Líneas de fuerza y superficies equipotenciales en el campo gravitatorio creado por una masa puntual (o esférica).
+2017,ord,B.C2,T09,3,"Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total."
+2017,extra,A.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2017,extra,A.C2,T14,7,El ojo humano. Descripción. Esquema de la formación de imágenes.
+2017,extra,B.C1,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2017,extra,B.C2,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2018,ord,A.C1,T18,22,Fusión nuclear. Descripción y ejemplos. Bombas y posibles centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2018,ord,A.C2,T17,10,Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía.
+2018,ord,B.C1,T15,2,Movimiento ondulatorio en una dimensión. Ecuación. Definición de las magnitudes. Velocidad de propagación. Distinción entre ondas transversales y longitudinales.
+2018,ord,B.C2,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2018,extra,A.C1,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2018,extra,A.C2,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2018,extra,B.C1,T20,4,Ondas estacionarias. Definición y ejemplos.
+2018,extra,B.C2,T10,14,Fuerza ejercida dentro de un campo magnético uniforme: a) sobre una carga puntual en movimiento; b) sobre un conductor lineal de corriente.
+2019,ord,A.C1,T13,8,Defectos de la visión. Hipermetropía y miopía.
+2019,ord,A.C2,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2019,ord,B.C1,T06,13,Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza.
+2019,ord,B.C2,T19,18,Generador de corrientes alternas sinusoidales (alternador).
+2019,extra,A.C1,T22,16,Campos magnéticos producidos por corrientes. Ley de Biot-Savart: a) corriente recta e infinita; b) corriente circular (espira).
+2019,extra,A.C2,T20,4,Ondas estacionarias. Definición y ejemplos.
+2020,ord,B1,T09,3,"Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total."
+2020,ord,B2,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2020,ord,B3,T08,5,Lupa. Descripción. Esquema de la formación de imágenes. Aumento.
+2020,ord,B4,T16,12,Líneas de fuerza y superficies equipotenciales en el campo gravitatorio creado por una masa puntual (o esférica).
+2020,extra,B1,T12,9,Ley de Gravitación Universal de Newton. Intensidad de campo. Campo creado por una masa puntual (o esférica). Ejemplo: el campo gravitatorio terrestre.
+2020,extra,B2,T18,22,Fusión nuclear. Descripción y ejemplos. Bombas y posibles centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2020,extra,B3,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2020,extra,B4,T14,7,El ojo humano. Descripción. Esquema de la formación de imágenes.
+2021,ord,B1,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2021,ord,B2,T13,8,Defectos de la visión. Hipermetropía y miopía.
+2021,ord,B3,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2021,ord,B4,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2021,extra,B1,T09,3,"Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total."
+2021,extra,B2,T21,6,Cámara fotográfica. Descripción. Esquema de la formación de imágenes.
+2021,extra,B3,T10,14,Fuerza ejercida dentro de un campo magnético uniforme: a) sobre una carga puntual en movimiento; b) sobre un conductor lineal de corriente.
+2021,extra,B4,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2022,ord,B1,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2022,ord,B2,T20,4,Ondas estacionarias. Definición y ejemplos.
+2022,ord,B3,T14,7,El ojo humano. Descripción. Esquema de la formación de imágenes.
+2022,ord,B4,T16,12,Líneas de fuerza y superficies equipotenciales en el campo gravitatorio creado por una masa puntual (o esférica).
+2022,extra,B1,T08,5,Lupa. Descripción. Esquema de la formación de imágenes. Aumento.
+2022,extra,B2,T11,15,"Fuerzas entre corrientes eléctricas. Dos hilos rectos, paralelos e infinitos. Definición de amperio."
+2022,extra,B3,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2022,extra,B4,T15,2,Movimiento ondulatorio en una dimensión. Ecuación. Definición de las magnitudes. Velocidad de propagación. Distinción entre ondas transversales y longitudinales.
+2023,ord,B1,T15,2,Movimiento ondulatorio en una dimensión. Ecuación. Definición de las magnitudes. Velocidad de propagación. Distinción entre ondas transversales y longitudinales.
+2023,ord,B2,T17,10,Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía.
+2023,ord,B3,T05,17,Ley de Faraday y Lenz para la inducción electromagnética. Valor de la fuerza electromotriz inducida. Sentido de la corriente.
+2023,ord,B4,T07,21,Fisión nuclear. Descripción y ejemplos. Bombas y centrales nucleares. Pérdida de masa. Ecuación de Einstein.
+2023,extra,B1,T08,5,Lupa. Descripción. Esquema de la formación de imágenes. Aumento.
+2023,extra,B2,T11,15,"Fuerzas entre corrientes eléctricas. Dos hilos rectos, paralelos e infinitos. Definición de amperio."
+2023,extra,B3,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2023,extra,B4,T13,8,Defectos de la visión. Hipermetropía y miopía.
+2024,ord,B1,T09,3,"Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total."
+2024,ord,B2,T10,14,Fuerza ejercida dentro de un campo magnético uniforme: a) sobre una carga puntual en movimiento; b) sobre un conductor lineal de corriente.
+2024,ord,B3,T03,19,Efecto fotoeléctrico. Descripción. Explicación cuántica. Teoría de Einstein. Frecuencia umbral. Trabajo de extracción.
+2024,ord,B4,T01,20,"Radiactividad natural. Desintegración radiactiva. Emisión de partículas alfa, beta y gamma. Leyes de Soddy y Fajans."
+2024,extra,B1,T04,1,Movimiento armónico simple. Ejemplos. Ecuación. Definición de las magnitudes. Ecuaciones de la velocidad y de la aceleración.
+2024,extra,B2,T02,11,Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación.
+2024,extra,B3,T16,12,Líneas de fuerza y superficies equipotenciales en el campo gravitatorio creado por una masa puntual (o esférica).
+2024,extra,B4,T19,18,Generador de corrientes alternas sinusoidales (alternador).

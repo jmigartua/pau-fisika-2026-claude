@@ -438,12 +438,37 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Sources and reproducibility</span></a>
+ <span class="menu-text">Briefing</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing.html" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope-paper" role="img">
+</i> 
+ <span class="menu-text">For the Admissions Office</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Informe (castellano)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
@@ -491,6 +516,7 @@ window.Quarto = {
   <li><a href="#what-the-audit-added" id="toc-what-the-audit-added" class="nav-link" data-scroll-target="#what-the-audit-added">What the audit added</a></li>
   <li><a href="#corrections-applied" id="toc-corrections-applied" class="nav-link" data-scroll-target="#corrections-applied">Corrections applied</a></li>
   <li><a href="#still-open-and-for-the-author-to-decide" id="toc-still-open-and-for-the-author-to-decide" class="nav-link" data-scroll-target="#still-open-and-for-the-author-to-decide">Still open, and for the author to decide</a></li>
+  <li><a href="#a-second-pass-after-the-briefing-was-written" id="toc-a-second-pass-after-the-briefing-was-written" class="nav-link" data-scroll-target="#a-second-pass-after-the-briefing-was-written">A second pass, after the briefing was written</a></li>
   <li><a href="#what-this-audit-could-not-do" id="toc-what-this-audit-could-not-do" class="nav-link" data-scroll-target="#what-this-audit-could-not-do">What this audit could not do</a></li>
   </ul>
 </nav>
@@ -592,7 +618,7 @@ window.Quarto = {
 </section>
 <section id="reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
-<p>The pipeline reproduces. With the LaTeX text stack installed (<code>cm-super</code>, <code>lmodern</code>, <code>dvipng</code>) and <code>xlrd</code> for the 2015 PISA workbook, all scripts ran in the documented order, and the regenerated outputs were byte- or value-identical to the committed ones — 162 of 162 registry hashes, every table, every figure to the pixel — with one exception. <code>data/analysis/slope_compare.json</code> and <code>plots/fig22_slope_compare.png</code> differed from the text of Chapter 6: the chapter’s slope table was computed on PISA 2012–2022 (four rounds), but PISA 2025 had since been appended to the series for the 2027 section and the script re-run, so the committed figure and JSON carried five rounds — on which both PISA slopes are significant and the Basque-to-Spanish ratio is 2.1, not 1.7, and the figure’s own panel title (“every interval includes zero”) was false in the picture. That is the most serious single finding: a figure that looked finished, whose text had been written before its data changed. The fix pins the fit to 2012–2022 with the reason stated, reports the five-round result alongside, and rewrites the section’s conclusion (§Corrections).</p>
+<p>The pipeline reproduces. With the LaTeX text stack installed (<code>cm-super</code>, <code>lmodern</code>, <code>dvipng</code>) and <code>xlrd</code> for the 2015 PISA workbook, all scripts ran in the documented order, and the regenerated outputs were byte- or value-identical to the committed ones — 162 of the 162 registry hashes then recorded (the registry holds 166 once the PISA workbooks are added), every table, every figure to the pixel — with one exception. <code>data/analysis/slope_compare.json</code> and <code>plots/fig22_slope_compare.png</code> differed from the text of Chapter 6: the chapter’s slope table was computed on PISA 2012–2022 (four rounds), but PISA 2025 had since been appended to the series for the 2027 section and the script re-run, so the committed figure and JSON carried five rounds — on which both PISA slopes are significant and the Basque-to-Spanish ratio is 2.1, not 1.7, and the figure’s own panel title (“every interval includes zero”) was false in the picture. That is the most serious single finding: a figure that looked finished, whose text had been written before its data changed. The fix pins the fit to 2012–2022 with the reason stated, reports the five-round result alongside, and rewrites the section’s conclusion (§Corrections).</p>
 <p>Two script defects that had not yet reached the text were also found and fixed: <code>09_shape_locus.py</code> wrote the normality statistics of the last marginal loop into the <code>mean_axis</code> block of its JSON (the chapter quoted the right values, the JSON held wrong ones), and its presented counts were the specific-phase undercount that the chapter itself rejects; <code>11_analysis_path.py</code> used the seventeen-community 2024→2025 change (−0.81) as the first point of a figure captioned “all computed on the same nine communities” (the nine-community value is −0.65).</p>
 </section>
 <section id="what-was-wrong" class="level2">
@@ -994,7 +1020,7 @@ Table&nbsp;4: The nine communities with a 2026 result against their own pre-COVI
 <h2 class="anchored" data-anchor-id="corrections-applied">Corrections applied</h2>
 <p>All corrections are in the text of the chapters; the interpretive ones are also visible in the “audit” callout at the head of Chapter 6 and in the rewritten last section of that chapter, which now ends with the audit as its thirteenth step. In summary:</p>
 <ul>
-<li>Chapter 6: the plateau-reshaping paragraph rewritten around the locus residual (figure 19 rebuilt to show it, and included); the Basque-signal section rewritten around the base rate; the slope section pinned to 2012–2022 with the five-round result and the steps-not-slopes objection added; the reading-load numbers replaced by statement-text counts (<span class="math inline">\(r = -0.91\)</span>, <span class="math inline">\(\rho = -0.86\)</span>; Basque paper +45 %; Madrid −3 %) with the pre-audit figures kept in the JSON; the 2027 table corrected (3.81 for the 2026-paper scenario, cohort term ±0.12) and its “paper term” relabelled as the year-to-year term; H1’s verdict reworded around the coincidence with the end of a subject-general plateau; the hypothesis ranking updated; the orphan sentence removed; the identity of the author and the coordinator stated in the disclosure; captions corrected.</li>
+<li>Chapter 6: the plateau-reshaping paragraph rewritten around the locus residual (figure 19 rebuilt to show it, and included); the Basque-signal section rewritten around the base rate; the slope section pinned to 2012–2022 with the five-round result and the steps-not-slopes objection added; the reading-load numbers replaced by statement-text counts (<span class="math inline">\(r = -0.905\)</span>, <span class="math inline">\(\rho = -0.86\)</span>; Basque paper +45 %; Madrid −3 %) with the pre-audit figures kept in the JSON; the 2027 table corrected (3.81 for the 2026-paper scenario, cohort term ±0.12) and its “paper term” relabelled as the year-to-year term; H1’s verdict reworded around the coincidence with the end of a subject-general plateau; the hypothesis ranking updated; the orphan sentence removed; the identity of the author and the coordinator stated in the disclosure; captions corrected.</li>
 <li>Chapters 2, 3, 4, 5, 11, 12 and the overview: the factual corrections listed above, each in place.</li>
 <li>Scripts: <code>09</code> (normality leak; pooled presented counts), <code>11</code> (nine-community first point; step texts for 7, 10, 12; step 13 added), <code>12</code> (panel b as residual), <code>16</code> (window pinned; five-round fit written), <code>17</code> (2026-scenario proration; labels), <code>18</code> (statement-only counts; pre-audit counts retained), <code>08</code>, <code>13</code>, <code>03</code> (footers, labels), <code>05</code> (PISA workbooks registered), <code>19</code> (new).</li>
 <li>Site: dates carry <code>date-modified</code>; the footer states the audit; the single-page edition is now generated from the chapters by <code>scripts/20_build_onepage.py</code> rather than maintained by hand, so it cannot go stale again; the site was re-rendered and <code>docs/</code> refreshed.</li>
@@ -1012,6 +1038,16 @@ Table&nbsp;4: The nine communities with a 2026 result against their own pre-COVI
 <li>Colour meaning is not constant across figures (Euskadi blue in 1–10 and violet in 16–23; “fell” red in 3–4 and orange in 11). Cosmetic, listed in <code>F_figures_tables.md</code> with the other visual notes.</li>
 <li>Chapter numbers in prose (“Chapter 11”) have no counterpart in the unnumbered sidebar; the links resolve, the numbers do not help a reader.</li>
 </ul>
+</section>
+<section id="a-second-pass-after-the-briefing-was-written" class="level2">
+<h2 class="anchored" data-anchor-id="a-second-pass-after-the-briefing-was-written">A second pass, after the briefing was written</h2>
+<p>Writing the <a href="../chapters/14-briefing.html">briefing for the admissions office</a> meant restating every result in a shorter form, and that restatement was itself verified against the data by an independent reader. It found three inherited errors in this dossier, now corrected here and in the chapters:</p>
+<ul>
+<li><strong>The optionality lever was stated wrongly.</strong> Chapter 6 said that Canarias was “the other community that cut choice by ≥ 25 points” and also fell. Castilla-La Mancha cut optionality by the same 30 points and <em>rose</em> <span class="math inline">\(+0.94\)</span> (<code>data/exam_change_vs_grade.csv</code>), so the cut does not by itself set the direction; what distinguishes the two is what replaced the choice. The design recommendation is kept but its claim is now the weaker and correct one.</li>
+<li><strong>The reading-load correlation is <span class="math inline">\(-0.905\)</span>, not <span class="math inline">\(-0.91\)</span>.</strong> <code>data/analysis/reading_load.json</code> gives <span class="math inline">\(-0.9049\)</span>; two decimals round to <span class="math inline">\(-0.90\)</span>. The value is now quoted to three decimals wherever it appears.</li>
+<li><strong>Two ranges were over-rounded.</strong> Euskadi’s other science subjects sat <span class="math inline">\(+0.1\)</span> to <span class="math inline">\(+1.6\)</span> above their norms in 2021–2024, not <span class="math inline">\(+0.3\)</span> to <span class="math inline">\(+1.4\)</span>; and in the plateau table Biología reaches <span class="math inline">\(+0.5\)</span> and Historia <span class="math inline">\(+0.7\)</span>, not <span class="math inline">\(+0.6\)</span> and <span class="math inline">\(+0.8\)</span>.</li>
+</ul>
+<p>Three smaller points were made more precise rather than corrected: the pass-line pile-up at <span class="math inline">\([5, 6)\)</span> thinned at the ULL (17.5 → 11.9 %) but barely moved at the ULPGC (12.6 → 12.8 %), so it is a ULL finding and not a Canarian one; the second coder’s agreement is 0.83–1.00 on drawing, graph reading, evaluation and explanation but 0.76 on application and 0.61 on the three-level context code; and the de facto syllabus counts (18 of 29, 14 of 15) are for 2010–2024, not for all 146 problems.</p>
 </section>
 <section id="what-this-audit-could-not-do" class="level2">
 <h2 class="anchored" data-anchor-id="what-this-audit-could-not-do">What this audit could not do</h2>

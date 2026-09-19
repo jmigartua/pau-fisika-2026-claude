@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Josu M. Igartua">
+<meta name="description" content="Resumen autocontenido del dosier para la dirección de acceso: cada hecho establecido con su clase de evidencia, la interpretación que la evidencia sostiene y las que no, las correcciones de la auditoría, los datos que resolverían las preguntas abiertas y las palancas de diseño para 2027 que los datos ya informan.">
+
+<title>Informe para la Dirección de Acceso – PAU Física 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/08-sources.html" rel="next">
+<link href="../chapters/14-briefing.html" rel="prev">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2a39badd227d94093ce4d8316f203092.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-eab9fe964022b5027cea14c038b6a4bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PAU Física</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/08-sources.html"> 
+<span class="menu-text">Sources &amp; methods</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/14-briefing.html">Briefing</a></li><li class="breadcrumb-item"><a href="../chapters/14-briefing-es.html">Informe (castellano)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evidence and results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The papers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Research context</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Briefing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing.html" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope-paper" role="img">
+</i> 
+ <span class="menu-text">For the Admissions Office</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing-es.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Informe (castellano)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
+ <span class="menu-text">Sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#el-resultado" id="toc-el-resultado" class="nav-link active" data-scroll-target="#el-resultado">El resultado</a></li>
+  <li><a href="#qué-ocurrió-en-el-resto-de-españa" id="toc-qué-ocurrió-en-el-resto-de-españa" class="nav-link" data-scroll-target="#qué-ocurrió-en-el-resto-de-españa">Qué ocurrió en el resto de España</a>
+  <ul class="collapse">
+  <li><a href="#fue-nacional-2026-es-regional" id="toc-fue-nacional-2026-es-regional" class="nav-link" data-scroll-target="#fue-nacional-2026-es-regional">2025 fue nacional; 2026 es regional</a></li>
+  <li><a href="#el-año-de-referencia-decide-el-relato" id="toc-el-año-de-referencia-decide-el-relato" class="nav-link" data-scroll-target="#el-año-de-referencia-decide-el-relato">El año de referencia decide el relato</a></li>
+  </ul></li>
+  <li><a href="#la-forma-del-desplome" id="toc-la-forma-del-desplome" class="nav-link" data-scroll-target="#la-forma-del-desplome">La forma del desplome</a></li>
+  <li><a href="#dentro-del-sistema-vasco" id="toc-dentro-del-sistema-vasco" class="nav-link" data-scroll-target="#dentro-del-sistema-vasco">Dentro del sistema vasco</a>
+  <ul class="collapse">
+  <li><a href="#materias" id="toc-materias" class="nav-link" data-scroll-target="#materias">Materias</a></li>
+  <li><a href="#las-notas-escolares-de-los-mismos-estudiantes" id="toc-las-notas-escolares-de-los-mismos-estudiantes" class="nav-link" data-scroll-target="#las-notas-escolares-de-los-mismos-estudiantes">Las notas escolares de los mismos estudiantes</a></li>
+  <li><a href="#participación-convocatorias-grupos" id="toc-participación-convocatorias-grupos" class="nav-link" data-scroll-target="#participación-convocatorias-grupos">Participación, convocatorias, grupos</a></li>
+  </ul></li>
+  <li><a href="#las-pruebas-mismas" id="toc-las-pruebas-mismas" class="nav-link" data-scroll-target="#las-pruebas-mismas">Las pruebas mismas</a></li>
+  <li><a href="#la-prueba-vasca-en-su-propia-historia" id="toc-la-prueba-vasca-en-su-propia-historia" class="nav-link" data-scroll-target="#la-prueba-vasca-en-su-propia-historia">La prueba vasca en su propia historia</a></li>
+  <li><a href="#las-hipótesis-con-veredicto" id="toc-las-hipótesis-con-veredicto" class="nav-link" data-scroll-target="#las-hipótesis-con-veredicto">Las hipótesis, con veredicto</a></li>
+  <li><a href="#la-cuestión-de-la-cohorte-y-lo-que-pisa-2025-dice-sobre-2027" id="toc-la-cuestión-de-la-cohorte-y-lo-que-pisa-2025-dice-sobre-2027" class="nav-link" data-scroll-target="#la-cuestión-de-la-cohorte-y-lo-que-pisa-2025-dice-sobre-2027">La cuestión de la cohorte y lo que PISA 2025 dice sobre 2027</a></li>
+  <li><a href="#lo-que-la-evidencia-no-establece-y-cómo-se-verificó" id="toc-lo-que-la-evidencia-no-establece-y-cómo-se-verificó" class="nav-link" data-scroll-target="#lo-que-la-evidencia-no-establece-y-cómo-se-verificó">Lo que la evidencia no establece, y cómo se verificó</a></li>
+  <li><a href="#datos-que-conviene-solicitar-por-orden-de-valor" id="toc-datos-que-conviene-solicitar-por-orden-de-valor" class="nav-link" data-scroll-target="#datos-que-conviene-solicitar-por-orden-de-valor">Datos que conviene solicitar, por orden de valor</a></li>
+  <li><a href="#palancas-de-diseño-para-2027-que-los-datos-ya-informan" id="toc-palancas-de-diseño-para-2027-que-los-datos-ya-informan" class="nav-link" data-scroll-target="#palancas-de-diseño-para-2027-que-los-datos-ya-informan">Palancas de diseño para 2027 que los datos ya informan</a></li>
+  <li><a href="#fuentes-y-reproducibilidad" id="toc-fuentes-y-reproducibilidad" class="nav-link" data-scroll-target="#fuentes-y-reproducibilidad">Fuentes y reproducibilidad</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="14-briefing-es.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/14-briefing.html">Briefing</a></li><li class="breadcrumb-item"><a href="../chapters/14-briefing-es.html">Informe (castellano)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Informe para la Dirección de Acceso</h1>
+<p class="subtitle lead">PAU Física 2026 en la UPV/EHU: los hechos, su interpretación y lo que implican para el diseño de la prueba de 2027</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">briefing</div>
+    <div class="quarto-category">2027</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Resumen autocontenido del dosier para la dirección de acceso: cada hecho establecido con su clase de evidencia, la interpretación que la evidencia sostiene y las que no, las correcciones de la auditoría, los datos que resolverían las preguntas abiertas y las palancas de diseño para 2027 que los datos ya informan.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Josu M. Igartua </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Coordinador de Física, PAU · UPV/EHU — del dosier <em>Physics in the PAU, 2026</em>, auditado el 19 de septiembre de 2026
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">19 septiembre 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Cómo leer este documento">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cómo leer este documento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cada afirmación lleva una de cuatro clases de evidencia: <strong>oficial</strong> (dato publicado por una universidad, un gobierno o el Ministerio, archivado en el dosier con su <em>hash</em>), <strong>prensa</strong> (dato difundido por los medios y todavía no verificable en fuente oficial), <strong>modelado</strong> (magnitud calculada en el dosier a partir de agregados publicados, señalada como tal) y <strong>testimonio</strong> (relato del coordinador sobre decisiones que nunca se publicaron). Nada de lo que sigue es una estimación causal: los datos son estadísticos de cohorte de pruebas distintas corregidas por tribunales distintos, y la prueba cambia todos los años. La evidencia completa, los <em>scripts</em> que recalculan cada número y la auditoría que los verificó están en el sitio del dosier; los números de capítulo entre corchetes remiten a él.</p>
+</div>
+</div>
+<section id="el-resultado" class="level2">
+<h2 class="anchored" data-anchor-id="el-resultado">El resultado</h2>
+<p>En la convocatoria ordinaria de junio de 2026 se presentaron 2 066 estudiantes a Física en la UPV/EHU. La media fue <strong>3.99</strong> y la tasa de aprobados <strong>39.8 %</strong>; el <strong>24.5 %</strong> de los ejercicios obtuvo dos puntos o menos (10 % en 2025) y el <strong>3.2 %</strong> obtuvo cero. En 2025 las cifras fueron 5.47 y 62.3 % sobre 2 189 presentados (oficial: presentación de la EHU del 6 de julio y cubo EPAU del Ministerio). La EHU no ha publicado el <em>número</em> de aprobados (la tasa publicada implica 822–823), el resultado de Física de julio de 2026, la tabla de Física por tribunales, las estadísticas de revisión de Física ni desglose alguno por sexo, lengua o territorio — todos ellos publicados para otras materias o en informes anteriores.</p>
+<div id="fig-e-series" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-series-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig01_euskadi_series.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-series-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Física en la prueba de acceso vasca, convocatoria ordinaria, 2010–2026, con los regímenes de examen sombreados y el total español del cubo del Ministerio (2015–2025) en gris.
+</figcaption>
+</figure>
+</div>
+<p>Tres hechos sobre el nivel, a partir de la serie 2010–2026 [cap. 2]:</p>
+<ul>
+<li><strong>3.99 es el valor más bajo de toda la serie</strong>, por debajo del arranque de la PAU de dos fases en 2010–11 (4.45, 4.44). Entre 2012 y 2024 la prueba produjo medias entre 5.45 y 6.49 en todos los años no COVID; una tendencia plana ajustada a 2012–2024 deja 2025 en <span class="math inline">\(-0.69\)</span> (2.2 desviaciones típicas residuales) y 2026 en <span class="math inline">\(-2.18\)</span> (siete).</li>
+<li><strong>Es la segunda caída consecutiva</strong>: <span class="math inline">\(6.09 \to 5.47 \to 3.99\)</span>. La primera se comunicó como parte de un movimiento nacional; la segunda, como noticia. Medida contra la propia norma prepandémica de Euskadi (media 2015–2019 ≈ 5.9), la convocatoria de 2026 está en <strong><span class="math inline">\(-1.93\)</span></strong>, un tercio más que el <span class="math inline">\(-1.48\)</span> que circula, porque 2025 ya estaba 0.45 por debajo de esa norma. (La misma comparación sobre las medias combinadas del Ministerio, que es la que usa la tabla interregional de más abajo, da <span class="math inline">\(-1.91\)</span>; la pequeña diferencia es la combinación de fases, no una discrepancia.)</li>
+<li><strong>Una variación interanual de <span class="math inline">\(-1.48\)</span> es rara, pero no inédita.</strong> En el panel del Ministerio (17 comunidades × 10 transiciones 2015→2025: 170 variaciones, desviación típica 0.74) solo siete fueron igual de negativas: Extremadura 2024 (<span class="math inline">\(-2.10\)</span>), Cantabria 2017 (<span class="math inline">\(-1.94\)</span>), Canarias 2019 (<span class="math inline">\(-1.76\)</span>), Baleares 2025, Euskadi 2022 (<span class="math inline">\(-1.62\)</span>, la normalización pos-COVID), Asturias 2025 y Cantabria 2025 (<span class="math inline">\(-1.51\)</span>). La variación vasca está en <span class="math inline">\(z = -1.97\)</span>. Lo excepcional es el <em>nivel</em>, y las dos caídas seguidas.</li>
+</ul>
+<p>Por regímenes, las medias vascas fueron 4.45 (2010–11), 5.99 (2012–16), 5.98 (2017–19), 7.07 (2020–21, flexibilidad COVID), 6.15 (2022–24) y 4.73 (2025–26), con tasas de aprobado del 48, 70, 68, 82, 71 y 51 %.</p>
+</section>
+<section id="qué-ocurrió-en-el-resto-de-españa" class="level2">
+<h2 class="anchored" data-anchor-id="qué-ocurrió-en-el-resto-de-españa">Qué ocurrió en el resto de España</h2>
+<section id="fue-nacional-2026-es-regional" class="level3">
+<h3 class="anchored" data-anchor-id="fue-nacional-2026-es-regional">2025 fue nacional; 2026 es regional</h3>
+<p>En 2025, primer año del modelo competencial LOMLOE, la media de Física cayó en <strong>14 de 17</strong> comunidades, <span class="math inline">\(-0.81\)</span> de promedio; el <span class="math inline">\(-0.62\)</span> de Euskadi fue <em>más suave</em> que el movimiento nacional. En 2026 hay nueve comunidades con resultado publicado (oficial salvo indicación):</p>
+<div id="tbl-e-regions" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[24,11,11,11,43]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-e-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;1: Los nueve resultados de 2026 localizados, contra la referencia de 2025 del Ministerio [cap. 3].
+</figcaption>
+<div aria-describedby="tbl-e-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Comunidad</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026</th>
+<th style="text-align: right;">Δ</th>
+<th>Base del dato</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Asturias</td>
+<td style="text-align: right;">5.49</td>
+<td style="text-align: right;">6.62</td>
+<td style="text-align: right;"><span class="math inline">\(+1.13\)</span></td>
+<td>presentados (76.9 % aprobados)</td>
+</tr>
+<tr class="even">
+<td>Madrid</td>
+<td style="text-align: right;">5.65</td>
+<td style="text-align: right;">6.70</td>
+<td style="text-align: right;"><span class="math inline">\(+1.05\)</span></td>
+<td>etiquetas de gráfico, un decimal</td>
+</tr>
+<tr class="odd">
+<td>Castilla-La Mancha</td>
+<td style="text-align: right;">5.86</td>
+<td style="text-align: right;">6.80</td>
+<td style="text-align: right;"><span class="math inline">\(+0.94\)</span></td>
+<td>presentados, n = 1 781</td>
+</tr>
+<tr class="even">
+<td>Cataluña</td>
+<td style="text-align: right;">6.04</td>
+<td style="text-align: right;">6.84</td>
+<td style="text-align: right;"><span class="math inline">\(+0.80\)</span></td>
+<td>estudiantes aptos («aptes»), n = 8 021</td>
+</tr>
+<tr class="odd">
+<td>Comunitat Valenciana</td>
+<td style="text-align: right;">5.89</td>
+<td style="text-align: right;">6.40</td>
+<td style="text-align: right;"><span class="math inline">\(+0.51\)</span></td>
+<td>presentados, n = 5 259</td>
+</tr>
+<tr class="even">
+<td>Andalucía</td>
+<td style="text-align: right;">5.69</td>
+<td style="text-align: right;">5.86</td>
+<td style="text-align: right;"><span class="math inline">\(+0.17\)</span></td>
+<td>presentados</td>
+</tr>
+<tr class="odd">
+<td>Extremadura</td>
+<td style="text-align: right;">6.09</td>
+<td style="text-align: right;">5.27</td>
+<td style="text-align: right;"><span class="math inline">\(-0.82\)</span></td>
+<td>prensa</td>
+</tr>
+<tr class="even">
+<td>Canarias (ULL + ULPGC)</td>
+<td style="text-align: right;">5.08</td>
+<td style="text-align: right;">4.25</td>
+<td style="text-align: right;"><span class="math inline">\(-0.83\)</span></td>
+<td>presentados, n = 1 395</td>
+</tr>
+<tr class="odd">
+<td>País Vasco</td>
+<td style="text-align: right;">5.47</td>
+<td style="text-align: right;">3.99</td>
+<td style="text-align: right;"><span class="math inline">\(-1.48\)</span></td>
+<td>presentados, n = 2 066</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-e-regions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig03_regions_2026_vs_2025.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: 2025 → 2026 por comunidad: círculo hueco 2025, relleno 2026; rojo bajó, verde subió.
+</figcaption>
+</figure>
+</div>
+<p>Seis comunidades subieron bajo el mismo modelo nacional y en el mismo año; tres bajaron. Una causa nacional no puede producir signos opuestos el mismo año, de modo que <strong>el modelo competencial puede a lo sumo describir 2025; no explica 2026</strong> [cap. 3, cap. 6 H1]. Las ocho comunidades restantes no han publicado nada; el cubo de 2026 del Ministerio se espera en junio de 2027.</p>
+</section>
+<section id="el-año-de-referencia-decide-el-relato" class="level3">
+<h3 class="anchored" data-anchor-id="el-año-de-referencia-decide-el-relato">El año de referencia decide el relato</h3>
+<p>El marco interanual oculta algo que el cubo del Ministerio muestra con claridad en cuanto cada comunidad se mide contra su propia norma 2015–2019 [cap. 6, «What you compare against»]:</p>
+<ul>
+<li><strong>2020–2024 fue una meseta, no un declive.</strong> Las nueve comunidades con resultado en 2026 estuvieron entre <span class="math inline">\(+0.5\)</span> y <span class="math inline">\(+1.05\)</span> por encima de su norma prepandémica todos los años de 2020 a 2024 (2022–24: <span class="math inline">\(+0.62\)</span>, <span class="math inline">\(+0.53\)</span>, <span class="math inline">\(+0.50\)</span>) y volvieron a ella en 2025 de un solo paso.</li>
+<li><strong>La meseta estuvo en todas las materias.</strong> Aplicado a todas las materias del cubo (17 comunidades, cada materia contra su propia norma), Matemáticas II estuvo entre <span class="math inline">\(+0.5\)</span> y <span class="math inline">\(+1.0\)</span> por encima, Química entre <span class="math inline">\(+0.6\)</span> y <span class="math inline">\(+0.9\)</span>, Biología entre <span class="math inline">\(+0.2\)</span> y <span class="math inline">\(+0.5\)</span>, Historia entre <span class="math inline">\(+0.3\)</span> y <span class="math inline">\(+0.7\)</span>, Lengua entre <span class="math inline">\(+0.2\)</span> y <span class="math inline">\(+0.5\)</span>; en 2025 todas las materias de ciencias volvieron a unos <span class="math inline">\(\pm 0.2\)</span> de su norma (Física <span class="math inline">\(-0.06\)</span>, Matemáticas II <span class="math inline">\(+0.11\)</span>, Química <span class="math inline">\(+0.20\)</span>, Biología <span class="math inline">\(-0.21\)</span>), mientras Historia conservó casi todo su ascenso (<span class="math inline">\(+0.53\)</span>). La «caída» de 2025 fue el final simultáneo de un régimen común a todas las materias.</li>
+<li><strong>Así pues, 2025 fue un retorno a la normalidad, no un desplome.</strong> Medidas desde la norma prepandémica, las nueve comunidades terminan 2026 en <span class="math inline">\(+0.02\)</span> — España está donde estaba hace una década —, pero ese promedio esconde una dispersión de dos puntos: Madrid <span class="math inline">\(+1.02\)</span>, Castilla-La Mancha <span class="math inline">\(+0.86\)</span>, Cataluña <span class="math inline">\(+0.63\)</span>, Andalucía y Asturias <span class="math inline">\(+0.48\)</span>, Valencia <span class="math inline">\(+0.34\)</span> por encima de su norma; Extremadura <span class="math inline">\(-0.78\)</span>, Canarias <span class="math inline">\(-0.86\)</span> y <strong>País Vasco <span class="math inline">\(-1.91\)</span></strong> por debajo.</li>
+</ul>
+<div id="fig-e-frames" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-frames-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig17_reference_frames.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-frames-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Las nueve comunidades y Euskadi contra sus propias referencias 2015–2019 (a), y los mismos datos medidos de cinco maneras (b).
+</figcaption>
+</figure>
+</div>
+<p>La consecuencia para la hipótesis de la reforma es precisa: las primeras pruebas LOMLOE llegaron el mismo año en que terminó la meseta, y nada en la serie de la PAU separa ambas cosas. La reforma coincide con un retorno a la norma común a todas las materias; no explica el resultado vasco de 2026, que es del que trata este informe.</p>
+</section>
+</section>
+<section id="la-forma-del-desplome" class="level2">
+<h2 class="anchored" data-anchor-id="la-forma-del-desplome">La forma del desplome</h2>
+<p>Euskadi publica tres números resumen; las dos universidades canarias publican histogramas completos y son la imagen empírica más próxima del mismo suceso [cap. 4].</p>
+<div id="tbl-e-canarias" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-e-canarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;2: Los histogramas canarios, leídos de los cuadros de mando de la ULL y la ULPGC (oficial).
+</figcaption>
+<div aria-describedby="tbl-e-canarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Universidad, junio</th>
+<th style="text-align: right;">Ejercicios</th>
+<th style="text-align: right;">Media</th>
+<th style="text-align: right;">% &lt; 2</th>
+<th style="text-align: right;">% &lt; 5</th>
+<th style="text-align: right;">% en [5, 6)</th>
+<th style="text-align: right;">% ≥ 9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ULL 2024</td>
+<td style="text-align: right;">731</td>
+<td style="text-align: right;">5.60</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">36.8</td>
+<td style="text-align: right;">17.5</td>
+<td style="text-align: right;">9.8</td>
+</tr>
+<tr class="even">
+<td>ULL 2025</td>
+<td style="text-align: right;">796</td>
+<td style="text-align: right;">4.92</td>
+<td style="text-align: right;">19.1</td>
+<td style="text-align: right;">46.6</td>
+<td style="text-align: right;">16.2</td>
+<td style="text-align: right;">8.9</td>
+</tr>
+<tr class="odd">
+<td>ULL 2026</td>
+<td style="text-align: right;">683</td>
+<td style="text-align: right;">4.08</td>
+<td style="text-align: right;">25.2</td>
+<td style="text-align: right;">61.5</td>
+<td style="text-align: right;">11.9</td>
+<td style="text-align: right;">3.1</td>
+</tr>
+<tr class="even">
+<td>ULPGC 2024</td>
+<td style="text-align: right;">796</td>
+<td style="text-align: right;">6.15</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">32.0</td>
+<td style="text-align: right;">12.6</td>
+<td style="text-align: right;">16.1</td>
+</tr>
+<tr class="odd">
+<td>ULPGC 2025</td>
+<td style="text-align: right;">758</td>
+<td style="text-align: right;">5.25</td>
+<td style="text-align: right;">14.0</td>
+<td style="text-align: right;">45.4</td>
+<td style="text-align: right;">13.3</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+<tr class="even">
+<td>ULPGC 2026</td>
+<td style="text-align: right;">712</td>
+<td style="text-align: right;">4.41</td>
+<td style="text-align: right;">22.6</td>
+<td style="text-align: right;">57.2</td>
+<td style="text-align: right;">12.8</td>
+<td style="text-align: right;">4.9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-e-shape" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-shape-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig05_distributions.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-shape-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Izquierda: densidades de notas implicadas para Euskadi 2025 y 2026 (modelado). Derecha: histogramas observados de Tenerife, junio 2024–2026.
+</figcaption>
+</figure>
+</div>
+<p>Lo que muestran, y con lo que los agregados vascos son compatibles:</p>
+<ul>
+<li><strong>Canarias 2026 es el gemelo del caso vasco</strong>: ULL 4.08 / 38.5 % de aprobados / 25.2 % por debajo de 2 / 30 ceros; ULPGC 4.41 / 42.8 % / 22.6 % por debajo de 2 — frente al 3.99 / 39.8 % / 24.5 % con dos puntos o menos de Euskadi.</li>
+<li><strong>La distribución entera se desplazó hacia abajo.</strong> En los 187 pares comunidad-año del panel del Ministerio, la tasa de aprobados y la proporción en la banda alta son funciones casi deterministas de la media (<span class="math inline">\(r = 0.974\)</span> y <span class="math inline">\(0.961\)</span>). Ambas cohortes canarias caen sobre esa relación histórica y, en la medida menos dominada por el nivel — la proporción de <em>aprobados</em> que alcanza la banda 8–10 —, quedan ligeramente por encima. Nada adelgazó la parte alta de la cohorte respecto de su centro. Esto es evidencia contra una explicación composicional o de subgrupo, y no distingue una prueba más difícil de una corrección uniformemente más severa, que dejan la misma huella.</li>
+<li><strong>Se adelgazó la acumulación en la línea del aprobado.</strong> En la ULL, la proporción de ejercicios en [5, 6), donde habitualmente se redondean al alza los casos límite, pasó del 17.5 % (2024) y el 16.2 % (2025) al 11.9 % en 2026; en la ULPGC, que nunca tuvo la misma acumulación, apenas se movió (12.6 → 13.3 → 12.8 %). Si eso es deseable es una cuestión de política; que mueve la tasa de aprobados varios puntos es una cuestión empírica.</li>
+<li><strong>Para Euskadi la imagen es modelada, no observada.</strong> Una distribución Beta ajustada a la media, la tasa de aprobados y el recuento de ceros publicados da, para 2026, una densidad nula en el origen con moda cerca de 2.5, mediana 3.8, un 14.6 % de ejercicios en 7 o más (30 % en 2025) y un 2.1 % en 9 o más (5.9 %). Tres momentos no pueden separar una forma en J de una campana comprimida contra el suelo; sí excluyen un efecto de subgrupo pequeño. Solo el histograma observado de 2026, en bandas de un punto con ceros y dieces, sustituiría el modelo por datos.</li>
+</ul>
+<p>La estructura de bandas vasca, observada 2015–2025 (Ministerio), hace visible el paso de 2025 antes que el de 2026: la banda de suspensos osciló entre el 24.9 % y el 33.8 % en todos los años de 2016 a 2024 salvo 2021 (10.6 %), y fue del 37.7 % en 2025; la banda 9–10 osciló entre el 10.3 % y el 20.2 % en 2017–2024 salvo 2021 (36.0 %), y fue del 6.7 % en 2025.</p>
+</section>
+<section id="dentro-del-sistema-vasco" class="level2">
+<h2 class="anchored" data-anchor-id="dentro-del-sistema-vasco">Dentro del sistema vasco</h2>
+<section id="materias" class="level3">
+<h3 class="anchored" data-anchor-id="materias">Materias</h3>
+<p>El daño se concentra en el bloque científico-técnico [cap. 5]. Euskadi 2025 → 2026: <strong>Física <span class="math inline">\(-1.48\)</span>, Matemáticas II <span class="math inline">\(-1.67\)</span></strong>, Historia <span class="math inline">\(-0.83\)</span>, Euskara II <span class="math inline">\(-0.48\)</span>, Hª Filosofía <span class="math inline">\(-0.29\)</span>, Química <span class="math inline">\(-0.21\)</span>, Biología <span class="math inline">\(+0.15\)</span>, Lengua Castellana <span class="math inline">\(+0.03\)</span>. Cataluña muestra la imagen especular con la misma autoridad y la misma cohorte (Física <span class="math inline">\(+0.80\)</span>, Matemàtiques <span class="math inline">\(-1.94\)</span>); Madrid sube en ambas (Física <span class="math inline">\(+1.10\)</span> según sus propias etiquetas de gráfico, <span class="math inline">\(+1.05\)</span> contra la referencia del Ministerio de 2025; Matemáticas II <span class="math inline">\(+0.50\)</span>); Andalucía se divide (Física <span class="math inline">\(+0.17\)</span>, Matemáticas II <span class="math inline">\(-0.59\)</span>). El patrón materia-por-región es la firma del diseño y la corrección regionales, materia a materia, no la de un único modelo nacional.</p>
+<p>Lo mismo vale contra la propia historia de Euskadi. Respecto de sus normas 2015–2019, las Matemáticas II, la Química y la Biología vascas estuvieron entre <span class="math inline">\(+0.1\)</span> y <span class="math inline">\(+1.6\)</span> por encima durante 2021–2024, y en <span class="math inline">\(+0.27\)</span>, <span class="math inline">\(-0.01\)</span> y <span class="math inline">\(+0.31\)</span> en 2025; <strong>Física fue la única materia científica vasca claramente por debajo de su norma en 2025 (<span class="math inline">\(-0.39\)</span>)</strong>, un año antes del suceso de 2026. Cambie lo que cambie en la base científica vasca, la PAU lo ve solo en Física y solo desde 2025.</p>
+</section>
+<section id="las-notas-escolares-de-los-mismos-estudiantes" class="level3">
+<h3 class="anchored" data-anchor-id="las-notas-escolares-de-los-mismos-estudiantes">Las notas escolares de los mismos estudiantes</h3>
+<p>El informe <em>Resultados escolares 2024-25</em> de la Inspección da, para 2º de Bachillerato Física en todas las redes y modelos lingüísticos: <strong>4 541 estudiantes, 98.1 % de aprobados, media 7.09</strong> (pública 7.04, privada/concertada 7.15; modelos A/B/D 6.93/7.31/7.09; Araba 7.09, Bizkaia 7.11, Gipuzkoa 7.08) [cap. 5, oficial].</p>
+<div id="fig-e-school" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-school-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig10_school_vs_pau.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-school-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5: La misma materia medida tres veces: notas escolares de la cohorte 2024-25, PAU Física 2025 y PAU Física 2026.
+</figcaption>
+</figure>
+</div>
+<p>Tres consecuencias. Solo un 45–48 % de quienes cursan Física en 2º de Bachillerato se presenta a Física en la PAU (<span class="math inline">\(2\,189/4\,541\)</span> y <span class="math inline">\(2\,066/4\,541\)</span>), presumiblemente la mitad que necesita la ponderación para ingeniería y física. Incluso esa mitad autoseleccionada quedó 1.6 puntos por debajo de su nota escolar en 2025 y, si las notas escolares no se movieron, 3.1 puntos por debajo en 2026. La tasa de aprobados escolar es del 98 %; la del examen fue del 40 %. Sea lo que sea lo que midió la prueba de 2026, no es lo que certifica el profesorado de Física de Bachillerato. Los resultados escolares de 2025-26, previstos para los próximos meses, darán la cohorte emparejada.</p>
+</section>
+<section id="participación-convocatorias-grupos" class="level3">
+<h3 class="anchored" data-anchor-id="participación-convocatorias-grupos">Participación, convocatorias, grupos</h3>
+<p>La presentación sobre matriculados se mueve entre el 64 y el 84 % desde 2017 (84.3 % en 2025, la más alta de la década); la matrícula de 2026 no está publicada, de modo que la caída del 6 % en presentados (2 189 → 2 066) no puede separarse en matrícula y abstención. En el conjunto de España la población de Física creció un 30 % en la década (37 661 → 49 010 presentados), pero su <em>take-up</em> — la proporción de todos los candidatos de la PAU que se examina de Física — apenas se movió (0.222 en 2015, 0.241 en 2025) y, dentro de cada comunidad, no guarda relación con la media (<span class="math inline">\(r = -0.02\)</span>). Física no está reclutando visiblemente más abajo en la distribución [cap. 6, «Is the drift real?»].</p>
+<p>La convocatoria extraordinaria está <span class="math inline">\(1.85 \pm 0.86\)</span> puntos por debajo de la ordinaria en el conjunto de España 2015–2025; los tres valores de julio de 2026 localizados (Valencia 4.16, Castilla-La Mancha 3.97, Tenerife 3.27) se sitúan sobre esa relación. El resultado de julio de 2026 de la EHU es una tasa global de aprobados del 71.4 % sobre 1 332 presentados, sin desglose por materias (prensa).</p>
+<p>Las mujeres son el 30.6–36 % de la matrícula vasca de Física y, desde 2011, superan a los hombres todos los años salvo 2014, en <span class="math inline">\(+0.21\)</span> de media; los cuadros de mando canarios muestran el mismo signo en condiciones de desplome en 2026 (ULL 4.09 frente a 4.07; ULPGC 4.50 frente a 4.38). Las diferencias euskera/castellano de 2010–2022 son de unas décimas en ambos sentidos. Nada publicado sobre Física 2026 habla de lengua, red o sexo; el análisis de sesgo de la EHU de 2026 se hizo para Euskara II.</p>
+</section>
+</section>
+<section id="las-pruebas-mismas" class="level2">
+<h2 class="anchored" data-anchor-id="las-pruebas-mismas">Las pruebas mismas</h2>
+<p>La pregunta sobre la que giró el debate de julio — ¿eran competenciales las pruebas de las comunidades que subieron? — se respondió codificando todos los ejercicios y opciones de las dieciocho pruebas ordinarias de 2025 y 2026 de las nueve comunidades con resultado en 2026 (146 ítems) con los criterios competenciales de la EHU: contexto (nulo / decorativo / sustantivo), aplicación, explicación, lectura de gráficas, dibujo, evaluación, más estructura y puntuación. Un ítem competencial es el que tiene contexto sustantivo <em>y</em> una demanda de explicación o evaluación. Un segundo codificador repitió el ejercicio a ciegas en la auditoría: concordancia κ = 0.76 en la marca competencial, 0.83–1.00 en dibujo, lectura de gráficas, evaluación y explicación, 0.76 en aplicación y 0.61 en el código de contexto de tres niveles (cuya frontera 1/2 es el elemento menos fiable del esquema), y todas las direcciones de cambio 2025 → 2026 idénticas [caps. 11 y 13].</p>
+<div id="tbl-e-papers" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[22,12,22,24,20]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-e-papers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;3: Estructura y contenido competencial de las dieciocho pruebas, y la variación de la nota [cap. 11].
+</figcaption>
+<div aria-describedby="tbl-e-papers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 12%">
+<col style="width: 22%">
+<col style="width: 24%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Comunidad</th>
+<th style="text-align: right;">Δ media</th>
+<th style="text-align: right;">% optativo 2025 → 2026</th>
+<th style="text-align: right;">Puntos competenciales, % del valor esperado, 2025 → 2026</th>
+<th style="text-align: right;">Puntos competenciales obligatorios 2025 → 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Asturias</td>
+<td style="text-align: right;"><span class="math inline">\(+1.13\)</span></td>
+<td style="text-align: right;">100 → 100</td>
+<td style="text-align: right;">0 → 0</td>
+<td style="text-align: right;">0 → 0</td>
+</tr>
+<tr class="even">
+<td>Madrid</td>
+<td style="text-align: right;"><span class="math inline">\(+1.05\)</span></td>
+<td style="text-align: right;">75 → 75</td>
+<td style="text-align: right;">0 → 0</td>
+<td style="text-align: right;">0 → 0</td>
+</tr>
+<tr class="odd">
+<td>Castilla-La Mancha</td>
+<td style="text-align: right;"><span class="math inline">\(+0.94\)</span></td>
+<td style="text-align: right;">100 → 70</td>
+<td style="text-align: right;">0 → 20</td>
+<td style="text-align: right;">0 → 2.0</td>
+</tr>
+<tr class="even">
+<td>Cataluña</td>
+<td style="text-align: right;"><span class="math inline">\(+0.80\)</span></td>
+<td style="text-align: right;">50 → 50</td>
+<td style="text-align: right;">75 → 38</td>
+<td style="text-align: right;">5.0 → 0</td>
+</tr>
+<tr class="odd">
+<td>C. Valenciana</td>
+<td style="text-align: right;"><span class="math inline">\(+0.51\)</span></td>
+<td style="text-align: right;">85 → 80</td>
+<td style="text-align: right;">15 → 0</td>
+<td style="text-align: right;">1.5 → 0</td>
+</tr>
+<tr class="even">
+<td>Andalucía</td>
+<td style="text-align: right;"><span class="math inline">\(+0.17\)</span></td>
+<td style="text-align: right;">60 → 75</td>
+<td style="text-align: right;">0 → 0</td>
+<td style="text-align: right;">0 → 0</td>
+</tr>
+<tr class="odd">
+<td>Extremadura</td>
+<td style="text-align: right;"><span class="math inline">\(-0.82\)</span></td>
+<td style="text-align: right;">75 → 75</td>
+<td style="text-align: right;">0 → 0</td>
+<td style="text-align: right;">0 → 0</td>
+</tr>
+<tr class="even">
+<td>Canarias</td>
+<td style="text-align: right;"><span class="math inline">\(-0.83\)</span></td>
+<td style="text-align: right;">100 → 70</td>
+<td style="text-align: right;">0 → 0</td>
+<td style="text-align: right;">0 → 0</td>
+</tr>
+<tr class="odd">
+<td><strong>País Vasco</strong></td>
+<td style="text-align: right;"><span class="math inline">\(\mathbf{-1.48}\)</span></td>
+<td style="text-align: right;"><strong>75 → 50</strong></td>
+<td style="text-align: right;"><strong>25 → 62.5</strong></td>
+<td style="text-align: right;"><strong>2.5 → 5.0</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-e-exam" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-exam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig11_exam_content.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-exam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6: Variación de la media frente a (a) el cambio en puntos competenciales esperados, (b) el cambio en la optatividad, (c) el nivel competencial de 2026. Naranja bajó, rojo es Euskadi.
+</figcaption>
+</figure>
+</div>
+<p>Los hallazgos:</p>
+<ul>
+<li><strong>Ninguna de las seis comunidades que subieron aumentó el contenido competencial de su prueba.</strong> Asturias, Madrid y Andalucía no tuvieron ningún ejercicio competencial en ninguno de los dos años (los contextos asturianos son pintorescos y decorativos; el único ítem obligatorio madrileño de 2026 es una lectura de gráfica). Cataluña ya estaba plenamente contextualizada en 2025, como lo está desde hace una década, y no cambió de género. Valencia sustituyó su ítem obligatorio competencial de 2025 por otro más llano. Solo Castilla-La Mancha añadió un ítem obligatorio contextualizado (0 → 20 % de los puntos esperados) — y subió 0.94.</li>
+<li><strong>La prueba vasca es la única del conjunto que cambió de género</strong>, y lo hizo en tres ejes a la vez: contenido competencial del 25 % al 62.5 % de los puntos esperados, puntos competenciales obligatorios de 2.5 a 5, optatividad reducida a la mitad (75 % → 50 %) y un formato de subtareas granulares con el mayor número de criterios de corrección por ítem de las dieciocho pruebas (2.67; Cataluña 2.33).</li>
+<li><strong>Canarias recortó la opcionalidad sin añadir contenido competencial y también bajó.</strong> En el conjunto de las nueve comunidades, la variación de la nota correlaciona <span class="math inline">\(-0.47\)</span> con el cambio en puntos competenciales, <span class="math inline">\(+0.37\)</span> con el cambio en optatividad y <span class="math inline">\(-0.89\)</span> con el cambio en puntos contextualizados (n = 9; ninguna significativa por separado).</li>
+<li><strong>Carga de lectura.</strong> Contando solo el texto del enunciado (descontados criterios, soluciones y el bloque de instrucciones en euskera), la prueba vasca se alargó un <strong>45 %</strong>, de 1 335 a 1 940 palabras; Asturias, Madrid y Valencia acortaron las suyas y subieron; Extremadura, Canarias y País Vasco las alargaron y bajaron. En las ocho comunidades con pares archivados, la correlación con la variación de la nota es <span class="math inline">\(r = -0.905\)</span> (<span class="math inline">\(p = 0.002\)</span>). Dos cautelas: longitud y contenido competencial correlacionan a <span class="math inline">\(+0.90\)</span> (los ítems contextualizados son más largos, de modo que se trata en gran medida de una misma señal medida dos veces, con un recuento objetivo allí donde la codificación es un juicio), y la hipótesis surgió del conocimiento que el coordinador tenía de su propia prueba, por lo que el resultado es exploratorio por pequeño que sea su <span class="math inline">\(p\)</span>. La interacción que pretendía contrastar — pruebas largas que perjudican más a los lectores débiles — queda sin contrastar con ocho comunidades. La puntuación PISA de lectura del País Vasco cayó 72 puntos en la década hasta 2025 (491 → 419; distancia con España <span class="math inline">\(-4\)</span> → <span class="math inline">\(-32\)</span>), mucho más que la de ciencias.</li>
+</ul>
+</section>
+<section id="la-prueba-vasca-en-su-propia-historia" class="level2">
+<h2 class="anchored" data-anchor-id="la-prueba-vasca-en-su-propia-historia">La prueba vasca en su propia historia</h2>
+<p>El dosier contiene los 34 exámenes de Física de la EHU de 2010 a 2026 y el material de corrección que existe para ellos (criterios incorporados en los propios exámenes de 2012–2024 y solucionarios separados para 2025 y 2026; nada publicado para 2010–2011), el modelo de 2025 y la lista oficial EHU–Departamento de cuestiones teóricas [cap. 12, oficial; el relato de las decisiones no publicadas es testimonio].</p>
+<div id="fig-e-formats" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-formats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig14_ehu_formats_series.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-formats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7: La serie vasca con el formato de la prueba sombreado; abajo, los puntos otorgados por cuestiones teóricas de lista cerrada y la proporción optativa de la prueba.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Cuatro formatos desde 2010.</strong> 2010–2019: dos opciones completas A/B, cada una con dos problemas (3 pts) y dos cuestiones teóricas (2 pts). 2020–2024: el «cuatro de ocho» de la pandemia (2 problemas de 4, 2 cuestiones de 4), mantenido cinco años. 2025: cuatro problemas de 2.5, bloque A competencial y obligatorio, bloques B–D uno de dos, sin teoría. 2026: ejercicios 1 y 2 competenciales y obligatorios, 3 y 4 con elección entre dos.</li>
+<li><strong>El cuarenta por ciento de los puntos venía de una lista de títulos.</strong> Las 118 cuestiones teóricas de 2010–2024 reproducen literalmente títulos de una lista oficial cerrada de 22, y los 22 se preguntaron al menos una vez; la lista, con su guía de desarrollo, estaba en manos del profesorado y del profesorado corrector.</li>
+<li><strong>Un temario de facto.</strong> De los 146 problemas planteados entre 2010 y 2026, 18 de los 29 de gravitación de 2010–2024 son la órbita circular y 14 de los 15 de física moderna de esos años son el efecto fotoeléctrico (la excepción, un problema de de Broglie en julio de 2022); los cuatro de física moderna de 2025 también lo fueron, de modo que 18 de 19 hasta 2025 lo son; los espejos esféricos aparecieron por primera vez en junio de 2025; las ondas estacionarias y los niveles sonoros, en junio de 2026; un espectrómetro de masas, obligatorio, en julio de 2026; la energía y el defecto de masa nucleares, la relatividad y el efecto Doppler, nunca. La restricción del bloque E al efecto fotoeléctrico fue una decisión de coordinación de hace unos veinte años, ratificada por la reunión de profesorado de 2024 para la prueba de 2025 en contra de la propuesta del coordinador, y levantada para 2026 (testimonio).</li>
+<li><strong>Reglas de corrección.</strong> 2012–2024: cualitativas («se penalizará» la ausencia de unidades, los desarrollos puramente matemáticos, los resultados incoherentes; sin cuantías). 2025: unidades obligatorias en el resultado final; penalización lingüística de <span class="math inline">\(-0.1\)</span> a partir del tercer error (tope 1 punto) y hasta <span class="math inline">\(-0.5\)</span> por sintaxis; los errores conceptuales pesan más que los de cálculo. 2026: resolución simbólica primero; <span class="math inline">\(-0.1\)</span> por unidades, por errores reiterados de símbolo vectorial y por redondeo; los errores graves anulan el apartado; subapartados de 0.25 puntos; tabla de constantes en el examen. Ninguna de estas reglas es exclusiva: Canarias aplica la lista CRUE completa de <span class="math inline">\(-0.1\)</span> en 2025 y 2026 y también bajó; Valencia exige resolución simbólica (60/40) y subió; Extremadura tiene la misma regla ortográfica que la EHU de 2025 y bajó; Cataluña, Asturias y Andalucía descuentan 0.25 por error de unidades.</li>
+<li><strong>Cuánto vale la elección por sí sola</strong> (modelado: misma población, mismos ítems, dispersión por ítem de 0.2 puntos). La ganancia esperada por elegir la mejor opción es de <span class="math inline">\(+1.24\)</span> con el formato «cuatro de ocho» de 2020–24, <span class="math inline">\(+0.79\)</span> con el de 2025, <span class="math inline">\(+0.54\)</span> con el de 2010–19 y <span class="math inline">\(+0.53\)</span> con el de 2026. El recorte de 2025 a 2026 vale unos <span class="math inline">\(-0.26\)</span> del <span class="math inline">\(-1.48\)</span>; el formato 2020–24 fue el más generoso que ha tenido la prueba y coincide con las medias más altas de la serie.</li>
+</ul>
+<div id="fig-e-premium" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-premium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig15_selection_premium.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-premium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8: Prima de selección de cada formato de la EHU con la misma población y los mismos ítems (modelado).
+</figcaption>
+</figure>
+</div>
+<p>Leídos juntos, los dos pasos se comportan de manera distinta. <strong>El corte de 2025 fue el cambio estructural mayor</strong> (desaparición de la teoría, nueva estructura, primeras penalizaciones numéricas) y la cohorte vasca lo absorbió <em>mejor</em> que la media nacional (<span class="math inline">\(-0.62\)</span> frente a <span class="math inline">\(-0.81\)</span>). <strong>El paso de 2026 cambió menos sobre el papel y más en naturaleza</strong>: cada rasgo es una intensificación de 2025 — contenido competencial de un cuarto a la mitad de los puntos y de un ejercicio obligatorio a dos; elección de tres opciones binarias a dos; corrección de reglas cualitativas a una lista impresa de penalizaciones, simbólico primero y granularidad de 0.25 — más la apertura del temario de facto. Ningún elemento por separado es grande con las medidas disponibles (la prima de elección es un cuarto de punto; los temas nuevos estaban en apartados optativos; las reglas de corrección se comparten con comunidades que subieron). Lo que ninguna comunidad que subió hizo fue moverse en tipo de contenido, exposición, formato y corrección el mismo año, y encima de un corte de 2025 que los centros solo habían tenido un curso para absorber. El relato del coordinador aporta el mecanismo: un sistema escolar entrenado durante quince años en una prueba cuya teoría venía de una lista y cuyos problemas venían de una docena de plantillas tuvo que enseñar, para 2026, todo el bloque E y los rincones nunca preguntados de los bloques C y D, mientras sus estudiantes se encontraban con una mitad obligatoria que les pedía leer, juzgar y explicar en lugar de reconocer.</p>
+</section>
+<section id="las-hipótesis-con-veredicto" class="level2">
+<h2 class="anchored" data-anchor-id="las-hipótesis-con-veredicto">Las hipótesis, con veredicto</h2>
+<div id="tbl-e-hyp" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[24,14,62]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-e-hyp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4: Ordenación: H2 primero; H3 sin resolver y contrastable; H5 como fondo; H1 como coincidencia de 2025 con el final de la meseta; H4 no sostenida como efecto de cohorte específicamente vasco en la PAU; H6 no sostenida [cap. 6].
+</figcaption>
+<div aria-describedby="tbl-e-hyp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 14%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hipótesis</th>
+<th>Veredicto</th>
+<th>Fundamento</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>H1 El modelo competencial es el culpable</td>
+<td>Describe 2025 a lo sumo; no explica 2026</td>
+<td>Aplicado en las 17 comunidades los dos años; 14/17 bajaron en 2025, con Euskadi más suave que la media; 6 de 9 subieron en 2026. Además, 2025 fue el final de una meseta común a todas las materias, inseparable de la reforma en la serie de la PAU. La única valoración sistemática de la orientación competencial de las pruebas (Universitat Jaume I, seis comunidades, 2015–2025, publicada en <em>The Conversation</em>; no se ha localizado el artículo primario) sitúa a País Vasco y Cataluña entre los sistemas <em>más</em> competenciales antes de la reforma; Cataluña subió.</td>
+</tr>
+<tr class="even">
+<td>H2 La prueba vasca de 2026 fue más difícil o de otro tenor que su propia prueba de 2025 y que las de 2026 de las demás</td>
+<td>Compatible con todo; variable de primer orden</td>
+<td>Desplazamiento de toda la cohorte; daño limitado a Física y Matemáticas II; imagen especular catalana; única prueba del conjunto que cambió de género; tres ejes a la vez; carga de lectura <span class="math inline">\(+45\)</span> % y su correlación con la variación de la nota <span class="math inline">\(r = -0.905\)</span>; elección reducida a la mitad (≈ <span class="math inline">\(-0.26\)</span> por simulación). El paquete de julio señalaba además un problema de validez en la comparación energética del problema de gravitación de 2026.</td>
+</tr>
+<tr class="odd">
+<td>H3 Los tribunales corrigieron con más severidad</td>
+<td>Posible, no medido, reconocido por la EHU</td>
+<td>El rector informó de «variación significativa entre tribunales» en Física; la presentación del 6 de julio dio rangos por tribunal para Euskara (2.88–4.43), Lengua (5.80–6.92) e Inglés (6.65–7.56), pero no para Física. La forma de la distribución en el conjunto de la cohorte indica que la severidad, de haberla, fue general y no limitada a unos pocos tribunales. Solo la tabla de Física por tribunales lo resuelve.</td>
+</tr>
+<tr class="even">
+<td>H4 Cohorte más débil o de distinta composición</td>
+<td>Débil dentro de la PAU; real fuera de ella</td>
+<td>Los presentados bajaron un 6 % (matrícula no publicada); los mismos estudiantes mantuvieron Química y Biología; el <em>take-up</em> es plano; las cohortes canarias se sitúan sobre la relación histórica. Pero PISA muestra un declive vasco de una década (sección siguiente) que la PAU solo ve en Física y solo desde 2025.</td>
+</tr>
+<tr class="odd">
+<td>H5 El alumnado prepara menos Física porque las ponderaciones la hacen prescindible</td>
+<td>Motor lento plausible; no un detonante de 2026</td>
+<td>Es la hipótesis de los coordinadores canarios para su propio declive; encaja mejor con una erosión lenta que con una caída de 1.5 puntos; abordable mediante la tabla de ponderaciones y el horario.</td>
+</tr>
+<tr class="even">
+<td>H6 Sesgo de lengua o de red</td>
+<td>Sin evidencia en ningún sentido para Física</td>
+<td>Solo se hizo el análisis de sesgo de Euskara II; las diferencias de 2010–2022 son pequeñas y de ambos signos.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="la-cuestión-de-la-cohorte-y-lo-que-pisa-2025-dice-sobre-2027" class="level2">
+<h2 class="anchored" data-anchor-id="la-cuestión-de-la-cohorte-y-lo-que-pisa-2025-dice-sobre-2027">La cuestión de la cohorte y lo que PISA 2025 dice sobre 2027</h2>
+<p>Existe un instrumento corregido fuera del sistema vasco y alineable por cohorte de nacimiento: PISA evalúa a los de 15 años, que llegan a la PAU dos años después, aunque muestrea toda la cohorte de edad mientras que a Física se presenta alrededor de un cuarto de los candidatos de la PAU [cap. 6].</p>
+<div id="fig-e-pisa" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-pisa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig21_pisa_link.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-pisa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9: Ciencias, País Vasco y España, en todas las rondas PISA 2006–2025 (a); la brecha, con el año de PAU que alcanza cada cohorte (b); las tres cohortes dentro de la ventana del estudio (c).
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Una ventaja vasca consolidada en ciencias se convirtió en déficit hace una década.</strong> El País Vasco estuvo <span class="math inline">\(+6.2\)</span>, <span class="math inline">\(+6.4\)</span> y <span class="math inline">\(+9.2\)</span> puntos por encima de España en 2006, 2009 y 2012; entre 2012 y 2015 cayó 22.6 puntos mientras España caía 3.7; no se ha recuperado (<span class="math inline">\(-9.7\)</span> en 2015, <span class="math inline">\(+4.1\)</span> en 2018, <span class="math inline">\(-5.0\)</span> en 2022, indistinguibles entre sí dentro del error de muestreo). La ruptura está en la ronda de 2015, cinco años antes del cierre de los centros.</li>
+<li><strong>PISA 2025 (publicada el 8 de septiembre de 2026) es la cohorte que se examina en la PAU de 2027, y es la más débil registrada.</strong> Ciencias País Vasco 458.5 frente a España 477.1 y la OCDE 481.9; una brecha de <span class="math inline">\(-18.6 \pm 4.7\)</span>, casi el doble de la peor anterior; la proporción vasca en los niveles de rendimiento 5–6 cae del 3.32 % al 1.83 % (España, del 4.9 % al 4.2 %).</li>
+<li><strong>La PAU es mal detector de esto.</strong> La media vasca de Física se mantuvo cerca de su propia referencia hasta 2024; el emparejamiento cohorte a cohorte entre la brecha PISA y la medida de banda alta de la PAU coincide en un caso de tres, lo que es azar. Un debilitamiento de la base no tiene por qué verse en una materia cuyos examinandos proceden de lo alto de esa base — hasta que, como en 2025, se ve en una sola materia.</li>
+</ul>
+<div id="fig-e-2027" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-e-2027-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig23_pau2027.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-e-2027-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10: La serie vasca con dos escenarios para 2027; la barra es el término interanual, no un intervalo de confianza (a); el tamaño de cada contribución (b).
+</figcaption>
+</figure>
+</div>
+<p>Convertir PISA 2025 en una estimación de la PAU es aritmética, y la aritmética es el hallazgo. La caída vasca de 21 puntos PISA es 0.23 de una desviación típica estudiantil; trasladada uno a uno a la PAU y prorrateada sobre los dos años que separan las cohortes de 2025 y 2027, es un <strong>término de cohorte de <span class="math inline">\(-0.36\)</span> puntos</strong> (<span class="math inline">\(\pm 0.12\)</span> solo por el error de muestreo de PISA), o <span class="math inline">\(-0.18\)</span> medido desde la cohorte de 2026. Frente a eso, la desviación típica de la variación interanual de la propia media vasca (excluido 2026) es de 0.855 puntos, y 2026 por sí solo movió la media <span class="math inline">\(-1.48\)</span> con una prueba distinta — cuatro veces el término de cohorte.</p>
+<div id="tbl-e-2027" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-e-2027-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5: Dos escenarios para la PAU Física 2027 (modelado); la banda a dos años derivada solo de la variación interanual es de <span class="math inline">\(\pm 2.4\)</span> puntos en torno a cualquiera de ellos.
+</figcaption>
+<div aria-describedby="tbl-e-2027-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Si la prueba de 2027 se parece a</th>
+<th style="text-align: right;">Término de cohorte</th>
+<th style="text-align: right;">Estimación central</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>la prueba de 2025</td>
+<td style="text-align: right;"><span class="math inline">\(-0.36\)</span></td>
+<td style="text-align: right;"><strong>5.11</strong></td>
+</tr>
+<tr class="even">
+<td>la prueba de 2026</td>
+<td style="text-align: right;"><span class="math inline">\(-0.18\)</span></td>
+<td style="text-align: right;"><strong>3.81</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><strong>La PAU de 2027 no es algo que PISA prediga; es algo que deciden la prueba de 2027 y su esquema de corrección</strong>, con la cohorte aportando un empujón hacia abajo entre cuatro y siete veces menor que esa decisión. De ahí se siguen dos usos prácticos: conviene suponer una cohorte algo más débil que la de 2025 y bastante más que la media de la década, y diseñar la prueba con eso en mente y no contra una cohorte recordada; y, cuando llegue el resultado de 2027, unos <span class="math inline">\(-0.36\)</span> son la parte que no debe atribuirse a la prueba, y todo lo que exceda de eso es la parte que hay que explicar.</p>
+</section>
+<section id="lo-que-la-evidencia-no-establece-y-cómo-se-verificó" class="level2">
+<h2 class="anchored" data-anchor-id="lo-que-la-evidencia-no-establece-y-cómo-se-verificó">Lo que la evidencia no establece, y cómo se verificó</h2>
+<p>El dosier se auditó antes de redactar este informe [cap. 13]: se reejecutaron todos los <em>scripts</em> desde las fuentes originales, se recalculó de forma independiente cada número de cada capítulo, se rederivó cada figura, se recodificaron las pruebas a ciegas y se releyó la interpretación paso a paso. Se retiraron tres afirmaciones interpretativas de una versión anterior (que la meseta de la pandemia hubiera <em>reconfigurado</em> la distribución — la elevó; que Euskadi mostrara un giro temprano distintivo en una medida condicional — otras cuatro comunidades muestran lo mismo; que la PAU y PISA cayeran al mismo ritmo — los registros son escalones, no pendientes) y se corrigieron unos cuarenta errores de dato y de hecho. Todo lo anterior es la versión auditada.</p>
+<p>Lo que queda realmente abierto:</p>
+<ul>
+<li><strong>H2 y H3 no pueden separarse con datos publicados.</strong> Una prueba más difícil y una corrección uniformemente más severa dejan la misma huella en toda la cohorte. La tabla de Física por tribunales (que la EHU calculó) las separa en un solo paso.</li>
+<li><strong>La distribución vasca de 2026 es modelada.</strong> Solo el histograma observado diría si la cohorte vasca, como las canarias, se desplazó sin reconfigurarse.</li>
+<li><strong>No se sabe qué parte de la prueba de 2026 costó los puntos.</strong> Si se perdieron (i) en los dos ejercicios competenciales obligatorios y no en los optativos, (ii) en las subtareas de explicar/evaluar y no en los cálculos, (iii) por acumulación de penalizaciones de <span class="math inline">\(-0.1\)</span> y apartados anulados, o (iv) en los temas recién examinados — cada caso tiene un remedio distinto para 2027, y solo los dos primeros justificarían tocar el diseño competencial. Las notas por ítem de una muestra de ejercicios lo deciden.</li>
+<li><strong>Varias cifras proceden de prensa</strong> (Extremadura 5.27; los valores por materia de Asturias; las cifras de julio de la EHU) y deberían confirmarse en fuente oficial antes de citarlas hacia afuera.</li>
+</ul>
+</section>
+<section id="datos-que-conviene-solicitar-por-orden-de-valor" class="level2">
+<h2 class="anchored" data-anchor-id="datos-que-conviene-solicitar-por-orden-de-valor">Datos que conviene solicitar, por orden de valor</h2>
+<ol type="1">
+<li><strong>Física por tribunal, 2025 y 2026</strong>: <span class="math inline">\(n_j\)</span>, <span class="math inline">\(\bar{x}_j\)</span>, <span class="math inline">\(s_j\)</span> y la composición por centros de los ejercicios de cada tribunal. Separa H2 de H3 en una sola tabla.</li>
+<li><strong>El histograma completo de notas de Física, 2024–2026</strong>, en bandas de un punto con ceros y dieces, como publican rutinariamente la ULL y la ULPGC. Sustituye el modelo por datos.</li>
+<li><strong>Física en julio de 2026</strong>: presentados, aprobados, media — si la prueba de julio estuvo calibrada como la de junio.</li>
+<li><strong>Estadísticas de revisión de Física 2026</strong>: solicitudes, proporción de subidas, variación media (publicadas para cuatro materias, no para la de media más baja).</li>
+<li><strong>Física por sexo, lengua y territorio para 2023–2026</strong>, los desgloses que los informes anuales incluyeron hasta 2022.</li>
+<li><strong>Notas por ejercicio</strong> (cuatro ejercicios, opciones a/b, subapartados) para una muestra de exámenes de 2026 — la evidencia que distingue «la prueba fue difícil» de «la prueba fue irresoluble», y lo que la subcomisión canaria había previsto para 2026.</li>
+</ol>
+</section>
+<section id="palancas-de-diseño-para-2027-que-los-datos-ya-informan" class="level2">
+<h2 class="anchored" data-anchor-id="palancas-de-diseño-para-2027-que-los-datos-ya-informan">Palancas de diseño para 2027 que los datos ya informan</h2>
+<p>Ninguna de ellas es una recomendación de abandonar el modelo competencial, que la evidencia no incrimina: las pruebas más competenciales de España (las catalanas, desde hace una década) están en comunidades que subieron. Son las palancas sobre las que el registro es informativo.</p>
+<ol type="1">
+<li><strong>Dosificar el despliegue.</strong> La única prueba que movió tipo de contenido, exposición, formato y corrección en un solo año es la que más bajó; el corte de 2025, tomado por separado, se absorbió mejor que la media española. Se cambie lo que se cambie para 2027, conviene cambiar un eje y anunciarlo; 2028 es el año en que el modelo debe desplegarse por completo.</li>
+<li><strong>Optatividad.</strong> La prueba de 2026 fijó los ejercicios 1 y 2 sin alternativa (proporción optativa del 75 % al 50 %). Por simulación, ese recorte vale alrededor de un cuarto de punto de nota esperada, y el formato 2020–24, el más generoso que ha tenido la prueba, coincide con las medias más altas de la serie. Recortar la elección no predice por sí solo la dirección: Canarias la recortó 30 puntos y bajó, y Castilla-La Mancha la recortó los mismos 30 puntos y subió 0.94 — pero Castilla-La Mancha dedicó el espacio recuperado a un único ítem obligatorio contextualizado y no cambió nada más. Una elección <em>dentro</em> de los ejercicios competenciales obligatorios — dos contextos, mismo saber básico — restituye la prima sin renunciar al género.</li>
+<li><strong>Exposición del temario.</strong> Durante quince años el bloque E significó el efecto fotoeléctrico, y los espejos, las ondas estacionarias y los decibelios nunca se preguntaron. Abrir el temario es legítimo; abrirlo sin anunciarlo el mismo año que todo lo demás no es lo que el registro aconseja. Una declaración explícita y publicada de qué saberes pueden sustentar un problema en 2027, con ítems modelo, es el instrumento más barato disponible.</li>
+<li><strong>Longitud del enunciado.</strong> El enunciado de 2026 fue un 45 % más largo que el de 2025, y la lectura de la cohorte vasca ha caído más que su nivel en ciencias. Conviene fijar una longitud objetivo por ejercicio, registrarla y limitar el contexto a lo que la física necesita.</li>
+<li><strong>Reglas de corrección.</strong> La lista de <span class="math inline">\(-0.1\)</span>, la resolución simbólica primero y los subapartados de 0.25 puntos se comparten, cada uno, con alguna comunidad que subió o bajó, de modo que ninguno queda incriminado por separado; su introducción conjunta en un solo año, sí. Dos cosas merecen decidirse explícitamente: si las cláusulas de error grave que anulan un apartado entero se aplican de manera uniforme entre tribunales (la tabla por tribunales lo mostrará), y si se quiere o no el redondeo de casos límite que los histogramas canarios muestran desaparecer en 2026 — vale entre 5 y 8 puntos de tasa de aprobados.</li>
+<li><strong>Calibrar contra un objetivo.</strong> El cubo del Ministerio da la distribución completa por bandas para cada materia, comunidad y año. Un objetivo para Física — por ejemplo la estructura vasca de 2017–2024, [0, 5) ≈ 30 %, [9, 10] ≈ 15 % — puede escribirse en las instrucciones de coordinación y comprobarse pilotando la prueba con una muestra de alumnado de Bachillerato, como ya hacen informalmente las ponencias de algunas comunidades.</li>
+<li><strong>Horario.</strong> Física se examina en la última franja del día de ciencias en varias comunidades; las actas de Tenerife lo señalan como factor. El horario vasco es un parámetro libre.</li>
+<li><strong>Doble corrección y revisión externa.</strong> La reforma gallega para 2027 (revisión por pares de las pruebas, doble corrección) es el modelo hacia el que apunta el lenguaje del «déficit de confianza» de julio; la equiparación Rasch de tribunales, como se practica en la Comunitat Valenciana, es su complemento estadístico.</li>
+<li><strong>Atribuir 2027 con honestidad.</strong> Registrar los parámetros de la prueba (longitud, proporción competencial, proporción optativa, reglas de penalización, temas) antes de la convocatoria, y leer el resultado contra el término de cohorte de PISA (<span class="math inline">\(-0.36\)</span>), de modo que la contribución de la prueba se mida en lugar de discutirse.</li>
+<li><strong>Mantener un conjunto de indicadores.</strong> Media, tasa de aprobados, proporciones por banda y la razón condicional de banda alta <span class="math inline">\(P(x \ge 8 \mid x \ge 5)\)</span> para cada año y por tribunal — esta última es la magnitud publicada menos dominada por el nivel, y es la que habría mostrado en 2025 que solo Física estaba por debajo de su norma.</li>
+</ol>
+</section>
+<section id="fuentes-y-reproducibilidad" class="level2">
+<h2 class="anchored" data-anchor-id="fuentes-y-reproducibilidad">Fuentes y reproducibilidad</h2>
+<p>El dosier archiva 166 ficheros fuente con sus <em>hashes</em> (presentaciones e informes anuales de la EHU, cubos EPAU del Ministerio 2015–2025, resultados escolares de la Inspección, cuadros de mando de la ULL, la ULPGC y la UCLM, las pruebas y documentos de corrección de 2025–2026 de nueve comunidades, el archivo completo de la EHU 2010–2026, la lista oficial de cuestiones teóricas y las tablas PISA del INEE 2006–2025). Cada número de este informe lo produce un <em>script</em> de <code>scripts/</code> a partir de esos ficheros y puede regenerarse con una orden; la auditoría del 19 de septiembre y sus informes por capas están en <code>logs/audit/</code>. Todo está en el sitio del dosier, capítulo a capítulo, con la edición de página única para leer sin conexión. Las figuras se reproducen tal como se generan en el dosier y conservan sus rótulos en inglés; los pies de figura de este informe están en castellano.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/14-briefing.html" class="pagination-link" aria-label="For the Admissions Office">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">For the Admissions Office</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/08-sources.html" class="pagination-link" aria-label="Sources">
+        <span class="nav-page-text">Sources</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from <code>scripts/</code></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
