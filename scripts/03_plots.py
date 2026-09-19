@@ -11,7 +11,12 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from matplotlib import rcParams
+
+# All styling — LaTeX text stack, sizes, colour registry — lives in the shared
+# module (ThesisFigures E1); this script defines none of its own.
+from plot_style import C, GRID, INK, INK2, MUTED, SURF, apply_style, bf, save as _save
+
+apply_style()
 
 ROOT = Path(__file__).resolve().parents[1]
 A = ROOT / "data" / "analysis"
@@ -19,19 +24,9 @@ P = ROOT / "plots"
 P.mkdir(exist_ok=True)
 R = json.load(open(A / "results.json", encoding="utf-8"))
 
-C = dict(blue="#2a78d6", orange="#eb6834", aqua="#1baf7a", yellow="#eda100", magenta="#e87ba4", green="#008300", violet="#4a3aa7", red="#e34948")
-INK, INK2, MUTED, GRID, SURF = "#0b0b0b", "#52514e", "#8a8983", "#e6e5e1", "#fcfcfb"
-rcParams.update({"font.family": "DejaVu Sans", "font.size": 9.5, "axes.edgecolor": GRID, "axes.labelcolor": INK2, "xtick.color": INK2,
-                 "ytick.color": INK2, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6, "axes.spines.top": False,
-                 "axes.spines.right": False, "axes.titleweight": "semibold", "axes.titlecolor": INK, "axes.titlesize": 10.5,
-                 "figure.facecolor": SURF, "axes.facecolor": SURF, "legend.frameon": False, "legend.fontsize": 8.5, "savefig.facecolor": SURF})
-
 
 def save(fig, name):
-    fig.savefig(P / f"{name}.png", dpi=200, bbox_inches="tight")
-    fig.savefig(P / f"{name}.svg", bbox_inches="tight")
-    plt.close(fig)
-    print("saved", name)
+    _save(fig, name, P, dpi=200)
 
 
 # ---------------------------------------------------------------- 1. Euskadi series
@@ -127,7 +122,8 @@ for ax, c in zip(axes.flat, order):
 axes[0, 0].plot([], [], color=MUTED, lw=1.3, label="Spain total")
 axes[0, 0].plot([], [], color=C["blue"], lw=1.9, label="Region (ministry 2015–25)")
 axes[0, 0].legend(loc="upper left", fontsize=7.5)
-fig.suptitle("Ordinary-sitting Physics mean, 2015–2026: ministry series plus the 2026 values located in this study", fontsize=11, fontweight="semibold", y=0.94)
+# fontweight is inert under usetex, so the emphasis comes from bf() (LaTeX \textbf).
+fig.suptitle(bf("Ordinary-sitting Physics mean, 2015–2026: ministry series plus the 2026 values located in this study"), fontsize=11, y=0.94)
 save(fig, "fig04_regional_small_multiples")
 
 # ---------------------------------------------------------------- 5. distributions

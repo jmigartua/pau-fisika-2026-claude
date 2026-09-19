@@ -555,9 +555,15 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-BLUE, ORANGE, AQUA, YELLOW, MAGENTA, VIOLET, RED = "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#4a3aa7", "#e34948"
+# Colours come from the shared registry so a hue means the same thing in every
+# figure of the study (ThesisFigures C1); styling is the shared module's job (E1).
+from plot_style import C, apply_style
+
+apply_style()
+
+BLUE, ORANGE, AQUA, YELLOW = C["blue"], C["orange"], C["aqua"], C["yellow"]
+MAGENTA, VIOLET, RED = C["magenta"], C["violet"], C["red"]
 GREY = "#6b7280"
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
 
 fig, axes = plt.subplots(1, 3, figsize=(13.5, 5.0))
 short = {"País Vasco": "Euskadi", "Comunitat Valenciana": "C. Valenciana", "Castilla-La Mancha": "C.-La Mancha"}

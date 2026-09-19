@@ -327,9 +327,15 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
-BLUE, ORANGE, AQUA, YELLOW, MAGENTA, VIOLET, RED = "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#4a3aa7", "#e34948"
+# Colours come from the shared registry so a hue means the same thing in every
+# figure of the study (ThesisFigures C1); styling is the shared module's job (E1).
+from plot_style import C, apply_style
+
+apply_style()
+
+BLUE, ORANGE, AQUA, YELLOW = C["blue"], C["orange"], C["aqua"], C["yellow"]
+MAGENTA, VIOLET, RED = C["magenta"], C["violet"], C["red"]
 GREY = "#6b7280"
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9.5, "axes.spines.top": False, "axes.spines.right": False})
 
 # Fig 13: sub-topic × year matrix of problems (ordinary + extraordinary pooled), counts 0–2+
 years = list(range(2010, 2027))

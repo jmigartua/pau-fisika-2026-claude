@@ -1,0 +1,119 @@
+year,sitting,slot,title_id,title
+2010,ord,A.C1,T22,"Magnetic field created by currents (wire, loop) — 2010 and 2019 only"
+2010,ord,A.C2,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2010,ord,B.C1,T02,Kepler's laws; derivation of the third law
+2010,ord,B.C2,T07,"Nuclear fission: mass defect, Einstein relation"
+2010,extra,A.C1,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2010,extra,A.C2,T15,One-dimensional wave motion: transverse and longitudinal waves
+2010,extra,B.C1,T17,Conservative fields; gravitational potential energy and potential; mechanical energy
+2010,extra,B.C2,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2011,ord,A.C1,T10,Force on a charge and on a conductor in a uniform magnetic field
+2011,ord,A.C2,T08,"Magnifier: description, image formation, magnification"
+2011,ord,B.C1,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2011,ord,B.C2,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2011,extra,A.C1,T11,Forces between parallel currents; definition of the ampere
+2011,extra,A.C2,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2011,extra,B.C1,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2011,extra,B.C2,T03,"Photoelectric effect: threshold frequency, work function"
+2012,ord,A.C1,T09,"Reflection and refraction: laws, refractive index, limit angle, total reflection"
+2012,ord,A.C2,T07,"Nuclear fission: mass defect, Einstein relation"
+2012,ord,B.C1,T02,Kepler's laws; derivation of the third law
+2012,ord,B.C2,T03,"Photoelectric effect: threshold frequency, work function"
+2012,extra,A.C1,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2012,extra,A.C2,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2012,extra,B.C1,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2012,extra,B.C2,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2013,ord,A.C1,T02,Kepler's laws; derivation of the third law
+2013,ord,A.C2,T07,"Nuclear fission: mass defect, Einstein relation"
+2013,ord,B.C1,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2013,ord,B.C2,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2013,extra,A.C1,T13,"Eye defects: myopia, hyperopia and their correction"
+2013,extra,A.C2,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2013,extra,B.C1,T15,One-dimensional wave motion: transverse and longitudinal waves
+2013,extra,B.C2,T03,"Photoelectric effect: threshold frequency, work function"
+2014,ord,A.C1,T08,"Magnifier: description, image formation, magnification"
+2014,ord,A.C2,T11,Forces between parallel currents; definition of the ampere
+2014,ord,B.C1,T18,Nuclear fusion
+2014,ord,B.C2,T12,Newton's law of gravitation; field of a point mass
+2014,extra,A.C1,T17,Conservative fields; gravitational potential energy and potential; mechanical energy
+2014,extra,A.C2,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2014,extra,B.C1,T02,Kepler's laws; derivation of the third law
+2014,extra,B.C2,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2015,ord,A.C1,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2015,ord,A.C2,T19,The alternator
+2015,ord,B.C1,T02,Kepler's laws; derivation of the third law
+2015,ord,B.C2,T14,The human eye as an optical system
+2015,extra,A.C1,T03,"Photoelectric effect: threshold frequency, work function"
+2015,extra,A.C2,T12,Newton's law of gravitation; field of a point mass
+2015,extra,B.C1,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2015,extra,B.C2,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2016,ord,A.C1,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2016,ord,A.C2,T07,"Nuclear fission: mass defect, Einstein relation"
+2016,ord,B.C1,T08,"Magnifier: description, image formation, magnification"
+2016,ord,B.C2,T12,Newton's law of gravitation; field of a point mass
+2016,extra,A.C1,T10,Force on a charge and on a conductor in a uniform magnetic field
+2016,extra,A.C2,T03,"Photoelectric effect: threshold frequency, work function"
+2016,extra,B.C1,T02,Kepler's laws; derivation of the third law
+2016,extra,B.C2,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2017,ord,A.C1,T07,"Nuclear fission: mass defect, Einstein relation"
+2017,ord,A.C2,T11,Forces between parallel currents; definition of the ampere
+2017,ord,B.C1,T16,Field lines and equipotential surfaces of the gravitational field
+2017,ord,B.C2,T09,"Reflection and refraction: laws, refractive index, limit angle, total reflection"
+2017,extra,A.C1,T02,Kepler's laws; derivation of the third law
+2017,extra,A.C2,T14,The human eye as an optical system
+2017,extra,B.C1,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2017,extra,B.C2,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2018,ord,A.C1,T18,Nuclear fusion
+2018,ord,A.C2,T17,Conservative fields; gravitational potential energy and potential; mechanical energy
+2018,ord,B.C1,T15,One-dimensional wave motion: transverse and longitudinal waves
+2018,ord,B.C2,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2018,extra,A.C1,T02,Kepler's laws; derivation of the third law
+2018,extra,A.C2,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2018,extra,B.C1,T20,Standing waves
+2018,extra,B.C2,T10,Force on a charge and on a conductor in a uniform magnetic field
+2019,ord,A.C1,T13,"Eye defects: myopia, hyperopia and their correction"
+2019,ord,A.C2,T03,"Photoelectric effect: threshold frequency, work function"
+2019,ord,B.C1,T06,Coulomb's law; field and potential of a point charge; field lines and equipotentials
+2019,ord,B.C2,T19,The alternator
+2019,extra,A.C1,T22,"Magnetic field created by currents (wire, loop) — 2010 and 2019 only"
+2019,extra,A.C2,T20,Standing waves
+2020,ord,B1,T09,"Reflection and refraction: laws, refractive index, limit angle, total reflection"
+2020,ord,B2,T02,Kepler's laws; derivation of the third law
+2020,ord,B3,T08,"Magnifier: description, image formation, magnification"
+2020,ord,B4,T16,Field lines and equipotential surfaces of the gravitational field
+2020,extra,B1,T12,Newton's law of gravitation; field of a point mass
+2020,extra,B2,T18,Nuclear fusion
+2020,extra,B3,T03,"Photoelectric effect: threshold frequency, work function"
+2020,extra,B4,T14,The human eye as an optical system
+2021,ord,B1,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2021,ord,B2,T13,"Eye defects: myopia, hyperopia and their correction"
+2021,ord,B3,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2021,ord,B4,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2021,extra,B1,T09,"Reflection and refraction: laws, refractive index, limit angle, total reflection"
+2021,extra,B2,T21,The photographic camera
+2021,extra,B3,T10,Force on a charge and on a conductor in a uniform magnetic field
+2021,extra,B4,T03,"Photoelectric effect: threshold frequency, work function"
+2022,ord,B1,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2022,ord,B2,T20,Standing waves
+2022,ord,B3,T14,The human eye as an optical system
+2022,ord,B4,T16,Field lines and equipotential surfaces of the gravitational field
+2022,extra,B1,T08,"Magnifier: description, image formation, magnification"
+2022,extra,B2,T11,Forces between parallel currents; definition of the ampere
+2022,extra,B3,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2022,extra,B4,T15,One-dimensional wave motion: transverse and longitudinal waves
+2023,ord,B1,T15,One-dimensional wave motion: transverse and longitudinal waves
+2023,ord,B2,T17,Conservative fields; gravitational potential energy and potential; mechanical energy
+2023,ord,B3,T05,"Faraday–Lenz laws: induced emf, direction of the current"
+2023,ord,B4,T07,"Nuclear fission: mass defect, Einstein relation"
+2023,extra,B1,T08,"Magnifier: description, image formation, magnification"
+2023,extra,B2,T11,Forces between parallel currents; definition of the ampere
+2023,extra,B3,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2023,extra,B4,T13,"Eye defects: myopia, hyperopia and their correction"
+2024,ord,B1,T09,"Reflection and refraction: laws, refractive index, limit angle, total reflection"
+2024,ord,B2,T10,Force on a charge and on a conductor in a uniform magnetic field
+2024,ord,B3,T03,"Photoelectric effect: threshold frequency, work function"
+2024,ord,B4,T01,"Radioactivity: types of emission, displacement laws, decay law"
+2024,extra,B1,T04,"Simple harmonic motion: equation, velocity, acceleration"
+2024,extra,B2,T02,Kepler's laws; derivation of the third law
+2024,extra,B3,T16,Field lines and equipotential surfaces of the gravitational field
+2024,extra,B4,T19,The alternator

@@ -1,0 +1,147 @@
+year,sitting,slot,sub,obligatory,desc,block,subtopic
+2010,ord,A.P1,G2,0,g(r) on a planet; escape and energy,Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2010,ord,A.P2,W1,0,harmonic wave in a pool,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2010,ord,B.P1,E1,0,"±q dipole on the axis: E, V, work",Electromagnetismo,"Point charges: field, potential, work"
+2010,ord,B.P2,O2,0,converging projector lens,Óptica,"Thin lenses (magnifier, projector, camera)"
+2010,extra,A.P1,G1,0,satellite in circular orbit,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2010,extra,A.P2,E2,0,"linear accelerator, protons in E",Electromagnetismo,"Charged particle in a uniform E field (plates, accelerator)"
+2010,extra,B.P1,E4,0,"B of an infinite wire, force",Electromagnetismo,"Field of straight currents, forces between wires"
+2010,extra,B.P2,M1,0,"solar light intensity, photons",Moderna,Photoelectric effect / photon energy
+2011,ord,A.P1,G1,0,ISS orbit (280 000 kg),Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2011,ord,A.P2,E2,0,"linear accelerator, uniform E",Electromagnetismo,"Charged particle in a uniform E field (plates, accelerator)"
+2011,ord,B.P1,E4,0,infinite wire B field,Electromagnetismo,"Field of straight currents, forces between wires"
+2011,ord,B.P2,M1,0,"5 mW laser, photons",Moderna,Photoelectric effect / photon energy
+2011,extra,A.P1,G2,0,"g(r) on a planet (g0/2, g0/4)",Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2011,extra,A.P2,W1,0,wave on a string,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2011,extra,B.P1,E1,0,two +q charges on an axis,Electromagnetismo,"Point charges: field, potential, work"
+2011,extra,B.P2,O1,0,light wave refraction,Óptica,"Refraction, Snell, total internal reflection"
+2012,ord,A.P1,G1,0,satellite 250 kg at 300 km,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2012,ord,A.P2,E3,0,electron 25 keV in B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2012,ord,B.P1,W2,0,"SHM, 20 g on a spring",Ondas,"Simple harmonic motion (spring–mass, energy)"
+2012,ord,B.P2,E2,0,charged particle in E,Electromagnetismo,"Charged particle in a uniform E field (plates, accelerator)"
+2012,extra,A.P1,G3,0,"Earth–Sun orbit, Kepler",Gravitación,"Elliptical orbits, Kepler, angular momentum"
+2012,extra,A.P2,W1,0,SHM-driven string wave,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2012,extra,B.P1,O2,0,"converging lens f = 20 cm, ray diagrams",Óptica,"Thin lenses (magnifier, projector, camera)"
+2012,extra,B.P2,E3,0,proton accelerated by E then in B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2013,ord,A.P1,W1,0,harmonic wave on a string,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2013,ord,A.P2,E4,0,two parallel wires: B and force,Electromagnetismo,"Field of straight currents, forces between wires"
+2013,ord,B.P1,O2,0,magnifier f = 5 cm,Óptica,"Thin lenses (magnifier, projector, camera)"
+2013,ord,B.P2,G1,0,satellite 500 kg launched,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2013,extra,A.P1,W2,0,"SHM, 100 g on a spring",Ondas,"Simple harmonic motion (spring–mass, energy)"
+2013,extra,A.P2,G2,0,"planet R = 3200 km, gravity",Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2013,extra,B.P1,E5,0,"circular loop in B(t), emf",Electromagnetismo,"Induction: loop or rod, emf, generator"
+2013,extra,B.P2,O1,0,water/oil refraction,Óptica,"Refraction, Snell, total internal reflection"
+2014,ord,A.P1,G1,0,satellite 1200 kg to 6500 km,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2014,ord,A.P2,M1,0,"photoelectric, Na 2.3 eV",Moderna,Photoelectric effect / photon energy
+2014,ord,B.P1,W2,0,"spring K = 5050 N/m, SHM",Ondas,"Simple harmonic motion (spring–mass, energy)"
+2014,ord,B.P2,E5,0,"square loop in B, induction",Electromagnetismo,"Induction: loop or rod, emf, generator"
+2014,extra,A.P1,G1,0,satellite 2000 kg,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2014,extra,A.P2,M1,0,photoelectric λ = 512 nm,Moderna,Photoelectric effect / photon energy
+2014,extra,B.P1,E3,0,proton and α in B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2014,extra,B.P2,O2,0,lens f = 20 cm,Óptica,"Thin lenses (magnifier, projector, camera)"
+2015,ord,A.P1,G1,0,Mars moons Deimos/Phobos,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2015,ord,A.P2,W2,0,SHM 0.5 kg on a spring,Ondas,"Simple harmonic motion (spring–mass, energy)"
+2015,ord,B.P1,M1,0,"photoelectric cell, W = 2.97e-19 J",Moderna,Photoelectric effect / photon energy
+2015,ord,B.P2,E1,0,system of point charges,Electromagnetismo,"Point charges: field, potential, work"
+2015,extra,A.P1,E3,0,charge moving in B (Lorentz),Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2015,extra,A.P2,W1,0,harmonic wave on a string,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2015,extra,B.P1,G1,0,satellite 500 kg orbit,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2015,extra,B.P2,O1,0,"flashlight into water, refraction",Óptica,"Refraction, Snell, total internal reflection"
+2016,ord,A.P1,G1,0,ISS at 340 km,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2016,ord,A.P2,W2,0,SHM 50 g on a spring,Ondas,"Simple harmonic motion (spring–mass, energy)"
+2016,ord,B.P1,E3,0,proton and electron in B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2016,ord,B.P2,M1,0,"photoelectric K, 300 nm",Moderna,Photoelectric effect / photon energy
+2016,extra,A.P1,G4,0,"projectile 1000 kg from the surface, escape",Gravitación,"Launch from the surface, maximum height, escape"
+2016,extra,A.P2,W1,0,transverse wave equation,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2016,extra,B.P1,E2,0,"parallel plates 40 cm, E field",Electromagnetismo,"Charged particle in a uniform E field (plates, accelerator)"
+2016,extra,B.P2,M1,0,photons 500 nm on a metal,Moderna,Photoelectric effect / photon energy
+2017,ord,A.P1,G2,0,Moon: g and escape,Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2017,ord,A.P2,W1,0,harmonic wave expression,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2017,ord,B.P1,O2,0,laboratory lens characterisation,Óptica,"Thin lenses (magnifier, projector, camera)"
+2017,ord,B.P2,E1,0,"charges 3 µC, −2 µC",Electromagnetismo,"Point charges: field, potential, work"
+2017,extra,A.P1,M1,0,UV 170 nm photoelectron,Moderna,Photoelectric effect / photon energy
+2017,extra,A.P2,E5,0,"sliding rod, motional emf",Electromagnetismo,"Induction: loop or rod, emf, generator"
+2017,extra,B.P1,W1,0,"transverse wave A = 4 cm, λ = 2 cm",Ondas,"Travelling harmonic wave (equation, v, phase)"
+2017,extra,B.P2,G1,0,equatorial-orbit satellite,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2018,ord,A.P1,E4,0,two parallel wires 10 cm,Electromagnetismo,"Field of straight currents, forces between wires"
+2018,ord,A.P2,O1,0,"water tank with glass bottom, refraction",Óptica,"Refraction, Snell, total internal reflection"
+2018,ord,B.P1,G1,0,satellite 25 000 kg around a planet,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2018,ord,B.P2,M1,0,"two lights on a metal, photoelectric",Moderna,Photoelectric effect / photon energy
+2018,extra,A.P1,E1,0,two fixed charges 6 m apart,Electromagnetismo,"Point charges: field, potential, work"
+2018,extra,A.P2,W1,0,"string end moved, wave",Ondas,"Travelling harmonic wave (equation, v, phase)"
+2018,extra,B.P1,G4,0,probe launched from a planet,Gravitación,"Launch from the surface, maximum height, escape"
+2018,extra,B.P2,O2,0,converging lens,Óptica,"Thin lenses (magnifier, projector, camera)"
+2019,ord,A.P1,W1,0,wave equation,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2019,ord,A.P2,E3,0,electron 2e6 m/s into B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2019,ord,B.P1,G1,0,Venus: mass and orbit,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2019,ord,B.P2,M1,0,EM radiation 2e-7 m on a metal,Moderna,Photoelectric effect / photon energy
+2019,extra,A.P1,G2,0,"g(r) on a planet (g0/3, g0/5)",Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2019,extra,A.P2,M1,0,"5 mW laser 633 nm, photons",Moderna,Photoelectric effect / photon energy
+2019,extra,B.P1,E1,0,two +q charges on OY,Electromagnetismo,"Point charges: field, potential, work"
+2019,extra,B.P2,W1,0,circular pool wave R = 7 m,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2020,ord,A1,E4,0,two parallel wires I2 = 4 I1,Electromagnetismo,"Field of straight currents, forces between wires"
+2020,ord,A2,G1,0,satellite 2500 kg r = 3e4 km,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2020,ord,A3,E5,0,"square loop 5 cm, emf (three cases)",Electromagnetismo,"Induction: loop or rod, emf, generator"
+2020,ord,A4,O1,0,water/oil refraction,Óptica,"Refraction, Snell, total internal reflection"
+2020,extra,A1,W2,0,SHM,Ondas,"Simple harmonic motion (spring–mass, energy)"
+2020,extra,A2,E3,0,charge 1 µC in B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2020,extra,A3,W1,0,transverse wave on a string,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2020,extra,A4,O2,0,lens characterisation,Óptica,"Thin lenses (magnifier, projector, camera)"
+2021,ord,A1,G1,0,satellite around a planet,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2021,ord,A2,W1,0,wave speed on a string,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2021,ord,A3,O2,0,converging lens 30 cm,Óptica,"Thin lenses (magnifier, projector, camera)"
+2021,ord,A4,E5,0,circular loop 20 cm in B,Electromagnetismo,"Induction: loop or rod, emf, generator"
+2021,extra,A1,G1,0,satellite 700 kg,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2021,extra,A2,E1,0,three charges,Electromagnetismo,"Point charges: field, potential, work"
+2021,extra,A3,W1,0,y = 0.6 sin(18πt − 2πx),Ondas,"Travelling harmonic wave (equation, v, phase)"
+2021,extra,A4,O1,0,"ray 600 nm, refraction",Óptica,"Refraction, Snell, total internal reflection"
+2022,ord,A1,G1,0,spacecraft trapped in a circular orbit,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2022,ord,A2,E1,0,charges +10 µC / −40 µC,Electromagnetismo,"Point charges: field, potential, work"
+2022,ord,A3,W1,0,transverse wave,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2022,ord,A4,O1,0,media A/B refraction,Óptica,"Refraction, Snell, total internal reflection"
+2022,extra,A1,G2,0,Uranus g = 8.9,Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2022,extra,A2,W1,0,harmonic wave on a string,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2022,extra,A3,O2,0,"diverging lens, object 7 cm",Óptica,"Thin lenses (magnifier, projector, camera)"
+2022,extra,A4,M5,0,electron 25 eV: de Broglie and photon wavelengths,Moderna,de Broglie wavelength
+2023,ord,A1,G4,0,Io (Jupiter): rocket maximum height,Gravitación,"Launch from the surface, maximum height, escape"
+2023,ord,A2,E1,0,three point charges at vertices,Electromagnetismo,"Point charges: field, potential, work"
+2023,ord,A3,O2,0,converging lens f = 0.5 m,Óptica,"Thin lenses (magnifier, projector, camera)"
+2023,ord,A4,O1,0,"ray f = 5e14 Hz, refraction",Óptica,"Refraction, Snell, total internal reflection"
+2023,extra,A1,G2,0,100 kg body on Mars (g = 3.7),Gravitación,"g on a planet's surface or at height (mass, radius, g(r))"
+2023,extra,A2,W1,0,transverse wave λ = 1.5 m,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2023,extra,A3,M1,0,silver work function 4.73 eV,Moderna,Photoelectric effect / photon energy
+2023,extra,A4,O1,0,"swimmer sees an object, refraction",Óptica,"Refraction, Snell, total internal reflection"
+2024,ord,A1,G1,0,crewed ship 2500 kg at 315 km,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2024,ord,A2,E1,0,+1 µC / +2 µC on a 3 m segment,Electromagnetismo,"Point charges: field, potential, work"
+2024,ord,A3,O1,0,red light in a 30 cm glass slab,Óptica,"Refraction, Snell, total internal reflection"
+2024,ord,A4,M1,0,photons 150 nm on a metal plate,Moderna,Photoelectric effect / photon energy
+2024,extra,A1,G1,0,Earth-like exoplanet orbit,Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2024,extra,A2,E3,0,proton in B,Electromagnetismo,Charged particle in a uniform B field (circular motion)
+2024,extra,A3,W2,0,SHM mechanical energy,Ondas,"Simple harmonic motion (spring–mass, energy)"
+2024,extra,A4,M1,0,"photons 500 nm, threshold",Moderna,Photoelectric effect / photon energy
+2025,ord,A1,G1,1,"Galileo satellite (competencial, obligatory)",Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2025,ord,B1,E4,0,two parallel wires 9 A / 15 A,Electromagnetismo,"Field of straight currents, forces between wires"
+2025,ord,B2,E1,0,"±5 nC charges: V, E",Electromagnetismo,"Point charges: field, potential, work"
+2025,ord,C1,O3,0,concave mirror f = 50 cm,Óptica,Spherical mirrors
+2025,ord,C2,W1,0,harmonic wave v = 400 m/s,Ondas,"Travelling harmonic wave (equation, v, phase)"
+2025,ord,D1,M1,0,"potassium 2.29 eV, photoelectric",Moderna,Photoelectric effect / photon energy
+2025,ord,D2,M1,0,"metal, two wavelengths, photoelectric",Moderna,Photoelectric effect / photon energy
+2025,extra,A1,G1,1,"SENER satellite orbit (competencial, obligatory)",Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2025,extra,B1,E5,0,coil 50 turns in changing B,Electromagnetismo,"Induction: loop or rod, emf, generator"
+2025,extra,B2,E1,0,"charges qA, qB (3:1), equilibrium",Electromagnetismo,"Point charges: field, potential, work"
+2025,extra,C1,O1,0,"monochromatic ray, refraction",Óptica,"Refraction, Snell, total internal reflection"
+2025,extra,C2,W2,0,SHM mechanical energy,Ondas,"Simple harmonic motion (spring–mass, energy)"
+2025,extra,D1,M1,0,400 nm on a cerium photocathode,Moderna,Photoelectric effect / photon energy
+2025,extra,D2,M1,0,"photoelectric, two wavelengths",Moderna,Photoelectric effect / photon energy
+2026,ord,1,G1,1,"Starlink headline: geostationary orbit, fall (competencial)",Gravitación,"Circular orbit / satellite (v, T, energies, escape from orbit)"
+2026,ord,2,E5,1,weather-station microgenerator (competencial),Electromagnetismo,"Induction: loop or rod, emf, generator"
+2026,ord,3a,W3,0,violin string standing waves + decibels,Ondas,"Standing waves (string, pipe)"
+2026,ord,3b,O2,0,projector lens choice,Óptica,"Thin lenses (magnifier, projector, camera)"
+2026,ord,4a,M1,0,"photoelectric, stopping potential, oxidised surface",Moderna,Photoelectric effect / photon energy
+2026,ord,4b,M2,0,C-14 dating of bones,Moderna,"Radioactive decay, half-life, dating"
+2026,extra,1,G3,1,"Mars probe: two orbits, Kepler check (competencial)",Gravitación,"Elliptical orbits, Kepler, angular momentum"
+2026,extra,2,E6,1,mass spectrometer (competencial),Electromagnetismo,Velocity selector / mass spectrometer
+2026,extra,3a,W2,0,"0.30 kg on a spring, Kmax = 15 J",Ondas,"Simple harmonic motion (spring–mass, energy)"
+2026,extra,3b,O2,0,"converging lens, object at 4f",Óptica,"Thin lenses (magnifier, projector, camera)"
+2026,extra,4a,M1,0,"500 nm on a metal, threshold 612 nm",Moderna,Photoelectric effect / photon energy
+2026,extra,4b,M2,0,Pu-239 decay,Moderna,"Radioactive decay, half-life, dating"

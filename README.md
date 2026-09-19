@@ -33,6 +33,16 @@ python3 scripts/01_build_ministry_panel.py && python3 scripts/02_analysis.py && 
 
 Python ≥ 3.10 with numpy, pandas, scipy, matplotlib; Quarto ≥ 1.4; no Jupyter needed (static includes).
 
+**A LaTeX installation is required for the figures.** Every figure is matplotlib with
+`text.usetex`, so all figure text is typeset by the same engine as the mathematics — the
+plotting scripts abort without `latex` and `dvipng` on `PATH`. All styling lives in
+`scripts/plot_style.py`; the three plotting scripts define none of their own. Check the
+toolchain with:
+
+```bash
+python3 -c "import shutil; print(all(map(shutil.which, ['latex','dvipng'])))"   # -> True
+```
+
 ## Headline
 
 Euskadi Física June 2026: mean 3.99, 39.8 % pass, 24.5 % at ≤ 2, 3.2 % zeros (N = 2 066). Nine communities have a 2026 Física mean: six rose (Asturias +1.13, Madrid +1.05, Castilla-La Mancha +0.94, Cataluña +0.80, C. Valenciana +0.51, Andalucía +0.17), three fell (Euskadi −1.48, Canarias −0.83, Extremadura −0.82). The 2025 fall was national (14 of 17 down, mean −0.81); the 2026 fall is regional. Canarias 2026 (ULL 4.08 / 38.5 %, ULPGC 4.41 / 42.8 %, with full histograms) is the Basque case's twin. The Basque cohort's school Física mark was 7.09 with 98 % passing.
