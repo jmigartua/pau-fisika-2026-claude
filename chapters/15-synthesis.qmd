@@ -215,11 +215,25 @@ Shorter is not easier. The verbs, the levels and the rubric are the same; what g
 
 ![**a** — each item's statement in 2025 and 2026 against the 2027 target band; the obligatory competency items are in red. **b** — the two reconstructions of the 2026 electromagnetic problem, which share only their endpoint. **c** — what the paper costs to read and to answer, and what the target would cost.](../plots/fig29_statement_budget.png){#fig-s-budget}
 
-Two facts that only appear when the paper is counted item by item, and that change what "shorter" has to mean.
+Three facts that only appear when the paper is counted item by item, and the third was found last and changes what "shorter" has to mean.
 
 **The length lives in the competency items, and it did in 2025 too.** In 2025 six statements ran 56 to 147 words and the seventh — A1, the single obligatory competency exercise — ran **403**. In 2026 there are two such exercises, A1 at 289 and B1 at **406**, and between them they carry half of everything a candidate reads.
 
-**A hundred words of the paper are not questions at all, and they are new.** The 2026 paper prints a sub-task or part weight **fifty-one** times, 103 words; the 2025 paper printed none, carrying only the global "2.5 puntos" in its instructions. The granular rubric is an improvement; printing it fifty-one times in the running text is not the only way to deliver it, and a margin column would cost nothing to read.
+**A hundred words of the paper are not questions at all, and they are new.** The 2026 paper prints a sub-task or part weight **fifty-one** times, 103 words; the 2025 paper printed none, carrying only the global "2.5 puntos" in its instructions.
+
+**And the length is not what the competency items cost. It is what the itemisation costs.** This is a correction to what this document said in its earlier version, and it is the most useful thing in it. Splitting both papers' statements into three parts — the narrative and context that the competency form requires, the text that states what to do, and the printed prices — gives this:
+
+| Per printed statement | Narrative and context | Demand text | Printed prices | Total |
+|---|---:|---:|---:|---:|
+| 2025 (7 printed) | 71 | 88 | 0 | 159 |
+| 2026 (6 printed) | **70** | **181** | **17** | 268 |
+| 2026 against 2025 | **99 %** | **206 %** | — | 169 % |
+
+: What the statements are made of, per printed statement [Ch. 6](06-interpretation.qmd#exposure-and-the-third-channel). {#tbl-s-stmt tbl-colwidths="[34,22,18,14,12]"}
+
+**The contextual narrative has not grown at all.** The demand text has more than doubled. The 2025 paper stated twenty plain numbered demands with no nesting; the 2026 paper states seventeen apartado lead-ins with thirty-six numbered sub-demands inside them, each with its own price. That is what marking in itemised quanta of 0.25 requires a paper to print, and our own reconstruction of the electromagnetic problem prices the same step at 66 words: 90 in the habitual style, 178 once competencial, **244 once *desglosado***, 408 as issued.
+
+So the two long items are long because they are the two that are both competencial **and** the most heavily itemised, and the counting above could not separate those. Separated, the competency form is not the expensive part.
 
 
 **The trajectory, and why the budget needs two tiers.** A competency item costs about 400 words in its first year and about 300 in its second. That is not a guess: block A entered the competency form in 2025 at **403** words and ran **289** in 2026; block B entered in 2026 at **406**, the same figure as A's first year. The target for both in 2027 is **250**, and A has already done most of that distance unaided.
@@ -232,6 +246,8 @@ Two facts that only appear when the paper is counted item by item, and that chan
 : What a competency item costs over its first years [Ch. 6](06-interpretation.qmd#statement-budget). {#tbl-s-traj tbl-colwidths="[34,22,22,22]"}
 
 Read that way, 2026 is not a paper that went wrong: it is a paper carrying one block at 400 and another at 300 in the same year, which is what the transition costs when blocks enter one at a time.
+
+**This changes where the 2027 words can come from, and it is the decision the meeting should leave with.** There is no 470 words of slack in a narrative already at 70 words a statement, so a target that assumes the compression will come from the contextualisation is assuming the hardest available route. The cheapest words on the paper are in the nesting and the printed prices — and taking them out gives back exactly the protection the itemisation was introduced to provide. Four routes, of which the dossier can price three in words and none in marks: compress the narrative (hard, and the slack is not there); flatten two levels of demand back to one (cheapest, and it returns partial credit to the corrector's discretion); **itemise in the criteria as now but print only the apartado and its total** (the only route that separates the two effects, and nobody has tested whether candidates use the printed weights at all); or keep everything and cap the deductions instead (does nothing for the length, but it is the only one of the four whose effect on marks this dossier has actually modelled). [Chapter 16](16-paradigm.qmd) sets all four out.
 
 But 250 for the competency items and 150–175 for everything else do not fit in one uniform band. Two competency items at 250 and four options at 150 make **1 100 words read**, a cut of 23 % from 1 431 — not the 972 a uniform band would give. Reaching 972 would need the options at 118, and they should not go that low: they are the next blocks due to enter the competency form, and every word taken out of them now has to be put back when they do. **The budget is therefore better stated in two tiers — competency items at or below 250, option items at or below 150 — with about 1 100 as the paper check.**
 
@@ -266,7 +282,7 @@ Ordered by what each would resolve, not by how easy it is.
 1. **The deduction tally, 2025 and 2026, for Física, Matemáticas II, Lengua Castellana and Euskara II.** Four counts: how many scripts lost the $0.2$ linguistic component; how many $-0.10$ deductions per script, by type; **how many scripts had at least one apartado voided for a grave error; and how many apartados were voided in those scripts**. The model says the 2026 result is reproduced by about twelve deductions per script and a cascading grave error in one script in six taking 85 % of it — the tally either finds those numbers or it does not. **This is the cheapest decisive request and the only one obtainable in days**: it collects nothing new, the subjects are already marked, and it can be answered from inside the university.
 2. **Sub-task marks for a stratified sample of 2026 scripts** (about 300, across tribunals). *Separates all four* unattributed components at once. Run it on B1 first, and run one comparison before any other: **b)'s three sub-tasks against c)'s first, per mark**. Both are the same three-step chain in a different configuration, so if the repetition worked as the scaffolding it was meant to be, c)1 scores above b)1–3; if it was a time tax on the longest statement in the paper, below. The parts must not be compared whole: half of c) is an evaluation sub-task with no analogue in b).
 3. **Física by tribunal, 2025 and 2026.** EHU computed this and published the equivalent for three other subjects. *Separates* tribunal severity, and shows whether what is visible in 2026 was already building in 2025.
-4. **The full Física histogram, 2024 to 2026**, in one-point bands with the zero and ten counts.
+4. **The full Física histogram, 2024 to 2026**, in one-point bands with the zero and ten counts. **This is now more decisive than its position suggests.** Euskadi published a band table every year through 2025 and has not published one for 2026. Refitted to the four figures that *are* published, seven readings of the marking regime agree on all four and differ on the share at or above nine by a factor of twenty-three — from 0.3 % if the penalties fell evenly on everybody to 6.1 % if they concentrated on the weakest. That one number decides whether the marking accounts for 87 % of the Física-specific fall or 59 % of it. It is a by-product of a tabulation already run.
 5. **Option take-up in 2026**, and the mean of each option.
 6. **July 2026 Física**: presented, passed, mean. **Revision statistics for Física 2026.**
 7. **School mark and PAU mark, paired, for the last five cohorts.** The only instrument available for what a cohort gains or loses between fifteen and eighteen.
@@ -280,6 +296,8 @@ Requests 1, 2 and 3 are the office's to make of EHU. Nothing in the 2027 paper d
 | | Who | By when |
 |---|---|---|
 | The statement budget and the five rules | the Física coordination | before the coordination instructions go to schools |
+| **Where the 2027 words come from**: narrative, nesting, printed prices, or none | the Física coordination | with the budget — it is the same decision |
+| **Whether the $-0.10$ deductions stay uncapped** while the linguistic ones are capped at 1.00 | the Física coordination | before the 2027 criteria are circulated |
 | Física and Matemáticas II read together | the admissions office | as soon as it can be convened |
 | Request 1, the deduction tally | the office, of EHU | now — it is a week's work |
 | Requests 2 and 3 | the office, of EHU | before the 2027 paper is written, if they are to inform it |
@@ -288,8 +306,10 @@ Requests 1, 2 and 3 are the office's to make of EHU. Nothing in the 2027 paper d
 
 : Who decides what, and when. {#tbl-s-who tbl-colwidths="[46,26,28]"}
 
+Two of those rows are new in this edition and they are the same decision seen twice. The itemisation into quanta of 0.25 protects candidates and generates the reading load; the uncapped deductions then fall on the numerical half of the paper in units of 0.10, which is not a multiple of the quantum the protection is built from. Neither is wrong on its own. This dossier can price the reading load in words and the deductions in marks, and it cannot price what the protection is worth to a candidate — which is why these are decisions and not recommendations.
+
 The one recommendation that costs nothing and changes everything about 2027's interpretability: **record the paper's parameters before the sitting** — statement length per problem, competency share, optional share, penalty rules, topics examined — and read the result against them. Whatever 2027 produces, it will then be a measurement rather than another argument.
 
 # Sources
 
-Everything above is in the dossier, and every figure in it can be traced to a URL, a page number or a dashboard filter [Ch. 8](08-sources.qmd). The dossier's own history, including the three audits and everything they withdrew, is in [Chapter 13](13-audit.qmd). The statement analysis draws on the coordination presentation of 18 September 2026 (*USaP Física 2027*, Arretxe, López-Eiguren and Igartua), whose slides 8 to 11 reconstruct the 2026 electromagnetic problem along two routes. Its word counts and this study's agree to within three per cent on the paper total, and from one to six per cent item by item. The author of this dossier is a co-author of that presentation, which is why its design account is treated here as testimony and its counts were recomputed from the archived paper.
+Everything above is in the dossier, and every figure in it can be traced to a URL, a page number or a dashboard filter [Ch. 8](08-sources.qmd). The dossier's own history, including the seven rounds of audit and everything they withdrew — this edition withdraws the account of where the reading load came from, and the claim that the marking regime was understated — is in [Chapter 13](13-audit.qmd). The design decisions behind the 2026 paper, with what each was for and what it cost, are in [Chapter 16](16-paradigm.qmd). The statement analysis draws on the coordination presentation of 18 September 2026 (*USaP Física 2027*, Arretxe, López-Eiguren and Igartua), whose slides 8 to 11 reconstruct the 2026 electromagnetic problem along two routes. Its word counts and this study's agree to within three per cent on the paper total, and from one to six per cent item by item. The author of this dossier is a co-author of that presentation, which is why its design account is treated here as testimony and its counts were recomputed from the archived paper.

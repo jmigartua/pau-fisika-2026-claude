@@ -216,11 +216,25 @@ Más corto no es más fácil. Los verbos, los niveles y la rúbrica son los mism
 
 ![**a** — el enunciado de cada ítem en 2025 y 2026 frente a la banda objetivo de 2027; los ejercicios competenciales obligatorios, en rojo. **b** — las dos reconstrucciones del problema electromagnético de 2026, que solo comparten el punto final. **c** — lo que la prueba cuesta leer y responder, y lo que costaría el objetivo.](../plots/fig29_statement_budget.png){#fig-ss-budget}
 
-Dos hechos que solo aparecen al contar la prueba ítem a ítem, y que cambian lo que «más corto» tiene que significar.
+Tres hechos que solo aparecen al contar la prueba ítem a ítem, y el tercero se encontró el último y cambia lo que «más corto» tiene que significar.
 
 **La longitud vive en los ejercicios competenciales, y ya vivía ahí en 2025.** En 2025 seis enunciados iban de 56 a 147 palabras y el séptimo — A1, el único ejercicio competencial obligatorio — tenía **403**. En 2026 hay dos ejercicios así, A1 con 289 y B1 con **406**, y entre los dos suman la mitad de todo lo que lee un candidato.
 
-**Cien palabras de la prueba no son preguntas, y son nuevas.** La de 2026 imprime el peso de un apartado o subapartado **cincuenta y una** veces, 103 palabras; la de 2025 no imprimía ninguno, y llevaba solo el global «2.5 puntos» en las instrucciones. La rúbrica granular es una mejora; imprimirla cincuenta y una veces dentro del texto corrido no es la única manera de darla, y una columna al margen no costaría nada de leer.
+**Cien palabras de la prueba no son preguntas, y son nuevas.** La de 2026 imprime el peso de un apartado o subapartado **cincuenta y una** veces, 103 palabras; la de 2025 no imprimía ninguno, y llevaba solo el global «2.5 puntos» en las instrucciones.
+
+**Y la longitud no es lo que cuestan los ítems competenciales. Es lo que cuesta el desglose.** Esta es una corrección a lo que decía la versión anterior de este documento, y es lo más útil que hay en él. Separando los enunciados de ambas pruebas en tres partes — la narrativa y el contexto que exige la forma competencial, el texto que dice qué hay que hacer, y los precios impresos — sale esto:
+
+| Por enunciado impreso | Narrativa y contexto | Texto de demandas | Precios impresos | Total |
+|---|---:|---:|---:|---:|
+| 2025 (7 impresos) | 71 | 88 | 0 | 159 |
+| 2026 (6 impresos) | **70** | **181** | **17** | 268 |
+| 2026 frente a 2025 | **99 %** | **206 %** | — | 169 % |
+
+: De qué están hechos los enunciados, por enunciado impreso [cap. 6](06-interpretation.qmd#exposure-and-the-third-channel). {#tbl-ss-stmt tbl-colwidths="[34,22,18,14,12]"}
+
+**La narrativa contextual no ha crecido nada.** El texto de las demandas más que se ha duplicado. La prueba de 2025 enunciaba veinte demandas numeradas sin anidar; la de 2026 enuncia diecisiete entradillas de apartado con treinta y seis demandas numeradas dentro, cada una con su precio. Eso es lo que obliga a imprimir una corrección desglosada en cuantos de 0.25, y nuestra propia reconstrucción del problema electromagnético cifra ese mismo paso en 66 palabras: 90 en el estilo habitual, 178 al hacerlo competencial, **244 al desglosarlo**, 408 tal como salió.
+
+Así que los dos ítems largos son largos porque son los dos que son a la vez competenciales **y** los más desglosados, y el recuento anterior no podía separar esas dos cosas. Separadas, la forma competencial no es la cara.
 
 
 **La trayectoria, y por qué el presupuesto necesita dos niveles.** Un ejercicio competencial cuesta unas 400 palabras en su primer año y unas 300 en el segundo. No es una conjetura: el bloque A entró en la forma competencial en 2025 con **403** palabras y en 2026 tuvo **289**; el bloque B entró en 2026 con **406**, la misma cifra que el primer año de A. El objetivo para ambos en 2027 son **250**, y A ya ha recorrido casi todo ese camino por sí solo.
@@ -233,6 +247,8 @@ Dos hechos que solo aparecen al contar la prueba ítem a ítem, y que cambian lo
 : Lo que cuesta un ejercicio competencial en sus primeros años [cap. 6](06-interpretation.qmd#statement-budget). {#tbl-ss-traj tbl-colwidths="[34,22,22,22]"}
 
 Leído así, 2026 no es una prueba que saliera mal: es una prueba que lleva un bloque a 400 y otro a 300 el mismo año, que es lo que cuesta la transición cuando los bloques entran de uno en uno.
+
+**Esto cambia de dónde pueden salir las palabras de 2027, y es la decisión con la que debería salir la reunión.** No hay 470 palabras de holgura en una narrativa que ya está en 70 palabras por enunciado, así que un objetivo que suponga que el recorte saldrá de la contextualización está suponiendo el camino más difícil de los disponibles. Las palabras más baratas están en el anidamiento y en los precios impresos — y quitarlas devuelve exactamente la protección que el desglose se introdujo para dar. Cuatro caminos, de los que este informe puede cifrar tres en palabras y ninguno en décimas: comprimir la narrativa (difícil, y la holgura no está ahí); aplanar dos niveles de demanda a uno (el más barato, y devuelve la calificación parcial a la discreción del corrector); **desglosar en los criterios como ahora pero imprimir solo el apartado y su total** (el único camino que separa los dos efectos, y nadie ha comprobado si el alumnado usa los pesos impresos); o dejarlo todo y topar en cambio las penalizaciones (no hace nada por la longitud, pero es el único cuyo efecto sobre las notas este informe ha modelado). [El capítulo 16](16-paradigm.qmd) plantea los cuatro.
 
 Pero 250 para los competenciales y 150–175 para todo lo demás no caben en una sola banda uniforme. Dos competenciales a 250 y cuatro optativos a 150 dan **1 100 palabras leídas**, un recorte del 23 % desde 1 431 — no las 972 que daría una banda uniforme. Llegar a 972 exigiría los optativos a 118, y no deberían bajar tanto: son los siguientes bloques que entrarán en la forma competencial, y cada palabra que se les quite ahora habrá que devolvérsela entonces. **Por eso el presupuesto se enuncia mejor en dos niveles — competenciales hasta 250, optativos hasta 150 — con unas 1 100 como comprobación de la prueba entera.**
 
@@ -267,7 +283,7 @@ Ordenado por lo que resolvería cada cosa, no por lo fácil que sea.
 1. **El recuento de penalizaciones de 2025 y 2026 en Física, Matemáticas II, Lengua Castellana y Euskara II.** Cuatro cuentas: cuántos ejercicios perdieron los $0.2$ del componente lingüístico; cuántos descuentos de $-0.10$ por ejercicio, por tipo; **cuántos ejercicios tuvieron al menos un apartado anulado por error grave; y cuántos apartados se anularon en esos ejercicios**. El modelo dice que el resultado de 2026 se reproduce con unas doce penalizaciones por ejercicio y un error grave en uno de cada seis que se lleva el 85 % del examen: el recuento encuentra esos números o no. **Es la petición decisiva más barata y la única obtenible en días**: no recoge nada nuevo, las materias ya están corregidas y puede responderse desde dentro de la universidad.
 2. **Notas por subapartado de una muestra estratificada de exámenes de 2026** (unos 300, repartidos entre tribunales). *Separa los cuatro* componentes no atribuidos a la vez. Hágase primero en B1, y antes que ninguna otra, una comparación: **los tres subapartados de b) frente al primero de c), por punto**. Los dos son la misma cadena de tres pasos en otra configuración, de modo que si la repetición funcionó como el andamiaje que pretendía ser, c)1 puntúa por encima de b)1–3; si fue un impuesto de tiempo sobre el enunciado más largo de la prueba, por debajo. Los apartados no deben compararse enteros: la mitad de c) es un subapartado de valoración sin análogo en b).
 3. **Física por tribunal, 2025 y 2026.** La EHU lo calculó y publicó el equivalente de otras tres materias. *Separa* la severidad por tribunal, y muestra si lo visible en 2026 ya se gestaba en 2025.
-4. **El histograma completo de Física de 2024 a 2026**, en bandas de un punto y con los recuentos de ceros y dieces.
+4. **El histograma completo de Física de 2024 a 2026**, en bandas de un punto y con los recuentos de ceros y dieces. **Esto es ahora más decisivo de lo que su posición sugiere.** Euskadi publicó una tabla por tramos todos los años hasta 2025 y no ha publicado la de 2026. Reajustadas a las cuatro cifras que **sí** están publicadas, siete lecturas del régimen de corrección coinciden en las cuatro y difieren en la proporción de nueves o más por un factor de veintitrés: del 0.3 % si las penalizaciones cayeron por igual sobre todos al 6.1 % si se concentraron en los más débiles. Ese único número decide si la corrección explica el 87 % de la caída específica de Física o el 59 %. Es un subproducto de una tabulación que ya está hecha.
 5. **La elección por opción en 2026**, y la media de cada una.
 6. **Física de julio de 2026**: presentados, aprobados, media. **Estadísticas de revisión de Física 2026.**
 7. **Nota escolar y nota de PAU, emparejadas, de las últimas cinco cohortes.** El único instrumento disponible para lo que una cohorte gana o pierde entre los quince y los dieciocho.
@@ -281,6 +297,8 @@ Las peticiones 1, 2 y 3 las ha de cursar la dirección ante la EHU. Nada del dis
 | | Quién | Para cuándo |
 |---|---|---|
 | El presupuesto de palabras y las cinco reglas | la coordinación de Física | antes de que salgan las instrucciones a los centros |
+| **De dónde salen las palabras de 2027**: narrativa, anidamiento, precios impresos, o de ninguno | la coordinación de Física | con el presupuesto: es la misma decisión |
+| **Si las penalizaciones de $-0.10$ siguen sin tope** mientras las lingüísticas están topadas en 1.00 | la coordinación de Física | antes de circular los criterios de 2027 |
 | Leer Física y Matemáticas II juntas | la dirección de acceso | en cuanto pueda convocarse |
 | Petición 1, el recuento de penalizaciones | la dirección, ante la EHU | ya: es una semana de trabajo |
 | Peticiones 2 y 3 | la dirección, ante la EHU | antes de escribir la prueba de 2027, si han de informarla |
@@ -289,8 +307,10 @@ Las peticiones 1, 2 y 3 las ha de cursar la dirección ante la EHU. Nada del dis
 
 : Quién decide qué, y cuándo. {#tbl-ss-who tbl-colwidths="[46,26,28]"}
 
+Dos de esas filas son nuevas en esta edición y son la misma decisión vista dos veces. El desglose en cuantos de 0.25 protege al alumnado y genera la carga de lectura; las penalizaciones sin tope caen después sobre la mitad numérica de la prueba en unidades de 0.10, que no es múltiplo del cuanto con el que está construida la protección. Ninguna de las dos está mal por separado. Este informe puede cifrar la carga de lectura en palabras y las penalizaciones en décimas, y no puede cifrar lo que la protección vale para un estudiante — por eso son decisiones y no recomendaciones.
+
 La única recomendación que no cuesta nada y lo cambia todo en la interpretabilidad de 2027: **registrar los parámetros de la prueba antes de la convocatoria** — longitud del enunciado por problema, proporción competencial, proporción optativa, reglas de penalización, temas examinados — y leer el resultado contra ellos. Sea cual sea el resultado de 2027, será entonces una medida y no otra discusión.
 
 # Fuentes
 
-Todo lo anterior está en el dosier, y cada cifra suya puede rastrearse hasta una URL, una página o un filtro de cuadro de mando [cap. 8](08-sources.qmd). La historia del propio dosier, incluidas las tres auditorías y todo lo que retiraron, está en [el capítulo 13](13-audit.qmd). El análisis del enunciado se apoya en la presentación de coordinación del 18 de septiembre de 2026 (*USaP Física 2027*, Arretxe, López-Eiguren e Igartua), cuyas diapositivas 8 a 11 reconstruyen el problema electromagnético de 2026 por dos rutas. Sus recuentos de palabras y los de este estudio coinciden con menos de un tres por ciento de diferencia en el total de la prueba, y entre el uno y el seis por ciento ítem a ítem. El autor de este dosier es coautor de esa presentación, razón por la cual su relato de diseño se trata aquí como testimonio y sus recuentos se han recalculado desde la prueba archivada.
+Todo lo anterior está en el dosier, y cada cifra suya puede rastrearse hasta una URL, una página o un filtro de cuadro de mando [cap. 8](08-sources.qmd). La historia del propio dosier, incluidas las siete rondas de auditoría y todo lo que retiraron — esta edición retira el relato de dónde venía la carga de lectura, y la afirmación de que el régimen de corrección estaba subestimado —, está en [el capítulo 13](13-audit.qmd). Las decisiones de diseño tras la prueba de 2026, con para qué era cada una y qué costó, están en [el capítulo 16](16-paradigm.qmd). El análisis del enunciado se apoya en la presentación de coordinación del 18 de septiembre de 2026 (*USaP Física 2027*, Arretxe, López-Eiguren e Igartua), cuyas diapositivas 8 a 11 reconstruyen el problema electromagnético de 2026 por dos rutas. Sus recuentos de palabras y los de este estudio coinciden con menos de un tres por ciento de diferencia en el total de la prueba, y entre el uno y el seis por ciento ítem a ítem. El autor de este dosier es coautor de esa presentación, razón por la cual su relato de diseño se trata aquí como testimonio y sus recuentos se han recalculado desde la prueba archivada.

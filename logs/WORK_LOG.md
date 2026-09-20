@@ -509,3 +509,28 @@ defaulting to the previous behaviour; regression-checked by re-running the whole
 diffing `penalty_regime.json` — every published value identical, only the new keys added.
 Figure 18's vertical pitch is now computed from each step's wrapped line count instead of
 being a constant, after the third collision between a step's text and the next heading.
+
+
+## 20 September, seventh round (continued) — propagating it into the two reports
+
+Josu asked whether the round-seven results were in both reports for the chief. They were in the
+*marking* passages of each and **not** in the passages about the papers, the 2027 levers, the
+requests or the decisions — which is where a reader of either report looks. Four places per
+language were missing:
+
+- **ch 15 §"Where the reading actually is"** still said the length lives in the competency
+  items. Now carries the three-part decomposition table (per printed statement: narrative
+  71→70, demand text 88→181, prices 0→17) and the four routes to the 2027 target.
+- **ch 15 request 4** (the histogram) now states that it is the decisive one: 0.3 % to 6.1 %
+  at or above nine across seven refitted readings, a factor of 23, deciding 87 % against 59 %.
+- **ch 15 §"What has to be decided"** gained two rows: where the 2027 words come from, and
+  whether the −0.10 deductions stay uncapped while the linguistic ones are capped at 1.00.
+- **ch 14 §"The papers"** now opens with the correction; **lever 4** names where the slack is
+  and is not (there is no 470 words of slack in a narrative totalling 418); **lever 8** gained
+  the three concrete marking questions (uncapped deductions against other communities' caps,
+  0.10 against a 0.25 quantum, penalties falling on the exposed half); **requests 10 and 11**
+  added, with 11 flagged as the second exception to the ordering.
+- Spanish versions of all of the above; EN/ES numeric parity re-checked across sixteen quantities.
+
+Recorded in ch 13 as a new species of failure: a finding correctly written into the analysis and
+incompletely propagated to the documents that will be read.
