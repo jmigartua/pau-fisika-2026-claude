@@ -458,6 +458,24 @@ The second is that the $+45$ % of the reading-load section and the $+39.5$ % her
 
 The third is a small migration the convention cannot help creating. The 2025 paper prints its constants inside the three statements that need them, 21 words in all; the 2026 paper moved every constant to one table for the whole paper, which this convention counts as furniture. About twenty words therefore cross the statement/furniture line for reasons of layout alone. It is small enough not to change anything above, and it is the kind of thing that would matter if the two papers had been more alike.
 
+
+### The arithmetic the target implies
+
+One consequence of the item-level count deserves to be stated on its own, because it is the hardest part of the 2027 plan and it is invisible in the paper total.
+
+A competency item, in the two Basque papers that have one, costs about 350 to 400 words: A1 was 403 in 2025 and the two of 2026 are 289 and 406, a mean of 348. The four optional items of 2026 average 184. The 2027 budget is 972 words over six statements. Those three numbers do not fit together.
+
+| If the four options average | they cost | leaving for the two competency items | each | which is a cut on them of |
+|---:|---:|---:|---:|---:|
+| 184 (as in 2026) | 736 | 236 | 118 | 66 % |
+| 165 | 660 | 312 | 156 | 55 % |
+| 150 | 600 | 372 | 186 | 46 % |
+| 140 | 560 | 412 | 206 | 41 % |
+
+: What the 972-word budget costs each kind of item. {#tbl-budget-arith tbl-colwidths="[22,14,28,14,22]"}
+
+So the target is not reachable by trimming narrative from the options. It requires the **competency items to come down by something between 40 and 55 per cent** — from about 350 words each to under 200 — on precisely the two items that carry the demand the reform introduced, while the options also give up twenty to thirty words each. That is the real content of the 2027 decision, and it is why the three rules that change the *architecture* of a competency item — scaffold once rather than twice, put the criteria in the rubric, draw the set-up — matter more than the two that trim prose. The coordination's own compressed version of B1, at 154 words, shows the target is attainable; its own warning about that version — that it is the hardest to understand because everything intermediate is left to the candidate — is why the asymmetric form, and not the compressed one, is what the budget should buy.
+
 ### Four versions of one problem
 
 The 2026 electromagnetic problem, B1, was not written in one pass, and the coordination has reconstructed the passes. As issued it is 408 words on its own count. Stripped of its narrative it is 287. Written in the compressed form the competency model would license, 154 — 170 if it also asks the candidate to draw the two configurations. Written the way the block was examined before the competency requirement, 153 with the set-up in prose and **113 with the set-up as a figure**.
