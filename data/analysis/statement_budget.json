@@ -1,0 +1,117 @@
+{
+  "convention": "Spanish statement of each item, page furniture and point weights removed; the whole-file convention of script 18 additionally counts the instruction header, the constants table, the block headings and the weights",
+  "items": {
+    "2025": {
+      "A1": 403,
+      "B1": 147,
+      "B2": 110,
+      "C1": 56,
+      "C2": 107,
+      "D1": 107,
+      "D2": 96
+    },
+    "2026": {
+      "A1": 289,
+      "B1": 406,
+      "C1": 145,
+      "C2": 232,
+      "D1": 158,
+      "D2": 201
+    }
+  },
+  "paper": {
+    "p2025": {
+      "read": 1026,
+      "answered_lo": 665,
+      "answered_hi": 764,
+      "n_printed": 7,
+      "whole_file": 1335,
+      "whole_here": 1382,
+      "furniture": 356
+    },
+    "p2026": {
+      "read": 1431,
+      "answered_lo": 998,
+      "answered_hi": 1128,
+      "n_printed": 6,
+      "whole_file": 1940,
+      "whole_here": 1829,
+      "furniture": 398
+    },
+    "growth_statements_pct": 39.473684210526315,
+    "growth_whole_file_pct": 45.31835205992509
+  },
+  "biggest_item": {
+    "label": "B1",
+    "words": 406,
+    "share_of_read": 28.371767994409502,
+    "share_of_marks": 25.0,
+    "note": "the electromagnetic problem, the one the coordination expanded deliberately because the saber básico entered the competency paradigm for the first time"
+  },
+  "furniture": {
+    "2025": {
+      "preamble_total": 307,
+      "preamble_basque_and_title": 116,
+      "preamble_spanish": 191,
+      "block_headings": 101,
+      "n_weight_annotations": 0,
+      "weight_words": 0
+    },
+    "2026": {
+      "preamble_total": 262,
+      "preamble_basque_and_title": 80,
+      "preamble_spanish": 182,
+      "block_headings": 54,
+      "n_weight_annotations": 51,
+      "weight_words": 103
+    }
+  },
+  "whole_file_same_tokenisation": {
+    "y2025": 1382,
+    "y2026": 1829,
+    "note": "counted here with this script's own whitespace tokenisation so that the furniture is a difference of like with like; script 18's word-token counts are 1335 and 1940"
+  },
+  "constants_migration": {
+    "datos_blocks_2025": 3,
+    "datos_blocks_2026": 0,
+    "words_in_2025_statements": 21,
+    "note": "the 2025 paper prints its constants inside the statements that need them; the 2026 paper moved them to one table for the whole paper, which this convention counts as furniture.  About that many words therefore move from 'statement' to 'furniture' between the years for reasons of layout alone, which inflates both the statement growth and the furniture growth reported here"
+  },
+  "target_2027": {
+    "band": [
+      150,
+      175
+    ],
+    "mean": 162,
+    "n_statements": 6,
+    "read_lo": 900,
+    "read_hi": 1050,
+    "read_mean": 972,
+    "answered_lo": 600,
+    "answered_hi": 700,
+    "answered_mean": 648,
+    "whole_file_equivalent": 1370,
+    "chapter_lever_band": [
+      1300,
+      1400
+    ]
+  },
+  "four_versions_b1": {
+    "source": "coordination presentation, 18 September 2026, slides 8-11",
+    "forward_ladder": {
+      "0 habitual (telegraphic)": 90,
+      "1 competencial": 178,
+      "2 desglosado": 244,
+      "3 as issued 2026": 408
+    },
+    "reverse_ladder": {
+      "habitual with figure": 113,
+      "habitual with text": 153,
+      "competencial ideal": 154,
+      "competencial ideal, drawing asked": 170,
+      "sin narrativa": 287,
+      "as issued 2026": 408
+    },
+    "note": "the two ladders are separate reconstructions and share only their endpoint; the intermediate rungs differ by 20 to 45 words because the wording at each rung is not the same"
+  }
+}

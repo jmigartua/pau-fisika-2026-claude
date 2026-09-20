@@ -27,8 +27,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CH = ROOT / "chapters"
 
-# The two briefing chapters (14-*) are standalone documents with their own PDF
-# output and are deliberately not part of the single-page edition.
+# The briefing chapters (14-*) and the synthesis chapters (15-*) are standalone
+# documents with their own PDF output and are deliberately not part of the
+# single-page edition.
 ORDER = ["01-data-hunt", "02-euskadi", "03-spain-2026", "04-distributions",
          "05-subjects-sittings", "06-interpretation", "11-exam-content",
          "12-ehu-paper-history", "07-literature", "08-sources", "09-log",

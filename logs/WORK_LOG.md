@@ -129,3 +129,116 @@ text-exposure sentence; "five per cent" → "just under five per cent" (4.78 %);
 → "six of the eight that have such an item"; the 0.85/1.68 ratio sentence re-attached to its
 denominators (4.7× and 9.2×). Constant harmonised: 17_pau2027_estimator.py SD_PAU 2.34 → 2.343;
 no published rounded value changed (−0.36, −0.18, 6.5, 2.37, 5.11, 3.81, 1.23 all unchanged).
+
+## 20 September 2026, fourth round — the statement, and a synthesis for the meeting
+
+Three requests: a synthesis of the dossier for the admissions office and the coordination
+meeting with the Bachillerato physics teachers; the last rounds added to the analysis-path
+account; and an in-depth reading of the coordination presentation `2027-usap-presentation-mdc`
+(Slidev, 14 slides, 18 Sep 2026), in particular slides 8–11.
+
+**New script `25_statement_budget.py`, figure 29, new section `06#statement-budget`.**
+
+Per-statement word counts, Spanish text, weights and page furniture removed:
+
+| | A1 | B1 | B2 | C1 | C2 | D1 | D2 | read | answered |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 2025 | 423 | 147 | 110 | 56 | 107 | 107 | 96 | 1046 | 685–784 |
+| 2026 | 289 | 413 | — | 145 | 232 | 158 | 201 | 1438 | 1005–1135 |
+
+* Growth on statements +37.5 %; on the whole file +45.3 % (1335 → 1940). The difference is
+  furniture: 289 → 502 words. Of the 2026 furniture, 100 words are fifty printed sub-task
+  weights; the 2025 paper printed none (only the global "2.5 puntos" in the instructions).
+* The length lives in the obligatory competency items in BOTH years: 2025 A1 = 423 of 1046
+  (40 %); 2026 A1 + B1 = 702 of 1438 (49 %). B1 alone is 28.7 % of what is read for 25 % of
+  the marks.
+* **Independent check of a load-bearing number**: the coordination's own counts of the same
+  six 2026 statements are 295/408/150/242/163/214 = 1472 against this study's
+  289/413/145/232/158/201 = 1438 — item by item within 1–6 %, total 2.3 %.
+* 2027 target (presentation slide 5): 150–175 words per statement, mean 162 → 900–1050 read,
+  600–700 answered; a cut of 32 % in reading and 36 % in answering. The 2025 paper's actual
+  mean was 149 per statement and 2026's 240, so the target is 2025 plus what the competency
+  form costs, not a return to 2025. On the whole-file convention it maps to ≈ 1474 against
+  the chapter's independently derived 1300–1400 — the two agree to about 5 %.
+
+**Slides 8–11, the four versions of B1.** Forward ladder (slide 8): 90 → 178 → 244 → 408.
+Reverse ladder (slides 9–11): 113 (habitual with figure) / 153 (with prose) → 154 (ideal
+competency form) / 170 (with the drawing asked) → 287 (no narrative) → 408 (as issued). The
+two share only their endpoint; the intermediate rungs differ by 20–45 words because the
+wording at each rung is not the same text. Flagged for labelling.
+
+Design intent as stated: three habitual calculations asked twice, one per configuration
+(Φ(t), ε(t), ε(7.0 ms)); three competency elements asked once (justify the angle is constant,
+express in scientific notation to two decimals, decide whether the prototype meets the 0.50 mV
+requirement). Three findings:
+
+1. **The scaffolding is symmetric, and symmetry is where the words are.** Asymmetric
+   scaffolding — break the chain out in configuration I, compress it in II — costs the words
+   once and tests transfer rather than rehearsal; ≈ 170 words against 287 and 408.
+2. **One of the three competency elements is a marking rule.** "Express in scientific notation
+   with two decimals" is not on the presentation's own four-level ladder; it is a criterion
+   that applies whether printed or not and costs −0.10 when missed. It is a locatable instance
+   of the format/marking confound the severity analysis could bound but not separate: in that
+   sub-task the competency wording and the deduction are the same words.
+3. **A falsifiable test of the design.** b) and c) ask the same chain of two configurations; if
+   the repetition was scaffolding, c) > b); if it was a time tax, c) < b). Added as the first
+   sub-question of data request 1.
+
+Five rules added to the chapter, ordered by words saved: context as data not story (156 → 76
+on B1); set-up as a figure (153 → 113, and ask for the drawing if the geometry is assessed,
++16); scaffold once not twice; marking criteria out of the statement and weights into a margin
+column (100 words); one verb per level per problem.
+
+**Error found**: figure 18's step 14 still carried the pre-correction −0.44 / −1.21 where the
+prose says −0.31 / −1.33. Sixth instance of the same failure mode, second in that figure.
+Corrected; steps 15 and 16 added; the figure grew to 19 in and STEP 1.62 to fit them.
+
+**New chapters 15 / 15-es**, the synthesis for the coordination (EN + ES, PDF, numeric parity
+verified). Sidebar section "Briefing" now leads with them. Excluded from the single-page
+edition, like the briefings.
+
+### Verification of the fourth round, and the corrections it forced
+
+An independent reader recomputed every statement count from the archived papers. Three defects
+in `25_statement_budget.py` and eight in the prose; none changed a conclusion, all are fixed.
+
+Script:
+* the trailing-block-heading cut used `BLOQUE\s+[A-D]\s*:`, which (i) does not match the plural
+  "BLOQUES C y D" and (ii) cuts at the colon rather than at the start of the apparatus. Twenty
+  words of "BLOQUES B, C y D: Problemas / (Cada BLOQUE consta de 2 problemas…) / 2. Problema,"
+  stayed inside A1 2025 and seven inside B1 2026. Now cuts at `BLOQUES?\s+[A-D]\b`.
+  **A1 2025 423 → 403; B1 2026 413 → 406; B2 2025 110; C2 2025 107; C2 2026 232.**
+* the weight regex could not match across an interposed watermark letter
+  ("(0.50 \n U \n puntos)"), so it counted 50 where there are **51** (103 words, not 100).
+  Of the 51, 18 are part-level and 33 on sub-tasks — "a weight on fifty sub-tasks" was wrong twice.
+* the furniture was computed as script 18's word-token count minus this script's whitespace
+  count. On one tokenisation it is **356 → 398**, not 289 → 502: the furniture barely grew, it
+  was recomposed (block headings 101 → 54, weights 0 → 103).
+
+Corrected totals: read 2025 **1026** (answered 665–784→665–764), read 2026 **1431** (998–1128);
+statement growth **+39.5 %**; B1 **28.4 %** of reading for 25 % of marks; A1 2025 39 % of reading,
+A1+B1 2026 49 %; per-statement means **147** (2025) and **239** (2026); target whole-paper
+equivalent **1370**, now *inside* the briefing's 1300–1400 band.
+
+Prose:
+* "agree item by item to within two per cent" → three per cent on the paper total, 1–6 % item by
+  item (D2 214/201 = 6.1 %). Fixed in ch 6, ch 9, ch 13, ch 15 EN+ES.
+* the two 2027 targets were called independent; both are anchored to the 2025 paper. Now said so.
+* the asymmetric-scaffolding form was given "about 170 words", borrowed from the ideal+drawing
+  rung. Now bracketed between 154 and 287 with no measured value claimed.
+* the b)-vs-c) test was called "close to clean"; half of c) is a *valorar* sub-task with no
+  analogue in b). Restated as b)1–3 against c)1, per mark, on the chain only.
+* the setter's design account was stated as fact. Now testimony, with an explicit
+  conflict-of-interest callout: the dossier's author is a co-author of the presentation.
+* the two reconstruction ladders were collapsed into one everywhere but ch 6. Fixed in ch 9,
+  ch 13, ch 15 EN+ES, index and the ch 15 figure caption.
+* index finding 11's headline "a third of it can go without touching a question" — the third
+  comes from rewriting questions; only the 103 words of weights touch none. Rewritten.
+* "cut of 36 % in answering" → 35–43 %, depending on the options taken.
+* "*indica* three times" → four.
+* the statement_budget table mixed two tokenisations in one row and labelled a per-statement
+  band as a "longest item". Columns rebuilt on one tokenisation.
+
+One caveat now stated that nobody had noticed: the 2025 paper prints its constants inside the
+three statements that need them (21 words) and the 2026 paper moved every constant to one
+table, counted here as furniture. Small, but it crosses the statement/furniture line.

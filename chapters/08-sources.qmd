@@ -29,6 +29,29 @@ Regional Física results located in this study. "Source type" distinguishes offi
 
 Used unchanged, copied to `data/original/`: `fisica_pau_ehu_2010_2022.csv` (EHU annual reports, with sex, language and network splits), `fisica_pau_ministerio_2015_2025.csv` (the July parse of the Ministry cube, used only as a validation target), `fisica_tables.csv`, `catalunya_materias_2014_2026.csv` and `comparativa_materias_2026.csv` from `hist_evolution`. The three Ministry PC-Axis cubes are the July copies (`nota`, `matric`) plus the grade-distribution cube downloaded on 18 September by the earlier session (`distr`); the September re-download of the first two was byte-identical to the July copies.
 
+## Material supplied by the coordination, not archived here
+
+Two items enter the analysis without a hash in the registry, because they are the
+coordinator's own working material rather than published sources, and both are
+labelled **testimony** wherever they are used.
+
+The first is the official EHU–Department list *Evaluación para el Acceso a la
+Universidad: Cuestiones teóricas* (bilingual, 22 titles with a development guide,
+circulated to teachers and correctors, not online), which is archived as
+`sources/exams_ehu_hist/ehu_theory_list_official.pdf` and which matches the
+reconstruction of [Chapter 12](12-ehu-paper-history.qmd) 22 of 22.
+
+The second is the coordination presentation **USaP Física 2027** (Gorka Arretxe,
+Ordizia Institutua; Asier López-Eiguren, EHU; J. M. Igartua, EHU; 18 September 2026),
+a Slidev deck of fourteen slides prepared for the meeting with the Bachillerato physics
+teachers. Slides 8 to 11 reconstruct the 2026 electromagnetic problem in four versions
+and slide 5 sets the 2027 statement-length target; [the statement section](06-interpretation.qmd#statement-budget)
+uses both. The deck is a design document and not evidence about the results: what it
+contributes is the setter's account of *why* the 2026 statement is as long as it is,
+made checkable by reconstructing the alternatives. Its own word counts were recomputed
+independently here from the archived paper and agree item by item to within two per
+cent, which is reported in that section.
+
 ## Bibliography
 
 The reference list below is generated from `references.bib` (45 entries: 10 new academic references, 9 classic ones, 26 official and press sources) with the APA style (`apa.csl`).

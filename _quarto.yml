@@ -77,6 +77,12 @@ website:
             icon: journal-text
       - section: Briefing
         contents:
+          - href: chapters/15-synthesis.qmd
+            text: "Synthesis for the coordination"
+            icon: clipboard-check
+          - href: chapters/15-synthesis-es.qmd
+            text: "Síntesis (castellano)"
+            icon: translate
           - href: chapters/14-briefing.qmd
             text: "For the Admissions Office"
             icon: envelope-paper
