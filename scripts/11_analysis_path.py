@@ -111,13 +111,23 @@ steps = [
             "format change. No cohort rate can be projected: PISA is steps, not a slope"),
     ("16. The statement, item by item (20 Sep)",
      "Where is the reading, and what would a word budget cost the 2027 paper?",
-     STOOD, "the length lives in the competency items in BOTH years (2025 A1 423 of "
-            "1046; 2026 A1 289 and B1 413 of 1438), and 100 of the 2026 growth is fifty "
-            "printed sub-task weights the 2025 paper did not carry. One of the three "
-            "competency elements of B1 is a marking rule, not a competence"),
+     STOOD, "the length lives in the competency items in BOTH years (2025 A1 403 of "
+            "1026; 2026 A1 289 and B1 406 of 1431), and a competency item costs about "
+            "400 words in its first year and 300 in its second, so the 250 wanted for "
+            "2027 continues a trajectory the papers already show. One of the three "
+            "competency elements of B1 is a transversal criterion printed on purpose, "
+            "not a competence"),
+    ("17. The coordinator's corrections, and the marking regime (20 Sep)",
+     "What changed in the marking was non-award becoming deduction. Can that make 2026?",
+     STOOD, "the 2025 distribution put through the 2026 regime — twelve deductions of "
+            "0.10 per script and a grave error in one script in six voiding most of it "
+            "— reproduces all four published 2026 figures at once (mean 4.01 / 3.99, "
+            "pass 39.2 / 39.8, at-or-below-2 25.2 / 24.5, zero 2.6 / 3.2). The "
+            "deduction channel alone produces no zeros at all; a uniformly harder paper "
+            "fits nearly as well, so the regime is shown sufficient, not identified"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 19.0),
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 21.5),
                               gridspec_kw=dict(height_ratios=[1.0, 2.4], hspace=0.16))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
@@ -150,7 +160,7 @@ ax.set_title("a. The same two headlines, as the reference frame widens")
 ax.legend(loc="lower left", fontsize=8)
 
 # --- b. the ladder of claims and what happened to each --------------------------
-STEP = 1.62                                   # vertical pitch: room for three-line fates
+STEP = 1.80                                   # vertical pitch: room for four-line fates
 ypos = np.arange(len(steps))[::-1] * STEP
 for y, (title, claim, status, fate) in zip(ypos, steps):
     colr = STATUS_COLOR[status]

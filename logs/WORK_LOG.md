@@ -242,3 +242,133 @@ Prose:
 One caveat now stated that nobody had noticed: the 2025 paper prints its constants inside the
 three statements that need them (21 words) and the 2026 paper moved every constant to one
 table, counted here as furniture. Small, but it crosses the statement/furniture line.
+
+## 20 September 2026, fifth round — the coordinator's corrections, and the marking regime
+
+Five corrections to the fourth round, one withdrawal, and one new analysis.
+
+**Corrections to the reading of the presentation (all from the coordinator).**
+1. "Expresa el resultado en notación científica y con dos decimales" is a **transversal
+   criterion of saber básico A**, not a taxonomy error. 2026 was the first year it was
+   examined explicitly as the criteria require; it was printed with points *as scaffolding*.
+   The two surviving consequences are kept: it costs words for a demand that exists anyway,
+   and it made a sub-task where one requirement both earned points and attracted −0.10.
+   For 2027 it will be enforced from the rubric only.
+2. **b) and c) are not the same calculation.** Configuration I is a stationary loop in a
+   field varying as 3t²; II is a loop rotating in a constant field. What repeats is the
+   *structure of the demand*, not the physics. The asymmetry recommendation now rests on
+   that — an increase in demand, not the removal of a redundancy.
+3. **The two ladders are two exercises, not an inconsistency.** Slide 8 builds up from a
+   statement written for the purpose in the old style; 9–11 work backwards from what was
+   issued. And the reverse ladder's last rung is the old style **with the configurations
+   drawn** — the coordination's own point, previously presented as this study's
+   recommendation. Credited.
+4. **"Una posible mejora", not "lo que debió ser".** Fixed in both languages.
+5. Both remediations — the figure-based habitual and the asymmetric b/c — are now presented
+   as two candidates, as the coordinator asked.
+
+**Withdrawn**: "the target requires cutting the competency items by 40–55 %". It applied
+arithmetic to the wrong shape of budget.
+
+**What the dossier had missed, and now carries.** A competency item costs ≈400 words in its
+first year and ≈300 in its second — block A 403 (2025) → 289 (2026); block B 406 (2026).
+The 250 wanted for 2027 continues that. And 250 does not fit a uniform 150–175 band:
+
+| | competency ×2 | options ×4 | read |
+|---|---:|---:|---:|
+| 2026 | 695 | 736 | 1431 |
+| 250 each + options 150 | 500 | 600 | **1100** (−23 %) |
+| uniform 150–175 band | 300–350 | 600–700 | 900–1050 (−32 %) |
+
+Budget now stated in **two tiers**: competency ≤250, options ≤150, ≈1100 read. The options
+should not go to 118 — they are the next blocks to enter the competency form.
+
+**New: `scripts/26_penalty_regime.py`, figure 30, section `06#penalty-regime`.**
+
+The mechanism as the coordinator describes it: until 2025 a missing unit cost the part of
+the sub-task that depended on it; from 2026 it costs that part AND −0.10, uncapped. A second
+class (clarity, terminology, coherence, theorems, constants) had a rule in 2025 that was not
+applied and in 2026 was. Grave errors void the apartado. The rules barely changed; they were
+deployed in full by consensus at the correctors' meeting before the sitting — a collective,
+attended, scheduled event, which is testimony of a stronger kind than a private recollection.
+New data request 10: the meeting's agenda, attendance and circulated criteria.
+
+Model: 28 marked sub-tasks in 12 apartados, 2025 beta as the pre-deployment baseline, each
+sub-task floored at zero.
+
+* Dose-response: 10 deductions cost 0.83 marks, not 1.00 — the floor gives back ~17 %.
+* Inversion (deductions alone): −0.84 needs 10, −1.10 needs 14, −1.48 needs 19, −1.65 needs 21.
+* **First answer was wrong.** With voiding independent across apartados, nothing reproduces
+  the tail and NOTHING produces a single zero, because a deduction only removes marks earned.
+* With voiding allowed to **cascade** within a script — which is how a wrong starting
+  relation behaves — the regime reproduces all four published figures at once:
+
+| | mean | pass % | ≤2 % | zero % |
+|---|---:|---:|---:|---:|
+| observed 2026 | 3.99 | 39.8 | 24.5 | 3.2 |
+| fitted regime (12 deductions, 16 % cascade × 85 %) | 4.01 | 39.2 | 25.2 | 2.6 |
+| same, voiding independent | 3.88 | 29.6 | 18.1 | 0.0 |
+| harder paper, additive −1.48 | 4.08 | 38.1 | 21.5 | 4.3 |
+| harder paper, proportional ×0.73 | 4.04 | 32.6 | 13.8 | 0.0 |
+
+So: **sufficient, not identified.** A uniform additive harder paper fits nearly as well; a
+proportional one does not, which is itself informative — 2026 subtracted marks rather than
+scaling them. Cross-check that cuts against the regime: the deduction channel reaches
+Química too, and Química fell 0.21. Request 3 extended to ask for voided-apartado counts.
+
+**Seventh instance of the recurring failure**: figure 18's step 16 still carried the fourth
+round's superseded counts (A1 423 of 1046, B1 413 of 1438, "fifty weights") after the prose
+was corrected. Third time in that figure. Fixed; step 17 added; STEP 1.62 → 1.80 and the
+figure 19 → 21.5 in to fit four-line fates.
+
+### Verification of the fifth round, and the baseline it caught
+
+An independent reader audited `26_penalty_regime.py`. The computation reproduced byte-identically
+and an independent re-implementation recovered the fit — but the **baseline was wrong**, and the
+finding stands up: `BETA_2025` is the Beta *component* of a mixture (1.2 % point mass at zero plus
+Beta(2.0015, 1.6099), `02_analysis.py:150`), and the script used it as the whole distribution and
+then rescaled it *down* to 5.47. The resulting baseline matched one of the four 2025 figures:
+pass 58.7 vs 62.3, ≤2 6.7 vs 10.0, [9,10] 1.9 vs 6.7.
+
+Rebuilt non-parametrically from the published 2025 bands
+(`euskadi_grade_bands_2015_2025.csv` + 10 % at ≤2 + 1.2 % zeros, uniform within band).
+Baseline now 5.47 / 62.4 / 9.9 / 1.2 / 6.7 against 5.47 / 62.3 / 10.0 / 1.2 / 6.7.
+
+Other defects fixed:
+* cascade re-parameterised. It had been 12 independent Bernoulli(0.85) draws inside a hit script,
+  so the zeros were the all-twelve binomial upper tail and "85 %" was the 12th root of a ratio —
+  an artefact of N_APARTADOS. Now two explicit shares: `p_partial` (a third to two thirds of the
+  paper) and `p_total` (essentially all of it), the second read off the observed zero rate.
+* search grid widened (the old optimum sat in its top corner) and `ded_mode` fitted rather than
+  assumed; an `on_grid_boundary` flag added.
+* the independent-voiding claim is now a **search**, not one evaluated point.
+* comparators rebuilt on the same baseline (they had used the un-rescaled draw).
+* "no intensity produces a single zero" → almost never, with the right reason (28 sub-tasks all
+  have to be hit), since the JSON's own dose-response shows 0.0015 % at rate 30.
+* the ≥9 share added as a **reported, not fitted** diagnostic.
+* JSON now records the loss and the achieved baseline.
+
+Results on the corrected baseline (all four fitted; ≥9 not fitted):
+
+| | mean | pass % | ≤2 % | zero % | ≥9 % | loss |
+|---|---:|---:|---:|---:|---:|---:|
+| observed 2026 | 3.99 | 39.8 | 24.5 | 3.2 | 2.1 | — |
+| fitted regime: 12 ded, 16 % partial, 4.5 % total | 4.11 | 39.0 | 25.2 | 3.5 | 0.4 | 1.07 |
+| same, voiding independent (searched) | 4.12 | 35.5 | 19.9 | 1.2 | 0.1 | 14.6 |
+| harder paper, additive −1.48 | 4.06 | 37.5 | 23.7 | 7.8 | 0.0 | 22.6 |
+| harder paper, proportional | 3.99 | 32.3 | 16.9 | 1.2 | 0.0 | 32.5 |
+
+Inversion (deductions alone): −0.84→10, −1.10→14, −1.48→19, −1.65→22.
+Robustness: **ded_rate = 12 in every variant** (σ 0.1/0.3, 12 equal sub-tasks, weak mode);
+p_partial 16–22 %, p_total 3–4.5 %.
+
+**Two conclusions reversed from the fifth round's first draft.** The harder-paper comparator no
+longer "fits nearly as well" — on a correct baseline it piles 7.8 % at zero. And a real failure
+appears: nothing reproduces the 2.1 % at nine or above, because twelve flat deductions cap a paper
+at ~8.8. Reported as the model's limitation and as a testable prediction (deductions per script
+against the script's mark).
+
+Prose fixes from the same audit: "three figures nobody fitted" → four were fitted; "labelled as
+testimony throughout" made true in ch 15 EN/ES and index; "produce the 2026 distribution" → "the
+four published figures"; the 28/12 sub-task structure now stated as extrapolated from B1; the
+unmodelled third channel (linguistic) stated in the prose, not only the docstring.
