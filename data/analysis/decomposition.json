@@ -1,0 +1,328 @@
+{
+  "scale": {
+    "sd_field_adjusted_conditional_residual": 0.04170106623911314,
+    "note": "one z-scale for the conditional top-band residual, used throughout"
+  },
+  "typology": {
+    "n_transitions": 170,
+    "pais_vasco": {
+      "2016": {
+        "d_mean": 0.63,
+        "d_top": 12.47,
+        "d_top_locus": 8.3796,
+        "top_excess": 4.0904,
+        "d_pass": 8.73,
+        "d_pass_locus": 8.8996,
+        "pass_excess": -0.1696,
+        "dz": 1.5868,
+        "rank_dz": 158,
+        "rank_shape": 72
+      },
+      "2017": {
+        "d_mean": -0.27,
+        "d_top": -5.46,
+        "d_top_locus": -3.8017,
+        "top_excess": -1.6583,
+        "d_pass": -5.3,
+        "d_pass_locus": -3.6775,
+        "pass_excess": -1.6225,
+        "dz": -0.6811,
+        "rank_dz": 48,
+        "rank_shape": 101
+      },
+      "2018": {
+        "d_mean": 0.27,
+        "d_top": 4.44,
+        "d_top_locus": 3.8017,
+        "top_excess": 0.6383,
+        "d_pass": 3.65,
+        "d_pass_locus": 3.6775,
+        "pass_excess": -0.0275,
+        "dz": -0.009,
+        "rank_dz": 81,
+        "rank_shape": 164
+      },
+      "2019": {
+        "d_mean": -0.29,
+        "d_top": -3.36,
+        "d_top_locus": -4.0708,
+        "top_excess": 0.7108,
+        "d_pass": -4.42,
+        "d_pass_locus": -3.9581,
+        "pass_excess": -0.4619,
+        "dz": 0.4741,
+        "rank_dz": 114,
+        "rank_shape": 154
+      },
+      "2020": {
+        "d_mean": 0.57,
+        "d_top": 7.05,
+        "d_top_locus": 8.3468,
+        "top_excess": -1.2968,
+        "d_pass": 8.9,
+        "d_pass_locus": 7.5555,
+        "pass_excess": 1.3445,
+        "dz": -2.1749,
+        "rank_dz": 4,
+        "rank_shape": 115
+      },
+      "2021": {
+        "d_mean": 1.24,
+        "d_top": 21.74,
+        "d_top_locus": 23.0183,
+        "top_excess": -1.2783,
+        "d_pass": 14.25,
+        "d_pass_locus": 13.2835,
+        "pass_excess": 0.9665,
+        "dz": 0.5424,
+        "rank_dz": 121,
+        "rank_shape": 123
+      },
+      "2022": {
+        "d_mean": -1.62,
+        "d_top": -26.81,
+        "d_top_locus": -28.7392,
+        "top_excess": 1.9292,
+        "d_pass": -20.05,
+        "d_pass_locus": -18.2191,
+        "pass_excess": -1.8309,
+        "dz": 1.1427,
+        "rank_dz": 144,
+        "rank_shape": 90
+      },
+      "2023": {
+        "d_mean": 0.24,
+        "d_top": 5.03,
+        "d_top_locus": 3.5404,
+        "top_excess": 1.4896,
+        "d_pass": 1.36,
+        "d_pass_locus": 3.1644,
+        "pass_excess": -1.8044,
+        "dz": 1.2342,
+        "rank_dz": 147,
+        "rank_shape": 100
+      },
+      "2024": {
+        "d_mean": -0.21,
+        "d_top": -9.03,
+        "d_top_locus": -3.1115,
+        "top_excess": -5.9185,
+        "d_pass": 2.28,
+        "d_pass_locus": -2.76,
+        "pass_excess": 5.04,
+        "dz": -3.0808,
+        "rank_dz": 2,
+        "rank_shape": 11
+      },
+      "2025": {
+        "d_mean": -0.62,
+        "d_top": -8.21,
+        "d_top_locus": -8.072,
+        "top_excess": -0.138,
+        "d_pass": -10.68,
+        "d_pass_locus": -8.8715,
+        "pass_excess": -1.8085,
+        "dz": 0.4907,
+        "rank_dz": 115,
+        "rank_shape": 131
+      }
+    },
+    "most_negative_dz": [
+      {
+        "ccaa": "Cantabria",
+        "year": 2025,
+        "dz": -3.981
+      },
+      {
+        "ccaa": "País Vasco",
+        "year": 2024,
+        "dz": -3.081
+      },
+      {
+        "ccaa": "Asturias (Principado de)",
+        "year": 2025,
+        "dz": -2.79
+      },
+      {
+        "ccaa": "País Vasco",
+        "year": 2020,
+        "dz": -2.175
+      },
+      {
+        "ccaa": "Castilla-La Mancha",
+        "year": 2016,
+        "dz": -2.122
+      }
+    ],
+    "largest_shape_moves": [
+      {
+        "ccaa": "Castilla y León",
+        "year": 2017,
+        "shape_move": 16.409,
+        "d_mean": -1.34
+      },
+      {
+        "ccaa": "Cantabria",
+        "year": 2025,
+        "shape_move": 14.958,
+        "d_mean": -1.51
+      },
+      {
+        "ccaa": "Castilla y León",
+        "year": 2016,
+        "shape_move": 13.691,
+        "d_mean": 0.87
+      },
+      {
+        "ccaa": "Asturias (Principado de)",
+        "year": 2025,
+        "shape_move": 13.261,
+        "d_mean": -1.55
+      },
+      {
+        "ccaa": "Canarias",
+        "year": 2020,
+        "shape_move": 12.393,
+        "d_mean": 1.65
+      }
+    ]
+  },
+  "budget": {
+    "rows": [
+      {
+        "year": 2016,
+        "pv": 6.139,
+        "field": 5.7929,
+        "total": 0.699,
+        "common": -0.2418,
+        "basque_specific": 0.9408
+      },
+      {
+        "year": 2017,
+        "pv": 5.89,
+        "field": 5.8567,
+        "total": -0.249,
+        "common": 0.0638,
+        "basque_specific": -0.3128
+      },
+      {
+        "year": 2018,
+        "pv": 6.16,
+        "field": 5.7656,
+        "total": 0.27,
+        "common": -0.0911,
+        "basque_specific": 0.3611
+      },
+      {
+        "year": 2019,
+        "pv": 5.87,
+        "field": 5.6978,
+        "total": -0.29,
+        "common": -0.0678,
+        "basque_specific": -0.2222
+      },
+      {
+        "year": 2020,
+        "pv": 6.44,
+        "field": 6.36,
+        "total": 0.57,
+        "common": 0.6622,
+        "basque_specific": -0.0922
+      },
+      {
+        "year": 2021,
+        "pv": 7.68,
+        "field": 6.8878,
+        "total": 1.24,
+        "common": 0.5278,
+        "basque_specific": 0.7122
+      },
+      {
+        "year": 2022,
+        "pv": 6.06,
+        "field": 6.4589,
+        "total": -1.62,
+        "common": -0.4289,
+        "basque_specific": -1.1911
+      },
+      {
+        "year": 2023,
+        "pv": 6.3,
+        "field": 6.37,
+        "total": 0.24,
+        "common": -0.0889,
+        "basque_specific": 0.3289
+      },
+      {
+        "year": 2024,
+        "pv": 6.09,
+        "field": 6.3356,
+        "total": -0.21,
+        "common": -0.0344,
+        "basque_specific": -0.1756
+      },
+      {
+        "year": 2025,
+        "pv": 5.47,
+        "field": 5.6889,
+        "total": -0.62,
+        "common": -0.6467,
+        "basque_specific": 0.0267
+      },
+      {
+        "year": 2026,
+        "pv": 3.99,
+        "field": 5.8582,
+        "total": -1.48,
+        "common": 0.1693,
+        "basque_specific": -1.6493
+      }
+    ],
+    "pre_covid_norm_pais_vasco": 5.899800000000001,
+    "pre_covid_norm_nine": 5.829511111111111,
+    "pais_vasco_2026_vs_norm": -1.9098000000000006,
+    "nine_2026_vs_norm": 0.02871111111111091,
+    "basque_specific_2026": -1.649333333333332,
+    "basque_specific_2025": 0.026666666666665506,
+    "common_2025": -0.6466666666666656
+  },
+  "attribution": {
+    "target": -1.649333333333332,
+    "choice": {
+      "central": -0.19668018395232156,
+      "gross": -0.2622402452697621,
+      "by_item_sd": {
+        "0.1": -0.1384630904234232,
+        "0.2": -0.2622402452697621,
+        "0.3": -0.3583682211879575
+      },
+      "by_item_sd_net": {
+        "0.1": -0.1038473178175674,
+        "0.2": -0.19668018395232156,
+        "0.3": -0.26877616589096814
+      },
+      "lo": -0.26877616589096814,
+      "hi": -0.1038473178175674,
+      "pv_cut_pp": 25.0,
+      "field_cut_pp": 6.25
+    },
+    "cohort": {
+      "central": -0.11765837521399329,
+      "gross": -0.18184672922250072,
+      "se_marks": 0.11,
+      "pisa_move_pv": -20.98231491028855,
+      "pisa_move_es": -7.406348539443172,
+      "pisa_move_excess": -13.575966370845379
+    },
+    "length_association": {
+      "slope_per_pct": -0.050100334619900884,
+      "r": -0.9049249780004874,
+      "p": 0.001998229808265831,
+      "pais_vasco_len_change_pct": 45.31835205992509,
+      "implied_marks": -2.2704646026247217
+    },
+    "quantified_total": -0.31433855916631487,
+    "unattributed": -1.3349947741670172,
+    "unattributed_share": 0.8094147781934226
+  }
+}

@@ -51,7 +51,8 @@ steps = [
      OVER, "overturned at step 2: six of nine communities rose in 2026 under the same model"),
     ("2. The 2026 cross-section",
      "The 2026 fall is regional, not national. H1 survives only as a description of 2025.",
-     WEAK, "its premise — that 2025 was a national collapse — is overturned at step 6"),
+     STOOD, "the finding stands; its premise — that 2025 was a national collapse — does "
+            "not, and is overturned at step 6"),
     ("3. Shape against location",
      "Canarias 2026 sits on the historical locus: the whole distribution moved down.",
      WEAK, "weakened at steps 4 and 5"),
@@ -67,15 +68,16 @@ steps = [
     ("7. Conditioning on passing",
      "Among passers, the top-band share: the one measure least dominated by the level.",
      WEAK, "strengthens step 3; its two further claims — a plateau that reshaped, and a "
-           "Basque turn in 2024 — were withdrawn at step 13"),
+           "Basque turn in 2024 — were withdrawn at step 13, and the second was "
+           "reinstated in a different form at step 14"),
     ("8. Testing the slow version of H4",
      "Do cohorts arrive less prepared each year? Not detectably — take-up is flat.",
      STOOD, "kills the recruitment mechanism, and corrects a dilution effect this "
             "study had itself reported from a phase-undercount of 2015–16"),
     ("9. Bringing in an outside instrument",
      "PISA 2006–2022: Basque science goes from +9 above Spain to −5, breaking in 2015.",
-     STOOD, "the drift is real and pre-pandemic, but the cohorts do not match the PAU "
-            "(1 of 3), which retracts the triangulation step 9 first claimed"),
+     WEAK, "the drift is real and pre-pandemic, but the cohorts do not match the PAU "
+           "(1 of 3), which retracts the triangulation step 9 first claimed"),
     ("10. Comparing the two slopes",
      "On one scale, all four series fall; Euskadi is 1.7x Spain on BOTH instruments.",
      OVER, "on 2012–22 every interval includes zero; with PISA 2025 the PISA slopes are "
@@ -86,14 +88,20 @@ steps = [
             "outcome, not a prediction — the estimator's value is attribution after the fact"),
     ("12. Measuring the reading load",
      "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
-     WEAK, "but length and competency content correlate at +0.9, so it is a better "
+     WEAK, "but length and competency content correlate at +0.79, so it is a better "
             "instrument for the same change, not a second cause; the Madrid count was "
             "70 % solutions — corrected at step 13 (r = −0.905)"),
-    ("13. The audit (19 Sep, evening)",
+    ("13. The first audit (19 Sep, evening)",
      "Re-run everything, second-code the papers, recompute every number, read the logic.",
      STOOD, "withdrew the plateau reshaping (a level effect), the Basque 2024 signal "
             "(5 of 17 communities show it), the slope agreement (stale window); fixed the "
             "2027 proration and the Madrid count; found the plateau in every subject"),
+    ("14. The second audit (20 Sep) and the decomposition",
+     "Re-audit everything again; then ask what the fall is MADE of, not how large it is.",
+     STOOD, "found 2024: a shape step (top band −5.9 pp off the locus, pass rate +5.0) "
+            "invisible to every mean-based test, second largest of 170 transitions; and "
+            "split 2026 into a common part (+0.17), a quantified Basque part (−0.44) and "
+            "−1.21 that no published data can yet attribute"),
 ]
 
 fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 15.0),
@@ -157,9 +165,10 @@ axl.grid(False)
 axl.set_title("b. The order the questions were asked in, and what each answer did to the one before")
 
 fig.text(0.005, 0.005,
-         "Every value is read from the JSON written by the script that computed it "
-         "(results.json, shape_locus.json, reference_frames.json),\nso this figure "
-         "cannot drift from the analysis it narrates.",
+         "The numbers in panel a are read from the JSON written by the scripts that "
+         "computed them (results.json, shape_locus.json, reference_frames.json); the step "
+         "texts in panel b are written by hand.\nBoth can drift, and both have: step 10's "
+         "text drifted from its own data, and this footnote itself claimed it could not.",
          fontsize=7, color=MUTED, linespacing=1.5)
 _save(fig, "fig18_analysis_path", P, dpi=200)
 

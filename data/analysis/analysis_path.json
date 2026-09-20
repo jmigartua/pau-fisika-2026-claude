@@ -21,8 +21,8 @@
     {
       "step": "2. The 2026 cross-section",
       "claim": "The 2026 fall is regional, not national. H1 survives only as a description of 2025.",
-      "status": "weakened",
-      "fate": "its premise — that 2025 was a national collapse — is overturned at step 6"
+      "status": "stood",
+      "fate": "the finding stands; its premise — that 2025 was a national collapse — does not, and is overturned at step 6"
     },
     {
       "step": "3. Shape against location",
@@ -52,7 +52,7 @@
       "step": "7. Conditioning on passing",
       "claim": "Among passers, the top-band share: the one measure least dominated by the level.",
       "status": "weakened",
-      "fate": "strengthens step 3; its two further claims — a plateau that reshaped, and a Basque turn in 2024 — were withdrawn at step 13"
+      "fate": "strengthens step 3; its two further claims — a plateau that reshaped, and a Basque turn in 2024 — were withdrawn at step 13, and the second was reinstated in a different form at step 14"
     },
     {
       "step": "8. Testing the slow version of H4",
@@ -63,7 +63,7 @@
     {
       "step": "9. Bringing in an outside instrument",
       "claim": "PISA 2006–2022: Basque science goes from +9 above Spain to −5, breaking in 2015.",
-      "status": "stood",
+      "status": "weakened",
       "fate": "the drift is real and pre-pandemic, but the cohorts do not match the PAU (1 of 3), which retracts the triangulation step 9 first claimed"
     },
     {
@@ -82,13 +82,19 @@
       "step": "12. Measuring the reading load",
       "claim": "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
       "status": "weakened",
-      "fate": "but length and competency content correlate at +0.9, so it is a better instrument for the same change, not a second cause; the Madrid count was 70 % solutions — corrected at step 13 (r = −0.905)"
+      "fate": "but length and competency content correlate at +0.79, so it is a better instrument for the same change, not a second cause; the Madrid count was 70 % solutions — corrected at step 13 (r = −0.905)"
     },
     {
-      "step": "13. The audit (19 Sep, evening)",
+      "step": "13. The first audit (19 Sep, evening)",
       "claim": "Re-run everything, second-code the papers, recompute every number, read the logic.",
       "status": "stood",
       "fate": "withdrew the plateau reshaping (a level effect), the Basque 2024 signal (5 of 17 communities show it), the slope agreement (stale window); fixed the 2027 proration and the Madrid count; found the plateau in every subject"
+    },
+    {
+      "step": "14. The second audit (20 Sep) and the decomposition",
+      "claim": "Re-audit everything again; then ask what the fall is MADE of, not how large it is.",
+      "status": "stood",
+      "fate": "found 2024: a shape step (top band −5.9 pp off the locus, pass rate +5.0) invisible to every mean-based test, second largest of 170 transitions; and split 2026 into a common part (+0.17), a quantified Basque part (−0.44) and −1.21 that no published data can yet attribute"
     }
   ]
 }

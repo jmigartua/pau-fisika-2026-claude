@@ -98,7 +98,7 @@ website:
             text: "Audit"
             icon: shield-check
   page-footer:
-    left: "Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from `scripts/`"
+    left: "Independent analysis prepared 18–19 September 2026, audited 19 and 20 September · all figures reproducible from `scripts/`"
     right: "Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR"
 
 format:

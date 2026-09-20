@@ -1,13 +1,20 @@
 {
   "n": 9,
   "pearson_dgrade_dcomp_exp": -0.4677818622189275,
-  "spearman_dgrade_dcomp_exp": -0.2556038601690775,
+  "p_dgrade_dcomp_exp": 0.20415895864464936,
   "pearson_dgrade_dsubst_exp": -0.4958559881694052,
-  "spearman_dgrade_dsubst_exp": -0.21783245945486837,
-  "pearson_dgrade_dctx_exp": -0.8868800818854209,
+  "p_dgrade_dsubst_exp": 0.17461154822992722,
+  "pearson_dgrade_dctx_exp": -0.8521949643126391,
+  "p_dgrade_dctx_exp": 0.003526417608128896,
   "pearson_dgrade_dopt": 0.37069951000763907,
-  "spearman_dgrade_dopt": 0.2885426844228509,
-  "pearson_dgrade_dcrit": -0.618158647715821,
-  "pearson_dgrade_comp_exp_2026": -0.3598582897371419,
-  "pearson_dgrade_opt_2026": 0.44233216231948513
+  "p_dgrade_dopt": 0.3260379438603903,
+  "pearson_dgrade_dcrit": -0.6181586477158212,
+  "p_dgrade_dcrit": 0.07601328058469199,
+  "pearson_dgrade_comp_exp_2026": -0.35985828973714185,
+  "p_dgrade_comp_exp_2026": 0.34147670515057355,
+  "pearson_dgrade_opt_2026": 0.4423321623194852,
+  "p_dgrade_opt_2026": 0.23318410803105305,
+  "spearman_dgrade_dcomp_exp": -0.2556038601690775,
+  "spearman_dgrade_dsubst_exp": -0.21783245945486837,
+  "spearman_dgrade_dopt": 0.2885426844228509
 }

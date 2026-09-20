@@ -97,7 +97,10 @@ if not TAKE_UP.exists():
     raise SystemExit("run scripts/14_take_up.py first — it builds data/analysis/take_up.csv")
 tu = pd.read_csv(TAKE_UP)
 tu_summary = json.load(open(A / "take_up.json", encoding="utf-8"))
-tu_nc = tu[~tu.year.isin(PLATEAU)].dropna(subset=["d_take_up", "d_mean"])
+# The non-plateau rows, centred within community on those same years (see 14_take_up.py).
+tu_nc = tu[~tu.year.isin(PLATEAU)].dropna(subset=["d_take_up_nc", "d_mean_nc"]).copy()
+tu_nc["d_take_up"] = tu_nc.d_take_up_nc
+tu_nc["d_mean"] = tu_nc.d_mean_nc
 tu_r = stats.pearsonr(tu_nc.d_take_up, tu_nc.d_mean)
 tu_fit = np.polyfit(tu_nc.d_take_up, tu_nc.d_mean, 1)
 tu_nat = pd.Series({int(k): v for k, v in tu_summary["national_take_up_by_year"].items()})
@@ -158,7 +161,8 @@ axt.annotate("%.3f to %.3f\n(%+.0f %% relative)"
 axt.set_xticks(range(2015, 2027, 2))
 axt.set_xlabel("Year")
 axt.set_ylabel("Física enrolled / PAU candidates")
-axt.set_title("b. Take-up barely moved: 0.222 to 0.241 in a decade")
+axt.set_title("b. Take-up barely moved: %.3f to %.3f in a decade"
+              % (tu_nat.loc[2015], tu_nat.loc[2025]))
 axt.legend(loc="lower right", fontsize=7.6)
 
 # --- c. the dilution test --------------------------------------------------------
@@ -171,8 +175,8 @@ axd.plot(xs, np.polyval(tu_fit, xs), color=C["red"], lw=1.5, zorder=3)
 axd.annotate("$r = %+.3f$, $p = %.3f$, $n = %d$\n"
              "raw cohort size is no better: $r = %+.3f$, $p = %.3f$"
              % (tu_r[0], tu_r[1], len(tu_nc), dil[0], dil[1]),
-             xy=(0.97, 0.96), xycoords="axes fraction", fontsize=7.8, color=INK2,
-             ha="right", va="top")
+             xy=(0.97, 0.05), xycoords="axes fraction", fontsize=7.8, color=INK2,
+             ha="right", va="bottom")
 axd.set_xlabel("Take-up that year, relative to the community's own average (SD)")
 axd.set_ylabel("Mean mark, relative to the region's own average")
 axd.set_title("c. And it has no relationship with the mean")

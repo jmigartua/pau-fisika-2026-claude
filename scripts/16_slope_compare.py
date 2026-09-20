@@ -121,7 +121,9 @@ styles = [("PAU Física, Spain", pau_years_es, [pau_es.loc[y] for y in pau_years
           ("PISA science, Euskadi", pisa_years, [pisa_pv[y] for y in pisa_years],
            SD_PISA, C["violet"], "s", "--")]
 ax.axvspan(2019.5, 2024.5, color=C["yellow"], alpha=0.10, lw=0, zorder=0)
-ax.annotate("PAU plateau\n(excluded from the fits)", xy=(2022, 0.50), fontsize=7.4,
+# The annotation used to sit at y = 0.50, outside an axis that tops out near 0.21, so
+# it was never rendered and the shaded band went unexplained (audit, 20 September).
+ax.annotate("PAU plateau (excluded from the PAU fits)", xy=(2022, 0.175), fontsize=7.4,
             color="#8a6a00", ha="center")
 ax.axhline(0, color=MUTED, lw=0.9, zorder=1)
 for lab, yrs, vals, sd, colr, mk, ls in styles:
@@ -152,7 +154,9 @@ axf.axvline(0, color=C["red"], lw=1.1, ls=(0, (4, 3)), zorder=1)
 axf.set_yticks(ypos)
 axf.set_yticklabels(labels, fontsize=8)
 axf.set_xlabel("Slope, student SD per decade")
-axf.set_title("b. Every interval includes zero")
+_all_zero = all(abs(f["slope_sd_decade"]) < f["ci95"] for f in fits.values())
+axf.set_title("b. Every interval includes zero" if _all_zero
+              else "b. Not every interval includes zero")
 axf.annotate(
     "Euskadi falls %.2f times as fast as Spain in the PAU\n"
     "and %.2f times as fast in PISA. The PAU–PISA slope\n"

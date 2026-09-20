@@ -71,7 +71,7 @@ ax.hist(ch.delta, bins=bins, color=C["blue"], alpha=0.85, edgecolor=SURF, lw=1)
 ax.axvline(-1.48, color=C["red"], lw=2)
 ax.text(-1.5, ax.get_ylim()[1] * 0.92, "Euskadi 2025→2026\nΔ = −1.48", ha="right", va="top", color=C["red"], fontsize=9)
 ax.axvline(-0.62, color=C["orange"], lw=1.6, ls="--")
-ax.text(-0.6, ax.get_ylim()[1] * 0.92, "Euskadi 2024→2025\nΔ = −0.62", ha="left", va="top", color=C["orange"], fontsize=9)
+ax.text(-0.72, ax.get_ylim()[1] * 0.98, "Euskadi 2024→2025\nΔ = −0.62", ha="right", va="top", color=C["orange"], fontsize=9)
 ax.set_xlabel("Year-to-year change of the ordinary-sitting Physics mean, all 17 CCAA, 2015–2025 (n = 170)")
 ax.set_ylabel("Count")
 d = R["annual_change_dist_all"]
@@ -102,6 +102,7 @@ save(fig, "fig03_regions_2026_vs_2025")
 
 # ---------------------------------------------------------------- 4. regional small multiples
 L = pd.read_csv(A / "regional_long_series.csv")
+REG = pd.read_csv(A / "regions_2026_vs_2025.csv")
 order = ["País Vasco", "Canarias", "Extremadura", "Andalucía", "Comunitat Valenciana", "Cataluña", "Castilla-La Mancha", "Madrid (Comunidad de)", "Asturias (Principado de)"]
 fig, axes = plt.subplots(3, 3, figsize=(9.2, 7.2), sharex=True, sharey=True, gridspec_kw=dict(hspace=0.35, wspace=0.12))
 spain = L[L.ccaa == "Total"]
@@ -111,17 +112,32 @@ for ax, c in zip(axes.flat, order):
     ax.plot(d[d.year <= 2025].year, d[d.year <= 2025]["mean"], color=C["blue"], lw=1.9, marker="o", ms=3.5, zorder=2)
     d26 = d[d.year == 2026]
     if len(d26):
-        col = C["red"] if d26["mean"].iloc[0] < d[d.year == 2025]["mean"].iloc[0] else C["aqua"]
-        ax.plot([2025, 2026], [d[d.year == 2025]["mean"].iloc[0], d26["mean"].iloc[0]], color=col, lw=1.9, zorder=3)
+        # Cataluña's 2026 figure is on the "aptes" basis, which is not the basis of the
+        # ministry series: the comparison the chapter makes (+0.80) is aptes-to-aptes, so
+        # the segment is drawn from the aptes 2025 value, marked hollow, rather than from
+        # the ministry point. Before the audit of 20 September this panel silently drew a
+        # ministry-to-aptes segment of +0.86 under a title that said "aptes basis".
+        base_25 = float(REG.loc[REG.ccaa == c, "mean_2025"].iloc[0]) if c in set(REG.ccaa) \
+            else float(d[d.year == 2025]["mean"].iloc[0])
+        ministry_25 = float(d[d.year == 2025]["mean"].iloc[0])
+        if abs(base_25 - ministry_25) > 0.005:
+            ax.scatter([2025], [base_25], s=40, facecolor="none", edgecolor=C["blue"],
+                       lw=1.4, zorder=4)
+        col = C["red"] if d26["mean"].iloc[0] < base_25 else C["aqua"]
+        ax.plot([2025, 2026], [base_25, d26["mean"].iloc[0]], color=col, lw=1.9, zorder=3)
         ax.scatter([2026], d26["mean"], s=48, facecolor=col, edgecolor=SURF, zorder=4)
         ax.text(2026.45, d26["mean"].iloc[0], f"{d26['mean'].iloc[0]:.2f}", fontsize=8, va="center", color=INK, zorder=6)
-    ax.set_title(short.get(c, c) + (" (aptes basis)" if c == "Cataluña" else ""), fontsize=9.5)
+    _basis = {"Cataluña": " (2025–26 on the aptes basis)",
+              "Canarias": " (2026: ULL + ULPGC)"}.get(c, "")
+    ax.set_title(short.get(c, c) + _basis, fontsize=9.0)
     ax.set_ylim(3.4, 8.8)
     ax.set_xticks([2015, 2018, 2021, 2024, 2026])
     ax.tick_params(labelsize=8)
 axes[0, 0].plot([], [], color=MUTED, lw=1.3, label="Spain total")
 axes[0, 0].plot([], [], color=C["blue"], lw=1.9, label="Region (ministry 2015–25)")
-axes[0, 0].legend(loc="upper left", fontsize=7.5)
+axes[0, 0].plot([], [], marker="o", ls="", mfc="none", mec=C["blue"], ms=6,
+                label="2025 on the same basis as 2026")
+axes[0, 0].legend(loc="lower left", fontsize=7.0, framealpha=0.9)
 # fontweight is inert under usetex, so the emphasis comes from bf() (LaTeX \textbf).
 fig.suptitle(bf("Ordinary-sitting Physics mean, 2015–2026: ministry series plus the 2026 values located in this study"), fontsize=11, y=0.94)
 save(fig, "fig04_regional_small_multiples")
@@ -189,7 +205,7 @@ for j, (rg, col) in enumerate(zip(regions, cols)):
     for i, sj in enumerate(subjects):
         v = d[d.subject == sj]
         if len(v):
-            ax.scatter(v.delta, i + (j - 2) * 0.13, s=60, color=col, edgecolor=SURF, lw=1, zorder=3, label=("Euskadi" if rg == "País Vasco" else rg) if i == 0 else None)
+            ax.scatter(v.delta, i + (j - 2) * 0.17, s=60, color=col, edgecolor=SURF, lw=1, zorder=3, label=("Euskadi" if rg == "País Vasco" else rg) if i == 0 else None)
 ax.axvline(0, color=INK2, lw=1)
 ax.set_yticks(range(len(subjects)))
 ax.set_yticklabels(subjects)
@@ -197,6 +213,12 @@ ax.invert_yaxis()
 ax.set_xlabel("Change of the ordinary-sitting mean, 2025 → 2026 (points)")
 ax.legend(loc="lower left", ncol=5, bbox_to_anchor=(0, 1.0))
 ax.set_title("Science subjects, 2025→2026, in the five regions with subject means for both years", pad=28)
+fig.text(0.005, 0.005,
+         "Each region is compared with itself on its own published basis. Madrid's values are the "
+         "Comunidad de Madrid chart labels (Física +1.10); against the ministry 2025 baseline the "
+         "same change is +1.05,\nwhich is the figure used in the cross-regional table and in figures 3 and 4.",
+         fontsize=7, color=MUTED, linespacing=1.4)
+fig.subplots_adjust(bottom=0.22)
 save(fig, "fig07_subjects_by_region")
 
 # ---------------------------------------------------------------- 8. ordinary vs extraordinary
@@ -209,7 +231,7 @@ for x, y, lab in [(6.396, 4.162, "C. Valenciana 2026"), (6.80, 3.97, "C.-La Manc
     ax.scatter(x, y, s=70, color=C["red"], edgecolor=SURF, zorder=4)
     ax.annotate(lab, (x, y), textcoords="offset points", xytext=(6, -4), fontsize=8, color=INK)
 ax.axvline(3.99, color=C["red"], lw=1.2, ls="--")
-ax.text(4.02, 6.6, "Euskadi 2026\nordinary 3.99\n(extraordinary\nnot published)", fontsize=8, color=C["red"])
+ax.text(4.16, 6.45, "Euskadi 2026\nordinary 3.99\n(extraordinary\nnot published)", fontsize=8, color=C["red"], ha="left")
 xx = np.linspace(3, 9, 10)
 ax.plot(xx, xx - R["ord_extra_gap"]["mean_gap_all"], color=INK2, lw=1, ls=":", label=f"y = x − {R['ord_extra_gap']['mean_gap_all']:.2f} (mean gap)")
 ax.set_xlabel("Ordinary-sitting mean")
@@ -229,14 +251,17 @@ ax.axhline(0, color=INK2, lw=1)
 ax.set_title("Women − men, mean grade (Euskadi Physics)")
 ax.set_ylabel("Points")
 ax2 = ax.twinx(); ax2.set_axis_off()
-ax.text(2010, 0.45, f"women are {g.pct_mujeres_matricula.min():.0f}–{g.pct_mujeres_matricula.max():.0f} % of Physics enrolment", fontsize=8, color=INK2)
 ax = axes[1]
 ax.bar(g.year, g.lang_gap_eu_minus_es, color=[C["aqua"] if v > 0 else C["orange"] for v in g.lang_gap_eu_minus_es], width=0.7, zorder=2)
 ax.axhline(0, color=INK2, lw=1)
 ax.set_title("Euskera track − Castilian track, mean grade")
-ax.text(2010, 0.22, f"euskera track share rose {g.pct_euskera_matricula.iloc[0]:.0f} % → {g.pct_euskera_matricula.iloc[-1]:.0f} %", fontsize=8, color=INK2)
+ax.set_ylabel("Points")
+_lim = max(abs(g.gender_gap_f_minus_m).max(), abs(g.lang_gap_eu_minus_es).max()) * 1.35
 for ax in axes:
     ax.set_xticks(range(2010, 2023, 2))
+    ax.set_ylim(-_lim, _lim)
+axes[0].text(2010, _lim * 0.86, f"women are {g.pct_mujeres_matricula.min():.1f}–{g.pct_mujeres_matricula.max():.1f} % of Physics enrolment", fontsize=8, color=INK2)
+axes[1].text(2010, _lim * 0.86, f"euskera track share rose {g.pct_euskera_matricula.iloc[0]:.0f} % → {g.pct_euskera_matricula.iloc[-1]:.0f} %", fontsize=8, color=INK2)
 save(fig, "fig09_gender_language_euskadi")
 
 # ---------------------------------------------------------------- 10. school vs PAU

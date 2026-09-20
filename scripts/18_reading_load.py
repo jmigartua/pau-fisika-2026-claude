@@ -136,6 +136,11 @@ comp = (coding.groupby(["ccaa", "year"])
                include_groups=False)
         .unstack())
 comp_delta = (comp[2026] - comp[2025]).rename("d_competency").reset_index()
+# The coding file uses the short community names and the length table the long ones,
+# so a plain merge silently dropped Asturias and Madrid and computed the collinearity
+# on six papers instead of eight (found in the audit of 20 September).
+_LONG = {"Asturias": "Asturias (Principado de)", "Madrid": "Madrid (Comunidad de)"}
+comp_delta["ccaa"] = comp_delta.ccaa.replace(_LONG)
 ok = ok.merge(comp_delta, on="ccaa", how="left")
 _c = ok.dropna(subset=["d_competency"])
 r_collin = stats.pearsonr(_c.len_change, _c.d_competency)
@@ -172,8 +177,16 @@ for _, r in ok.iterrows():
     colr = C["violet"] if r.ccaa == "País Vasco" else MUTED
     axl.scatter([r.len_change], [r.delta], s=70 if colr == C["violet"] else 44,
                 color=colr, zorder=3)
-    axl.annotate(r.ccaa.split(" (")[0], (r.len_change, r.delta),
-                 textcoords="offset points", xytext=(7, 4), fontsize=7.2, color=colr)
+    # Canarias (+13.4, -0.83) and Extremadura (+19.5, -0.82) printed on top of each
+    # other, and the fitted line ran through the Valencian label (audit, 20 September).
+    _off = {"Canarias": (-8, -4), "Extremadura": (8, -4), "Comunitat Valenciana": (7, -11),
+            "Cataluña": (7, 4), "Andalucía": (7, -11), "Madrid": (-8, 5),
+            "Asturias": (7, 4), "País Vasco": (-9, 4)}
+    _name = r.ccaa.split(" (")[0]
+    dx, dy = _off.get(_name, (7, 4))
+    axl.annotate(_name, (r.len_change, r.delta), textcoords="offset points",
+                 xytext=(dx, dy), fontsize=7.2, color=colr,
+                 ha="right" if dx < 0 else "left")
 xs = np.linspace(ok.len_change.min() - 4, ok.len_change.max() + 4, 40)
 axl.plot(xs, np.polyval(np.polyfit(ok.len_change, ok.delta, 1), xs),
          color=C["red"], lw=1.5, zorder=2)
@@ -228,7 +241,8 @@ json.dump({
                         "pearson_r_boilerplate_stripped": r_len_nb[0], "n": int(len(ok)),
                         "pearson_r_raw_files_pre_audit": r_raw[0], "pearson_p_raw_files_pre_audit": r_raw[1],
                         "pearson_r_excl_pais_vasco": r_excl_pv[0], "pearson_p_excl_pais_vasco": r_excl_pv[1]},
-    "collinearity_with_competency_change": {"r": r_collin[0], "p": r_collin[1]},
+    "collinearity_with_competency_change": {"r": r_collin[0], "p": r_collin[1],
+                                            "n": int(len(_c))},
     "pisa_reading": reading,
     "pais_vasco_decade_fall": {"reading": reading[2015]["pv"] - reading[2025]["pv"],
                                "science": sci_pv[2015] - sci_pv[2025]},

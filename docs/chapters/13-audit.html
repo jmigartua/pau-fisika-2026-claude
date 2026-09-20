@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-09-19">
-<meta name="description" content="The audit of 19 September 2026: reproducibility of the pipeline, number-by-number verification of all chapters, a blind second coding of the exam papers, a figure-by-figure check, a sourcing check, and a reasoning audit of the interpretation chapter, with the corrections applied and the questions that remain.">
+<meta name="description" content="The audits of 19 and 20 September 2026: reproducibility, number-by-number verification of every chapter against the raw data, a blind second coding of the exam papers, a figure-by-figure check, and a reasoning audit — with the corrections applied, the first audit’s own errors, and the questions that remain.">
 
 <title>Audit – PAU Física 2026</title>
 <style>
@@ -511,13 +511,18 @@ window.Quarto = {
   <ul>
   <li><a href="#why-and-how" id="toc-why-and-how" class="nav-link active" data-scroll-target="#why-and-how">Why and how</a></li>
   <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
-  <li><a href="#what-was-wrong" id="toc-what-was-wrong" class="nav-link" data-scroll-target="#what-was-wrong">What was wrong</a></li>
+  <li><a href="#what-was-wrong" id="toc-what-was-wrong" class="nav-link" data-scroll-target="#what-was-wrong">What was wrong</a>
+  <ul class="collapse">
+  <li><a href="#claims-withdrawn-or-restated-interpretation" id="toc-claims-withdrawn-or-restated-interpretation" class="nav-link" data-scroll-target="#claims-withdrawn-or-restated-interpretation">Claims withdrawn or restated (interpretation)</a></li>
+  <li><a href="#errors-in-the-data-and-the-scripts" id="toc-errors-in-the-data-and-the-scripts" class="nav-link" data-scroll-target="#errors-in-the-data-and-the-scripts">Errors in the data and the scripts</a></li>
+  <li><a href="#errors-of-number-and-fact" id="toc-errors-of-number-and-fact" class="nav-link" data-scroll-target="#errors-of-number-and-fact">Errors of number and fact</a></li>
+  <li><a href="#what-the-first-audit-itself-got-wrong" id="toc-what-the-first-audit-itself-got-wrong" class="nav-link" data-scroll-target="#what-the-first-audit-itself-got-wrong">What the first audit itself got wrong</a></li>
+  </ul></li>
   <li><a href="#what-held" id="toc-what-held" class="nav-link" data-scroll-target="#what-held">What held</a></li>
-  <li><a href="#what-the-audit-added" id="toc-what-the-audit-added" class="nav-link" data-scroll-target="#what-the-audit-added">What the audit added</a></li>
+  <li><a href="#what-the-audits-added" id="toc-what-the-audits-added" class="nav-link" data-scroll-target="#what-the-audits-added">What the audits added</a></li>
   <li><a href="#corrections-applied" id="toc-corrections-applied" class="nav-link" data-scroll-target="#corrections-applied">Corrections applied</a></li>
   <li><a href="#still-open-and-for-the-author-to-decide" id="toc-still-open-and-for-the-author-to-decide" class="nav-link" data-scroll-target="#still-open-and-for-the-author-to-decide">Still open, and for the author to decide</a></li>
-  <li><a href="#a-second-pass-after-the-briefing-was-written" id="toc-a-second-pass-after-the-briefing-was-written" class="nav-link" data-scroll-target="#a-second-pass-after-the-briefing-was-written">A second pass, after the briefing was written</a></li>
-  <li><a href="#what-this-audit-could-not-do" id="toc-what-this-audit-could-not-do" class="nav-link" data-scroll-target="#what-this-audit-could-not-do">What this audit could not do</a></li>
+  <li><a href="#what-these-audits-could-not-do" id="toc-what-these-audits-could-not-do" class="nav-link" data-scroll-target="#what-these-audits-could-not-do">What these audits could not do</a></li>
   </ul>
 </nav>
     </div>
@@ -528,7 +533,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/13-audit.html">Audit</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Audit</h1>
-<p class="subtitle lead">Every number recomputed, every figure re-derived, the argument read step by step — what was wrong, what was corrected, what is still open</p>
+<p class="subtitle lead">Two audits, what each found, what the first one got wrong, and what is still open</p>
   <div class="quarto-categories">
     <div class="quarto-category">audit</div>
     <div class="quarto-category">methods</div>
@@ -537,7 +542,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    The audit of 19 September 2026: reproducibility of the pipeline, number-by-number verification of all chapters, a blind second coding of the exam papers, a figure-by-figure check, a sourcing check, and a reasoning audit of the interpretation chapter, with the corrections applied and the questions that remain.
+    The audits of 19 and 20 September 2026: reproducibility, number-by-number verification of every chapter against the raw data, a blind second coding of the exam papers, a figure-by-figure check, and a reasoning audit — with the corrections applied, the first audit’s own errors, and the questions that remain.
   </div>
 </div>
 
@@ -552,6 +557,12 @@ window.Quarto = {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 20, 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -560,9 +571,22 @@ window.Quarto = {
 </header>
 
 
+<div class="callout callout-style-default callout-important callout-titled" title="Read this chapter as part of the evidence">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Read this chapter as part of the evidence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The study has been audited twice. The first audit corrected the analysis; the second audited the first, found that three of its corrections had not been carried into the chapters they named, corrected a data bug that had survived both, and established that one of its retractions had gone too far. Everything below is what the two passes found, including what they found about each other.</p>
+</div>
+</div>
 <section id="why-and-how" class="level2">
 <h2 class="anchored" data-anchor-id="why-and-how">Why and how</h2>
-<p>Before this site is shown to anyone else, the whole of it was audited in one evening, with the explicit brief to be exhaustive and critical: every number, figure, table, dataset and interpretation. The audit was organised in seven layers, each run independently of the others and each producing a written report that is archived verbatim in <code>logs/audit/</code>:</p>
+<p>Before this site is shown to anyone, it was audited with an explicit brief: be exhaustive and critical, check every number, figure, table, dataset and interpretation, and report the errors, the bad reasoning and the bad conclusions rather than quietly fixing them.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -571,75 +595,80 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Layer</th>
-<th>What was done</th>
-<th>Report</th>
+<th>Pass</th>
+<th>Layers</th>
+<th>Reports</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A. Reproducibility</td>
-<td>All eighteen numbered scripts re-run from the raw sources in a clean environment; every JSON, CSV, table and figure compared with the committed version</td>
-<td>this chapter, §Reproducibility</td>
+<td><strong>First, 19 September</strong></td>
+<td>A reproducibility re-run; B numbers in Chapters 2–5 and the overview; C numbers in Chapter 6; D reasoning in Chapter 6; E blind second coding of all 146 exam items; F figures and tables; G sources and consistency</td>
+<td><code>logs/audit/B_…</code> to <code>G_…</code>; layer A and the consolidation are in this chapter</td>
 </tr>
 <tr class="even">
-<td>B. Numbers, Chapters 2–5 and the overview</td>
-<td>Every numeric claim located, recomputed from the cubes, the July package and the archived documents, and given a verdict</td>
-<td><code>B_numbers_ch2-5_index.md</code></td>
-</tr>
-<tr class="odd">
-<td>C. Numbers, Chapter 6</td>
-<td>Every statistic of the locus, drift, PISA, slope, reading-load and 2027 sections recomputed; PISA values checked cell by cell in the INEE workbooks; word counts recomputed from the PDFs</td>
-<td><code>C_numbers_ch6.md</code></td>
-</tr>
-<tr class="even">
-<td>D. Reasoning, Chapter 6</td>
-<td>The argument read in the order it was built; confounds, missing base rates, missing sub-questions; three new tests run</td>
-<td><code>D_reasoning_ch6.md</code></td>
-</tr>
-<tr class="odd">
-<td>E. Chapters 11–12</td>
-<td>A blind second coding of all 146 exam items by a second reader; agreement measured; structure facts re-verified</td>
-<td><code>E_second_coding_report.md</code>, <code>E_second_coding.csv</code></td>
-</tr>
-<tr class="even">
-<td>F. Figures and tables</td>
-<td>All 24 figures opened and checked against their data, captions and the prose about them; all included tables checked against their CSVs</td>
-<td><code>F_figures_tables.md</code></td>
-</tr>
-<tr class="odd">
-<td>G. Sources and consistency</td>
-<td>Citation keys, registry hashes, cross-chapter consistency of every headline quantity, internal links, dates, provenance statements, the rendered site</td>
-<td><code>G_sources_consistency.md</code></td>
+<td><strong>Second, 20 September</strong></td>
+<td>A second clean re-run; five independent readers over (i) Chapters 2–5 and the overview, (ii) Chapter 6 including its statistical reasoning, (iii) Chapters 11–12 <em>against the exam PDFs themselves</em>, (iv) Chapters 13 and 14; one over all 24 figures then in the set, opening each image and checking it against the script and the data; and, after the rewrite, a sixth reader over the rewritten chapters and the new decomposition</td>
+<td><code>logs/AUDIT_2026-09-20.md</code></td>
 </tr>
 </tbody>
 </table>
-<p>Layers B, C, E, F and G were delegated to independent readers working only from the files; layer D and the consolidation were done by the lead. Nothing below was fixed silently: every correction is listed with the wrong statement, the right one and where it was applied, and the interpretive changes are marked as such so the author can reverse them.</p>
+<p>Every reader worked only from the files, recomputing rather than trusting the derived tables: for the second pass that meant re-parsing the Ministry PC-Axis cubes, re-reading the INEE PISA workbooks cell by cell, and opening thirty-two exam PDFs with <code>pdftotext</code> to check structural claims against the papers instead of against the coding file.</p>
 </section>
 <section id="reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
-<p>The pipeline reproduces. With the LaTeX text stack installed (<code>cm-super</code>, <code>lmodern</code>, <code>dvipng</code>) and <code>xlrd</code> for the 2015 PISA workbook, all scripts ran in the documented order, and the regenerated outputs were byte- or value-identical to the committed ones — 162 of the 162 registry hashes then recorded (the registry holds 166 once the PISA workbooks are added), every table, every figure to the pixel — with one exception. <code>data/analysis/slope_compare.json</code> and <code>plots/fig22_slope_compare.png</code> differed from the text of Chapter 6: the chapter’s slope table was computed on PISA 2012–2022 (four rounds), but PISA 2025 had since been appended to the series for the 2027 section and the script re-run, so the committed figure and JSON carried five rounds — on which both PISA slopes are significant and the Basque-to-Spanish ratio is 2.1, not 1.7, and the figure’s own panel title (“every interval includes zero”) was false in the picture. That is the most serious single finding: a figure that looked finished, whose text had been written before its data changed. The fix pins the fit to 2012–2022 with the reason stated, reports the five-round result alongside, and rewrites the section’s conclusion (§Corrections).</p>
-<p>Two script defects that had not yet reached the text were also found and fixed: <code>09_shape_locus.py</code> wrote the normality statistics of the last marginal loop into the <code>mean_axis</code> block of its JSON (the chapter quoted the right values, the JSON held wrong ones), and its presented counts were the specific-phase undercount that the chapter itself rejects; <code>11_analysis_path.py</code> used the seventeen-community 2024→2025 change (−0.81) as the first point of a figure captioned “all computed on the same nine communities” (the nine-community value is −0.65).</p>
+<p>The pipeline reproduces exactly. Run clean on 20 September, scripts 01–20 regenerated every JSON, CSV and Markdown table byte-identically and every PNG pixel-identically; the SVGs differ only in their embedded timestamp. (Script 21, which produces the decomposition, was written after that run and so is outside the identity test; its outputs are reproduced by re-running it.) On 19 September the same test passed for every one of the 162 registry hashes then recorded (the registry holds 166 once the PISA workbooks are added), but not for two derived outputs: <code>slope_compare.json</code> and figure 22 carried five PISA rounds while the chapter’s text had been written on four. That was the first audit’s most serious single finding: a finished-looking figure whose text predated its data.</p>
 </section>
 <section id="what-was-wrong" class="level2">
 <h2 class="anchored" data-anchor-id="what-was-wrong">What was wrong</h2>
-<p>Ninety-odd claims were checked in Chapters 2–5 and the overview, seventy-two in Chapter 6. Most were right. The ones that were not, in order of consequence:</p>
-<p><strong>Claims withdrawn (interpretation).</strong> Three sentences of Chapter 6 that a reader would have quoted did not survive. (1) <em>“The plateau reshaped the distribution”</em> — the conditional top-band ratio rose from 0.353 to 0.466 through 2020–2024, but the ratio tracks the mean at <span class="math inline">\(r = 0.905\)</span>; the locus predicts 0.356 → 0.442 from the level alone, the residual excess is <span class="math inline">\(+0.02\)</span> with <span class="math inline">\(p = 0.17\)</span> on year means, carried by 2020. The plateau was a lift. (2) <em>“A Basque signal that arrives a year early”</em> — Euskadi’s conditional residual was not “eight consecutive years on the other side” (2015, 2020 and 2021 were negative), and the two-year negative turn of 2024–25 is shared by Aragón, Castilla y León, Comunitat Valenciana and La Rioja: five of seventeen communities, nine of seventeen with some such run. It is not a Basque signal. (3) <em>“The two instruments fall at the same rate; Euskadi 1.72 × Spain on the PAU and 1.66 × on PISA, within 4 %”</em> — stale (above), and ill-posed: both records are steps (2015, 2025 in PISA; the plateau’s end and 2026 in the PAU), not slopes, and the ratio is of two slopes with <span class="math inline">\(p\)</span>-values of 0.19 and 0.38.</p>
-<p><strong>Errors of fact (numbers and statements).</strong> Chapter 2: 2025’s 5.47 was said to fall “just outside” the 5.45–6.49 band (it is inside; the <em>residual</em> is outside); the list of the seven changes as negative as −1.48 named six (Cantabria 2025, −1.51, missing — the <code>results.json</code> list was truncated); “the only case in the panel with two consecutive falls summing to more than two points” (Extremadura and Baleares 2023–25 both qualify); “never a top region” (three fourth places). Chapter 3: Canarias’ path “one point higher” than Euskadi’s (it is lower in 2024–25, higher in 2026); Extremadura “highest in 2021–2023” (second in 2021); Castilla-La Mancha’s July sitting “2–3 points lower every year” (1.2–2.8); La Rioja pass rates “settling at 66–80 %” (66–94 %); “both jumped two points in 2012” (La Rioja in two steps). Chapter 4: the fitted 2026 density described as “highest near the origin and decreasing monotonically” — Beta(1.27, 1.81) is zero at the origin with a mode near 2.5, not J-shaped; the failing band “25–34 % in every normal year” (36.4 % in 2015); the top band “17–20 % in 2018–2023” (15.4 % in 2019, 36.0 % in 2021). Chapter 5: “Biología rose in Asturias” (no value exists); the July sitting “1.5 to 3 points below June” in every dataset (Tenerife 2026: 0.81); “90.6 % in July 2025” (EHU’s own report gives 83.2 % for July 2025; 90.6 % is July 2024); “some 400 candidates” (200–370); women outscore men “every year” (2014: −0.01). Overview: “lowest since 2010–11” (lowest of the whole series); “four of the nine from dashboards” (two); “twelve years of Ministry data” (eleven); “+0.5 to +1.1” for six risers (Andalucía +0.17). Chapter 6: “more than double the previous worst” PISA gap (1.92 ×); Basque top-band share “below Spain’s in two rounds of three” (all three); “thirteen published regional standard deviations” (thirteen Comunitat Valenciana figures); the nine-community plateau “+0.4 to +1.0 … all about +0.65” (seventeen-community figures; the nine give +0.5 to +1.05, and +0.62/+0.53/+0.50); the 2027 estimator added the same cohort term to both scenarios when the 2026-based one should carry half (3.63 → 3.81); the reading-load section’s Madrid figure — 4,070 words, explained by “more choice” — was 70 % embedded solutions and criteria: the statement went from 1,127 to 1,093 words, a shortening. Chapter 12: “three formats” (four); the Biot–Savart title “once” (twice).</p>
-<p><strong>Stale or inconsistent presentation.</strong> The deployed site (<code>_site/</code>, <code>docs/</code>, the single-page edition) was rendered at 09:33 and did not contain the afternoon’s Chapter 6, its disclosure, or figures 16–24; <code>docs/</code> also carried an 11 MB stale copy of itself (<code>docs/docs/</code>), picked up by an unanchored resource glob. The path section narrated seven steps against a twelve-step figure. Figure 19 was generated but included nowhere. Figure captions said “2006 to 2022” for a series that ran to 2025, and named the wrong panel; figure 13’s footer mixed per-year and per-paper counts and contradicted its own row for decibels. The Madrid Física change appeared as +1.05 (Ministry baseline) and +1.10 (chart-label baseline) in different tables without comment. Front-matter dates said 18 September on chapters with 19 September content. The PISA workbooks were not in the source registry. The Chapter 6 disclosure and Chapter 12’s “the coordinator” were never reconciled. Chapter 1 said “no archive or mirror of a blocked site was used” in the same paragraph that described two files retrieved from FiQuiPedia’s public archive.</p>
+<section id="claims-withdrawn-or-restated-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="claims-withdrawn-or-restated-interpretation">Claims withdrawn or restated (interpretation)</h3>
+<p><strong>Withdrawn at the first audit and still withdrawn.</strong> <em>“The plateau reshaped the distribution”</em> — the conditional top-band ratio rose 0.353 → 0.466 through 2020–2024, but it tracks the mean at <span class="math inline">\(r = 0.905\)</span>; the locus predicts 0.356 → 0.442 from the level alone, the residual excess is <span class="math inline">\(+0.02\)</span> with <span class="math inline">\(p = 0.17\)</span> on year means, carried by 2020. The plateau was a lift. <em>“The two instruments fall at the same rate”</em> — stale (above), and ill-posed: both records are steps rather than slopes, and the ratio compares two slopes with <span class="math inline">\(p\)</span>-values of 0.19 and 0.38.</p>
+<p><strong>Withdrawn at the first audit and partly reinstated at the second.</strong> <em>“A Basque signal that arrives a year early.”</em> The first audit was right that the <em>level</em> of Euskadi’s conditional residual in 2024–25 is unremarkable: five of seventeen communities are below <span class="math inline">\(-0.5\)</span> SD in both years. It was wrong to conclude that nothing happened, because neither version tested the <em>transition</em>, which is what “a turn” means. Euskadi’s residual moved <span class="math inline">\(-3.08\)</span> SD between 2023 and 2024 — the second-most-negative move of the 170 transitions in the panel, and the largest negative move outside the LOMLOE year. On the unsigned size of the shape move it is eleventh of 170, which is the honest way to state it. The corrected statement, and what follows from it, is in <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">the decomposition</a>.</p>
+</section>
+<section id="errors-in-the-data-and-the-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="errors-in-the-data-and-the-scripts">Errors in the data and the scripts</h3>
+<p>The second audit found one error that had produced a published number, and two that had produced published counts.</p>
+<ul>
+<li><strong>A weighting bug</strong> in <code>07_exam_coding.py</code>. Expected exposure was computed as <code>points / n_options</code>, which is right for “choose one of <span class="math inline">\(n\)</span>” slots but wrong for Asturias, whose paper is “answer any five of eight”: its weights summed to 2.0 instead of 10, so its contextualised share was recorded as 10 % and 12.5 % instead of 50 % and 62.5 %. The correlation between the change in contextualised points and the change in grade moves from <span class="math inline">\(-0.89\)</span> to <span class="math inline">\(-0.85\)</span>, and figure 12’s Asturias stack was drawn at a fifth of its height. Weights are now normalised to each paper’s total.</li>
+<li><strong>Two theory questions missing</strong> from the EHU inventory: option B of July 2019 carries <em>Cámara fotográfica</em> and <em>Campos de fuerza conservativos…</em>, which <code>08_ehu_history.py</code> did not record. The count is 120 questions in 30 papers, not 118; the photographic camera was set twice, not once; and the five most frequent titles account for 47 of 120.</li>
+<li><strong>A silent merge failure</strong> in <code>18_reading_load.py</code>: the coding file uses short community names and the length table long ones, so Asturias and Madrid were dropped and the length–competency collinearity was computed on six papers. It is <span class="math inline">\(+0.79\)</span> (<span class="math inline">\(p = 0.02\)</span>, <span class="math inline">\(n = 8\)</span>), not <span class="math inline">\(+0.90\)</span>.</li>
+<li><strong>A centring artefact</strong> in the take-up test: both variables were centred within community over all eleven years and the test then run on the six non-plateau ones, which left the plotted cloud sitting 0.3 below an axis labelled “relative to the community’s own average”. Centred on the years actually used, the correlation is <span class="math inline">\(r = -0.096\)</span>, <span class="math inline">\(p = 0.339\)</span>, against the <span class="math inline">\(-0.020\)</span>, <span class="math inline">\(p = 0.839\)</span> the chapter reported. The conclusion — take-up is unrelated to the mean — is unchanged.</li>
+</ul>
+</section>
+<section id="errors-of-number-and-fact" class="level3">
+<h3 class="anchored" data-anchor-id="errors-of-number-and-fact">Errors of number and fact</h3>
+<p>The first audit corrected some forty; the second found twenty-one more in Chapters 2–5 and the overview, seventeen in Chapter 6, fifteen in Chapters 11–12 and seventeen in Chapter 14. They fall into three recurring classes, and the classes are more useful than the list.</p>
+<p><strong>Range endpoints.</strong> Almost every “X to Y” in the study was rounded inward or outward by a tenth: the plateau by subject, the Basque science subjects, the failing band, the presentation rate, the enrolment range, the risers’ range, the July–June gap. Each is now the computed minimum and maximum.</p>
+<p><strong>Superlatives.</strong> “The only”, “never”, “the lowest”, “the strongest”, “the largest” were wrong about as often as they were right. Canarias had not “lived through a Basque-sized collapse” (three one-year falls were larger than Euskadi’s); the reading-load correlation is not “the strongest this study has found” (it ties with contextualised points); Euskadi’s 2024 move is not the largest of the 170 transitions (Cantabria 2025 is larger); 2020 was not the largest residual in the panel (it is the largest year mean).</p>
+<p><strong>Populations silently mixed.</strong> Three Basque 2015–19 baselines circulate in the study — 5.92 specific phase, 5.90 pooled, 5.86 general-phase-preferred — and the chapter used all three within a few pages. Two z-scales for the same conditional residual were in use. The nine-community 2026 cross-section mixes presented, <em>aptes</em> and chart-label bases and is compared with a decade of presented-basis means. Figure 4 drew Cataluña’s ministry 2025 against its <em>aptes</em> 2026 under a panel titled “aptes basis”, making +0.86 of a change the rest of the study calls +0.80.</p>
+</section>
+<section id="what-the-first-audit-itself-got-wrong" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-first-audit-itself-got-wrong">What the first audit itself got wrong</h3>
+<p>This is the part of an audit chapter that is usually missing.</p>
+<ul>
+<li>It stated that the corrected reading-load correlation was “now quoted to three decimals wherever it appears”. It was not: Chapter 6 still carried <span class="math inline">\(-0.91\)</span> twice, once inside its own account of the audit.</li>
+<li>It stated that two over-rounded plateau ranges were “corrected here and in the chapters”. They were corrected in the briefing and not in Chapter 6.</li>
+<li>It corrected the optionality claim in Chapter 6 and not in Chapter 11, where the uncorrected sentence then contradicted a correct one fourteen lines below it.</li>
+<li>Its own caption said the 2025 science subjects returned “within ±0.2” of norm while printing Biología at <span class="math inline">\(-0.21\)</span>; it called a 2.93-point dispersion “two points”; it described the 61.5 % euskera share for 2014 as “not reproducible” when what fails to reconcile is the column total; it attributed <span class="math inline">\(\kappa = 0.61\)</span> to the three-level context code, which is 0.70.</li>
+<li>It listed the 2017 Basque cohort of ≈ 9 900 among unverifiable press figures; the Ministry cube gives it directly (Historia de España 9 940 presented).</li>
+<li>Its “what held” list included the 2026 regional table, two of whose figures the same chapter lists as unverifiable press, and “the 2027 arithmetic”, whose proration it had just corrected.</li>
+</ul>
+<p>The general lesson is the one the second audit acted on: a correction is not applied until the string is changed in the file, and an audit that reports corrections rather than verifying them is a second draft, not an audit.</p>
+</section>
 </section>
 <section id="what-held" class="level2">
 <h2 class="anchored" data-anchor-id="what-held">What held</h2>
-<p>The Basque headline numbers (3.99, 39.8 %, 24.5 % ≤ 2, 3.2 % zeros, 2 066) and the 2010–2026 series; the Ministry panel (170 changes, SD 0.74, <span class="math inline">\(z = -1.97\)</span>, 7 of 170; 14 of 17 in 2025, −0.81; ranks; levels); the 2026 regional table and its cross-checks (the Canarias pooled 2025 equals the Ministry’s 5.08 exactly; La Rioja’s chart readings coincide with the cube for 2015–2022); the Beta fits (stable from three starting points); every Canarian histogram statistic; the school-marks block (verified line by line in the Inspectorate PDF); the subject tables; the ordinary–extraordinary relation; the locus construction and its caveats; the drift tests; every PISA mean and top-band share against the INEE workbook cells; the 2027 arithmetic; every citation key; every internal link; every registry hash.</p>
-<p>The exam-content coding of Chapter 11 was put to the hardest test available — a blind second coder over all 146 items — and held: agreement κ = 0.76 on the competency flag and 0.83–1.00 on draw, graph, evaluate and explain; every direction of change 2025 → 2026 identical under both coders; País Vasco 25 → 62.5 % and Castilla-La Mancha 0 → 20 % identical; the ten papers of Asturias, Madrid, Andalucía, Canarias and Extremadura at zero under both. The one coder-sensitive quantity is Cataluña’s absolute level (75 → 38 % for the first coder, 37.5 → 25 % for the stricter second), which the chapter now states.</p>
+<p>Under two independent passes, recomputed from the raw cubes and the original PDFs: the Basque headline numbers and the whole 2010–2026 series; the Ministry panel (170 changes, SD 0.74, <span class="math inline">\(z = -1.97\)</span>, 7 of 170, 14 of 17 in 2025 at <span class="math inline">\(-0.81\)</span>, the ranks and levels); the 2026 regional table’s official values and its cross-checks; the Beta fits; every Canarian histogram statistic; the school-marks block, verified line by line in the Inspectorate PDF; the ordinary–extraordinary relation; the locus construction and all its caveats; the drift tests; every PISA mean, standard error and proficiency share against the INEE workbooks; the selection-premium simulation; every marking rule against the corrector documents; every citation key, internal link and registry hash.</p>
+<p>The exam coding was put to two independent tests. A blind second coder over all 146 items agreed at <span class="math inline">\(\kappa = 0.76\)</span> on the competency flag and 0.83–1.00 on drawing, graph reading, evaluation and explanation, with weaker agreement on application (0.76) and on the three-level context code (0.70, or 0.61 on its substantive-context boundary). Separately, the second audit checked the structural claims against thirty-two exam PDFs: every structure row, every marking rule, every “never set” topic and the verbatim-title claim were confirmed from the papers, with the exceptions listed above. Every conclusion Chapter 11 draws is identical under both coders; the one number that is not robust is the contextualised-points correlation, which a stricter coder puts at <span class="math inline">\(-0.59\)</span>.</p>
 </section>
-<section id="what-the-audit-added" class="level2">
-<h2 class="anchored" data-anchor-id="what-the-audit-added">What the audit added</h2>
-<p>Three tests that the interpretation chapter should have run were run, and are now part of it (<code>scripts/19_audit_checks.py</code>, <code>data/audit/</code>):</p>
+<section id="what-the-audits-added" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-audits-added">What the audits added</h2>
+<p>The first audit added four tests the interpretation chapter should have run: the plateau by subject (it is in every subject), the base rate of the conditional turn (five of seventeen), Euskadi’s subjects against their own norms (Física alone clearly below in 2025), and the nine communities against their pre-COVID norms (a 2.9-point spread behind a <span class="math inline">\(+0.02\)</span> average).</p>
 <div id="tbl-audit-plateau" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-plateau-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: The 2020–2024 plateau and its end in 2025, subject by subject: each subject’s mean over the seventeen communities against its own 2015–2019 norm. The plateau is in every subject; in 2025 every science subject returned to within <span class="math inline">\(\pm 0.2\)</span> of its norm, while the humanities kept part of the lift.
+Table&nbsp;1: The 2020–2024 plateau and its end in 2025, subject by subject: each subject’s mean over the seventeen communities against its own 2015–2019 norm. The plateau is in every subject; in 2025 every science subject returned to within about a fifth of a point of its norm, while the humanities kept part of the lift.
 </figcaption>
 <div aria-describedby="tbl-audit-plateau-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -751,170 +780,10 @@ Table&nbsp;1: The 2020–2024 plateau and its end in 2025, subject by subject: e
 </div>
 </figure>
 </div>
-<div id="tbl-audit-turn" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-turn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Base rate of the two-year negative turn on the conditional top-band residual that had been read as a Basque signal.
-</figcaption>
-<div aria-describedby="tbl-audit-turn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Statistic</th>
-<th>n</th>
-<th>of</th>
-<th>Communities</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>communities with residual &lt; −0.5 SD in both 2024 and 2025</td>
-<td>5</td>
-<td>17</td>
-<td>Aragón, Castilla y León, Comunitat Valenciana, País Vasco, Rioja (La)</td>
-</tr>
-<tr class="even">
-<td>communities with any two consecutive years below −0.5 SD</td>
-<td>9</td>
-<td>17</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>communities with ≥ 7 positive years in 2016–2023 (Euskadi: 6)</td>
-<td>3</td>
-<td>17</td>
-<td>Balears (Illes), Extremadura, Galicia</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<div id="tbl-audit-basque" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-basque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: Euskadi’s subjects against their own 2015–2019 norms: in 2025 Física is the only Basque science subject clearly below its norm (<span class="math inline">\(-0.39\)</span>; Química sits on it at <span class="math inline">\(-0.01\)</span>, Matemáticas II and Biología above it).
-</figcaption>
-<div aria-describedby="tbl-audit-basque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Euskadi subject</th>
-<th>2015–19 mean</th>
-<th>2020</th>
-<th>2021</th>
-<th>2022</th>
-<th>2023</th>
-<th>2024</th>
-<th>2025</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Física</td>
-<td>5.86</td>
-<td>+0.58</td>
-<td>+1.82</td>
-<td>+0.20</td>
-<td>+0.44</td>
-<td>+0.23</td>
-<td>-0.39</td>
-</tr>
-<tr class="even">
-<td>Matemáticas II</td>
-<td>6.48</td>
-<td>+1.12</td>
-<td>+1.48</td>
-<td>+0.14</td>
-<td>+0.72</td>
-<td>+0.39</td>
-<td>+0.27</td>
-</tr>
-<tr class="odd">
-<td>Química</td>
-<td>6.23</td>
-<td>+0.82</td>
-<td>+1.06</td>
-<td>+0.74</td>
-<td>+0.98</td>
-<td>+0.53</td>
-<td>-0.01</td>
-</tr>
-<tr class="even">
-<td>Biología</td>
-<td>6.13</td>
-<td>+1.18</td>
-<td>+1.61</td>
-<td>+0.98</td>
-<td>+1.36</td>
-<td>+0.59</td>
-<td>+0.31</td>
-</tr>
-<tr class="odd">
-<td>Historia de España</td>
-<td>6.41</td>
-<td>+0.27</td>
-<td>+0.44</td>
-<td>+0.34</td>
-<td>+0.41</td>
-<td>+0.38</td>
-<td>+0.51</td>
-</tr>
-<tr class="even">
-<td>Lengua Castellana</td>
-<td>6.25</td>
-<td>+0.49</td>
-<td>+0.31</td>
-<td>+0.46</td>
-<td>+0.76</td>
-<td>+0.60</td>
-<td>+0.13</td>
-</tr>
-<tr class="odd">
-<td>Dibujo Técnico II</td>
-<td>6.17</td>
-<td>+1.56</td>
-<td>+1.88</td>
-<td>+1.57</td>
-<td>+0.89</td>
-<td>+0.60</td>
-<td>+0.87</td>
-</tr>
-<tr class="even">
-<td>Geografía</td>
-<td>5.92</td>
-<td>+0.79</td>
-<td>+1.16</td>
-<td>+1.24</td>
-<td>+1.10</td>
-<td>+1.03</td>
-<td>+1.66</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
 <div id="tbl-audit-baseline" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4: The nine communities with a 2026 result against their own pre-COVID norms (Ministry pooled means; Cataluña’s 2026 value on its aptes basis). The “+0.02” nine-community average of Chapter 6 hides a dispersion of two points.
+Table&nbsp;2: The nine communities with a 2026 result against their own pre-COVID norms (Ministry pooled means; Cataluña’s 2026 value on its aptes basis). The “+0.02” nine-community average hides a spread of 2.9 points.
 </figcaption>
 <div aria-describedby="tbl-audit-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1014,44 +883,28 @@ Table&nbsp;4: The nine communities with a 2026 result against their own pre-COVI
 </div>
 </figure>
 </div>
-<p>The first table strengthens the reference-frame argument of Chapter 6 and, at the same time, keeps its confound honest: the 2025 return to norm was subject-general, so it is not a Física effect of the competency model, but it happened in the first LOMLOE year and cannot be separated from the reform. The second removes a section. The third is the cleanest within-Basque comparison the data allow, and it points at the Física paper: whatever PISA measures in the Basque science base, the Basque PAU sees it in one subject and only from 2025.</p>
+<p>The second audit added the <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">decomposition</a>: the classification of each Basque year as a change of location or of shape, the split of each year’s change into a common and a Basque-specific part, and the attribution of the Basque-specific 2026 change to the components that can be quantified — leaving four fifths of it explicitly unattributed. The attribution itself was corrected once during the audit: the first version subtracted Basque-level terms (the full choice premium, the full Basque PISA decline) from a quantity that is a <em>difference</em> from the field, which double-counts what the other communities did. Both terms are now differences too — the choice cut net of the 6.25-point average cut elsewhere, and the Basque PISA decline in excess of Spain’s — which moves the quantified part from <span class="math inline">\(-0.44\)</span> to <span class="math inline">\(-0.31\)</span> and the unattributed share from 73 % to 81 %. That is the study’s main new result, and it came from changing the question rather than from checking another number.</p>
 </section>
 <section id="corrections-applied" class="level2">
 <h2 class="anchored" data-anchor-id="corrections-applied">Corrections applied</h2>
-<p>All corrections are in the text of the chapters; the interpretive ones are also visible in the “audit” callout at the head of Chapter 6 and in the rewritten last section of that chapter, which now ends with the audit as its thirteenth step. In summary:</p>
-<ul>
-<li>Chapter 6: the plateau-reshaping paragraph rewritten around the locus residual (figure 19 rebuilt to show it, and included); the Basque-signal section rewritten around the base rate; the slope section pinned to 2012–2022 with the five-round result and the steps-not-slopes objection added; the reading-load numbers replaced by statement-text counts (<span class="math inline">\(r = -0.905\)</span>, <span class="math inline">\(\rho = -0.86\)</span>; Basque paper +45 %; Madrid −3 %) with the pre-audit figures kept in the JSON; the 2027 table corrected (3.81 for the 2026-paper scenario, cohort term ±0.12) and its “paper term” relabelled as the year-to-year term; H1’s verdict reworded around the coincidence with the end of a subject-general plateau; the hypothesis ranking updated; the orphan sentence removed; the identity of the author and the coordinator stated in the disclosure; captions corrected.</li>
-<li>Chapters 2, 3, 4, 5, 11, 12 and the overview: the factual corrections listed above, each in place.</li>
-<li>Scripts: <code>09</code> (normality leak; pooled presented counts), <code>11</code> (nine-community first point; step texts for 7, 10, 12; step 13 added), <code>12</code> (panel b as residual), <code>16</code> (window pinned; five-round fit written), <code>17</code> (2026-scenario proration; labels), <code>18</code> (statement-only counts; pre-audit counts retained), <code>08</code>, <code>13</code>, <code>03</code> (footers, labels), <code>05</code> (PISA workbooks registered), <code>19</code> (new).</li>
-<li>Site: dates carry <code>date-modified</code>; the footer states the audit; the single-page edition is now generated from the chapters by <code>scripts/20_build_onepage.py</code> rather than maintained by hand, so it cannot go stale again; the site was re-rendered and <code>docs/</code> refreshed.</li>
-</ul>
+<p>Every correction listed above is in the text of the chapter it belongs to. That sentence is easy to write and was false the last time it was written, so it was tested: after the rewrite a further reader was asked to grep for every superseded string and confirm it was gone. That reader found five more corrections claimed and not applied — the Asturias fix not carried into the derived eight-community correlation, the theory count not carried into one table caption, the collinearity and the “cannot drift” footnote not carried into figure 18, and the z-scale not carried into one paragraph of Chapter 6 — which have since been applied and re-checked. The general point stands and now has a second instance behind it. In summary: scripts 03, 07, 08, 09, 10, 11, 12, 13, 14, 16, 17, 18 corrected; script 21 added (the decomposition) and all 25 figures now rendered at one resolution; Chapters 2, 3, 4, 5, 6, 11, 12, 14 and the overview corrected in place; Chapter 6 extended with the decomposition and its data-request list rewritten so that each request names the component it would separate; figures 4, 7, 9, 11, 14, 16, 17, 19, 20, 22, 23, 24 corrected for basis, legibility or a stale hard-coded string; figure 18’s status colours reconciled with its own text, its stale “+0.9” replaced by the corrected <span class="math inline">\(+0.79\)</span>, and its “cannot drift” footnote replaced by the truth.</p>
 </section>
 <section id="still-open-and-for-the-author-to-decide" class="level2">
 <h2 class="anchored" data-anchor-id="still-open-and-for-the-author-to-decide">Still open, and for the author to decide</h2>
 <ul>
-<li>The structure of Chapter 6. The corrections keep the author’s step-by-step construction, but the chapter now carries its history inside its argument in several places. The audit’s recommendation (<code>D_reasoning_ch6.md</code>, §0) is a three-part structure — verdicts, tests in logical order, history in one place — which is a rewrite rather than a correction and was not made.</li>
-<li>The slope comparison. It has been made consistent and honest; whether it should remain at all, given that neither record is a slope, is a judgement.</li>
-<li>The reading-load section. It survives with stronger numbers, but it is a post-hoc variable chosen with knowledge of the author’s own paper, and the interaction it was built to test (length × reading level) is untested. The audit’s view is that it should be presented as exploratory and kept short.</li>
-<li>Which “national mean”. The drift section uses an unweighted mean of seventeen communities (5.67 in 2025), the Ministry’s Total is 5.65, a presented-weighted mean is 5.73. One should be declared and used throughout.</li>
-<li>Unverifiable press figures. Extremadura 5.27; Asturias 6.62 / 76.87 % and its Matemáticas II and Química values; the EHU July 2026 71.40 % / 1 332 / 624; Cataluña’s 2 057 revision requests; the 2017 Basque cohort ≈ 9 900. All are flagged in the text as press-sourced; none is in <code>sources/</code>. They should be archived when the pages can be reached, or dropped.</li>
-<li>The July-package flaw: the 2014 language enrolment columns of <code>fisica_pau_ehu_2010_2022.csv</code> sum to 2 195 rather than 2 495, so the 61.5 % euskera share for 2014 is not reproducible. The original informe should be re-read.</li>
-<li>Colour meaning is not constant across figures (Euskadi blue in 1–10 and violet in 16–23; “fell” red in 3–4 and orange in 11). Cosmetic, listed in <code>F_figures_tables.md</code> with the other visual notes.</li>
-<li>Chapter numbers in prose (“Chapter 11”) have no counterpart in the unnumbered sidebar; the links resolve, the numbers do not help a reader.</li>
+<li><strong>The structure of Chapter 6.</strong> It now carries three layers of history — the original argument, the first audit’s corrections, the second audit’s decomposition. The recommended three-part form (verdicts, tests in logical order, history in one place) is a rewrite and was again not made.</li>
+<li><strong>Whether the slope comparison should remain at all</strong>, given that neither record is a slope.</li>
+<li><strong>The reading-load section.</strong> It survives with stronger numbers, but it is post-hoc, its hypothesis was generated by the author from his own paper, and on eight points it is indistinguishable from the contextualised-points measure. Presenting it as exploratory and short is the audit’s view.</li>
+<li><strong>One “national mean”.</strong> The unweighted seventeen-community mean (5.67 in 2025), the Ministry’s Total (5.65) and a presented-weighted mean (5.73) all appear. One should be declared and used throughout, and the nine-community cross-section should say that it is unweighted and mixed-basis wherever it carries an argument.</li>
+<li><strong>Press-only figures.</strong> Extremadura 5.27; Asturias 6.62 / 76.87 % and its subject values; the EHU July 2026 figures; the Catalan revision requests. None is archived in <code>sources/</code>. They should be archived or dropped, and the regional table should flag Asturias as it flags Extremadura.</li>
+<li><strong>The 2014 language columns</strong> of <code>fisica_pau_ehu_2010_2022.csv</code> sum to 2 195 against a matrícula of 2 495. The shares are internally consistent; the total is not. The original informe should be re-read.</li>
+<li><strong>Colour meaning</strong> is still not constant across the figure set (Euskadi is blue in some figures and violet in others; red carries at least five meanings). A single pass over <code>plot_style.py</code> and the twelve plotting scripts would fix it.</li>
+<li><strong>Chapter numbers in prose</strong> have no counterpart in the sidebar.</li>
 </ul>
 </section>
-<section id="a-second-pass-after-the-briefing-was-written" class="level2">
-<h2 class="anchored" data-anchor-id="a-second-pass-after-the-briefing-was-written">A second pass, after the briefing was written</h2>
-<p>Writing the <a href="../chapters/14-briefing.html">briefing for the admissions office</a> meant restating every result in a shorter form, and that restatement was itself verified against the data by an independent reader. It found three inherited errors in this dossier, now corrected here and in the chapters:</p>
-<ul>
-<li><strong>The optionality lever was stated wrongly.</strong> Chapter 6 said that Canarias was “the other community that cut choice by ≥ 25 points” and also fell. Castilla-La Mancha cut optionality by the same 30 points and <em>rose</em> <span class="math inline">\(+0.94\)</span> (<code>data/exam_change_vs_grade.csv</code>), so the cut does not by itself set the direction; what distinguishes the two is what replaced the choice. The design recommendation is kept but its claim is now the weaker and correct one.</li>
-<li><strong>The reading-load correlation is <span class="math inline">\(-0.905\)</span>, not <span class="math inline">\(-0.91\)</span>.</strong> <code>data/analysis/reading_load.json</code> gives <span class="math inline">\(-0.9049\)</span>; two decimals round to <span class="math inline">\(-0.90\)</span>. The value is now quoted to three decimals wherever it appears.</li>
-<li><strong>Two ranges were over-rounded.</strong> Euskadi’s other science subjects sat <span class="math inline">\(+0.1\)</span> to <span class="math inline">\(+1.6\)</span> above their norms in 2021–2024, not <span class="math inline">\(+0.3\)</span> to <span class="math inline">\(+1.4\)</span>; and in the plateau table Biología reaches <span class="math inline">\(+0.5\)</span> and Historia <span class="math inline">\(+0.7\)</span>, not <span class="math inline">\(+0.6\)</span> and <span class="math inline">\(+0.8\)</span>.</li>
-</ul>
-<p>Three smaller points were made more precise rather than corrected: the pass-line pile-up at <span class="math inline">\([5, 6)\)</span> thinned at the ULL (17.5 → 11.9 %) but barely moved at the ULPGC (12.6 → 12.8 %), so it is a ULL finding and not a Canarian one; the second coder’s agreement is 0.83–1.00 on drawing, graph reading, evaluation and explanation but 0.76 on application and 0.61 on the three-level context code; and the de facto syllabus counts (18 of 29, 14 of 15) are for 2010–2024, not for all 146 problems.</p>
-</section>
-<section id="what-this-audit-could-not-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-audit-could-not-do">What this audit could not do</h2>
-<p>It could not verify anything that lives only in the press, in dashboards read visually (the transcriptions are internally consistent and cross-validate against the cube where they overlap, which is the best available check), or in the author’s account of unpublished coordination decisions. It did not re-read the PISA tables’ sampling design beyond the standard errors they print. It did not attempt the item-level analysis of the 2026 scripts, which remains the one dataset that would decide between the surviving hypotheses.</p>
+<section id="what-these-audits-could-not-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-these-audits-could-not-do">What these audits could not do</h2>
+<p>They could not verify anything that exists only in the press, in dashboards read visually, or in the author’s account of unpublished coordination decisions. They did not re-examine the PISA sampling design beyond the printed standard errors. They could not classify the 2026 Basque distribution as a shift or a reshaping, because EHU has not published it. And they could not separate the four mechanisms that account for three quarters of the Basque-specific fall — which is not a limitation of the audits but the central finding of the study.</p>
 
 
 </section>
@@ -1487,7 +1340,7 @@ Table&nbsp;4: The nine communities with a 2026 result against their own pre-COVI
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Independent analysis prepared 18–19 September 2026, audited 19 September · all figures reproducible from <code>scripts/</code></p>
+<p>Independent analysis prepared 18–19 September 2026, audited 19 and 20 September · all figures reproducible from <code>scripts/</code></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

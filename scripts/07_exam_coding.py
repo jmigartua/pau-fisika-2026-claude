@@ -429,7 +429,13 @@ GRADES["ccaa_short"] = GRADES["ccaa"].str.replace(" (Comunidad de)", "", regex=F
 rows = []
 for (ccaa, year), g in df.groupby(["ccaa", "year"], sort=False):
     st = STRUCT[(ccaa, year)]
+    # Expected points of the row for a student choosing at random inside its slot.
+    # In a "choose any k of n equal items" paper (Asturias) every row is its own slot
+    # with n_options = n, so the raw weights sum to points x 1/n per item rather than to
+    # the paper total; normalising to the paper's total marks is a no-op for the other
+    # seventeen papers and gives Asturias its correct 2 x 5/8 = 1.25 per item.
     w = g.points / g.n_options                      # expected points of the row for a random chooser
+    w = w * st["total"] / w.sum()
     exp_total = w.sum()
     oblig = g[g.obligatory == 1]
     rows.append(dict(
@@ -479,23 +485,32 @@ chg = chg.sort_values("delta", ascending=False)
 chg.to_csv(DATA / "exam_change_vs_grade.csv", index=False)
 
 # ---------------------------------------------------------------- correlations
+from scipy import stats as _st                                            # noqa: E402
+
+
 def spearman(a, b):
     a, b = pd.Series(a).rank(), pd.Series(b).rank()
     return float(np.corrcoef(a, b)[0, 1])
 
-corr = {
-    "n": int(len(chg)),
-    "pearson_dgrade_dcomp_exp": float(np.corrcoef(chg.delta, chg.d_comp_exp)[0, 1]),
-    "spearman_dgrade_dcomp_exp": spearman(chg.delta, chg.d_comp_exp),
-    "pearson_dgrade_dsubst_exp": float(np.corrcoef(chg.delta, chg.d_subst_exp)[0, 1]),
-    "spearman_dgrade_dsubst_exp": spearman(chg.delta, chg.d_subst_exp),
-    "pearson_dgrade_dctx_exp": float(np.corrcoef(chg.delta, chg.d_ctx_exp)[0, 1]),
-    "pearson_dgrade_dopt": float(np.corrcoef(chg.delta, chg.d_opt)[0, 1]),
-    "spearman_dgrade_dopt": spearman(chg.delta, chg.d_opt),
-    "pearson_dgrade_dcrit": float(np.corrcoef(chg.delta, chg.d_crit)[0, 1]),
-    "pearson_dgrade_comp_exp_2026": float(np.corrcoef(chg.delta, chg.comp_exp_2026)[0, 1]),
-    "pearson_dgrade_opt_2026": float(np.corrcoef(chg.delta, chg.opt_2026)[0, 1]),
-}
+
+def _pear(a, b):
+    """Pearson r with its two-sided p — the audit of 20 September found the chapters
+    asserting that none of these correlations is significant, which is false for the
+    contextualised-points one."""
+    r, pv = _st.pearsonr(a, b)
+    return float(r), float(pv)
+
+
+corr = {"n": int(len(chg))}
+for key, col in [("dcomp_exp", "d_comp_exp"), ("dsubst_exp", "d_subst_exp"),
+                 ("dctx_exp", "d_ctx_exp"), ("dopt", "d_opt"), ("dcrit", "d_crit"),
+                 ("comp_exp_2026", "comp_exp_2026"), ("opt_2026", "opt_2026")]:
+    r, pv = _pear(chg.delta, chg[col])
+    corr[f"pearson_dgrade_{key}"] = r
+    corr[f"p_dgrade_{key}"] = pv
+corr["spearman_dgrade_dcomp_exp"] = spearman(chg.delta, chg.d_comp_exp)
+corr["spearman_dgrade_dsubst_exp"] = spearman(chg.delta, chg.d_subst_exp)
+corr["spearman_dgrade_dopt"] = spearman(chg.delta, chg.d_opt)
 (DATA / "exam_correlations.json").write_text(json.dumps(corr, indent=2))
 
 # ---------------------------------------------------------------- Markdown tables
@@ -569,32 +584,49 @@ fig, axes = plt.subplots(1, 3, figsize=(13.5, 5.0))
 short = {"País Vasco": "Euskadi", "Comunitat Valenciana": "C. Valenciana", "Castilla-La Mancha": "C.-La Mancha"}
 labels = [short.get(c, c) for c in chg.ccaa]
 
-OFFS = {"Canarias": (6, -12), "Extremadura": (6, 3), "Madrid": (6, -10), "Asturias": (6, 3)}
+# Extremadura (-0.82) and Canarias (-0.83) sit on top of each other on the vertical
+# axis of all three panels, and Asturias/Madrid collide in two of them, so the label
+# offsets are set per panel rather than once (audit, 20 September).
+OFFS = [
+    {"Canarias": (7, -13), "Extremadura": (7, 5), "Madrid": (-7, -13), "Asturias": (-7, 5),
+     "Euskadi": (8, 2), "Cataluña": (7, 4), "C.-La Mancha": (-8, 6), "C. Valenciana": (7, -4),
+     "Andalucía": (7, 3)},
+    {"Canarias": (8, -4), "Extremadura": (-8, 6), "Madrid": (7, -12), "Asturias": (7, 5),
+     "Euskadi": (8, 2), "Cataluña": (7, -12), "C.-La Mancha": (-8, 6), "C. Valenciana": (7, 4),
+     "Andalucía": (7, -11)},
+    {"Canarias": (8, -4), "Extremadura": (8, 5), "Madrid": (8, 5), "Asturias": (8, -11),
+     "Euskadi": (8, 2), "Cataluña": (8, -4), "C.-La Mancha": (-8, 5), "C. Valenciana": (8, -4),
+     "Andalucía": (8, 3)},
+]
 
-def scatter(ax, x, y, xl, title, r):
+
+def scatter(ax, x, y, xl, title, r, panel=0):
+    offs = OFFS[panel]
     for xi, yi, lab in zip(x, y, labels):
         col = RED if lab == "Euskadi" else (ORANGE if yi < 0 else BLUE)
         ax.scatter(xi, yi, s=60, color=col, zorder=3)
-        ax.annotate(lab, (xi, yi), textcoords="offset points", xytext=OFFS.get(lab, (5, 4)), fontsize=8.5, color="#111")
+        ha = "right" if offs.get(lab, (5, 4))[0] < 0 else "left"
+        ax.annotate(lab, (xi, yi), textcoords="offset points",
+                    xytext=offs.get(lab, (6, 4)), fontsize=8.2, color="#111", ha=ha)
     ax.axhline(0, color=GREY, lw=0.8, ls="--")
     ax.axvline(0, color=GREY, lw=0.8, ls="--")
     ax.set_xlabel(xl)
     ax.set_title(f"{title}\nPearson r = {r:+.2f} (n = {corr['n']})", fontsize=10, loc="left")
 
 scatter(axes[0], chg.d_comp_exp, chg.delta, "Δ expected points in competency-style exercises (pp, 2025→2026)",
-        "a. Δ competency content vs Δ grade", corr["pearson_dgrade_dcomp_exp"])
+        "a. Δ competency content vs Δ grade", corr["pearson_dgrade_dcomp_exp"], panel=0)
 axes[0].set_ylabel("Δ mean Física grade, ordinary sitting (2026 − 2025)")
 scatter(axes[1], chg.d_opt, chg.delta, "Δ optional share of the paper (pp, 2025→2026)", "b. Δ optionality vs Δ grade",
-        corr["pearson_dgrade_dopt"])
+        corr["pearson_dgrade_dopt"], panel=1)
 scatter(axes[2], chg.comp_exp_2026, chg.delta, "Expected points in competency-style exercises, 2026 paper (%)",
-        "c. 2026 competency level vs Δ grade", corr["pearson_dgrade_comp_exp_2026"])
+        "c. 2026 competency level vs Δ grade", corr["pearson_dgrade_comp_exp_2026"], panel=2)
 fig.suptitle("Física PAU 2025→2026, nine communities: what changed in the paper vs what changed in the grade",
              fontsize=11.5, x=0.01, ha="left")
 fig.text(0.01, 0.005, "Coding of every exercise/option of the ordinary papers (data/exam_coding_2025_2026.csv). "
          "Competency-style = substantive real-world context and an explain/justify or evaluation section. "
          "Expected points assume a student choosing options at random.", fontsize=7.5, color=GREY)
 fig.tight_layout(rect=(0, 0.04, 1, 0.94))
-fig.savefig(PLOTS / "fig11_exam_content.png", dpi=170)
+fig.savefig(PLOTS / "fig11_exam_content.png", dpi=200)
 fig.savefig(PLOTS / "fig11_exam_content.svg")
 
 # second figure: stacked profile per paper
@@ -622,7 +654,7 @@ fig.suptitle("Contextualisation profile of each paper (left bar 2025, right bar 
              fontsize=10.5, x=0.01, ha="left")
 ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), fontsize=8.5, frameon=False, ncol=3)
 fig.tight_layout(rect=(0, 0, 1, 0.94))
-fig.savefig(PLOTS / "fig12_exam_profiles.png", dpi=170)
+fig.savefig(PLOTS / "fig12_exam_profiles.png", dpi=200)
 fig.savefig(PLOTS / "fig12_exam_profiles.svg")
 
 print(chg[["ccaa", "delta", "opt_2025", "opt_2026", "comp_exp_2025", "comp_exp_2026", "oblig_comp_2025", "oblig_comp_2026", "crit_2025", "crit_2026"]].round(2).to_string(index=False))

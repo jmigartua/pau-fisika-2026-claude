@@ -91,11 +91,13 @@ ax.plot([2025, 2026], [PAU_2025, PAU_2026], color=C["red"], lw=1.8, ls=":",
         marker="o", ms=5, zorder=4)
 ax.annotate("2026: 3.99", (2026, PAU_2026), textcoords="offset points",
             xytext=(-6, -14), ha="right", fontsize=7.8, color=C["red"])
-for (lab, val), colr in zip(scenarios.items(), [C["aqua"], C["red"]]):
-    ax.errorbar([2027], [val], yerr=[band], fmt="D", ms=7, color=colr,
+# The two scenarios used to be drawn at the same x and superimposed, so they read as
+# one bar with two colours of cap (audit, 20 September). They are offset now.
+for (lab, val), colr, dx in zip(scenarios.items(), [C["aqua"], C["red"]], [-0.28, 0.28]):
+    ax.errorbar([2027 + dx], [val], yerr=[band], fmt="D", ms=7, color=colr,
                 ecolor=colr, elinewidth=1.6, capsize=5, zorder=5)
-    ax.annotate("%s\n%.2f" % (lab, val), (2027, val), textcoords="offset points",
-                xytext=(10, 0), va="center", fontsize=7.6, color=colr)
+    ax.annotate("%s\n%.2f" % (lab, val), (2027 + dx, val), textcoords="offset points",
+                xytext=(12, 0), va="center", fontsize=7.6, color=colr)
 ax.set_xticks(range(2015, 2029, 2))
 ax.set_xlim(2014.4, 2029.6)
 ax.set_xlabel("Year")

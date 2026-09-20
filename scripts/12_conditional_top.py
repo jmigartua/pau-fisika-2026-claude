@@ -103,7 +103,7 @@ ax.scatter(ehu["mean"], ehu.ratio, s=26, color=COL_EHU, lw=0, zorder=4,
            label="Euskadi (UPV/EHU)")
 e25 = ehu[ehu.year == 2025].iloc[0]
 ax.annotate("Euskadi 2025", (e25["mean"], e25.ratio), textcoords="offset points",
-            xytext=(6, -12), fontsize=7.5, color=COL_EHU)
+            xytext=(-14, -20), fontsize=7.5, color=COL_EHU, ha="right")
 # ULL (4.08) and ULPGC (4.41) sit at almost the same height, so their labels are
 # separated vertically rather than both going right.
 OFF = {"ULL 2026": (7, 7), "ULPGC 2026": (8, -12)}
@@ -144,18 +144,25 @@ ym = hist.groupby("year").resid.mean()
 t_plate_res_years = ttest_ind(ym.loc[2020:2024], ym.loc[2015:2019], equal_var=False)
 pred_pre = float(np.polyval(coef, pre["mean"].mean()))
 pred_plateau = float(np.polyval(coef, plateau_v["mean"].mean()))
+# Euskadi's own residual, drawn as a path: the chapter discusses this series and until
+# the audit of 20 September no figure plotted it.
+_pv = hist[hist.ccaa == "País Vasco"].sort_values("year")
+axy.plot(_pv.year, _pv.resid, color=C["violet"], lw=1.6, marker="o", ms=4.5, zorder=4,
+         label="Euskadi")
+axy.annotate("2024", (2024, float(_pv[_pv.year == 2024].resid.iloc[0])),
+             textcoords="offset points", xytext=(4, -12), fontsize=8, color=C["violet"])
 axy.axhline(0, color=INK2, lw=1.0, ls=(0, (5, 3)), zorder=1, label="locus (what the level predicts)")
 axy.axvspan(2019.5, 2024.5, color=C["yellow"], alpha=0.10, lw=0, zorder=0)
 axy.annotate("raw ratio %.3f vs %.3f pre-COVID;\nthe locus predicts %.3f vs %.3f\n"
              "residual excess %+.3f ($p = %.2f$ on year means)"
              % (plateau_v.ratio.mean(), pre.ratio.mean(), pred_plateau, pred_pre,
                 plateau_v.resid.mean() - pre.resid.mean(), t_plate_res_years.pvalue),
-             xy=(2019.6, -0.125), fontsize=7.2, color="#8a6a00", ha="left")
+             xy=(2015.0, -0.155), fontsize=7.2, color="#8a6a00", ha="left")
 axy.set_xticks(years[::2])
 axy.set_xlabel("Year")
 axy.set_ylabel("Residual of the conditional ratio from the locus")
 axy.set_title("b. Against the locus, the plateau is a lift, not a reshaping")
-axy.legend(loc="upper left", fontsize=7.4)
+axy.legend(loc="upper left", fontsize=7.4, framealpha=0.92)
 
 fig.text(0.005, 0.015,
          "Ministry EPAU, Física, ordinary sitting, specific phase, 17 communities, "

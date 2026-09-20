@@ -273,7 +273,8 @@ for ax, col, coef, sd, marker, ylab, title, ehu26_y, overlay in panels:
     ax.set_ylabel(ylab)
     ax.set_title(title)
 
-axes[0].legend(loc="upper left", fontsize=7.6)
+axes[0].legend(loc="lower right", fontsize=7.0, framealpha=0.94,
+               borderpad=0.5)
 # fig.text does not wrap, and an over-long single line stretches the canvas, so the
 # in-figure note stays short and the full statement of sources, denominators and the
 # regime test lives in the Quarto caption (ThesisFigures T5/E5).

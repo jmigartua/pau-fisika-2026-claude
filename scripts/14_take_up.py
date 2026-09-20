@@ -78,14 +78,26 @@ t = t.merge(mark, on=["ccaa", "year"]).dropna(subset=["mean"])
 # differences between communities (which have many causes) drop out.
 t["d_take_up"] = t.groupby("ccaa").take_up.transform(lambda s: (s - s.mean()) / s.std())
 t["d_mean"] = t.groupby("ccaa")["mean"].transform(lambda s: s - s.mean())
-nc = t[~t.year.isin(PLATEAU)].dropna(subset=["d_take_up", "d_mean"])
+# The test uses the non-plateau years only, so the within-community centring has to be
+# computed on those years as well: centring on all eleven and then dropping five left
+# the plotted cloud sitting at -0.3 under an axis reading "relative to the community's
+# own average" (found in the audit of 20 September). The correlation is essentially
+# unchanged; the picture is no longer off-centre.
+nc = t[~t.year.isin(PLATEAU)].copy()
+nc["d_take_up"] = nc.groupby("ccaa").take_up.transform(lambda s: (s - s.mean()) / s.std())
+nc["d_mean"] = nc.groupby("ccaa")["mean"].transform(lambda s: s - s.mean())
+nc = nc.dropna(subset=["d_take_up", "d_mean"])
 
 r_takeup = stats.pearsonr(nc.d_take_up, nc.d_mean)
 fit = np.polyfit(nc.d_take_up, nc.d_mean, 1)
 national = t.groupby("year").apply(
     lambda g: g.fisica.sum() / g.candidates.sum(), include_groups=False)
 
-t.to_csv(A / "take_up.csv", index=False)
+t.assign(d_take_up_nc=lambda d: d.merge(nc[["ccaa", "year", "d_take_up"]].rename(
+    columns={"d_take_up": "_x"}), on=["ccaa", "year"], how="left")["_x"].values,
+       d_mean_nc=lambda d: d.merge(nc[["ccaa", "year", "d_mean"]].rename(
+    columns={"d_mean": "_y"}), on=["ccaa", "year"], how="left")["_y"].values)\
+    .to_csv(A / "take_up.csv", index=False)
 summary = {
     "denominator_subject": DENOM,
     "n_region_years": int(len(t)),

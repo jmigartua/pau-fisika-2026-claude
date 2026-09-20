@@ -81,7 +81,9 @@ fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.2, 8.6),
 # --- a. the series, with the baseline and the plateau made explicit --------------
 ax.axvspan(PLATEAU[0] - 0.5, PLATEAU[1] + 0.5, color=C["yellow"], alpha=0.10, lw=0,
            zorder=0)
-ax.annotate("COVID-era plateau, 2020–2024:\n+0.4 to +1.0 above baseline,\nthen one step down",
+_plat = series.loc[PLATEAU[0]:PLATEAU[1]] - base
+ax.annotate("COVID-era plateau, 2020–2024:\n%+.2f to %+.2f above baseline,\nthen one step down"
+            % (_plat.min(), _plat.max()),
             xy=(2022, 4.55), fontsize=7.6, color="#8a6a00", ha="center")
 ax.axhline(base, color=INK2, lw=1.0, ls=(0, (5, 3)), zorder=1,
            label="2015–19 baseline, nine communities (%.2f)" % base)

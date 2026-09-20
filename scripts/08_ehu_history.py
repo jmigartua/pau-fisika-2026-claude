@@ -184,6 +184,9 @@ Q = [
     (2018, "extra", "A.C1", "T02"), (2018, "extra", "A.C2", "T01"), (2018, "extra", "B.C1", "T20"), (2018, "extra", "B.C2", "T10"),
     (2019, "ord", "A.C1", "T13"), (2019, "ord", "A.C2", "T03"), (2019, "ord", "B.C1", "T06"), (2019, "ord", "B.C2", "T19"),
     (2019, "extra", "A.C1", "T22"), (2019, "extra", "A.C2", "T20"),
+    (2019, "extra", "B.C1", "T21"), (2019, "extra", "B.C2", "T17"),   # option B of July 2019,
+    # missing from the first inventory: "Cámara fotográfica…" and "Campos de fuerza
+    # conservativos y no conservativos…" (verified in ehu_2019_extra.pdf, audit of 20 Sep)
     (2020, "ord", "B1", "T09"), (2020, "ord", "B2", "T02"), (2020, "ord", "B3", "T08"), (2020, "ord", "B4", "T16"),
     (2020, "extra", "B1", "T12"), (2020, "extra", "B2", "T18"), (2020, "extra", "B3", "T03"), (2020, "extra", "B4", "T14"),
     (2021, "ord", "B1", "T05"), (2021, "ord", "B2", "T13"), (2021, "ord", "B3", "T04"), (2021, "ord", "B4", "T01"),
@@ -307,12 +310,16 @@ MARK = pd.DataFrame([
     ("País Vasco 2012–2024", "no", "qualitative: 'se penalizará' missing units, purely mathematical developments, incoherent results; no amounts", "no", "no", "no"),
     ("País Vasco 2025", "no", "units mandatory in the final answer; significant figures and exponent notation 'penalised' (no amount); conceptual errors weigh more than calculation errors", "−0.1 from the 3rd error, cap 1 pt; syntax/coherence up to −0.5, total cap 1 pt", "no", "no"),
     ("País Vasco 2026", "yes", "−0.1 units; −0.1 repeated vector-symbol errors; −0.1 rounding/significant figures; grave errors (wrong equations, scalar/vector confusion) can void the section", "as 2025", "0.25-pt sub-items (a.1, a.2 …)", "yes (constants table on the paper)"),
-    ("Canarias 2025 and 2026", "no", "full CRUE list: −0.1 units, vector symbol, prefixes, factor of 10, transcription, rounding; grave errors void the section", "not stated in the Física document", "sections of 1–1.5 pts", "no"),
+    # Audit of 20 September: the two Canarian documents are not the same. 2025 lists six
+    # minor errors and caps them at 20 % of the section; 2026 adds factor-of-ten and
+    # transcription errors and drops the cap. Both state a spelling penalty.
+    ("Canarias 2025", "no", "−0.1 units, vector symbol, prefixes, light calculation errors, rounding; capped at 20 % of the section; grave errors void it", "−0.1 per spelling error", "sections of 1–1.5 pts", "no"),
+    ("Canarias 2026", "no", "full CRUE list: −0.1 units, vector symbol, prefixes, factor of 10, transcription, rounding; no cap; grave errors void the section", "−0.1 per spelling error, repeats not counted", "sections of 1–1.5 pts", "no"),
     ("Comunitat Valenciana 2025 and 2026", "yes ('realiza primero el cálculo simbólico')", "60 % symbolic set-up and explanation / 40 % numerical result; units and significant figures worth +0.1", "linguistic criteria applied (general PAU rule)", "0.1-pt detail in the criteria", "no"),
     ("Cataluña 2025 and 2026", "no", "−0.25 per problem for unit errors; item-specific deductions (−0.1, −0.25) in the pauta", "linguistic correction stated", "0.25-pt detail", "no"),
     ("Madrid 2025 and 2026", "no", "'destreza en la obtención de resultados numéricos y el uso correcto de las unidades'; marks in multiples of 0.25 (2025) / 0.1 (2026)", "coherence, cohesion, spelling 'se evaluará'", "0.25 / 0.1", "no"),
-    ("Asturias 2025 and 2026", "no", "−0.25 per section for a missing/incorrect unit of a calculated magnitude", "general PAU rule", "—", "yes (constants table on the paper)"),
-    ("Andalucía 2025 and 2026", "no", "unit omission or misuse: at most −0.25 per exercise", "2026: −0.1 from the 3rd spelling error (Junta general rule)", "0.25 / 0.5 sub-sections", "no"),
+    ("Asturias 2025 (2026 criteria are worked solutions only)", "no", "−0.25 per section for a missing/incorrect unit of a calculated magnitude", "general PAU rule", "—", "yes (constants table on the paper)"),
+    ("Andalucía 2025 and 2026", "no", "−0.1 each for a missing or wrong unit (cap −0.25 per apartado b), for vector/scalar character and for rounding", "2026: −0.1 from the 3rd spelling error (Junta general rule)", "0.25 / 0.5 sub-sections", "no"),
     ("Extremadura 2025 and 2026", "no", "2025: unit errors up to −1 pt in the exam; 2026: −50 % of the section for a unit error, cap 1 pt", "−0.1 from the 3rd error, cap 1 pt; syntax/vocabulary up to −0.5 (same wording as EHU 2025)", "0.1–0.3 detail", "no"),
     ("Castilla-La Mancha 2026", "no", "not read (paper only)", "−0.25 per 3 faults, cap 1 pt (on the paper)", "—", "no"),
 ], columns=["paper", "symbolic_first", "units_and_error_rules", "language_rules", "granularity", "constants_table"])
@@ -372,7 +379,7 @@ fig.text(0.01, 0.005, "Each year pools the June and July papers: 8 problems a ye
          "Rows that never carried a problem before 2025: spherical mirrors (2025), standing waves (with sound levels, coded under W3) and radioactive decay (2026), the mass spectrometer (July 2026).",
          fontsize=7.5, color=GREY)
 fig.tight_layout(rect=(0, 0.045, 1, 1))
-fig.savefig(PLOTS / "fig13_ehu_topics.png", dpi=170)
+fig.savefig(PLOTS / "fig13_ehu_topics.png", dpi=200)
 fig.savefig(PLOTS / "fig13_ehu_topics.svg")
 
 # Fig 14: series with format regimes and theory share
@@ -389,19 +396,25 @@ for k, (x0, x1, c, lab) in enumerate(spans):
 ax1.text(2025.5, 8.9, "LOMLOE\n2025: 1 competencial\n+ 3 × (1 of 2); no theory\n2026: 2 competencial\n+ 2 × (a/b)", ha="center", va="top", fontsize=7.2, color="#7a1f1f")
 ax1.plot(ser.year, ser["mean"], color=BLUE, lw=2, marker="o", ms=4)
 for _, r in ser.iterrows():
-    ax1.text(r.year, r["mean"] + 0.18, f"{r['mean']:.2f}", ha="center", fontsize=7.2, color="#222")
+    ax1.text(r.year, r["mean"] + 0.26, f"{r['mean']:.2f}", ha="center", fontsize=7.2, color="#222")
 ax1.set_ylim(3, 9.2)
 ax1.set_ylabel("Física mean, ordinary sitting")
 ax1.set_title("The Basque Física mean 2010–2026 against the paper's format", loc="left", fontsize=10.5)
 # lower panel: theory points and optional share
 th = [4 if y <= 2024 else 0 for y in ser.year]
 opt = [100 if y <= 2024 else (75 if y == 2025 else 50) for y in ser.year]
-ax2.bar(ser.year - 0.2, th, 0.4, color=AQUA, label="points from closed-list theory questions")
+# Two incommensurable quantities (points out of 10 and a percentage) used to be drawn
+# as side-by-side bars on twinned axes, so a 4-point bar and a 100 % bar reached the
+# same height. The theory points stay as bars; the optional share becomes a step line
+# on the twin axis, which cannot be mistaken for them (audit, 20 September).
+ax2.bar(ser.year, th, 0.55, color=AQUA, label="points from closed-list theory questions (of 10)")
 ax2.set_ylabel("theory pts", color=AQUA)
 ax2.set_ylim(0, 5)
 ax2b = ax2.twinx()
-ax2b.bar(ser.year + 0.2, opt, 0.4, color=YELLOW, label="optional share of the paper (%)")
-ax2b.set_ylim(0, 110)
+ax2b.step(ser.year, opt, where="mid", color=YELLOW, lw=2.0,
+          label="optional share of the paper (%)")
+ax2b.scatter(ser.year, opt, s=14, color=YELLOW, zorder=3)
+ax2b.set_ylim(0, 115)
 ax2b.set_ylabel("optional %", color="#b07a00")
 ax2b.spines["top"].set_visible(False)
 ax2.set_xticks(ser.year)
@@ -410,7 +423,7 @@ h1, l1 = ax2.get_legend_handles_labels()
 h2, l2 = ax2b.get_legend_handles_labels()
 ax2.legend(h1 + h2, l1 + l2, loc="lower center", bbox_to_anchor=(0.5, 1.0), fontsize=8, frameon=False, ncol=2)
 fig.tight_layout()
-fig.savefig(PLOTS / "fig14_ehu_formats_series.png", dpi=170)
+fig.savefig(PLOTS / "fig14_ehu_formats_series.png", dpi=200)
 fig.savefig(PLOTS / "fig14_ehu_formats_series.svg")
 
 # Fig 15: selection premium
@@ -431,7 +444,7 @@ ax.legend(frameon=False, fontsize=8.5)
 fig.text(0.01, 0.005, "Simulation, 200 000 students: ability a ~ N(0.55, 0.20) clipped to [0,1]; each item scored as clip(a + e, 0, 1) × points with e ~ N(0, SD);\n"
          "the student answers the best items the rule allows. Same population and same items in every row; only the rule changes.", fontsize=7.3, color=GREY)
 fig.tight_layout(rect=(0, 0.07, 1, 1))
-fig.savefig(PLOTS / "fig15_selection_premium.png", dpi=170)
+fig.savefig(PLOTS / "fig15_selection_premium.png", dpi=200)
 fig.savefig(PLOTS / "fig15_selection_premium.svg")
 
 summary = dict(

@@ -5,11 +5,11 @@
 | 3 | Reflexión y refracción de ondas: concepto, índice de refracción, leyes… Conceptos de ángulo límite y reflexión total. | 5 | 5 |
 | 4 | Ondas estacionarias. Definición y ejemplos. | 3 | 3 |
 | 5 | Lupa. Descripción. Esquema de la formación de imágenes. Aumento. | 5 | 6 |
-| 6 | Cámara fotográfica. Descripción. Esquema de la formación de imágenes. | 1 | 1 |
+| 6 | Cámara fotográfica. Descripción. Esquema de la formación de imágenes. | 2 | 2 |
 | 7 | El ojo humano. Descripción. Esquema de la formación de imágenes. | 4 | 4 |
 | 8 | Defectos de la visión. Hipermetropía y miopía. | 4 | 4 |
 | 9 | Ley de Gravitación Universal de Newton. Intensidad de campo. Campo creado por una masa puntual (o esférica). Ejemplo: el campo gravitatorio terrestre. | 4 | 4 |
-| 10 | Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía. | 3 | 4 |
+| 10 | Campos de fuerza conservativos y no conservativos. Energía potencial gravitatoria. Potencial gravitatorio. Energía mecánica total. Principio de conservación de la energía. | 4 | 5 |
 | 11 | Leyes de Kepler. Enunciados. Deducción de la 3ª Ley para órbitas circulares a partir de la Ley de Gravitación. | 9 | 10 |
 | 12 | Líneas de fuerza y superficies equipotenciales en el campo gravitatorio creado por una masa puntual (o esférica). | 4 | 4 |
 | 13 | Ley de Coulomb. Intensidad de campo eléctrico. Campo electrostático creado por una carga puntual positiva y negativa; líneas de fuerza. | 5 | 8 |
