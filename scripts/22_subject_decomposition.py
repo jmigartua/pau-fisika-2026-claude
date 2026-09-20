@@ -250,7 +250,7 @@ def main() -> None:
     ax.axvline(sev["verbal"]["mean"], color=C["blue"], lw=1.0, ls="--")
     ax.set_xlim(-2.0, 0.65)
     ax.set_xlabel("change in the subject mean, 2025 → 2026 (marks)")
-    ax.set_title("(a) One tribunal, eight subjects\nquantitative (orange) vs the rest "
+    ax.set_title("(a) One sitting, eight subjects\nquantitative (orange) vs the rest "
                  "(blue)", loc="left")
     ax.grid(axis="y", visible=False)
 
