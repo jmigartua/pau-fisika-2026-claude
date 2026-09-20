@@ -26,7 +26,7 @@
       "0.10 deductions, uncapped",
       "grave-error voiding of apartados"
     ],
-    "top_band_note": "Euskadi has not published a 2026 band table. Any share at or above nine quoted for 2026 in this repository is MODELLED — see 27_penalty_shape.py, which shows the readings differ there by a factor of tens.",
+    "top_band_note": "Euskadi has not published a 2026 band table. Any share at or above nine quoted for 2026 in this repository is MODELLED — see 27_penalty_shape.py, which shows the readings differ there by a factor of twenty-three.",
     "channels_not_modelled": [
       "the 0.2 linguistic component and the clarity/terminology/coherence rules"
     ]
@@ -50,6 +50,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 0.0,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -73,6 +76,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 1.996645,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -96,6 +102,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 4.00567,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -119,6 +128,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 6.009245,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -142,6 +154,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 8.002485,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -165,6 +180,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 9.994205,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -188,6 +206,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 12.006885,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -211,6 +232,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 14.000305,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -234,6 +258,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 16.00191,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -257,6 +284,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 20.00679,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -280,6 +310,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 25.002655,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -303,6 +336,9 @@
         1.0
       ],
       "overdispersion": null,
+      "n_exposed": 28,
+      "lang": null,
+      "lang_shift": 0.0,
       "deductions_per_script": 30.00476,
       "apartados_voided_per_script": 0.0,
       "scripts_with_any_void": 0.0,
@@ -334,6 +370,9 @@
       1.0
     ],
     "overdispersion": null,
+    "n_exposed": 28,
+    "lang": null,
+    "lang_shift": 0.0,
     "deductions_per_script": 11.98969,
     "apartados_voided_per_script": 1.43344,
     "scripts_with_any_void": 19.5855,
@@ -358,6 +397,9 @@
       1.0
     ],
     "overdispersion": null,
+    "n_exposed": 28,
+    "lang": null,
+    "lang_shift": 0.0,
     "deductions_per_script": 16.0022,
     "apartados_voided_per_script": 0.2914,
     "scripts_with_any_void": 4.396,

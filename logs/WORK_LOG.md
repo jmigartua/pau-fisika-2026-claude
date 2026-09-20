@@ -431,3 +431,81 @@ Written: `27_penalty_shape.py` (with `--replot` to redraw fig 31 from the JSON w
 `data/analysis/penalty_shape.json`, `data/tables/penalty_shape.md`, `penalty_budget.md`,
 `penalty_topband.md`, `plots/fig31_penalty_shape.(png|svg)`, ch 6 §penalty-shape, data request 11,
 index finding 13, ch 13 sixth round, ch 15 EN + ES.
+
+
+## 20 September, seventh round — what the paper is made of (`28_marking_exposure.py`)
+
+Four facts from the coordination, three of which move numbers.
+
+1. **Spelling is capped at 10 % of the 10.00 = 1.00**, however many errors. Already in
+   `data/marking_rules_2025_2026.csv` ("−0.1 from the 3rd error, cap 1 pt; syntax/coherence
+   up to −0.5, total cap 1 pt"), same rule 2025 and 2026, while three sections said the
+   channel was unmodelled and the dossier therefore UNDERSTATED the regime. Withdrawn.
+2. **Not every quantum can lose a unit.** 40 quanta of 0.25; many ask for a judgement, a
+   definition, an enumeration of laws, a sketch.
+3. **The 0.25 itemisation is new in 2026** and was taken to help candidates; it dilutes the
+   paradigm change on purpose and it generates text.
+4. 0.10 is not a multiple of 0.25.
+
+### Exposure, coded from the corrector's document
+
+`data/exam_subtask_coding_2026.csv`: 46 sub-items across the six exercises, each classified
+numerical / symbolic / definition / judgement / graph from the solucionario's content column.
+
+| sat paper | sub-items | unit-exposed | marks exposed | text-producing |
+|---|---:|---:|---:|---:|
+| 3A+4A | 30 | 19 (63 %) | 6.50 (65 %) | 8 (2.75) |
+| 3A+4B | 32 | 18 (56 %) | 5.50 (55 %) | 6 (2.25) |
+| 3B+4A | 27 | 15 (56 %) | 6.00 (60 %) | 11 (3.75) |
+| 3B+4B | 29 | 14 (48 %) | 5.00 (50 %) | 9 (3.25) |
+
+Restricting deductions to the exposed items: shift 94 % of the unrestricted figure at rate 12,
+85 % at rate 30 — exposure LOWERS round 6's ceiling. Currency change: 12 deductions = **0.67
+per numerical answer**; −1.48 alone would need 22.7 = **1.26 per numerical answer**.
+
+### The capped channel
+
+Dose: 2 errors → 0.095, 4 → 0.257, 8 → 0.596, 40 → 0.940. **Absolute bound 0.963.**
+First shape was wrong: scaling errors up as the mark falls gave 8.2 % zeros against 3.2 %
+published — a blank script cannot misspell. Now a Beta kernel vanishing at both ends,
+default (2,2); the published zero rate bounds it tightly.
+**Joint fit** (ded, p_partial, p_total, e_mean free, exposure on): 12 / 0.16 / 0.045 / **1**,
+loss 1.30. Language worth **0.044**. Ladder: deductions −0.89, +voiding −1.29, +language −1.34.
+
+### Over-attribution
+
+A fit to all four published figures carries the whole −1.48; the subject split allows Física
+−1.10. Fitted to −1.48: 15.5 deductions (0.86 per exposed sub-item). Constrained to −1.10:
+**8.8** (0.49). **Over-attribution +0.38 marks**, independent of the shape argument.
+
+### The statement decomposition — the round's biggest result
+
+Both statements split into narrative / demand text / printed prices. 2025 printed 7
+statements, 2026 printed 6, so per printed statement:
+
+| | narrative | demand text | printed prices | total |
+|---|---:|---:|---:|---:|
+| 2025 (7 printed) | 495 → **71** | 616 → **88** | 0 → **0** | 1111 → **159** |
+| 2026 (6 printed) | 418 → **70** | 1087 → **181** | 103 → **17** | 1608 → **268** |
+| per statement | **99 %** | **206 %** | — | **169 %** |
+
+**The competency narrative did not grow.** The whole of the growth is demand text and its
+prices — 17 apartado lead-ins with 36 numbered sub-demands and 51 printed weights in 2026
+against 20 plain demands and no nesting in 2025. The coordination's own ladder for B1 prices
+the *desglosado* step at 66 words (90 → 178 competencial → 244 desglosado → 408 as issued).
+**Overturns step 12's attribution of the reading load, carried since the first day.**
+
+### Written
+
+`28_marking_exposure.py` (with `--replot`), `data/exam_subtask_coding_2026.csv`,
+`data/analysis/marking_exposure.json`, tables `exposure_coding.md`, `exposure_effect.md`,
+`language_channel.md`, `statement_structure.md`, `plots/fig32_marking_exposure.(png|svg)`,
+ch 6 §exposure-and-the-third-channel, **new chapter 16 (the paradigm change, seen whole)**,
+index findings 14 and 15, ch 13 seventh round, ch 15 EN + ES, ch 14 EN + ES,
+figure 18 steps 19 and 20 (and step 12 re-marked weakened).
+
+Also: `26_penalty_regime.py` gained `exposed=` and `lang=`/`lang_shape=` parameters, both
+defaulting to the previous behaviour; regression-checked by re-running the whole script and
+diffing `penalty_regime.json` — every published value identical, only the new keys added.
+Figure 18's vertical pitch is now computed from each step's wrapped line count instead of
+being a constant, after the third collision between a step's text and the next heading.

@@ -1,0 +1,789 @@
+{
+  "note": "The exposure is measured from the corrector's document, not assumed. The linguistic channel is capped by the published criteria at 1.00, ten per cent of the paper, and the cap is the point.",
+  "source": "sources/text/ehu_fisica_solucionario_ord_2026.txt, the per-subitem point distribution of each of the six exercises; coded in data/exam_subtask_coding_2026.csv",
+  "quantum": 0.25,
+  "deduction": 0.1,
+  "quantum_note": "The paper is marked in quanta of 0.25 — forty of them over the 10.00 — and the deduction is 0.10, which is not a multiple of the quantum. A 0.25 sub-item hit once is worth 0.15, off the grid the scheme is built on.",
+  "language_rule": {
+    "cap": 1.0,
+    "free_errors": 2,
+    "per_error": 0.1,
+    "syntax_max": 0.5,
+    "source": "data/marking_rules_2025_2026.csv, País Vasco 2025 and 2026 (the rule is the same in both years; what the coordination reports changing is its application)"
+  },
+  "structure": {
+    "3A+4A": {
+      "n": 30,
+      "n_exposed": 19,
+      "pts_exposed": 6.5,
+      "n_text": 8,
+      "pts_text": 2.75,
+      "quanta": 40,
+      "pct_subitems_exposed": 63.3,
+      "pct_marks_exposed": 65.0,
+      "pct_marks_text": 27.5
+    },
+    "3A+4B": {
+      "n": 32,
+      "n_exposed": 18,
+      "pts_exposed": 5.5,
+      "n_text": 6,
+      "pts_text": 2.25,
+      "quanta": 40,
+      "pct_subitems_exposed": 56.2,
+      "pct_marks_exposed": 55.0,
+      "pct_marks_text": 22.5
+    },
+    "3B+4A": {
+      "n": 27,
+      "n_exposed": 15,
+      "pts_exposed": 6.0,
+      "n_text": 11,
+      "pts_text": 3.75,
+      "quanta": 40,
+      "pct_subitems_exposed": 55.6,
+      "pct_marks_exposed": 60.0,
+      "pct_marks_text": 37.5
+    },
+    "3B+4B": {
+      "n": 29,
+      "n_exposed": 14,
+      "pts_exposed": 5.0,
+      "n_text": 9,
+      "pts_text": 3.25,
+      "quanta": 40,
+      "pct_subitems_exposed": 48.3,
+      "pct_marks_exposed": 50.0,
+      "pct_marks_text": 32.5
+    }
+  },
+  "by_demand": {
+    "definition": {
+      "n": 3,
+      "points": 0.75
+    },
+    "graph": {
+      "n": 1,
+      "points": 0.25
+    },
+    "judgement": {
+      "n": 7,
+      "points": 2.75
+    },
+    "numerical": {
+      "n": 27,
+      "points": 9.0
+    },
+    "symbolic": {
+      "n": 8,
+      "points": 2.25
+    }
+  },
+  "exposure_effect": [
+    {
+      "ded_rate": 6,
+      "shift_all": -0.4883869997065746,
+      "shift_exposed": -0.4743368076631782,
+      "per_ded_all": 0.08147496291598957,
+      "per_ded_exposed": 0.07908177028439689,
+      "ratio": 0.9712314372580805,
+      "per_exposed_subtask": 0.3333333333333333
+    },
+    {
+      "ded_rate": 9,
+      "shift_all": -0.7206656613681641,
+      "shift_exposed": -0.6874800076773315,
+      "per_ded_all": 0.08007422928833809,
+      "per_ded_exposed": 0.07627602490801749,
+      "ratio": 0.9539513876270578,
+      "per_exposed_subtask": 0.5
+    },
+    {
+      "ded_rate": 12,
+      "shift_all": -0.9429824329510428,
+      "shift_exposed": -0.8856122810286955,
+      "per_ded_all": 0.07854495328454317,
+      "per_ded_exposed": 0.07376659900618841,
+      "ratio": 0.9391609536745996,
+      "per_exposed_subtask": 0.6666666666666666
+    },
+    {
+      "ded_rate": 16,
+      "shift_all": -1.2269766885143616,
+      "shift_exposed": -1.127945678376446,
+      "per_ded_all": 0.0766671876956737,
+      "per_ded_exposed": 0.0704857677117422,
+      "ratio": 0.9192885968699018,
+      "per_exposed_subtask": 0.8888888888888888
+    },
+    {
+      "ded_rate": 20,
+      "shift_all": -1.4964280455554633,
+      "shift_exposed": -1.3438309848257664,
+      "per_ded_all": 0.07480098160979369,
+      "per_ded_exposed": 0.06719450579954349,
+      "ratio": 0.8980257947029762,
+      "per_exposed_subtask": 1.1111111111111112
+    },
+    {
+      "ded_rate": 25,
+      "shift_all": -1.8100750317948848,
+      "shift_exposed": -1.5846530223482183,
+      "per_ded_all": 0.07244056895085331,
+      "per_ded_exposed": 0.06342031712892465,
+      "ratio": 0.875462615920879,
+      "per_exposed_subtask": 1.3888888888888888
+    },
+    {
+      "ded_rate": 30,
+      "shift_all": -2.1047657226553675,
+      "shift_exposed": -1.7951361805315758,
+      "per_ded_all": 0.07014173114915666,
+      "per_ded_exposed": 0.05985026168855539,
+      "ratio": 0.8528912083701344,
+      "per_exposed_subtask": 1.6666666666666667
+    }
+  ],
+  "deductions_required": {
+    "the Física-specific −1.10": {
+      "all_subtasks": 14.187493231147528,
+      "exposed_only": 15.5232216976583,
+      "per_exposed_subtask": 0.8624012054254612,
+      "exceeds_exposed": false
+    },
+    "the observed −1.48": {
+      "all_subtasks": 19.749378506094217,
+      "exposed_only": 22.72833963856101,
+      "per_exposed_subtask": 1.2626855354756117,
+      "exceeds_exposed": true
+    }
+  },
+  "language_dose": [
+    {
+      "mean_errors": 0,
+      "shift": -0.033277830689605103,
+      "lang_shift": 0.033277830689605103,
+      "pass_pct": 61.684000000000005,
+      "le2_pct": 10.270999999999999,
+      "zero_pct": 1.189
+    },
+    {
+      "mean_errors": 1,
+      "shift": -0.04641157114425454,
+      "lang_shift": 0.04641157114425454,
+      "pass_pct": 61.245000000000005,
+      "le2_pct": 10.4335,
+      "zero_pct": 1.1715
+    },
+    {
+      "mean_errors": 2,
+      "shift": -0.09516716974247963,
+      "lang_shift": 0.09516716974247963,
+      "pass_pct": 59.673,
+      "le2_pct": 10.678,
+      "zero_pct": 1.187
+    },
+    {
+      "mean_errors": 3,
+      "shift": -0.16972872928258287,
+      "lang_shift": 0.16972872928258287,
+      "pass_pct": 57.850500000000004,
+      "le2_pct": 11.3345,
+      "zero_pct": 1.202
+    },
+    {
+      "mean_errors": 4,
+      "shift": -0.2569399905491707,
+      "lang_shift": 0.2569399905491707,
+      "pass_pct": 55.559999999999995,
+      "le2_pct": 11.9855,
+      "zero_pct": 1.199
+    },
+    {
+      "mean_errors": 6,
+      "shift": -0.43779843313201994,
+      "lang_shift": 0.43779843313201994,
+      "pass_pct": 51.18899999999999,
+      "le2_pct": 13.9745,
+      "zero_pct": 1.236
+    },
+    {
+      "mean_errors": 8,
+      "shift": -0.5958821304946049,
+      "lang_shift": 0.5958821304946049,
+      "pass_pct": 47.7615,
+      "le2_pct": 15.861,
+      "zero_pct": 1.2395
+    },
+    {
+      "mean_errors": 12,
+      "shift": -0.7899588018940795,
+      "lang_shift": 0.7899588018940795,
+      "pass_pct": 44.799499999999995,
+      "le2_pct": 18.419,
+      "zero_pct": 1.283
+    },
+    {
+      "mean_errors": 20,
+      "shift": -0.8974542346181744,
+      "lang_shift": 0.8974542346181744,
+      "pass_pct": 44.255,
+      "le2_pct": 19.2585,
+      "zero_pct": 2.0115000000000003
+    },
+    {
+      "mean_errors": 40,
+      "shift": -0.939998624868907,
+      "lang_shift": 0.939998624868907,
+      "pass_pct": 44.333,
+      "le2_pct": 19.1665,
+      "zero_pct": 4.4035
+    }
+  ],
+  "grid_vs_deduction": {
+    "quanta": 40,
+    "quantum": 0.25,
+    "deduction": 0.1,
+    "deduction_in_quanta": 0.4,
+    "note": "0.10 is two fifths of a quantum, so one deduction moves a sub-item off the grid and two do not bring it back. Whatever else the deductions did, they dissolved the granularity the same criteria had just introduced."
+  },
+  "language_shape_sensitivity": [
+    {
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "mean_errors": 2,
+      "mean": 4.133142228869609,
+      "zero_pct": 2.915,
+      "pass_pct": 38.39875,
+      "le2_pct": 24.236250000000002,
+      "lang_shift": 0.09412335134008476,
+      "loss": 1.5001446367281952
+    },
+    {
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "mean_errors": 4,
+      "mean": 3.962918624727841,
+      "zero_pct": 3.60375,
+      "pass_pct": 35.4775,
+      "le2_pct": 26.8975,
+      "lang_shift": 0.25112563606103055,
+      "loss": 6.303612782461396
+    },
+    {
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "mean_errors": 8,
+      "mean": 3.6439592090834876,
+      "zero_pct": 5.225,
+      "pass_pct": 30.53,
+      "le2_pct": 31.703750000000003,
+      "lang_shift": 0.5790359439124848,
+      "loss": 43.87931924798613
+    },
+    {
+      "lang_shape": [
+        2.0,
+        1.5
+      ],
+      "mean_errors": 2,
+      "mean": 4.14447423968796,
+      "zero_pct": 2.96125,
+      "pass_pct": 38.74875,
+      "le2_pct": 23.74375,
+      "lang_shift": 0.09153330265402726,
+      "loss": 1.5368079732910307
+    },
+    {
+      "lang_shape": [
+        2.0,
+        1.5
+      ],
+      "mean_errors": 4,
+      "mean": 3.9903198661148207,
+      "zero_pct": 3.27375,
+      "pass_pct": 35.78125,
+      "le2_pct": 25.56,
+      "lang_shift": 0.2490740927501469,
+      "loss": 4.323931500428611
+    },
+    {
+      "lang_shape": [
+        2.0,
+        1.5
+      ],
+      "mean_errors": 8,
+      "mean": 3.6368870094357817,
+      "zero_pct": 4.34125,
+      "pass_pct": 30.012499999999996,
+      "le2_pct": 30.012499999999996,
+      "lang_shift": 0.5869121956298144,
+      "loss": 38.389878425509146
+    },
+    {
+      "lang_shape": [
+        1.5,
+        2.0
+      ],
+      "mean_errors": 2,
+      "mean": 4.137189971598351,
+      "zero_pct": 3.50125,
+      "pass_pct": 38.996249999999996,
+      "le2_pct": 24.72125,
+      "lang_shift": 0.09249973472541484,
+      "loss": 1.2273768682665966
+    },
+    {
+      "lang_shape": [
+        1.5,
+        2.0
+      ],
+      "mean_errors": 4,
+      "mean": 3.9645619385289326,
+      "zero_pct": 4.86875,
+      "pass_pct": 36.54375,
+      "le2_pct": 27.53125,
+      "lang_shift": 0.2480936097434192,
+      "loss": 7.761396495256916
+    },
+    {
+      "lang_shape": [
+        1.5,
+        2.0
+      ],
+      "mean_errors": 8,
+      "mean": 3.675226787788184,
+      "zero_pct": 8.795,
+      "pass_pct": 32.405,
+      "le2_pct": 32.16125,
+      "lang_shift": 0.5627716005547092,
+      "loss": 64.05287136845367
+    },
+    {
+      "lang_shape": [
+        3.0,
+        2.0
+      ],
+      "mean_errors": 2,
+      "mean": 4.130374280905358,
+      "zero_pct": 2.8525,
+      "pass_pct": 38.09375,
+      "le2_pct": 23.8925,
+      "lang_shift": 0.09883028112448411,
+      "loss": 1.816617633222615
+    },
+    {
+      "lang_shape": [
+        3.0,
+        2.0
+      ],
+      "mean_errors": 4,
+      "mean": 3.959225585225945,
+      "zero_pct": 3.2062500000000003,
+      "pass_pct": 34.45875,
+      "le2_pct": 25.37625,
+      "lang_shift": 0.25891469694760527,
+      "loss": 7.366322228958235
+    },
+    {
+      "lang_shape": [
+        3.0,
+        2.0
+      ],
+      "mean_errors": 8,
+      "mean": 3.650888748767905,
+      "zero_pct": 3.9087499999999995,
+      "pass_pct": 28.841250000000002,
+      "le2_pct": 28.902499999999996,
+      "lang_shift": 0.5749586028391103,
+      "loss": 40.48233143616706
+    },
+    {
+      "lang_shape": [
+        1.2,
+        1.2
+      ],
+      "mean_errors": 2,
+      "mean": 4.143660693795941,
+      "zero_pct": 3.44,
+      "pass_pct": 38.96875,
+      "le2_pct": 24.11875,
+      "lang_shift": 0.08673673892125322,
+      "loss": 1.316086867598886
+    },
+    {
+      "lang_shape": [
+        1.2,
+        1.2
+      ],
+      "mean_errors": 4,
+      "mean": 3.989646908586103,
+      "zero_pct": 4.52375,
+      "pass_pct": 36.5575,
+      "le2_pct": 26.0975,
+      "lang_shift": 0.23892512718412817,
+      "loss": 5.018772728546512
+    },
+    {
+      "lang_shape": [
+        1.2,
+        1.2
+      ],
+      "mean_errors": 8,
+      "mean": 3.6362192567556164,
+      "zero_pct": 8.10625,
+      "pass_pct": 31.5475,
+      "le2_pct": 30.90625,
+      "lang_shift": 0.5830875009500254,
+      "loss": 56.9199407479827
+    }
+  ],
+  "joint_fit": {
+    "fitted": {
+      "ded": 12,
+      "pp": 0.16,
+      "pt": 0.045,
+      "em": 1
+    },
+    "result": {
+      "ded_rate": 12,
+      "p_partial": 0.16,
+      "p_total": 0.045,
+      "ded_mode": "flat",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "n_exposed": 18,
+      "lang": [
+        1,
+        0.1
+      ],
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "lang_shift": 0.04399165888147394,
+      "deductions_per_script": 12.009695,
+      "apartados_voided_per_script": 1.423425,
+      "scripts_with_any_void": 19.4905,
+      "mean": 4.130670997694055,
+      "shift": -1.333681395999676,
+      "pass_pct": 38.993,
+      "le2_pct": 24.511,
+      "zero_pct": 3.7089999999999996,
+      "top_pct": 0.3775,
+      "sd": 2.4787119843690637,
+      "loss": 1.3014048152106954,
+      "on_grid_boundary": false,
+      "language_wants_zero": false
+    }
+  },
+  "channel_ladder": [
+    {
+      "label": "deductions alone",
+      "cumulative": -0.8851332970825716,
+      "marginal": -0.8851332970825716,
+      "share_of_fisica": 80.46666337114287,
+      "mean": 4.585863031522539,
+      "pass_pct": 44.4405,
+      "le2_pct": 15.546,
+      "zero_pct": 1.172,
+      "top_pct": 0.41000000000000003,
+      "loss": 45.31999538851024
+    },
+    {
+      "label": "+ grave-error voiding",
+      "cumulative": -1.2936090220839578,
+      "marginal": -0.4084757250013862,
+      "share_of_fisica": 117.6008201894507,
+      "mean": 4.175610367171741,
+      "pass_pct": 39.9525,
+      "le2_pct": 24.0435,
+      "zero_pct": 3.546,
+      "top_pct": 0.395,
+      "loss": 1.7087929428501494
+    },
+    {
+      "label": "+ the capped language channel",
+      "cumulative": -1.3351141411366454,
+      "marginal": -0.04150511905268761,
+      "share_of_fisica": 121.37401283060412,
+      "mean": 4.144933424718681,
+      "pass_pct": 39.337,
+      "le2_pct": 24.465500000000002,
+      "zero_pct": 3.728,
+      "top_pct": 0.40449999999999997,
+      "loss": 1.399534527835955
+    }
+  ],
+  "constrained_fit": {
+    "fitted to the observed −1.48": {
+      "target": -1.48,
+      "ded_rate": 15.508052334189415,
+      "shift": -1.4790747497584746,
+      "mean": 3.996499534090617,
+      "pass_pct": 36.7485,
+      "le2_pct": 25.2855,
+      "zero_pct": 3.528,
+      "per_exposed_subtask": 0.8615584630105231,
+      "loss": 2.591627133595333
+    },
+    "constrained to the Física-specific −1.10": {
+      "target": -1.1,
+      "ded_rate": 8.83083738386631,
+      "shift": -1.0953412518910612,
+      "mean": 4.370080313202238,
+      "pass_pct": 43.507,
+      "le2_pct": 22.4545,
+      "zero_pct": 3.4320000000000004,
+      "per_exposed_subtask": 0.4906020768814617,
+      "loss": 10.955794678451616
+    },
+    "over_attribution": {
+      "marks": 0.37907474975847455,
+      "note": "A regime fitted to all four published figures carries this much more than the subject decomposition allows Física. It is not evidence that the decomposition is wrong; it is the arithmetic reason the fitted regime has to be read as a ceiling."
+    }
+  },
+  "statement_structure": {
+    "y2025": {
+      "total": 1111,
+      "narrative": 495,
+      "lead": 0,
+      "sub": 616,
+      "demands": 616,
+      "n_ap": 0,
+      "n_sub": 20,
+      "n_weights": 0,
+      "weight_w": 0
+    },
+    "y2026": {
+      "total": 1505,
+      "narrative": 418,
+      "lead": 379,
+      "sub": 708,
+      "demands": 1087,
+      "n_ap": 17,
+      "n_sub": 36,
+      "n_weights": 51,
+      "weight_w": 103
+    },
+    "change": {
+      "total": 394,
+      "narrative": -77,
+      "lead": 379,
+      "sub": 92,
+      "demands": 471,
+      "n_ap": 17,
+      "n_sub": 16,
+      "n_weights": 51,
+      "weight_w": 103
+    },
+    "per_statement": {
+      "n_printed_2025": 7,
+      "n_printed_2026": 6,
+      "narrative": [
+        70.71428571428571,
+        69.66666666666667
+      ],
+      "demands": [
+        88.0,
+        181.16666666666666
+      ],
+      "weights": [
+        0.0,
+        17.166666666666668
+      ]
+    },
+    "finding": "The contextual narrative did not grow. Per printed statement it is unchanged -- 71 words against 70 -- while the demand text more than doubled, 88 against 181. All of the growth is in the text that states what to do, which is what an itemised marking scheme forces onto the paper — a lead-in for each apartado, a sentence for each quantum inside it, and a printed price for both. The dossier had been attributing the reading load to the competency items; on this measurement the competency wrapper is the same size per statement as in 2025 and the granularity is the whole of the increase.",
+    "caveat": "One 2026 item (C1, the waves option) states its demands in the apartado lead-in and does not number them, so the lead-in/sub-demand split is not clean item by item. Their SUM — the demand text — is, and it is the quantity the finding rests on."
+  },
+  "language_bound": {
+    "shift": -0.9629939549962616,
+    "lang_shift": 0.9629939549962616,
+    "note": "every script at the 1.00 cap; the absolute maximum the linguistic channel can be worth"
+  },
+  "channels_together": [
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "flat",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "n_exposed": 32,
+      "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "lang_shift": 0.0,
+      "deductions_per_script": 11.999755,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.527755315752467,
+      "shift": -0.9436344069539739,
+      "pass_pct": 43.208999999999996,
+      "le2_pct": 16.3135,
+      "zero_pct": 1.193,
+      "top_pct": 0.4385,
+      "sd": 2.257736088208467,
+      "label": "deductions only, all sub-tasks",
+      "loss": 36.54054390672378,
+      "share_of_fisica": 85.7849460867249
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "flat",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "n_exposed": 18,
+      "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "lang_shift": 0.0,
+      "deductions_per_script": 11.992925,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.589411494756368,
+      "shift": -0.8845270253682873,
+      "pass_pct": 44.5835,
+      "le2_pct": 15.4535,
+      "zero_pct": 1.192,
+      "top_pct": 0.41000000000000003,
+      "sd": 2.247731334433898,
+      "label": "deductions only, exposed only",
+      "loss": 46.180951071491684,
+      "share_of_fisica": 80.4115477607534
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.16,
+      "p_total": 0.03,
+      "ded_mode": "flat",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "n_exposed": 18,
+      "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "lang_shift": 0.0,
+      "deductions_per_script": 12.006165,
+      "apartados_voided_per_script": 1.265485,
+      "scripts_with_any_void": 18.203,
+      "mean": 4.231555954565812,
+      "shift": -1.241095032131268,
+      "pass_pct": 40.47,
+      "le2_pct": 22.942999999999998,
+      "zero_pct": 2.705,
+      "top_pct": 0.407,
+      "sd": 2.4451707780578933,
+      "label": "+ voiding",
+      "loss": 3.5566135471644778,
+      "share_of_fisica": 112.82682110284253
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.16,
+      "p_total": 0.03,
+      "ded_mode": "flat",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "n_exposed": 18,
+      "lang": [
+        4.0,
+        0.1
+      ],
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "lang_shift": 0.25053510330497053,
+      "deductions_per_script": 11.993535,
+      "apartados_voided_per_script": 1.277545,
+      "scripts_with_any_void": 18.3975,
+      "mean": 3.9712975704094178,
+      "shift": -1.493946337368596,
+      "pass_pct": 35.7325,
+      "le2_pct": 26.729999999999997,
+      "zero_pct": 3.5740000000000003,
+      "top_pct": 0.3815,
+      "sd": 2.4655273681675687,
+      "label": "+ voiding + language (4 errors)",
+      "loss": 5.534785879059574,
+      "share_of_fisica": 135.8133033971451
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.16,
+      "p_total": 0.03,
+      "ded_mode": "flat",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "n_exposed": 18,
+      "lang": [
+        8.0,
+        0.1
+      ],
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
+      "lang_shift": 0.5795171046466883,
+      "deductions_per_script": 12.001495,
+      "apartados_voided_per_script": 1.276775,
+      "scripts_with_any_void": 18.326,
+      "mean": 3.644220146387774,
+      "shift": -1.826349311263161,
+      "pass_pct": 30.576999999999998,
+      "le2_pct": 31.728499999999997,
+      "zero_pct": 5.1905,
+      "top_pct": 0.39899999999999997,
+      "sd": 2.479111701313462,
+      "label": "+ voiding + language (8 errors)",
+      "loss": 43.60476810312632,
+      "share_of_fisica": 166.03175556937825
+    }
+  ],
+  "withdrawn": "The claim that the dossier 'understates the regime by whatever the third channel is worth'. The third channel is capped at 1.00 and the cap was in the repository's own marking-rules table when that sentence was written."
+}

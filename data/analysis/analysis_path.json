@@ -82,7 +82,7 @@
       "step": "12. Measuring the reading load",
       "claim": "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
       "status": "weakened",
-      "fate": "but length and competency content correlate at +0.79, so it is a better instrument for the same change, not a second cause; the Madrid count was 70 % solutions — corrected at step 13 (r = −0.905)"
+      "fate": "but length and competency content correlate at +0.79, so it is a better instrument for the same change, not a second cause; the Madrid count was 70 % solutions — corrected at step 13 (r = −0.905). The length is real; step 20 overturned what the dossier said CAUSED it"
     },
     {
       "step": "13. The first audit (19 Sep, evening)",
@@ -111,8 +111,26 @@
     {
       "step": "17. The coordinator's corrections, and the marking regime (20 Sep)",
       "claim": "What changed in the marking was non-award becoming deduction. Can that make 2026?",
+      "status": "weakened",
+      "fate": "the 2025 distribution put through the 2026 regime — twelve deductions of 0.10 per script and a grave error in one script in six voiding most of it — reproduces all four published 2026 figures at once (mean 4.11 / 3.99, pass 39.0 / 39.8, at-or-below-2 25.2 / 24.5, zero 3.5 / 3.2). The deduction channel alone produces almost no zeros; a uniformly harder paper fits far worse (7.8 per cent at zero), so the regime is shown sufficient, not identified"
+    },
+    {
+      "step": "18. How the penalties are spread (20 Sep)",
+      "claim": "Every candidate the same twelve deductions? What does a distribution cost?",
       "status": "stood",
-      "fate": "the 2025 distribution put through the 2026 regime — twelve deductions of 0.10 per script and a grave error in one script in six voiding most of it — reproduces all four published 2026 figures at once (mean 4.01 / 3.99, pass 39.2 / 39.8, at-or-below-2 25.2 / 24.5, zero 2.6 / 3.2). The deduction channel alone produces no zeros at all; a uniformly harder paper fits nearly as well, so the regime is shown sufficient, not identified"
+      "fate": "a deduction removes 0.10 only where 0.10 is left, so the floor eats penalties aimed low (r = -0.99). Flat is therefore a CEILING over every reading in which the weak collect more than their share: the regime carries 87 per cent of the Fisica-specific -1.10 read flat, 81 to 59 as a distribution. It also CORRECTED step 17's top-band claim"
+    },
+    {
+      "step": "19. What the paper is made of (20 Sep)",
+      "claim": "Can every sub-task lose a unit? Is the third channel really unmodelled?",
+      "status": "stood",
+      "fate": "only 14 to 19 of a script's 27 to 32 sub-items can attract a unit, prefix or rounding error, so twelve deductions are 0.67 penalties on every NUMERICAL answer and the whole fall would take 1.26. The linguistic channel is CAPPED at 1.00 by the criteria table the dossier already held: the thrice-repeated claim that it understated the regime is withdrawn"
+    },
+    {
+      "step": "20. Where the reading load came from (20 Sep)",
+      "claim": "The 0.25 itemisation was a decision. What did it cost?",
+      "status": "overturned",
+      "fate": "it OVERTURNS step 12's attribution. Per printed statement the competency narrative is UNCHANGED (71 words against 70) while demand text more than doubled (88 against 181) and printed prices went 0 to 17: the length is the price of the ITEMISATION, not of the competency reform. The two causes are differently actionable, which is why it matters"
     }
   ]
 }

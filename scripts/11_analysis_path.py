@@ -90,7 +90,8 @@ steps = [
      "Paper length vs grade change: r = −0.84, p = 0.008 — the strongest link yet.",
      WEAK, "but length and competency content correlate at +0.79, so it is a better "
             "instrument for the same change, not a second cause; the Madrid count was "
-            "70 % solutions — corrected at step 13 (r = −0.905)"),
+            "70 % solutions — corrected at step 13 (r = −0.905). The length is real; "
+            "step 20 overturned what the dossier said CAUSED it"),
     ("13. The first audit (19 Sep, evening)",
      "Re-run everything, second-code the papers, recompute every number, read the logic.",
      STOOD, "withdrew the plateau reshaping (a level effect), the Basque 2024 signal "
@@ -128,22 +129,28 @@ steps = [
             "not identified"),
     ("18. How the penalties are spread (20 Sep)",
      "Every candidate the same twelve deductions? What does a distribution cost?",
-     STOOD, "a deduction removes 0.10 only where 0.10 is left, so the zero floor eats "
-              "penalties aimed at weak work: marks removed per deduction fall with the "
-              "share of penalties landing below 4 out of 10 (r = -0.99). Flat is "
-              "therefore a CEILING over every reading in which the weak collect more "
-              "than their share — 93 to 68 per cent of it — and the regime carries 87 "
-              "per cent of the Fisica-specific -1.10 read flat against 81 to 59 per "
-              "cent read as a distribution, leaving 0.14 to 0.45 marks for the other "
-              "components. This step also CORRECTED step 17's claim that the model "
-              "failed on the top band: the 2.09 per cent at nine or above was the "
-              "dossier's own Beta extrapolation, not a published figure. Refitted, the "
-              "readings agree on all four published figures and differ on that band "
-              "from 0.3 to 6.1 per cent, which makes the unpublished 2026 band table "
-              "the decisive measurement"),
+     STOOD, "a deduction removes 0.10 only where 0.10 is left, so the floor eats "
+              "penalties aimed low (r = -0.99). Flat is therefore a CEILING over every "
+              "reading in which the weak collect more than their share: the regime "
+              "carries 87 per cent of the Fisica-specific -1.10 read flat, 81 to 59 as "
+              "a distribution. It also CORRECTED step 17's top-band claim"),
+    ("19. What the paper is made of (20 Sep)",
+     "Can every sub-task lose a unit? Is the third channel really unmodelled?",
+     STOOD, "only 14 to 19 of a script's 27 to 32 sub-items can attract a unit, "
+            "prefix or rounding error, so twelve deductions are 0.67 penalties on "
+            "every NUMERICAL answer and the whole fall would take 1.26. The linguistic "
+            "channel is CAPPED at 1.00 by the criteria table the dossier already held: "
+            "the thrice-repeated claim that it understated the regime is withdrawn"),
+    ("20. Where the reading load came from (20 Sep)",
+     "The 0.25 itemisation was a decision. What did it cost?",
+     OVER,  "it OVERTURNS step 12's attribution. Per printed statement the competency "
+            "narrative is UNCHANGED (71 words against 70) while demand text more than "
+            "doubled (88 against 181) and printed prices went 0 to 17: the length is "
+            "the price of the ITEMISATION, not of the competency reform. The two "
+            "causes are differently actionable, which is why it matters"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 21.9),
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 19.8),
                               gridspec_kw=dict(height_ratios=[1.0, 2.4], hspace=0.16))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
@@ -176,18 +183,32 @@ ax.set_title("a. The same two headlines, as the reference frame widens")
 ax.legend(loc="lower left", fontsize=8)
 
 # --- b. the ladder of claims and what happened to each --------------------------
-STEP = 1.80                                   # vertical pitch: room for four-line fates
-ypos = np.arange(len(steps))[::-1] * STEP
-for y, (title, claim, status, fate) in zip(ypos, steps):
+# The pitch used to be a constant, and three times running a step's text outgrew it
+# and collided with the next heading. It is now computed from the wrapped line count
+# of each step, so a step can be rewritten at any length without breaking the layout.
+WRAP = 125
+LINE = 0.29            # vertical units per wrapped line of fate text
+HEAD = 0.78            # heading + claim + the gap before the fate
+GAP = 0.62             # clear space between one step's last line and the next heading
+wrapped = [textwrap.fill("→ " + f, width=WRAP, subsequent_indent="   ")
+           for _, _, _, f in steps]
+heights = [HEAD + LINE * (w.count("\n") + 1) + GAP for w in wrapped]
+ypos, acc = [], 0.0
+for h in heights:                       # laid out downwards, then flipped to y-up
+    ypos.append(acc)
+    acc += h
+TOTAL = acc
+ypos = [TOTAL - y for y in ypos]
+STEP = TOTAL / max(len(steps) - 1, 1)   # the mean pitch, reported in the JSON
+for y, (title, claim, status, fate), fate_txt in zip(ypos, steps, wrapped):
     colr = STATUS_COLOR[status]
     axl.scatter([0.012], [y], s=120, color=colr, zorder=3, clip_on=False)
-    axl.annotate(title, xy=(0.045, y + 0.20), fontsize=8.6, color=INK, va="center",
+    axl.annotate(title, xy=(0.045, y + 0.26), fontsize=8.6, color=INK, va="center",
                  fontweight="normal")
-    axl.annotate(claim, xy=(0.045, y - 0.08), fontsize=7.8, color=INK2, va="center")
-    fate_txt = textwrap.fill("→ " + fate, width=125, subsequent_indent="   ")
+    axl.annotate(claim, xy=(0.045, y - 0.10), fontsize=7.8, color=INK2, va="center")
     axl.annotate(fate_txt, xy=(0.045, y - 0.24), fontsize=7.4, color=colr,
                  va="top", linespacing=1.15)
-    if y > 0:
+    if y > min(ypos):
         axl.plot([0.012, 0.012], [y - 0.72, y - 0.92], color=MUTED, lw=1.0, zorder=1)
 handles = [plt.Line2D([], [], marker="o", ls="", ms=8, color=STATUS_COLOR[s], label=lab)
            for s, lab in [(OVER, "overturned by a later step"),
@@ -195,7 +216,7 @@ handles = [plt.Line2D([], [], marker="o", ls="", ms=8, color=STATUS_COLOR[s], la
                           (STOOD, "stands")]]
 axl.legend(handles=handles, loc="upper right", fontsize=7.8)
 axl.set_xlim(0, 1)
-axl.set_ylim(-0.5, (len(steps) - 1) * STEP + 0.5)
+axl.set_ylim(min(ypos) - heights[-1] + GAP * 0.5, max(ypos) + 0.9)
 axl.set_yticks([])
 axl.set_xticks([])
 for side in ("left", "bottom"):
@@ -212,7 +233,9 @@ fig.text(0.005, 0.005,
          "rebuilt (4.01 for 4.11, 2.6 for 3.5) while calling a far worse alternative "
          "\"nearly as well\".\nThis footnote once claimed hand-written text could not "
          "drift. Every hand-written number is now checked against the JSON at the end "
-         "of each round; that is what found step 17's.",
+         "of each round; that is what found step 17's.\nThe vertical pitch of this "
+         "panel was a constant, and three times a step outgrew it and collided with "
+         "the next heading; it is now computed from each step's own line count.",
          fontsize=7, color=MUTED, linespacing=1.5)
 _save(fig, "fig18_analysis_path", P, dpi=200)
 

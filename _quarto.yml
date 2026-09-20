@@ -67,6 +67,9 @@ website:
           - href: chapters/12-ehu-paper-history.qmd
             text: "Sixteen years of one paper"
             icon: clock-history
+          - href: chapters/16-paradigm.qmd
+            text: "The paradigm change, whole"
+            icon: diagram-3
       - section: Research context
         contents:
           - href: chapters/01-data-hunt.qmd

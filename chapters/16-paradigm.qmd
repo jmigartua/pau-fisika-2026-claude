@@ -1,0 +1,170 @@
+---
+title: "The paradigm change, seen whole"
+subtitle: "Every design decision behind the 2026 paper, what it was for, what it cost, and what the data now say — followed by the order in which we came to see it"
+description: "A design-side account of the 2026 Basque Física paper: the constraints imposed by the reform, the decisions the coordination took inside them, how those decisions interact, and what this dossier's measurements say about each. Part two retraces the order of discovery, which was not the order of the argument."
+date: 2026-09-20
+date-modified: 2026-09-20
+categories: [design, interpretation, synthesis]
+toc-depth: 3
+---
+
+## Why this chapter exists, and how to read it
+
+Everything else in this dossier works from the outside in: a mean fell, and the question is what moved it. This chapter works from the inside out. It sets out the paper as a made thing — a set of decisions taken by people for reasons, under constraints they did not choose — and asks of each decision what it was for, what it cost, and what the measurements say.
+
+It exists because the design side of the story arrived in pieces, in the order that questions happened to be asked, and that is the worst possible order to read it in. A reader meeting the itemisation for the first time in the middle of a marking simulation cannot see that the same decision also explains the reading load. The order of discovery is preserved, because it is part of the evidence and because it shows which conclusions were reached under pressure, but it is put second, in [part two](#part-two-the-order-in-which-we-came-to-see-it).
+
+Two warnings. The account of *intent* in part one comes from the coordination and is **testimony**; it is labelled as such where it carries weight, and the dossier does not treat an explanation of why a decision was taken as evidence that it was taken for that reason alone. The account of *effect* is measurement, and is sourced. Where the two disagree, both are given.
+
+## Part one: the scenario
+
+### What was not chosen
+
+Four things about the 2026 paper were settled before the coordination met, by the LOMLOE curriculum and the CRUE orientations, and no local decision could have avoided them.
+
+**The paper had to be competency-based, and part of it had to be obligatory.** The orientations require at least one non-optional question carrying an application, a real context, a published text or a graph to interpret. What a competency item *is* — a real situation, a demand for qualitative reasoning, a demand for judgement — is specified, not left open.
+
+**Optionality had to fall inside a band**, between 50 and 85 per cent of the marks, where the old Basque paper had offered a choice between two complete papers and then, through the COVID years, any four of eight items.
+
+**At least 70 per cent of the marks had to come from open or semi-constructed responses**, which rules out the compensating move a paper under length pressure would otherwise make.
+
+**And the error schedule was specified with amounts.** The seven minor types — missing or incorrect units, a vector arrow on a scalar and its converse when repeated, intermediate rounding that moves a value by more than 5 per cent, wrong SI prefixes, a factor-of-ten error, a data transcription error — carry $-0.10$ each. A grave error voids the section. The linguistic component is 0.2 within a text-producing question, and the Basque criteria cap spelling and syntax together at 1.00, ten per cent of the paper.
+
+The last of these matters more than it looks, and in a direction that is easy to miss: **the amounts were specified, but nothing said they had to be applied in full, and in 2025 the Basque criteria carried them as words rather than numbers.** The 2025 text says significant figures and exponent notation are "penalised" and puts no figure on it. The 2026 text says $-0.10$. That is the difference the coordination describes as the regime change, and it is visible in `data/marking_rules_2025_2026.csv` without anybody's testimony.
+
+### What was chosen
+
+Inside that frame the coordination took at least eight decisions that it did not have to take, or did not have to take in the form it took them. Each is given here with its purpose as the coordination states it — testimony — and its measured cost.
+
+#### 1. Optionality cut to the floor, and the competency items made obligatory
+
+The 2025 paper offered one of two in three of its four blocks: 75 per cent optional. The 2026 paper made exercises 1 and 2 obligatory and offered a choice only in 3 and 4: **50 per cent**, the bottom of the permitted band. Of the nine communities that published a 2026 result, Euskadi and Cataluña are the only two sitting at that floor, and Cataluña was already there in 2025 — so Euskadi is the only one that *moved* to it. Two communities cut more percentage points than Euskadi's 25, Canarias and Castilla-La Mancha by 30 each, but both landed at 70; one, Andalucía, went the other way, by 15.
+
+*What it was for.* An obligatory competency item is the only way to guarantee that every candidate meets the new paradigm; an optional one can be avoided by everybody who finds it unfamiliar, which would make the reform invisible and unassessable.
+
+*What it cost.* Simulating both Basque formats on the same population and items, removing the choice is worth about $-0.26$; net of what the other eight communities cut, the part that belongs to Euskadi is about **$-0.20$** ([the budget](06-interpretation.qmd#the-mark-budget)). It also removes the candidate's escape route from the longest statements, which matters because the two obligatory items are the two longest.
+
+#### 2. The marks itemised into quanta of 0.25
+
+This is the decision the rest of the chapter keeps returning to. The 2026 criteria break each apartado into sub-items — a.1, a.2, a.3 — each worth 0.25 or 0.50, **forty quanta over the 10.00**. The 2025 criteria did not: the step was 0.25, but the itemisation was not written down and not printed.
+
+*What it was for*, in the coordination's words: to help candidates. Failing a sub-question costs a quarter of a point instead of an apartado. More elements of what a candidate knows get their own chance to be credited. Spreading the marks over many small demands gives more opportunities than concentrating them in a few large ones, and for the demands that are effectively binary — does this change, yes or no, and why — a candidate who is uncertain still has a real chance on each.
+
+*What it cost.* Three things, and the dossier could measure all three only once the decision was on the table.
+
+**It generates text.** A paper marked in itemised quanta must print each quantum's demand and each quantum's price. Per printed statement, the competency narrative in 2026 is the same size it was in 2025 — 70 words against 71, 99 per cent — while the demand text **more than doubled**, 181 words against 88, and the printed prices went from nothing to 17. The 2025 paper stated twenty plain numbered demands and no nesting; the 2026 paper states seventeen apartado lead-ins with thirty-six numbered sub-demands inside them and fifty-one printed weights. **The reading load the dossier has been attributing to the competency reform is the price of this decision instead** ([the measurement](06-interpretation.qmd#exposure-and-the-third-channel)). The coordination's own reconstruction agrees from the other side: in its ladder for the electromagnetic problem, making the item competencial costs 88 words and *desglosarlo* — itemising it — costs a further 66.
+
+**It puts the competency items and the traditional ones on the same footing.** A competency item broken into quanta of 0.25 is marked the same way as a naked ondas problem broken into quanta of 0.25. The coordination says this is deliberate: the paradigm change is diluted on purpose, so that a candidate who has prepared in the old way is not destroyed by the new one. It is a defensible transitional choice and it is worth saying out loud, because it means **the 2026 paper is less of a paradigm change than its statements look**, and any inference from the paper's appearance to what it demanded is an overstatement.
+
+**And it works against the deductions.** Itemisation makes partial credit systematic where it had been at the corrector's discretion, so on its own it *raises* marks. The deductions lower them. Two decisions taken in the same room in the same year pull in opposite directions, and the observed fall is their sum. This has an arithmetical consequence the dossier had not drawn: a model of the fall that includes the deductions and omits the itemisation **understates the penalty burden**, because the penalties had first to cancel a benefit before they could show up as a fall.
+
+#### 3. The deduction schedule applied in full
+
+*What it was for.* Compliance, and consistency between correctors. The amounts are in the criteria; a meeting was held before the sitting and agreed to apply them.
+
+*What is documented and what is not.* The amounts are documented. **That the rules were applied in full in 2026 and not in 2025 is the coordinator's account** — collective, scheduled, attended by every corrector, so any of them could confirm or deny it, but testimony until the agenda and circulated criteria are retrieved ([request 10](06-interpretation.qmd#what-to-ask-for-and-what-each-request-would-separate)).
+
+*What it cost.* This is the dossier's largest single piece of modelling, and it occupies three sections of [chapter 6](06-interpretation.qmd#penalty-regime). In summary: the regime is **sufficient** to produce the four published 2026 figures, at about twelve deductions per script with a grave error carrying part of the paper in one script in six; it is not identified, because those four figures were fitted rather than predicted; read flat it is a **ceiling** rather than an estimate, and read as the realistic distribution it carries between 59 and 87 per cent of the Física-specific fall; and fitted to all four published figures it is **over-attributed by 0.38 marks**, because those figures contain a $-1.18$ that fell on every Basque subject and cannot be the Física marking sheet.
+
+#### 4. The deduction of 0.10 against the quantum of 0.25
+
+This is not a decision anybody took. It is what two decisions produce together, and it deserves its own heading because nobody chose it and its effect is real.
+
+The scheme is built on a quarter-point step. The penalty is $0.10$, which is **two fifths of a quantum**. A 0.25 sub-item hit once is worth 0.15; hit twice, 0.05. Whatever else the deductions did, they dissolved the granularity the same criteria had just introduced: after the first deduction no script is on the grid the design is built on, and the itemisation's promise — that a candidate can see what each piece was worth — stops being visible in the mark.
+
+It also produces the effect [the shape section](06-interpretation.qmd#penalty-shape) turns on. A deduction removes a full 0.10 only where 0.10 is left; on a sub-item a weak candidate has half-earned, the zero floor absorbs the rest. Fine granularity makes that worse, not better, because the pieces are smaller.
+
+#### 5. Only half the paper can attract a deduction
+
+Also not a decision, and also consequential. Coded from the corrector's own document, a candidate's paper has 27 to 32 sub-items of which **14 to 19 can attract a missing unit, a wrong prefix or a rounding error** — 48 to 63 per cent. The rest ask for a definition, a judgement, a comparison with its justification, a sketch. A missing unit cannot be committed there.
+
+So the deduction schedule does not apply to the paper; it applies to the numerical half. Restated in the currency a marking sheet can be counted in, the fitted twelve deductions are **0.67 penalties on every numerical answer of every script**; carrying the whole observed fall alone would take 1.26, more than one penalty on every numerical answer there is. That is the number to take to the tally, and it is a much harder claim than "twelve per script".
+
+There is an irony in it worth naming. The competency items are the ones richest in judgement and justification, which is to say the ones **least** exposed to the deduction schedule. The uncapped penalties fall hardest on the traditional, numerical part of the paper — the part the itemisation was meant to make forgiving.
+
+#### 6. Symbolic resolution before numerical
+
+New in 2026: *cálculo simbólico antes que numérico*, stated in the general criteria.
+
+*What it was for.* It is good practice and it makes a wrong route visible before the arithmetic hides it.
+
+*What it cost.* Not measured. It plausibly interacts with the deduction schedule — a symbolic step carries no units to omit and no figures to round, so a paper that demands symbolic work first shifts marks from exposed sub-items to unexposed ones. The coded paper bears this out: the symbolic sub-items carry 0.50 to 2.25 marks depending on the options chosen, and not one of them is exposed. This is one of the few places where a 2026 decision worked *against* the penalties.
+
+#### 7. The constants table moved onto the paper, with distractors
+
+New in 2026: one table for the whole paper, containing every constant needed and exactly two that are not.
+
+*What it was for.* Uniformity, and a small test of whether a candidate knows which constants the problem needs.
+
+*What it cost.* About 21 words moved out of the statements and into furniture, which slightly inflates both the measured statement growth and the measured furniture growth; the dossier says so where it reports them. The distractors are not costed.
+
+#### 8. Scientific notation printed as a scored criterion
+
+*What it was.* A transversal criterion of *saber básico* A, printed with its points in its first explicit year as deliberate scaffolding.
+
+*What it was not.* An earlier draft of this dossier read it as a taxonomy error — a presentational convention mistaken for a competence. **That reading was wrong and was withdrawn.** The coordination's intent was to make a standing expectation visible at the moment it first became scorable, and printing it is the scaffolding, not a category confusion.
+
+### How the decisions interact
+
+Set out one at a time, each decision is defensible and most are obviously right. The difficulty is in the combination, and the combination was not designed.
+
+**Two decisions pull opposite ways.** Itemisation raises marks by making partial credit systematic. The full application of an uncapped deduction schedule lowers them. Taken together the paper is more forgiving in its structure and less forgiving in its marking, and the observed mean is the residue. Nobody chose that pairing as a pairing.
+
+**One channel is capped and the other is not.** The linguistic penalties stop at 1.00 whatever the number of errors; the $-0.10$ deductions have no cap at all in the Basque 2026 criteria. Of the nine communities coded, Canarias capped its deductions at 20 per cent of the section in 2025 and removed the cap in 2026; Andalucía caps at $-0.25$ per apartado; Extremadura caps at 1.00. Euskadi's decision to leave the numerical deductions uncapped while the linguistic ones remained capped is a choice about which kind of error is allowed to be unbounded, and it went against the kind physics is made of.
+
+**The protection and the reading load are the same decision.** This is the finding this chapter exists to state plainly. The itemisation that shortens the fall from a mistake is the itemisation that lengthens the paper, because each protected piece has to be written down and priced. They cannot be separated by better drafting; they can only be traded.
+
+**And the dilution is real in both directions.** Marking competency items in the same quanta as traditional ones protects candidates prepared in the old way, and it also means that the competency items — the long, contextualised, judgement-heavy ones — are the part of the paper the deduction schedule barely touches. The paradigm change was diluted in the marking as well as in the structure.
+
+### What the data say, decision by decision
+
+| Decision | Purpose (testimony) | Measured cost | Status |
+|---|---|---|---|
+| Optionality cut to 50 % | guarantee every candidate meets the new paradigm | about $-0.20$ net of the field | quantified (modelled) |
+| Marks itemised into 0.25 quanta | protect candidates; credit more elements | the whole of the reading load: demand text per statement 88 → 181 words, prices 0 → 17 | measured |
+| " | " | dilutes the paradigm change on purpose | testimony, consistent with the coding |
+| " | " | raises marks, so the penalty burden behind the fall is larger than a model without it implies | argued, not quantified |
+| Deduction schedule applied in full | compliance and consistency | sufficient for all four published figures; 59–87 % of the Física-specific fall on realistic readings; over-attributed by 0.38 if fitted to all four | modelled; the application is testimony |
+| 0.10 against a 0.25 quantum | not a decision | every script off the grid after the first deduction | arithmetic |
+| Half the paper exposed | not a decision | 0.67 penalties per numerical answer at the fitted rate | measured |
+| Symbolic before numerical | good practice; makes a wrong route visible | shifts marks to unexposed sub-items; not costed | not measured |
+| Constants table with distractors | uniformity; a small test | ≈21 words of layout effect on the statement counts | measured, small |
+| Scientific notation printed | scaffolding in its first scorable year | not costed | testimony |
+| Linguistic rules applied | compliance | capped at 1.00; the published figures want one error per script, worth 0.04 | modelled |
+
+: Every design decision behind the 2026 paper, with what it was for and what it cost. {#tbl-design tbl-colwidths="[22,26,36,16]"}
+
+### What 2027 changes, and the one decision it does not take
+
+The 2027 paper keeps the structure, the contents and the marking. One thing changes: the statements get shorter, from about 1 430 words of reading to about 970, with the same verbs, the same rubric and the same demands. The budget is two-tiered — competency items at or below 250 words, option items at or below 150 — because the papers' own trajectory shows a competency item costing about 400 words in its first year and about 300 in its second ([the statement budget](06-interpretation.qmd#statement-budget)).
+
+What this chapter adds is that **the target may be reachable by a route nobody has costed**. If the demand text per statement has doubled because of the itemisation, and the competency narrative has not grown at all, then the cheapest 470 words on the paper are in the nesting and the printed prices, not in the contextualisation everybody has been trying to compress. Flattening two levels of demand back to one, or printing the apartado's price without printing each quantum's, would buy a large part of the target without touching a single word of physics.
+
+It would also give back exactly what the itemisation was introduced to provide. That is the trade-off, and it is not the dossier's to resolve:
+
+- **Keep the itemisation and compress the narrative.** The narrative is already at 70 words a statement; there is not 470 words of slack in it. This is the route the 2027 target implicitly assumes and it is the hardest one.
+- **Flatten the itemisation and keep the narrative.** Cheapest in words, and it returns the marking to the corrector's discretion for partial credit, which is what the itemisation was meant to remove.
+- **Keep both and print less.** Itemise in the criteria, as now, but print only the apartado and its total on the paper. The candidate loses the signal of what each piece is worth; the corrector keeps the fine grid. This is the only option that separates the two effects, and nobody has tested whether candidates use the printed weights at all.
+- **Keep both, print both, and cap the deductions.** Does nothing for the reading load, but it addresses the interaction in #4 and #5 directly, and it is the only item on this list that is a marking decision rather than a drafting one.
+
+The dossier can price the first three in words and none of them in marks. It can say that the fourth is the one whose effect it has actually modelled. **What would let the coordination choose is the tally**: deductions per script crossed with the script's own mark, and the 2026 band table ([requests 3 and 11](06-interpretation.qmd#what-to-ask-for-and-what-each-request-would-separate)).
+
+## Part two: the order in which we came to see it {#part-two-the-order-in-which-we-came-to-see-it}
+
+Part one is the argument arranged. This is the sequence, which was different, and which is kept because the order in which a thing is learned is evidence about how well it is known. Each round below is recorded in full in [the audit](13-audit.qmd); what follows is only the design-side thread.
+
+**The paper as a length.** The first thing the dossier noticed about the 2026 paper was that it was longer, and the reading-load section attributed the length to the competency items, because that is what a competency item looks like: a paragraph of scenario before the physics. The correlation across nine communities between length and the change in the mean was $-0.905$. Nobody asked what *kind* of words had been added.
+
+**The paper as a structure.** Coding the nine papers against the structural criteria showed that Euskadi was the only community to move all four axes in the direction the orientations ask, and that the nine did not sit comparable exams. This made the field comparison weaker and the Basque-specific number stronger, and it still had nothing to say about why the Basque paper was long.
+
+**The statement item by item.** Asked for a word budget for 2027, the dossier counted every statement separately and found the length concentrated in the obligatory competency items in both years — A1 at 403 words in 2025, B1 at 406 in 2026. That looked like confirmation of the competency reading. It was not: it was the two obligatory items being the two that were both competencial *and* the most heavily itemised, and nothing in the count could separate those.
+
+**The coordinator's corrections.** Four readings of the coordination presentation were wrong and were withdrawn, including the scientific-notation one above. The correction that mattered most was a trajectory the dossier had missed in its own data: a competency item costs about 400 words in its first year and 300 in its second. That made 2026 a paper carrying one block at 400 and another at 300, rather than a paper that had gone wrong.
+
+**The marking regime.** The coordinator supplied the account of non-award becoming deduction. Modelling it took three attempts, two of them wrong, and produced the dossier's strongest single result: the regime is sufficient to produce the published figures. It also produced the assumption this round dismantled — that all twenty-eight sub-tasks are alike and that the linguistic channel is an unmodelled addition.
+
+**The distribution of the penalties.** The coordinator objected that the model gives every candidate the same twelve deductions, and attached a purpose: he did not want the whole fall explained with the data in hand. That produced the ceiling argument, and the correction of a modelled top band that the dossier had been quoting as an observation.
+
+**The granularity.** And then the piece that reorganises the rest: forty quanta of 0.25, a decision taken to protect candidates, which dilutes the paradigm change on purpose and which generates text. Measuring it showed that the competency narrative had not grown at all, and that the reading load — the dossier's oldest and most-cited finding about the paper — had been attributed to the wrong cause for the whole of its life.
+
+**What the sequence shows.** Every substantive correction in this thread came from the coordination and none from the data. The data were sufficient to measure the itemisation's cost in words from the first day; the repository held the corrector's document, the two statements and the marking-rules table throughout. What was missing was the knowledge that the itemisation was a *decision*, with a purpose, that could have been otherwise. A dossier written from published outputs can measure what a paper is; it cannot see the choices behind it, and it will attribute what it measures to whatever cause it already has a name for. That is worth recording as a limitation of the method and not only as a history of this study.

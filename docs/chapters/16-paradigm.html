@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-09-18">
-<meta name="description" content="Definitions and formulas used in the analysis, the validation of the Ministry parse against the July package, the internal consistency checks on the found data, the data dictionary, and the build instructions.">
+<meta name="dcterms.date" content="2026-09-20">
+<meta name="description" content="A design-side account of the 2026 Basque Física paper: the constraints imposed by the reform, the decisions the coordination took inside them, how those decisions interact, and what this dossier’s measurements say about each. Part two retraces the order of discovery, which was not the order of the argument.">
 
-<title>Methods, checks and reproduction – PAU Física 2026</title>
+<title>The paradigm change, seen whole – PAU Física 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +31,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/13-audit.html" rel="next">
-<link href="../chapters/09-log.html" rel="prev">
+<link href="../chapters/01-data-hunt.html" rel="next">
+<link href="../chapters/12-ehu-paper-history.html" rel="prev">
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -356,7 +321,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/10-reproduce.html">Reproduce the study</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/11-exam-content.html">The papers</a></li><li class="breadcrumb-item"><a href="../chapters/16-paradigm.html">The paradigm change, whole</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -446,7 +411,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/16-paradigm.html" class="sidebar-item-text sidebar-link"><i class="bi bi-diagram-3" role="img">
+  <a href="../chapters/16-paradigm.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-diagram-3" role="img">
 </i> 
  <span class="menu-text">The paradigm change, whole</span></a>
   </div>
@@ -542,7 +507,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-code-slash" role="img">
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
 </i> 
  <span class="menu-text">Reproduce the study</span></a>
   </div>
@@ -566,13 +531,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#provenance-and-interest" id="toc-provenance-and-interest" class="nav-link active" data-scroll-target="#provenance-and-interest">Provenance and interest</a></li>
-  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
-  <li><a href="#validation" id="toc-validation" class="nav-link" data-scroll-target="#validation">Validation</a></li>
-  <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
-  <li><a href="#rebuild" id="toc-rebuild" class="nav-link" data-scroll-target="#rebuild">Rebuild</a></li>
-  <li><a href="#the-figures" id="toc-the-figures" class="nav-link" data-scroll-target="#the-figures">The figures</a></li>
-  <li><a href="#limits" id="toc-limits" class="nav-link" data-scroll-target="#limits">Limits</a></li>
+  <li><a href="#why-this-chapter-exists-and-how-to-read-it" id="toc-why-this-chapter-exists-and-how-to-read-it" class="nav-link active" data-scroll-target="#why-this-chapter-exists-and-how-to-read-it">Why this chapter exists, and how to read it</a></li>
+  <li><a href="#part-one-the-scenario" id="toc-part-one-the-scenario" class="nav-link" data-scroll-target="#part-one-the-scenario">Part one: the scenario</a>
+  <ul class="collapse">
+  <li><a href="#what-was-not-chosen" id="toc-what-was-not-chosen" class="nav-link" data-scroll-target="#what-was-not-chosen">What was not chosen</a></li>
+  <li><a href="#what-was-chosen" id="toc-what-was-chosen" class="nav-link" data-scroll-target="#what-was-chosen">What was chosen</a></li>
+  <li><a href="#how-the-decisions-interact" id="toc-how-the-decisions-interact" class="nav-link" data-scroll-target="#how-the-decisions-interact">How the decisions interact</a></li>
+  <li><a href="#what-the-data-say-decision-by-decision" id="toc-what-the-data-say-decision-by-decision" class="nav-link" data-scroll-target="#what-the-data-say-decision-by-decision">What the data say, decision by decision</a></li>
+  <li><a href="#what-2027-changes-and-the-one-decision-it-does-not-take" id="toc-what-2027-changes-and-the-one-decision-it-does-not-take" class="nav-link" data-scroll-target="#what-2027-changes-and-the-one-decision-it-does-not-take">What 2027 changes, and the one decision it does not take</a></li>
+  </ul></li>
+  <li><a href="#part-two-the-order-in-which-we-came-to-see-it" id="toc-part-two-the-order-in-which-we-came-to-see-it" class="nav-link" data-scroll-target="#part-two-the-order-in-which-we-came-to-see-it">Part two: the order in which we came to see it</a></li>
   </ul>
 </nav>
     </div>
@@ -580,19 +548,20 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/10-reproduce.html">Reproduce the study</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/11-exam-content.html">The papers</a></li><li class="breadcrumb-item"><a href="../chapters/16-paradigm.html">The paradigm change, whole</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Methods, checks and reproduction</h1>
-<p class="subtitle lead">How every number was computed, what was verified against what, and how to rebuild the site</p>
+<h1 class="title">The paradigm change, seen whole</h1>
+<p class="subtitle lead">Every design decision behind the 2026 paper, what it was for, what it cost, and what the data now say — followed by the order in which we came to see it</p>
   <div class="quarto-categories">
-    <div class="quarto-category">methods</div>
-    <div class="quarto-category">reproducibility</div>
+    <div class="quarto-category">design</div>
+    <div class="quarto-category">interpretation</div>
+    <div class="quarto-category">synthesis</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Definitions and formulas used in the analysis, the validation of the Ministry parse against the July package, the internal consistency checks on the found data, the data dictionary, and the build instructions.
+    A design-side account of the 2026 Basque Física paper: the constraints imposed by the reform, the decisions the coordination took inside them, how those decisions interact, and what this dossier’s measurements say about each. Part two retraces the order of discovery, which was not the order of the argument.
   </div>
 </div>
 
@@ -603,7 +572,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 18, 2026</p>
+      <p class="date">September 20, 2026</p>
     </div>
   </div>
   
@@ -621,182 +590,206 @@ window.Quarto = {
 </header>
 
 
-<section id="provenance-and-interest" class="level2">
-<h2 class="anchored" data-anchor-id="provenance-and-interest">Provenance and interest</h2>
-<p>The author of this study was involved in setting the 2026 Basque Física paper, and in particular chose to expand the statement of its second exercise — writing out each requirement and repeating it — because a competency-style <em>saber básico</em> entered the examined set for the first time that year.</p>
-<p>This is recorded for three reasons. It is a material interest: several chapters reach conclusions about that paper, and a reader is entitled to know that its analyst helped write it. It is also evidence, and evidence of a kind no measurement could supply — it establishes that the unusual length of that statement was a deliberate pedagogical decision rather than an accident of drafting, which is what makes the reading-load hypothesis of <a href="../chapters/06-interpretation.html#how-much-of-the-paper-is-reading">Chapter 6</a> worth testing at all. And the direction matters: the hypothesis it produced points at the paper, and at one of the author’s own choices within it, rather than away from them.</p>
-<p>Nothing in the analysis depends on privileged access, with one documented exception: the official list of theory titles used in <a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a>, which EHU no longer publishes and which the author supplied from his own files (archived as <code>sources/exams_ehu_hist/ehu_theory_list_official.pdf</code>). Every paper used is public and archived under <code>sources/exams/</code> and <code>sources/exams_ehu_hist/</code>; every figure is regenerated from those files by a script in <code>scripts/</code>; the word counts that carry the argument can be reproduced by anyone with the PDFs. Where the author’s own knowledge is used rather than the documents, as in the paragraph above, it is stated as such.</p>
+<section id="why-this-chapter-exists-and-how-to-read-it" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-chapter-exists-and-how-to-read-it">Why this chapter exists, and how to read it</h2>
+<p>Everything else in this dossier works from the outside in: a mean fell, and the question is what moved it. This chapter works from the inside out. It sets out the paper as a made thing — a set of decisions taken by people for reasons, under constraints they did not choose — and asks of each decision what it was for, what it cost, and what the measurements say.</p>
+<p>It exists because the design side of the story arrived in pieces, in the order that questions happened to be asked, and that is the worst possible order to read it in. A reader meeting the itemisation for the first time in the middle of a marking simulation cannot see that the same decision also explains the reading load. The order of discovery is preserved, because it is part of the evidence and because it shows which conclusions were reached under pressure, but it is put second, in <a href="#part-two-the-order-in-which-we-came-to-see-it">part two</a>.</p>
+<p>Two warnings. The account of <em>intent</em> in part one comes from the coordination and is <strong>testimony</strong>; it is labelled as such where it carries weight, and the dossier does not treat an explanation of why a decision was taken as evidence that it was taken for that reason alone. The account of <em>effect</em> is measurement, and is sourced. Where the two disagree, both are given.</p>
 </section>
-<section id="definitions" class="level2">
-<h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
-<p>Unless stated otherwise, for a subject in a given community, year and sitting:</p>
-<p><span class="math display">\[
-\text{pass rate} = \frac{\text{passed}}{\text{presented}}, \qquad
-\text{presentation rate} = \frac{\text{presented}}{\text{enrolled}}, \qquad
-\bar{x} = \frac{1}{N}\sum_{i=1}^{N} x_i \ \text{over presented students.}
-\]</span></p>
-<p>When a source reports Física in two phases (general and specific, as the Ministry does for 2015–2016 in some communities), the pooled mean is presented-weighted, <span class="math display">\[
-\bar{x}_{\text{pooled}} = \frac{\sum_p n_p \bar{x}_p}{\sum_p n_p},
-\]</span> never the unweighted average of the two phase means. The same rule pools ULL and ULPGC into a Canarias 2026 figure, and the five Valencian universities into the SUV figure (the published SUV row is used, and it agrees with the weighted mean of the five rows to three decimals).</p>
-<p>The change of a mean between consecutive years is <span class="math inline">\(\Delta_t = \bar{x}_t - \bar{x}_{t-1}\)</span>. The reference distribution of changes is the set <span class="math inline">\(\{\Delta_{c,t}\}\)</span> over the 17 communities and the 10 transitions 2015→2016 … 2024→2025 of the Ministry cube (ordinary sitting, pooled phases), <span class="math inline">\(n = 170\)</span>; its mean and standard deviation give <span class="math inline">\(z = (\Delta - \bar\Delta)/s_\Delta\)</span> for any new change.</p>
-<p>The trend baseline for Euskadi is an ordinary least-squares fit <span class="math inline">\(\bar{x}_t = \alpha + \beta t + \varepsilon_t\)</span> over 2012–2024 excluding 2021, with residual standard deviation <span class="math inline">\(\sigma_\varepsilon\)</span>; residuals of 2025 and 2026 are reported in units of <span class="math inline">\(\sigma_\varepsilon\)</span>.</p>
-<p>The grade-distribution reconstruction fits <span class="math inline">\(f(x) = p_0\delta(x) + (1-p_0)\,\tfrac{1}{10}\mathrm{Beta}(x/10; a, b)\)</span> by least squares on the three constraints <span class="math inline">\((\bar{x},\ P(x \ge 5),\ P(x \le 2))\)</span> in <span class="math inline">\((\log a, \log b)\)</span>; <span class="math inline">\(p_0\)</span> is the published zero share (2026) or an assumed 1.2 % (2025, with <span class="math inline">\(p_0 \in \{0, 0.02\}\)</span> as sensitivity). The model-implied standard deviation is <span class="math inline">\(\sqrt{(1-p_0)\,(\sigma_B^2 + \mu_B^2) - \bar{x}^2}\)</span> with <span class="math inline">\(\mu_B = 10a/(a+b)\)</span> and <span class="math inline">\(\sigma_B^2 = 100ab/[(a+b)^2(a+b+1)]\)</span>.</p>
+<section id="part-one-the-scenario" class="level2">
+<h2 class="anchored" data-anchor-id="part-one-the-scenario">Part one: the scenario</h2>
+<section id="what-was-not-chosen" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-not-chosen">What was not chosen</h3>
+<p>Four things about the 2026 paper were settled before the coordination met, by the LOMLOE curriculum and the CRUE orientations, and no local decision could have avoided them.</p>
+<p><strong>The paper had to be competency-based, and part of it had to be obligatory.</strong> The orientations require at least one non-optional question carrying an application, a real context, a published text or a graph to interpret. What a competency item <em>is</em> — a real situation, a demand for qualitative reasoning, a demand for judgement — is specified, not left open.</p>
+<p><strong>Optionality had to fall inside a band</strong>, between 50 and 85 per cent of the marks, where the old Basque paper had offered a choice between two complete papers and then, through the COVID years, any four of eight items.</p>
+<p><strong>At least 70 per cent of the marks had to come from open or semi-constructed responses</strong>, which rules out the compensating move a paper under length pressure would otherwise make.</p>
+<p><strong>And the error schedule was specified with amounts.</strong> The seven minor types — missing or incorrect units, a vector arrow on a scalar and its converse when repeated, intermediate rounding that moves a value by more than 5 per cent, wrong SI prefixes, a factor-of-ten error, a data transcription error — carry <span class="math inline">\(-0.10\)</span> each. A grave error voids the section. The linguistic component is 0.2 within a text-producing question, and the Basque criteria cap spelling and syntax together at 1.00, ten per cent of the paper.</p>
+<p>The last of these matters more than it looks, and in a direction that is easy to miss: <strong>the amounts were specified, but nothing said they had to be applied in full, and in 2025 the Basque criteria carried them as words rather than numbers.</strong> The 2025 text says significant figures and exponent notation are “penalised” and puts no figure on it. The 2026 text says <span class="math inline">\(-0.10\)</span>. That is the difference the coordination describes as the regime change, and it is visible in <code>data/marking_rules_2025_2026.csv</code> without anybody’s testimony.</p>
 </section>
-<section id="validation" class="level2">
-<h2 class="anchored" data-anchor-id="validation">Validation</h2>
-<p><strong>Ministry parse.</strong> The PC-Axis cubes are read by <code>scripts/pxparse.py</code>, which parses <code>STUB</code>, <code>HEADING</code> and <code>VALUES</code> and lays the <code>DATA</code> block out in row-major order over the declared dimensions (cell count asserted: 551 760, 827 640 and 1 655 280 cells). The Euskadi specific-phase ordinary series produced by <code>01_build_ministry_panel.py</code> is compared with <code>fisica_pau_ministerio_2015_2025.csv</code> of the July package: 11/11 means and 11/11 presented counts identical (assertion in the script). Spot checks of the pooled ordinary means against independently found sources: Aragón 2025 6.47 vs 6.469 (UNIZAR); Navarra 5.36 vs 5.36 (UPNA); Cantabria 5.42 vs 5.44 (UC, Bachillerato only); Castilla-La Mancha 5.86 vs 5.86 (UCLM); Comunitat Valenciana 5.89 vs 5.889 (GVA); Canarias 5.08 vs the ULL/ULPGC presented-weighted 5.08; Andalucía 5.69 vs 5.69 (ponencias); La Rioja 2022 7.43 vs 7.430 (UR). Murcia 5.31 vs 5.33 (COPAU, final post-claims) is the largest discrepancy and is within revision-stage differences.</p>
-<p><strong>Found data.</strong> Every histogram transcribed from the ULL and ULPGC dashboards sums to the displayed number of exams (683, 97, 796, 731; 712, 758, 796). Bin-midpoint means recomputed from the histograms are within 0.02–0.07 of the published means (the midpoint approximation biases slightly upward when the density falls within bins). UCLM presented = aprobados + no aprobados, and the displayed pass percentages are reproduced from those counts. Valencia page-43 figures were re-extracted from freshly downloaded PDFs and agree with the earlier session’s extraction. The EHU 2026 figures were re-read from the text of the 6 July deck (pages 3–8).</p>
-<p><strong>EHU 2026 counts.</strong> With <span class="math inline">\(N = 2\,066\)</span> and percentages rounded to one decimal, the compatible integer counts are 822–823 passes (39.8 %), 506–507 exams at ≤ 2 (24.5 %) and 66–67 zeros (3.2 %). These intervals are reported instead of point counts.</p>
-<p><strong>Plots.</strong> All twenty-five figures were rendered and inspected on a contact sheet (figures 1–10 on 18 September; 11–24 on 19 September, and all of them again in the audit); label collisions found in a first pass (regime labels, axis footnotes, legend overlap) were corrected before the final render.</p>
+<section id="what-was-chosen" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-chosen">What was chosen</h3>
+<p>Inside that frame the coordination took at least eight decisions that it did not have to take, or did not have to take in the form it took them. Each is given here with its purpose as the coordination states it — testimony — and its measured cost.</p>
+<section id="optionality-cut-to-the-floor-and-the-competency-items-made-obligatory" class="level4">
+<h4 class="anchored" data-anchor-id="optionality-cut-to-the-floor-and-the-competency-items-made-obligatory">1. Optionality cut to the floor, and the competency items made obligatory</h4>
+<p>The 2025 paper offered one of two in three of its four blocks: 75 per cent optional. The 2026 paper made exercises 1 and 2 obligatory and offered a choice only in 3 and 4: <strong>50 per cent</strong>, the bottom of the permitted band. Of the nine communities that published a 2026 result, Euskadi and Cataluña are the only two sitting at that floor, and Cataluña was already there in 2025 — so Euskadi is the only one that <em>moved</em> to it. Two communities cut more percentage points than Euskadi’s 25, Canarias and Castilla-La Mancha by 30 each, but both landed at 70; one, Andalucía, went the other way, by 15.</p>
+<p><em>What it was for.</em> An obligatory competency item is the only way to guarantee that every candidate meets the new paradigm; an optional one can be avoided by everybody who finds it unfamiliar, which would make the reform invisible and unassessable.</p>
+<p><em>What it cost.</em> Simulating both Basque formats on the same population and items, removing the choice is worth about <span class="math inline">\(-0.26\)</span>; net of what the other eight communities cut, the part that belongs to Euskadi is about <strong><span class="math inline">\(-0.20\)</span></strong> (<a href="../chapters/06-interpretation.html#the-mark-budget">the budget</a>). It also removes the candidate’s escape route from the longest statements, which matters because the two obligatory items are the two longest.</p>
 </section>
-<section id="data-dictionary" class="level2">
-<h2 class="anchored" data-anchor-id="data-dictionary">Data dictionary</h2>
+<section id="the-marks-itemised-into-quanta-of-0.25" class="level4">
+<h4 class="anchored" data-anchor-id="the-marks-itemised-into-quanta-of-0.25">2. The marks itemised into quanta of 0.25</h4>
+<p>This is the decision the rest of the chapter keeps returning to. The 2026 criteria break each apartado into sub-items — a.1, a.2, a.3 — each worth 0.25 or 0.50, <strong>forty quanta over the 10.00</strong>. The 2025 criteria did not: the step was 0.25, but the itemisation was not written down and not printed.</p>
+<p><em>What it was for</em>, in the coordination’s words: to help candidates. Failing a sub-question costs a quarter of a point instead of an apartado. More elements of what a candidate knows get their own chance to be credited. Spreading the marks over many small demands gives more opportunities than concentrating them in a few large ones, and for the demands that are effectively binary — does this change, yes or no, and why — a candidate who is uncertain still has a real chance on each.</p>
+<p><em>What it cost.</em> Three things, and the dossier could measure all three only once the decision was on the table.</p>
+<p><strong>It generates text.</strong> A paper marked in itemised quanta must print each quantum’s demand and each quantum’s price. Per printed statement, the competency narrative in 2026 is the same size it was in 2025 — 70 words against 71, 99 per cent — while the demand text <strong>more than doubled</strong>, 181 words against 88, and the printed prices went from nothing to 17. The 2025 paper stated twenty plain numbered demands and no nesting; the 2026 paper states seventeen apartado lead-ins with thirty-six numbered sub-demands inside them and fifty-one printed weights. <strong>The reading load the dossier has been attributing to the competency reform is the price of this decision instead</strong> (<a href="../chapters/06-interpretation.html#exposure-and-the-third-channel">the measurement</a>). The coordination’s own reconstruction agrees from the other side: in its ladder for the electromagnetic problem, making the item competencial costs 88 words and <em>desglosarlo</em> — itemising it — costs a further 66.</p>
+<p><strong>It puts the competency items and the traditional ones on the same footing.</strong> A competency item broken into quanta of 0.25 is marked the same way as a naked ondas problem broken into quanta of 0.25. The coordination says this is deliberate: the paradigm change is diluted on purpose, so that a candidate who has prepared in the old way is not destroyed by the new one. It is a defensible transitional choice and it is worth saying out loud, because it means <strong>the 2026 paper is less of a paradigm change than its statements look</strong>, and any inference from the paper’s appearance to what it demanded is an overstatement.</p>
+<p><strong>And it works against the deductions.</strong> Itemisation makes partial credit systematic where it had been at the corrector’s discretion, so on its own it <em>raises</em> marks. The deductions lower them. Two decisions taken in the same room in the same year pull in opposite directions, and the observed fall is their sum. This has an arithmetical consequence the dossier had not drawn: a model of the fall that includes the deductions and omits the itemisation <strong>understates the penalty burden</strong>, because the penalties had first to cancel a benefit before they could show up as a fall.</p>
+</section>
+<section id="the-deduction-schedule-applied-in-full" class="level4">
+<h4 class="anchored" data-anchor-id="the-deduction-schedule-applied-in-full">3. The deduction schedule applied in full</h4>
+<p><em>What it was for.</em> Compliance, and consistency between correctors. The amounts are in the criteria; a meeting was held before the sitting and agreed to apply them.</p>
+<p><em>What is documented and what is not.</em> The amounts are documented. <strong>That the rules were applied in full in 2026 and not in 2025 is the coordinator’s account</strong> — collective, scheduled, attended by every corrector, so any of them could confirm or deny it, but testimony until the agenda and circulated criteria are retrieved (<a href="../chapters/06-interpretation.html#what-to-ask-for-and-what-each-request-would-separate">request 10</a>).</p>
+<p><em>What it cost.</em> This is the dossier’s largest single piece of modelling, and it occupies three sections of <a href="../chapters/06-interpretation.html#penalty-regime">chapter 6</a>. In summary: the regime is <strong>sufficient</strong> to produce the four published 2026 figures, at about twelve deductions per script with a grave error carrying part of the paper in one script in six; it is not identified, because those four figures were fitted rather than predicted; read flat it is a <strong>ceiling</strong> rather than an estimate, and read as the realistic distribution it carries between 59 and 87 per cent of the Física-specific fall; and fitted to all four published figures it is <strong>over-attributed by 0.38 marks</strong>, because those figures contain a <span class="math inline">\(-1.18\)</span> that fell on every Basque subject and cannot be the Física marking sheet.</p>
+</section>
+<section id="the-deduction-of-0.10-against-the-quantum-of-0.25" class="level4">
+<h4 class="anchored" data-anchor-id="the-deduction-of-0.10-against-the-quantum-of-0.25">4. The deduction of 0.10 against the quantum of 0.25</h4>
+<p>This is not a decision anybody took. It is what two decisions produce together, and it deserves its own heading because nobody chose it and its effect is real.</p>
+<p>The scheme is built on a quarter-point step. The penalty is <span class="math inline">\(0.10\)</span>, which is <strong>two fifths of a quantum</strong>. A 0.25 sub-item hit once is worth 0.15; hit twice, 0.05. Whatever else the deductions did, they dissolved the granularity the same criteria had just introduced: after the first deduction no script is on the grid the design is built on, and the itemisation’s promise — that a candidate can see what each piece was worth — stops being visible in the mark.</p>
+<p>It also produces the effect <a href="../chapters/06-interpretation.html#penalty-shape">the shape section</a> turns on. A deduction removes a full 0.10 only where 0.10 is left; on a sub-item a weak candidate has half-earned, the zero floor absorbs the rest. Fine granularity makes that worse, not better, because the pieces are smaller.</p>
+</section>
+<section id="only-half-the-paper-can-attract-a-deduction" class="level4">
+<h4 class="anchored" data-anchor-id="only-half-the-paper-can-attract-a-deduction">5. Only half the paper can attract a deduction</h4>
+<p>Also not a decision, and also consequential. Coded from the corrector’s own document, a candidate’s paper has 27 to 32 sub-items of which <strong>14 to 19 can attract a missing unit, a wrong prefix or a rounding error</strong> — 48 to 63 per cent. The rest ask for a definition, a judgement, a comparison with its justification, a sketch. A missing unit cannot be committed there.</p>
+<p>So the deduction schedule does not apply to the paper; it applies to the numerical half. Restated in the currency a marking sheet can be counted in, the fitted twelve deductions are <strong>0.67 penalties on every numerical answer of every script</strong>; carrying the whole observed fall alone would take 1.26, more than one penalty on every numerical answer there is. That is the number to take to the tally, and it is a much harder claim than “twelve per script”.</p>
+<p>There is an irony in it worth naming. The competency items are the ones richest in judgement and justification, which is to say the ones <strong>least</strong> exposed to the deduction schedule. The uncapped penalties fall hardest on the traditional, numerical part of the paper — the part the itemisation was meant to make forgiving.</p>
+</section>
+<section id="symbolic-resolution-before-numerical" class="level4">
+<h4 class="anchored" data-anchor-id="symbolic-resolution-before-numerical">6. Symbolic resolution before numerical</h4>
+<p>New in 2026: <em>cálculo simbólico antes que numérico</em>, stated in the general criteria.</p>
+<p><em>What it was for.</em> It is good practice and it makes a wrong route visible before the arithmetic hides it.</p>
+<p><em>What it cost.</em> Not measured. It plausibly interacts with the deduction schedule — a symbolic step carries no units to omit and no figures to round, so a paper that demands symbolic work first shifts marks from exposed sub-items to unexposed ones. The coded paper bears this out: the symbolic sub-items carry 0.50 to 2.25 marks depending on the options chosen, and not one of them is exposed. This is one of the few places where a 2026 decision worked <em>against</em> the penalties.</p>
+</section>
+<section id="the-constants-table-moved-onto-the-paper-with-distractors" class="level4">
+<h4 class="anchored" data-anchor-id="the-constants-table-moved-onto-the-paper-with-distractors">7. The constants table moved onto the paper, with distractors</h4>
+<p>New in 2026: one table for the whole paper, containing every constant needed and exactly two that are not.</p>
+<p><em>What it was for.</em> Uniformity, and a small test of whether a candidate knows which constants the problem needs.</p>
+<p><em>What it cost.</em> About 21 words moved out of the statements and into furniture, which slightly inflates both the measured statement growth and the measured furniture growth; the dossier says so where it reports them. The distractors are not costed.</p>
+</section>
+<section id="scientific-notation-printed-as-a-scored-criterion" class="level4">
+<h4 class="anchored" data-anchor-id="scientific-notation-printed-as-a-scored-criterion">8. Scientific notation printed as a scored criterion</h4>
+<p><em>What it was.</em> A transversal criterion of <em>saber básico</em> A, printed with its points in its first explicit year as deliberate scaffolding.</p>
+<p><em>What it was not.</em> An earlier draft of this dossier read it as a taxonomy error — a presentational convention mistaken for a competence. <strong>That reading was wrong and was withdrawn.</strong> The coordination’s intent was to make a standing expectation visible at the moment it first became scorable, and printing it is the scaffolding, not a category confusion.</p>
+</section>
+</section>
+<section id="how-the-decisions-interact" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-decisions-interact">How the decisions interact</h3>
+<p>Set out one at a time, each decision is defensible and most are obviously right. The difficulty is in the combination, and the combination was not designed.</p>
+<p><strong>Two decisions pull opposite ways.</strong> Itemisation raises marks by making partial credit systematic. The full application of an uncapped deduction schedule lowers them. Taken together the paper is more forgiving in its structure and less forgiving in its marking, and the observed mean is the residue. Nobody chose that pairing as a pairing.</p>
+<p><strong>One channel is capped and the other is not.</strong> The linguistic penalties stop at 1.00 whatever the number of errors; the <span class="math inline">\(-0.10\)</span> deductions have no cap at all in the Basque 2026 criteria. Of the nine communities coded, Canarias capped its deductions at 20 per cent of the section in 2025 and removed the cap in 2026; Andalucía caps at <span class="math inline">\(-0.25\)</span> per apartado; Extremadura caps at 1.00. Euskadi’s decision to leave the numerical deductions uncapped while the linguistic ones remained capped is a choice about which kind of error is allowed to be unbounded, and it went against the kind physics is made of.</p>
+<p><strong>The protection and the reading load are the same decision.</strong> This is the finding this chapter exists to state plainly. The itemisation that shortens the fall from a mistake is the itemisation that lengthens the paper, because each protected piece has to be written down and priced. They cannot be separated by better drafting; they can only be traded.</p>
+<p><strong>And the dilution is real in both directions.</strong> Marking competency items in the same quanta as traditional ones protects candidates prepared in the old way, and it also means that the competency items — the long, contextualised, judgement-heavy ones — are the part of the paper the deduction schedule barely touches. The paradigm change was diluted in the marking as well as in the structure.</p>
+</section>
+<section id="what-the-data-say-decision-by-decision" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-data-say-decision-by-decision">What the data say, decision by decision</h3>
+<div id="tbl-design" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[22,26,36,16]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Every design decision behind the 2026 paper, with what it was for and what it cost.
+</figcaption>
+<div aria-describedby="tbl-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 22%">
+<col style="width: 26%">
+<col style="width: 36%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>File</th>
-<th>Content</th>
-<th>Grain</th>
+<th>Decision</th>
+<th>Purpose (testimony)</th>
+<th>Measured cost</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>data/ministry_fisica_panel.csv</code></td>
-<td>Ministry Física: enrolled, presented, passed, mean, mean of passed, pass %, presentation %</td>
-<td>ccaa × year × sitting × phase (+ pooled)</td>
+<td>Optionality cut to 50 %</td>
+<td>guarantee every candidate meets the new paradigm</td>
+<td>about <span class="math inline">\(-0.20\)</span> net of the field</td>
+<td>quantified (modelled)</td>
 </tr>
 <tr class="even">
-<td><code>data/ministry_fisica_distr.csv</code></td>
-<td>Ministry Física grade bands (counts)</td>
-<td>ccaa × year × sitting × phase</td>
+<td>Marks itemised into 0.25 quanta</td>
+<td>protect candidates; credit more elements</td>
+<td>the whole of the reading load: demand text per statement 88 → 181 words, prices 0 → 17</td>
+<td>measured</td>
 </tr>
 <tr class="odd">
-<td><code>data/ministry_fisica_ord_ccaa.csv</code></td>
-<td>Ordinary pooled mean, wide</td>
-<td>ccaa × year</td>
+<td>”</td>
+<td>”</td>
+<td>dilutes the paradigm change on purpose</td>
+<td>testimony, consistent with the coding</td>
 </tr>
 <tr class="even">
-<td><code>data/regional_fisica_found.csv</code></td>
-<td>All regional figures located in this study, with denominator, source type and URL</td>
-<td>region × university × year × sitting</td>
+<td>”</td>
+<td>”</td>
+<td>raises marks, so the penalty burden behind the fall is larger than a model without it implies</td>
+<td>argued, not quantified</td>
 </tr>
 <tr class="odd">
-<td><code>data/found_clm_powerbi.csv</code></td>
-<td>UCLM Física 2021–2026 by sitting and province</td>
-<td>year × sitting × province</td>
+<td>Deduction schedule applied in full</td>
+<td>compliance and consistency</td>
+<td>sufficient for all four published figures; 59–87 % of the Física-specific fall on realistic readings; over-attributed by 0.38 if fitted to all four</td>
+<td>modelled; the application is testimony</td>
 </tr>
 <tr class="even">
-<td><code>data/found_canarias_ull_powerbi.csv</code>, <code>found_canarias_ulpgc_powerbi.csv</code></td>
-<td>Histograms, zeros, tens, means by sex</td>
-<td>university × year × sitting</td>
+<td>0.10 against a 0.25 quantum</td>
+<td>not a decision</td>
+<td>every script off the grid after the first deduction</td>
+<td>arithmetic</td>
 </tr>
 <tr class="odd">
-<td><code>data/found_canarias_ull_history.csv</code></td>
-<td>ULL Física mean history 2010–2026, both sittings (chart labels)</td>
-<td>year × sitting</td>
+<td>Half the paper exposed</td>
+<td>not a decision</td>
+<td>0.67 penalties per numerical answer at the fitted rate</td>
+<td>measured</td>
 </tr>
 <tr class="even">
-<td><code>data/analysis/euskadi_fisica_series_2010_2026.csv</code></td>
-<td>The consolidated Basque series with Spain mean, gap and changes</td>
-<td>year</td>
+<td>Symbolic before numerical</td>
+<td>good practice; makes a wrong route visible</td>
+<td>shifts marks to unexposed sub-items; not costed</td>
+<td>not measured</td>
 </tr>
 <tr class="odd">
-<td><code>data/analysis/annual_changes_all_ccaa.csv</code></td>
-<td>The 170 year-to-year changes</td>
-<td>ccaa × year</td>
+<td>Constants table with distractors</td>
+<td>uniformity; a small test</td>
+<td>≈21 words of layout effect on the statement counts</td>
+<td>measured, small</td>
 </tr>
 <tr class="even">
-<td><code>data/analysis/regions_2026_vs_2025.csv</code></td>
-<td>The 2026 cross-regional table</td>
-<td>ccaa</td>
+<td>Scientific notation printed</td>
+<td>scaffolding in its first scorable year</td>
+<td>not costed</td>
+<td>testimony</td>
 </tr>
 <tr class="odd">
-<td><code>data/analysis/subjects_2025_2026_by_region.csv</code></td>
-<td>Subject means 2025/2026 in five regions</td>
-<td>region × subject</td>
-</tr>
-<tr class="even">
-<td><code>data/analysis/beta_fit_EHU_2025.csv</code>, <code>beta_fit_EHU_2026.csv</code></td>
-<td>Fitted densities on a 1 001-point grid</td>
-<td>x</td>
-</tr>
-<tr class="odd">
-<td><code>data/analysis/euskadi_grade_bands_2015_2025.csv</code></td>
-<td>Ministry band shares, Euskadi</td>
-<td>year</td>
-</tr>
-<tr class="even">
-<td><code>data/analysis/canarias_histograms.csv</code></td>
-<td>Band shares, six university-years</td>
-<td>band</td>
-</tr>
-<tr class="odd">
-<td><code>data/analysis/ord_vs_extra_ministry.csv</code></td>
-<td>Ordinary and extraordinary means and gap</td>
-<td>ccaa × year</td>
-</tr>
-<tr class="even">
-<td><code>data/analysis/euskadi_gender_language.csv</code>, <code>euskadi_participation.csv</code>, <code>euskadi_regimes.csv</code></td>
-<td>As named</td>
-<td>year / regime</td>
-</tr>
-<tr class="odd">
-<td><code>data/analysis/results.json</code></td>
-<td>Every scalar quoted in the text</td>
-<td>—</td>
+<td>Linguistic rules applied</td>
+<td>compliance</td>
+<td>capped at 1.00; the published figures want one error per script, worth 0.04</td>
+<td>modelled</td>
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
-<section id="rebuild" class="level2">
-<h2 class="anchored" data-anchor-id="rebuild">Rebuild</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> claude_analysis_2026-09-18</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/01_build_ministry_panel.py   <span class="co"># parses the cubes, validates against the July package</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/02_analysis.py               <span class="co"># all computations → data/analysis/</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/03_plots.py                  <span class="co"># ten figures → plots/</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/04_tables.py                 <span class="co"># Markdown tables → data/tables/</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/07_exam_coding.py            <span class="co"># exam coding, figs 11-12, exam tables (day 2)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/08_ehu_history.py            <span class="co"># EHU paper history 2010-2026, figs 13-15 (day 2)</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/09_shape_locus.py            <span class="co"># shape-vs-shift locus, fig 16 (day 2)</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/10_reference_frames.py       <span class="co"># reference-frame ledger, fig 17 (day 2)</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/11_analysis_path.py          <span class="co"># the path of the analysis, fig 18 (day 2)</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/12_conditional_top.py        <span class="co"># conditional top-band ratio, fig 19 (day 2)</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/14_take_up.py                <span class="co"># Física take-up share (needs the full cube)</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/13_cohort_drift.py           <span class="co"># cohort-drift tests, fig 20 (day 2)</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/15_pisa_link.py              <span class="co"># PISA cohort triangulation, fig 21 (day 2)</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/16_slope_compare.py          <span class="co"># PAU vs PISA slope comparison, fig 22 (day 2)</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/17_pau2027_estimator.py      <span class="co"># PAU 2027 estimator from PISA 2025, fig 23 (day 2)</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/18_reading_load.py           <span class="co"># paper length + PISA reading, fig 24 (day 2)</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/19_audit_checks.py           <span class="co"># plateau by subject, turn base rate, 2026 vs norm (audit 1)</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/21_decay_decomposition.py    <span class="co"># location/shape typology, mark budget, fig 25 (audit 2)</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/22_subject_decomposition.py  <span class="co"># Euskadi-common vs Física-specific, severity, fig 26 (audit 3)</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/23_comparability.py          <span class="co"># structural criteria, reform intensity, fig 27 (audit 3)</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/24_cohort_rate.py            <span class="co"># PISA steps, selection transfer, fig 28 (audit 3)</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/25_statement_budget.py       <span class="co"># statement length item by item, fig 29 (audit 4)</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/26_penalty_regime.py         <span class="co"># non-award vs deduction, fig 30 (audit 5)</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/27_penalty_shape.py          <span class="co"># how the penalties are spread, fig 31 (audit 6)</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/28_marking_exposure.py       <span class="co"># exposure, the capped channel, the statement, fig 32 (audit 7)</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">#   ... 27 and 28 take ~4-6 min each; `--replot` redraws their figures (and 28's</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">#       tables) from the saved JSON in seconds</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/05_registry.py               <span class="co"># source registry</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/20_build_onepage.py          <span class="co"># onepage.qmd from index + chapters (audit)</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render                                <span class="co"># → _site/</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render onepage.qmd                    <span class="co"># → onepage.html (self-contained)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Requirements: Python ≥ 3.10 with <code>numpy</code>, <code>pandas</code>, <code>scipy</code>, <code>matplotlib</code>; Quarto ≥ 1.4 (the site uses no execution engine — every table is a static include, so no Jupyter kernel is needed). <code>pdftotext</code> (poppler) only for re-extracting the archived PDFs. A <strong>LaTeX installation</strong> with <code>latex</code> and <code>dvipng</code> on <code>PATH</code> is required for the figures: every figure sets <code>text.usetex</code>, so the plotting scripts abort rather than silently falling back to a substitute font.</p>
+<section id="what-2027-changes-and-the-one-decision-it-does-not-take" class="level3">
+<h3 class="anchored" data-anchor-id="what-2027-changes-and-the-one-decision-it-does-not-take">What 2027 changes, and the one decision it does not take</h3>
+<p>The 2027 paper keeps the structure, the contents and the marking. One thing changes: the statements get shorter, from about 1 430 words of reading to about 970, with the same verbs, the same rubric and the same demands. The budget is two-tiered — competency items at or below 250 words, option items at or below 150 — because the papers’ own trajectory shows a competency item costing about 400 words in its first year and about 300 in its second (<a href="../chapters/06-interpretation.html#statement-budget">the statement budget</a>).</p>
+<p>What this chapter adds is that <strong>the target may be reachable by a route nobody has costed</strong>. If the demand text per statement has doubled because of the itemisation, and the competency narrative has not grown at all, then the cheapest 470 words on the paper are in the nesting and the printed prices, not in the contextualisation everybody has been trying to compress. Flattening two levels of demand back to one, or printing the apartado’s price without printing each quantum’s, would buy a large part of the target without touching a single word of physics.</p>
+<p>It would also give back exactly what the itemisation was introduced to provide. That is the trade-off, and it is not the dossier’s to resolve:</p>
+<ul>
+<li><strong>Keep the itemisation and compress the narrative.</strong> The narrative is already at 70 words a statement; there is not 470 words of slack in it. This is the route the 2027 target implicitly assumes and it is the hardest one.</li>
+<li><strong>Flatten the itemisation and keep the narrative.</strong> Cheapest in words, and it returns the marking to the corrector’s discretion for partial credit, which is what the itemisation was meant to remove.</li>
+<li><strong>Keep both and print less.</strong> Itemise in the criteria, as now, but print only the apartado and its total on the paper. The candidate loses the signal of what each piece is worth; the corrector keeps the fine grid. This is the only option that separates the two effects, and nobody has tested whether candidates use the printed weights at all.</li>
+<li><strong>Keep both, print both, and cap the deductions.</strong> Does nothing for the reading load, but it addresses the interaction in #4 and #5 directly, and it is the only item on this list that is a marking decision rather than a drafting one.</li>
+</ul>
+<p>The dossier can price the first three in words and none of them in marks. It can say that the fourth is the one whose effect it has actually modelled. <strong>What would let the coordination choose is the tally</strong>: deductions per script crossed with the script’s own mark, and the 2026 band table (<a href="../chapters/06-interpretation.html#what-to-ask-for-and-what-each-request-would-separate">requests 3 and 11</a>).</p>
 </section>
-<section id="the-figures" class="level2">
-<h2 class="anchored" data-anchor-id="the-figures">The figures</h2>
-<p>All thirty-two figures are matplotlib, generated by <code>scripts/03_plots.py</code> (1–10), <code>scripts/07_exam_coding.py</code> (11–12), <code>scripts/08_ehu_history.py</code> (13–15) <code>scripts/09_shape_locus.py</code> (16) <code>scripts/10_reference_frames.py</code> (17) <code>scripts/11_analysis_path.py</code> (18) <code>scripts/12_conditional_top.py</code> (19) <code>scripts/13_cohort_drift.py</code> (20) <code>scripts/15_pisa_link.py</code> (21) <code>scripts/16_slope_compare.py</code> (22) <code>scripts/17_pau2027_estimator.py</code> (23) <code>scripts/18_reading_load.py</code> (24) <code>scripts/21_decay_decomposition.py</code> (25), <code>scripts/22_subject_decomposition.py</code> (26), <code>scripts/23_comparability.py</code> (27), <code>scripts/24_cohort_rate.py</code> (28) and <code>scripts/25_statement_budget.py</code> (29) <code>scripts/26_penalty_regime.py</code> (30) <code>scripts/27_penalty_shape.py</code> (31) and <code>scripts/28_marking_exposure.py</code> (32) from the CSVs in <code>data/</code> and <code>data/analysis/</code>, and written to <code>plots/</code> as PNG (200 dpi throughout, since the audit of 20 September) and SVG under the exact filenames the chapters include. Nothing in the site is a hand-drawn or externally sourced image.</p>
-<p>Every piece of figure text — titles, axis labels, tick labels, legends, annotations — is typeset by LaTeX rather than by a system font, so the figures match the mathematics in the prose. All styling lives in one module, <code>scripts/plot_style.py</code>: the rcParams, the font sizes derived from a single <code>BASE</code> constant, the colour registry shared by the twelve plotting scripts, and a text guard that escapes every label on its way into matplotlib. That guard is not cosmetic. This study’s labels are full of percentages, and under <code>usetex</code> an unescaped <code>%</code> opens a LaTeX comment that silently swallows the rest of the line — “Euskadi 39.8 % pass” renders as “Euskadi 39.8”, with no error. The guard also maps the Greek and mathematical characters that appear in the data (<code>Δ</code>, <code>λ</code>, <code>→</code>, <code>≤</code>, <code>±</code>, <code>×</code>), which LaTeX rejects outright in text mode, and promotes the sign of a signed number to a true minus while leaving the hyphens in names like Castilla-La Mancha alone.</p>
 </section>
-<section id="limits" class="level2">
-<h2 class="anchored" data-anchor-id="limits">Limits</h2>
-<p>The 2026 data are cohort statistics of different papers marked by different tribunals; no causal claim is made. The Beta reconstruction is a two-parameter summary of three published moments, labelled as a model wherever it appears, and the published moments cannot distinguish a J-shaped density from a bell pushed against the floor. Press-reported values (Extremadura 2026; EHU July 2026 global figures) are marked as such. The Ministry 2025 baselines include non-Bachillerato access routes; the effect on Física is ≤ 0.05 where it can be checked. Chart-read values (Madrid, La Rioja, ULL history) carry the precision of their labels (one decimal for Madrid and the ULL history; three decimals for La Rioja).</p>
+<section id="part-two-the-order-in-which-we-came-to-see-it" class="level2">
+<h2 class="anchored" data-anchor-id="part-two-the-order-in-which-we-came-to-see-it">Part two: the order in which we came to see it</h2>
+<p>Part one is the argument arranged. This is the sequence, which was different, and which is kept because the order in which a thing is learned is evidence about how well it is known. Each round below is recorded in full in <a href="../chapters/13-audit.html">the audit</a>; what follows is only the design-side thread.</p>
+<p><strong>The paper as a length.</strong> The first thing the dossier noticed about the 2026 paper was that it was longer, and the reading-load section attributed the length to the competency items, because that is what a competency item looks like: a paragraph of scenario before the physics. The correlation across nine communities between length and the change in the mean was <span class="math inline">\(-0.905\)</span>. Nobody asked what <em>kind</em> of words had been added.</p>
+<p><strong>The paper as a structure.</strong> Coding the nine papers against the structural criteria showed that Euskadi was the only community to move all four axes in the direction the orientations ask, and that the nine did not sit comparable exams. This made the field comparison weaker and the Basque-specific number stronger, and it still had nothing to say about why the Basque paper was long.</p>
+<p><strong>The statement item by item.</strong> Asked for a word budget for 2027, the dossier counted every statement separately and found the length concentrated in the obligatory competency items in both years — A1 at 403 words in 2025, B1 at 406 in 2026. That looked like confirmation of the competency reading. It was not: it was the two obligatory items being the two that were both competencial <em>and</em> the most heavily itemised, and nothing in the count could separate those.</p>
+<p><strong>The coordinator’s corrections.</strong> Four readings of the coordination presentation were wrong and were withdrawn, including the scientific-notation one above. The correction that mattered most was a trajectory the dossier had missed in its own data: a competency item costs about 400 words in its first year and 300 in its second. That made 2026 a paper carrying one block at 400 and another at 300, rather than a paper that had gone wrong.</p>
+<p><strong>The marking regime.</strong> The coordinator supplied the account of non-award becoming deduction. Modelling it took three attempts, two of them wrong, and produced the dossier’s strongest single result: the regime is sufficient to produce the published figures. It also produced the assumption this round dismantled — that all twenty-eight sub-tasks are alike and that the linguistic channel is an unmodelled addition.</p>
+<p><strong>The distribution of the penalties.</strong> The coordinator objected that the model gives every candidate the same twelve deductions, and attached a purpose: he did not want the whole fall explained with the data in hand. That produced the ceiling argument, and the correction of a modelled top band that the dossier had been quoting as an observation.</p>
+<p><strong>The granularity.</strong> And then the piece that reorganises the rest: forty quanta of 0.25, a decision taken to protect candidates, which dilutes the paradigm change on purpose and which generates text. Measuring it showed that the competency narrative had not grown at all, and that the reading load — the dossier’s oldest and most-cited finding about the paper — had been attributed to the wrong cause for the whole of its life.</p>
+<p><strong>What the sequence shows.</strong> Every substantive correction in this thread came from the coordination and none from the data. The data were sufficient to measure the itemisation’s cost in words from the first day; the repository held the corrector’s document, the two statements and the marking-rules table throughout. What was missing was the knowledge that the itemisation was a <em>decision</em>, with a purpose, that could have been otherwise. A dossier written from published outputs can measure what a paper is; it cannot see the choices behind it, and it will attribute what it measures to whatever cause it already has a name for. That is worth recording as a limitation of the method and not only as a history of this study.</p>
 
 
 </section>
@@ -1221,13 +1214,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/09-log.html" class="pagination-link" aria-label="Work log">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Work log</span>
+      <a href="../chapters/12-ehu-paper-history.html" class="pagination-link" aria-label="Sixteen years of one paper">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sixteen years of one paper</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/13-audit.html" class="pagination-link" aria-label="Audit">
-        <span class="nav-page-text">Audit</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/01-data-hunt.html" class="pagination-link" aria-label="The data hunt">
+        <span class="nav-page-text">The data hunt</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

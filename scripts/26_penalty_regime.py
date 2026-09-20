@@ -120,7 +120,8 @@ def _allocate(total, sigma=SIGMA_ITEM):
 def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67),
              ded_mode="flat", void_mode="cascade", sigma=SIGMA_ITEM, n=N,
              subtask=None, apartado_of=None, shape=(1.0, 1.0),
-             overdispersion=None) -> dict:
+             overdispersion=None, exposed=None, lang=None,
+             lang_shape=(2.0, 2.0)) -> dict:
     """The 2025 distribution put through the 2026 regime.
 
     ded_rate      expected 0.10 deductions per script, applied in 2026 and not in 2025.
@@ -134,6 +135,27 @@ def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67)
                   through a twelfth power, which is what an earlier version did.
     void_mode     "cascade" as above; "independent" voids apartados independently at
                   the rate that gives the same expected number.
+    exposed       boolean mask over the sub-tasks: which of them a unit, prefix or
+                  rounding error can actually be made on. Default None means all of
+                  them, which is what this script assumed before the sub-task coding
+                  of 20 September showed that only about half of the paper produces a
+                  numerical result at all. Deductions are spread over the exposed
+                  sub-tasks only; `ded_rate` is still the mean count per script.
+    lang          the third channel, the linguistic one, which the Basque criteria
+                  cap: (mean spelling errors per script, share of scripts with a
+                  syntax/coherence penalty). The rule is -0.10 from the THIRD error,
+                  spelling capped at 1.00, syntax/coherence up to 0.50, and the two
+                  together capped at 1.00 -- ten per cent of the paper. Default None
+                  leaves the channel out, which is what the published version did.
+    lang_shape    who makes spelling and syntax errors, as a Beta kernel in the
+                  candidate's own level.  The first version of this channel simply
+                  scaled the error rate up as the mark fell, and it produced 8 per cent
+                  of scripts at exactly zero against a published 3.2 -- because a
+                  candidate who writes almost nothing cannot misspell it.  Errors
+                  require text, and text requires an attempt, so the rate has to
+                  vanish at both ends: (2,2) is a hump in the middle, which is the
+                  default.  The observed zero rate is what bounds this, and it bounds
+                  it tightly.
     """
     st = SUBTASK if subtask is None else subtask
     ao = APARTADO_OF if apartado_of is None else apartado_of
@@ -167,12 +189,15 @@ def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67)
         per = np.full(n, float(ded_rate))
     else:
         per = None
+    ex = (np.ones(st.size, dtype=bool) if exposed is None
+          else np.asarray(exposed, dtype=bool))
+    n_ex = max(int(ex.sum()), 1)
     if per is not None:
         if overdispersion is not None and np.isfinite(overdispersion):
             per = per * RNG.gamma(overdispersion, 1.0 / overdispersion, size=n)
-        lam = np.repeat(per[:, None] / st.size, st.size, axis=1)
+        lam = np.repeat(per[:, None] / n_ex, st.size, axis=1) * ex[None, :]
     else:
-        w = 1.0 - share
+        w = (1.0 - share) * ex[None, :]
         lam = ded_rate * w / np.maximum(w.sum(axis=1, keepdims=True), 1e-9)
     k = RNG.poisson(lam)
     x = np.maximum(base - DEDUCTION * k, 0.0)
@@ -198,10 +223,33 @@ def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67)
         x = x * (~vd[:, ao])
 
     sc = x.sum(axis=1)
+
+    lang_mean = 0.0
+    if lang is not None:
+        e_mean, p_syntax = lang
+        # Errors need text, and text needs an attempt. The rate therefore has to fall
+        # to nothing at both ends -- a blank script has no spelling -- so it is a Beta
+        # kernel in the candidate's own level, normalised to mean one so that `e_mean`
+        # is the mean number of errors per script whatever the shape.
+        al = np.clip(total / 10.0, 1e-3, 1 - 1e-3)
+        pl, ql = lang_shape
+        rel_l = al ** (pl - 1.0) * (1.0 - al) ** (ql - 1.0)
+        rel_l = rel_l / rel_l.mean()
+        e = RNG.poisson(np.clip(e_mean * rel_l, 0.0, None))
+        spell = np.minimum(np.maximum(e - 2, 0) * DEDUCTION, 1.0)
+        syn = np.where(RNG.random(n) < np.clip(p_syntax * rel_l, 0, 1),
+                       RNG.choice([0.2, 0.3, 0.5], size=n), 0.0)
+        pen = np.minimum(spell + syn, 1.0)     # the cap is on the two together
+        before = sc.mean()
+        sc = np.maximum(sc - pen, 0.0)
+        lang_mean = float(before - sc.mean())
+
     return dict(
         ded_rate=ded_rate, p_partial=p_partial, p_total=p_total,
         ded_mode=ded_mode, void_mode=void_mode, sigma=sigma,
         shape=list(shape), overdispersion=overdispersion,
+        n_exposed=int(n_ex), lang=list(lang) if lang else None,
+        lang_shape=list(lang_shape), lang_shift=lang_mean,
         deductions_per_script=float(k.sum(axis=1).mean()),
         apartados_voided_per_script=n_voided,
         scripts_with_any_void=float((nv > 0).mean() * 100) if (p_partial or p_total) else 0.0,

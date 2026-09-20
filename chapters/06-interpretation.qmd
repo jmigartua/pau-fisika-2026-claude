@@ -366,7 +366,7 @@ Until 2025 a missing unit, a vector arrow on a scalar, an intermediate rounding 
 
 The deduction amounts are documented: they are in the 2026 Basque criteria, and the comparison with 2025 is in `data/marking_rules_2025_2026.csv`. **What is testimony, and is labelled as such wherever it appears, is the claim that the rules were applied in full in 2026 and not in 2025**, by a consensus reached with the correctors at the meeting held before the sitting. It is testimony of an unusual kind — the event was collective, scheduled, and attended by every corrector, so any of them could confirm or deny it — but it is not a document, and the dossier does not treat it as one. Its documentary form, the agenda and the criteria circulated, is [request 10](#what-to-ask-for-and-what-each-request-would-separate).
 
-**The question this makes answerable is arithmetical**: how many deductions per script would be needed to move the mean by a given amount, and can the regime produce the 2026 result at all? Two of the three channels are modelled below — the 0.10 deductions and the grave-error voiding. The third, the linguistic component and the clarity rules, is not: it attaches to text production rather than to sub-tasks and the dossier has no basis for a rate. Everything here therefore **understates** the regime by whatever that third channel is worth.
+**The question this makes answerable is arithmetical**: how many deductions per script would be needed to move the mean by a given amount, and can the regime produce the 2026 result at all? Two of the three channels are modelled first — the 0.10 deductions and the grave-error voiding. An earlier version of this section left the third out, said the dossier had no basis for a rate, and concluded that everything here therefore **understated** the regime by whatever the linguistic channel was worth. That was wrong in a way the repository could have caught: the Basque criteria deduct 0.10 from the *third* spelling error, allow up to 0.50 for syntax and coherence, and **cap the two together at 1.00** — ten per cent of the paper — and that rule was already in `data/marking_rules_2025_2026.csv`. A capped channel does not understate anything. [It is modelled below](#exposure-and-the-third-channel), where it turns out to be not merely bounded but crowded out by the published figures.
 
 ![**a** — the deduction channel alone, with and without the floor that stops a sub-task going below zero. **b** — the four published figures the model is fitted to, and a fifth that Euskadi has not published: the share at or above 9, where the readings of the regime separate (figure 31). **c** — the three quantities the fitted regime requires, all of which are on the marking sheets.](../plots/fig30_penalty_regime.png){#fig-penalty}
 
@@ -447,6 +447,58 @@ Each shape refitted against the four published figures; the top band is neither 
 The flat reading fits best, at a loss of 1.3. The tilts fit worse, and they fail in a specific and informative way: to get the mean down to 3.99 they need sixteen to twenty-five deductions, and at those intensities they push 27 to 30 % of scripts to two or below against the 24.5 % observed. **The published figures therefore do not support a heavy concentration of penalties at the bottom.** A mild one is what survives — which is a real constraint on the story, and one that came out of the data rather than out of the model's assumptions. The honest reading of the regime is thus narrower than either extreme: not flat, because nobody marks that way, and not steeply tilted, because the published low-mark mass forbids it.
 
 **The statistic that would settle it is the one nobody has.** Refitted to the four published figures, the five readings on the table agree on all four and disagree on the fifth by a factor of twenty-three: from 0.3 % at or above nine under the flat reading to 6.1 % under the steep tilts — 0.3 rather than the 0.4 of the previous section because the shape grid refits the voiding too, which is the same number to the model's resolution. The smooth-curve extrapolation from the Beta mixture puts 2.09 % there, between the two, which is a coincidence of two models and not evidence. Euskadi has not published a 2026 band table. One table — the same table published every year until 2025 — separates a flat regime from a distributed one, and with it separates a marking regime that carries 87 % of the Física-specific fall from one that carries 59 %. It is [request 11](#what-to-ask-for-and-what-each-request-would-separate), and it is the cheapest request on the list.
+
+### What the paper is made of: exposure, the capped channel, and where the reading load came from {#exposure-and-the-third-channel}
+
+The two sections above model the marking regime as twenty-eight sub-tasks, every one of them able to attract a missing unit or a wrong prefix, and they leave the linguistic channel out. The coordination corrected both, and supplied a third point that turns out to matter more than either.
+
+**Not every quantum can lose a unit, and the corrector's document says which can.** The paper is marked in quanta of 0.25 — forty of them over the 10.00 — and many of those quanta ask for something with no units and no number: a definition of magnetic flux, whether a headline is physically reasonable, which law applies and why, a qualitative sketch of an exponential decay. A missing unit cannot be committed there. This is measurable rather than assumable, because the corrector's document for 2026 lists every sub-item with its point value and its content; the coding is in `data/exam_subtask_coding_2026.csv`.
+
+![**a** — what each of the four papers a candidate can sit is made of, by the nature of the demand, with the share of marks exposed to a unit error. **b** — the deduction channel with its penalties spread over all sub-items and over the exposed ones only, read in deductions per script and, on the upper axis, per exposed sub-item. **c** — the linguistic channel, capped by the criteria at 1.00, against what the four published figures actually want. **d** — the 2025 and 2026 statements split into narrative, demand text and printed prices.](../plots/fig32_marking_exposure.png){#fig-exposure}
+
+::: {#tbl-exposure-coding}
+{{< include ../data/tables/exposure_coding.md >}}
+
+The four papers a candidate can sit, coded from the corrector's document. File: `data/analysis/marking_exposure.json`.
+:::
+
+Between a half and two thirds of the sub-items are exposed, carrying 50 to 65 per cent of the marks. Restricting the deductions to them changes the arithmetic modestly and the **interpretation** sharply, because it changes the currency. Twelve deductions per script is a number nobody can check. Twelve deductions over the eighteen exposed sub-items of the modal paper is **0.67 penalties on every numerical answer of every script**, and that is a claim a corrector can recognise or reject on sight.
+
+::: {#tbl-exposure-effect}
+{{< include ../data/tables/exposure_effect.md >}}
+
+What restricting the deductions to the sub-items that can receive one costs. File: `data/analysis/marking_exposure.json`.
+:::
+
+Concentration also wastes penalties, for the same reason the zero floor does: two deductions on the same 0.25 sub-item cannot take 0.20 from it. Spread over the exposed items only, twelve deductions move the mean 0.89 instead of 0.94, and thirty move it 1.80 instead of 2.11 — 85 per cent of the unrestricted figure. **So exposure lowers the ceiling of [the previous section](#penalty-shape) rather than raising it**, and it does so for a reason independent of how the penalties are distributed across candidates.
+
+**The third channel is capped, and the cap was in the repository all along.** The Basque criteria deduct 0.10 from the *third* spelling error, allow up to 0.50 for syntax and coherence, and cap the two together at 1.00 — ten per cent of the paper. The rule is the same in 2025 and 2026; what the coordination reports changing is whether it was applied. Modelling it required one correction of its own: the first version simply raised the error rate as the mark fell, and produced 8.2 per cent of scripts at exactly zero against a published 3.2, because a candidate who writes almost nothing cannot misspell it. Errors need text and text needs an attempt, so the rate has to vanish at both ends.
+
+::: {#tbl-language}
+{{< include ../data/tables/language_channel.md >}}
+
+The linguistic channel, with its cap. File: `data/analysis/marking_exposure.json`.
+:::
+
+The result is the opposite of an understatement. The absolute bound — every script in Euskadi losing the full ten per cent — is **0.96 marks**. And fitted jointly with the other two channels, the four published figures want **one error per script, worth 0.04 marks**: push it to four and the mean lands on 3.99 but the pass rate falls to 35.7 against the published 39.8, because the mean and the pass rate cannot both be matched by a channel that takes the same amount from everyone who writes. The channel is not merely bounded; it is crowded out.
+
+**And the regime, fitted to the four published figures, is over-attributed by construction.** Those four figures are 2026's own, so a model that reproduces them carries the whole observed $-1.48$. But [the subject split](#fisica-or-euskadi) says at most $-1.10$ of that fall can be Física's, because $-1.18$ of it moved every Basque subject at once and cannot be the Física marking sheet. Fitted to the published figures the regime needs **15.5 deductions per script**, 0.86 on every exposed sub-item; asked only for the $-1.10$ that can be its, it needs **8.8**, or 0.49 — one penalty on every second numerical answer rather than nearly every one. The difference, **0.38 marks**, is over-attribution, and it is the arithmetic reason the fitted regime has to be read as a ceiling. That reason is independent of the shape argument in the previous section, and the two compound.
+
+#### Where the reading load actually came from
+
+The granularity has a consequence the dossier had not connected to anything, and it overturns a reading this chapter has carried since the reading-load section was written. A paper marked in itemised quanta has to **print** each quantum: its demand and its price. The 2025 paper stated twenty plain numbered demands. The 2026 paper states seventeen apartado lead-ins with thirty-six numbered sub-demands nested inside them and fifty-one printed weights. That is text nobody wrote for its own sake.
+
+::: {#tbl-statement-structure}
+{{< include ../data/tables/statement_structure.md >}}
+
+The printed statements of both papers, split by what the words do. File: `data/analysis/marking_exposure.json`.
+:::
+
+**The competency wrapper did not grow at all.** The 2025 paper printed seven statements and the 2026 paper six, so the comparison has to be made per statement, and made that way it is unambiguous: the narrative and context — the scenario, the data, the framing, everything the contextualisation requirement adds — runs to 71 words a statement in 2025 and **70 in 2026**, 99 per cent of what it was. The demand text went from 88 words a statement to **181**, and the printed prices from nothing to 17. In totals, across all the printed statements of each paper, narrative fell from 495 to 418 and demand text rose from 616 to 1 087. Whichever way it is normalised, the whole of the growth is the itemisation, and the competency narrative is not implicated at all.
+
+The coordination's own reconstruction of the electromagnetic problem says the same thing from the other direction, and it is worth noticing that it does, because the two measurements are independent. The forward ladder in its presentation runs 90 words in the habitual style, 178 once the item is made competencial, **244 once it is *desglosado*** — itemised — and 408 as issued. The itemisation step costs 66 words there, on one problem, in a count made by the people who wrote it.
+
+This does not withdraw [the reading-load finding](#how-much-of-the-paper-is-reading) — the paper really is 39 per cent longer to read, and length really does track the fall across the nine communities — but it relocates its cause, and relocating it changes what can be done about it. The dossier has been treating the reading load as the price of the competency reform, which is imposed from outside and cannot be declined. On this measurement it is the price of a decision taken locally, for a reason of its own, and which the coordination can revisit without touching the reform at all. [The design chapter](16-paradigm.qmd) sets that trade-off out, because the protection the itemisation buys is real and the dossier is not in a position to say it is not worth 470 words.
 
 ### A rate of cohort decay, and what it can and cannot anticipate {#rate-of-decay}
 

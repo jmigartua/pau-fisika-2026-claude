@@ -32,7 +32,7 @@ CH = ROOT / "chapters"
 # single-page edition.
 ORDER = ["01-data-hunt", "02-euskadi", "03-spain-2026", "04-distributions",
          "05-subjects-sittings", "06-interpretation", "11-exam-content",
-         "12-ehu-paper-history", "07-literature", "08-sources", "09-log",
+         "12-ehu-paper-history", "16-paradigm", "07-literature", "08-sources", "09-log",
          "10-reproduce", "13-audit"]
 
 HEADER = """---
