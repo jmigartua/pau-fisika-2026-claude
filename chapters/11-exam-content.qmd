@@ -98,6 +98,48 @@ What the coding therefore supports is narrower and, for the purpose of the 2027 
 
 The cleanest statement is the one the earlier chapters left open: the reform framework (RD 534/2024) is common to all seventeen communities and cannot explain 2026; the *papers* are not common, and the Basque 2026 paper differs from its 2025 predecessor more than any other paper in this set differs from its own. Whether that difference produced the fall through the competency exercises, through the loss of choice, through the unfamiliar granular format, through the amount of reading the new items require in the time allowed (Andalucía, Extremadura and Madrid print 90 minutes on the paper; the EHU papers in this archive print no duration), or through marking-scheme effects that the corrector documents would show, is a question the grade data cannot settle and the exams alone cannot either. The natural next step is the one the UAM and Las Palmas commissions have taken elsewhere: an item-level analysis of the 2026 Basque scripts (marks by sub-task, by exercise and by option chosen), which would say directly whether the two obligatory competency exercises are where the 2 066 candidates lost their marks.
 
+## Did the nine sit comparable exams? {#comparability}
+
+The previous section compares papers with each other. This one compares each paper with the structural criteria it was supposed to meet, because a comparison across communities is only a comparison if the nine were building to the same specification.
+
+Three criteria are applied, in the form the EHU coordination applies them: optionality between 50 % and 85 % of the paper's marks; at least 70 % of the marks from open or semi-constructed response; and at least one obligatory item carrying a substantive real-world context. A fourth measure is added and is not a criterion — the share of the paper's expected marks that is competency-coded in the double-coded scheme of this chapter, meaning items that carry a substantive context *and* ask the candidate to explain or to evaluate.
+
+::: {#tbl-comparability}
+{{< include ../data/tables/comparability_criteria.md >}}
+
+The nine 2026 papers against the structural criteria. File: `data/analysis/comparability.json`.
+:::
+
+The second criterion separates nobody: on the reading made here, none of the 146 coded items in the eighteen papers uses a closed response format — no multiple choice, no true/false, no matching — so every paper meets it at 100 %. That is a judgement from reading the papers rather than a coded variable, since the coding scheme of this chapter records what an item *demands* and not how it is answered; it is recorded and set aside because it separates nobody either way.
+
+The first and third do separate. **Asturias sits outside the optionality band at 100 %** — its candidates answer any five of eight questions and nothing on the paper is obligatory, so it fails the first criterion and the third at once. It is also the community with the largest rise in 2026 ($+1.13$). Every other 2026 paper sits inside the band, and every other 2026 paper carries at least one obligatory contextualised item, though in six of the eight that have one at all the item is contextualised without being competency-coded: a real-world framing around a calculation, with nothing asked that requires the candidate to explain or to judge.
+
+Where the nine genuinely part company is the fourth column. Euskadi's 2026 paper draws 62.5 % of its expected marks from competency-coded items; Cataluña 37.5 %, Castilla-La Mancha 20 %, and the remaining six exactly zero.
+
+![**a** — optionality in 2025 (grey) and 2026, against the criterion band; communities ordered by how far their paper moved. **b** — the reform-intensity index against the change in the mean. **c** — the competency-coded share of the expected marks, 2025 and 2026.](../plots/fig27_comparability.png){#fig-comparability}
+
+### How far each paper moved
+
+The criteria describe a level. What the 2026 results turn on is movement, so each paper's change from its own 2025 predecessor is summarised in one index: the mean of four standardised movements — optionality (entering with its sign reversed, since cutting choice is the direction the orientations ask for), competency-coded marks, substantive context, and contextualised marks. Standardising inside the nine makes it a ranking device and not a scale with meaning of its own.
+
+::: {#tbl-reform}
+{{< include ../data/tables/reform_intensity.md >}}
+
+Movement of each 2026 paper from its own 2025 paper, and the index built from it. File: `data/analysis/comparability.json`.
+:::
+
+Euskadi ranks first on the index, at $+1.76$ standard deviations, more than a full standard deviation clear of the second. It is the only community that moved all four axes in the direction the orientations ask for: optionality down 25 points, competency-coded marks up 37.5, substantive context up 50, contextualised marks up 75. Castilla-La Mancha is the only other community that both cut optionality (by 30 points) and raised its competency share (0 → 20 %), and it moved contextualised marks 45 points the other way, which is why its index is $+0.39$ against Euskadi's $+1.76$. Cataluña, the only community with a comparably competency-oriented paper, moved the competency share 37.5 points the *other* way. Three communities — Asturias, Madrid and Extremadura — moved on no axis except the contextualised share, and none of the nine is at zero on all four.
+
+Across the nine the index and the change in the mean are related at $r = -0.70$ ($p = 0.035$) — the papers that moved, fell. That coefficient must be read with its leverage stated: Euskadi is the extreme point on both axes, and removing it leaves $r = -0.40$ ($p = 0.33$) among the other eight, while the rank correlation over all nine is $\rho = -0.38$ ($p = 0.31$). So this is not eight communities independently confirming a relationship. It is one community that moved furthest and fell furthest, in a field where the sign among the others is the same but the evidence is weak.
+
+### What this does and does not establish
+
+It does establish that the nine 2026 Física papers are not nine measurements of one thing. They moved in different directions and by very different amounts, one of them sits outside the structural band on two criteria, and the community whose paper changed most is the community whose mean fell most.
+
+It does not establish that anybody failed to comply with anything. The criteria used here are the ones that govern the Basque paper, taken from the orientation document the EHU coordination works to. The text of RD 534/2024 and the Ministry and CRUE orientations are not in this study's [source registry](08-sources.qmd): they were not retrievable during the data hunt, and no attempt is made here to quote or paraphrase them. Whether those criteria bind every community, bind them in this form, or are advisory, is unresolved — and it is unresolved in a way that matters, because the difference between "Euskadi did what was required and others did not" and "Euskadi did more than was required" is the difference between a compliance question and a design choice. It is [request 9](06-interpretation.qmd#what-to-ask-for-and-what-each-request-would-separate) in Chapter 6.
+
+What can be said without the binding text is narrower and still useful for the 2027 discussion. Whatever the requirement was, eight communities read it as compatible with a paper that changed little or not at all, and their candidates scored better in 2026 than in 2025. Euskadi read it as calling for a paper that changed on four axes at once. Both readings produced a 2026 paper; only one of them produced a 2026 paper whose candidates had never seen anything like it.
+
 ## A note on the UJI rating
 
 The UJI study [@sancheztarazaga2026pau] rated País Vasco and Cataluña as the most competency-oriented PAU systems of 2015–2025 and Madrid as the least. The present coding of the 2025 papers agrees on the ordering (Cataluña 2.00 and Euskadi 0.86 criteria per item versus Madrid 0.43), with the Basque 2025 paper owing its position to a single obligatory exercise. In 2026 the Basque paper (2.67) overtakes Cataluña (2.33); Madrid (0.43) does not move. If "competency orientation" is measured as the UJI study measures it, the 2026 Basque paper is now the most competency-oriented Física paper among the nine coded here on both coders' readings (2.67 criteria per item against Cataluña's 2.33; 2.50 against 1.83 for the second coder) — which is the strongest form of the hypothesis this chapter was asked to test, and the reason the item-level data matter.

@@ -61,3 +61,71 @@ Item-level marks of the 2026 Basque Física scripts (by sub-task, exercise and o
 
 
 EHU July 2026 Física; EHU tribunal-level Física; Física revision statistics; Física by sex/language/territory 2023–2026; Basque *Resultados escolares 2025-26*; Cataluña Recull 2026; Canarias PAU-2027 minutes; Andalucía ponencias 2026-27; Murcia Informe 2026; Aragón/Navarra/Cantabria 2026 files; Galicia working-group report; Ministry EPAU 2026 (June 2027); Basque Parliament initiatives (manual BOPV check).
+
+## 20 September 2026, third round — four objections from the coordinator
+
+Objections raised after reading the rewritten briefing, and the work each produced.
+
+1. **"I do not understand this paragraph."** The "blind to 2024" paragraph asserted its conclusion
+   without the mechanism. Rewritten in EN and ES to give the arithmetic: 8–10 share −9.0 pp, pass
+   rate +2.3 pp, mean −0.21.
+2. **"Why measure the Basque decay from the Spanish mean?"** New section
+   `06-interpretation.qmd#why-a-field`: three frames (−1.48 / −1.91 / −1.65, spread 0.43), what the
+   field is for (separating 2025 from 2026), and the explicit statement that it is not a control.
+   Range of the Basque-specific component under alternative fields: [−1.95, −1.48].
+3. **"We followed all the requirements; other communities' increases are fictitious."**
+   New `scripts/23_comparability.py`, new section `11-exam-content.qmd#comparability`, fig 27.
+   Asturias fails C1 (100 % optionality) and C3 (no obligatory item) and rose +1.13; C2 (open
+   response) is met by all nine and separates nobody. Reform-intensity index: PV +1.76 SD, rank 1
+   of 9. r(index, Δmean) = −0.701, p = 0.0355; without PV r = −0.396, p = 0.332; Spearman
+   rho = −0.383, p = 0.309. No non-compliance claim: RD 534/2024 and the CRUE orientations are not
+   in the source registry (data request 9).
+4. **Tribunal / marking severity, second year of the criteria.** New
+   `scripts/22_subject_decomposition.py`, new sections in ch 6 and both briefings, fig 26.
+   Exact split on the balanced 5×3 panel: −1.48 = +0.057 (field core) + 0.743 (field Física
+   premium) − 1.177 (Euskadi-common) − 1.103 (Física-specific). ANOVA cross-check leaves the
+   residual at −0.882. Severity: quantitative mean −1.120 vs verbal −0.284, gap −0.836; general
+   severity bounded at |−0.284| = 19 % of the Física fall. Timing fits the year-two hypothesis
+   (Basque-specific +0.03 in 2025, −1.65 in 2026). New data request 3: the deduction tally.
+5. **"Can a rate of decay be projected?"** New `scripts/24_cohort_rate.py`, new section
+   `06-interpretation.qmd#rate-of-decay`, fig 28. Basque PISA per-cohort-year: +0.01, +3.65,
+   −7.53, +1.44, −1.97, −6.99 (spread 11.19 around −1.90). Interpolated 2026-cohort excess
+   −4.53 pts/yr = −0.118 marks. Top-band check: observed 1.83 % vs 1.92 % predicted by a uniform
+   shift (ratio 0.952) — a location move, not a tail collapse. Selection transfer: 0.232 under a
+   fixed bar, 1.000 under a fixed share; take-up flat (r = −0.096, p = 0.339) favours the second,
+   so the 1:1 conversion is the top of the range and the cohort term is an upper bound
+   (−0.118 to −0.027 marks/yr). 2026 entries 2 066 vs 2 189 (−5.6 %): dilution runs the wrong way,
+   max gain if the weakest stayed away +0.287 marks. 2027: cohort −0.182 gross / −0.118 excess
+   against a paper SD of 0.855 (ratio 4.70). Identification: ΔG not identified at any sample size.
+
+No previously published number changed in this round. Figures 26, 27 and 28 added; the figure
+count is now 28. Index gained findings 9 and 10; chapter 13 gained "The third round".
+
+### Verification of the third round (two independent readers, 20 September)
+
+Both recomputed every new number from the source CSVs. All derived values reproduced exactly
+(subject split, severity signature, reform index and its leave-one-out, PISA rates, interpolation,
+top-band check, selection transfer, entry-count bound, 2027 terms). Six prose errors found, all of
+them counts or proportions rather than computed quantities:
+
+1. "split the −1.48 exactly into −1.18 and −1.10" — those two sum to −2.28 (the four-term identity
+   also has +0.06 and +0.74). Rewritten in both briefings' callouts.
+2. "a little more than half of the Basque-specific fall" — 51.6 % of 2.28, 71.4 % of 1.65, 79.6 %
+   of 1.48; denominator unstated. Restated against the 2.28 in all five places.
+3. "+0.74 above in all four" — +0.74 is the mean; the four premia are +1.29, +0.67, +0.38, +0.63.
+4. "the same tribunals ... the same cohort" — each subject has its own correctors and candidates.
+   Replaced with "same sitting, same university, same marking specification" in ch 6, both
+   briefings, index.qmd and the severity_signature footer (script 22).
+5. "four communities did not move on any of the four axes" — none is at zero on all four; three
+   (Asturias, Madrid, Extremadura) moved only on d_ctx_exp; four have d_opt = 0. Fixed in
+   ch 6, ch 11, ch 13, index.qmd and both briefings (7 places).
+6. "only Euskadi both cut optionality and raised the competency share" — Castilla-La Mancha did
+   both (−30, +20) while cutting contextualised marks 45. The unique claim is "all four axes in the
+   reform direction", which is Euskadi alone.
+
+Smaller: Asturias +1.13 is the largest rise, not the second (ch 11); the verbal-mean "bound" is
+conditional on the 2026 verbal papers being no easier, now stated; Euskara II −0.48 added to the
+text-exposure sentence; "five per cent" → "just under five per cent" (4.78 %); "six of the nine"
+→ "six of the eight that have such an item"; the 0.85/1.68 ratio sentence re-attached to its
+denominators (4.7× and 9.2×). Constant harmonised: 17_pau2027_estimator.py SD_PAU 2.34 → 2.343;
+no published rounded value changed (−0.36, −0.18, 6.5, 2.37, 5.11, 3.81, 1.23 all unchanged).

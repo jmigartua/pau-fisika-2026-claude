@@ -1,0 +1,82 @@
+{
+  "note": "Exact additive split of the 2026 Basque Física change on the balanced 5x3 subject panel, plus the severity signature in the eight Basque subjects.  No causal claim is made by either.",
+  "split": {
+    "total": -1.48,
+    "field_core": 0.05733333333333333,
+    "field_fisica_premium": 0.7426666666666668,
+    "euskadi_common": -1.1773333333333331,
+    "fisica_specific": -1.102666666666667,
+    "pv_core_mean": -1.1199999999999999,
+    "pv_fisica_minus_own_core": -0.3600000000000001,
+    "anova_grand_mean": -0.1781333333333333,
+    "anova_region_effect_pv": -0.9418666666666666,
+    "anova_subject_effect_fisica": 0.5221333333333333,
+    "anova_residual_pv_fisica": -0.8821333333333334,
+    "field_regions": [
+      "Andalucía",
+      "Asturias",
+      "Cataluña",
+      "Madrid"
+    ],
+    "per_region_core": {
+      "Andalucía": -0.21399999999999997,
+      "Asturias": 0.5033333333333333,
+      "Cataluña": -0.49333333333333335,
+      "Madrid": 0.43333333333333335
+    },
+    "per_region_fisica_premium": {
+      "Andalucía": 0.384,
+      "Asturias": 0.6266666666666666,
+      "Cataluña": 1.2933333333333334,
+      "Madrid": 0.6666666666666667
+    }
+  },
+  "severity": {
+    "all_subjects_mean": -0.5975,
+    "quantitative": {
+      "subjects": [
+        "Física",
+        "Matemáticas II",
+        "Química"
+      ],
+      "mean": -1.1199999999999999,
+      "values": {
+        "Física": -1.48,
+        "Matemáticas II": -1.67,
+        "Química": -0.21
+      }
+    },
+    "verbal": {
+      "subjects": [
+        "Biología",
+        "Historia de España",
+        "Euskara II",
+        "Lengua Castellana",
+        "Hª Filosofía"
+      ],
+      "mean": -0.284,
+      "values": {
+        "Biología": 0.15,
+        "Historia de España": -0.83,
+        "Euskara II": -0.48,
+        "Lengua Castellana": 0.03,
+        "Hª Filosofía": -0.29
+      }
+    },
+    "quant_minus_verbal": -0.8359999999999999,
+    "general_severity_upper_bound_marks": -0.284,
+    "general_severity_share_of_fisica": 0.19189189189189187,
+    "n_subjects_up": 2,
+    "range_marks": 1.8199999999999998,
+    "lengua_castellana": 0.03,
+    "euskara": -0.48
+  },
+  "timing": {
+    "basque_specific_2025": 0.0267,
+    "common_2025": -0.6467,
+    "basque_specific_2026": -1.6493,
+    "common_2026": 0.1693
+  },
+  "basque_specific_remainder": -1.649333333333332,
+  "euskadi_common_share_of_remainder": 0.7138237671786585
+}

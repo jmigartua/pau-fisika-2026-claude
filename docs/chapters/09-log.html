@@ -99,6 +99,35 @@ div.csl-indent {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -596,7 +625,8 @@ div.csl-indent {
 <p><strong>Result in one line</strong>: none of the six rising communities increased the competency content of its paper (five stayed at zero or fell, Castilla-La Mancha added one contextualised obligatory item); the Basque paper is the only one in the set that changed genre, on four axes at once (competency content 25 → 62.5 % of expected points, guaranteed competency points 2.5 → 5, optionality 75 → 50 %, granular sub-task format); Canarias cut optionality without adding competency content and also fell.</p>
 <p><strong>Afternoon, 19 September — the paper’s own history.</strong> The user added the institutional background of the Basque paper (two-option format with theory questions from a published list; the de facto restriction of block-E problems to the photoelectric effect; the 2025 and 2026 decisions). One agent downloaded the full EHU archive 2010–2026 (34 papers, 77 PDFs) and the 2025 model documents; every problem and theory question was inventoried (<code>scripts/08_ehu_history.py</code>, 146 problems, 118 questions, 22 theory titles); the marking rules of all corrector documents in hand were tabulated; a selection-premium simulation quantified each format’s choice; figures 13–15 and <a href="../chapters/12-ehu-paper-history.html">Chapter 12</a> were written; Chapter 6, the index and this log updated; site re-rendered and copied to the Mac. The user then supplied the official EHU–Department list of theory titles (<em>Cuestiones teóricas</em>, 22 titles with development guide); it matches the reconstruction title for title and is archived in <code>sources/exams_ehu_hist/</code>.</p>
 <p><strong>Evening, 19 September — the audit.</strong> Before the site is shown to anyone, the user asked for an exhaustive and critical audit of everything: every number, figure, table, dataset and interpretation, with special attention to Chapter 6 and its account of the path the analysis took. Seven layers were run — a clean re-execution of the pipeline, delegated recomputation of every number in Chapters 2–5 and in Chapter 6 from the raw files, a blind second coding of the eighteen papers, a figure-by-figure and table-by-table check, a sourcing and cross-chapter consistency check, and a reasoning audit of Chapter 6 with four new tests (<code>scripts/19_audit_checks.py</code>). The findings, the corrections and the questions still open are in <a href="../chapters/13-audit.html">Chapter 13</a>; the layer reports are in <code>logs/audit/</code>. The single-page edition, which had been assembled by hand and had lagged the chapters, is now generated from them (<code>scripts/20_build_onepage.py</code>). Site re-rendered and copied to the Mac.</p>
-<p><strong>20 September — the second audit, and the decomposition.</strong> The user asked for the whole study to be audited again, for chapters 13 and 14 to be rewritten if necessary, for the data-request list to be revisited, and — the governing question — for the decay to be broken into its components so that they can be acted on separately. Five independent readers went over the chapters again, this time recomputing from the raw cubes, re-reading the PISA workbooks cell by cell, opening thirty-two exam PDFs to check structural claims against the papers, and opening every figure. They found three inherited errors that the first audit had reported as corrected but had not applied, one weighting bug that had produced a published correlation, two theory questions missing from the EHU inventory, a silent merge failure, a centring artefact, and some seventy range, superlative and population errors across the chapters. The analytical addition is <code>scripts/21_decay_decomposition.py</code> and <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">the decomposition</a>: 2024 was a change of shape and 2025 a change of level; the Basque-specific part of the 2026 fall is 1.65 points; a quarter of it can be quantified and three quarters cannot be attributed with published data. Chapters 13 and 14 were rewritten, the data requests re-derived so that each names the component it separates, and the design levers reordered by evidence and cost. ## Dead ends, so they are not repeated</p>
+<p><strong>20 September — the second audit, and the decomposition.</strong> The user asked for the whole study to be audited again, for chapters 13 and 14 to be rewritten if necessary, for the data-request list to be revisited, and — the governing question — for the decay to be broken into its components so that they can be acted on separately. Five independent readers went over the chapters again, this time recomputing from the raw cubes, re-reading the PISA workbooks cell by cell, opening thirty-two exam PDFs to check structural claims against the papers, and opening every figure. They found three inherited errors that the first audit had reported as corrected but had not applied, one weighting bug that had produced a published correlation, two theory questions missing from the EHU inventory, a silent merge failure, a centring artefact, and some seventy range, superlative and population errors across the chapters. The analytical addition is <code>scripts/21_decay_decomposition.py</code> and <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">the decomposition</a>: 2024 was a change of shape and 2025 a change of level; the Basque-specific part of the 2026 fall is 1.65 points; a quarter of it can be quantified and three quarters cannot be attributed with published data. Chapters 13 and 14 were rewritten, the data requests re-derived so that each names the component it separates, and the design levers reordered by evidence and cost.</p>
+<p><strong>20 September, later — four objections from the coordinator.</strong> The coordinator read the rewritten briefing and raised four objections and a question: an unclear paragraph about mean-based tests being blind to 2024; why a Basque fall should be measured against a Spanish field at all; that in Euskadi all the Ministry’s structural requirements were followed while other communities’ 2026 rises may rest on papers that did not change; that the second year of the spelling penalties and of full application of the marking criteria is a measurable hypothesis that the dossier had left unexamined; and whether a <em>rate</em> of cohort decay could be attached to PISA so that a PAU year could be anticipated. Three new scripts answer them. <code>22_subject_decomposition.py</code> splits the Basque Física change exactly, on the balanced five-by-three subject panel, into a Euskadi-wide term (<span class="math inline">\(-1.18\)</span>) and a Física-specific one (<span class="math inline">\(-1.10\)</span>), and uses the eight Basque subjects to bound a general marking-severity effect at a fifth of the fall while showing that a severity confined to the numerical deductions fits the pattern. <code>23_comparability.py</code> scores the nine 2026 papers against the structural criteria and ranks how far each moved. <code>24_cohort_rate.py</code> shows that the PISA per-cohort-year change is a sequence of steps rather than a slope, that the within-cohort term is not identified from PISA and the PAU together, and that the 2026 entry count runs the wrong way for dilution. Chapter 6 gained three sections and a justification of the field frame, Chapter 11 a comparability section, the data-request list two new items, and both briefings the same material; <a href="../chapters/13-audit.html">Chapter 13</a> records the round. ## Dead ends, so they are not repeated</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">

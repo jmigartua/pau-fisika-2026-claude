@@ -1,0 +1,288 @@
+{
+  "alignment": "PISA year + 2 = PAU year",
+  "sd_pisa": 90.0,
+  "sd_pau": 2.343,
+  "rates_pais_vasco": [
+    {
+      "from_year": 2006,
+      "to_year": 2009,
+      "span": 3,
+      "change": 0.01859999999999218,
+      "per_year": 0.0061999999999973925
+    },
+    {
+      "from_year": 2009,
+      "to_year": 2012,
+      "span": 3,
+      "change": 10.961700000000008,
+      "per_year": 3.6539000000000024
+    },
+    {
+      "from_year": 2012,
+      "to_year": 2015,
+      "span": 3,
+      "change": -22.595100000000002,
+      "per_year": -7.531700000000001
+    },
+    {
+      "from_year": 2015,
+      "to_year": 2018,
+      "span": 3,
+      "change": 4.319107563273633,
+      "per_year": 1.4397025210912109
+    },
+    {
+      "from_year": 2018,
+      "to_year": 2022,
+      "span": 4,
+      "change": -7.86700356327367,
+      "per_year": -1.9667508908184175
+    },
+    {
+      "from_year": 2022,
+      "to_year": 2025,
+      "span": 3,
+      "change": -20.98231491028855,
+      "per_year": -6.994104970096184
+    }
+  ],
+  "rates_espana": [
+    {
+      "from_year": 2006,
+      "to_year": 2009,
+      "span": 3,
+      "change": -0.16990000000004102,
+      "per_year": -0.056633333333347004
+    },
+    {
+      "from_year": 2009,
+      "to_year": 2012,
+      "span": 3,
+      "change": 8.191200000000038,
+      "per_year": 2.7304000000000124
+    },
+    {
+      "from_year": 2012,
+      "to_year": 2015,
+      "span": 3,
+      "change": -3.6597000000000435,
+      "per_year": -1.2199000000000144
+    },
+    {
+      "from_year": 2015,
+      "to_year": 2018,
+      "span": 3,
+      "change": -9.534057274518375,
+      "per_year": -3.178019091506125
+    },
+    {
+      "from_year": 2018,
+      "to_year": 2022,
+      "span": 4,
+      "change": 1.2816052745184265,
+      "per_year": 0.32040131862960664
+    },
+    {
+      "from_year": 2022,
+      "to_year": 2025,
+      "span": 3,
+      "change": -7.406348539443172,
+      "per_year": -2.4687828464810573
+    }
+  ],
+  "rates_excess": [
+    {
+      "from_year": 2006,
+      "to_year": 2009,
+      "span": 3,
+      "per_year": 0.0628333333333444,
+      "per_year_marks": 0.0016357611111113993
+    },
+    {
+      "from_year": 2009,
+      "to_year": 2012,
+      "span": 3,
+      "per_year": 0.92349999999999,
+      "per_year_marks": 0.024041783333333074
+    },
+    {
+      "from_year": 2012,
+      "to_year": 2015,
+      "span": 3,
+      "per_year": -6.3117999999999865,
+      "per_year_marks": -0.16431719333333297
+    },
+    {
+      "from_year": 2015,
+      "to_year": 2018,
+      "span": 3,
+      "per_year": 4.617721612597336,
+      "per_year_marks": 0.12021468598128399
+    },
+    {
+      "from_year": 2018,
+      "to_year": 2022,
+      "span": 4,
+      "per_year": -2.287152209448024,
+      "per_year_marks": -0.05954219585263023
+    },
+    {
+      "from_year": 2022,
+      "to_year": 2025,
+      "span": 3,
+      "per_year": -4.525322123615126,
+      "per_year_marks": -0.11780921928478044
+    }
+  ],
+  "step_diagnostics": {
+    "mean_per_year": -1.8987922233038985,
+    "sd_per_year": 4.54540237701393,
+    "min_per_year": -7.531700000000001,
+    "max_per_year": 3.6539000000000024,
+    "range_per_year": 11.185600000000003,
+    "dispersion_over_mean": 2.393838736660154
+  },
+  "interpolated_2026_cohort": {
+    "method": "linear interpolation between PISA 2022 and PISA 2025",
+    "pais_vasco_2024": 465.5215940598076,
+    "espana_2024": 479.59608230703793,
+    "caveat": "the fall may have been concentrated in one of the three cohorts; nothing in the data says it was spread evenly",
+    "gap_2024": -14.074488247230306,
+    "gap_2022": -5.023844000000054,
+    "excess_move_2022_to_2024": -9.050644247230252,
+    "excess_per_cohort_year": -4.525322123615126,
+    "excess_per_cohort_year_marks": -0.11780921928478044
+  },
+  "top_band_check": {
+    "observed_2022_pct": 3.315043,
+    "observed_2025_pct": 1.8329354924549246,
+    "mean_shift_sd": -0.23313683233653945,
+    "predicted_2025_pct_from_uniform_shift": 1.9248611565825802,
+    "observed_over_predicted": 0.9522429636998538,
+    "reading": "a uniform shift of the whole distribution accounts for the observed fall in the top band to within 4.8 per cent of the predicted share; the Basque PISA decline is a location move, not a collapse of the top"
+  },
+  "selection_transfer": {
+    "at_observed_take_up": {
+      "q": 0.2405,
+      "cut": 0.7046951021736432,
+      "delta_population_sd": -0.07771227744551315,
+      "relative_transfer": 1.0,
+      "absolute_shift_sd": -0.018017529677641253,
+      "absolute_transfer": 0.23184920413989907,
+      "absolute_new_share": 0.21698759912121957
+    },
+    "grid": [
+      {
+        "q": 0.1,
+        "cut": 1.2815515655446004,
+        "delta_population_sd": -0.07771227744551315,
+        "relative_transfer": 1.0,
+        "absolute_shift_sd": -0.012857493481551296,
+        "absolute_transfer": 0.16544996368902126,
+        "absolute_new_share": 0.08703149855207903
+      },
+      {
+        "q": 0.15,
+        "cut": 1.0364333894937898,
+        "delta_population_sd": -0.07771227744551315,
+        "relative_transfer": 1.0,
+        "absolute_shift_sd": -0.014806825034438198,
+        "absolute_transfer": 0.19053392232417576,
+        "absolute_new_share": 0.132608350021449
+      },
+      {
+        "q": 0.2405,
+        "cut": 0.7046951021736432,
+        "delta_population_sd": -0.07771227744551315,
+        "relative_transfer": 1.0,
+        "absolute_shift_sd": -0.018017529677641253,
+        "absolute_transfer": 0.23184920413989907,
+        "absolute_new_share": 0.21698759912121957
+      },
+      {
+        "q": 0.25,
+        "cut": 0.6744897501960817,
+        "delta_population_sd": -0.07771227744551315,
+        "relative_transfer": 1.0,
+        "absolute_shift_sd": -0.018346760226149117,
+        "absolute_transfer": 0.23608573611824316,
+        "absolute_new_share": 0.22596478723365188
+      },
+      {
+        "q": 0.3,
+        "cut": 0.5244005127080407,
+        "delta_population_sd": -0.07771227744551315,
+        "relative_transfer": 1.0,
+        "absolute_shift_sd": -0.02008272838903724,
+        "absolute_transfer": 0.2584241390058084,
+        "absolute_new_share": 0.2735495306675627
+      },
+      {
+        "q": 0.4,
+        "cut": 0.2533471031357997,
+        "delta_population_sd": -0.07771227744551315,
+        "relative_transfer": 1.0,
+        "absolute_shift_sd": -0.02366961711388582,
+        "absolute_transfer": 0.30458014990593263,
+        "absolute_new_share": 0.37029981638585774
+      }
+    ],
+    "take_up_2025": 0.2405,
+    "take_up_trend_r": -0.09565848840521757,
+    "take_up_trend_p": 0.3388742096307273,
+    "bounds": {
+      "low": 0.23184920413989907,
+      "high": 1.0,
+      "cohort_term_marks_high": -0.11780921928478044,
+      "cohort_term_marks_low": -0.027313973731519194
+    },
+    "which_is_closer": "the two rules differ by a factor of four, so the choice matters.  Under an absolute standard a falling population should produce falling take-up, because fewer clear the bar; national take-up instead drifts slightly up (0.222 in 2015 to 0.240 in 2025) and shows no association with the mean (r = -0.096, p = 0.339).  That points to the relative rule: candidates choose Física for the degree they want and the weighting it carries, not against a fixed ability bar.  The dossier's 1:1 conversion is therefore defensible, but it is the TOP of the range, so the cohort term it yields is an upper bound in magnitude and the unattributed remainder a lower bound."
+  },
+  "composition_2026": {
+    "presented_2025": 2189,
+    "presented_2026": 2066,
+    "change": -123,
+    "change_pct": -5.619004111466423,
+    "within_year_sd_marks_2025": 2.3914967343462084,
+    "max_gain_if_weakest_left_marks": 0.2866759929323801,
+    "reading": "fewer candidates, so the composition change cannot have lowered the mean; at its most extreme it should have raised it, which makes the unexplained part of the fall larger, not smaller",
+    "earlier_year_note": {
+      "presented_2024": 1788,
+      "change_2024_to_2025_pct": 22.427293064876956,
+      "comment": "2025 is the opposite case: 401 more candidates, +22.4 %, and a mean 0.62 lower — there, dilution is a live hypothesis, and the mark budget assigns that year almost wholly to the common component in any case"
+    }
+  },
+  "projection_2027": {
+    "measured_cohort": true,
+    "baseline_2026": 3.99,
+    "cohort_term_gross_marks": -0.1820798660548373,
+    "cohort_term_excess_of_field_marks": -0.11780921928478044,
+    "paper_sd_marks": 0.8548951481238588,
+    "band_95_one_year": 1.6755944903227633,
+    "noise_to_signal": 4.695165734943965,
+    "scenarios": {
+      "2027 paper like 2025's": 5.105840267890325,
+      "2027 paper like 2026's": 3.8079201339451627
+    },
+    "reading": "the cohort term is worth about a fifth of a mark a year and the paper is worth nearly a whole mark; a cohort projection is real but it sets an expectation, it does not set a target"
+  },
+  "acceleration_test": {
+    "pau_euskadi_sd_per_decade": -0.15724330031224043,
+    "pisa_euskadi_sd_per_decade": -0.2446561025792149,
+    "difference": 0.08741280226697448,
+    "p": 0.6670634856267772,
+    "reading": "for matched cohorts the PAU falls more slowly than PISA, not faster; an accelerating within-cohort degradation would give the opposite sign.  The difference is not significant either way (n = 4 to 6), so this rules nothing out — it simply gives no support to acceleration"
+  },
+  "identification": {
+    "model": "PAU(c) = s*[A(c,15) + G(c)] + sel(c) + paper(y) + marking(y)",
+    "identified": [
+      "s*dA15 (from PISA, up to the scale factor s)"
+    ],
+    "not_identified": [
+      "dG, the within-cohort term",
+      "d marking, which is collinear with d paper in 2026"
+    ],
+    "why": "dG enters every difference alongside d paper, and d paper is both unobserved and the largest term; no amount of PISA data separates them",
+    "what_would": "an annual census measure of Basque students at 15 would give a one-year cadence where PISA gives three, and the school marks of the same cohort at 18 would bracket G(c) from the other end; neither is in the dossier"
+  }
+}

@@ -49,7 +49,9 @@ DATA = ROOT / "data"
 A = DATA / "analysis"
 P = ROOT / "plots"
 
-SD_PAU, SD_PISA = 2.34, 90.0
+SD_PAU, SD_PISA = 2.343, 90.0   # 2.343 is the panel convention used by every other script
+                                #  (2.34 until the audit of 20 September; the published
+                                #   rounded values are unchanged)
 
 pisa = json.load(open(A / "pisa_link.json", encoding="utf-8"))["science_mean"]
 pv = {int(k): v for k, v in pisa["pais_vasco"].items()}

@@ -1,0 +1,264 @@
+{
+  "note": "Comparison of the nine 2026 papers against the three structural criteria as the EHU coordination applies them, plus a standardised index of how far each paper moved in 2026.  No finding of non-compliance is made: the binding text is not in the source registry.",
+  "criteria": {
+    "optionality_band": [
+      50.0,
+      85.0
+    ],
+    "open_response_min": 70.0,
+    "c3": "at least one obligatory item with a substantive context"
+  },
+  "c2_non_discriminating": "on a reading of the papers, all 146 coded items across the nine communities are open or semi-constructed and no paper uses closed response; the coding scheme records what an item demands, not how it is answered, so this is a judgement from the papers rather than a coded variable",
+  "per_community": [
+    {
+      "ccaa": "Asturias",
+      "optionality_2026": 100.0,
+      "c1_pass": false,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 0,
+      "oblig_ctx_pts": 0.0,
+      "c3_pass": false,
+      "competency_share_2026": 0.0,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": 1.13,
+      "n_criteria_met": 1,
+      "reform_intensity": -0.1860956218,
+      "reform_rank": 5
+    },
+    {
+      "ccaa": "Madrid",
+      "optionality_2026": 75.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 1,
+      "oblig_ctx_pts": 2.5,
+      "c3_pass": true,
+      "competency_share_2026": 0.0,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": 1.05,
+      "n_criteria_met": 3,
+      "reform_intensity": -0.4448017748,
+      "reform_rank": 6
+    },
+    {
+      "ccaa": "Castilla-La Mancha",
+      "optionality_2026": 70.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 1,
+      "oblig_ctx_pts": 2.0,
+      "c3_pass": true,
+      "competency_share_2026": 20.0,
+      "oblig_competency_pts_2026": 2.0,
+      "delta_mean": 0.94,
+      "n_criteria_met": 3,
+      "reform_intensity": 0.3948425945,
+      "reform_rank": 2
+    },
+    {
+      "ccaa": "Cataluña",
+      "optionality_2026": 50.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 2,
+      "oblig_ctx_pts": 5.0,
+      "c3_pass": true,
+      "competency_share_2026": 37.5,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": 0.8,
+      "n_criteria_met": 3,
+      "reform_intensity": -0.724780868,
+      "reform_rank": 9
+    },
+    {
+      "ccaa": "Comunitat Valenciana",
+      "optionality_2026": 80.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 1,
+      "oblig_ctx_pts": 2.0,
+      "c3_pass": true,
+      "competency_share_2026": 0.0,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": 0.506,
+      "n_criteria_met": 3,
+      "reform_intensity": -0.7140455141,
+      "reform_rank": 8
+    },
+    {
+      "ccaa": "Andalucía",
+      "optionality_2026": 75.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 1,
+      "oblig_ctx_pts": 1.5,
+      "c3_pass": true,
+      "competency_share_2026": 0.0,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": 0.17,
+      "n_criteria_met": 3,
+      "reform_intensity": -0.4548504184,
+      "reform_rank": 7
+    },
+    {
+      "ccaa": "Extremadura",
+      "optionality_2026": 75.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 1,
+      "oblig_ctx_pts": 2.5,
+      "c3_pass": true,
+      "competency_share_2026": 0.0,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": -0.82,
+      "n_criteria_met": 3,
+      "reform_intensity": -0.0136248531,
+      "reform_rank": 4
+    },
+    {
+      "ccaa": "Canarias",
+      "optionality_2026": 70.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 1,
+      "oblig_ctx_pts": 1.5,
+      "c3_pass": true,
+      "competency_share_2026": 0.0,
+      "oblig_competency_pts_2026": 0.0,
+      "delta_mean": -0.832,
+      "n_criteria_met": 3,
+      "reform_intensity": 0.3859081251,
+      "reform_rank": 3
+    },
+    {
+      "ccaa": "País Vasco",
+      "optionality_2026": 50.0,
+      "c1_pass": true,
+      "open_share_2026": 100.0,
+      "c2_pass": true,
+      "oblig_ctx_items": 2,
+      "oblig_ctx_pts": 5.0,
+      "c3_pass": true,
+      "competency_share_2026": 62.5,
+      "oblig_competency_pts_2026": 5.0,
+      "delta_mean": -1.48,
+      "n_criteria_met": 3,
+      "reform_intensity": 1.7574483305,
+      "reform_rank": 1
+    }
+  ],
+  "failures_2026": [
+    "Asturias"
+  ],
+  "reform_intensity": {
+    "components": [
+      "less optionality",
+      "more competency marks",
+      "more substantive context",
+      "more contextualised marks"
+    ],
+    "values": {
+      "Asturias": -0.1860956217853542,
+      "Madrid": -0.4448017748081333,
+      "Castilla-La Mancha": 0.3948425944986597,
+      "Cataluña": -0.7247808679637541,
+      "Comunitat Valenciana": -0.7140455140673024,
+      "Andalucía": -0.4548504183546339,
+      "Extremadura": -0.013624853103501477,
+      "Canarias": 0.3859081250895756,
+      "País Vasco": 1.757448330494444
+    },
+    "pearson_r": -0.7007415724895847,
+    "pearson_p": 0.0354896746665656,
+    "spearman_rho": -0.38333333333333336,
+    "spearman_p": 0.3084952723803716,
+    "slope_marks_per_index_sd": -0.8700513533809755,
+    "intercept": 0.16266666666666665,
+    "pais_vasco_index": 1.757448330494444,
+    "pais_vasco_rank": 1,
+    "n": 9,
+    "leave_one_out": {
+      "Asturias": {
+        "r": -0.7225094581752972,
+        "p": 0.04291744117205781
+      },
+      "Madrid": {
+        "r": -0.6837500767609631,
+        "p": 0.06150457461496633
+      },
+      "Castilla-La Mancha": {
+        "r": -0.8094280805193574,
+        "p": 0.014924000595202257
+      },
+      "Cataluña": {
+        "r": -0.6767916916270178,
+        "p": 0.06527020272300942
+      },
+      "Comunitat Valenciana": {
+        "r": -0.7037363040707821,
+        "p": 0.05142025921650506
+      },
+      "Andalucía": {
+        "r": -0.7174853103709378,
+        "p": 0.04510242286515602
+      },
+      "Extremadura": {
+        "r": -0.760436352825303,
+        "p": 0.028492049716281265
+      },
+      "Canarias": {
+        "r": -0.6939376355102811,
+        "p": 0.056229620602985246
+      },
+      "País Vasco": {
+        "r": -0.3958267688472551,
+        "p": 0.3317030813272108
+      }
+    },
+    "without_pais_vasco": {
+      "r": -0.3958267688472551,
+      "p": 0.3317030813272108
+    }
+  },
+  "split_field": {
+    "low_reform": [
+      "Asturias",
+      "Madrid",
+      "Cataluña",
+      "Comunitat Valenciana",
+      "Andalucía",
+      "Extremadura"
+    ],
+    "high_reform": [
+      "Castilla-La Mancha",
+      "Canarias",
+      "País Vasco"
+    ],
+    "mean_delta_low": 0.4726666666666666,
+    "mean_delta_high": -0.4573333333333333,
+    "mean_delta_low_excl_pv": 0.4726666666666666,
+    "mean_delta_high_excl_pv": 0.05399999999999999
+  },
+  "counterfactual_field": {
+    "field_all_eight": 0.368,
+    "field_quiet_only": 0.4726666666666666,
+    "quiet_members": [
+      "Asturias",
+      "Madrid",
+      "Cataluña",
+      "Comunitat Valenciana",
+      "Andalucía",
+      "Extremadura"
+    ],
+    "basque_vs_all_eight": -1.8479999999999999,
+    "basque_vs_quiet": -1.9526666666666666
+  }
+}
