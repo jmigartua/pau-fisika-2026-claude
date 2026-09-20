@@ -1,0 +1,832 @@
+{
+  "note": "The shape of the penalty distribution, not its size. `ded_rate` is the MEAN number of deductions per script in every row, so rows differ only in how those deductions are spread across candidates.",
+  "modelled_not_published": {
+    "top_band_2026": 0.0209,
+    "explanation": "The 2.09 per cent at or above nine in 2026 is an OUTPUT of the Beta-mixture fitted to the same four published figures, not an observation. Euskadi has not published a 2026 band table. Any comparison against it is model against model, and the dossier states it as such."
+  },
+  "baseline": {
+    "achieved": {
+      "mean": 5.472364334004321,
+      "pass_pct": 62.372499999999995,
+      "le2_pct": 9.937,
+      "zero_pct": 1.207,
+      "top_pct": 6.7215
+    },
+    "target_2025": {
+      "mean": 5.47,
+      "pass_pct": 62.3,
+      "le2_pct": 10.0,
+      "zero_pct": 1.2
+    }
+  },
+  "fitted_regime": {
+    "ded_rate": 12,
+    "p_partial": 0.16,
+    "p_total": 0.03
+  },
+  "weak_cut": 4.0,
+  "at_fixed_count": [
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.008145,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.5039613900916615,
+      "shift": -0.957346607599562,
+      "pass_pct": 43.0315,
+      "le2_pct": 16.8305,
+      "zero_pct": 1.2315,
+      "top_pct": 0.384,
+      "sd": 2.2669932029884055,
+      "label": "flat — every script the same expected count",
+      "marks_per_deduction": 0.07972477077846428,
+      "mass_below": 28.665000000000003,
+      "mass_below_2": 10.0405,
+      "top_decile_rate": 1.0,
+      "peak_at": NaN,
+      "relative_to_flat": 1.0,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        2.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.00757,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.672751394575148,
+      "shift": -0.7975363823277668,
+      "pass_pct": 45.1335,
+      "le2_pct": 20.473,
+      "zero_pct": 1.2095,
+      "top_pct": 5.3425,
+      "sd": 2.6574716971871286,
+      "label": "tilted to the weak — count falls linearly with the mark",
+      "marks_per_deduction": 0.06641946558110982,
+      "mass_below": 48.82442095572721,
+      "mass_below_2": 20.150321216412696,
+      "top_decile_rate": 0.2460385689836713,
+      "peak_at": 0.0,
+      "relative_to_flat": 0.8331095208247552,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.00444,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.815960743975855,
+      "shift": -0.6526235593204586,
+      "pass_pct": 48.971,
+      "le2_pct": 21.72,
+      "zero_pct": 1.312,
+      "top_pct": 6.429500000000001,
+      "sd": 2.809362718594057,
+      "label": "strongly tilted to the weak — heaviest at the very bottom",
+      "marks_per_deduction": 0.05436518149288584,
+      "mass_below": 65.39717445089325,
+      "mass_below_2": 31.233424680053602,
+      "top_decile_rate": 0.058359512526599516,
+      "peak_at": 0.0,
+      "relative_to_flat": 0.6819107908626472,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        2.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.001775,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.498199127158609,
+      "shift": -0.9800601679693983,
+      "pass_pct": 39.5195,
+      "le2_pct": 17.4315,
+      "zero_pct": 1.2135,
+      "top_pct": 4.281,
+      "sd": 2.4348044760901177,
+      "label": "hump in the middle — symmetric, light at both ends",
+      "marks_per_deduction": 0.08165960184800984,
+      "mass_below": 24.86182323462613,
+      "mass_below_2": 4.125226178461762,
+      "top_decile_rate": 0.5174043219268023,
+      "peak_at": 5.0,
+      "relative_to_flat": 1.0242688821887238,
+      "sends_more_to_the_weak": false
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.5,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.0006,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.671993941419313,
+      "shift": -0.8042696076078064,
+      "pass_pct": 45.054,
+      "le2_pct": 22.712,
+      "zero_pct": 1.167,
+      "top_pct": 6.372,
+      "sd": 2.770876431145627,
+      "label": "middle and left — peak at about 2, thin above 7",
+      "marks_per_deduction": 0.06701911634483329,
+      "mass_below": 50.294947407231895,
+      "mass_below_2": 14.952054716974239,
+      "top_decile_rate": 0.10343339467682311,
+      "peak_at": 2.0,
+      "relative_to_flat": 0.8406310321175221,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.00077,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.5863067143131975,
+      "shift": -0.8863981947534683,
+      "pass_pct": 42.1315,
+      "le2_pct": 21.956500000000002,
+      "zero_pct": 1.189,
+      "top_pct": 6.13,
+      "sd": 2.68920911643095,
+      "label": "middle, leaning left — peak at about 3.3",
+      "marks_per_deduction": 0.07386177676544657,
+      "mass_below": 39.040373422354826,
+      "mass_below_2": 7.79619733301518,
+      "top_decile_rate": 0.15522210058612476,
+      "peak_at": 3.333333333333333,
+      "relative_to_flat": 0.9264595688922137,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        3.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.005005,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.371146422329035,
+      "shift": -1.0975884602665822,
+      "pass_pct": 41.774,
+      "le2_pct": 10.817499999999999,
+      "zero_pct": 1.202,
+      "top_pct": 0.0,
+      "sd": 1.7290543691240512,
+      "label": "tilted to the STRONG — reported only to bound the claim",
+      "marks_per_deduction": 0.09142757210568277,
+      "mass_below": 5.16916263556408,
+      "mass_below_2": 0.3269699432146858,
+      "top_decile_rate": 2.201368566602432,
+      "peak_at": 10.0,
+      "relative_to_flat": 1.1467900279040968,
+      "sends_more_to_the_weak": false
+    }
+  ],
+  "mechanism": {
+    "correlation_cost_vs_weak_end_mass": -0.9931568275536221,
+    "statement": "What a deduction is worth depends on whether there is 0.10 left on the sub-task it lands on. The marks removed per deduction fall monotonically in the share of penalties landing on scripts below four out of ten."
+  },
+  "ceiling": {
+    "family_on_the_table": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        1.5,
+        3.0
+      ],
+      [
+        2.0,
+        3.0
+      ]
+    ],
+    "shapes_that_spare_the_weak": [
+      [
+        2.0,
+        2.0
+      ],
+      [
+        3.0,
+        1.0
+      ]
+    ],
+    "holds_over_family_on_the_table": true,
+    "flat_marks_per_deduction": 0.07972477077846428,
+    "statement": "Flat sends exactly the proportionate share of penalties to the weakest scripts. Every shape that sends MORE — the reading the coordination proposed — removes fewer marks per deduction, so at a fixed count flat is a ceiling over that family. It is NOT a ceiling over shapes that SPARE the weak: a symmetric hump or a tilt towards the best scripts removes more per deduction, because none of its penalties is wasted on work with nothing left to take. Nobody has proposed either."
+  },
+  "overdispersion": [
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.002825,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.51225950085266,
+      "shift": -0.9584831462067465,
+      "pass_pct": 43.0865,
+      "le2_pct": 16.6705,
+      "zero_pct": 1.2005,
+      "top_pct": 0.377,
+      "sd": 2.258297745497796,
+      "marks_per_deduction": 0.07985479636725075,
+      "relative_to_equal": 1.0
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": 2.0,
+      "deductions_per_script": 12.01174,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.549538876183806,
+      "shift": -0.9262126791047054,
+      "pass_pct": 44.284,
+      "le2_pct": 16.805,
+      "zero_pct": 1.2305,
+      "top_pct": 1.5879999999999999,
+      "sd": 2.3395588836472645,
+      "marks_per_deduction": 0.07710895166767724,
+      "relative_to_equal": 0.9656145300659785
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": 0.5,
+      "deductions_per_script": 11.959085,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.636982989032021,
+      "shift": -0.836624348252041,
+      "pass_pct": 46.6175,
+      "le2_pct": 17.503,
+      "zero_pct": 1.3065,
+      "top_pct": 3.1245,
+      "sd": 2.4882054204474167,
+      "marks_per_deduction": 0.06995722066128311,
+      "relative_to_equal": 0.8760553384865091
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 11.99765,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.585900287671004,
+      "shift": -0.8856451677560857,
+      "pass_pct": 42.2385,
+      "le2_pct": 21.948,
+      "zero_pct": 1.175,
+      "top_pct": 6.089,
+      "sd": 2.6886115999018574,
+      "marks_per_deduction": 0.07381822004776649,
+      "relative_to_equal": 1.0
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "overdispersion": 2.0,
+      "deductions_per_script": 11.98873,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.6350921158574305,
+      "shift": -0.8385710282810619,
+      "pass_pct": 44.317,
+      "le2_pct": 21.6415,
+      "zero_pct": 1.209,
+      "top_pct": 6.173,
+      "sd": 2.726292422983867,
+      "marks_per_deduction": 0.06994661054849528,
+      "relative_to_equal": 0.9475521152262144
+    },
+    {
+      "ded_rate": 12,
+      "p_partial": 0.0,
+      "p_total": 0.0,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "overdispersion": 0.5,
+      "deductions_per_script": 12.05095,
+      "apartados_voided_per_script": 0.0,
+      "scripts_with_any_void": 0.0,
+      "mean": 4.732990819165701,
+      "shift": -0.7329081220070011,
+      "pass_pct": 47.862500000000004,
+      "le2_pct": 20.71,
+      "zero_pct": 1.4705,
+      "top_pct": 6.162,
+      "sd": 2.7614040421807995,
+      "marks_per_deduction": 0.06081745605176364,
+      "relative_to_equal": 0.8238813671260256
+    }
+  ],
+  "deductions_required": {
+    "(1.0, 1.0)": {
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "label": "flat — every script the same expected count",
+      "deductions_for_whole_fall": 19.411475253291428,
+      "deductions_for_fisica_specific": 13.94442266318947,
+      "exceeds_subtasks": false
+    },
+    "(1.0, 2.0)": {
+      "shape": [
+        1.0,
+        2.0
+      ],
+      "label": "tilted to the weak — count falls linearly with the mark",
+      "deductions_for_whole_fall": 25.138778728432953,
+      "deductions_for_fisica_specific": 17.367582279257476,
+      "exceeds_subtasks": false
+    },
+    "(1.0, 3.0)": {
+      "shape": [
+        1.0,
+        3.0
+      ],
+      "label": "strongly tilted to the weak — heaviest at the very bottom",
+      "deductions_for_whole_fall": 35.200889627449214,
+      "deductions_for_fisica_specific": 23.095131763257086,
+      "exceeds_subtasks": true
+    },
+    "(2.0, 2.0)": {
+      "shape": [
+        2.0,
+        2.0
+      ],
+      "label": "hump in the middle — symmetric, light at both ends",
+      "deductions_for_whole_fall": 19.16654967237264,
+      "deductions_for_fisica_specific": 13.641799497418106,
+      "exceeds_subtasks": false
+    },
+    "(1.5, 3.0)": {
+      "shape": [
+        1.5,
+        3.0
+      ],
+      "label": "middle and left — peak at about 2, thin above 7",
+      "deductions_for_whole_fall": 25.76063338201493,
+      "deductions_for_fisica_specific": 17.490590563975275,
+      "exceeds_subtasks": false
+    },
+    "(2.0, 3.0)": {
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "label": "middle, leaning left — peak at about 3.3",
+      "deductions_for_whole_fall": 22.294826139695942,
+      "deductions_for_fisica_specific": 15.439902716316283,
+      "exceeds_subtasks": false
+    },
+    "(3.0, 1.0)": {
+      "shape": [
+        3.0,
+        1.0
+      ],
+      "label": "tilted to the STRONG — reported only to bound the claim",
+      "deductions_for_whole_fall": 16.666168360970914,
+      "deductions_for_fisica_specific": 12.030782368965447,
+      "exceeds_subtasks": false
+    }
+  },
+  "budget_at_twelve": [
+    {
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "label": "flat — every script the same expected count",
+      "mass_below": 28.665000000000003,
+      "carried": 0.957346607599562,
+      "share_of_fall": 64.685581594565,
+      "residual": 0.522653392400438,
+      "residual_vs_fisica": 0.14265339240043806
+    },
+    {
+      "shape": [
+        1.0,
+        2.0
+      ],
+      "label": "tilted to the weak — count falls linearly with the mark",
+      "mass_below": 48.82442095572721,
+      "carried": 0.7975363823277668,
+      "share_of_fall": 53.88759340052478,
+      "residual": 0.6824636176722332,
+      "residual_vs_fisica": 0.3024636176722333
+    },
+    {
+      "shape": [
+        1.0,
+        3.0
+      ],
+      "label": "strongly tilted to the weak — heaviest at the very bottom",
+      "mass_below": 65.39717445089325,
+      "carried": 0.6526235593204586,
+      "share_of_fall": 44.09618644057153,
+      "residual": 0.8273764406795414,
+      "residual_vs_fisica": 0.4473764406795415
+    },
+    {
+      "shape": [
+        2.0,
+        2.0
+      ],
+      "label": "hump in the middle — symmetric, light at both ends",
+      "mass_below": 24.86182323462613,
+      "carried": 0.9800601679693983,
+      "share_of_fall": 66.22028161955394,
+      "residual": 0.49993983203060166,
+      "residual_vs_fisica": 0.11993983203060177
+    },
+    {
+      "shape": [
+        1.5,
+        3.0
+      ],
+      "label": "middle and left — peak at about 2, thin above 7",
+      "mass_below": 50.294947407231895,
+      "carried": 0.8042696076078064,
+      "share_of_fall": 54.34254105458152,
+      "residual": 0.6757303923921936,
+      "residual_vs_fisica": 0.2957303923921937
+    },
+    {
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "label": "middle, leaning left — peak at about 3.3",
+      "mass_below": 39.040373422354826,
+      "carried": 0.8863981947534683,
+      "share_of_fall": 59.89176991577489,
+      "residual": 0.5936018052465317,
+      "residual_vs_fisica": 0.21360180524653183
+    },
+    {
+      "shape": [
+        3.0,
+        1.0
+      ],
+      "label": "tilted to the STRONG — reported only to bound the claim",
+      "mass_below": 5.16916263556408,
+      "carried": 1.0975884602665822,
+      "share_of_fall": 74.16138245044475,
+      "residual": 0.3824115397334178,
+      "residual_vs_fisica": 0.0024115397334179
+    }
+  ],
+  "refit_per_shape": [
+    {
+      "ded_rate": 13,
+      "p_partial": 0.16,
+      "p_total": 0.04,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 12.99467,
+      "apartados_voided_per_script": 1.37001,
+      "scripts_with_any_void": 19.042,
+      "mean": 4.063200482932513,
+      "shift": -1.4043914557513695,
+      "pass_pct": 37.858000000000004,
+      "le2_pct": 25.158,
+      "zero_pct": 3.273,
+      "top_pct": 0.264,
+      "sd": 2.443964602016245,
+      "loss": 1.294558142291241,
+      "on_grid_boundary": false,
+      "label": "flat — every script the same expected count",
+      "mass_below": 28.665000000000003,
+      "mass_below_2": 10.0405,
+      "top_decile_rate": 1.0,
+      "peak_at": NaN,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 20,
+      "p_partial": 0.0,
+      "p_total": 0.025,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        2.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 19.98672,
+      "apartados_voided_per_script": 0.291,
+      "scripts_with_any_void": 2.532,
+      "mean": 4.171115171519065,
+      "shift": -1.2995780519091316,
+      "pass_pct": 37.945,
+      "le2_pct": 27.715,
+      "zero_pct": 2.7720000000000002,
+      "top_pct": 4.735,
+      "sd": 2.7579457011744686,
+      "loss": 5.085394515750232,
+      "on_grid_boundary": true,
+      "label": "tilted to the weak — count falls linearly with the mark",
+      "mass_below": 48.82442095572721,
+      "mass_below_2": 20.150321216412696,
+      "top_decile_rate": 0.2460385689836713,
+      "peak_at": 0.0,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 25,
+      "p_partial": 0.0,
+      "p_total": 0.005,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.0,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 25.01952,
+      "apartados_voided_per_script": 0.05533,
+      "scripts_with_any_void": 0.481,
+      "mean": 4.291785360370597,
+      "shift": -1.1818950294064487,
+      "pass_pct": 41.362,
+      "le2_pct": 29.591,
+      "zero_pct": 3.375,
+      "top_pct": 6.1240000000000006,
+      "sd": 2.982202939070038,
+      "loss": 11.167907527067172,
+      "on_grid_boundary": true,
+      "label": "strongly tilted to the weak — heaviest at the very bottom",
+      "mass_below": 65.39717445089325,
+      "mass_below_2": 31.233424680053602,
+      "top_decile_rate": 0.058359512526599516,
+      "peak_at": 0.0,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 10,
+      "p_partial": 0.16,
+      "p_total": 0.04,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        2.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 9.98149,
+      "apartados_voided_per_script": 1.38339,
+      "scripts_with_any_void": 19.18,
+      "mean": 4.262559296853041,
+      "shift": -1.2095616536950242,
+      "pass_pct": 38.423,
+      "le2_pct": 24.148,
+      "zero_pct": 3.267,
+      "top_pct": 4.561,
+      "sd": 2.659884016243865,
+      "loss": 3.8112114856010697,
+      "on_grid_boundary": false,
+      "label": "hump in the middle — symmetric, light at both ends",
+      "mass_below": 24.86182323462613,
+      "mass_below_2": 4.125226178461762,
+      "top_decile_rate": 0.5174043219268023,
+      "peak_at": 5.0,
+      "sends_more_to_the_weak": false
+    },
+    {
+      "ded_rate": 16,
+      "p_partial": 0.04,
+      "p_total": 0.025,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        1.5,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 16.01138,
+      "apartados_voided_per_script": 0.52547,
+      "scripts_with_any_void": 6.398,
+      "mean": 4.309039289270928,
+      "shift": -1.1504141205360012,
+      "pass_pct": 40.432,
+      "le2_pct": 28.706,
+      "zero_pct": 2.608,
+      "top_pct": 6.12,
+      "sd": 2.8941138778067375,
+      "loss": 9.396754248822178,
+      "on_grid_boundary": false,
+      "label": "middle and left — peak at about 2, thin above 7",
+      "mass_below": 50.294947407231895,
+      "mass_below_2": 14.952054716974239,
+      "top_decile_rate": 0.10343339467682311,
+      "peak_at": 2.0,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 16,
+      "p_partial": 0.0,
+      "p_total": 0.025,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        2.0,
+        3.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 16.00965,
+      "apartados_voided_per_script": 0.28885,
+      "scripts_with_any_void": 2.511,
+      "mean": 4.275834544175676,
+      "shift": -1.2001690533055527,
+      "pass_pct": 38.255,
+      "le2_pct": 27.392,
+      "zero_pct": 2.544,
+      "top_pct": 6.061,
+      "sd": 2.7974699129365677,
+      "loss": 6.749180989738495,
+      "on_grid_boundary": true,
+      "label": "middle, leaning left — peak at about 3.3",
+      "mass_below": 39.040373422354826,
+      "mass_below_2": 7.79619733301518,
+      "top_decile_rate": 0.15522210058612476,
+      "peak_at": 3.333333333333333,
+      "sends_more_to_the_weak": true
+    },
+    {
+      "ded_rate": 8,
+      "p_partial": 0.34,
+      "p_total": 0.04,
+      "ded_mode": "shape",
+      "void_mode": "cascade",
+      "sigma": 0.2,
+      "shape": [
+        3.0,
+        1.0
+      ],
+      "overdispersion": null,
+      "deductions_per_script": 8.01465,
+      "apartados_voided_per_script": 2.4038,
+      "scripts_with_any_void": 36.131,
+      "mean": 3.9825202685803505,
+      "shift": -1.48973425935116,
+      "pass_pct": 39.953,
+      "le2_pct": 25.691999999999997,
+      "zero_pct": 3.143,
+      "top_pct": 0.001,
+      "sd": 2.3440052769744524,
+      "loss": 0.3668037558715583,
+      "on_grid_boundary": true,
+      "label": "tilted to the STRONG — reported only to bound the claim",
+      "mass_below": 5.16916263556408,
+      "mass_below_2": 0.3269699432146858,
+      "top_decile_rate": 2.201368566602432,
+      "peak_at": 10.0,
+      "sends_more_to_the_weak": false
+    }
+  ],
+  "top_band_spread": {
+    "min": 0.264,
+    "max": 6.1240000000000006,
+    "ratio": 23.1969696969697,
+    "scope": "the readings on the table; the two shapes that spare the weak are apart",
+    "min_all": 0.001,
+    "max_all": 6.1240000000000006,
+    "beta_extrapolation": 2.09,
+    "beta_over_flat": 7.916666666666666
+  },
+  "what_to_measure": [
+    "the 2026 band table, and above all the share at or above nine",
+    "deductions of 0.10 per script plotted against the script's final mark",
+    "the same plot for 2025, where the rules existed but were not applied"
+  ]
+}

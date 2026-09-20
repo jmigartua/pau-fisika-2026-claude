@@ -352,7 +352,7 @@ Results on the corrected baseline (all four fitted; ≥9 not fitted):
 
 | | mean | pass % | ≤2 % | zero % | ≥9 % | loss |
 |---|---:|---:|---:|---:|---:|---:|
-| observed 2026 | 3.99 | 39.8 | 24.5 | 3.2 | 2.1 | — |
+| observed 2026 | 3.99 | 39.8 | 24.5 | 3.2 | *not published* | — |
 | fitted regime: 12 ded, 16 % partial, 4.5 % total | 4.11 | 39.0 | 25.2 | 3.5 | 0.4 | 1.07 |
 | same, voiding independent (searched) | 4.12 | 35.5 | 19.9 | 1.2 | 0.1 | 14.6 |
 | harder paper, additive −1.48 | 4.06 | 37.5 | 23.7 | 7.8 | 0.0 | 22.6 |
@@ -362,13 +362,72 @@ Inversion (deductions alone): −0.84→10, −1.10→14, −1.48→19, −1.65�
 Robustness: **ded_rate = 12 in every variant** (σ 0.1/0.3, 12 equal sub-tasks, weak mode);
 p_partial 16–22 %, p_total 3–4.5 %.
 
-**Two conclusions reversed from the fifth round's first draft.** The harder-paper comparator no
-longer "fits nearly as well" — on a correct baseline it piles 7.8 % at zero. And a real failure
-appears: nothing reproduces the 2.1 % at nine or above, because twelve flat deductions cap a paper
-at ~8.8. Reported as the model's limitation and as a testable prediction (deductions per script
-against the script's mark).
+**One conclusion reversed from the fifth round's first draft.** The harder-paper comparator no
+longer "fits nearly as well" — on a correct baseline it piles 7.8 % at zero. A second reversal,
+"nothing reproduces the 2.1 % at nine or above", was itself wrong and is withdrawn in round 6:
+the 2.1 % is the dossier's own Beta extrapolation, not a published figure.
 
 Prose fixes from the same audit: "three figures nobody fitted" → four were fitted; "labelled as
 testimony throughout" made true in ch 15 EN/ES and index; "produce the 2026 distribution" → "the
 four published figures"; the 28/12 sub-task structure now stated as extrapolated from B1; the
 unmodelled third channel (linguistic) stated in the prose, not only the docstring.
+
+
+## 20 September, sixth round — how the penalties are spread (`27_penalty_shape.py`)
+
+Coordinator's objection: the simulation gives every candidate the same twelve deductions. It should
+be a distribution — heaviest below the middle, heaviest of all in the left tail. And a purpose: he
+does NOT want the whole fall explained with present data. Flat should read as a maximum; a
+distribution carries less and leaves the rest to the other components.
+
+Model: expected count per script w(a) = a^(p−1)(1−a)^(q−1) in that candidate's own level a = mark/10,
+normalised to mean one, so ded_rate is always the MEAN count and only the spread changes. Plus an
+optional Gamma(k,1/k) multiplier for over-dispersion. Seven shapes at twelve deductions, voiding off:
+
+| shape | penalties below 4/10 | shift | marks/deduction | vs flat |
+|---|---:|---:|---:|---:|
+| (1,1) flat | 29 % | −0.96 | 0.080 | 100 % |
+| (2,3) middle, leaning left | 39 % | −0.89 | 0.074 | 93 % |
+| (1,2) linear tilt to the weak | 49 % | −0.80 | 0.066 | 83 % |
+| (1.5,3) middle and left | 50 % | −0.80 | 0.067 | 84 % |
+| (1,3) steep tilt to the weak | 65 % | −0.65 | 0.054 | 68 % |
+| (2,2) hump, light at both ends | 25 % | −0.98 | 0.082 | **102 %** |
+| (3,1) tilt to the STRONG | 5 % | −1.10 | 0.091 | **115 %** |
+
+Mechanism: a deduction removes 0.10 only where 0.10 is left; the zero floor eats the rest.
+Correlation of marks-per-deduction against weak-end mass: **−0.99**. Over-dispersion does the same:
+flat at k=0.5 costs 88 % of flat-and-equal.
+
+**The ceiling claim, corrected.** "Flat is the ceiling" is FALSE as first written — (2,2) and (3,1)
+beat it, because they spare the bottom. It holds over the family that sends AT LEAST the
+proportionate share to the weak, which is the reading on the table. Stated with its domain now.
+
+**Budget.** The regime is a Física change, so it answers to the Física-specific −1.10, not −1.48.
+At twelve: flat carries 0.96 = 87 % of −1.10; the tilts carry 0.89→0.65 = 81 %→59 %. Left over:
+0.14 to 0.45 marks of Física-specific fall, plus ~0.5 of the observed fall that was never its.
+To carry −1.48 alone: flat 19, (2,3) 22, (1,2) 25, (1.5,3) 26, (1,3) 35 > 28 sub-tasks (impossible).
+
+**Refit (each shape its own ded / p_partial / p_total), losses comparable:**
+flat 1.3 (ded 13), (2,2) 3.8 (10), (1,2) 5.1 (20), (2,3) 6.7 (16), (1.5,3) 9.4 (16), (1,3) 11.2 (25).
+The steep tilts overshoot ≤2 (27–30 % against 24.5) — so the published figures rule out a HEAVY
+concentration at the bottom. A mild tilt survives.
+
+**Top band after refit: 0.26 → 6.12 % over the five readings on the table** (factor 23; 0.00 for the (3,1) counterexample). Not fitted, not published. This is the discriminating
+statistic → new data request 11 (the 2026 band table).
+
+### The error this round found
+
+Round 5 wrote "the model fails on the one figure it was not fitted to: 2.1 % of the 2026 scripts
+scored nine or above". **Euskadi has not published a 2026 band table.** 2.09 % is
+`results.json → beta_fits.EHU_2026.p_ge9` — an OUTPUT of the Beta mixture fitted to the same four
+published figures. Model against model reported as model against data. Corrected in ch 6, ch 15
+EN + ES, index finding 12, fig 30 panel b, WORK_LOG.
+
+Eighth drift instance, fourth in figure 18: step 17 carried the SECOND attempt's fit (4.01 / 2.6)
+after the third rebuilt it to 4.11 / 3.5, and still said a harder paper fits "nearly as well"
+(loss 22.6 vs 1.1). Corrected; step 17 re-marked weakened; step 18 added; footnote names all three.
+
+Written: `27_penalty_shape.py` (with `--replot` to redraw fig 31 from the JSON without refitting),
+`data/analysis/penalty_shape.json`, `data/tables/penalty_shape.md`, `penalty_budget.md`,
+`penalty_topband.md`, `plots/fig31_penalty_shape.(png|svg)`, ch 6 §penalty-shape, data request 11,
+index finding 13, ch 13 sixth round, ch 15 EN + ES.

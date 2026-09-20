@@ -119,7 +119,8 @@ def _allocate(total, sigma=SIGMA_ITEM):
 
 def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67),
              ded_mode="flat", void_mode="cascade", sigma=SIGMA_ITEM, n=N,
-             subtask=None, apartado_of=None) -> dict:
+             subtask=None, apartado_of=None, shape=(1.0, 1.0),
+             overdispersion=None) -> dict:
     """The 2025 distribution put through the 2026 regime.
 
     ded_rate      expected 0.10 deductions per script, applied in 2026 and not in 2025.
@@ -145,8 +146,31 @@ def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67)
     s = got.sum(axis=1, keepdims=True); s[s == 0] = 1.0
     base = got * (total[:, None] / s)
 
-    if ded_mode == "flat":
-        lam = np.full((n, st.size), ded_rate / st.size)
+    # How the deductions are spread across candidates.  `ded_rate` is always the MEAN
+    # number per script; the shape only redistributes them, so the three modes are
+    # directly comparable at the same rate.
+    #   "flat"  every candidate has the same expected count, Poisson-scattered.
+    #   "weak"  the count is proportional to how weak the work on each sub-task is.
+    #   "shape" a Beta kernel in the candidate's own level a: w(a) = a^(p-1)(1-a)^(q-1),
+    #           normalised to mean one, so (1,1) is flat, (1,2) tilts toward the weak,
+    #           (2,2) is a hump in the middle and (2,3) a hump below the middle.
+    # `overdispersion` multiplies each script's rate by a Gamma(k,1/k) draw (mean one),
+    # which turns the Poisson counts into negative-binomial ones: some scripts collect
+    # many penalties and some almost none, at the same average.
+    if ded_mode == "shape":
+        a = np.clip(total / 10.0, 1e-3, 1 - 1e-3)
+        pw, qw = shape
+        w_i = a ** (pw - 1.0) * (1.0 - a) ** (qw - 1.0)
+        w_i = w_i / w_i.mean()
+        per = ded_rate * w_i
+    elif ded_mode == "flat":
+        per = np.full(n, float(ded_rate))
+    else:
+        per = None
+    if per is not None:
+        if overdispersion is not None and np.isfinite(overdispersion):
+            per = per * RNG.gamma(overdispersion, 1.0 / overdispersion, size=n)
+        lam = np.repeat(per[:, None] / st.size, st.size, axis=1)
     else:
         w = 1.0 - share
         lam = ded_rate * w / np.maximum(w.sum(axis=1, keepdims=True), 1e-9)
@@ -177,6 +201,7 @@ def simulate(ded_rate=0.0, p_partial=0.0, p_total=0.0, partial_frac=(0.34, 0.67)
     return dict(
         ded_rate=ded_rate, p_partial=p_partial, p_total=p_total,
         ded_mode=ded_mode, void_mode=void_mode, sigma=sigma,
+        shape=list(shape), overdispersion=overdispersion,
         deductions_per_script=float(k.sum(axis=1).mean()),
         apartados_voided_per_script=n_voided,
         scripts_with_any_void=float((nv > 0).mean() * 100) if (p_partial or p_total) else 0.0,
@@ -230,6 +255,94 @@ def search(void_mode="cascade", sigma=SIGMA_ITEM, subtask=None, apartado_of=None
         out["ded_rate"] in (8, 30) or out["p_partial"] in (0.04, 0.30)
         or out["p_total"] in (0.005, 0.045))
     return out
+
+
+def draw(grid, inverted_ded, best_full, best_indep, harder_add):
+    """Figure 30. Split out so it can be redrawn from the JSON alone."""
+    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.7))
+
+    ax = axes[0]
+    xs = np.array([g["deductions_per_script"] for g in grid])
+    ys = np.array([g["shift"] for g in grid])
+    ax.plot(xs, ys, color=C["violet"], lw=2.0, marker="o", ms=4, label="with the zero floor")
+    ax.plot(xs, -DEDUCTION * xs, color=MUTED, lw=1.2, ls=":", label="0.10 each, no floor")
+    for lab, v in [("Física-specific $-1.10$", -1.10), ("observed $-1.48$", -1.48)]:
+        ax.axhline(v, color=C["orange"], lw=0.9, ls="--")
+        ax.text(0.5, v + 0.07, lab, fontsize=7.8, color=C["orange"])
+    ax.set_xlim(0, 31); ax.set_ylim(-3.2, 0.15)
+    ax.set_xlabel("deductions of $0.10$ per script")
+    ax.set_ylabel("shift in the mean (marks)")
+    ax.legend(loc="lower left", fontsize=8)
+    ax.set_title(f"(a) The deduction channel\n"
+                 f"{inverted_ded['Física-specific (subject split)']:.0f} per script "
+                 f"would carry the $-1.10$", loc="left")
+
+    ax = axes[1]
+    labels = ["mean", "pass rate", "at or below 2", "zero",
+              "at or above 9\n(not published)"]
+    # The top band is NOT published for 2026. An earlier version drew 2.1 here as an
+    # "observed" value; it is this study's own Beta extrapolation from the same four
+    # published figures, and drawing it as data was the dossier's worst error to date.
+    series = [("published 2026", [OBS_2026["mean"], OBS_2026["pass_pct"],
+                                  OBS_2026["le2_pct"], OBS_2026["zero_pct"],
+                                  float("nan")], INK2),
+              ("the regime, fitted", [best_full["mean"], best_full["pass_pct"],
+                                      best_full["le2_pct"], best_full["zero_pct"],
+                                      best_full["top_pct"]], C["violet"]),
+              ("same, voiding independent", [best_indep["mean"], best_indep["pass_pct"],
+                                             best_indep["le2_pct"],
+                                             best_indep["zero_pct"],
+                                             best_indep["top_pct"]], C["yellow"]),
+              ("a harder paper, additive", [harder_add["mean"], harder_add["pass_pct"],
+                                            harder_add["le2_pct"],
+                                            harder_add["zero_pct"],
+                                            harder_add["top_pct"]], C["aqua"])]
+    x = np.arange(5)
+    w = 0.2
+    for i, (lab, vals, col) in enumerate(series):
+        ax.bar(x + (i - 1.5) * w, vals, width=w, color=col, label=lab)
+        for xx, v in zip(x + (i - 1.5) * w, vals):
+            if np.isfinite(v):
+                ax.text(xx, v + 0.7, f"{v:.1f}", ha="center", fontsize=6.4, color=INK)
+    ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=8)
+    ax.set_ylim(0, 52)
+    ax.axvspan(3.55, 4.45, color=MUTED, alpha=0.10, zorder=0)
+    ax.text(4.0, 12.0, "no 2026 band table:\nnothing to compare\nagainst. The readings\n"
+            "differ here by a\nfactor of twenty-three —\nsee figure 31",
+            fontsize=6.8, color=MUTED, ha="center", va="bottom")
+    ax.legend(loc="upper right", fontsize=7.0)
+    ax.set_title("(b) Four figures fitted, one not published\nthe top band is where the "
+                 "readings separate", loc="left")
+    ax.grid(axis="x", visible=False)
+
+    ax = axes[2]
+    items = [("deductions of 0.10\nper script", best_full["deductions_per_script"]),
+             ("scripts with a partial\ncascade (per cent)", best_full["p_partial"] * 100),
+             ("scripts with the whole\npaper voided (per cent)",
+              best_full["p_total"] * 100)]
+    y = np.arange(len(items))[::-1]
+    ax.barh(y, [v for _, v in items], color=C["blue"], height=0.55)
+    for yy, (_, v) in zip(y, items):
+        ax.text(v + 0.35, yy, f"{v:.0f}" if v >= 3 else f"{v:.1f}", va="center",
+                fontsize=10, color=INK)
+    ax.set_yticks(y); ax.set_yticklabels([k for k, _ in items], fontsize=8.5)
+    ax.set_xlim(0, 20)
+    ax.set_xlabel("value required to reproduce the 2026 figures")
+    ax.set_title("(c) Three numbers, all of them\non the marking sheets", loc="left")
+    ax.grid(axis="y", visible=False)
+
+    fig.suptitle("Figure 30 — From non-award to deduction: can the regime change "
+                 "produce 2026 on its own?", x=0.005, ha="left", fontsize=12, color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.95))
+    _save(fig, "fig30_penalty_regime", PLOTS)
+
+
+def replot() -> None:
+    """Redraw figure 30 from data/analysis/penalty_regime.json, without refitting."""
+    d = json.loads((A / "penalty_regime.json").read_text(encoding="utf-8"))
+    draw(d["dose_response"], d["inversion_deductions_only"], d["best_fit"],
+         d["best_fit_independent_voiding"], d["harder_paper_additive"])
+    print("figure 30 redrawn from data/analysis/penalty_regime.json")
 
 
 def main() -> None:
@@ -293,6 +406,11 @@ def main() -> None:
                                            "more coarsely — see sensitivity"),
                    channels_modelled=["0.10 deductions, uncapped",
                                       "grave-error voiding of apartados"],
+                   top_band_note=("Euskadi has not published a 2026 band table. "
+                                  "Any share at or above nine quoted for 2026 in "
+                                  "this repository is MODELLED — see "
+                                  "27_penalty_shape.py, which shows the readings "
+                                  "differ there by a factor of twenty-three."),
                    channels_not_modelled=["the 0.2 linguistic component and the "
                                           "clarity/terminology/coherence rules"]),
         observed_2026=OBS_2026,
@@ -338,73 +456,7 @@ def main() -> None:
           "every script."]
     (TABLES / "penalty_inversion.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
-    # ---- figure ----------------------------------------------------------------
-    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.7))
-
-    ax = axes[0]
-    xs = np.array([g["deductions_per_script"] for g in grid])
-    ys = np.array([g["shift"] for g in grid])
-    ax.plot(xs, ys, color=C["violet"], lw=2.0, marker="o", ms=4, label="with the zero floor")
-    ax.plot(xs, -DEDUCTION * xs, color=MUTED, lw=1.2, ls=":", label="0.10 each, no floor")
-    for lab, v in [("Física-specific $-1.10$", -1.10), ("observed $-1.48$", -1.48)]:
-        ax.axhline(v, color=C["orange"], lw=0.9, ls="--")
-        ax.text(0.5, v + 0.07, lab, fontsize=7.8, color=C["orange"])
-    ax.set_xlim(0, 31); ax.set_ylim(-3.2, 0.15)
-    ax.set_xlabel("deductions of $0.10$ per script")
-    ax.set_ylabel("shift in the mean (marks)")
-    ax.legend(loc="lower left", fontsize=8)
-    ax.set_title(f"(a) The deduction channel\n"
-                 f"{inverted_ded['Física-specific (subject split)']:.0f} per script "
-                 f"would carry the $-1.10$", loc="left")
-
-    ax = axes[1]
-    labels = ["mean", "pass rate", "at or below 2", "zero", "at or above 9"]
-    series = [("observed 2026", [OBS_2026["mean"], OBS_2026["pass_pct"],
-                                 OBS_2026["le2_pct"], OBS_2026["zero_pct"], 2.1], INK2),
-              ("the regime, fitted", [best_full["mean"], best_full["pass_pct"],
-                                      best_full["le2_pct"], best_full["zero_pct"],
-                                      best_full["top_pct"]], C["violet"]),
-              ("same, voiding independent", [best_indep["mean"], best_indep["pass_pct"],
-                                             best_indep["le2_pct"],
-                                             best_indep["zero_pct"],
-                                             best_indep["top_pct"]], C["yellow"]),
-              ("a harder paper, additive", [harder_add["mean"], harder_add["pass_pct"],
-                                            harder_add["le2_pct"],
-                                            harder_add["zero_pct"],
-                                            harder_add["top_pct"]], C["aqua"])]
-    x = np.arange(5)
-    w = 0.2
-    for i, (lab, vals, col) in enumerate(series):
-        ax.bar(x + (i - 1.5) * w, vals, width=w, color=col, label=lab)
-        for xx, v in zip(x + (i - 1.5) * w, vals):
-            ax.text(xx, v + 0.7, f"{v:.1f}", ha="center", fontsize=6.4, color=INK)
-    ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=8)
-    ax.set_ylim(0, 52)
-    ax.legend(loc="upper right", fontsize=7.0)
-    ax.set_title("(b) Four figures fitted, one not\nthe top band is the one that fails",
-                 loc="left")
-    ax.grid(axis="x", visible=False)
-
-    ax = axes[2]
-    items = [("deductions of 0.10\nper script", best_full["deductions_per_script"]),
-             ("scripts with a partial\ncascade (per cent)", best_full["p_partial"] * 100),
-             ("scripts with the whole\npaper voided (per cent)",
-              best_full["p_total"] * 100)]
-    y = np.arange(len(items))[::-1]
-    ax.barh(y, [v for _, v in items], color=C["blue"], height=0.55)
-    for yy, (_, v) in zip(y, items):
-        ax.text(v + 0.35, yy, f"{v:.0f}" if v >= 3 else f"{v:.1f}", va="center",
-                fontsize=10, color=INK)
-    ax.set_yticks(y); ax.set_yticklabels([k for k, _ in items], fontsize=8.5)
-    ax.set_xlim(0, 20)
-    ax.set_xlabel("value required to reproduce the 2026 figures")
-    ax.set_title("(c) Three numbers, all of them\non the marking sheets", loc="left")
-    ax.grid(axis="y", visible=False)
-
-    fig.suptitle("Figure 30 — From non-award to deduction: can the regime change "
-                 "produce 2026 on its own?", x=0.005, ha="left", fontsize=12, color=INK)
-    fig.tight_layout(rect=(0, 0, 1, 0.95))
-    _save(fig, "fig30_penalty_regime", PLOTS)
+    draw(grid, inverted_ded, best_full, best_indep, harder_add)
 
     print("inversion, deductions:", {k: round(v) for k, v in inverted_ded.items()})
     print(f"\nbest fit: {best_full['deductions_per_script']:.0f} deductions, "
@@ -417,11 +469,12 @@ def main() -> None:
         print(f"{lab} mean {d['mean']:.2f}  pass {d['pass_pct']:5.1f}  "
               f"<=2 {d['le2_pct']:5.1f}  zero {d['zero_pct']:4.2f}  "
               f">=9 {d.get('top_pct', float('nan')):4.2f}  loss {d.get('loss', 0):.2f}")
-    print(f"  observed 2026     mean {OBS_2026['mean']:.2f}  pass "
+    print(f"  published 2026    mean {OBS_2026['mean']:.2f}  pass "
           f"{OBS_2026['pass_pct']:5.1f}  <=2 {OBS_2026['le2_pct']:5.1f}  "
-          f"zero {OBS_2026['zero_pct']:4.2f}  >=9 2.10")
+          f"zero {OBS_2026['zero_pct']:4.2f}  >=9  n/p  (no 2026 band table published)")
     print("\nsensitivity:", json.dumps(sens, indent=1))
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    replot() if "--replot" in sys.argv else main()

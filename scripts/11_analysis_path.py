@@ -119,15 +119,31 @@ steps = [
             "not a competence"),
     ("17. The coordinator's corrections, and the marking regime (20 Sep)",
      "What changed in the marking was non-award becoming deduction. Can that make 2026?",
-     STOOD, "the 2025 distribution put through the 2026 regime — twelve deductions of "
+     WEAK, "the 2025 distribution put through the 2026 regime — twelve deductions of "
             "0.10 per script and a grave error in one script in six voiding most of it "
-            "— reproduces all four published 2026 figures at once (mean 4.01 / 3.99, "
-            "pass 39.2 / 39.8, at-or-below-2 25.2 / 24.5, zero 2.6 / 3.2). The "
-            "deduction channel alone produces no zeros at all; a uniformly harder paper "
-            "fits nearly as well, so the regime is shown sufficient, not identified"),
+            "— reproduces all four published 2026 figures at once (mean 4.11 / 3.99, "
+            "pass 39.0 / 39.8, at-or-below-2 25.2 / 24.5, zero 3.5 / 3.2). The "
+            "deduction channel alone produces almost no zeros; a uniformly harder paper "
+            "fits far worse (7.8 per cent at zero), so the regime is shown sufficient, "
+            "not identified"),
+    ("18. How the penalties are spread (20 Sep)",
+     "Every candidate the same twelve deductions? What does a distribution cost?",
+     STOOD, "a deduction removes 0.10 only where 0.10 is left, so the zero floor eats "
+              "penalties aimed at weak work: marks removed per deduction fall with the "
+              "share of penalties landing below 4 out of 10 (r = -0.99). Flat is "
+              "therefore a CEILING over every reading in which the weak collect more "
+              "than their share — 93 to 68 per cent of it — and the regime carries 87 "
+              "per cent of the Fisica-specific -1.10 read flat against 81 to 59 per "
+              "cent read as a distribution, leaving 0.14 to 0.45 marks for the other "
+              "components. This step also CORRECTED step 17's claim that the model "
+              "failed on the top band: the 2.09 per cent at nine or above was the "
+              "dossier's own Beta extrapolation, not a published figure. Refitted, the "
+              "readings agree on all four published figures and differ on that band "
+              "from 0.3 to 6.1 per cent, which makes the unpublished 2026 band table "
+              "the decisive measurement"),
 ]
 
-fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 21.5),
+fig, (ax, axl) = plt.subplots(2, 1, figsize=(11.6, 21.9),
                               gridspec_kw=dict(height_ratios=[1.0, 2.4], hspace=0.16))
 
 # --- a. how the headline numbers moved as the frame widened ---------------------
@@ -190,8 +206,13 @@ axl.set_title("b. The order the questions were asked in, and what each answer di
 fig.text(0.005, 0.005,
          "The numbers in panel a are read from the JSON written by the scripts that "
          "computed them (results.json, shape_locus.json, reference_frames.json); the step "
-         "texts in panel b are written by hand.\nBoth can drift, and both have: step 10's "
-         "text drifted from its own data, and this footnote itself claimed it could not.",
+         "texts in panel b are written by hand.\nBoth can drift, and both have, three "
+         "times now: step 10's text drifted from its own data; step 14's and step 16's "
+         "carried superseded figures;\nand step 17's quoted a fit that had since been "
+         "rebuilt (4.01 for 4.11, 2.6 for 3.5) while calling a far worse alternative "
+         "\"nearly as well\".\nThis footnote once claimed hand-written text could not "
+         "drift. Every hand-written number is now checked against the JSON at the end "
+         "of each round; that is what found step 17's.",
          fontsize=7, color=MUTED, linespacing=1.5)
 _save(fig, "fig18_analysis_path", P, dpi=200)
 
