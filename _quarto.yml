@@ -134,8 +134,14 @@ format:
     tbl-cap-location: top
     lang: en
     grid:
+      # Widened 21 September on the coordination's remark: the body column was
+      # 720px against a right-hand margin that left most of a wide screen
+      # empty. 880px gives the running text about a fifth more room — roughly
+      # 90 characters to the line, still inside the comfortable measure — and
+      # pushes the "En esta página" column right by the same amount. The
+      # margin stays at 260px because the synthesis asides live in it.
       sidebar-width: 310px
-      body-width: 920px
+      body-width: 880px
       margin-width: 260px
 
 bibliography: references.bib

@@ -124,11 +124,30 @@ p,li { max-width: 78ch; }
 
 // R7 · the right-hand "In this page" was set at the same 12 px as its own heading,
 // so the heading did not read as a heading and the block competed with the body.
-#TOC { font-size: 11px; line-height: 1.6; }
-#TOC h2 { font-size: 10.5px; font-weight: 600; color: var(--zs-heading); border: 0;
+// R10 · taken down again, to 10 px, in the same pass that widened the body column
+// to 880px (_quarto.yml). The two changes work together: the running text gains
+// room, the index beside it recedes, and long entries stop wrapping to three
+// lines now that the margin is doing less work at a smaller size.
+#TOC { font-size: 10px; line-height: 1.55; }
+#TOC h2 { font-size: 9.5px; font-weight: 600; color: var(--zs-heading); border: 0;
           letter-spacing: .04em; text-transform: none; }
 #TOC a { color: var(--zs-muted); border: 0; padding: .25rem 0; }
 #TOC a.active { color: var(--zs-accent) !important; border: 0 !important; }
+
+// R10b · the right-hand index and the margin asides share one 312px column, and
+// the index is sticky: scroll far enough and it is pinned over an aside, which
+// is how "Fuentes" came to be printed across "De dónde sale ese «normalmente»".
+// This was always possible; widening the body column made it likely, because
+// shorter lines pull every aside's anchor further up the page. Rather than
+// occlude one with the other, the index stops being sticky on the pages that
+// actually carry asides — it then scrolls with the text and the two can never
+// meet. Pages without asides keep the sticky index, which is where it earns its
+// keep. `:has()` scopes this without a per-page class or a line of JavaScript.
+body:has(.column-margin) #quarto-margin-sidebar {
+  position: relative;
+  top: 0;
+  height: auto;
+}
 .quarto-page-breadcrumbs { font-size: 11.9px; color: var(--zs-muted); }
 .quarto-page-breadcrumbs a { color: var(--zs-muted); }
 
