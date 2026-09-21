@@ -124,15 +124,30 @@ p,li { max-width: 78ch; }
 
 // R7 · the right-hand "In this page" was set at the same 12 px as its own heading,
 // so the heading did not read as a heading and the block competed with the body.
-// R10 · taken down again — to 10 px, then to 9 px on a second look — in the same
-// pass that widened the body column
-// to 880px (_quarto.yml). The two changes work together: the running text gains
-// room, the index beside it recedes, and long entries stop wrapping to three
-// lines now that the margin is doing less work at a smaller size.
-#TOC { font-size: 9px; line-height: 1.5; }
-#TOC h2 { font-size: 8.5px; font-weight: 600; color: var(--zs-heading); border: 0;
-          letter-spacing: .04em; text-transform: none; }
-#TOC a { color: var(--zs-muted); border: 0; padding: .25rem 0; }
+// R10 · the right-hand index.
+//
+// R10c, and the reason the two previous attempts did nothing. Setting font-size
+// on `#TOC` alone changes the container and nothing else: Quarto gives the links
+// their own font-size rule, so they never inherited it. The container read 9px
+// while the links still computed to **14.875px** — larger than the left-hand nav
+// (12.5px) and larger than the body text (13.8px), which is exactly backwards for
+// something that is meant to sit quietly beside the prose. The size has to be set
+// on the anchors themselves, and it is set here with an id selector so it wins
+// without !important.
+//
+// 11px for the links puts the index below the left nav and well below the body,
+// which is the hierarchy it should have had from the start.
+#TOC { font-size: 11px; line-height: 1.5; }
+#TOC h2,
+#TOC .h2,
+#TOC > h2 { font-size: 9.5px; font-weight: 600; color: var(--zs-heading); border: 0;
+            letter-spacing: .06em; text-transform: uppercase; }
+#TOC a,
+#TOC .nav-link,
+#TOC ul > li > a,
+#TOC ul ul > li > a { font-size: 11px; line-height: 1.5; }
+#TOC ul ul > li > a { font-size: 10.5px; }
+#TOC a { color: var(--zs-muted); border: 0; padding: .2rem 0; }
 #TOC a.active { color: var(--zs-accent) !important; border: 0 !important; }
 
 // R10b · the right-hand index and the margin asides share one 312px column, and

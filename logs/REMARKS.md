@@ -620,3 +620,42 @@ Restored, and **aligned with the briefing's numbering** rather than invented afr
 H1a, H1b, H1c, H2, H2b (marking severity), H3 (tribunal severity), H4, H5, H6. Marking
 severity is H2b and not H3 because in chapter 6 H3 has always been the tribunals; the
 briefing and the synthesis now use one numbering, which they did not before this round.
+
+---
+
+### R12 · The index font, for the third time — and why the first two did nothing {#r12}
+
+**Remark.** "That is the font whose font size I want smaller!!!!" — with the entries
+circled.
+
+**Status:** **fixed**, 21 September. The complaint was repeated twice because the fix
+was never applied to the thing being looked at.
+
+**What was wrong.** Both earlier rounds set `font-size` on `#TOC`, the container.
+Quarto gives the index links a font-size rule of their own, so they never inherited it.
+The container obediently went 11 px → 10 px → 9 px while the **links stayed at
+14.875 px throughout**. Measured, not inferred:
+
+| | before | after |
+|---|---:|---:|
+| Index links | **14.875 px** | **11 px** |
+| Index heading | 8.5 px | 9.5 px |
+| Left-hand nav | 12.5 px | 12.5 px |
+| Body text | 13.8 px | 13.8 px |
+
+The second row is the whole story: the index was **larger than the left-hand navigation
+and larger than the body text**, which is backwards for something meant to sit quietly
+beside the prose. Every reported symptom follows from that one number, including the
+entries wrapping to three lines.
+
+**The fix.** Set the size on the anchors, not the container — `#TOC a`, `.nav-link` and
+the nested list items — with an id selector, so it wins on specificity without
+`!important`. Second-level entries go to 10.5 px so the hierarchy reads. The heading
+went *up* slightly, to 9.5 px in small caps, because at 8.5 px it had become smaller
+than the entries beneath it, which is the same mistake in the other direction.
+
+**The lesson, which is the one worth keeping.** A CSS change is not verified by reading
+the stylesheet; it is verified by asking the browser what it computed for the element
+the reader is actually looking at. One `getComputedStyle` call on the anchor would have
+caught this the first time, and it is now the check used before reporting any style
+change as done.
