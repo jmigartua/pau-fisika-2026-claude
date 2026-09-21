@@ -8,6 +8,14 @@ project:
     - /plots/*
     - /data/analysis/*.csv
     - /data/*.csv
+    # DO NOT REMOVE. docs/ is the published copy of this very site. Without these
+    # two lines Quarto sweeps it into _site, the publish step `cp -R _site docs`
+    # nests it inside itself, and the next render copies the nested copy back —
+    # one extra docs/docs/ level per publish. It reached seventeen levels and
+    # 2,624 tracked files before being caught on 21 September. If you are
+    # regenerating this file, carry these lines across.
+    - "!/docs/"
+    - "!/_to_delete/"
 
 website:
   title: "PAU Física 2026"

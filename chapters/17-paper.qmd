@@ -22,33 +22,30 @@ keywords:
 abstract: |
   In June 2026 the mean mark in Physics at the Basque university-entrance
   examination fell to 3.99 from 5.47, the lowest value in a sixteen-year series and
-  a one-year change of $-1.48$ marks. The explanation offered at the time was the
-  national competency-based reform introduced by RD 534/2024. That explanation is
-  refuted by arithmetic rather than by argument: the reform applied in all
-  seventeen autonomous communities in both years, and in 2026 six of the nine
-  communities that had published a result rose under it. A national cause cannot
+  a one-year change of $-1.48$ marks. The explanation offered was the national
+  competency-based reform of RD 534/2024. Arithmetic refutes it: the reform applied
+  in all seventeen autonomous communities in both years, and six of the nine
+  communities reporting a 2026 result rose under it. A national cause cannot
   produce opposite signs in the same year.
 
-  This article decomposes the fall using only published aggregates. Measured
-  against the nine-community field, $-1.65$ marks are specific to the region and
-  none of the 2025 fall was. A balanced eight-subject panel splits the change
-  exactly, with no fitting, into a field term of $+0.80$, a component of $-1.18$
-  common to all of the region's quantitative subjects, and $-1.10$ specific to
-  Physics. A band locus fitted across 187 region-years separates changes of
-  location from changes of shape and identifies 2024, not 2026, as the year the
-  distribution changed shape, with a conditional top-band residual of $-3.08$
-  standard deviations, the second most negative of 170 transitions.
+  This article decomposes the fall using only published aggregates. Against the
+  nine-community field, $-1.65$ marks are region-specific, and none of the 2025
+  fall was. A balanced eight-subject panel splits the change exactly, with nothing
+  fitted, into a field term of $+0.80$, a component of $-1.18$ common to all of the
+  region's quantitative subjects, and $-1.10$ specific to Physics. A band locus
+  fitted across 187 region-years separates changes of location from changes of
+  shape and identifies 2024, not 2026, as the year the distribution changed shape.
 
-  Two components of the region-specific change can be bounded: withdrawn
-  optionality at $-0.20$ marks and a cohort term at $-0.12$. The remaining $-1.33$,
-  four fifths of the total, is shown to be unattributable. Paper difficulty,
-  marking severity, reading load and newly examined content leave the same trace in
-  a mean, a pass rate and a band distribution, so no published aggregate
-  distinguishes them; a marking-regime simulation reproduces between 59 and 87 per
-  cent of the Physics-specific fall depending on assumptions that the published
-  data cannot adjudicate. The result is a quantified limit on what aggregate
-  educational statistics can identify, and a statement of the single datum —
-  marks at sub-task level — that would resolve it.
+  Withdrawn optionality ($-0.20$) and an externally measured cohort term ($-0.12$)
+  can be bounded. The remaining $-1.33$ cannot: paper difficulty, marking severity,
+  reading load and newly examined content each displace the whole distribution
+  downward, so every function of that distribution takes the same value under all
+  four. A marking-regime simulation reproduces between 59 and 87 per cent of the
+  Physics-specific fall depending on assumptions the published data cannot
+  adjudicate. The result is a quantified limit on what aggregate educational
+  statistics can identify, and a statement of the datum — marks at sub-task level —
+  that would remove it.
+
 format:
   html:
     toc: true
@@ -554,18 +551,17 @@ bounds of the individual channels exceeds the quantity to be explained by $+0.38
 marks, which is a direct demonstration that the channels overlap and that treating
 them additively over-attributes.
 
-## Where the reading load evidence stands
+## Where the reading load lies
 
-One attribution that circulated widely deserves explicit correction, because it
-was made here in an earlier stage of this work and was wrong. The 45 per cent
-increase in reading load was initially attributed to the competency items, on the
-reasonable assumption that narrative framing is what makes a statement long.
-Direct measurement of the printed statements contradicts it: the narrative
-accounts for 71 words of the relevant item against 70 in its predecessor, while
-the demand text rose from 88 words to 181. The load is in what candidates are
-asked to *do*, not in the story they are given. The examining authority's own
-worked reconstruction of the same item, which reaches 66 words for the
-broken-out step alone, corroborates the measurement independently.
+The 45 per cent increase in reading load is naturally attributed to the competency
+items, on the assumption that narrative framing is what lengthens a statement.
+Direct measurement of the printed statements does not support that attribution.
+In the longest item, the narrative accounts for 71 words against 70 in its 2025
+predecessor, while the demand text — the part that states what is to be done —
+rises from 88 words to 181. The additional load is in the task specification, not
+in the context that surrounds it. The examining authority's own worked
+reconstruction of the same item, which reaches 66 words for the broken-out step
+alone, corroborates the measurement independently.
 
 ![**(a)** Statement length item by item, both years, against the length band that
 the 2027 specification targets. **(b)** Two independent reconstructions of the
@@ -594,10 +590,10 @@ to the length of the statement each sub-task carries.
 
 Marks at sub-task level, for a sample of scripts, therefore identify what no
 aggregate can. Marking panel identifiers would separate a fifth mechanism —
-between-panel severity — which the aggregate likewise cannot see. These data exist
-as a by-product of the marking process. The claim here is narrow and does not
-depend on their being made available: it is that they, and nothing already
-published, constitute the information required.
+between-panel severity — which the aggregate likewise cannot see. Both are
+generated as a by-product of any marking process that records sub-task marks. The
+proposition established here is narrow: these quantities, and nothing already
+published, constitute the information the identification requires.
 
 # Discussion
 
@@ -722,10 +718,10 @@ them on a clean run.
 
 # Data and code availability {.unnumbered}
 
-All source files, analysis scripts and figure code are published with this work.
-Chapter references throughout point to the extended technical treatment of each
-result, where the intermediate quantities, the failed tests and the corrections
-made during the analysis are reported in full.
+All source files, analysis scripts and figure code are published alongside this
+article. A clean run reproduces every table byte for byte and every figure pixel
+for pixel. The extended technical treatment referenced throughout reports the
+intermediate quantities and the diagnostic tests for each result.
 
 # Appendix A — Provenance and quality of the 2026 cross-section {.unnumbered}
 
