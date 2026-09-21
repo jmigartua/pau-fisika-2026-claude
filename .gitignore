@@ -25,3 +25,8 @@ chapters/*.fdb_latexmk
 # The published copy of the site must never be swept into the build output;
 # see the resources exclusions in _quarto.yml. This is the second line of defence.
 _site/docs/
+
+# Transfer bundles the desktop bridge leaves in the project root when it moves a
+# chapter's sources and rendered output across. They are a copy of tracked files,
+# never a source, and a bare `git add -A` would otherwise commit them.
+_u*.tgz
