@@ -21,3 +21,7 @@ chapters/*.fdb_latexmk
 # that cannot unlink files strands these, and 523 of them accumulated before the
 # first clean-up; they are never part of the repository.
 .git/objects/**/tmp_obj_*
+
+# The published copy of the site must never be swept into the build output;
+# see the resources exclusions in _quarto.yml. This is the second line of defence.
+_site/docs/
