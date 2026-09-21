@@ -30,38 +30,207 @@ def save(fig, name):
 
 
 # ---------------------------------------------------------------- 1. Euskadi series
+# Rebuilt 21 September 2026 on the coordination's remarks R2 and R3 (logs/REMARKS.md).
+#
+# R3.  The six bands this figure used to carry — "PAU 2010–11", "PAU 2012–16",
+#      "EAU (LOMCE)", "COVID", "post-COVID", "LOMLOE" — were one shading channel doing
+#      three different jobs: two of them were laws, two were exam formats decided
+#      locally, and two were a circumstance that is neither.  Worse, the LOMCE band
+#      ended in 2019, which implied the law ended there; it did not.  The bands are now
+#      two labelled rows in a ribbon between the panels: what governed the exam, and
+#      what the paper actually looked like.  They deliberately do not coincide — LOMCE
+#      from 2017 but the paper unchanged until 2020, and then changed for COVID rather
+#      than for the law — and that non-coincidence is the reason for separating them.
+#      COVID is marked as two years, not as a regime.
+#
+# R2.  The grey Ministry line stops at 2025 because the 2026 EPAU cube is not published
+#      until June 2027.  What exists for 2026 is this study's assembled cross-section of
+#      the nine communities that have published a result — a different population, nine
+#      against seventeen, from sources of mixed quality — so it is drawn detached, in
+#      its own colour, for 2025 and 2026 only.  The two falls are then shown as arrows
+#      of CHANGE, each from its own 2025 point, with the Basque-specific −1.65 as the
+#      bracket between the two arrowheads.  No arrow runs between the two 2026 levels:
+#      that distance is 1.87, because the series did not start level in 2025, and an
+#      arrow of that length labelled −1.65 would misstate the finding by 0.22.
 s = pd.read_csv(A / "euskadi_fisica_series_2010_2026.csv")
-fig, axes = plt.subplots(2, 1, figsize=(8.4, 6.2), sharex=True, gridspec_kw=dict(hspace=0.12))
-regimes = [(2009.5, 2011.5, "PAU 2010–11"), (2011.5, 2016.5, "PAU 2012–16"), (2016.5, 2019.5, "EAU (LOMCE)"), (2019.5, 2021.5, "COVID"),
-           (2021.5, 2024.5, "post-COVID"), (2024.5, 2026.5, "LOMLOE")]
-for ax in axes:
-    for i, (a, b, lab) in enumerate(regimes):
-        if i % 2 == 0:
-            ax.axvspan(a, b, color="#f1f0ec", zorder=0, lw=0)
-ax = axes[0]
-ax.plot(s.year, s.spain_mean, color=MUTED, lw=1.6, marker="o", ms=4, label="Spain (all CCAA), ordinary", zorder=2)
-ax.plot(s.year, s["mean"], color=C["blue"], lw=2.2, marker="o", ms=5.5, label="Euskadi (UPV/EHU), ordinary", zorder=3)
-ax.scatter([2026], [3.99], s=110, facecolor=C["red"], edgecolor=SURF, lw=1.5, zorder=4)
-for y, v in [(2010, 4.45), (2012, 6.49), (2025, 5.47), (2026, 3.99)]:
-    ax.annotate(f"{v:.2f}", (y, v), textcoords="offset points", xytext=(0, 9 if v > 5 else -13), ha="center", fontsize=8.5, color=INK)
-ax.annotate("7.69", (2021, 7.69), textcoords="offset points", xytext=(12, -2), ha="left", fontsize=8.5, color=INK)
-ax.set_ylabel("Mean grade (0–10)")
-ax.set_ylim(3.3, 8.2)
-for a, b, lab in regimes:
-    ax.text((a + b) / 2, 8.08, lab, ha="center", va="top", fontsize=7.5, color=INK2)
-ax.legend(loc="lower left", ncol=2)
-ax.set_title("Physics in the Basque university-entrance exam, ordinary sitting, 2010–2026")
-ax = axes[1]
-ax.plot(s.year, s.pass_pct, color=C["blue"], lw=2.2, marker="o", ms=5.5, zorder=3)
-ax.scatter([2026], [39.8], s=110, facecolor=C["red"], edgecolor=SURF, lw=1.5, zorder=4)
-for y, v in [(2010, 46.3), (2021, 89.6), (2025, 62.3), (2026, 39.8)]:
-    ax.annotate(f"{v:.1f} %", (y, v), textcoords="offset points", xytext=(0, 9 if v > 60 else -13), ha="center", fontsize=8.5, color=INK)
-ax.set_ylabel("Pass rate, % of presented")
-ax.set_ylim(30, 95)
-ax.set_xticks(range(2010, 2027))
-ax.tick_params(axis="x", labelrotation=45)
-ax.text(2010, 32, "Sources: EHU annual reports (2010–22), Ministry EPAU (2023–25), EHU presentation of 6 Jul 2026 (2026).", fontsize=7, color=MUTED)
-save(fig, "fig01_euskadi_series")
+dec = json.load(open(A / "decomposition.json", encoding="utf-8"))
+_brow = {r["year"]: r for r in dec["budget"]["rows"]}
+FIELD = {y: _brow[y]["field"] for y in (2025, 2026)}          # the nine, Euskadi included
+D_PV = _brow[2026]["total"]                                    # -1.48
+D_FIELD = _brow[2026]["common"]                                # +0.17
+D_SPEC = _brow[2026]["basque_specific"]                        # -1.65
+BASE = 5.47                       # Euskadi 2025
+CF = BASE + D_FIELD               # where Euskadi would have ended moving with the nine
+# The first draft of this figure drew the bracket between the two 2026 LEVELS, 3.99 and
+# 5.86, and labelled it -1.65.  That distance is 1.87: the two series did not start
+# level in 2025 (5.47 against 5.69).  It is the very error R2 was written to avoid, and
+# it survived one drawing.  Both arrows now leave the SAME point, Euskadi's own 2025
+# mean, so the field arrow reads "where we would have ended had we moved with the nine"
+# and the bracket between the two heads is exactly the -1.65 it is labelled.
+
+# R1: one figure, two languages.  Every string that appears in the plot is in this
+# table, so the Spanish documents stop carrying English axes.  The decimal separator
+# is the point in both, which is the PAU convention the dossier's Spanish prose uses.
+TXT01 = dict(
+    en=dict(
+        title="Physics in the Basque university-entrance exam, ordinary sitting, 2010–2026",
+        ylab="Mean grade (0–10)", ylab2="Pass rate, % of presented",
+        spain="Spain (all CCAA), Ministry cube",
+        nine="the nine communities with a published 2026 result",
+        eus="Euskadi (UPV/EHU)",
+        covid="COVID sitting", covid_model="the paper it forced, kept to 2024",
+        law="law", model="paper",
+        laws=["PAU (RD 1892/2008)", "EAU (LOMCE)", "LOMLOE"],
+        models=["two whole options A/B", "four of eight", "L1", "L2"],
+        offset="the law changed in 2017; the paper, in 2020",
+        key="L1 = 1 competency item + 3 × (1 of 2)   ·   L2 = 2 competency items + 2 × (1 of 2)",
+        cf="had we moved\nwith the field: {cf:.2f}",
+        spec="{d:+.2f}\nBasque-specific\ncomponent",
+        src=("Sources: EHU annual reports (2010–22), Ministry EPAU (2023–25), EHU "
+             "presentation of 6 Jul 2026 (2026). The nine communities:\nthis study's "
+             "cross-section; the 2026 cube is not published until June 2027, which is "
+             "why the grey line stops at 2025."),
+    ),
+    es=dict(
+        title="Física en la prueba de acceso vasca, convocatoria ordinaria, 2010–2026",
+        ylab="Nota media (0–10)", ylab2="Tasa de aprobados, % de presentados",
+        spain="España (todas las CCAA), cubo del Ministerio",
+        nine="las nueve comunidades con resultado de 2026 publicado",
+        eus="Euskadi (UPV/EHU)",
+        covid="convocatoria COVID", covid_model="el examen que impuso, hasta 2024",
+        law="ley", model="modelo",
+        laws=["PAU (RD 1892/2008)", "EAU (LOMCE)", "LOMLOE"],
+        models=["dos opciones completas A/B", "cuatro de ocho", "L1", "L2"],
+        offset="la ley cambió en 2017; el examen, en 2020",
+        key="L1 = 1 competencial + 3 × (1 de 2)   ·   L2 = 2 competenciales + 2 × (1 de 2)",
+        cf="moviéndonos con\nel conjunto: {cf:.2f}",
+        spec="{d:+.2f}\ncomponente\nespecíficamente\nvasco",
+        src=("Fuentes: informes anuales de la EHU (2010–22), EPAU del Ministerio "
+             "(2023–25), presentación de la EHU de 6-VII-2026 (2026). Las nueve "
+             "comunidades:\nsección transversal de este estudio; el cubo de 2026 no se "
+             "publica hasta junio de 2027, por lo que la línea gris termina en 2025."),
+    ),
+)
+LAW_SPANS = [(2009.5, 2016.5), (2016.5, 2024.5), (2024.5, 2026.5)]
+MODEL_SPANS = [(2009.5, 2019.5), (2019.5, 2024.5), (2024.5, 2025.5), (2025.5, 2026.5)]
+LAW_C = ["#e9eef4", "#dde6ef", "#cbd9e8"]
+MOD_C = ["#f2efe8", "#eae5da", "#e2dbcb", "#d8cfb9"]
+
+
+def fig01(lang):
+    L = TXT01[lang]
+    fig = plt.figure(figsize=(9.4, 7.3))
+    gs = fig.add_gridspec(3, 1, height_ratios=[1.0, 0.26, 0.74], hspace=0.09)
+    ax = fig.add_subplot(gs[0])
+    axr = fig.add_subplot(gs[1], sharex=ax)
+    ax2 = fig.add_subplot(gs[2], sharex=ax)
+
+    # --- the ribbon: two rows, law above, paper model below ----------------------
+    for (a, b), lab, col in zip(LAW_SPANS, L["laws"], LAW_C):
+        axr.add_patch(plt.Rectangle((a, 0.60), b - a, 0.38, color=col, lw=0))
+        axr.text((a + b) / 2, 0.79, lab, ha="center", va="center", fontsize=7.2,
+                 color=INK)
+    for (a, b), lab, col in zip(MODEL_SPANS, L["models"], MOD_C):
+        axr.add_patch(plt.Rectangle((a, 0.18), b - a, 0.38, color=col, lw=0))
+        axr.text((a + b) / 2, 0.37, lab, ha="center", va="center",
+                 fontsize=6.4 if len(lab) <= 3 else 7.2, color=INK)
+    axr.text(2009.3, 0.79, L["law"], ha="right", va="center", fontsize=7.0, color=MUTED)
+    axr.text(2009.3, 0.37, L["model"], ha="right", va="center", fontsize=7.0,
+             color=MUTED)
+    for x in (2016.5, 2024.5):                       # law boundaries, law row only
+        axr.plot([x, x], [0.60, 0.98], color=SURF, lw=1.2, zorder=3)
+    for x in (2019.5, 2024.5, 2025.5):               # model boundaries, model row only
+        axr.plot([x, x], [0.18, 0.56], color=SURF, lw=1.2, zorder=3)
+    # the two layers do not line up, and that is the point of separating them
+    axr.annotate("", xy=(2017, 0.09), xytext=(2020, 0.09),
+                 arrowprops=dict(arrowstyle="<->", color=C["orange"], lw=0.9))
+    axr.text(2018.5, 0.04, L["offset"], ha="center", va="top", fontsize=6.8,
+             color=C["orange"])
+    axr.text(2026.5, -0.30, L["key"], ha="right", va="top", fontsize=6.4, color=MUTED)
+    axr.set_ylim(-0.52, 1.02); axr.set_xlim(2009.4, 2026.6)
+    axr.axis("off")
+
+    # --- COVID: one sitting, and a paper model that outlived it -------------------
+    # The pandemic sitting is 2020.  The four-of-eight paper it forced was then kept
+    # through 2024, so the shading covers the life of the model and the darker tint
+    # marks the sitting that caused it.  The two spans are deliberately different.
+    for a in (ax, ax2):
+        a.axvspan(2019.5, 2024.5, facecolor="#f7f5f1", edgecolor="none", lw=0, zorder=0)
+        a.axvspan(2019.5, 2020.5, facecolor="#e9e4da", edgecolor="none", lw=0, zorder=0)
+    ax.text(2020, 3.60, L["covid"], ha="center", va="bottom", fontsize=6.8, color=MUTED)
+    ax.text(2022.6, 3.37, L["covid_model"], ha="center", va="bottom", fontsize=6.8,
+            color=MUTED)
+
+    # --- a. the means -------------------------------------------------------------
+    ax.plot(s.year, s.spain_mean, color=MUTED, lw=1.6, marker="o", ms=4,
+            label=L["spain"], zorder=2)
+    ax.plot([2025, 2026], [FIELD[2025], FIELD[2026]], color=C["green"], lw=1.6,
+            ls="--", marker="o", ms=6, mfc=SURF, mew=1.6, zorder=3, label=L["nine"])
+    ax.plot(s.year, s["mean"], color=C["blue"], lw=2.2, marker="o", ms=5.5,
+            label=L["eus"], zorder=4)
+    ax.scatter([2026], [3.99], s=110, facecolor=C["red"], edgecolor=SURF, lw=1.5,
+               zorder=5)
+    for y, v, dx, dy in [(2010, 4.45, 0, -13), (2012, 6.49, 0, 9),
+                         (2025, 5.47, -14, -9), (2026, 3.99, 0, -14)]:
+        ax.annotate(f"{v:.2f}", (y, v), textcoords="offset points", xytext=(dx, dy),
+                    ha="center", fontsize=8.5, color=INK)
+    ax.annotate("7.69", (2021, 7.69), textcoords="offset points", xytext=(12, -2),
+                ha="left", fontsize=8.5, color=INK)
+    ax.annotate(f"{FIELD[2026]:.2f}", (2026, FIELD[2026]), textcoords="offset points",
+                xytext=(2, 10), ha="center", fontsize=8.5, color=C["green"])
+
+    # --- the two falls, as arrows of CHANGE from a common origin ------------------
+    xa, xb, xbr = 2027.35, 2028.45, 2029.55
+    ax.plot([2025, xb + 0.3], [BASE, BASE], color=MUTED, lw=0.9, ls=":",
+            clip_on=False, zorder=1)
+    ax.plot([xa - 0.35, xbr + 0.1], [CF, CF], color=C["green"], lw=0.8, clip_on=False,
+            zorder=1)
+    ax.plot([xa - 0.35, xbr + 0.1], [3.99, 3.99], color=C["blue"], lw=0.8,
+            clip_on=False, zorder=1)
+    ax.annotate("", xy=(xa, 3.99), xytext=(xa, BASE),
+                arrowprops=dict(arrowstyle="-|>", color=C["blue"], lw=2.2),
+                annotation_clip=False)
+    ax.annotate("", xy=(xb, CF), xytext=(xb, BASE),
+                arrowprops=dict(arrowstyle="-|>", color=C["green"], lw=2.2),
+                annotation_clip=False)
+    ax.text(xa - 0.14, (3.99 + BASE) / 2, f"{D_PV:+.2f}", ha="right", va="center",
+            fontsize=9.5, color=C["blue"], clip_on=False)
+    ax.text(xb, BASE - 0.13, f"{D_FIELD:+.2f}", ha="center", va="top", fontsize=9.5,
+            color=C["green"], clip_on=False)
+    ax.text(xbr + 0.12, CF + 0.08, L["cf"].format(cf=CF), ha="right", va="bottom",
+            fontsize=7.0, color=C["green"], linespacing=1.3, clip_on=False)
+    ax.annotate("", xy=(xbr, 3.99), xytext=(xbr, CF),
+                arrowprops=dict(arrowstyle="<->", color=INK2, lw=1.2),
+                annotation_clip=False)
+    ax.text(xbr + 0.18, (3.99 + CF) / 2, L["spec"].format(d=D_SPEC), ha="left",
+            va="center", fontsize=8.2, color=INK2, linespacing=1.35, clip_on=False)
+
+    ax.set_ylabel(L["ylab"])
+    ax.set_ylim(3.3, 8.2)
+    ax.set_xlim(2009.4, 2026.6)
+    ax.legend(loc="upper left", fontsize=7.8, framealpha=0.94)
+    ax.set_title(L["title"])
+    plt.setp(ax.get_xticklabels(), visible=False)
+
+    # --- b. the pass rate ---------------------------------------------------------
+    ax2.plot(s.year, s.pass_pct, color=C["blue"], lw=2.2, marker="o", ms=5.5, zorder=3)
+    ax2.scatter([2026], [39.8], s=110, facecolor=C["red"], edgecolor=SURF, lw=1.5,
+                zorder=4)
+    for y, v in [(2010, 46.3), (2021, 89.6), (2025, 62.3), (2026, 39.8)]:
+        ax2.annotate(f"{v:.1f} %", (y, v), textcoords="offset points",
+                     xytext=(0, 9 if v > 60 else -14), ha="center", fontsize=8.5,
+                     color=INK)
+    ax2.set_ylabel(L["ylab2"])
+    ax2.set_ylim(30, 96)
+    ax2.set_xticks(range(2010, 2027))
+    ax2.tick_params(axis="x", labelrotation=45)
+    fig.text(0.012, 0.012, L["src"], fontsize=6.6, color=MUTED, linespacing=1.5)
+    fig.subplots_adjust(right=0.705, bottom=0.115)
+    save(fig, "fig01_euskadi_series" + ("" if lang == "en" else "_es"))
+
+
+fig01("en")
+fig01("es")
 
 # ---------------------------------------------------------------- 2. annual changes distribution
 ch = pd.read_csv(A / "annual_changes_all_ccaa.csv")
