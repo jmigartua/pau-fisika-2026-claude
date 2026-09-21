@@ -14,7 +14,7 @@ import pandas as pd
 
 # All styling — LaTeX text stack, sizes, colour registry — lives in the shared
 # module (ThesisFigures E1); this script defines none of its own.
-from plot_style import C, GRID, INK, INK2, MUTED, SURF, apply_style, bf, save as _save
+from plot_style import T, C, GRID, INK, INK2, MUTED, SURF, apply_style, bf, save as _save
 
 apply_style()
 
@@ -238,8 +238,15 @@ def fig01(lang):
     save(fig, "fig01_euskadi_series" + ("" if lang == "en" else "_es"))
 
 
-fig01("en")
-fig01("es")
+# fig01 carries its own language switch (it predates T(): every string in it is a
+# label positioned by hand). Under PAU_LANG=es only the Spanish one is drawn, so
+# the English file is never briefly overwritten with the wrong text.
+import plot_style as _ps
+if _ps.LANG == "es":
+    fig01("es")
+else:
+    fig01("en")
+    fig01("es")
 
 # ---------------------------------------------------------------- 2. annual changes distribution
 ch = pd.read_csv(A / "annual_changes_all_ccaa.csv")
@@ -270,12 +277,12 @@ for i, r in enumerate(cmp.itertuples()):
     ax.scatter(r.mean_2026, i, s=70, facecolor=col, edgecolor=SURF, lw=1.2, zorder=4)
     ax.text(max(r.mean_2025, r.mean_2026) + 0.12, i, f"{r.delta:+.2f}", va="center", fontsize=8.5, color=INK)
     if r.quality == "press":
-        ax.text(min(r.mean_2025, r.mean_2026) - 0.12, i, "press", va="center", ha="right", fontsize=7.5, color=MUTED)
+        ax.text(min(r.mean_2025, r.mean_2026) - 0.12, i, T("press"), va="center", ha="right", fontsize=7.5, color=MUTED)
 ax.set_yticks(y)
 ax.set_yticklabels(cmp.label)
-ax.set_xlabel("Ordinary-sitting Physics mean (open = 2025, filled = 2026)")
+ax.set_xlabel(T("Ordinary-sitting Physics mean (open = 2025, filled = 2026)"))
 ax.set_xlim(3.5, 7.4)
-ax.set_title("2025 → 2026 by region: nine communities have published a 2026 Physics mean")
+ax.set_title(T("2025 → 2026 by region: nine communities have published a 2026 Physics mean"))
 save(fig, "fig03_regions_2026_vs_2025")
 
 # ---------------------------------------------------------------- 4. regional small multiples
@@ -444,20 +451,20 @@ save(fig, "fig09_gender_language_euskadi")
 
 # ---------------------------------------------------------------- 10. school vs PAU
 fig, ax = plt.subplots(figsize=(7.2, 3.6))
-labels = ["2º Bachillerato Física\n2024-25 (school marks)\nn = 4 541", "PAU Física 2025\nordinary\nn = 2 189", "PAU Física 2026\nordinary\nn = 2 066"]
+labels = [T("2º Bachillerato Física\n2024-25 (school marks)\nn = 4 541"), T("PAU Física 2025\nordinary\nn = 2 189"), T("PAU Física 2026\nordinary\nn = 2 066")]
 means = [7.09, 5.47, 3.99]
 pas = [98.11, 62.3, 39.8]
 x = np.arange(3)
-ax.bar(x, means, width=0.5, color=C["blue"], label="Mean grade", zorder=2)
-ax.set_ylabel("Mean grade")
+ax.bar(x, means, width=0.5, color=C["blue"], label=T("Mean grade"), zorder=2)
+ax.set_ylabel(T("Mean grade"))
 ax.set_ylim(0, 10)
 for xi, m in zip(x, means):
     ax.text(xi, m + 0.15, f"{m:.2f}", ha="center", fontsize=9, color=INK)
 ax.set_xticks(x)
 ax.set_xticklabels(labels, fontsize=8.5)
-ax.set_title("Same subject, three measurements: school marks vs entrance exam (Euskadi)")
+ax.set_title(T("Same subject, three measurements: school marks vs entrance exam (Euskadi)"))
 for xi, p in zip(x, pas):
-    ax.text(xi, 0.3, f"pass {p:.1f} %", ha="center", va="bottom", fontsize=8.5, color="white")
-ax.text(-0.5, 9.4, "Sources: Gobierno Vasco 'Resultados escolares 2024-2025'; Ministry EPAU 2025; EHU 6 Jul 2026. Cohorts are offset by one year.", fontsize=6.8, color=MUTED)
+    ax.text(xi, 0.3, f"{T('pass')} {p:.1f} %", ha="center", va="bottom", fontsize=8.5, color="white")
+ax.text(-0.5, 9.4, T("Sources: Gobierno Vasco 'Resultados escolares 2024-2025'; Ministry EPAU 2025; EHU 6 Jul 2026. Cohorts are offset by one year."), fontsize=6.8, color=MUTED)
 save(fig, "fig10_school_vs_pau")
 print("done")

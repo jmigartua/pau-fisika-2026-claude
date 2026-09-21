@@ -38,7 +38,7 @@ from pathlib import Path
 
 import numpy as np
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import T, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -277,35 +277,35 @@ def main() -> None:
     ax.barh(y - 0.19, w26, height=0.36,
             color=[C["red"] if i in ("A1", "B1") else C["blue"] for i in items])
     ax.axvspan(BAND_LO, BAND_HI, color=C["aqua"], alpha=0.13, zorder=0)
-    ax.text((BAND_LO + BAND_HI) / 2, len(items) - 0.35, "target 2027", ha="center",
+    ax.text((BAND_LO + BAND_HI) / 2, len(items) - 0.35, T("target 2027"), ha="center",
             fontsize=8, color=C["aqua"])
     for yy, v in zip(y - 0.19, w26):
         if v:
             ax.text(v + 6, yy, str(v), va="center", fontsize=8, color=INK2)
     ax.set_yticks(y); ax.set_yticklabels(items, fontsize=9)
     ax.set_xlim(0, 460); ax.set_ylim(-0.8, len(items) - 0.2)
-    ax.set_xlabel("statement words (weights and furniture removed)")
+    ax.set_xlabel(T("statement words (weights and furniture removed)"))
     # explicit proxies: the bars are coloured by item, so the automatic legend would
     # pick up whichever colour was set last.
     from matplotlib.patches import Patch
     ax.legend(handles=[Patch(color=MUTED, label="2025"),
                        Patch(color=C["blue"], label="2026"),
-                       Patch(color=C["red"], label="competency item")],
+                       Patch(color=C["red"], label=T("competency item"))],
               loc="lower right", fontsize=8)
-    ax.set_title("(a) The long item is the competency item\n"
-                 "2025: A1, 423 words. 2026: B1, 413", loc="left")
+    ax.set_title(T("(a) The long item is the competency item\n")
+                 + T("2025: A1, 423 words. 2026: B1, 413"), loc="left")
     ax.grid(axis="y", visible=False)
 
     # (b) the two ladders for B1
     ax = axes[1]
     fwd = out["four_versions_b1"]["forward_ladder"]
-    rev = [("habitual\n+ figure", 113), ("competencial\nideal", 154),
-           ("sin\nnarrativa", 287), ("2026, as\nissued", 408)]
+    rev = [(T("habitual\n+ figure"), 113), (T("competencial\nideal"), 154),
+           (T("sin\nnarrativa"), 287), (T("2026, as\nissued"), 408)]
     xf = np.arange(4)
     ax.plot(xf, list(fwd.values()), "o-", color=MUTED, lw=1.6,
-            label="slide 8 (forward)")
+            label=T("slide 8 (forward)"))
     ax.plot(xf, [v for _, v in rev], "s--", color=C["violet"], lw=1.6,
-            label="slides 9–11 (reverse)")
+            label=T("slides 9–11 (reverse)"))
     # the two ladders nearly touch at the competency rung (178 against 154), so that
     # one label is pushed sideways rather than down.
     _off = {1: (26, -4)}
@@ -318,25 +318,25 @@ def main() -> None:
                     xytext=_offr.get(i_, (0, 9)), ha="center", fontsize=8,
                     color=C["violet"])
     ax.axhspan(BAND_LO, BAND_HI, color=C["aqua"], alpha=0.13, zorder=0)
-    ax.text(0.05, (BAND_LO + BAND_HI) / 2, "target band", fontsize=8, color=C["aqua"],
+    ax.text(0.05, (BAND_LO + BAND_HI) / 2, T("target band"), fontsize=8, color=C["aqua"],
             va="center")
     ax.set_xticks(xf)
-    ax.set_xticklabels(["habitual", "competencial", "broken out", "2026"], fontsize=8.5)
+    ax.set_xticklabels([T("habitual"), T("competencial"), T("broken out"), "2026"], fontsize=8.5)
     ax.set_ylim(40, 470)
-    ax.set_ylabel("statement words")
+    ax.set_ylabel(T("statement words"))
     ax.legend(loc="upper left", fontsize=8)
-    ax.set_title("(b) Two reconstructions of B1\nsame endpoint, different rungs",
+    ax.set_title(T("(b) Two reconstructions of B1\nsame endpoint, different rungs"),
                  loc="left")
     ax.grid(axis="x", visible=False)
 
     # (c) the paper budget
     ax = axes[2]
-    cats = ["2025\nas issued", "2026\nas issued", "2027\ntarget"]
+    cats = [T("2025\nas issued"), T("2026\nas issued"), T("2027\ntarget")]
     read = [r25, r26, target["read_mean"]]
     ansl = [lo25, lo26, target["answered_mean"]]
     x = np.arange(3)
-    ax.bar(x - 0.18, read, width=0.34, color=MUTED, label="read (options included)")
-    ax.bar(x + 0.18, ansl, width=0.34, color=C["blue"], label="answered (four problems)")
+    ax.bar(x - 0.18, read, width=0.34, color=MUTED, label=T("read (options included)"))
+    ax.bar(x + 0.18, ansl, width=0.34, color=C["blue"], label=T("answered (four problems)"))
     ax.bar(x[2] - 0.18, target["read_mean"], width=0.34, color=C["aqua"])
     ax.bar(x[2] + 0.18, target["answered_mean"], width=0.34, color=C["aqua"], alpha=0.65)
     for xx, v in zip(x - 0.18, read):
@@ -345,13 +345,14 @@ def main() -> None:
         ax.text(xx, v + 22, f"{v:.0f}", ha="center", fontsize=9, color=INK)
     ax.set_xticks(x); ax.set_xticklabels(cats, fontsize=8.5)
     ax.set_ylim(0, 1750)
-    ax.set_ylabel("statement words")
+    ax.set_ylabel(T("statement words"))
     ax.legend(loc="upper right", fontsize=8)
-    ax.set_title(f"(c) The 2027 budget\n{r26} → {target['read_mean']} read, "
-                 f"a cut of {100*(1-target['read_mean']/r26):.0f} per cent", loc="left")
+    ax.set_title(T("(c) The 2027 budget\n{a} → {b} read, a cut of {c:.0f} per cent")
+                 .format(a=r26, b=target["read_mean"],
+                         c=100 * (1 - target["read_mean"] / r26)), loc="left")
     ax.grid(axis="x", visible=False)
 
-    fig.suptitle("Figure 29 — Where the reading is, and what the 2027 target costs",
+    fig.suptitle(T("Figure 29 — Where the reading is, and what the 2027 target costs"),
                  x=0.005, ha="left", fontsize=12, color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.95))
     _save(fig, "fig29_statement_budget", PLOTS)

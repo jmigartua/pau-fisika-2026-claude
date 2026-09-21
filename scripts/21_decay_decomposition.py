@@ -45,7 +45,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import T, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -293,30 +293,30 @@ other = S[S.ccaa != PV]
 ax1.axhline(0, color=MUTED, lw=0.9, zorder=1)
 ax1.axvline(0, color=MUTED, lw=0.9, zorder=1)
 ax1.scatter(other.d_mean, other.top_excess, s=14, color=MUTED, alpha=0.55,
-            label=f"the other {other.ccaa.nunique()} communities, {len(other)} transitions", zorder=2)
+            label=T("the other {n} communities, {k} transitions").format(n=other.ccaa.nunique(), k=len(other)), zorder=2)
 ax1.scatter(pv_steps.d_mean, pv_steps.top_excess, s=42, color=C["violet"], zorder=4,
-            label="Euskadi, 2016–2025")
+            label=T("Euskadi, 2016–2025"))
 for y in (2024, 2025):
     r = pv_steps.loc[y]
     ax1.scatter([r.d_mean], [r.top_excess], s=120, facecolor="none",
                 edgecolor=C["red"], lw=1.8, zorder=5)
     ax1.annotate(f"{y}", (r.d_mean, r.top_excess), textcoords="offset points",
                  xytext=(14, -3 if y == 2024 else 11), fontsize=9.5, color=C["red"])
-ax1.set_xlabel("Change of location: Δ mean mark")
-ax1.set_ylabel("Change of shape: Δ top band minus what\nthe level alone predicts (pp)")
-ax1.set_title("a. Two different kinds of year", loc="left")
+ax1.set_xlabel(T("Change of location: Δ mean mark"))
+ax1.set_ylabel(T("Change of shape: Δ top band minus what\nthe level alone predicts (pp)"))
+ax1.set_title(T("a. Two different kinds of year"), loc="left")
 ax1.legend(loc="lower left", fontsize=7.6, framealpha=0.92)
 
 # --- b. the same two years as bars: observed against locus
-lbl = ["top band\n2023→2024", "pass rate\n2023→2024", "top band\n2024→2025", "pass rate\n2024→2025"]
+lbl = [T("top band\n2023→2024"), T("pass rate\n2023→2024"), T("top band\n2024→2025"), T("pass rate\n2024→2025")]
 obs = [pv_steps.loc[2024, "d_top"], pv_steps.loc[2024, "d_pass"],
        pv_steps.loc[2025, "d_top"], pv_steps.loc[2025, "d_pass"]]
 pred = [pv_steps.loc[2024, "d_top_locus"], pv_steps.loc[2024, "d_pass_locus"],
         pv_steps.loc[2025, "d_top_locus"], pv_steps.loc[2025, "d_pass_locus"]]
 x = np.arange(4)
 ax2.axhline(0, color=MUTED, lw=0.9)
-ax2.bar(x - 0.19, obs, width=0.36, color=C["violet"], label="observed")
-ax2.bar(x + 0.19, pred, width=0.36, color=MUTED, alpha=0.6, label="what the level alone predicts")
+ax2.bar(x - 0.19, obs, width=0.36, color=C["violet"], label=T("observed"))
+ax2.bar(x + 0.19, pred, width=0.36, color=MUTED, alpha=0.6, label=T("what the level alone predicts"))
 for xi, (o, p_) in enumerate(zip(obs, pred)):
     exc = o - p_
     y = max(o, p_, 0) + 0.7
@@ -325,13 +325,13 @@ for xi, (o, p_) in enumerate(zip(obs, pred)):
 ax2.set_xticks(x)
 ax2.set_xticklabels(lbl, fontsize=8)
 ax2.set_ylim(-12.5, 5.2)
-ax2.set_ylabel("Change, percentage points")
-ax2.set_title("b. 2024 moved off the locus; 2025 moved along it", loc="left")
+ax2.set_ylabel(T("Change, percentage points"))
+ax2.set_title(T("b. 2024 moved off the locus; 2025 moved along it"), loc="left")
 ax2.legend(loc="lower left", fontsize=8, framealpha=0.92)
 
 # --- c. the mark budget and what is left unattributed (floating waterfall)
-labels = ["Euskadi 2025", "Common to\nthe nine", "Choice\nremoved",
-          "Cohort\n(PISA)", "Not yet\nidentified", "Euskadi 2026"]
+labels = [T("Euskadi 2025"), T("Common to\nthe nine"), T("Choice\nremoved"),
+          T("Cohort\n(PISA)"), T("Not yet\nidentified"), T("Euskadi 2026")]
 deltas = [float(B.loc[B.year == 2026, "common"].iloc[0]), choice_central, cohort_per_year, remainder]
 colors = [C["aqua"], C["blue"], C["yellow"], C["red"]]
 start = float(pv[2025]); end = float(pv[2026])
@@ -354,20 +354,21 @@ ax3.bar(5, end - lo, bottom=lo, color=INK2, width=0.56)
 ax3.annotate(f"{end:.2f}", (5, end + 0.10), ha="center", fontsize=10, color=INK)
 ax3.set_xticks(range(6))
 ax3.set_xticklabels(labels, fontsize=9)
-ax3.set_ylabel("Mean Física mark")
+ax3.set_ylabel(T("Mean Física mark"))
 ax3.set_ylim(lo, hi)
-ax3.set_title("c. What the 2026 fall is made of — and how much of it is still unattributed", loc="left")
-ax3.annotate(f"Basque-specific: {basque_2026:+.2f}.  Quantified: {abs(quantified):.2f}.  "
-             f"Unattributed: {abs(remainder):.2f} ({100 * remainder / basque_2026:.0f} %).",
+ax3.set_title(T("c. What the 2026 fall is made of — and how much of it is still unattributed"), loc="left")
+ax3.annotate(T("Basque-specific: {b:+.2f}.  Quantified: {q:.2f}.  Unattributed: {u:.2f} ({pc:.0f} %).")
+             .format(b=basque_2026, q=abs(quantified), u=abs(remainder),
+                     pc=100 * remainder / basque_2026),
              xy=(0.5, hi - 0.22), fontsize=9, color=C["red"], ha="left")
 
 fig.text(0.005, 0.005,
-         "Ministry EPAU, ordinary sitting. Panels a and b: specific phase, 17 communities, "
-         "locus fitted on all 187 region-years. Panel c: pooled phase, the nine communities with a "
-         "2026 result in every year.\nThe choice term is a simulation of the two formats at item SD 0.2 "
-         "net of the other eight communities' own cuts; the cohort term is the Basque PISA "
-         "2022–2025 decline in excess of Spain's, one PAU year of it, transferred one-for-one.\nBoth are "
-         "differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate.",
+         T("Ministry EPAU, ordinary sitting. Panels a and b: specific phase, 17 communities, "
+           "locus fitted on all 187 region-years. Panel c: pooled phase, the nine communities with a "
+           "2026 result in every year.\nThe choice term is a simulation of the two formats at item SD 0.2 "
+           "net of the other eight communities' own cuts; the cohort term is the Basque PISA "
+           "2022–2025 decline in excess of Spain's, one PAU year of it, transferred one-for-one.\nBoth are "
+           "differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate."),
          fontsize=7, color=MUTED, linespacing=1.5)
 _save(fig, "fig25_decomposition", PLOTS, dpi=200)
 

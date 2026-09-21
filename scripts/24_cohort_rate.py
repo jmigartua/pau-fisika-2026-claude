@@ -61,7 +61,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import T, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -352,8 +352,8 @@ def main() -> None:
         xs += [a_["from_year"], a_["to_year"]]
         pvv += [a_["per_year"]] * 2
         esv += [b_["per_year"]] * 2
-    ax.plot(xs, pvv, color=C["red"], lw=2.0, label="Euskadi")
-    ax.plot(xs, esv, color=C["blue"], lw=1.6, label="Spain")
+    ax.plot(xs, pvv, color=C["red"], lw=2.0, label=T("Euskadi"))
+    ax.plot(xs, esv, color=C["blue"], lw=1.6, label=T("Spain"))
     ax.axhline(0, color=INK, lw=0.9)
     ax.fill_between(xs, pvv, esv, color=C["red"], alpha=0.10)
     for a_ in r_pv:
@@ -362,39 +362,38 @@ def main() -> None:
                 f"{a_['per_year']:+.1f}", ha="center", fontsize=8, color=C["red"])
     ax.set_xticks([int(y) for y in sorted(pv)])
     ax.set_xticklabels([str(y) for y in sorted(int(k) for k in pv)], fontsize=8)
-    ax.set_xlabel("PISA round (the cohort sits the PAU two years later)")
-    ax.set_ylabel("PISA science points per cohort-year")
+    ax.set_xlabel(T("PISA round (the cohort sits the PAU two years later)"))
+    ax.set_ylabel(T("PISA science points per cohort-year"))
     ax.set_ylim(-9.6, 5.6)
     ax.legend(loc="lower left", fontsize=8)
-    ax.set_title("(a) Steps, not a slope\nEuskadi: $+3.7$ to $-7.5$ a year", loc="left")
+    ax.set_title(T("(a) Steps, not a slope\nEuskadi: $+3.7$ to $-7.5$ a year"), loc="left")
 
     # (b) how much of a population shift reaches the selected group
     ax = axes[1]
     qs = np.linspace(0.05, 0.60, 120)
     tr = [selected_shift(q, shift_sd / 3.0)["absolute_transfer"] for q in qs]
-    ax.plot(qs * 100, tr, color=C["violet"], lw=1.8, label="absolute standard")
-    ax.axhline(1.0, color=C["aqua"], lw=1.8, label="relative (top $q$ always)")
+    ax.plot(qs * 100, tr, color=C["violet"], lw=1.8, label=T("absolute standard"))
+    ax.axhline(1.0, color=C["aqua"], lw=1.8, label=T("relative (top $q$ always)"))
     ax.axvline(q_obs * 100, color=MUTED, lw=1.0, ls="--")
     ax.scatter([q_obs * 100], [transfer_at_obs["absolute_transfer"]], s=52,
                color=C["violet"], zorder=4)
-    ax.annotate(f"take-up {q_obs*100:.1f} per cent\ntransfer "
-                f"{transfer_at_obs['absolute_transfer']:.2f}",
+    ax.annotate(T("take-up {q:.1f} per cent\ntransfer {t:.2f}")
+                .format(q=q_obs * 100, t=transfer_at_obs["absolute_transfer"]),
                 (q_obs * 100, transfer_at_obs["absolute_transfer"]),
                 textcoords="offset points", xytext=(10, -22), fontsize=8, color=INK2)
     ax.set_xlim(5, 60); ax.set_ylim(0.0, 1.15)
-    ax.set_xlabel("share of the cohort sitting Física (per cent)")
-    ax.set_ylabel("fraction of the population shift reaching the candidates")
+    ax.set_xlabel(T("share of the cohort sitting Física (per cent)"))
+    ax.set_ylabel(T("fraction of the population shift reaching the candidates"))
     ax.legend(loc="upper right", fontsize=8)
-    ax.set_title("(b) The rule matters: 0.23 or 1.00\nflat take-up favours the "
-                 "relative rule", loc="left")
+    ax.set_title(T("(b) The rule matters: 0.23 or 1.00\nflat take-up favours the relative rule"), loc="left")
 
     # (c) what actually moves the 2027 mean
     ax = axes[2]
     items = [
-        ("Cohort term,\nexcess of the field", abs(c_e_), C["violet"]),
-        ("Cohort term,\ngross Basque move", abs(c_g_), C["red"]),
-        ("One SD of\npaper-to-paper variation", projection["paper_sd_marks"], C["orange"]),
-        ("95 per cent band of the\npaper alone, one year", projection["band_95_one_year"],
+        (T("Cohort term,\nexcess of the field"), abs(c_e_), C["violet"]),
+        (T("Cohort term,\ngross Basque move"), abs(c_g_), C["red"]),
+        (T("One SD of\npaper-to-paper variation"), projection["paper_sd_marks"], C["orange"]),
+        (T("95 per cent band of the\npaper alone, one year"), projection["band_95_one_year"],
          C["yellow"]),
     ]
     y = np.arange(len(items))[::-1]
@@ -404,13 +403,13 @@ def main() -> None:
     ax.set_yticks(y)
     ax.set_yticklabels([i[0] for i in items], fontsize=8.5)
     ax.set_xlim(0, 2.05)
-    ax.set_xlabel("marks, one year ahead")
-    ax.set_title(f"(c) The cohort is worth {abs(c_g_):.2f} a year,\n"
-                 f"the paper {projection['paper_sd_marks']:.2f}", loc="left")
+    ax.set_xlabel(T("marks, one year ahead"))
+    ax.set_title(T("(c) The cohort is worth {c:.2f} a year,\nthe paper {p:.2f}")
+                 .format(c=abs(c_g_), p=projection["paper_sd_marks"]), loc="left")
     ax.grid(axis="y", visible=False)
 
-    fig.suptitle("Figure 28 — A rate of cohort decay, and what it can and cannot "
-                 "anticipate", x=0.005, ha="left", fontsize=12, color=INK)
+    fig.suptitle(T("Figure 28 — A rate of cohort decay, and what it can and cannot ")
+                 + T("anticipate"), x=0.005, ha="left", fontsize=12, color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.95))
     _save(fig, "fig28_cohort_rate", PLOTS)
 

@@ -6,6 +6,7 @@ author:
   - name: "Josu M. Igartua"
     affiliation: "Coordinador de Física, PAU · UPV/EHU — del dosier *Physics in the PAU, 2026*, auditado el 19 y el 20 de septiembre de 2026"
 date: 2026-09-20
+date-modified: 2026-09-21
 date-format: "D MMMM YYYY"
 lang: es
 categories: [briefing, 2027]
@@ -45,6 +46,8 @@ Si la prueba de 2027 se parece a la de 2026, la estimación central es **3.81**.
 
 ::: {.callout-note title="Cómo leer este documento"}
 Cada afirmación lleva una de cuatro clases de evidencia: **oficial** (publicado por una universidad, un gobierno o el Ministerio, archivado aquí con su *hash*), **prensa** (difundido por los medios, no verificable en fuente oficial), **modelado** (calculado en el dosier a partir de agregados publicados, señalado como tal) y **testimonio** (el relato del coordinador sobre decisiones que nunca se publicaron). Nada de esto es una estimación causal: son estadísticos de cohorte de pruebas distintas corregidas por tribunales distintos, y la prueba cambia todos los años. Los números de capítulo entre corchetes remiten a los capítulos del dosier.
+
+**Esta versión.** 21 de septiembre de 2026. El dosier se abrió el 18 de septiembre y se ha revisado todos los días de trabajo desde entonces: el 19 se añadieron las auditorías de las pruebas y la primera auditoría externa; el 20, el trabajo sobre el régimen de corrección y los enunciados, con una segunda auditoría; y el 21, las observaciones de la propia coordinación — la figura 1 rehecha, el veredicto competencial partido en tres y las convocatorias COVID. Cada revisión, con qué cambió y por qué, está en el [registro de trabajo](09-log.qmd) y en [el registro de observaciones](13-audit.qmd).
 :::
 
 ## El resultado
@@ -77,7 +80,7 @@ En 2025, primer año del modelo competencial LOMLOE, la media de Física cayó e
 
 : Los nueve resultados de 2026 localizados. Oficiales salvo donde se indica prensa; el comparador de 2025 es el del Ministerio, excepto en Cataluña, que se compara consigo misma sobre la base de aptos. La sección transversal no está ponderada: Madrid y Extremadura pesan igual [cap. 3]. {#tbl-e-regions tbl-colwidths="[22,10,10,10,48]"}
 
-![2025 → 2026 por comunidad: círculo hueco 2025, relleno 2026; rojo bajó, verde subió. Cataluña va sobre su base de aptos en ambos años, los valores de Madrid son etiquetas de gráfico redondeadas a un decimal y el valor de 2026 de Extremadura procede de prensa.](../plots/fig03_regions_2026_vs_2025.png){#fig-e-regions}
+![2025 → 2026 por comunidad: círculo hueco 2025, relleno 2026; rojo bajó, verde subió. Cataluña va sobre su base de aptos en ambos años, los valores de Madrid son etiquetas de gráfico redondeadas a un decimal y el valor de 2026 de Extremadura procede de prensa.](../plots/fig03_regions_2026_vs_2025_es.png){#fig-e-regions}
 
 Seis comunidades subieron bajo el mismo modelo nacional y en el mismo año; tres bajaron. Una causa nacional no puede producir signos opuestos el mismo año, de modo que **el modelo competencial puede a lo sumo describir 2025; no explica 2026**. Las ocho comunidades restantes no han publicado nada; el cubo de 2026 del Ministerio se espera en junio de 2027.
 
@@ -87,7 +90,7 @@ Hay una segunda razón para no leer 2025 como un desplome nacional. Medido contr
 
 Esta es la parte del informe que afecta a 2027, y es nueva: no pregunta cuán grande fue la caída, sino cuántas cosas distintas ocurrieron y cuáles pueden distinguirse entre sí.
 
-![**a** — todas las transiciones interanuales del panel nacional, situadas por cuánto se movió la media y por cuánto se apartó la banda alta de lo que ese cambio de media predice por sí solo. Las de Euskadi en violeta; 2024 y 2025 van rodeadas. **b** — esos dos años vascos, observados frente a la predicción, para las dos magnitudes de banda publicadas. **c** — la caída 2025 → 2026 dividida en la parte común a las nueve comunidades, las dos partes específicamente vascas que pueden cuantificarse y la parte que no.](../plots/fig25_decomposition.png){#fig-e-decomp}
+![**a** — todas las transiciones interanuales del panel nacional, situadas por cuánto se movió la media y por cuánto se apartó la banda alta de lo que ese cambio de media predice por sí solo. Las de Euskadi en violeta; 2024 y 2025 van rodeadas. **b** — esos dos años vascos, observados frente a la predicción, para las dos magnitudes de banda publicadas. **c** — la caída 2025 → 2026 dividida en la parte común a las nueve comunidades, las dos partes específicamente vascas que pueden cuantificarse y la parte que no.](../plots/fig25_decomposition_es.png){#fig-e-decomp}
 
 ### Tres sucesos, no uno
 
@@ -247,7 +250,7 @@ Euskadi publica cuatro números resumen; las dos universidades canarias publican
 
 **Notas escolares.** El informe *Resultados escolares 2024-25* de la Inspección da, en 2º de Bachillerato Física: **4 541 estudiantes, 98.1 % de aprobados, media 7.09**. Solo un 45–48 % de ellos se presenta a Física en la PAU, presumiblemente la mitad que necesita la ponderación; incluso esa mitad autoseleccionada quedó 1.6 puntos por debajo de su nota escolar en 2025 y, si las notas escolares no se movieron, 3.1 puntos por debajo en 2026. La tasa de aprobados escolar es del 98 %; la del examen fue del 40 %.
 
-![La misma materia medida tres veces: notas escolares de la cohorte 2024-25, PAU Física 2025 y PAU Física 2026. Las cohortes están desfasadas un año, y la cifra escolar cubre a los 4 541 estudiantes mientras que las de la PAU cubren a los 2 066–2 189 que se examinaron.](../plots/fig10_school_vs_pau.png){#fig-e-school}
+![La misma materia medida tres veces: notas escolares de la cohorte 2024-25, PAU Física 2025 y PAU Física 2026. Las cohortes están desfasadas un año, y la cifra escolar cubre a los 4 541 estudiantes mientras que las de la PAU cubren a los 2 066–2 189 que se examinaron.](../plots/fig10_school_vs_pau_es.png){#fig-e-school}
 
 **Participación.** La presentación sobre matriculados fue del 64 al 84 % desde 2017 (84.3 % en 2025); la matrícula de 2026 no está publicada, de modo que la caída del 5.6 % en presentados no puede separarse en matrícula y abstención. En el conjunto de España la población de Física creció un 30 % en la década mientras el *take-up* — la proporción de candidatos de la PAU que se examina de Física — pasó solo de 0.222 a 0.240, y dentro de cada comunidad no guarda relación con la media ($r = -0.10$, $p = 0.34$).
 
@@ -301,7 +304,7 @@ La conclusión natural — que las subidas de 2026 en otras comunidades son en p
 
 PISA es el único instrumento que mide a estos estudiantes y se corrige fuera del sistema vasco. Una ventaja vasca consolidada en ciencias se convirtió en déficit hace una década: $+6.2$, $+6.4$ y $+9.2$ puntos por encima de España en 2006, 2009 y 2012; después, una caída de 22.6 puntos entre 2012 y 2015 mientras España caía 3.7, sin recuperación posterior. **PISA 2025, publicada el 8 de septiembre de 2026, es la cohorte que se examina en la PAU de 2027 y es la más débil registrada**: ciencias País Vasco 458.5 frente a España 477.1 y la OCDE 481.9, una brecha de $-18.6$ (un error típico de 4.7), con la proporción vasca en los niveles 5–6 cayendo del 3.32 % al 1.83 %.
 
-![**a** — la serie vasca con dos escenarios para 2027; la barra es el término interanual, no un intervalo de predicción. **b** — el único término de cohorte estimado frente a la dispersión a través de la cual hay que leerlo, y frente a lo que 2026 hizo realmente.](../plots/fig23_pau2027.png){#fig-e-2027}
+![**a** — la serie vasca con dos escenarios para 2027; la barra es el término interanual, no un intervalo de predicción. **b** — el único término de cohorte estimado frente a la dispersión a través de la cual hay que leerlo, y frente a lo que 2026 hizo realmente.](../plots/fig23_pau2027_es.png){#fig-e-2027}
 
 Convertir eso en una estimación de la PAU es aritmética, y la aritmética es el hallazgo. La caída vasca de 21 puntos PISA es 0.23 de una desviación típica estudiantil; trasladada uno a uno a la PAU y prorrateada sobre los dos años que separan las cohortes de 2025 y 2027, es un **término de cohorte de $-0.36$ puntos**, o $-0.18$ medido desde 2026. Tres convenios están dentro de ese número y deben viajar con él: el traslado es uno a uno porque nada en los datos lo rechaza; la desviación típica de la PAU, 2.343, procede de las cifras publicadas por la Comunitat Valenciana, las únicas disponibles; y la de PISA, unos 90 puntos, es la de España.
 
@@ -318,7 +321,7 @@ Convertir eso en una estimación de la PAU es aritmética, y la aritmética es e
 
 La coordinación ha preguntado si el descenso de la cohorte puede convertirse en una *tasa*, de modo que un año de PAU pueda anticiparse antes de celebrarse. Cuatro respuestas, por orden.
 
-![**a** — variación de PISA en ciencias por año de cohorte entre rondas consecutivas. **b** — qué parte de un desplazamiento de toda la población llega a una fracción superior autoseleccionada, con una barra de aptitud fija y con una proporción fija. **c** — cuánto vale el término de cohorte frente a cuánto vale la prueba, a un año vista.](../plots/fig28_cohort_rate.png){#fig-e-cohortrate}
+![**a** — variación de PISA en ciencias por año de cohorte entre rondas consecutivas. **b** — qué parte de un desplazamiento de toda la población llega a una fracción superior autoseleccionada, con una barra de aptitud fija y con una proporción fija. **c** — cuánto vale el término de cohorte frente a cuánto vale la prueba, a un año vista.](../plots/fig28_cohort_rate_es.png){#fig-e-cohortrate}
 
 **La tasa no es una pendiente.** Entre rondas consecutivas de PISA, la variación vasca por año de cohorte es $+0.01$, $+3.65$, $-7.53$, $+1.44$, $-1.97$, $-6.99$ puntos — un rango de 11.2 puntos al año alrededor de una media de $-1.90$. Dos de los seis intervalos concentran casi todo el descenso y tres son planos o positivos. Una recta ajustada a esos puntos tendría pendiente, y citarla sería poner un intervalo honesto alrededor del modelo equivocado. La cohorte que hizo la PAU de 2026 tenía quince años en la primavera de 2024, entre rondas, de modo que PISA no la midió: el término de cohorte usado más arriba interpola, y supone que la caída se repartió por igual entre tres cohortes.
 

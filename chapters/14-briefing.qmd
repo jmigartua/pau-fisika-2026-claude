@@ -6,6 +6,7 @@ author:
   - name: "Josu M. Igartua"
     affiliation: "Física coordinator, PAU · UPV/EHU — from the dossier *Physics in the PAU, 2026*, audited 19 and 20 September 2026"
 date: 2026-09-20
+date-modified: 2026-09-21
 date-format: "D MMMM YYYY"
 categories: [briefing, 2027]
 format:
@@ -44,6 +45,8 @@ If the 2027 paper resembles the 2026 one, the central estimate is **3.81**. If i
 
 ::: {.callout-note title="How to read this document"}
 Every statement carries one of four evidence classes: **official** (published by a university, a government or the Ministry, archived here with its hash), **press** (reported by the media, not verifiable at an official source), **modelled** (computed in the dossier from published aggregates, labelled as such), or **testimony** (the coordinator's account of decisions that were never published). Nothing here is a causal estimate: these are cohort statistics of different papers marked by different tribunals, and the paper changes every year. Bracketed chapter numbers refer to the dossier's chapters, which are listed in its sidebar.
+
+**This version.** 21 September 2026. The dossier was opened on 18 September and has been revised on every working day since: 19 September added the paper audits and the first external audit, 20 September the marking-regime and statement work with a second audit, and 21 September the coordination's own remarks — the rebuilt figure 1, the three-way split of the competency verdict, and the COVID sittings. Every revision, with what it changed and why, is in the [work log](09-log.qmd) and in [the record of remarks](13-audit.qmd).
 :::
 
 ## The result

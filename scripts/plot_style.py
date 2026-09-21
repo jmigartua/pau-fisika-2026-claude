@@ -18,6 +18,7 @@ Requires a working LaTeX installation with `dvipng` on PATH. Verify with:
 from __future__ import annotations
 
 import re
+import os
 from pathlib import Path
 
 import matplotlib
@@ -287,12 +288,54 @@ def phantom_minus(values, decimals=2):
     ]
 
 
+# --------------------------------------------------------------------- language
+# R1 · the Spanish briefing and synthesis carried English figures. Rather than
+# fork every plotting script, each script runs twice: once as it always has,
+# and once with PAU_LANG=es, which (a) makes `T()` return the Spanish string
+# and (b) makes `save()` write to <name>_es. The figure code is untouched apart
+# from wrapping its display strings in T(), so the two versions cannot drift in
+# anything but wording. The glossary lives in scripts/es_strings.py; a string
+# with no entry falls through unchanged, which is what we want for numerals,
+# community names and file paths.
+LANG = os.environ.get("PAU_LANG", "en")
+
+# The figures the Spanish documents actually include. A script run with
+# PAU_LANG=es writes only these, so no _es file can exist with English in it.
+ES_FIGURES = {
+    "fig01_euskadi_series",
+    "fig03_regions_2026_vs_2025",
+    "fig10_school_vs_pau",
+    "fig23_pau2027",
+    "fig25_decomposition",
+    "fig26_subject_decomposition",
+    "fig28_cohort_rate",
+    "fig29_statement_budget",
+}
+
+
+def T(s):
+    """English display string -> the language this run is producing."""
+    if LANG == "en":
+        return s
+    from es_strings import ES
+    return ES.get(s, s)
+
+
 def save(fig, name, outdir: Path, dpi=200):
     """Emit PNG (raster, for the website) and SVG (vector) under one name.
 
     E2: the filenames are exactly the ones the chapters include, so the site
-    renders unchanged after regeneration.
+    renders unchanged after regeneration. Under PAU_LANG=es the name gains an
+    `_es` suffix, unless the caller has already supplied one.
     """
+    if LANG == "es":
+        base = name[:-3] if name.endswith("_es") else name
+        if base not in ES_FIGURES:
+            # Not used by any Spanish document: writing an _es copy with English
+            # text in it would be worse than not writing one at all.
+            plt.close(fig)
+            return
+        name = base + "_es"
     outdir.mkdir(exist_ok=True)
     fig.savefig(outdir / f"{name}.png", dpi=dpi, bbox_inches="tight")
     fig.savefig(outdir / f"{name}.svg", bbox_inches="tight")

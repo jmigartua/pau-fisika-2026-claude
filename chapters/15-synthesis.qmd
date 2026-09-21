@@ -6,6 +6,7 @@ author:
   - name: "Josu M. Igartua"
     affiliation: "Física coordinator, PAU · UPV/EHU — from the dossier *Physics in the PAU, 2026*, audited 19 and 20 September 2026"
 date: 2026-09-20
+date-modified: 2026-09-21
 date-format: "D MMMM YYYY"
 categories: [briefing, 2027, coordination]
 format:
@@ -19,12 +20,12 @@ format:
     monofont: "Latin Modern Mono"
     fontsize: 10.5pt
     geometry:
-      - left=22mm
-      - right=64mm
+      - left=20mm
+      - right=58mm
       - top=24mm
       - bottom=26mm
-      - marginparwidth=50mm
-      - marginparsep=6mm
+      - marginparwidth=44mm
+      - marginparsep=5mm
     number-sections: true
     toc: true
     toc-depth: 2
@@ -67,6 +68,8 @@ format:
 
 ::: {.callout-note title="How to read this document"}
 This is the short form of a longer dossier. Every number here is traceable to a chapter of it, and the chapter is named in brackets. Where a figure is **modelled** rather than observed it is said so on the spot. Nothing here is a causal estimate: these are cohort statistics of different papers marked by different tribunals, and the paper changes every year. The full argument, with its intervals, its failed tests and its two audits, is in [the briefing](14-briefing.qmd) and in [Chapter 6](06-interpretation.qmd).
+
+**This version.** 21 September 2026. The dossier was opened on 18 September and has been revised on every working day since: 19 September added the paper audits and the first external audit, 20 September the marking-regime and statement work with a second audit, and 21 September the coordination's own remarks — the rebuilt figure 1, the three-way split of the competency verdict, and the COVID sittings. Every revision, with what it changed and why, is in the [work log](09-log.qmd) and in [the record of remarks](13-audit.qmd).
 :::
 
 # The ground
@@ -107,7 +110,7 @@ A one-year fall of 1.48 is rare but not unprecedented — seven of the 170 year-
 
 ## Three events, not one
 
-![Física in the Basque university-entrance exam, ordinary sitting, 2010–2026. **The ribbon carries two separate facts on the same axis**: the *law* under which the exam was set, and the *paper model* actually used. They do not coincide — LOMCE governed from 2017 but the paper did not change until 2020, and it changed then for COVID and not for the law — which is why they are two rows and not one band; the marked interval under them spans those two years. `L1` and `L2` are the two LOMLOE papers, keyed beneath. **COVID is two sittings and one model**: the darker tint is 2020 and 2021, both set under the relief measures — 2021 is the highest mean in the series, 7.69 — and the lighter one the four-of-eight paper they forced, which was then kept through 2024. **The grey line is the Ministry cube** for all seventeen communities and stops at 2025, because the 2026 cube is not published until June 2027. **The green marks** are this study's own cross-section of the nine communities that have published a 2026 result — a different population, and drawn detached for that reason. **The two arrows on the right are changes, not levels**, and both leave the same point, Euskadi's own 2025 mean of 5.47. The **blue** arrow is Euskadi's own change to 3.99, $-1.48$. The **green** arrow is the change of the nine-community field, $+0.17$, drawn from that same origin so that its head at 5.64 reads as *where Física would have ended had it moved with the field*. The bracket between the two heads is therefore the Basque-specific component, $-1.65$, exactly. The distance between the two 2026 **levels** is 1.87 and is *not* that component, because the two series did not start level in 2025 (5.47 against 5.69). The field is the mean of the nine **including** Euskadi, which is the conservative reading; against the eight others alone the component would be $-1.86$. The three values are the `total`, `common` and `basque_specific` terms of `data/analysis/decomposition.json`, computed by `scripts/21_decay_decomposition.py`.](../plots/fig01_euskadi_series.png){#fig-s-series .column-page}
+![Física in the Basque university-entrance exam, ordinary sitting, 2010–2026. **The ribbon carries two separate facts on the same axis**: the *law* under which the exam was set, and the *paper model* actually used. They do not coincide — LOMCE governed from 2017 but the paper did not change until 2020, and it changed then for COVID and not for the law — which is why they are two rows and not one band; the marked interval under them spans those two years. `L1` and `L2` are the two LOMLOE papers, keyed beneath. **COVID is two sittings and one model**: the darker tint is 2020 and 2021, both set under the relief measures — 2021 is the highest mean in the series, 7.69 — and the lighter one the four-of-eight paper they forced, which was then kept through 2024. **The grey line is the Ministry cube** for all seventeen communities and stops at 2025, because the 2026 cube is not published until June 2027. **The green marks** are this study's own cross-section of the nine communities that have published a 2026 result — a different population, and drawn detached for that reason. **The two arrows on the right are changes, not levels**, and both leave the same point, Euskadi's own 2025 mean of 5.47. The **blue** arrow is Euskadi's own change to 3.99, $-1.48$. The **green** arrow is the change of the nine-community field, $+0.17$, drawn from that same origin so that its head at 5.64 reads as *where Física would have ended had it moved with the field*. The bracket between the two heads is therefore the Basque-specific component, $-1.65$, exactly. The distance between the two 2026 **levels** is 1.87 and is *not* that component, because the two series did not start level in 2025 (5.47 against 5.69). The field is the mean of the nine **including** Euskadi, which is the conservative reading; against the eight others alone the component would be $-1.86$. The three values are the `total`, `common` and `basque_specific` terms of `data/analysis/decomposition.json`, computed by `scripts/21_decay_decomposition.py`.](../plots/fig01_euskadi_series.png){#fig-s-series}
 
 **2024 changed the shape and barely touched the level.** The mean moved $-0.21$ — nothing, in a series whose year-to-year standard deviation is 0.85. What moved was the distribution. The 8–10 band **fell 9.0 points** where a drop of 0.21 in the mean normally costs 3.1; and the pass rate **rose 2.3** where it would normally have fallen 2.8. Fewer at the top, more just over the line, with the mean almost still.
 
@@ -133,7 +136,7 @@ Both things should be said together: **second on one measure, eleventh on anothe
 
 ## What the 1.65 is made of
 
-![**a** — the eight Basque subjects, with the three the numerical marking deductions can reach in orange. **b** — each community's Física change against its own mean over the three shared subjects. **c** — the four terms of the split, which sum to the observed $-1.48$ by construction.](../plots/fig26_subject_decomposition.png){#fig-s-subj .column-page}
+![**a** — the eight Basque subjects, with the three the numerical marking deductions can reach in orange. **b** — each community's Física change against its own mean over the three shared subjects. **c** — the four terms of the split, which sum to the observed $-1.48$ by construction.](../plots/fig26_subject_decomposition.png){#fig-s-subj}
 
 Euskadi published eight subjects and four comparator communities published three of the same ones, which gives a balanced panel on which the change splits exactly, with no modelling:
 
@@ -171,17 +174,17 @@ Two components can be given a defensible size, and both are small: together **$-
 
 | Explanation | Verdict | What it rests on |
 |---|---|---|
-| **The competency model as a national frame** | Describes 2025 at most; does not explain 2026 | Applied in all seventeen communities in both years; six of nine rose in 2026 under it. 2025 was also the end of a plateau present in *every* subject and cannot be separated from it. The frame alone therefore explains nothing about 2026. |
-| **The competency model as the EHU implemented it** | First-order candidate; the strongest surviving explanation of 2026 | The frame was national, the implementation was not. On a reform-intensity index built from four independent axes — optionality withdrawn, competency marks, substantive context, contextualised marks — Euskadi scores $+1.76$ and is first of nine; the next community is $+0.39$. Five of the six communities that *rose* in 2026 have **negative** indices. Across the nine, $r = -0.70$, $p = 0.035$; drop Euskadi and the relation collapses to $r = -0.40$, $p = 0.33$ — which is to say the relation *is* Euskadi, and this row records one community moving alone, not a national dose-response [Ch. 11](11-exam-content.qmd#how-far-each-paper-moved). |
-| **The syllabus reopened, and what the schools were teaching** | Plausible, unmeasured, and untangled from the row above | The narrowing was *de facto*: no document ever excluded mirrors, standing waves or nuclear decay — they were simply never set, and fifteen years of never being set teaches a school more than any syllabus does. 2026 reopened them. The channel is **preparation**, not an unavoidable item: in June the new sub-topics sat in *optional* slots, which bounds the effect and makes option take-up (data request 5) the way to measure it. No published aggregate separates this from the row above; both would leave the same trace [Ch. 12](12-ehu-paper-history.qmd). |
-| **The 2026 paper as a format** | Consistent with everything; first-order variable | Length, optionality and genre, set apart from the competency question above: reading load $+45$ %, to about 1 430 words of statement; choice halved, worth $-0.26$ by simulation; and it is the only paper of the nine that changed genre. The whole distribution moved, and the damage is in Física and Matemáticas II. |
-| **Marking severity** | Possible; the *timing* fits; bounded, not measured | 2026 is the second year of the deductions and of the linguistic component, and "cautious in year one, full in year two" predicts exactly the $+0.03$ / $-1.65$ pattern. But a *general* severity would move all eight subjects, and Lengua Castellana rose. A severity confined to the seven **numerical** deductions fits the pattern and is confounded with the format change [Ch. 6](06-interpretation.qmd#marking-severity). |
-| **Tribunal severity** | Possible, unmeasured, acknowledged by EHU | The rector reported significant variation between panels in Física; the 6 July deck gave tribunal ranges for three other subjects and not for Física. |
-| **A weaker cohort** | Real outside the PAU, small inside it | PISA shows a decade-long Basque decline the PAU sees only in Física and only from 2025. But 5.6 % *fewer* candidates sat Física in 2026, so composition works against the fall, not for it. |
-| **Weighting rules make Física dispensable** | Plausible slow driver, not a 2026 trigger | Fits a slow erosion, not a fall of a point and a half. |
-| **Language or network bias** | No evidence either way for Física | Only the Euskara II analysis was run. |
+| **H1a** · The competency model as a national frame | Describes 2025 at most; does not explain 2026 | Applied in all seventeen communities in both years; six of nine rose in 2026 under it. 2025 was also the end of a plateau present in *every* subject and cannot be separated from it. The frame alone therefore explains nothing about 2026. |
+| **H1b** · The competency model as the EHU implemented it | First-order candidate; the strongest surviving explanation of 2026 | The frame was national, the implementation was not. On a reform-intensity index built from four independent axes — optionality withdrawn, competency marks, substantive context, contextualised marks — Euskadi scores $+1.76$ and is first of nine; the next community is $+0.39$. Five of the six communities that *rose* in 2026 have **negative** indices. Across the nine, $r = -0.70$, $p = 0.035$; drop Euskadi and the relation collapses to $r = -0.40$, $p = 0.33$ — which is to say the relation *is* Euskadi, and this row records one community moving alone, not a national dose-response [Ch. 11](11-exam-content.qmd#how-far-each-paper-moved). |
+| **H1c** · The syllabus reopened, and what the schools were teaching | Plausible, unmeasured, and untangled from the row above | The narrowing was *de facto*: no document ever excluded mirrors, standing waves or nuclear decay — they were simply never set, and fifteen years of never being set teaches a school more than any syllabus does. 2026 reopened them. The channel is **preparation**, not an unavoidable item: in June the new sub-topics sat in *optional* slots, which bounds the effect and makes option take-up (data request 5) the way to measure it. No published aggregate separates this from the row above; both would leave the same trace [Ch. 12](12-ehu-paper-history.qmd). |
+| **H2** · The 2026 paper as a format — length, optionality, genre | Consistent with everything; first-order variable | Length, optionality and genre, set apart from the competency question above: reading load $+45$ %, to about 1 430 words of statement; choice halved, worth $-0.26$ by simulation; and it is the only paper of the nine that changed genre. The whole distribution moved, and the damage is in Física and Matemáticas II. |
+| **H2b** · Marking severity | Possible; the *timing* fits; bounded, not measured | 2026 is the second year of the deductions and of the linguistic component, and "cautious in year one, full in year two" predicts exactly the $+0.03$ / $-1.65$ pattern. But a *general* severity would move all eight subjects, and Lengua Castellana rose. A severity confined to the seven **numerical** deductions fits the pattern and is confounded with the format change [Ch. 6](06-interpretation.qmd#marking-severity). |
+| **H3** · Tribunal severity | Possible, unmeasured, acknowledged by EHU | The rector reported significant variation between panels in Física; the 6 July deck gave tribunal ranges for three other subjects and not for Física. |
+| **H4** · A weaker cohort | Real outside the PAU, small inside it | PISA shows a decade-long Basque decline the PAU sees only in Física and only from 2025. But 5.6 % *fewer* candidates sat Física in 2026, so composition works against the fall, not for it. |
+| **H5** · Weighting rules make Física dispensable | Plausible slow driver, not a 2026 trigger | Fits a slow erosion, not a fall of a point and a half. |
+| **H6** · Language or network bias | No evidence either way for Física | Only the Euskara II analysis was run. |
 
-: The explanations with verdicts [Ch. 6](06-interpretation.qmd). {#tbl-s-hyp tbl-colwidths="[22,20,58]"}
+: The explanations with verdicts. The labels are the hypothesis numbers used throughout the dossier and in the briefing table [Ch. 6](06-interpretation.qmd). {#tbl-s-hyp tbl-colwidths="[26,18,56]"}
 
 ## Two things the meeting will ask about
 
@@ -248,7 +251,7 @@ Shorter is not easier. The verbs, the levels and the rubric are the same; what g
 
 ## Where the reading actually is
 
-![**a** — each item's statement in 2025 and 2026 against the 2027 target band; the obligatory competency items are in red. **b** — the two reconstructions of the 2026 electromagnetic problem, which share only their endpoint. **c** — what the paper costs to read and to answer, and what the target would cost.](../plots/fig29_statement_budget.png){#fig-s-budget .column-page}
+![**a** — each item's statement in 2025 and 2026 against the 2027 target band; the obligatory competency items are in red. **b** — the two reconstructions of the 2026 electromagnetic problem, which share only their endpoint. **c** — what the paper costs to read and to answer, and what the target would cost.](../plots/fig29_statement_budget.png){#fig-s-budget}
 
 Three facts that only appear when the paper is counted item by item, and the third was found last and changes what "shorter" has to mean.
 

@@ -52,7 +52,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from plot_style import C, GRID as GRIDLINE, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import T, C, GRID as GRIDLINE, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -249,9 +249,9 @@ def main() -> None:
     ax.axvline(sev["quantitative"]["mean"], color=C["orange"], lw=1.0, ls="--")
     ax.axvline(sev["verbal"]["mean"], color=C["blue"], lw=1.0, ls="--")
     ax.set_xlim(-2.0, 0.65)
-    ax.set_xlabel("change in the subject mean, 2025 → 2026 (marks)")
-    ax.set_title("(a) One sitting, eight subjects\nquantitative (orange) vs the rest "
-                 "(blue)", loc="left")
+    ax.set_xlabel(T("change in the subject mean, 2025 → 2026 (marks)"))
+    ax.set_title(T("(a) One sitting, eight subjects\nquantitative (orange) vs the rest ")
+                 + T("(blue)"), loc="left")
     ax.grid(axis="y", visible=False)
 
     # (b) the 5x3 panel: Física against the community's own core mean
@@ -269,20 +269,20 @@ def main() -> None:
                     fontsize=8, color=INK if r == PV else INK2)
     lim = [-1.35, 0.85]
     ax.plot(lim, lim, color=GRIDLINE, lw=1.0, ls=":", zorder=1)
-    ax.text(0.30, 0.34, "Física = own mean", fontsize=8, color=MUTED, rotation=38)
+    ax.text(0.30, 0.34, T("Física = own mean"), fontsize=8, color=MUTED, rotation=38)
     ax.set_xlim(*lim); ax.set_ylim(-1.75, 1.35)
     ax.axhline(0, color=INK, lw=0.8); ax.axvline(0, color=INK, lw=0.8)
-    ax.set_xlabel("community's mean change over the three shared subjects (marks)")
-    ax.set_ylabel("change in Física (marks)")
-    ax.set_title("(b) Euskadi is low on both axes\nthe fall is not only Física's",
+    ax.set_xlabel(T("community's mean change over the three shared subjects (marks)"))
+    ax.set_ylabel(T("change in Física (marks)"))
+    ax.set_title(T("(b) Euskadi is low on both axes\nthe fall is not only Física's"),
                  loc="left")
 
     # (c) the exact four-term split
     ax = axes[2]
-    terms = [("Field core\n(3 subjects)", split["field_core"], MUTED),
-             ("Field Física\npremium", split["field_fisica_premium"], C["aqua"]),
-             ("Euskadi-common\ndeviation", split["euskadi_common"], C["violet"]),
-             ("Física-specific\ndeviation", split["fisica_specific"], C["red"])]
+    terms = [(T("Field core\n(3 subjects)"), split["field_core"], MUTED),
+             (T("Field Física\npremium"), split["field_fisica_premium"], C["aqua"]),
+             (T("Euskadi-common\ndeviation"), split["euskadi_common"], C["violet"]),
+             (T("Física-specific\ndeviation"), split["fisica_specific"], C["red"])]
     x = np.arange(4)
     ax.bar(x, [t[1] for t in terms], color=[t[2] for t in terms], width=0.62)
     for xx, (_, v, _) in zip(x, terms):
@@ -291,12 +291,12 @@ def main() -> None:
     ax.set_xticks(x); ax.set_xticklabels([t[0] for t in terms], fontsize=8)
     ax.axhline(0, color=INK, lw=0.9)
     ax.set_ylim(-1.45, 1.05)
-    ax.set_ylabel("marks")
-    ax.set_title(f"(c) The four terms sum to {split['total']:+.2f}\n"
-                 "exact identity, no fitting", loc="left")
+    ax.set_ylabel(T("marks"))
+    ax.set_title(T("(c) The four terms sum to {t:+.2f}\nexact identity, no fitting")
+                 .format(t=split["total"]), loc="left")
     ax.grid(axis="x", visible=False)
 
-    fig.suptitle("Figure 26 — Is the 2026 fall Física's, or Euskadi's?", x=0.005,
+    fig.suptitle(T("Figure 26 — Is the 2026 fall Física's, or Euskadi's?"), x=0.005,
                  ha="left", fontsize=12, color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.95))
     _save(fig, "fig26_subject_decomposition", PLOTS)

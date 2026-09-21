@@ -551,3 +551,72 @@ Implemented in `scripts/03_plots.py` (`axvspan(2019.5, 2021.5, ...)`, label rece
 2020.5, model label moved to 2023.0), both languages regenerated, and the caption corrected in
 all six places that carry it: `02-euskadi.qmd`, `14-briefing.qmd`, `14-briefing-es.qmd`,
 `15-synthesis.qmd`, `15-synthesis-es.qmd`, `onepage.qmd`.
+
+---
+
+### R11 · Four remarks in one message, 21 September {#r11}
+
+**Remark.** "Smaller the font size of the right side, En esta página!! · In the front
+matter, take into account the changes we are doing; the document started on the 19th,
+if I am not wrong, but today we are actualizing, every actualization should be taken
+into account · I do not like the effect of the figures taking all the room in the
+screen, I prefer as it was previously · Many figures in the briefing are still in
+English · In Table 4 you have dropped the labels for the hypothesis, H1 etc."
+
+**Status:** **all four implemented**, 21 September.
+
+#### a. The index
+
+10 px to **9 px**, heading 10.5 to **8.5**. Taken together with the body column at
+880px, the index now occupies about a third less of the eye's field than it did
+yesterday.
+
+#### b. The front matter
+
+Correction to the premise, on the record: the dossier opened on **18 September**, not
+the 19th — `logs/WORK_LOG.md` and `data/` timestamps both say so; the 19th is when the
+paper audits and the first external audit were added, which is probably the day being
+remembered.
+
+Every document now carries `date-modified` in its front matter, and Quarto prints it
+under "Fecha de modificación" beside the publication date. The seven documents changed
+today carry 2026-09-21; the rest keep the date of their own last change, so the field
+means something rather than being stamped uniformly. The four documents the
+coordination reads also carry a short **"Esta versión"** paragraph naming what each
+day's revision did, with links to the work log and the record of remarks.
+
+#### c. The figures
+
+`.column-page` removed from all six figures that carried it. They return to the body
+column — which is itself 160px wider than it was yesterday, so they lose less than the
+class suggested. The PDF text block was widened to compensate (left 22→20mm,
+right 64→58mm, margin column 50→44mm), since in the PDF the class was doing real work.
+
+#### d. The Spanish figures
+
+This is R1, outstanding since 20 September, and it is now done for every figure the
+Spanish documents actually use: **fig03, fig10, fig23, fig25, fig26, fig28, fig29**,
+joining fig01.
+
+The mechanism is worth recording because it decides whether the two versions can drift.
+Each script is run twice — once as it always has been, once with `PAU_LANG=es` — and
+`plot_style.T()` looks each display string up in `scripts/es_strings.py`. The figure
+code is untouched apart from wrapping its strings, so **the two versions cannot differ
+in anything but wording**: same data, same fits, same layout, same file. A string with
+no glossary entry falls through unchanged, which is what we want for numerals,
+community names and file paths. `save()` refuses to write an `_es` file for any figure
+not on the list the Spanish documents include, so no `_es` file can exist with English
+still in it.
+
+Three labels had to be shortened rather than translated literally, because Spanish runs
+about a fifth longer than English and at full length they collided with the neighbouring
+panel: the four term labels in fig26c, and both axis labels in fig28b. The shortenings
+are recorded as comments in the glossary.
+
+#### e. Table 4
+
+The labels were dropped when the single row became three — an oversight, not a decision.
+Restored, and **aligned with the briefing's numbering** rather than invented afresh:
+H1a, H1b, H1c, H2, H2b (marking severity), H3 (tribunal severity), H4, H5, H6. Marking
+severity is H2b and not H3 because in chapter 6 H3 has always been the tribunals; the
+briefing and the synthesis now use one numbering, which they did not before this round.

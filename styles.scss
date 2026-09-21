@@ -124,12 +124,13 @@ p,li { max-width: 78ch; }
 
 // R7 · the right-hand "In this page" was set at the same 12 px as its own heading,
 // so the heading did not read as a heading and the block competed with the body.
-// R10 · taken down again, to 10 px, in the same pass that widened the body column
+// R10 · taken down again — to 10 px, then to 9 px on a second look — in the same
+// pass that widened the body column
 // to 880px (_quarto.yml). The two changes work together: the running text gains
 // room, the index beside it recedes, and long entries stop wrapping to three
 // lines now that the margin is doing less work at a smaller size.
-#TOC { font-size: 10px; line-height: 1.55; }
-#TOC h2 { font-size: 9.5px; font-weight: 600; color: var(--zs-heading); border: 0;
+#TOC { font-size: 9px; line-height: 1.5; }
+#TOC h2 { font-size: 8.5px; font-weight: 600; color: var(--zs-heading); border: 0;
           letter-spacing: .04em; text-transform: none; }
 #TOC a { color: var(--zs-muted); border: 0; padding: .25rem 0; }
 #TOC a.active { color: var(--zs-accent) !important; border: 0 !important; }

@@ -39,7 +39,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import T, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -78,8 +78,8 @@ paper_sd_2y = sd_annual * np.sqrt(2)
 band = 1.96 * paper_sd_2y
 
 scenarios = {
-    "2027 paper like 2025's": PAU_2025 + cohort_term,
-    "2027 paper like 2026's": PAU_2026 + cohort_term_from_2026,
+    T("2027 paper like 2025's"): PAU_2025 + cohort_term,
+    T("2027 paper like 2026's"): PAU_2026 + cohort_term_from_2026,
 }
 
 fig, (ax, axb) = plt.subplots(1, 2, figsize=(12.8, 5.2),
@@ -88,7 +88,7 @@ fig, (ax, axb) = plt.subplots(1, 2, figsize=(12.8, 5.2),
 # --- a. the series and the two scenarios -----------------------------------------
 yrs = [y for y in eus.index]
 ax.plot(yrs, [eus.loc[y] for y in yrs], color=C["violet"], lw=1.8, marker="o", ms=5,
-        zorder=3, label="Euskadi Física, ordinary sitting")
+        zorder=3, label=T("Euskadi Física, ordinary sitting"))
 ax.plot([2025, 2026], [PAU_2025, PAU_2026], color=C["red"], lw=1.8, ls=":",
         marker="o", ms=5, zorder=4)
 ax.annotate("2026: 3.99", (2026, PAU_2026), textcoords="offset points",
@@ -102,18 +102,18 @@ for (lab, val), colr, dx in zip(scenarios.items(), [C["aqua"], C["red"]], [-0.28
                 xytext=(12, 0), va="center", fontsize=7.6, color=colr)
 ax.set_xticks(range(2015, 2029, 2))
 ax.set_xlim(2014.4, 2029.6)
-ax.set_xlabel("Year")
-ax.set_ylabel("Mean Física mark, ordinary sitting")
-ax.set_title("a. Two scenarios for 2027; the error bar is the year-to-year term, not a prediction interval")
+ax.set_xlabel(T("Year"))
+ax.set_ylabel(T("Mean Física mark, ordinary sitting"))
+ax.set_title(T("a. Two scenarios for 2027; the error bar is the year-to-year term, not a prediction interval"))
 ax.legend(loc="lower left", fontsize=7.8)
 
 # --- b. the size of each term ----------------------------------------------------
-terms = [("Cohort, from PISA 2025\n(prorated 2022→2025)", abs(cohort_term), C["aqua"]),
-         ("Decade of cohort drift\n(PISA 2012→2025, full)",
+terms = [(T("Cohort, from PISA 2025\n(prorated 2022→2025)"), abs(cohort_term), C["aqua"]),
+         (T("Decade of cohort drift\n(PISA 2012→2025, full)"),
           abs((pv[2025] - pv[2012]) / SD_PISA * SD_PAU), C["violet"]),
-         ("Everything else, one year\n(Euskadi's own year-to-year SD)", sd_annual, MUTED),
-         ("Everything else, 2025→2027\n(95 % band, random-walk assumption)", band, INK2),
-         ("What 2026 actually did\nin a single year", 1.48, C["red"])]
+         (T("Everything else, one year\n(Euskadi's own year-to-year SD)"), sd_annual, MUTED),
+         (T("Everything else, 2025→2027\n(95 % band, random-walk assumption)"), band, INK2),
+         (T("What 2026 actually did\nin a single year"), 1.48, C["red"])]
 ypos = np.arange(len(terms))[::-1]
 for y, (lab, val, colr) in zip(ypos, terms):
     axb.barh([y], [val], color=colr, height=0.6, lw=0)
@@ -121,23 +121,23 @@ for y, (lab, val, colr) in zip(ypos, terms):
                  fontsize=8, color=colr)
 axb.set_yticks(ypos)
 axb.set_yticklabels([t[0] for t in terms], fontsize=7.6)
-axb.set_xlabel("Effect on the mean Física mark")
+axb.set_xlabel(T("Effect on the mean Física mark"))
 axb.set_xlim(0, 3.1)
-axb.set_title("b. Why the estimate cannot be sharpened")
+axb.set_title(T("b. Why the estimate cannot be sharpened"))
 axb.grid(axis="y", visible=False)
-axb.annotate("the cohort signal is %.1f times smaller\nthan the band it has to be read against"
+axb.annotate(T("the cohort signal is %.1f times smaller\nthan the band it has to be read against")
              % (band / abs(cohort_term)),
              xy=(0.97, 0.97), xycoords="axes fraction", fontsize=7.8, color=INK2,
              ha="right", va="top")
 
 fig.text(0.005, 0.015,
-         "PISA 2025 (OECD, published 8 September 2026; INEE Spanish tables, figure 2.1) "
+         T("PISA 2025 (OECD, published 8 September 2026; INEE Spanish tables, figure 2.1) "
          "gives País Vasco 458.5 in science against Spain's 477.1 — a fall of 21.0 points "
          "from 2022.\nThe cohort term converts that at one standard deviation of PISA to "
          "one of the PAU, the relation figure 22 could not reject and could not establish, "
          "prorated over the\ntwo years between the PAU cohorts. The paper term is the "
          "standard deviation of Euskadi's own year-to-year change excluding 2026. Neither "
-         "scenario is a prediction.",
+           "scenario is a prediction."),
          fontsize=7, color=MUTED, linespacing=1.5)
 fig.subplots_adjust(bottom=0.26, top=0.90, left=0.065, right=0.985)
 _save(fig, "fig23_pau2027", P, dpi=200)
