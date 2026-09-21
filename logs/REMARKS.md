@@ -169,8 +169,9 @@ el nivel predice una caída de tres… Como movimiento de esa medida es el segun
 de las 170 transiciones del panel nacional."* — "I do not understand very well that text;
 where are those numbers coming from?"
 
-**Status:** open. **Every number is right and traceable; the paragraph is badly written, and
-the confusion is the paragraph's fault, not the reader's.**
+**Status:** **implemented**, 21 September, together with R6 — the fix *is* an aside, so
+rewriting the paragraph and building the margin were one job. Every number was right and
+traceable; the paragraph was badly written, and the confusion was the paragraph's fault.
 
 **Answer, part one: the numbers.** All from `data/analysis/decomposition.json`,
 `typology.pais_vasco.2024`, computed by `scripts/21_decay_decomposition.py`:
@@ -256,7 +257,9 @@ since the figure quoted is the smaller of the two.
 those explanations coming from the methods etc. that you have described in the log — take
 them as asides, give them room in the síntesis, to the right."
 
-**Status:** open.
+**Status:** **implemented**, 21 September. Decision taken: **the widened PDF with true side
+notes**. The mechanism is built and used once, in the 2024 paragraph of both synthesis
+documents; every later aside reuses it.
 
 **Answer.** Agreed, and it is the right instrument for exactly this material. The síntesis
 is written to be read before a meeting, so a paragraph cannot stop to define a locus or a
@@ -284,7 +287,7 @@ is written, because the two are marked up the same way but sized differently.
 **Remark.** "By the way, a style change for the website: diminish the font size of the text
 in the *In this page*."
 
-**Status:** open. Independent of every other item; can be done at any point.
+**Status:** **implemented**, 21 September, at the proposed sizes.
 
 **Answer.** The rule is in `styles.scss`: `#TOC { font-size: 12px; line-height: 1.65; }` with
 `#TOC h2 { font-size: 12px; }` for the heading itself. Both are 12 px, which is why the
@@ -356,3 +359,44 @@ taken as 2020 on his instruction. The dossier's own anomaly, however, is **2021*
 89.6 per cent, the highest pair in the sixteen-year series, against 6.45 and 75.2 in 2020.
 If 2021 was also sat under pandemic arrangements, the darker tint should cover both years,
 and the series' own shape says it probably should. This is his to settle.
+
+---
+
+## R4 + R6 + R7, 21 September
+
+**R4 — the 2024 paragraph, both languages.** It quoted three quantities and defined none.
+It now does four things it did not do.
+
+- It says what moved: the 8–10 band **fell 9.0 points where a fall of 0.21 in the mean
+  normally costs 3.1**, and the pass rate **rose 2.3 where it would normally have fallen
+  2.8**. Observed against expected, in both cases, rather than a bare number.
+- It **names the third quantity**. The rank of 2 belongs to neither of the above: it belongs
+  to the *conditional top-band residual* — how much top band a community has given its mean,
+  against the other communities that year — which moved $-3.08$ standard deviations. The
+  paragraph now introduces it before ranking it. The old sentence said "as a move of that
+  measure" with no antecedent, in both languages.
+- It gives **both ranks**: second of 170 on that residual, eleventh of 170 on the combined
+  size of the two departures from the locus. The old text quoted the dramatic one alone.
+- The method goes to the **margin**, not into the sentence: what the locus is, the four
+  observed-against-expected figures, what the conditional residual is, why 170 and not 187,
+  and the source file.
+
+**R6 — the mechanism.** Quarto's `.column-margin` is used, so one piece of markup serves both
+outputs, but neither output worked out of the box and both needed solving.
+
+- *PDF.* The page is widened — `left=22mm, right=64mm, marginparwidth=50mm` — and the
+  síntesis figures are marked `.column-page` so they span body **and** margin; without that
+  the text column narrows from 162 mm to 124 mm and figure 1's annotations become illegible
+  in print. Two consecutive notes then printed **on top of each other**: `marginnote`
+  deliberately bypasses the margin-par mechanism, so `marginfix`, which manages `\marginpar`,
+  could not see them. `\marginnote` is redirected to `\marginpar` and `marginfix` keeps the
+  notes in order and apart. Long code paths were also overrunning the 50 mm column and are
+  shortened, with the full paths left in Chapter 10.
+- *HTML.* Quarto places `.column-margin` in the page grid's right margin — which is exactly
+  where this theme keeps the sticky table of contents, so the two would have ridden over each
+  other on scroll. The note is brought back into the text column and floated right, with
+  `clear: right`, and falls back to a plain bordered block below 992 px. The PDF is untouched
+  by that, the rule being HTML-only.
+
+**R7 — the "In this page".** Entries 12 px → **11 px**, line-height 1.65 → 1.6; the heading
+12 px → **10.5 px** with letter-spacing, so it reads as a label and not as another entry.

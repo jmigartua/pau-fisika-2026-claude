@@ -87,8 +87,41 @@ p,li { max-width: 78ch; }
 #quarto-sidebar .sidebar-section { padding-left: 0; }
 .sidebar-item-toggle { color: var(--zs-muted); }
 #quarto-margin-sidebar { background: transparent; padding-top: 2.8rem; }
-#TOC { font-size: 12px; line-height: 1.65; }
-#TOC h2 { font-size: 12px; font-weight: 600; color: var(--zs-heading); border: 0; }
+
+// R6 · method asides. Quarto places `.column-margin` in the page grid's right
+// margin, which is exactly where this theme keeps the sticky table of contents;
+// the two would ride over each other as the page scrolls. The note is therefore
+// brought back inside the text column and floated right, so it still reads as a
+// side note, can never touch the TOC, and falls back to a plain bordered block on
+// a narrow screen. The PDF is untouched — there it is a real \marginnote in a
+// widened page, which is what the coordination chose.
+.column-margin.column-container {
+  grid-column: body-content-start / body-content-end !important;
+  float: right;
+  clear: right;
+  width: 15.5rem;
+  max-width: 44%;
+  margin: .2rem 0 1rem 1.5rem;
+  padding: .1rem 0 .1rem .85rem;
+  border-left: 2px solid var(--zs-line);
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--zs-muted);
+}
+.column-margin.column-container strong { color: var(--zs-fg); font-weight: 600; }
+.column-margin.column-container code { font-size: 10.5px; }
+.column-margin.column-container p { margin-bottom: .5rem; }
+.column-margin.column-container p:last-child { margin-bottom: 0; }
+@media (max-width: 991.98px) {
+  .column-margin.column-container {
+    float: none; width: auto; max-width: none; margin: 1rem 0;
+  }
+}
+// R7 · the right-hand "In this page" was set at the same 12 px as its own heading,
+// so the heading did not read as a heading and the block competed with the body.
+#TOC { font-size: 11px; line-height: 1.6; }
+#TOC h2 { font-size: 10.5px; font-weight: 600; color: var(--zs-heading); border: 0;
+          letter-spacing: .04em; text-transform: none; }
 #TOC a { color: var(--zs-muted); border: 0; padding: .25rem 0; }
 #TOC a.active { color: var(--zs-accent) !important; border: 0 !important; }
 .quarto-page-breadcrumbs { font-size: 11.9px; color: var(--zs-muted); }

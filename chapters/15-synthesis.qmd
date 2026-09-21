@@ -19,7 +19,12 @@ format:
     monofont: "Latin Modern Mono"
     fontsize: 10.5pt
     geometry:
-      - margin=24mm
+      - left=22mm
+      - right=64mm
+      - top=24mm
+      - bottom=26mm
+      - marginparwidth=50mm
+      - marginparsep=6mm
     number-sections: true
     toc: true
     toc-depth: 2
@@ -32,6 +37,18 @@ format:
         \usepackage{longtable}
         \setlength{\emergencystretch}{3em}
         \KOMAoptions{headings=small}
+        \usepackage{marginnote}
+        % Two consecutive margin notes printed with \marginnote sit on top of each
+        % other: marginnote deliberately bypasses the margin-par mechanism, so
+        % marginfix — which manages \marginpar — cannot see them. Quarto emits
+        % \marginnote, so \marginnote is redirected to \marginpar and marginfix
+        % then keeps the notes in order and apart.
+        \usepackage{marginfix}
+        \setlength{\marginparpush}{8pt}
+        \newcommand{\pauasidefont}{\footnotesize\raggedright\color{black!62}%
+          \setlength{\parskip}{.45em}\setlength{\emergencystretch}{2em}%
+          \hyphenpenalty=50 \exhyphenpenalty=50 \tolerance=9999}
+        \renewcommand{\marginnote}[2][]{\marginpar{\pauasidefont #2}}
 ---
 
 ::: {.callout-important title="On one page"}
@@ -90,9 +107,27 @@ A one-year fall of 1.48 is rare but not unprecedented — seven of the 170 year-
 
 ## Three events, not one
 
-![Física in the Basque university-entrance exam, ordinary sitting, 2010–2026. **The ribbon carries two separate facts on the same axis**: the *law* under which the exam was set, and the *paper model* actually used. They do not coincide — LOMCE governed from 2017 but the paper did not change until 2020, and it changed then for COVID and not for the law — which is why they are two rows and not one band; the marked interval under them spans those two years. `L1` and `L2` are the two LOMLOE papers, keyed beneath. **COVID is one sitting and one model**: the darker tint is the 2020 sitting itself, the lighter one the four-of-eight paper it forced, which was then kept through 2024. **The grey line is the Ministry cube** for all seventeen communities and stops at 2025, because the 2026 cube is not published until June 2027. **The green marks** are this study's own cross-section of the nine communities that have published a 2026 result — a different population, and drawn detached for that reason. **The two arrows on the right are changes, not levels**, and both leave the same point, Euskadi's own 2025 mean of 5.47. The **blue** arrow is Euskadi's own change to 3.99, $-1.48$. The **green** arrow is the change of the nine-community field, $+0.17$, drawn from that same origin so that its head at 5.64 reads as *where Física would have ended had it moved with the field*. The bracket between the two heads is therefore the Basque-specific component, $-1.65$, exactly. The distance between the two 2026 **levels** is 1.87 and is *not* that component, because the two series did not start level in 2025 (5.47 against 5.69). The field is the mean of the nine **including** Euskadi, which is the conservative reading; against the eight others alone the component would be $-1.86$. The three values are the `total`, `common` and `basque_specific` terms of `data/analysis/decomposition.json`, computed by `scripts/21_decay_decomposition.py`.](../plots/fig01_euskadi_series.png){#fig-s-series}
+![Física in the Basque university-entrance exam, ordinary sitting, 2010–2026. **The ribbon carries two separate facts on the same axis**: the *law* under which the exam was set, and the *paper model* actually used. They do not coincide — LOMCE governed from 2017 but the paper did not change until 2020, and it changed then for COVID and not for the law — which is why they are two rows and not one band; the marked interval under them spans those two years. `L1` and `L2` are the two LOMLOE papers, keyed beneath. **COVID is one sitting and one model**: the darker tint is the 2020 sitting itself, the lighter one the four-of-eight paper it forced, which was then kept through 2024. **The grey line is the Ministry cube** for all seventeen communities and stops at 2025, because the 2026 cube is not published until June 2027. **The green marks** are this study's own cross-section of the nine communities that have published a 2026 result — a different population, and drawn detached for that reason. **The two arrows on the right are changes, not levels**, and both leave the same point, Euskadi's own 2025 mean of 5.47. The **blue** arrow is Euskadi's own change to 3.99, $-1.48$. The **green** arrow is the change of the nine-community field, $+0.17$, drawn from that same origin so that its head at 5.64 reads as *where Física would have ended had it moved with the field*. The bracket between the two heads is therefore the Basque-specific component, $-1.65$, exactly. The distance between the two 2026 **levels** is 1.87 and is *not* that component, because the two series did not start level in 2025 (5.47 against 5.69). The field is the mean of the nine **including** Euskadi, which is the conservative reading; against the eight others alone the component would be $-1.86$. The three values are the `total`, `common` and `basque_specific` terms of `data/analysis/decomposition.json`, computed by `scripts/21_decay_decomposition.py`.](../plots/fig01_euskadi_series.png){#fig-s-series .column-page}
 
-**2024 changed the shape and barely touched the level.** The mean moved 0.21 — nothing, in a series whose year-to-year standard deviation is 0.85. But the 8–10 band fell nine points where the level predicts three, and the pass rate *rose* two where the level predicts a fall of three. Fewer at the top, more just over the line. As a move of that measure it is the second-most-negative of the 170 transitions in the national panel, and it happened **on the last paper of the old format**, a year before the first LOMLOE paper. Every test in this dossier that works on the mean is blind to it, and all of them are right: a mean cannot see candidates leave the top when others arrive from below.
+**2024 changed the shape and barely touched the level.** The mean moved $-0.21$ — nothing, in a series whose year-to-year standard deviation is 0.85. What moved was the distribution. The 8–10 band **fell 9.0 points** where a drop of 0.21 in the mean normally costs 3.1; and the pass rate **rose 2.3** where it would normally have fallen 2.8. Fewer at the top, more just over the line, with the mean almost still.
+
+::: {.column-margin}
+**Where those "normally"s come from.** From a *locus*: a curve fitted across all 187 community-year observations in the panel, giving each band's share as a function of the mean. Evaluated at the 2023 mean and at the 2024 mean, the difference is what an ordinary distribution would have done on a fall of 0.21.
+
+Observed against expected, in percentage points: the 8–10 band, $-9.03$ against $-3.11$; the pass rate, $+2.28$ against $-2.76$.
+:::
+
+**And a third number, which is the one that carries the rank.** One measure sums that mismatch into a single figure: the **conditional top-band residual** — how much top band a community has *given its mean*, set against the other communities in the same year. Euskadi's moved **$-3.08$ standard deviations** between 2023 and 2024. That is the **second-most-negative of the 170 transitions** in the national panel, behind Cantabria 2025.
+
+::: {.column-margin}
+**Two ranks, not one.** On the conditional residual, 2024 is **2nd of 170**. On the combined size of the two departures from the locus, it is **11th of 170**. Both measures are reasonable and this document gives both.
+
+**Why 170 and not 187.** Seventeen communities give eleven years of data — 187 observations — but only ten steps from one year to the next: $17 \times 10 = 170$.
+
+Source: `typology.pais_vasco.2024`, in `decomposition.json`, computed by `21_decay_decomposition.py` (full paths in ch. 10).
+:::
+
+Both things should be said together: **second on one measure, eleventh on another, and large on both.** And it happened **on the last paper of the old format**, a year before the first LOMLOE paper. Every test in this dossier that works on the mean is blind to it, and all of them are right: a mean cannot see candidates leave the top when others arrive from below.
 
 **2025 changed the level, and the change was the country's.** Euskadi lost 0.62; the nine-community field lost 0.65. Read against the field there is nothing Basque in 2025 at all.
 
@@ -100,7 +135,7 @@ A one-year fall of 1.48 is rare but not unprecedented — seven of the 170 year-
 
 ## What the 1.65 is made of
 
-![**a** — the eight Basque subjects, with the three the numerical marking deductions can reach in orange. **b** — each community's Física change against its own mean over the three shared subjects. **c** — the four terms of the split, which sum to the observed $-1.48$ by construction.](../plots/fig26_subject_decomposition.png){#fig-s-subj}
+![**a** — the eight Basque subjects, with the three the numerical marking deductions can reach in orange. **b** — each community's Física change against its own mean over the three shared subjects. **c** — the four terms of the split, which sum to the observed $-1.48$ by construction.](../plots/fig26_subject_decomposition.png){#fig-s-subj .column-page}
 
 Euskadi published eight subjects and four comparator communities published three of the same ones, which gives a balanced panel on which the change splits exactly, with no modelling:
 
@@ -213,7 +248,7 @@ Shorter is not easier. The verbs, the levels and the rubric are the same; what g
 
 ## Where the reading actually is
 
-![**a** — each item's statement in 2025 and 2026 against the 2027 target band; the obligatory competency items are in red. **b** — the two reconstructions of the 2026 electromagnetic problem, which share only their endpoint. **c** — what the paper costs to read and to answer, and what the target would cost.](../plots/fig29_statement_budget.png){#fig-s-budget}
+![**a** — each item's statement in 2025 and 2026 against the 2027 target band; the obligatory competency items are in red. **b** — the two reconstructions of the 2026 electromagnetic problem, which share only their endpoint. **c** — what the paper costs to read and to answer, and what the target would cost.](../plots/fig29_statement_budget.png){#fig-s-budget .column-page}
 
 Three facts that only appear when the paper is counted item by item, and the third was found last and changes what "shorter" has to mean.
 
