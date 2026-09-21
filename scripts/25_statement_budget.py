@@ -38,7 +38,7 @@ from pathlib import Path
 
 import numpy as np
 
-from plot_style import T, C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import panels3, T, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -264,7 +264,7 @@ def main() -> None:
     (TABLES / "statement_budget.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
     # ---- figure ----------------------------------------------------------------
-    fig, axes = plt.subplots(1, 3, figsize=(13.4, 4.5))
+    fig, axes = panels3(13.4, 4.5)
 
     # (a) item by item, both years, against the band
     ax = axes[0]

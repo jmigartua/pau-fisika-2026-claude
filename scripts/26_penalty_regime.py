@@ -47,7 +47,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import panels3, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -307,7 +307,7 @@ def search(void_mode="cascade", sigma=SIGMA_ITEM, subtask=None, apartado_of=None
 
 def draw(grid, inverted_ded, best_full, best_indep, harder_add):
     """Figure 30. Split out so it can be redrawn from the JSON alone."""
-    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.7))
+    fig, axes = panels3(13.6, 4.7)
 
     ax = axes[0]
     xs = np.array([g["deductions_per_script"] for g in grid])

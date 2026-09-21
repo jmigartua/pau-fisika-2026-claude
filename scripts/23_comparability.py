@@ -40,7 +40,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import panels3, C, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -226,7 +226,7 @@ def main() -> None:
     (TABLES / "reform_intensity.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
     # ---- figure ----------------------------------------------------------------
-    fig, axes = plt.subplots(1, 3, figsize=(13.4, 4.6))
+    fig, axes = panels3(13.4, 4.6)
 
     # (a) the four movements, stacked as a slope chart of optionality
     ax = axes[0]

@@ -8,12 +8,6 @@ project:
     - /plots/*
     - /data/analysis/*.csv
     - /data/*.csv
-    # docs/ is the published copy of this very site. Without these exclusions
-    # Quarto sweeps it into _site, `cp -R _site docs` then nests it inside itself,
-    # and the next render copies the nested copy back in — one extra level of
-    # docs/docs/docs per publish. It had reached seventeen.
-    - "!/docs/"
-    - "!/_to_delete/"
 
 website:
   title: "PAU Física 2026"
@@ -84,6 +78,11 @@ website:
           - href: chapters/07-literature.qmd
             text: "Literature & regulation"
             icon: journal-text
+      - section: Paper
+        contents:
+          - href: chapters/17-paper.qmd
+            text: "Decomposition and identification"
+            icon: file-earmark-text
       - section: Briefing
         contents:
           - href: chapters/15-synthesis.qmd

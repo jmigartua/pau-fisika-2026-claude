@@ -299,6 +299,44 @@ def phantom_minus(values, decimals=2):
 # community names and file paths.
 LANG = os.environ.get("PAU_LANG", "en")
 
+# --------------------------------------------------------------------- paper mode
+# The paper needs the same figures at page proportions. Reimplementing them would
+# let the two sets drift apart, so the panel code is shared verbatim and only the
+# *layout* changes: PAU_PAPER=1 makes `panels3()` return a 2-over-1 arrangement at
+# text-column width instead of the dossier's 1x3 strip, and `save()` writes into
+# plots/paper/ under a paper-numbered name. Nothing that computes a number is
+# touched, so a panel cannot say one thing in the dossier and another in the paper.
+PAPER = os.environ.get("PAU_PAPER", "") not in ("", "0")
+
+# A4 with the paper's own margins leaves ~163mm of text; 6.5in is that, near enough.
+PAGE_W = 6.5
+
+# Paper figure numbers, keyed by the dossier name the script already passes to save().
+PAPER_NAMES = {
+    "fig25_decomposition": "fig04_locus",          # panels a+b only
+    "fig26_subject_decomposition": "fig05_subjects",
+    "fig27_comparability": "fig06_reform_intensity",
+    "fig30_penalty_regime": "fig07_marking_regime",
+    "fig29_statement_budget": "fig09_statements",
+}
+
+
+def panels3(w, h, height_ratios=(1.0, 0.92), hspace=0.46, wspace=0.34):
+    """Three panels: a 1x3 strip for the dossier, 2-over-1 for the page.
+
+    Callers unpack `axes[0], axes[1], axes[2]` exactly as before.
+    """
+    import matplotlib.pyplot as _plt
+    if not PAPER:
+        return _plt.subplots(1, 3, figsize=(w, h))
+    fig = _plt.figure(figsize=(PAGE_W, PAGE_W * 0.98))
+    gs = fig.add_gridspec(2, 2, height_ratios=list(height_ratios),
+                          hspace=hspace, wspace=wspace)
+    # a dossier panel was w/3 wide; a paper panel is PAGE_W/2
+    fig._pau_scale = (PAGE_W / 2.0) / (w / 3.0)
+    return fig, [fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1]),
+                 fig.add_subplot(gs[1, :])]
+
 # The figures the Spanish documents actually include. A script run with
 # PAU_LANG=es writes only these, so no _es file can exist with English in it.
 ES_FIGURES = {
@@ -328,6 +366,35 @@ def save(fig, name, outdir: Path, dpi=200):
     renders unchanged after regeneration. Under PAU_LANG=es the name gains an
     `_es` suffix, unless the caller has already supplied one.
     """
+    if PAPER:
+        # The panel code sets its type sizes in points for a wide dossier figure.
+        # Dropped into a text-column-width page figure those points are unchanged
+        # while the panels are narrower, so the labels grow relative to the plot and
+        # collide. Every text artist is therefore rescaled by exactly the factor the
+        # panel shrank by, which keeps the type-to-data ratio the panel was designed
+        # with. The running head is dropped: the paper's caption carries it.
+        import matplotlib.text as _mtext
+        k = getattr(fig, "_pau_scale", 0.70)
+        if fig._suptitle is not None:
+            fig._suptitle.set_visible(False)
+        for t in fig.findobj(_mtext.Text):
+            try:
+                t.set_fontsize(t.get_fontsize() * k)
+            except Exception:
+                pass
+        # Axis labels written for a wide panel overrun a narrow one and collide with
+        # the neighbour's. They are wrapped rather than shortened, so the paper and
+        # the dossier still say the same words.
+        import textwrap as _tw
+        for ax in fig.get_axes():
+            for setter, getter in ((ax.set_xlabel, ax.get_xlabel),
+                                   (ax.set_ylabel, ax.get_ylabel)):
+                t = getter()
+                if len(t) > 44 and "\n" not in t:
+                    setter(_tw.fill(t, width=42))
+        fig.set_constrained_layout(False)
+        name = PAPER_NAMES.get(name, name)
+        outdir = outdir.parent / "plots" / "paper" if outdir.name != "plots" else outdir / "paper"
     if LANG == "es":
         base = name[:-3] if name.endswith("_es") else name
         if base not in ES_FIGURES:

@@ -46,6 +46,7 @@ import pandas as pd
 from scipy import stats
 
 from plot_style import T, C, INK, INK2, MUTED, apply_style, save as _save
+import plot_style as _ps
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -282,11 +283,24 @@ for y, r in pv_steps.iterrows():
     ["{}", "{}", "{}", "{}", "{}"]), encoding="utf-8")
 
 # ---------------------------------------------------------------- figure
-fig = plt.figure(figsize=(11.4, 9.2))
-gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 0.82], hspace=0.38, wspace=0.26)
-ax1 = fig.add_subplot(gs[0, 0])
-ax2 = fig.add_subplot(gs[0, 1])
-ax3 = fig.add_subplot(gs[1, :])
+# In paper mode the three panels become two figures: (a, b) are the locus argument
+# and (c) is the attribution budget, and they are cited pages apart. The panel code
+# below is untouched and draws into whichever axes it is handed.
+if _ps.PAPER:
+    fig = plt.figure(figsize=(_ps.PAGE_W, _ps.PAGE_W * 0.52))
+    gsA = fig.add_gridspec(1, 2, wspace=0.30)
+    ax1 = fig.add_subplot(gsA[0, 0])
+    ax2 = fig.add_subplot(gsA[0, 1])
+    fig._pau_scale = (_ps.PAGE_W / 2.0) / (11.4 / 2.0)
+    fig_c = plt.figure(figsize=(_ps.PAGE_W, _ps.PAGE_W * 0.56))
+    fig_c._pau_scale = _ps.PAGE_W / 11.4
+    ax3 = fig_c.add_subplot(111)
+else:
+    fig = plt.figure(figsize=(11.4, 9.2))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 0.82], hspace=0.38, wspace=0.26)
+    ax1 = fig.add_subplot(gs[0, 0])
+    ax2 = fig.add_subplot(gs[0, 1])
+    ax3 = fig.add_subplot(gs[1, :])
 
 # --- a. location against shape, every transition in the panel
 other = S[S.ccaa != PV]
@@ -370,7 +384,12 @@ fig.text(0.005, 0.005,
            "2022–2025 decline in excess of Spain's, one PAU year of it, transferred one-for-one.\nBoth are "
            "differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate."),
          fontsize=7, color=MUTED, linespacing=1.5)
-_save(fig, "fig25_decomposition", PLOTS, dpi=200)
+if _ps.PAPER:
+    # the shared source note belongs with the budget panel in the paper
+    _save(fig, "fig25_decomposition", PLOTS, dpi=200)          # -> fig04_locus
+    _save(fig_c, "fig08_attribution_budget", PLOTS, dpi=200)
+else:
+    _save(fig, "fig25_decomposition", PLOTS, dpi=200)
 
 print(pv_steps[["d_mean", "top_excess", "pass_excess", "dz", "rank_dz"]].round(2).to_string())
 print(f"\nBasque-specific 2026: {basque_2026:+.3f}   2025: {basque_2025:+.3f}   common 2025: {common_2025:+.3f}")

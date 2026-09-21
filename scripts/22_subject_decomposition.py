@@ -52,7 +52,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from plot_style import T, C, GRID as GRIDLINE, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import panels3, T, C, GRID as GRIDLINE, INK, INK2, MUTED, apply_style, save as _save
 
 apply_style()
 import matplotlib.pyplot as plt  # noqa: E402
@@ -231,7 +231,7 @@ def main() -> None:
     (TABLES / "severity_signature.md").write_text("\n".join(s) + "\n", encoding="utf-8")
 
     # ---- figure ----------------------------------------------------------------
-    fig, axes = plt.subplots(1, 3, figsize=(13.2, 4.5))
+    fig, axes = panels3(13.2, 4.5)
 
     # (a) the eight Basque subjects, families coloured
     ax = axes[0]
