@@ -400,3 +400,154 @@ outputs, but neither output worked out of the box and both needed solving.
 
 **R7 — the "In this page".** Entries 12 px → **11 px**, line-height 1.65 → 1.6; the heading
 12 px → **10.5 px** with letter-spacing, so it reads as a label and not as another entry.
+
+---
+
+## Session of 21 September, continued
+
+### R8 · The verdicts table: "el modelo competencial" is not one thing {#r8}
+
+**Remark.** "I think that this table should be revisited. The idea, in my remarks and questions
+regarding the features of the 2025 and 2026 exams: *el modelo competencial en la EHU ha sido
+implementado completamente, cosa que en el resto no*, and with specific characteristics — so
+for sure it is the model, with its characteristics. The re-structuration of the model gave
+rise to some gaps in which the high schools were teaching, and the model with the recovery of
+the complete syllabus."
+
+**Status:** **implemented**, 21 September, as proposed and in all five places at once.
+**The objection is correct, and the table contradicted the dossier's own measurements.** Two
+distinct faults, one of them an internal contradiction inside a single document.
+
+#### Fault one: the row treats the model as a uniform treatment, and the dossier says it is not
+
+The row's warrant is *"se aplicó en las diecisiete comunidades los dos años; seis de nueve
+subieron en 2026 con él"*. The first clause is true **of the law**. The second is offered as
+evidence about the *model*, and it is not evidence about any paper, because the six that rose
+are, five of six, communities whose papers **did not move in the competency direction at
+all**:
+
+| Rose in 2026 | Δ mean | Reform-intensity index |
+|---|---:|---:|
+| Asturias | $+1.13$ | $-0.19$ |
+| Madrid | $+1.05$ | $-0.44$ |
+| Castilla-La Mancha | $+0.94$ | $+0.39$ |
+| Cataluña | $+0.80$ | $-0.72$ |
+| Comunitat Valenciana | $+0.51$ | $-0.71$ |
+| Andalucía | $+0.17$ | $-0.45$ |
+
+Against **Euskadi at $+1.76$** — rank 1 of nine, more than four times the second, and the only
+community that moved all four axes in the direction the orientations ask: optionality
+$-25$ pp, competency marks $+37.5$, substantive context $+50$, contextualised marks $+75$
+(`data/tables/reform_intensity.md`). Across the nine, the more a paper moved, the more its
+mean fell: $r = -0.701$, $p = 0.035$.
+
+**So the coordinator's distinction is the dossier's own finding.** The competency model *as a
+national framework* was applied everywhere; the competency model *as EHU implemented it* was
+applied in one place. The row uses evidence about the first to acquit the second.
+
+**And the same document already says so.** The Spanish briefing states, four sections before
+its own verdict table, that the nine "no son un grupo de control", that Euskadi is the only
+community to move all four axes, and that $r = -0.70$ across the nine. The verdict row and
+that paragraph cannot both stand as written. This is the 20 September lesson again: the
+finding is in the dossier and has not reached the table the chief reads.
+
+**One argument in the row does survive, and it sharpens rather than weakens the coordinator's
+point.** The Jaume I rating places País Vasco and Cataluña among the *most* competency-oriented
+papers **before** the reform, and Cataluña rose. But Cataluña did not move further in 2026 —
+its index is $-0.72$, the lowest of the nine. What distinguishes Euskadi is therefore not
+*being* competency-based but **becoming so, completely, in one year**. The rating is evidence
+for the coordinator's reading, not against it.
+
+**What must not be overstated, and the table must say it.** Euskadi is the extreme point on
+both axes. Drop it and the association among the other eight is $r = -0.396$, $p = 0.332$ —
+one community making the point, not eight agreeing. With $n = 9$ this is consistency, not
+proof, and the corrected row has to carry that in the same breath as the correction.
+
+#### Fault two: the reopened syllabus and the teaching gap are missing entirely
+
+The second half of the remark — the restructuring creating gaps between what the schools were
+teaching and what was examined — **is already in the dossier, stated precisely, and is in
+none of the verdict tables.** [Chapter 12](12-ehu-paper-history.qmd) records that the
+narrowing was *de facto*: no document ever excluded mirrors, standing waves or nuclear decay;
+they simply were never set, and *"fifteen years of never being set is a stronger signal to a
+school than any syllabus."* It also records the bound: in June 2026 the new sub-topics sat in
+**optional** slots, so the effect acted through **preparation** — schools covering the
+modern-physics block in full for the first time, and blocks C and D in a form that made the
+option unpredictable — rather than through an unavoidable item.
+
+The long briefing carries it in its components table as *"newly examined topics — not
+identified (bounded: optional in June)"*. The síntesis carries it nowhere.
+
+#### Proposal
+
+Replace the single row with three, in all the places the argument appears.
+
+1. **El modelo competencial como marco nacional** — *describe 2025; no puede explicar por sí
+   solo una caída que solo tuvo Euskadi.* Warrant: applied in all seventeen both years; 14 of
+   17 fell in 2025 with Euskadi milder; 2025 was the end of a subject-general plateau and
+   cannot be separated from it. **The "six of nine rose" clause is kept but restricted to what
+   it is evidence about**: the law, not any paper.
+2. **El modelo competencial tal como lo implementó la EHU** — *variable de primer orden; es la
+   explicación que el dosier menos puede descartar.* Warrant: the index of $+1.76$ against
+   $+0.39$ for the next; the only community to move all four axes; $r = -0.701$ across the
+   nine; the Jaume I rating read correctly. **Caveat in the same cell**: $r = -0.396$,
+   $p = 0.332$ without Euskadi.
+3. **El temario reabierto y la preparación de los centros** — *plausible, acotada, no medida.*
+   Warrant: the fifteen-year *de facto* narrowing; the new sub-topics optional in June, so the
+   channel is preparation and not an unavoidable item; bounded by option take-up, which is
+   data request 5.
+
+Row 2 of the present table, *"La prueba de 2026"*, then narrows to what is genuinely
+format — length, optionality, genre — so that it no longer duplicates the new row 2.
+
+**Where it has to be done.** The row appears in the English briefing (as H1), in both synthesis
+documents, and the underlying argument in Chapter 6's hypothesis review. The Spanish briefing
+has the correct analysis in its prose and the uncorrected verdict elsewhere. All of them move
+together or the contradiction simply relocates.
+
+**Implementation.** The single row is now three, and the format row narrows, in:
+
+| File | Where | Form |
+|---|---|---|
+| `chapters/06-interpretation.qmd` | hypothesis review | H1 split into **H1a** (national frame), **H1b** (the EHU's implementation), **H1c** (reopened syllabus); H2 narrowed to length, optionality and genre |
+| `chapters/14-briefing.qmd` | H-table, `#tbl-b-hyp` | same split; ranking caption rewritten |
+| `chapters/14-briefing-es.qmd` | tabla H, `#tbl-e-hyp` | same split; ordenación reescrita |
+| `chapters/15-synthesis.qmd` | `#tbl-s-hyp` | three rows replace one; "The 2026 paper **as a format**" |
+| `chapters/15-synthesis-es.qmd` | `#tbl-ss-hyp` | three rows replace one; "La prueba de 2026 **como formato**" |
+
+`onepage.qmd` inherits the change from chapter 6 on the next build.
+
+**The ranking moved, which is the substantive consequence.** It read *H2 first, H1 a 2025
+coincidence*. It now reads **H1b and H2 together at the front, not separable on published
+aggregates because they are two descriptions of the same paper; H1c plausible behind them and
+equally unseparable; H1a a 2025 coincidence.** Splitting the hypothesis moved half of it from
+the back of the list to the front, because the objection that sank it — *everyone had the
+model* — applies only to the frame. That is the whole of the coordinator's point, and the
+dossier had the measurements to support it four sections before the table that denied it.
+
+**The caveat travels with the claim, in the same cell, in all five.** $r = -0.70$, $p = 0.035$
+across the nine; $r = -0.40$, $p = 0.33$ without Euskadi. One community making the point, not
+eight agreeing.
+
+---
+
+### R9 · The COVID tint: one sitting or two {#r9}
+
+**Remark.** "Settle this: the darker tint should cover both years, and the series' own shape
+says it probably should. This is his to settle."
+
+**Status:** **settled and implemented**, 21 September. The darker tint now covers **2020 and
+2021**.
+
+**Answer.** Two reasons, and the second is the stronger. The relief measures — reduced
+syllabus, widened optionality, softened marking — were in force for *both* sittings, not for
+the first alone, so "the COVID sitting" was never one year. And the series says so without
+being asked: 2020 is 6.45, 2021 is **7.69** — the highest mean in seventeen years, 1.24 above
+2020 and **1.63 above 2022**. If exactly one sitting were to be marked as anomalous it would
+be 2021, so shading 2020 alone marked the wrong year. The peak now sits inside the tint, which
+is what makes the figure argue its own case.
+
+Implemented in `scripts/03_plots.py` (`axvspan(2019.5, 2021.5, ...)`, label recentred on
+2020.5, model label moved to 2023.0), both languages regenerated, and the caption corrected in
+all six places that carry it: `02-euskadi.qmd`, `14-briefing.qmd`, `14-briefing-es.qmd`,
+`15-synthesis.qmd`, `15-synthesis-es.qmd`, `onepage.qmd`.

@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-19">
+<meta name="description" content="The audits of 19 and 20 September 2026: reproducibility, number-by-number verification of every chapter against the raw data, a blind second coding of the exam papers, a figure-by-figure check, and a reasoning audit — with the corrections applied, the first audit’s own errors, and the questions that remain.">
+
+<title>Audit – PAU Física 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/10-reproduce.html" rel="prev">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8ea58a61d1ba2dd7cb9d02c8236bb19e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PAU Física</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/08-sources.html"> 
+<span class="menu-text">Sources &amp; methods</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/13-audit.html">Audit</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evidence and results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The papers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-paradigm.html" class="sidebar-item-text sidebar-link"><i class="bi bi-diagram-3" role="img">
+</i> 
+ <span class="menu-text">The paradigm change, whole</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Research context</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Briefing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-synthesis.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clipboard-check" role="img">
+</i> 
+ <span class="menu-text">Synthesis for the coordination</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-synthesis-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Síntesis (castellano)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing.html" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope-paper" role="img">
+</i> 
+ <span class="menu-text">For the Admissions Office</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Informe (castellano)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
+ <span class="menu-text">Sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-and-how" id="toc-why-and-how" class="nav-link active" data-scroll-target="#why-and-how">Why and how</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
+  <li><a href="#what-was-wrong" id="toc-what-was-wrong" class="nav-link" data-scroll-target="#what-was-wrong">What was wrong</a>
+  <ul class="collapse">
+  <li><a href="#claims-withdrawn-or-restated-interpretation" id="toc-claims-withdrawn-or-restated-interpretation" class="nav-link" data-scroll-target="#claims-withdrawn-or-restated-interpretation">Claims withdrawn or restated (interpretation)</a></li>
+  <li><a href="#errors-in-the-data-and-the-scripts" id="toc-errors-in-the-data-and-the-scripts" class="nav-link" data-scroll-target="#errors-in-the-data-and-the-scripts">Errors in the data and the scripts</a></li>
+  <li><a href="#errors-of-number-and-fact" id="toc-errors-of-number-and-fact" class="nav-link" data-scroll-target="#errors-of-number-and-fact">Errors of number and fact</a></li>
+  <li><a href="#what-the-first-audit-itself-got-wrong" id="toc-what-the-first-audit-itself-got-wrong" class="nav-link" data-scroll-target="#what-the-first-audit-itself-got-wrong">What the first audit itself got wrong</a></li>
+  </ul></li>
+  <li><a href="#what-held" id="toc-what-held" class="nav-link" data-scroll-target="#what-held">What held</a></li>
+  <li><a href="#what-the-audits-added" id="toc-what-the-audits-added" class="nav-link" data-scroll-target="#what-the-audits-added">What the audits added</a>
+  <ul class="collapse">
+  <li><a href="#the-third-round-four-objections-from-the-coordinator-and-what-they-changed" id="toc-the-third-round-four-objections-from-the-coordinator-and-what-they-changed" class="nav-link" data-scroll-target="#the-third-round-four-objections-from-the-coordinator-and-what-they-changed">The third round: four objections from the coordinator, and what they changed</a></li>
+  <li><a href="#the-fourth-round-the-statement-and-a-summary-for-a-meeting" id="toc-the-fourth-round-the-statement-and-a-summary-for-a-meeting" class="nav-link" data-scroll-target="#the-fourth-round-the-statement-and-a-summary-for-a-meeting">The fourth round: the statement, and a summary for a meeting</a></li>
+  <li><a href="#the-fifth-round-the-coordinators-corrections-and-the-marking-regime" id="toc-the-fifth-round-the-coordinators-corrections-and-the-marking-regime" class="nav-link" data-scroll-target="#the-fifth-round-the-coordinators-corrections-and-the-marking-regime">The fifth round: the coordinator’s corrections, and the marking regime</a></li>
+  </ul></li>
+  <li><a href="#the-sixth-round-20-september-how-the-penalties-are-spread" id="toc-the-sixth-round-20-september-how-the-penalties-are-spread" class="nav-link" data-scroll-target="#the-sixth-round-20-september-how-the-penalties-are-spread">The sixth round (20 September): how the penalties are spread</a></li>
+  <li><a href="#the-seventh-round-20-september-what-the-paper-is-made-of" id="toc-the-seventh-round-20-september-what-the-paper-is-made-of" class="nav-link" data-scroll-target="#the-seventh-round-20-september-what-the-paper-is-made-of">The seventh round (20 September): what the paper is made of</a></li>
+  <li><a href="#corrections-applied" id="toc-corrections-applied" class="nav-link" data-scroll-target="#corrections-applied">Corrections applied</a>
+  <ul class="collapse">
+  <li><a href="#what-the-third-rounds-own-verification-found" id="toc-what-the-third-rounds-own-verification-found" class="nav-link" data-scroll-target="#what-the-third-rounds-own-verification-found">What the third round’s own verification found</a></li>
+  </ul></li>
+  <li><a href="#still-open-and-for-the-author-to-decide" id="toc-still-open-and-for-the-author-to-decide" class="nav-link" data-scroll-target="#still-open-and-for-the-author-to-decide">Still open, and for the author to decide</a></li>
+  <li><a href="#what-these-audits-could-not-do" id="toc-what-these-audits-could-not-do" class="nav-link" data-scroll-target="#what-these-audits-could-not-do">What these audits could not do</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/08-sources.html">Sources and reproducibility</a></li><li class="breadcrumb-item"><a href="../chapters/13-audit.html">Audit</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Audit</h1>
+<p class="subtitle lead">Two audits, what each found, what the first one got wrong, and what is still open</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">audit</div>
+    <div class="quarto-category">methods</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    The audits of 19 and 20 September 2026: reproducibility, number-by-number verification of every chapter against the raw data, a blind second coding of the exam papers, a figure-by-figure check, and a reasoning audit — with the corrections applied, the first audit’s own errors, and the questions that remain.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2026</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 20, 2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-important callout-titled" title="Read this chapter as part of the evidence">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Read this chapter as part of the evidence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The study has been audited twice. The first audit corrected the analysis; the second audited the first, found that three of its corrections had not been carried into the chapters they named, corrected a data bug that had survived both, and established that one of its retractions had gone too far. Everything below is what the two passes found, including what they found about each other.</p>
+</div>
+</div>
+<section id="why-and-how" class="level2">
+<h2 class="anchored" data-anchor-id="why-and-how">Why and how</h2>
+<p>Before this site is shown to anyone, it was audited with an explicit brief: be exhaustive and critical, check every number, figure, table, dataset and interpretation, and report the errors, the bad reasoning and the bad conclusions rather than quietly fixing them.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pass</th>
+<th>Layers</th>
+<th>Reports</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>First, 19 September</strong></td>
+<td>A reproducibility re-run; B numbers in Chapters 2–5 and the overview; C numbers in Chapter 6; D reasoning in Chapter 6; E blind second coding of all 146 exam items; F figures and tables; G sources and consistency</td>
+<td><code>logs/audit/B_…</code> to <code>G_…</code>; layer A and the consolidation are in this chapter</td>
+</tr>
+<tr class="even">
+<td><strong>Second, 20 September</strong></td>
+<td>A second clean re-run; five independent readers over (i) Chapters 2–5 and the overview, (ii) Chapter 6 including its statistical reasoning, (iii) Chapters 11–12 <em>against the exam PDFs themselves</em>, (iv) Chapters 13 and 14; one over all 24 figures then in the set, opening each image and checking it against the script and the data; and, after the rewrite, a sixth reader over the rewritten chapters and the new decomposition</td>
+<td><code>logs/AUDIT_2026-09-20.md</code></td>
+</tr>
+</tbody>
+</table>
+<p>Every reader worked only from the files, recomputing rather than trusting the derived tables: for the second pass that meant re-parsing the Ministry PC-Axis cubes, re-reading the INEE PISA workbooks cell by cell, and opening thirty-two exam PDFs with <code>pdftotext</code> to check structural claims against the papers instead of against the coding file.</p>
+</section>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p>The pipeline reproduces exactly. Run clean on 20 September, scripts 01–20 regenerated every JSON, CSV and Markdown table byte-identically and every PNG pixel-identically; the SVGs differ only in their embedded timestamp. (Script 21, which produces the decomposition, was written after that run and so is outside the identity test; its outputs are reproduced by re-running it.) On 19 September the same test passed for every one of the 162 registry hashes then recorded (the registry holds 166 once the PISA workbooks are added), but not for two derived outputs: <code>slope_compare.json</code> and figure 22 carried five PISA rounds while the chapter’s text had been written on four. That was the first audit’s most serious single finding: a finished-looking figure whose text predated its data.</p>
+</section>
+<section id="what-was-wrong" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-wrong">What was wrong</h2>
+<section id="claims-withdrawn-or-restated-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="claims-withdrawn-or-restated-interpretation">Claims withdrawn or restated (interpretation)</h3>
+<p><strong>Withdrawn at the first audit and still withdrawn.</strong> <em>“The plateau reshaped the distribution”</em> — the conditional top-band ratio rose 0.353 → 0.466 through 2020–2024, but it tracks the mean at <span class="math inline">\(r = 0.905\)</span>; the locus predicts 0.356 → 0.442 from the level alone, the residual excess is <span class="math inline">\(+0.02\)</span> with <span class="math inline">\(p = 0.17\)</span> on year means, carried by 2020. The plateau was a lift. <em>“The two instruments fall at the same rate”</em> — stale (above), and ill-posed: both records are steps rather than slopes, and the ratio compares two slopes with <span class="math inline">\(p\)</span>-values of 0.19 and 0.38.</p>
+<p><strong>Withdrawn at the first audit and partly reinstated at the second.</strong> <em>“A Basque signal that arrives a year early.”</em> The first audit was right that the <em>level</em> of Euskadi’s conditional residual in 2024–25 is unremarkable: five of seventeen communities are below <span class="math inline">\(-0.5\)</span> SD in both years. It was wrong to conclude that nothing happened, because neither version tested the <em>transition</em>, which is what “a turn” means. Euskadi’s residual moved <span class="math inline">\(-3.08\)</span> SD between 2023 and 2024 — the second-most-negative move of the 170 transitions in the panel, and the largest negative move outside the LOMLOE year. On the unsigned size of the shape move it is eleventh of 170, which is the honest way to state it. The corrected statement, and what follows from it, is in <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">the decomposition</a>.</p>
+</section>
+<section id="errors-in-the-data-and-the-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="errors-in-the-data-and-the-scripts">Errors in the data and the scripts</h3>
+<p>The second audit found one error that had produced a published number, and two that had produced published counts.</p>
+<ul>
+<li><strong>A weighting bug</strong> in <code>07_exam_coding.py</code>. Expected exposure was computed as <code>points / n_options</code>, which is right for “choose one of <span class="math inline">\(n\)</span>” slots but wrong for Asturias, whose paper is “answer any five of eight”: its weights summed to 2.0 instead of 10, so its contextualised share was recorded as 10 % and 12.5 % instead of 50 % and 62.5 %. The correlation between the change in contextualised points and the change in grade moves from <span class="math inline">\(-0.89\)</span> to <span class="math inline">\(-0.85\)</span>, and figure 12’s Asturias stack was drawn at a fifth of its height. Weights are now normalised to each paper’s total.</li>
+<li><strong>Two theory questions missing</strong> from the EHU inventory: option B of July 2019 carries <em>Cámara fotográfica</em> and <em>Campos de fuerza conservativos…</em>, which <code>08_ehu_history.py</code> did not record. The count is 120 questions in 30 papers, not 118; the photographic camera was set twice, not once; and the five most frequent titles account for 47 of 120.</li>
+<li><strong>A silent merge failure</strong> in <code>18_reading_load.py</code>: the coding file uses short community names and the length table long ones, so Asturias and Madrid were dropped and the length–competency collinearity was computed on six papers. It is <span class="math inline">\(+0.79\)</span> (<span class="math inline">\(p = 0.02\)</span>, <span class="math inline">\(n = 8\)</span>), not <span class="math inline">\(+0.90\)</span>.</li>
+<li><strong>A centring artefact</strong> in the take-up test: both variables were centred within community over all eleven years and the test then run on the six non-plateau ones, which left the plotted cloud sitting 0.3 below an axis labelled “relative to the community’s own average”. Centred on the years actually used, the correlation is <span class="math inline">\(r = -0.096\)</span>, <span class="math inline">\(p = 0.339\)</span>, against the <span class="math inline">\(-0.020\)</span>, <span class="math inline">\(p = 0.839\)</span> the chapter reported. The conclusion — take-up is unrelated to the mean — is unchanged.</li>
+</ul>
+</section>
+<section id="errors-of-number-and-fact" class="level3">
+<h3 class="anchored" data-anchor-id="errors-of-number-and-fact">Errors of number and fact</h3>
+<p>The first audit corrected some forty; the second found twenty-one more in Chapters 2–5 and the overview, seventeen in Chapter 6, fifteen in Chapters 11–12 and seventeen in Chapter 14. They fall into three recurring classes, and the classes are more useful than the list.</p>
+<p><strong>Range endpoints.</strong> Almost every “X to Y” in the study was rounded inward or outward by a tenth: the plateau by subject, the Basque science subjects, the failing band, the presentation rate, the enrolment range, the risers’ range, the July–June gap. Each is now the computed minimum and maximum.</p>
+<p><strong>Superlatives.</strong> “The only”, “never”, “the lowest”, “the strongest”, “the largest” were wrong about as often as they were right. Canarias had not “lived through a Basque-sized collapse” (three one-year falls were larger than Euskadi’s); the reading-load correlation is not “the strongest this study has found” (it ties with contextualised points); Euskadi’s 2024 move is not the largest of the 170 transitions (Cantabria 2025 is larger); 2020 was not the largest residual in the panel (it is the largest year mean).</p>
+<p><strong>Populations silently mixed.</strong> Three Basque 2015–19 baselines circulate in the study — 5.92 specific phase, 5.90 pooled, 5.86 general-phase-preferred — and the chapter used all three within a few pages. Two z-scales for the same conditional residual were in use. The nine-community 2026 cross-section mixes presented, <em>aptes</em> and chart-label bases and is compared with a decade of presented-basis means. Figure 4 drew Cataluña’s ministry 2025 against its <em>aptes</em> 2026 under a panel titled “aptes basis”, making +0.86 of a change the rest of the study calls +0.80.</p>
+</section>
+<section id="what-the-first-audit-itself-got-wrong" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-first-audit-itself-got-wrong">What the first audit itself got wrong</h3>
+<p>This is the part of an audit chapter that is usually missing.</p>
+<ul>
+<li>It stated that the corrected reading-load correlation was “now quoted to three decimals wherever it appears”. It was not: Chapter 6 still carried <span class="math inline">\(-0.91\)</span> twice, once inside its own account of the audit.</li>
+<li>It stated that two over-rounded plateau ranges were “corrected here and in the chapters”. They were corrected in the briefing and not in Chapter 6.</li>
+<li>It corrected the optionality claim in Chapter 6 and not in Chapter 11, where the uncorrected sentence then contradicted a correct one fourteen lines below it.</li>
+<li>Its own caption said the 2025 science subjects returned “within ±0.2” of norm while printing Biología at <span class="math inline">\(-0.21\)</span>; it called a 2.93-point dispersion “two points”; it described the 61.5 % euskera share for 2014 as “not reproducible” when what fails to reconcile is the column total; it attributed <span class="math inline">\(\kappa = 0.61\)</span> to the three-level context code, which is 0.70.</li>
+<li>It listed the 2017 Basque cohort of ≈ 9 900 among unverifiable press figures; the Ministry cube gives it directly (Historia de España 9 940 presented).</li>
+<li>Its “what held” list included the 2026 regional table, two of whose figures the same chapter lists as unverifiable press, and “the 2027 arithmetic”, whose proration it had just corrected.</li>
+</ul>
+<p>The general lesson is the one the second audit acted on: a correction is not applied until the string is changed in the file, and an audit that reports corrections rather than verifying them is a second draft, not an audit.</p>
+</section>
+</section>
+<section id="what-held" class="level2">
+<h2 class="anchored" data-anchor-id="what-held">What held</h2>
+<p>Under two independent passes, recomputed from the raw cubes and the original PDFs: the Basque headline numbers and the whole 2010–2026 series; the Ministry panel (170 changes, SD 0.74, <span class="math inline">\(z = -1.97\)</span>, 7 of 170, 14 of 17 in 2025 at <span class="math inline">\(-0.81\)</span>, the ranks and levels); the 2026 regional table’s official values and its cross-checks; the Beta fits; every Canarian histogram statistic; the school-marks block, verified line by line in the Inspectorate PDF; the ordinary–extraordinary relation; the locus construction and all its caveats; the drift tests; every PISA mean, standard error and proficiency share against the INEE workbooks; the selection-premium simulation; every marking rule against the corrector documents; every citation key, internal link and registry hash.</p>
+<p>The exam coding was put to two independent tests. A blind second coder over all 146 items agreed at <span class="math inline">\(\kappa = 0.76\)</span> on the competency flag and 0.83–1.00 on drawing, graph reading, evaluation and explanation, with weaker agreement on application (0.76) and on the three-level context code (0.70, or 0.61 on its substantive-context boundary). Separately, the second audit checked the structural claims against thirty-two exam PDFs: every structure row, every marking rule, every “never set” topic and the verbatim-title claim were confirmed from the papers, with the exceptions listed above. Every conclusion Chapter 11 draws is identical under both coders; the one number that is not robust is the contextualised-points correlation, which a stricter coder puts at <span class="math inline">\(-0.59\)</span>.</p>
+</section>
+<section id="what-the-audits-added" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-audits-added">What the audits added</h2>
+<p>The first audit added four tests the interpretation chapter should have run: the plateau by subject (it is in every subject), the base rate of the conditional turn (five of seventeen), Euskadi’s subjects against their own norms (Física alone clearly below in 2025), and the nine communities against their pre-COVID norms (a 2.9-point spread behind a <span class="math inline">\(+0.02\)</span> average).</p>
+<div id="tbl-audit-plateau" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-plateau-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: The 2020–2024 plateau and its end in 2025, subject by subject: each subject’s mean over the seventeen communities against its own 2015–2019 norm. The plateau is in every subject; in 2025 every science subject returned to within about a fifth of a point of its norm, while the humanities kept part of the lift.
+</figcaption>
+<div aria-describedby="tbl-audit-plateau-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subject (17 communities, unweighted)</th>
+<th>2019</th>
+<th>2020</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Física</td>
+<td>-0.17</td>
+<td>+0.41</td>
+<td>+0.92</td>
+<td>+0.59</td>
+<td>+0.56</td>
+<td>+0.71</td>
+<td>-0.06</td>
+</tr>
+<tr class="even">
+<td>Matemáticas II</td>
+<td>-0.09</td>
+<td>+0.48</td>
+<td>+0.96</td>
+<td>+0.50</td>
+<td>+0.76</td>
+<td>+0.63</td>
+<td>+0.11</td>
+</tr>
+<tr class="odd">
+<td>Química</td>
+<td>+0.05</td>
+<td>+0.58</td>
+<td>+0.94</td>
+<td>+0.69</td>
+<td>+0.69</td>
+<td>+0.82</td>
+<td>+0.20</td>
+</tr>
+<tr class="even">
+<td>Biología</td>
+<td>+0.03</td>
+<td>+0.33</td>
+<td>+0.55</td>
+<td>+0.46</td>
+<td>+0.43</td>
+<td>+0.17</td>
+<td>-0.21</td>
+</tr>
+<tr class="odd">
+<td>Historia de España</td>
+<td>+0.07</td>
+<td>+0.29</td>
+<td>+0.65</td>
+<td>+0.48</td>
+<td>+0.62</td>
+<td>+0.74</td>
+<td>+0.53</td>
+</tr>
+<tr class="even">
+<td>Lengua Castellana</td>
+<td>+0.06</td>
+<td>+0.23</td>
+<td>+0.32</td>
+<td>+0.38</td>
+<td>+0.39</td>
+<td>+0.47</td>
+<td>+0.13</td>
+</tr>
+<tr class="odd">
+<td>Dibujo Técnico II</td>
+<td>-0.15</td>
+<td>+0.45</td>
+<td>+0.59</td>
+<td>+0.57</td>
+<td>+0.67</td>
+<td>+0.44</td>
+<td>+0.18</td>
+</tr>
+<tr class="even">
+<td>Geografía</td>
+<td>-0.21</td>
+<td>+0.21</td>
+<td>+0.62</td>
+<td>+0.51</td>
+<td>+0.65</td>
+<td>+0.50</td>
+<td>+0.24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-audit-baseline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-audit-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: The nine communities with a 2026 result against their own pre-COVID norms (Ministry pooled means; Cataluña’s 2026 value on its aptes basis). The “+0.02” nine-community average hides a spread of 2.9 points.
+</figcaption>
+<div aria-describedby="tbl-audit-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Community</th>
+<th>2015–19 mean</th>
+<th>2024 vs norm</th>
+<th>2025 vs norm</th>
+<th>2026 vs norm</th>
+<th>2025 → 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Madrid (Comunidad de)</td>
+<td>5.68</td>
+<td>+0.59</td>
+<td>-0.03</td>
+<td>+1.02</td>
+<td>+1.05</td>
+</tr>
+<tr class="even">
+<td>Castilla-La Mancha</td>
+<td>5.94</td>
+<td>+0.63</td>
+<td>-0.08</td>
+<td>+0.86</td>
+<td>+0.94</td>
+</tr>
+<tr class="odd">
+<td>Cataluña</td>
+<td>6.21</td>
+<td>-0.27</td>
+<td>-0.17</td>
+<td>+0.63</td>
+<td>+0.80</td>
+</tr>
+<tr class="even">
+<td>Andalucía</td>
+<td>5.38</td>
+<td>+0.34</td>
+<td>+0.31</td>
+<td>+0.48</td>
+<td>+0.17</td>
+</tr>
+<tr class="odd">
+<td>Asturias (Principado de)</td>
+<td>6.14</td>
+<td>+0.90</td>
+<td>-0.65</td>
+<td>+0.48</td>
+<td>+1.13</td>
+</tr>
+<tr class="even">
+<td>Comunitat Valenciana</td>
+<td>6.06</td>
+<td>+1.00</td>
+<td>-0.17</td>
+<td>+0.34</td>
+<td>+0.51</td>
+</tr>
+<tr class="odd">
+<td>Extremadura</td>
+<td>6.05</td>
+<td>+0.40</td>
+<td>+0.04</td>
+<td>-0.78</td>
+<td>-0.82</td>
+</tr>
+<tr class="even">
+<td>Canarias</td>
+<td>5.11</td>
+<td>+0.78</td>
+<td>-0.03</td>
+<td>-0.86</td>
+<td>-0.83</td>
+</tr>
+<tr class="odd">
+<td>País Vasco</td>
+<td>5.90</td>
+<td>+0.19</td>
+<td>-0.43</td>
+<td>-1.91</td>
+<td>-1.48</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The second audit added the <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">decomposition</a>: the classification of each Basque year as a change of location or of shape, the split of each year’s change into a common and a Basque-specific part, and the attribution of the Basque-specific 2026 change to the components that can be quantified — leaving four fifths of it explicitly unattributed. The attribution itself was corrected once during the audit: the first version subtracted Basque-level terms (the full choice premium, the full Basque PISA decline) from a quantity that is a <em>difference</em> from the field, which double-counts what the other communities did. Both terms are now differences too — the choice cut net of the 6.25-point average cut elsewhere, and the Basque PISA decline in excess of Spain’s — which moves the quantified part from <span class="math inline">\(-0.44\)</span> to <span class="math inline">\(-0.31\)</span> and the unattributed share from 73 % to 81 %. That is the study’s main new result, and it came from changing the question rather than from checking another number.</p>
+<section id="the-third-round-four-objections-from-the-coordinator-and-what-they-changed" class="level3">
+<h3 class="anchored" data-anchor-id="the-third-round-four-objections-from-the-coordinator-and-what-they-changed">The third round: four objections from the coordinator, and what they changed</h3>
+<p>On 20 September the coordinator raised four objections and one question, and the answers changed the dossier more than the second audit had. They are recorded here as objections rather than as errors, because three of the four were about what the dossier had failed to ask rather than about a number being wrong.</p>
+<p><strong>“I do not understand this paragraph.”</strong> The paragraph explaining why mean-based tests are blind to 2024 asserted the conclusion without the mechanism. It has been rewritten in both languages to say what actually happens: the 8–10 share fell 9.0 points while the pass rate <em>rose</em> 2.3, the two cancel, and the mean moves 0.21 — a twentieth of what the band moves were worth separately. A reader who does not already know that a mean can be insensitive to a redistribution could not have reconstructed that from the old text. That is a writing failure, not an analytical one, and it was the kind that an audit checking numbers against sources will never catch.</p>
+<p><strong>“Why measure the Basque decay from the Spanish mean?”</strong> A fair objection, and the dossier had used the field frame without ever justifying it. <a href="../chapters/06-interpretation.html#why-a-field">A new section</a> now sets the three frames side by side (<span class="math inline">\(-1.48\)</span>, <span class="math inline">\(-1.91\)</span>, <span class="math inline">\(-1.65\)</span>; a spread of 0.43 of a mark), states that no conclusion turns on the choice, and says what the field is for: separating a year in which everyone fell from a year in which only Euskadi did, which is the whole content of the 2025/2026 contrast and which no absolute number can deliver. It also says plainly what the dossier had let the arithmetic imply — that the field is <em>not</em> a control group.</p>
+<p><strong>“In Euskadi we followed all the requirements; the other communities’ increases are fictitious.”</strong> This could not be accepted as stated and could be tested. <a href="../chapters/11-exam-content.html#comparability">A new section in Chapter 11</a> scores the nine 2026 papers against the three structural criteria and builds a standardised index of how far each moved from its own 2025 predecessor. Asturias fails two criteria (100 % optionality, no obligatory item) and rose <span class="math inline">\(+1.13\)</span>; Euskadi ranks first on the movement index at <span class="math inline">\(+1.76\)</span> SD, more than a standard deviation clear of the second, and is the only community that moved all four axes in the direction the orientations ask for; three moved on no axis but the contextualised share. The index correlates with the change in the mean at <span class="math inline">\(r = -0.70\)</span> (<span class="math inline">\(p = 0.035\)</span>), but Euskadi is the extreme point on both axes and dropping it leaves <span class="math inline">\(r = -0.40\)</span> (<span class="math inline">\(p = 0.33\)</span>), so the correlation is one community making the point rather than eight agreeing, and the section says so. What the dossier cannot do is call this non-compliance: RD 534/2024 and the Ministry and CRUE orientations are not in the source registry, were not retrievable during the data hunt, and no attempt has been made to quote or paraphrase them from memory. That gap is now data request 9.</p>
+<p><strong>“Tribunal severity — the second year of the spelling penalties — should be analysed, or at least commented.”</strong> It had not been, beyond being listed as unidentified. It now is, and the analysis produced the round’s largest single result. Building the balanced five-by-three subject panel to test it showed that the Basque-specific <span class="math inline">\(-1.65\)</span> is <a href="../chapters/06-interpretation.html#fisica-or-euskadi">about half Euskadi-wide and about half Física-specific</a> — an exact arithmetical split that had been available since the subject table was assembled on 18 September and that nobody had computed. On the severity question itself: the <em>timing</em> fits the hypothesis exactly (Basque-specific <span class="math inline">\(+0.03\)</span> in 2025, <span class="math inline">\(-1.65\)</span> in 2026, which is what “cautious in year one, full in year two” predicts), a <em>general</em> severity effect is bounded at a fifth of the Física fall by Lengua Castellana <span class="math inline">\(+0.03\)</span> and Biología <span class="math inline">\(+0.15\)</span>, and a severity confined to the seven numerical deductions fits the pattern but is confounded with the format change. The deduction tally that would settle it is now data request 3 and is the cheapest decisive item on that list.</p>
+<p><strong>“Can a rate of decay be attached to the cohort?”</strong> <a href="../chapters/06-interpretation.html#rate-of-decay">A new section</a> works it through and answers no, with reasons: the PISA per-cohort-year change is a sequence of steps (<span class="math inline">\(+3.7\)</span> to <span class="math inline">\(-7.5\)</span>) and not a slope; the within-cohort term is not identified from PISA and the PAU together at any sample size, because it enters every difference alongside the paper term; a constant one cancels and is therefore irrelevant to the year-to-year question; and a changing one would show as the PAU falling faster than PISA, which it does not. Two by-products are corrections to the existing dossier. The 2026 entry count runs the <em>wrong way</em> for dilution — 5.6 % fewer candidates, which under the assumption most favourable to dilution should have raised the mean by 0.29 — so the composition term is a credit against the fall rather than a part of it. And the one-for-one transfer of a PISA shift to the selected PAU population, which the dossier had used without bounding, is now shown to be the <em>top</em> of a range running down to 0.23 under a fixed-ability-bar model: the cohort term is an upper bound in magnitude, and the unattributed remainder correspondingly a lower bound.</p>
+<p>Three scripts were added (<code>22_subject_decomposition.py</code>, <code>23_comparability.py</code>, <code>24_cohort_rate.py</code>) and three figures (26, 27, 28). No existing number changed. The new work is additive, which is itself worth noting after two rounds in which most new work subtracted.</p>
+</section>
+<section id="the-fourth-round-the-statement-and-a-summary-for-a-meeting" class="level3">
+<h3 class="anchored" data-anchor-id="the-fourth-round-the-statement-and-a-summary-for-a-meeting">The fourth round: the statement, and a summary for a meeting</h3>
+<p>Later on 20 September the coordinator asked for three further things: a synthesis of the dossier for the admissions office and for the coordination meeting with the Bachillerato physics teachers; the last rounds added to the account of how the analysis was arrived at; and an analysis of the coordination presentation <em>USaP Física 2027</em>, in particular the four slides that reconstruct the 2026 electromagnetic problem in four versions.</p>
+<p><strong>A new measurement.</strong> <code>25_statement_budget.py</code> counts each item’s statement separately in both Basque papers rather than each paper as a whole. It finds what the paper-level number could not: the length lives in the obligatory competency items, and it did so in 2025 as well — six of the 2025 statements run 56 to 147 words and A1 runs 403, while in 2026 A1 and B1 run 289 and 406 and carry 49 % of everything read. It also separates a part of the paper that is not questions at all: the furniture barely moved in total, 356 to 398 words, but changed composition entirely, the block headings shrinking while 103 words of printed weights appeared where the 2025 paper had none. <a href="../chapters/06-interpretation.html#statement-budget">A new section in Chapter 6</a> carries it, with figure 29.</p>
+<p><strong>An external check on a load-bearing measurement.</strong> The <span class="math inline">\(+45\)</span> % reading-load figure is the strongest cross-community correlate in this study and the weakest causally, and it rests on a word count nobody else had made. The coordination has now counted the same six 2026 statements independently: 1 472 words against this study’s 1 431, within three per cent on the paper total and from one to six per cent item by item. It is recorded as a check rather than as a confirmation, and the two counts are not independent of each other in method — both are word counts of the same extracted text.</p>
+<p><strong>One observation the dossier could not have reached on its own.</strong> Of the three “competency elements” the coordination designed into the 2026 electromagnetic problem, one — “express the result in scientific notation and with two decimals” — is not on the four-level verb ladder the coordination itself uses. It is a criterion from the marking specification, it applies whether printed or not, and failing it costs <span class="math inline">\(-0.10\)</span>. That makes it a concrete, locatable instance of the format-and-marking confound that <a href="#the-third-round-four-objections-from-the-coordinator-and-what-they-changed">the severity section</a> could bound statistically but not separate: in that sub-task the competency wording and the deduction are the same words.</p>
+<p><strong>A test the dossier can now specify.</strong> Parts b) and c) of that problem ask the same three-step chain of two configurations. If the repetition worked as the scaffolding it was designed to be, candidates score higher on c) than on b); if it was a time tax on the longest statement in the paper, lower. That comparison is now the first sub-question of data request 1, and it is the only place in the dossier where the coordinator’s design intent has been turned into a falsifiable prediction.</p>
+<p><strong>One internal error found while doing it.</strong> Figure 18’s step 14 still carried the pre-correction values of the decomposition — a quantified part of <span class="math inline">\(-0.44\)</span> and an unattributed <span class="math inline">\(-1.21\)</span> — which the second audit had already moved to <span class="math inline">\(-0.31\)</span> and <span class="math inline">\(-1.33\)</span> in the prose. It is the sixth instance of the same failure mode and the second in that figure. Corrected, and steps 15 and 16 added.</p>
+<p><strong>And what its own verification found.</strong> A reader recomputed every new count from the archived papers and found three defects in the new script and eight in the new prose, all of which are fixed above and none of which changed a conclusion. In the script: the pattern that cut a trailing block heading off each item did not match the plural heading “BLOQUES C y D” and cut at its colon rather than at its start, so twenty words of apparatus stayed inside A1 2025 and seven inside B1 2026 (423 and 413 became 403 and 406); the weight pattern could not match across an interposed watermark letter, so the count of printed weights was fifty rather than fifty-one; and the furniture was computed by subtracting a whitespace count from a word-token count, which is why it appeared to grow from 289 to 502 when on one tokenisation it goes from 356 to 398. In the prose: “a weight on fifty sub-tasks” was wrong twice over, since eighteen of the fifty-one are at part level; the agreement with the coordination’s count is three per cent on the total and one to six per cent item by item, not two per cent item by item; the two targets for 2027 were called independent when both are anchored to the 2025 paper; the asymmetric-scaffolding form was given a length of 170 words borrowed from a different rewrite; the b)-against-c) comparison was called clean when half of c) is an evaluation sub-task with no analogue in b); the setter’s account of the 2026 design was stated as fact rather than as testimony, with no note that the author of this dossier is a co-author of the presentation it quotes; and the two reconstruction ladders were collapsed into one everywhere except the section that explicitly warns against doing so.</p>
+<p>Also written: <a href="../chapters/15-synthesis.html">Chapter 15</a>, the synthesis for the coordination, in English and Spanish with PDF output, checked for numeric parity token by token. It is deliberately not part of the single-page edition, like the briefings.</p>
+</section>
+<section id="the-fifth-round-the-coordinators-corrections-and-the-marking-regime" class="level3">
+<h3 class="anchored" data-anchor-id="the-fifth-round-the-coordinators-corrections-and-the-marking-regime">The fifth round: the coordinator’s corrections, and the marking regime</h3>
+<p>The coordinator read the fourth round and disagreed with part of it. Five corrections and one new analysis followed, and the analysis is the largest single addition the dossier has had since the decomposition.</p>
+<p><strong>What was wrong in the reading of the presentation.</strong> Four things, and the first two matter most.</p>
+<p>The chapter called the scientific-notation instruction in problem 2 a marking rule printed by oversight. It is a transversal criterion of <em>saber básico</em> A, it applies to every numerical answer whether printed or not, and 2026 was the first year it was examined explicitly as the criteria require. The coordination printed it, and attached points to it, <strong>as scaffolding</strong> — to tell candidates it counted. That is a defensible design decision and not a taxonomy error, and the chapter now says so, while keeping the two consequences that survive: it costs words for a demand that exists anyway, and it created a sub-task in which one requirement both earned points and attracted a <span class="math inline">\(-0.10\)</span>.</p>
+<p>The chapter said parts b) and c) ask “the same three steps”. They do not. Configuration I is a stationary loop in a field varying as <span class="math inline">\(3t^2\)</span> and configuration II a loop rotating in a constant field; the physics, the derivative and the numbers differ. What repeats is the <em>structure of the demand</em>, not the calculation, and the asymmetry recommendation now rests on that — it is an increase in demand, not the removal of a redundancy.</p>
+<p>The two ladders were treated as a defect to be flagged. They are two different exercises: slide 8 builds up from a statement written for the purpose in the pre-competency manner, and slides 9 to 11 work backwards from what was issued. And the reverse ladder’s last rung is not merely a shorter statement — it is the old style <strong>with the configurations drawn</strong>, which is how they were given before the competency requirement. That contrast, a drawing given away against a drawing demanded, is the coordination’s own and is now credited as such. The chapter had presented it as this study’s recommendation.</p>
+<p>The reconstructions were described as what the paper should have been. They are proposed improvements, and the dossier now says so in both languages.</p>
+<p><strong>What the chapter had missed.</strong> A competency item costs about 400 words in its first year and about 300 in its second, and the two Basque papers show it twice: block A entered in 2025 at 403 and ran 289 in 2026; block B entered in 2026 at 406, A’s first-year figure to within three words. Read that way 2026 is not a paper that went wrong but a paper carrying one block at 400 and another at 300 in the same year. It also makes the 2027 target of 250 for both a continuation rather than a demand — and it shows that 250 does not fit inside a uniform 150–175 band. <a href="../chapters/06-interpretation.html#statement-budget">The chapter now states the budget in two tiers</a>: competency items at or below 250, option items at or below 150, about 1 100 words read, a cut of 23 %. The fourth round’s “the target requires cutting the competency items by 40 to 55 per cent” is withdrawn; it was arithmetic applied to the wrong shape of budget.</p>
+<p><strong>The new analysis: <a href="../chapters/06-interpretation.html#penalty-regime">what the change of marking regime is worth</a>.</strong> The coordinator’s account of the marking is more specific than the dossier had recorded, and it is not severity in the ordinary sense. Until 2025 a missing unit cost the part of the sub-task that depended on it; from 2026 it costs that part <em>and</em> <span class="math inline">\(-0.10\)</span>, uncapped. A second class of defect carried a rule in 2025 that was not applied and in 2026 was. A grave error voids the whole apartado. The rules barely changed; they were deployed in full, by a consensus reached with the correctors at the meeting before the sitting. <code>26_penalty_regime.py</code> asks whether that regime is capable of producing the 2026 result and what it would have to look like.</p>
+<p>The answer took three attempts and the first two were wrong, which is worth recording because the third would not have been reached without them.</p>
+<p>The first attempt treated grave-error voiding as independent across apartados and concluded that nothing reproduces the 2026 tail. That conclusion was drawn from a single evaluated point rather than a search, and the search — run afterwards — happens to support it, but nothing in the repository had.</p>
+<p>The second attempt allowed voiding to cascade and appeared to reproduce all four published figures. Its baseline was wrong. It took the Beta <em>component</em> of the 2025 mixture fit as though it were the whole 2025 distribution, dropped the 1.2 % point mass at zero, and then rescaled the remainder <em>downwards</em> to a mean of 5.47 — the opposite of the correction deleting a zero mass requires. The resulting baseline reproduced one of the four 2025 figures it should have matched and missed the other three badly: a pass rate of 58.7 against 62.3, a low-mark mass of 6.7 against 10.0, and 1.9 % in the top band against a published 6.7 %. A model fitted to four 2026 figures from a baseline that cannot reproduce the same four for 2025 is not worth much, and the audit was right to lead with it.</p>
+<p>The third attempt builds the baseline non-parametrically from the <strong>published</strong> 2025 band shares. It now reproduces 2025 by construction (5.47 / 62.4 / 9.9 / 1.2 / 6.7 against 5.47 / 62.3 / 10.0 / 1.2 / 6.7), and the conclusions change in three ways. The fit is now about twelve deductions per script, a partial cascade in 16 % of scripts and a total one in three to four per cent — the last read off the observed zero rate rather than inferred through a twelfth power, which is how the previous version had effectively been estimating it. The comparison with a harder paper <strong>reverses</strong>: on a baseline with real mass near the floor, a uniform subtraction of 1.48 marks piles 7.8 % of scripts at zero against the 3.2 % observed, so within these models the regime now fits considerably better rather than “nearly as well” — a claim the previous version made and which is withdrawn in both directions. And a genuine failure appears that the broken baseline had hidden: 2.1 % of the 2026 scripts scored nine or above, and twelve deductions spread evenly cap a paper at about 8.8, so no version of this model leaves anyone in the top band. That is now reported as the model’s limitation and as a prediction the tally can test.</p>
+<p>What survives all three attempts is the deduction count: twelve, in every variant of dispersion, sub-task structure and deduction mode tried. The dossier can now say the regime is <strong>sufficient</strong> to produce the four published figures, which is more than “possible, unmeasured”; it cannot say it happened, and the four figures were fitted rather than predicted. Data request 3 was extended to ask for the voided-apartado counts, and request 10 added for the meeting’s own record.</p>
+<p><strong>And one more instance of the recurring failure.</strong> Figure 18’s step 16 still carried the fourth round’s superseded counts — A1 423 of 1046, B1 413 of 1438, “fifty printed sub-task weights” — after the prose had been corrected to 403 of 1026 and 406 of 1431. Seventh instance, third in that figure. Corrected, and step 17 added.</p>
+</section>
+</section>
+<section id="the-sixth-round-20-september-how-the-penalties-are-spread" class="level2">
+<h2 class="anchored" data-anchor-id="the-sixth-round-20-september-how-the-penalties-are-spread">The sixth round (20 September): how the penalties are spread</h2>
+<p>The coordinator read the marking simulation and made one objection: it applies the same number of deductions to every candidate. It should not. A candidate proficient in units, vectors, prefixes and rounding will collect few; a candidate weak in physics and weak in general will collect many, and 2026 was the first year anyone sat a paper marked this way, so even good work should have collected some. The count per script should be a distribution, heaviest below the middle and heaviest of all in the left tail. And he attached a purpose to the question that shaped the whole round: <strong>he did not want the dossier to explain the entire fall with the data it has</strong>, because there are objective reasons to ask for more. The flat figure, he suggested, should be read as a maximum; a distributed one would carry less, leaving the remainder to the other components the analysis has isolated.</p>
+<p>That is what <code>27_penalty_shape.py</code> tests. It gives each candidate an expected count <span class="math inline">\(w(a) = a^{p-1}(1-a)^{q-1}\)</span> in that candidate’s own level <span class="math inline">\(a\)</span>, normalised so that the <em>mean</em> count is the same in every run and only the spread changes. Seven shapes were run at twelve deductions each, and each was then refitted on its own three parameters against the four published figures.</p>
+<p><strong>The intuition is right, and the mechanism is the zero floor.</strong> A deduction removes a full <span class="math inline">\(0.10\)</span> only where <span class="math inline">\(0.10\)</span> is left on the sub-task; on weak work the floor absorbs the rest. Across the seven shapes the marks removed per deduction fall monotonically in the share of penalties landing below four out of ten, with a correlation of <span class="math inline">\(-0.99\)</span>. Every shape in which the weak collect more than their proportionate share costs less per deduction than flat — 93 % of it at a mild tilt, 68 % at a steep one — and unequal rates at the same average cost less again, 88 % at the widest dispersion tried. Flat and equal is the most expensive way to spend a fixed number of penalties.</p>
+<p><strong>But the first draft of that conclusion overstated it, and the script says so.</strong> “Flat is the ceiling” was written before the shapes were run, and it is false as stated: a symmetric hump light at <em>both</em> ends removes 102 % of the flat figure, and a tilt towards the best scripts 115 %, because neither wastes penalties on work with nothing left to take. Flat bounds the family of readings that send <em>at least</em> the proportionate share to the weakest — which is the reading on the table and the only one anybody has offered — and it bounds nothing wider. The claim is now stated with its domain, and the two counterexamples are reported in the table rather than omitted.</p>
+<p><strong>The budget this produces is the round’s substantive result.</strong> The regime change is a Física change, so what it can properly be asked to carry is the <span class="math inline">\(-1.10\)</span> the subject split assigns to Física, not the observed <span class="math inline">\(-1.48\)</span>; the <span class="math inline">\(-1.18\)</span> that fell on every Basque subject at once is not the Física marking sheet’s. At twelve deductions the flat reading carries <span class="math inline">\(0.96\)</span> marks, 87 % of that <span class="math inline">\(-1.10\)</span>; the realistic tilts carry <span class="math inline">\(0.89\)</span> to <span class="math inline">\(0.65\)</span>, 81 % down to 59 %. Between a fifth and nearly half a mark of Física-specific fall is therefore left unexplained by the marking, and about half a mark of the observed fall on top of that was never its to explain. Inverted, the same result: to carry the whole <span class="math inline">\(-1.48\)</span> alone the flat reading needs nineteen deductions per script, the mild tilt twenty-two, and the steepest thirty-five — more than the paper’s twenty-eight marked sub-tasks, which is to say it cannot.</p>
+<p><strong>One thing came back the other way, and it is a constraint the round did not go looking for.</strong> Refitted, the steep tilts need sixteen to twenty-five deductions to reach a mean of <span class="math inline">\(3.99\)</span>, and at those intensities they put 27 to 30 % of scripts at or below two against the 24.5 % observed. The published figures therefore rule out a <em>heavy</em> concentration at the bottom as well. What survives is a mild tilt, between the two extremes — narrower than either the coordinator’s reading or the model’s original one.</p>
+<p><strong>The error this round found is the fifth round’s, and it is the worst kind.</strong> The fifth round reported that the marking model “fails on the one figure it was not fitted to: 2.1 % of the 2026 scripts scored nine or above”. <strong>Euskadi has not published a 2026 band table.</strong> The 2.09 % is <code>results.json</code>’s <code>beta_fits.EHU_2026.p_ge9</code> — an output of the Beta mixture the dossier itself fitted to the same four published figures, a smooth two-parameter curve asked what it implies above nine. The dossier compared one of its own models against another and reported the disagreement as a confrontation with data. That sentence appeared in Chapter 6, in both languages of Chapter 15, and in finding 12 of the index, and it is corrected in all four. The audit’s standing rule about labelling modelled figures existed precisely to prevent this and did not: the figure was labelled modelled where it was computed and unlabelled where it was used.</p>
+<p>Correcting it improves the dossier rather than damaging it. There is no observation contradicting a flat regime at the top, and none supporting one. What there is instead is a prediction: refitted to the four published figures, the readings on the table agree on all four and differ on the share at or above nine from 0.3 % to 6.1 %, a factor of twenty-three. That single unpublished number decides whether the marking sheet accounts for 87 % of the Física-specific fall or 59 % of it, which is <a href="../chapters/06-interpretation.html#what-to-ask-for-and-what-each-request-would-separate">request 11</a> — the cheapest item on the list and now the sharpest.</p>
+<p><strong>And the recurring failure recurred, an eighth time and a fourth in the same figure.</strong> Figure 18’s step 17 carried the <em>second</em> attempt’s fit — mean 4.01, zero 2.6 — after the third attempt had rebuilt it to 4.11 and 3.5, and it still described a uniformly harder paper as fitting “nearly as well” when the same rebuild had reversed that comparison (loss 22.6 against 1.1). Both are corrected, step 17 is re-marked as weakened rather than standing, step 18 is added, and the figure’s own footnote now names all three drifts instead of one. The check that found it is the one instituted after the seventh instance: every hand-written number in that figure read against the JSON at the end of each round. It worked. The lesson of eight instances is not that more care is needed but that hand-written numbers beside computed ones need a mechanical check, and figure 18 is the only place in the repository that still has them.</p>
+</section>
+<section id="the-seventh-round-20-september-what-the-paper-is-made-of" class="level2">
+<h2 class="anchored" data-anchor-id="the-seventh-round-20-september-what-the-paper-is-made-of">The seventh round (20 September): what the paper is made of</h2>
+<p>The coordination supplied four facts about the marking that the dossier did not have, and three of them change numbers rather than decorate them. They are set out here in the order of how much they cost the dossier, which is not the order they were given in.</p>
+<p><strong>The reading load had the wrong cause, and had had it from the start.</strong> Since <a href="../chapters/06-interpretation.html#how-much-of-the-paper-is-reading">step 12</a> the dossier has read the 2026 paper’s extra length as what the competency items cost. The coordination pointed out that the 0.25 itemisation — forty quanta over the ten marks, new in 2026 — also generates text, because a paper marked in itemised quanta must print each quantum’s demand and each quantum’s price. Splitting both papers’ statements into narrative, demand text and printed prices settles it, and settles it against the dossier. Per printed statement the contextual narrative is <strong>unchanged</strong>: 71 words in 2025, 70 in 2026. The demand text <strong>more than doubled</strong>, 88 words to 181. The printed prices went from nothing to 17. The 2025 paper stated twenty plain numbered demands and no nesting; the 2026 paper states seventeen apartado lead-ins with thirty-six numbered sub-demands inside them and fifty-one printed weights. The coordination’s own ladder for the electromagnetic problem prices the same step independently at 66 words.</p>
+<p>Two things about that are worth separating. The finding that length tracks the fall across the nine communities is untouched; what is overturned is the account of <em>why the Basque paper is long</em>. And the measurement needed nothing the repository did not already hold: both statements have been in <code>sources/exams/</code> since the first day. What was missing was the knowledge that the itemisation was a <strong>decision</strong>, taken for a reason, that could have been otherwise — and a dossier that does not know which features of a paper were chosen will attribute what it measures to whatever cause it already has a name for. That is a limitation of working from published outputs, and it is now stated as one in <a href="../chapters/16-paradigm.html">the new design chapter</a>.</p>
+<p><strong>The linguistic channel is capped, and the dossier said the opposite three times.</strong> The regime sections said the third channel was unmodelled and that the dossier therefore <em>understated</em> the regime by whatever it was worth. The Basque criteria deduct 0.10 from the third spelling error, allow up to 0.50 for syntax and coherence, and <strong>cap the two together at 1.00</strong> — ten per cent of the paper. The rule is in <code>data/marking_rules_2025_2026.csv</code>, it was in it when those sentences were written, and it is the same rule in 2025 and 2026. A capped channel does not understate anything. Modelled, its absolute bound is 0.96 marks with every script in Euskadi losing the maximum; fitted jointly with the other two channels the four published figures want <strong>one error per script, worth 0.04</strong>, and pushing it harder degrades the fit because the mean and the pass rate cannot both be matched by a penalty that takes the same amount from everyone who writes. The claim is withdrawn in Chapter 6 and the channel is now modelled.</p>
+<p>Modelling it required a correction of its own, found by running it rather than by reading it. The first version raised the error rate as the mark fell, on the same reasoning that governs the grave-error rate, and produced <strong>8.2 per cent of scripts at exactly zero against a published 3.2</strong>. The reason is obvious once the number appears: a candidate who writes almost nothing cannot misspell it. Errors need text and text needs an attempt, so the rate has to vanish at both ends. The published zero rate turns out to bound the shape of this channel quite tightly, which is a small dividend from a mistake.</p>
+<p><strong>Only half the paper can attract a deduction.</strong> The model treated all twenty-eight sub-tasks as alike. Coded from the corrector’s own document — which lists every sub-item with its point value and its content — a candidate’s paper has 27 to 32 sub-items of which <strong>14 to 19 can attract a missing unit, a wrong prefix or a rounding error</strong>. The rest ask for a definition, a judgement, a comparison with its justification, one sketch. The coding is in <code>data/exam_subtask_coding_2026.csv</code> and it is the first sub-task-level measurement in the dossier that did not require data EHU has not released.</p>
+<p>The effect on the fitted numbers is modest and the effect on their meaning is not. Concentrating the deductions on the exposed half wastes more of them — 85 per cent of the unrestricted shift at thirty per script — so exposure <strong>lowers</strong> the sixth round’s ceiling rather than raising it. More importantly it changes the currency: twelve deductions per script is a quantity nobody can check, and <strong>0.67 penalties on every numerical answer of every script</strong> is one a corrector can recognise or reject on sight. Carrying the whole observed fall alone would take 1.26 per numerical answer, which is more than there are answers to put them on.</p>
+<p><strong>And one piece of arithmetic that nobody supplied.</strong> A regime fitted to the four published 2026 figures reproduces the whole observed <span class="math inline">\(-1.48\)</span> by construction. The subject decomposition says at most <span class="math inline">\(-1.10\)</span> of that fall can be Física’s, because <span class="math inline">\(-1.18\)</span> moved every Basque subject at once. So any fit to all four published figures is <strong>over-attributed by 0.38 marks</strong>, necessarily and knowably. Asked only for the part that can be its, the regime needs 8.8 deductions per script rather than 15.5. This is a second and independent reason to read the fitted regime as a ceiling, and it does not depend on the shape argument at all.</p>
+<p><strong>What this round did not find.</strong> It did not find an error in any computed quantity. Every number the previous rounds published survived re-running; the three corrections are all of <em>interpretation</em> — a cause attributed to the wrong decision, a channel described as unbounded when the repository recorded its bound, and a uniformity assumed where the source document gives the detail. That is the same pattern as the sixth round and the opposite of the fourth’s, and after two rounds of it the generalisation is probably safe: <strong>this study’s arithmetic is in better condition than its reading of its own sources.</strong></p>
+<p><strong>One new claim failed its own check before it was published.</strong> The design chapter’s first draft said Euskadi had cut optionality the furthest of the nine communities. It had not: Canarias and Castilla-La Mancha each cut thirty points to Euskadi’s twenty-five, though both landed at 70 per cent while Euskadi went to the floor of the permitted band. The true and narrower claim — that Euskadi is the only community that <em>moved</em> to 50 per cent, Cataluña having been there already — is the one now made. It is recorded because it is the ninth instance of the same species as the eight drifts: a superlative written from a general impression rather than read off the panel, in a chapter whose whole purpose is to be read by people who will act on it.</p>
+<p><strong>And the round was not finished when it was declared finished.</strong> The seventh round’s findings went into Chapter 6, the index, the audit and the new design chapter, and into the <em>marking</em> passages of both briefings — but not into the passages of those briefings that are about the papers, the 2027 levers or the decisions to be taken, which is where a reader of either report would look for them. The section of the short report headed “Where the reading actually is” still said the length lived in the competency items, which is the sentence the round had just relocated. It took the coordinator asking whether the results were in both reports to find it. The gap is worth recording because it is a new species: not a number that drifted and not a source misread, but a finding correctly written into the analysis and incompletely propagated to the documents that will actually be read. Four places were missing in each language — the papers section, the statement-length lever, the request list and the table of what has to be decided — and all are now filled, with EN/ES parity re-checked.</p>
+<p><strong>The recurring failure did not recur, and a different one did.</strong> Every hand-written number in figure 18 was checked against the JSON before this round closed, and none had drifted — the first clean check since the habit was instituted. What did fail was the figure’s layout: its vertical pitch was a constant sized for four-line entries, and for the third time a step outgrew it and collided with the next heading. It is now computed from each step’s own wrapped line count, which is the same move as the drift check — replacing a constant that has to be remembered with a quantity that is derived.</p>
+</section>
+<section id="corrections-applied" class="level2">
+<h2 class="anchored" data-anchor-id="corrections-applied">Corrections applied</h2>
+<p>Every correction listed above is in the text of the chapter it belongs to. That sentence is easy to write and was false the last time it was written, so it was tested: after the rewrite a further reader was asked to grep for every superseded string and confirm it was gone. That reader found five more corrections claimed and not applied — the Asturias fix not carried into the derived eight-community correlation, the theory count not carried into one table caption, the collinearity and the “cannot drift” footnote not carried into figure 18, and the z-scale not carried into one paragraph of Chapter 6 — which have since been applied and re-checked. The general point stands and now has a second instance behind it. In summary: scripts 03, 07, 08, 09, 10, 11, 12, 13, 14, 16, 17, 18 corrected; script 21 added (the decomposition) in the second round and scripts 22, 23 and 24 in the third (the subject split, the comparability audit and the cohort rate), and all 28 figures now rendered at one resolution; Chapters 2, 3, 4, 5, 6, 11, 12, 14 and the overview corrected in place; Chapter 6 extended with the decomposition and its data-request list rewritten so that each request names the component it would separate; figures 4, 7, 9, 11, 14, 16, 17, 19, 20, 22, 23, 24 corrected for basis, legibility or a stale hard-coded string; figure 18’s status colours reconciled with its own text, its stale “+0.9” replaced by the corrected <span class="math inline">\(+0.79\)</span>, and its “cannot drift” footnote replaced by the truth.</p>
+<section id="what-the-third-rounds-own-verification-found" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-third-rounds-own-verification-found">What the third round’s own verification found</h3>
+<p>Two independent readers recomputed every number in the new sections from the source CSVs. The quantitative apparatus reproduced to full precision — every cell of the four new tables, both new JSON files and all three figures — and nothing previously published changed. What they found was six prose errors in the new text, which are worth listing because they are all of one kind: counts and proportions written from memory of the data rather than read off it.</p>
+<ul>
+<li><strong>“Split the <span class="math inline">\(-1.48\)</span> exactly into <span class="math inline">\(-1.18\)</span> and <span class="math inline">\(-1.10\)</span>”</strong> in both briefings’ opening callout. Those two do not sum to <span class="math inline">\(-1.48\)</span>; the identity has four terms, and the two Euskadi ones sum to <span class="math inline">\(-2.28\)</span>, which is Euskadi’s Física against the four comparators’ Física. Rewritten, and the proportion restated against the gap it actually divides.</li>
+<li><strong>“A little more than half of the Basque-specific fall”</strong> in five places. True against the <span class="math inline">\(-2.28\)</span> (51.6 %), not against the <span class="math inline">\(-1.65\)</span> of the nine-community budget (71.4 %) or the observed <span class="math inline">\(-1.48\)</span> (79.6 %), and the two decompositions use different fields and are not commensurable. Rewritten everywhere to name its denominator.</li>
+<li><strong>“In all four of them Física ran <span class="math inline">\(+0.74\)</span> above its own community’s mean.”</strong> <span class="math inline">\(+0.74\)</span> is the mean of the four premia, which run from <span class="math inline">\(+0.38\)</span> to <span class="math inline">\(+1.29\)</span>. Corrected.</li>
+<li><strong>“The same tribunals, the same fortnight and the same cohort.”</strong> Each subject has its own correctors and its own candidates; only the sitting, the university and the marking specification are shared. This was load-bearing for the severity argument, and the argument survives in the corrected form — a change written into the shared specification would still move both families — but the overstatement is removed from the chapter, both briefings, the overview and the table’s own footnote.</li>
+<li><strong>“Four communities did not move on any of the four axes.”</strong> None of the nine is at zero on all four; three (Asturias, Madrid, Extremadura) moved on the contextualised share and nothing else, and four left optionality untouched, which is presumably where the four came from. Corrected in six places and in both languages.</li>
+<li><strong>“Only Euskadi both cut its optionality and raised the competency-coded share.”</strong> Castilla-La Mancha did both, by 30 and 20 points, while cutting contextualised marks by 45. The true unique claim is narrower and is the one now made: Euskadi is the only community that moved all four axes in the direction the orientations ask for.</li>
+</ul>
+<p>Two smaller ones: Asturias’s <span class="math inline">\(+1.13\)</span> is the largest rise of the nine and was called the second-largest in one line, and the “bounded above by the verbal mean” claim is a bound only if the 2026 verbal papers were no easier than their predecessors, which is not known — both now say so. One constant was harmonised: <code>17_pau2027_estimator.py</code> used a PAU standard deviation of 2.34 where every other script uses 2.343; corrected, with no change to any published rounded value.</p>
+<p>That every one of the six was a count or a proportion, and none was a computed quantity, is the pattern the second audit also found. The scripts are checked by re-running them; the sentences about them are not checked by anything except a reader who goes back to the table.</p>
+<p>The sixth and seventh rounds add six more of a different kind again, and they are errors of <em>status</em> and of <em>attribution</em> rather than of arithmetic. The sixth round’s three: rather than of arithmetic: a modelled top band used as an observation in four documents; a bound (“flat is the ceiling”) asserted before the runs that would have shown its domain; and a comparison of fit quality across shapes made while holding the voiding parameters at values fitted under one of them. The first was corrected, the second restricted to the family it actually bounds, and the third redone by refitting every shape on its own three numbers. All three were caught by running the analysis rather than by re-reading the prose, which is the opposite of the fourth round’s pattern and suggests the two checks are complementary rather than redundant. The seventh round’s three are of the same kind and one degree worse, because in each case the correcting fact was already in the repository: a cap recorded in <code>data/marking_rules_2025_2026.csv</code> while three sections said the channel was unbounded; a per-sub-item content listing sitting in the corrector’s document while the model assumed uniformity; and two statements in <code>sources/exams/</code> that would have shown, at any point in the study’s life, that the competency narrative had not grown. None of the three needed data EHU has not released. What they needed was a reason to look, and in every case the reason came from the coordination rather than from the dossier’s own reading of its own files. <strong>The standing lesson after seven rounds is that this study checks what it computes far better than it checks what it assumes</strong>, and that its assumptions are most often wrong where they concern decisions somebody took on purpose.</p>
+</section>
+</section>
+<section id="still-open-and-for-the-author-to-decide" class="level2">
+<h2 class="anchored" data-anchor-id="still-open-and-for-the-author-to-decide">Still open, and for the author to decide</h2>
+<ul>
+<li><strong>Whether the design chapter should carry the 2027 options at all.</strong> <a href="../chapters/16-paradigm.html">Chapter 16</a> sets out four routes to the 2027 word target and prices three of them in words and none in marks. The case for keeping them is that the trade-off between the itemisation’s protection and its reading cost is the decision this dossier has actually illuminated, and leaving it implicit would waste the finding. The case against is that the dossier has no measurement of what the protection is worth to a candidate, so three of the four options are priced on one side only.</li>
+<li><strong>Whether the exposure coding should be second-coded.</strong> <code>data/exam_subtask_coding_2026.csv</code> classifies forty-six sub-items by the nature of their demand, and it was coded once, by the author, from the corrector’s content column. The reading-load coding was second-coded blind after the first audit found errors in it; this one has not been, and it now carries a published finding.</li>
+<li><strong>Whether the <span class="math inline">\(2.09\)</span> % should appear in the dossier at all.</strong> It is now labelled a modelled extrapolation everywhere it is used, and it is drawn on figure 31 as a dashed reference. The case for keeping it is that a reader will otherwise wonder what a smooth distribution implies; the case for dropping it is that this round’s worst error was caused by its presence in the repository, and a number that has already been mistaken once for an observation will be mistaken again.</li>
+<li><strong>Figure 18’s hand-written step texts.</strong> Eight drift instances, four in this figure, and the mechanical check instituted after the seventh is a habit rather than a test. The texts could be generated from the JSON for the numeric parts, or the figure could carry no numbers at all and point to the chapters. Neither was done.</li>
+<li><strong>The structure of Chapter 6.</strong> It now carries three layers of history — the original argument, the first audit’s corrections, the second audit’s decomposition. The recommended three-part form (verdicts, tests in logical order, history in one place) is a rewrite and was again not made.</li>
+<li><strong>Whether the slope comparison should remain at all</strong>, given that neither record is a slope.</li>
+<li><strong>The reading-load section.</strong> It survives with stronger numbers, but it is post-hoc, its hypothesis was generated by the author from his own paper, and on eight points it is indistinguishable from the contextualised-points measure. Presenting it as exploratory and short is the audit’s view.</li>
+<li><strong>One “national mean”.</strong> The unweighted seventeen-community mean (5.67 in 2025), the Ministry’s Total (5.65) and a presented-weighted mean (5.73) all appear. One should be declared and used throughout, and the nine-community cross-section should say that it is unweighted and mixed-basis wherever it carries an argument.</li>
+<li><strong>Press-only figures.</strong> Extremadura 5.27; Asturias 6.62 / 76.87 % and its subject values; the EHU July 2026 figures; the Catalan revision requests. None is archived in <code>sources/</code>. They should be archived or dropped, and the regional table should flag Asturias as it flags Extremadura.</li>
+<li><strong>The 2014 language columns</strong> of <code>fisica_pau_ehu_2010_2022.csv</code> sum to 2 195 against a matrícula of 2 495. The shares are internally consistent; the total is not. The original informe should be re-read.</li>
+<li><strong>Colour meaning</strong> is still not constant across the figure set (Euskadi is blue in some figures and violet in others; red carries at least five meanings). A single pass over <code>plot_style.py</code> and the twelve plotting scripts would fix it.</li>
+<li><strong>Chapter numbers in prose</strong> have no counterpart in the sidebar.</li>
+</ul>
+</section>
+<section id="what-these-audits-could-not-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-these-audits-could-not-do">What these audits could not do</h2>
+<p>They could not verify anything that exists only in the press, in dashboards read visually, or in the author’s account of unpublished coordination decisions. They did not re-examine the PISA sampling design beyond the printed standard errors. They could not classify the 2026 Basque distribution as a shift or a reshaping, because EHU has not published it. And they could not separate the four mechanisms that account for three quarters of the Basque-specific fall — which is not a limitation of the audits but the central finding of the study.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/10-reproduce.html" class="pagination-link" aria-label="Reproduce the study">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reproduce the study</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Independent analysis prepared 18–19 September 2026, audited 19 and 20 September · all figures reproducible from <code>scripts/</code></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -71,9 +71,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e0926ce36429a4f6419cf7f43c044cdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-29e5ce9c295aebebc96a6ba847e0be6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8ea58a61d1ba2dd7cb9d02c8236bb19e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,6 +105,35 @@ div.csl-indent {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -407,6 +436,13 @@ div.csl-indent {
  <span class="menu-text">Sixteen years of one paper</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-paradigm.html" class="sidebar-item-text sidebar-link"><i class="bi bi-diagram-3" role="img">
+</i> 
+ <span class="menu-text">The paradigm change, whole</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -437,12 +473,51 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Sources and reproducibility</span></a>
+ <span class="menu-text">Briefing</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-synthesis.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clipboard-check" role="img">
+</i> 
+ <span class="menu-text">Synthesis for the coordination</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-synthesis-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Síntesis (castellano)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing.html" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope-paper" role="img">
+</i> 
+ <span class="menu-text">For the Admissions Office</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Informe (castellano)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
@@ -464,6 +539,13 @@ div.csl-indent {
  <span class="menu-text">Reproduce the study</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -479,7 +561,6 @@ div.csl-indent {
   <li><a href="#chronology" id="toc-chronology" class="nav-link active" data-scroll-target="#chronology">Chronology</a></li>
   <li><a href="#evening-follow-up-same-day-user-away" id="toc-evening-follow-up-same-day-user-away" class="nav-link" data-scroll-target="#evening-follow-up-same-day-user-away">Evening follow-up (same day, user away)</a></li>
   <li><a href="#day-2-19-september-2026-the-exam-papers" id="toc-day-2-19-september-2026-the-exam-papers" class="nav-link" data-scroll-target="#day-2-19-september-2026-the-exam-papers">Day 2 — 19 September 2026: the exam papers</a></li>
-  <li><a href="#dead-ends-so-they-are-not-repeated" id="toc-dead-ends-so-they-are-not-repeated" class="nav-link" data-scroll-target="#dead-ends-so-they-are-not-repeated">Dead ends, so they are not repeated</a></li>
   <li><a href="#watch-list-for-the-next-update" id="toc-watch-list-for-the-next-update" class="nav-link" data-scroll-target="#watch-list-for-the-next-update">Watch-list for the next update</a></li>
   <li><a href="#files-in-this-folder" id="toc-files-in-this-folder" class="nav-link" data-scroll-target="#files-in-this-folder">Files in this folder</a></li>
   </ul>
@@ -515,6 +596,12 @@ div.csl-indent {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 20, 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -563,11 +650,15 @@ div.csl-indent {
 <p>The user, back at the laptop, asked for the loose ends of the previous day to be closed and for a new question to be answered: were the papers of the communities whose Física mean rose in 2026 actually competency-based, and to what extent, given that EHU went from one competency exercise out of four in 2025 to two obligatory ones (half the marks) in 2026?</p>
 <p><strong>Collection</strong> (fresh search quota; three parallel agents plus the built-in browser and the user’s machine): the ordinary papers and corrector documents of 2025 and 2026 for the nine communities with a 2026 result were downloaded into <code>sources/exams/</code> (40 files, all hashed in the registry). Castilla-La Mancha’s files sit behind UCLM’s bot check and were read in the built-in browser and transcribed. Two files were missing at their official locations — Valencia 2025 (overwritten by the 2026 file) and Extremadura 2026 (uex.es behind a WAF) — and were retrieved from FiQuiPedia’s public GitLab archive of official papers, the Valencia one verified byte-for-byte against an independent copy. An agent’s attempt to use the Internet Archive for the UCLM files was reverted (files deleted; site re-read directly).</p>
 <p><strong>Coding</strong> (<code>scripts/07_exam_coding.py</code>): 146 items coded on the EHU criteria (context 0/1/2, application, explain, graph, draw, evaluate) with structure and points; paper-level measures (optional share, expected and guaranteed competency points, criteria per item); figures 11–12; tables; correlations with the grade change. Written up as <a href="../chapters/11-exam-content.html">Chapter 11</a>; Chapter 6 (H2, optionality), Chapter 1 and the index updated.</p>
-<p><strong>Result in one line</strong>: none of the six rising communities increased the competency content of its paper (five stayed at zero or fell, Castilla-La Mancha added one contextualised obligatory item); the Basque paper is the only one in the set that changed genre, on three axes at once (competency content 25 → 62.5 % of expected points, optionality 75 → 50 %, granular sub-task format); Canarias cut optionality without adding competency content and also fell.</p>
+<p><strong>Result in one line</strong>: none of the six rising communities increased the competency content of its paper (five stayed at zero or fell, Castilla-La Mancha added one contextualised obligatory item); the Basque paper is the only one in the set that changed genre, on four axes at once (competency content 25 → 62.5 % of expected points, guaranteed competency points 2.5 → 5, optionality 75 → 50 %, granular sub-task format); Canarias cut optionality without adding competency content and also fell.</p>
 <p><strong>Afternoon, 19 September — the paper’s own history.</strong> The user added the institutional background of the Basque paper (two-option format with theory questions from a published list; the de facto restriction of block-E problems to the photoelectric effect; the 2025 and 2026 decisions). One agent downloaded the full EHU archive 2010–2026 (34 papers, 77 PDFs) and the 2025 model documents; every problem and theory question was inventoried (<code>scripts/08_ehu_history.py</code>, 146 problems, 118 questions, 22 theory titles); the marking rules of all corrector documents in hand were tabulated; a selection-premium simulation quantified each format’s choice; figures 13–15 and <a href="../chapters/12-ehu-paper-history.html">Chapter 12</a> were written; Chapter 6, the index and this log updated; site re-rendered and copied to the Mac. The user then supplied the official EHU–Department list of theory titles (<em>Cuestiones teóricas</em>, 22 titles with development guide); it matches the reconstruction title for title and is archived in <code>sources/exams_ehu_hist/</code>.</p>
-</section>
-<section id="dead-ends-so-they-are-not-repeated" class="level2">
-<h2 class="anchored" data-anchor-id="dead-ends-so-they-are-not-repeated">Dead ends, so they are not repeated</h2>
+<p><strong>Evening, 19 September — the audit.</strong> Before the site is shown to anyone, the user asked for an exhaustive and critical audit of everything: every number, figure, table, dataset and interpretation, with special attention to Chapter 6 and its account of the path the analysis took. Seven layers were run — a clean re-execution of the pipeline, delegated recomputation of every number in Chapters 2–5 and in Chapter 6 from the raw files, a blind second coding of the eighteen papers, a figure-by-figure and table-by-table check, a sourcing and cross-chapter consistency check, and a reasoning audit of Chapter 6 with four new tests (<code>scripts/19_audit_checks.py</code>). The findings, the corrections and the questions still open are in <a href="../chapters/13-audit.html">Chapter 13</a>; the layer reports are in <code>logs/audit/</code>. The single-page edition, which had been assembled by hand and had lagged the chapters, is now generated from them (<code>scripts/20_build_onepage.py</code>). Site re-rendered and copied to the Mac.</p>
+<p><strong>20 September — the second audit, and the decomposition.</strong> The user asked for the whole study to be audited again, for chapters 13 and 14 to be rewritten if necessary, for the data-request list to be revisited, and — the governing question — for the decay to be broken into its components so that they can be acted on separately. Five independent readers went over the chapters again, this time recomputing from the raw cubes, re-reading the PISA workbooks cell by cell, opening thirty-two exam PDFs to check structural claims against the papers, and opening every figure. They found three inherited errors that the first audit had reported as corrected but had not applied, one weighting bug that had produced a published correlation, two theory questions missing from the EHU inventory, a silent merge failure, a centring artefact, and some seventy range, superlative and population errors across the chapters. The analytical addition is <code>scripts/21_decay_decomposition.py</code> and <a href="../chapters/06-interpretation.html#what-the-decay-is-made-of">the decomposition</a>: 2024 was a change of shape and 2025 a change of level; the Basque-specific part of the 2026 fall is 1.65 points; a quarter of it can be quantified and three quarters cannot be attributed with published data. Chapters 13 and 14 were rewritten, the data requests re-derived so that each names the component it separates, and the design levers reordered by evidence and cost.</p>
+<p><strong>20 September, later — four objections from the coordinator.</strong> The coordinator read the rewritten briefing and raised four objections and a question: an unclear paragraph about mean-based tests being blind to 2024; why a Basque fall should be measured against a Spanish field at all; that in Euskadi all the Ministry’s structural requirements were followed while other communities’ 2026 rises may rest on papers that did not change; that the second year of the spelling penalties and of full application of the marking criteria is a measurable hypothesis that the dossier had left unexamined; and whether a <em>rate</em> of cohort decay could be attached to PISA so that a PAU year could be anticipated. Three new scripts answer them. <code>22_subject_decomposition.py</code> splits the Basque Física change exactly, on the balanced five-by-three subject panel, into a Euskadi-wide term (<span class="math inline">\(-1.18\)</span>) and a Física-specific one (<span class="math inline">\(-1.10\)</span>), and uses the eight Basque subjects to bound a general marking-severity effect at a fifth of the fall while showing that a severity confined to the numerical deductions fits the pattern. <code>23_comparability.py</code> scores the nine 2026 papers against the structural criteria and ranks how far each moved. <code>24_cohort_rate.py</code> shows that the PISA per-cohort-year change is a sequence of steps rather than a slope, that the within-cohort term is not identified from PISA and the PAU together, and that the 2026 entry count runs the wrong way for dilution. Chapter 6 gained three sections and a justification of the field frame, Chapter 11 a comparability section, the data-request list two new items, and both briefings the same material; <a href="../chapters/13-audit.html">Chapter 13</a> records the round.</p>
+<p><strong>20 September, last — the statement, and a document for a meeting.</strong> The coordinator asked for a synthesis of the dossier usable both by the admissions office and at the coordination meeting with the Bachillerato physics teachers, for the last rounds to be added to the account of how the analysis was arrived at, and for an in-depth reading of the coordination presentation <em>USaP Física 2027</em>, whose slides 8 to 11 reconstruct the 2026 electromagnetic problem along two separate routes — forward from the habitual style (90, 178, 244, 408 words) and back from what was issued (408, 287, 154, 113) — which share only their endpoint. <code>scripts/25_statement_budget.py</code> measures each item’s statement separately in both Basque papers, which locates the reading load in the obligatory competency items in both years and separates 103 words of printed weights, new in 2026, from the question text; the coordination’s own counts and this study’s agree to three per cent on the paper total. A verification pass then found three defects in that script and eight in the prose around it, all fixed and recorded in <a href="../chapters/13-audit.html">Chapter 13</a>. Chapter 6 gained <a href="../chapters/06-interpretation.html#statement-budget">the statement section</a> and figure 29, figure 18 gained steps 15 and 16 and lost a stale pair of numbers, and <a href="../chapters/15-synthesis.html">Chapter 15</a> was written in English and Spanish.</p>
+<p><strong>20 September, after that — the coordinator’s corrections, and the marking regime.</strong> The coordinator disagreed with four readings of the presentation and supplied the account of the marking that the dossier had been missing. The corrections: the scientific-notation instruction is a transversal criterion of <em>saber básico</em> A, printed with points in 2026 as deliberate scaffolding in its first explicit year, not a taxonomy error; parts b) and c) of problem 2 are physically different situations, so what repeats is the structure of the demand and not the calculation; the two ladders are two different exercises rather than an inconsistency, and the reverse one ends with the configurations <em>drawn</em>, which is the coordination’s own point and the most transferable thing in the four slides; and the reconstructions are proposed improvements, not a verdict on what should have been done. The dossier had also missed a trajectory visible in its own data: a competency item costs about 400 words in its first year and 300 in its second (block A 403 then 289; block B 406 in 2026), which makes the 250 wanted for 2027 a continuation and makes the budget two-tiered rather than one uniform band. The new analysis is <code>scripts/26_penalty_regime.py</code> and <a href="../chapters/06-interpretation.html#penalty-regime">the regime section</a>: the 2025 distribution put through the 2026 marking regime — deduction added to non-award, uncapped, plus grave errors voiding an apartado — reproduces all four published 2026 figures at once, on twelve deductions per script and a cascading grave error in one script in six. Sufficient, not identified — and on the rebuilt baseline a uniformly harder paper fits far worse rather than “nearly as well”, which is the correction the round’s own audit forced. ## Dead ends, so they are not repeated</p>
+<p><strong>20 September, sixth — how the penalties are spread, and what that leaves for everything else.</strong> The coordinator read the marking simulation and made one objection with a purpose attached. The objection: it applies the same number of deductions to every candidate, and it should not — a candidate proficient in units, vectors, prefixes and rounding will collect few, one weak in physics and weak in general will collect many, and the count per script should be a distribution heaviest below the middle and heaviest of all in the left tail. The purpose: he did <strong>not</strong> want the dossier to explain the whole fall with the data it has, because there are objective reasons to ask for more. Read flat, the regime would take everything; read as a distribution it should take less and leave the remainder to the components the analysis has already isolated. <code>scripts/27_penalty_shape.py</code> tests exactly that, giving each candidate an expected count that depends on that candidate’s own level while holding the <em>mean</em> count fixed, so that only the spread changes. The intuition holds, and the mechanism is the zero floor: a deduction removes a full <span class="math inline">\(0.10\)</span> only where <span class="math inline">\(0.10\)</span> is left, so penalties aimed at weak work are partly spent on nothing, and the marks removed per deduction fall monotonically in the share of penalties landing below four out of ten (<span class="math inline">\(r = -0.99\)</span>). Flat and equal is therefore the most expensive way to spend a fixed number of penalties, and a maximum rather than an estimate. Read as a budget against the <span class="math inline">\(-1.10\)</span> the subject split assigns to Física — the marking change is a Física change, so the <span class="math inline">\(-1.18\)</span> that fell on every Basque subject is not its to explain — twelve deductions carry 87 % of it spread flat and 81 % to 59 % distributed, leaving between a fifth and nearly half a mark of Física-specific fall for the paper, the reading load, the optionality and the cohort. The round also disciplined the claim in two directions the coordinator had not asked for: “flat is the ceiling” is false as first written, since a shape that <em>spares</em> the weakest costs more, so the bound is stated with the family it actually bounds; and the published low-mark mass rules out a <em>heavy</em> concentration at the bottom as well, since the steep tilts would put 27 to 30 % of scripts at or below two against the 24.5 % observed. <strong>The round’s own audit found the dossier’s worst error to date</strong>: the previous round had reported that the model “fails on the one figure it was not fitted to, 2.1 % of scripts at nine or above”. Euskadi has not published a 2026 band table; that 2.09 % was this study’s own Beta extrapolation from the same four published figures, so a model had been compared with another model and the disagreement reported as a confrontation with data. Corrected in four documents, and the correction turns the failure into the sharpest request on the list — refitted, the readings of the regime agree on every published figure and differ on the top band from 0.3 % to 6.1 %, a factor of twenty-three, so <a href="../chapters/06-interpretation.html#what-to-ask-for-and-what-each-request-would-separate">one unpublished table</a> decides whether the marking sheet accounts for 87 % of the Física-specific fall or 59 % of it. Chapter 6 gained <a href="../chapters/06-interpretation.html#penalty-shape">the shape section</a> and figure 31, the request list an eleventh item, the overview a thirteenth finding, figure 18 step 18 and a corrected step 17, and <a href="../chapters/13-audit.html">Chapter 13</a> the sixth round.</p>
+<p><strong>20 September, seventh — what the paper is made of, and where the reading load really came from.</strong> The coordinator supplied four facts about the marking that the dossier had not had. The maximum spelling penalty is ten per cent of the paper, 1.00, however many errors there are. Not every one of the forty 0.25 quanta can attract a unit error, because many of them ask for a judgement, a definition, an enumeration of the laws used and why, or a sketch. The 0.25 itemisation is itself a 2026 decision, taken to protect candidates — failing a sub-question costs a quarter of a point instead of an apartado, and more of what a candidate knows gets its own chance — which puts the competency items and the traditional ones on the same footing and so dilutes the paradigm change on purpose, and which generates statement text. And the deduction of 0.10 is not a multiple of the quantum of 0.25. <code>scripts/28_marking_exposure.py</code> takes each of these seriously. Coded from the corrector’s own document, a candidate’s paper has 27 to 32 sub-items of which 14 to 19 can attract a unit, prefix or rounding error, which restates the fitted intensity in a currency a marking sheet can be counted in: 0.67 penalties on every numerical answer of every script, where carrying the whole fall alone would take 1.26. The linguistic channel, which three sections had called an unmodelled <em>understatement</em> of the regime, is capped at 1.00 by a rule that was in the repository’s own marking-rules table all along; its absolute bound is 0.96 marks and the four published figures, fitting it jointly with the other two channels, want one error per script worth 0.04. And a fit to all four published figures is over-attributed by 0.38 marks by construction, because the subject split allows Física only <span class="math inline">\(-1.10\)</span> of the <span class="math inline">\(-1.48\)</span>. <strong>The round’s largest result was not about the marking at all.</strong> Splitting both papers’ statements into narrative, demand text and printed prices shows the contextual narrative unchanged per printed statement — 71 words in 2025 against 70 in 2026 — while the demand text more than doubled, 88 words against 181, and the printed prices went from nothing to 17. The reading load this dossier has attributed to the competency items since <a href="../chapters/06-interpretation.html#how-much-of-the-paper-is-reading">step 12</a> is the price of the itemisation instead, and the coordination’s own reconstruction of the electromagnetic problem prices the same step independently at 66 words. Nothing in that measurement needed data EHU has not released; both statements have been in <code>sources/exams/</code> since the first day. What was missing was the knowledge that the itemisation was a decision, with a purpose, that could have been otherwise. Chapter 6 gained <a href="../chapters/06-interpretation.html#exposure-and-the-third-channel">the exposure section</a> and figure 32, the overview two more findings, figure 18 steps 19 and 20 with step 12 re-marked as weakened, and the dossier a new chapter, <a href="../chapters/16-paradigm.html">The paradigm change, seen whole</a>, which sets out every design decision behind the 2026 paper with what it was for and what it cost, and then retraces the order in which we came to see them.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -744,10 +835,10 @@ div.csl-indent {
 <ul>
 <li><code>index.qmd</code>, <code>chapters/*.qmd</code>, <code>_quarto.yml</code>, <code>styles.scss</code>, <code>styles-dark.scss</code>, <code>assets/</code>: the site.</li>
 <li><code>data/</code>: <code>regional_fisica_found.csv</code>, <code>found_*.csv</code> (dashboard transcriptions), <code>ministry_fisica_*.csv</code> (parsed cubes), <code>original/</code> (July package copies), <code>analysis/</code> (all computed outputs + <code>results.json</code>), <code>tables/</code> (Markdown tables included by the chapters).</li>
-<li><code>sources/</code>: <code>raw/</code> (37 downloaded documents), <code>ministry/</code> (3 cubes), <code>text/</code> (extractions), <code>agent_extractions/</code> (the search agents’ CSVs, unmodified), <code>source_registry.csv</code>, <code>literature_new.bib</code>, <code>references_core.bib</code>.</li>
-<li><code>scripts/</code>: <code>pxparse.py</code>, <code>01_build_ministry_panel.py</code>, <code>02_analysis.py</code>, <code>03_plots.py</code>, <code>04_tables.py</code>, <code>05_registry.py</code>.</li>
-<li><code>plots/</code>: ten figures, PNG and SVG.</li>
-<li><code>logs/</code>: <code>WORK_LOG.md</code> (this chapter as a standalone file), <code>SEARCH_REPORTS.md</code> (the five agents’ full reports).</li>
+<li><code>sources/</code>: <code>raw/</code> (41 downloaded documents), <code>ministry/</code> (3 cubes), <code>text/</code> (extractions), <code>agent_extractions/</code> (the search agents’ CSVs, unmodified), <code>source_registry.csv</code>, <code>literature_new.bib</code>, <code>references_core.bib</code>.</li>
+<li><code>scripts/</code>: <code>pxparse.py</code>, <code>plot_style.py</code> and the numbered scripts <code>01</code>–<code>28</code> (see <a href="../chapters/10-reproduce.html">Methods</a> for the run order; <code>19</code> are the audit checks, <code>20</code> builds the single-page edition, and <code>27</code> and <code>28</code> take <code>--replot</code> to redraw their figures, and <code>28</code> its tables, from the saved results).</li>
+<li><code>plots/</code>: thirty-two figures, PNG and SVG.</li>
+<li><code>logs/</code>: <code>WORK_LOG.md</code> (this chapter as a standalone file), <code>SEARCH_REPORTS.md</code> (the five agents’ full reports), <code>AUDIT_2026-09-19.md</code> and <code>audit/</code> (the audit report and its seven layer reports, see <a href="../chapters/13-audit.html">Audit</a>).</li>
 </ul>
 
 
@@ -1193,7 +1284,7 @@ Sánchez-Tarazaga, L., &amp; Gimeno Rovira, J. A. (2026). <em><span></span>C<spa
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Independent analysis prepared 18 September 2026 · all figures reproducible from <code>scripts/</code></p>
+<p>Independent analysis prepared 18–19 September 2026, audited 19 and 20 September · all figures reproducible from <code>scripts/</code></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

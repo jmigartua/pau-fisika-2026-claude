@@ -89,34 +89,39 @@ p,li { max-width: 78ch; }
 #quarto-margin-sidebar { background: transparent; padding-top: 2.8rem; }
 
 // R6 · method asides. Quarto places `.column-margin` in the page grid's right
-// margin, which is exactly where this theme keeps the sticky table of contents;
-// the two would ride over each other as the page scrolls. The note is therefore
-// brought back inside the text column and floated right, so it still reads as a
-// side note, can never touch the TOC, and falls back to a plain bordered block on
-// a narrow screen. The PDF is untouched — there it is a real \marginnote in a
-// widened page, which is what the coordination chose.
+// margin, beside its own paragraph, which is what the coordination asked for and
+// what the PDF does. The first attempt here forced the note into the text column
+// and floated it; that was wrong twice over — the margin column in this theme is
+// free, because the table of contents renders as a collapsed dropdown at the top
+// of it, and Quarto gives the container `height: 1em` on the assumption that it
+// is placed out of flow, so a floated box one line tall had the whole paragraph
+// run straight over it. Native placement is restored; only the typography is set
+// here, plus a height guard for the narrow-width fallback, where Quarto drops the
+// note back into the text column.
+// Quarto gives the container `height: 1em` so that a margin note does not stretch
+// its grid row and open a gap in the body. Forcing `height: auto` here stops two
+// notes overlapping but puts those gaps back, which is worse. The note therefore
+// stays out of flow, and the discipline is in the source instead: **an aside runs
+// to about five lines and consecutive asides are anchored at least one paragraph
+// apart**, which is what keeps them from colliding.
 .column-margin.column-container {
-  grid-column: body-content-start / body-content-end !important;
-  float: right;
-  clear: right;
-  width: 15.5rem;
-  max-width: 44%;
-  margin: .2rem 0 1rem 1.5rem;
-  padding: .1rem 0 .1rem .85rem;
-  border-left: 2px solid var(--zs-line);
   font-size: 11.5px;
   line-height: 1.6;
   color: var(--zs-muted);
+  border-left: 2px solid var(--zs-line);
+  padding-left: .8rem;
 }
 .column-margin.column-container strong { color: var(--zs-fg); font-weight: 600; }
-.column-margin.column-container code { font-size: 10.5px; }
-.column-margin.column-container p { margin-bottom: .5rem; }
+.column-margin.column-container code { font-size: 10.5px; word-break: break-word; }
+.column-margin.column-container p { margin-bottom: .55rem; }
 .column-margin.column-container p:last-child { margin-bottom: 0; }
 @media (max-width: 991.98px) {
-  .column-margin.column-container {
-    float: none; width: auto; max-width: none; margin: 1rem 0;
+  .column-margin.column-container,
+  .column-margin.column-container.no-row-height {
+    height: auto; overflow: visible; margin: 1rem 0;
   }
 }
+
 // R7 · the right-hand "In this page" was set at the same 12 px as its own heading,
 // so the heading did not read as a heading and the block competed with the body.
 #TOC { font-size: 11px; line-height: 1.6; }

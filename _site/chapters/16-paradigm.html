@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-20">
+<meta name="description" content="A design-side account of the 2026 Basque Física paper: the constraints imposed by the reform, the decisions the coordination took inside them, how those decisions interact, and what this dossier’s measurements say about each. Part two retraces the order of discovery, which was not the order of the argument.">
+
+<title>The paradigm change, seen whole – PAU Física 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/01-data-hunt.html" rel="next">
+<link href="../chapters/12-ehu-paper-history.html" rel="prev">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8ea58a61d1ba2dd7cb9d02c8236bb19e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PAU Física</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/02-euskadi.html"> 
+<span class="menu-text">The Euskadi break</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/03-spain-2026.html"> 
+<span class="menu-text">Spain 2026</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../chapters/08-sources.html"> 
+<span class="menu-text">Sources &amp; methods</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/11-exam-content.html">The papers</a></li><li class="breadcrumb-item"><a href="../chapters/16-paradigm.html">The paradigm change, whole</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Findings</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evidence and results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-euskadi.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="menu-text">Euskadi 2010–2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-spain-2026.html" class="sidebar-item-text sidebar-link"><i class="bi bi-globe-europe-africa" role="img">
+</i> 
+ <span class="menu-text">Spain 2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-distributions.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Shape of the collapse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-subjects-sittings.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Subjects &amp; participation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-interpretation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-compass" role="img">
+</i> 
+ <span class="menu-text">Interpretation &amp; 2027</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The papers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-exam-content.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">The papers themselves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-ehu-paper-history.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clock-history" role="img">
+</i> 
+ <span class="menu-text">Sixteen years of one paper</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-paradigm.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-diagram-3" role="img">
+</i> 
+ <span class="menu-text">The paradigm change, whole</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Research context</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-data-hunt.html" class="sidebar-item-text sidebar-link"><i class="bi bi-search" role="img">
+</i> 
+ <span class="menu-text">The data hunt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-literature.html" class="sidebar-item-text sidebar-link"><i class="bi bi-journal-text" role="img">
+</i> 
+ <span class="menu-text">Literature &amp; regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Briefing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-synthesis.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clipboard-check" role="img">
+</i> 
+ <span class="menu-text">Synthesis for the coordination</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-synthesis-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Síntesis (castellano)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing.html" class="sidebar-item-text sidebar-link"><i class="bi bi-envelope-paper" role="img">
+</i> 
+ <span class="menu-text">For the Admissions Office</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-briefing-es.html" class="sidebar-item-text sidebar-link"><i class="bi bi-translate" role="img">
+</i> 
+ <span class="menu-text">Informe (castellano)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sources and reproducibility</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
+</i> 
+ <span class="menu-text">Sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-log.html" class="sidebar-item-text sidebar-link"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="menu-text">Work log</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-reproduce.html" class="sidebar-item-text sidebar-link"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Reproduce the study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-audit.html" class="sidebar-item-text sidebar-link"><i class="bi bi-shield-check" role="img">
+</i> 
+ <span class="menu-text">Audit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-this-chapter-exists-and-how-to-read-it" id="toc-why-this-chapter-exists-and-how-to-read-it" class="nav-link active" data-scroll-target="#why-this-chapter-exists-and-how-to-read-it">Why this chapter exists, and how to read it</a></li>
+  <li><a href="#part-one-the-scenario" id="toc-part-one-the-scenario" class="nav-link" data-scroll-target="#part-one-the-scenario">Part one: the scenario</a>
+  <ul class="collapse">
+  <li><a href="#what-was-not-chosen" id="toc-what-was-not-chosen" class="nav-link" data-scroll-target="#what-was-not-chosen">What was not chosen</a></li>
+  <li><a href="#what-was-chosen" id="toc-what-was-chosen" class="nav-link" data-scroll-target="#what-was-chosen">What was chosen</a></li>
+  <li><a href="#how-the-decisions-interact" id="toc-how-the-decisions-interact" class="nav-link" data-scroll-target="#how-the-decisions-interact">How the decisions interact</a></li>
+  <li><a href="#what-the-data-say-decision-by-decision" id="toc-what-the-data-say-decision-by-decision" class="nav-link" data-scroll-target="#what-the-data-say-decision-by-decision">What the data say, decision by decision</a></li>
+  <li><a href="#what-2027-changes-and-the-one-decision-it-does-not-take" id="toc-what-2027-changes-and-the-one-decision-it-does-not-take" class="nav-link" data-scroll-target="#what-2027-changes-and-the-one-decision-it-does-not-take">What 2027 changes, and the one decision it does not take</a></li>
+  </ul></li>
+  <li><a href="#part-two-the-order-in-which-we-came-to-see-it" id="toc-part-two-the-order-in-which-we-came-to-see-it" class="nav-link" data-scroll-target="#part-two-the-order-in-which-we-came-to-see-it">Part two: the order in which we came to see it</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/11-exam-content.html">The papers</a></li><li class="breadcrumb-item"><a href="../chapters/16-paradigm.html">The paradigm change, whole</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">The paradigm change, seen whole</h1>
+<p class="subtitle lead">Every design decision behind the 2026 paper, what it was for, what it cost, and what the data now say — followed by the order in which we came to see it</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">design</div>
+    <div class="quarto-category">interpretation</div>
+    <div class="quarto-category">synthesis</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A design-side account of the 2026 Basque Física paper: the constraints imposed by the reform, the decisions the coordination took inside them, how those decisions interact, and what this dossier’s measurements say about each. Part two retraces the order of discovery, which was not the order of the argument.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 20, 2026</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 20, 2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="why-this-chapter-exists-and-how-to-read-it" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-chapter-exists-and-how-to-read-it">Why this chapter exists, and how to read it</h2>
+<p>Everything else in this dossier works from the outside in: a mean fell, and the question is what moved it. This chapter works from the inside out. It sets out the paper as a made thing — a set of decisions taken by people for reasons, under constraints they did not choose — and asks of each decision what it was for, what it cost, and what the measurements say.</p>
+<p>It exists because the design side of the story arrived in pieces, in the order that questions happened to be asked, and that is the worst possible order to read it in. A reader meeting the itemisation for the first time in the middle of a marking simulation cannot see that the same decision also explains the reading load. The order of discovery is preserved, because it is part of the evidence and because it shows which conclusions were reached under pressure, but it is put second, in <a href="#part-two-the-order-in-which-we-came-to-see-it">part two</a>.</p>
+<p>Two warnings. The account of <em>intent</em> in part one comes from the coordination and is <strong>testimony</strong>; it is labelled as such where it carries weight, and the dossier does not treat an explanation of why a decision was taken as evidence that it was taken for that reason alone. The account of <em>effect</em> is measurement, and is sourced. Where the two disagree, both are given.</p>
+</section>
+<section id="part-one-the-scenario" class="level2">
+<h2 class="anchored" data-anchor-id="part-one-the-scenario">Part one: the scenario</h2>
+<section id="what-was-not-chosen" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-not-chosen">What was not chosen</h3>
+<p>Four things about the 2026 paper were settled before the coordination met, by the LOMLOE curriculum and the CRUE orientations, and no local decision could have avoided them.</p>
+<p><strong>The paper had to be competency-based, and part of it had to be obligatory.</strong> The orientations require at least one non-optional question carrying an application, a real context, a published text or a graph to interpret. What a competency item <em>is</em> — a real situation, a demand for qualitative reasoning, a demand for judgement — is specified, not left open.</p>
+<p><strong>Optionality had to fall inside a band</strong>, between 50 and 85 per cent of the marks, where the old Basque paper had offered a choice between two complete papers and then, through the COVID years, any four of eight items.</p>
+<p><strong>At least 70 per cent of the marks had to come from open or semi-constructed responses</strong>, which rules out the compensating move a paper under length pressure would otherwise make.</p>
+<p><strong>And the error schedule was specified with amounts.</strong> The seven minor types — missing or incorrect units, a vector arrow on a scalar and its converse when repeated, intermediate rounding that moves a value by more than 5 per cent, wrong SI prefixes, a factor-of-ten error, a data transcription error — carry <span class="math inline">\(-0.10\)</span> each. A grave error voids the section. The linguistic component is 0.2 within a text-producing question, and the Basque criteria cap spelling and syntax together at 1.00, ten per cent of the paper.</p>
+<p>The last of these matters more than it looks, and in a direction that is easy to miss: <strong>the amounts were specified, but nothing said they had to be applied in full, and in 2025 the Basque criteria carried them as words rather than numbers.</strong> The 2025 text says significant figures and exponent notation are “penalised” and puts no figure on it. The 2026 text says <span class="math inline">\(-0.10\)</span>. That is the difference the coordination describes as the regime change, and it is visible in <code>data/marking_rules_2025_2026.csv</code> without anybody’s testimony.</p>
+</section>
+<section id="what-was-chosen" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-chosen">What was chosen</h3>
+<p>Inside that frame the coordination took at least eight decisions that it did not have to take, or did not have to take in the form it took them. Each is given here with its purpose as the coordination states it — testimony — and its measured cost.</p>
+<section id="optionality-cut-to-the-floor-and-the-competency-items-made-obligatory" class="level4">
+<h4 class="anchored" data-anchor-id="optionality-cut-to-the-floor-and-the-competency-items-made-obligatory">1. Optionality cut to the floor, and the competency items made obligatory</h4>
+<p>The 2025 paper offered one of two in three of its four blocks: 75 per cent optional. The 2026 paper made exercises 1 and 2 obligatory and offered a choice only in 3 and 4: <strong>50 per cent</strong>, the bottom of the permitted band. Of the nine communities that published a 2026 result, Euskadi and Cataluña are the only two sitting at that floor, and Cataluña was already there in 2025 — so Euskadi is the only one that <em>moved</em> to it. Two communities cut more percentage points than Euskadi’s 25, Canarias and Castilla-La Mancha by 30 each, but both landed at 70; one, Andalucía, went the other way, by 15.</p>
+<p><em>What it was for.</em> An obligatory competency item is the only way to guarantee that every candidate meets the new paradigm; an optional one can be avoided by everybody who finds it unfamiliar, which would make the reform invisible and unassessable.</p>
+<p><em>What it cost.</em> Simulating both Basque formats on the same population and items, removing the choice is worth about <span class="math inline">\(-0.26\)</span>; net of what the other eight communities cut, the part that belongs to Euskadi is about <strong><span class="math inline">\(-0.20\)</span></strong> (<a href="../chapters/06-interpretation.html#the-mark-budget">the budget</a>). It also removes the candidate’s escape route from the longest statements, which matters because the two obligatory items are the two longest.</p>
+</section>
+<section id="the-marks-itemised-into-quanta-of-0.25" class="level4">
+<h4 class="anchored" data-anchor-id="the-marks-itemised-into-quanta-of-0.25">2. The marks itemised into quanta of 0.25</h4>
+<p>This is the decision the rest of the chapter keeps returning to. The 2026 criteria break each apartado into sub-items — a.1, a.2, a.3 — each worth 0.25 or 0.50, <strong>forty quanta over the 10.00</strong>. The 2025 criteria did not: the step was 0.25, but the itemisation was not written down and not printed.</p>
+<p><em>What it was for</em>, in the coordination’s words: to help candidates. Failing a sub-question costs a quarter of a point instead of an apartado. More elements of what a candidate knows get their own chance to be credited. Spreading the marks over many small demands gives more opportunities than concentrating them in a few large ones, and for the demands that are effectively binary — does this change, yes or no, and why — a candidate who is uncertain still has a real chance on each.</p>
+<p><em>What it cost.</em> Three things, and the dossier could measure all three only once the decision was on the table.</p>
+<p><strong>It generates text.</strong> A paper marked in itemised quanta must print each quantum’s demand and each quantum’s price. Per printed statement, the competency narrative in 2026 is the same size it was in 2025 — 70 words against 71, 99 per cent — while the demand text <strong>more than doubled</strong>, 181 words against 88, and the printed prices went from nothing to 17. The 2025 paper stated twenty plain numbered demands and no nesting; the 2026 paper states seventeen apartado lead-ins with thirty-six numbered sub-demands inside them and fifty-one printed weights. <strong>The reading load the dossier has been attributing to the competency reform is the price of this decision instead</strong> (<a href="../chapters/06-interpretation.html#exposure-and-the-third-channel">the measurement</a>). The coordination’s own reconstruction agrees from the other side: in its ladder for the electromagnetic problem, making the item competencial costs 88 words and <em>desglosarlo</em> — itemising it — costs a further 66.</p>
+<p><strong>It puts the competency items and the traditional ones on the same footing.</strong> A competency item broken into quanta of 0.25 is marked the same way as a naked ondas problem broken into quanta of 0.25. The coordination says this is deliberate: the paradigm change is diluted on purpose, so that a candidate who has prepared in the old way is not destroyed by the new one. It is a defensible transitional choice and it is worth saying out loud, because it means <strong>the 2026 paper is less of a paradigm change than its statements look</strong>, and any inference from the paper’s appearance to what it demanded is an overstatement.</p>
+<p><strong>And it works against the deductions.</strong> Itemisation makes partial credit systematic where it had been at the corrector’s discretion, so on its own it <em>raises</em> marks. The deductions lower them. Two decisions taken in the same room in the same year pull in opposite directions, and the observed fall is their sum. This has an arithmetical consequence the dossier had not drawn: a model of the fall that includes the deductions and omits the itemisation <strong>understates the penalty burden</strong>, because the penalties had first to cancel a benefit before they could show up as a fall.</p>
+</section>
+<section id="the-deduction-schedule-applied-in-full" class="level4">
+<h4 class="anchored" data-anchor-id="the-deduction-schedule-applied-in-full">3. The deduction schedule applied in full</h4>
+<p><em>What it was for.</em> Compliance, and consistency between correctors. The amounts are in the criteria; a meeting was held before the sitting and agreed to apply them.</p>
+<p><em>What is documented and what is not.</em> The amounts are documented. <strong>That the rules were applied in full in 2026 and not in 2025 is the coordinator’s account</strong> — collective, scheduled, attended by every corrector, so any of them could confirm or deny it, but testimony until the agenda and circulated criteria are retrieved (<a href="../chapters/06-interpretation.html#what-to-ask-for-and-what-each-request-would-separate">request 10</a>).</p>
+<p><em>What it cost.</em> This is the dossier’s largest single piece of modelling, and it occupies three sections of <a href="../chapters/06-interpretation.html#penalty-regime">chapter 6</a>. In summary: the regime is <strong>sufficient</strong> to produce the four published 2026 figures, at about twelve deductions per script with a grave error carrying part of the paper in one script in six; it is not identified, because those four figures were fitted rather than predicted; read flat it is a <strong>ceiling</strong> rather than an estimate, and read as the realistic distribution it carries between 59 and 87 per cent of the Física-specific fall; and fitted to all four published figures it is <strong>over-attributed by 0.38 marks</strong>, because those figures contain a <span class="math inline">\(-1.18\)</span> that fell on every Basque subject and cannot be the Física marking sheet.</p>
+</section>
+<section id="the-deduction-of-0.10-against-the-quantum-of-0.25" class="level4">
+<h4 class="anchored" data-anchor-id="the-deduction-of-0.10-against-the-quantum-of-0.25">4. The deduction of 0.10 against the quantum of 0.25</h4>
+<p>This is not a decision anybody took. It is what two decisions produce together, and it deserves its own heading because nobody chose it and its effect is real.</p>
+<p>The scheme is built on a quarter-point step. The penalty is <span class="math inline">\(0.10\)</span>, which is <strong>two fifths of a quantum</strong>. A 0.25 sub-item hit once is worth 0.15; hit twice, 0.05. Whatever else the deductions did, they dissolved the granularity the same criteria had just introduced: after the first deduction no script is on the grid the design is built on, and the itemisation’s promise — that a candidate can see what each piece was worth — stops being visible in the mark.</p>
+<p>It also produces the effect <a href="../chapters/06-interpretation.html#penalty-shape">the shape section</a> turns on. A deduction removes a full 0.10 only where 0.10 is left; on a sub-item a weak candidate has half-earned, the zero floor absorbs the rest. Fine granularity makes that worse, not better, because the pieces are smaller.</p>
+</section>
+<section id="only-half-the-paper-can-attract-a-deduction" class="level4">
+<h4 class="anchored" data-anchor-id="only-half-the-paper-can-attract-a-deduction">5. Only half the paper can attract a deduction</h4>
+<p>Also not a decision, and also consequential. Coded from the corrector’s own document, a candidate’s paper has 27 to 32 sub-items of which <strong>14 to 19 can attract a missing unit, a wrong prefix or a rounding error</strong> — 48 to 63 per cent. The rest ask for a definition, a judgement, a comparison with its justification, a sketch. A missing unit cannot be committed there.</p>
+<p>So the deduction schedule does not apply to the paper; it applies to the numerical half. Restated in the currency a marking sheet can be counted in, the fitted twelve deductions are <strong>0.67 penalties on every numerical answer of every script</strong>; carrying the whole observed fall alone would take 1.26, more than one penalty on every numerical answer there is. That is the number to take to the tally, and it is a much harder claim than “twelve per script”.</p>
+<p>There is an irony in it worth naming. The competency items are the ones richest in judgement and justification, which is to say the ones <strong>least</strong> exposed to the deduction schedule. The uncapped penalties fall hardest on the traditional, numerical part of the paper — the part the itemisation was meant to make forgiving.</p>
+</section>
+<section id="symbolic-resolution-before-numerical" class="level4">
+<h4 class="anchored" data-anchor-id="symbolic-resolution-before-numerical">6. Symbolic resolution before numerical</h4>
+<p>New in 2026: <em>cálculo simbólico antes que numérico</em>, stated in the general criteria.</p>
+<p><em>What it was for.</em> It is good practice and it makes a wrong route visible before the arithmetic hides it.</p>
+<p><em>What it cost.</em> Not measured. It plausibly interacts with the deduction schedule — a symbolic step carries no units to omit and no figures to round, so a paper that demands symbolic work first shifts marks from exposed sub-items to unexposed ones. The coded paper bears this out: the symbolic sub-items carry 0.50 to 2.25 marks depending on the options chosen, and not one of them is exposed. This is one of the few places where a 2026 decision worked <em>against</em> the penalties.</p>
+</section>
+<section id="the-constants-table-moved-onto-the-paper-with-distractors" class="level4">
+<h4 class="anchored" data-anchor-id="the-constants-table-moved-onto-the-paper-with-distractors">7. The constants table moved onto the paper, with distractors</h4>
+<p>New in 2026: one table for the whole paper, containing every constant needed and exactly two that are not.</p>
+<p><em>What it was for.</em> Uniformity, and a small test of whether a candidate knows which constants the problem needs.</p>
+<p><em>What it cost.</em> About 21 words moved out of the statements and into furniture, which slightly inflates both the measured statement growth and the measured furniture growth; the dossier says so where it reports them. The distractors are not costed.</p>
+</section>
+<section id="scientific-notation-printed-as-a-scored-criterion" class="level4">
+<h4 class="anchored" data-anchor-id="scientific-notation-printed-as-a-scored-criterion">8. Scientific notation printed as a scored criterion</h4>
+<p><em>What it was.</em> A transversal criterion of <em>saber básico</em> A, printed with its points in its first explicit year as deliberate scaffolding.</p>
+<p><em>What it was not.</em> An earlier draft of this dossier read it as a taxonomy error — a presentational convention mistaken for a competence. <strong>That reading was wrong and was withdrawn.</strong> The coordination’s intent was to make a standing expectation visible at the moment it first became scorable, and printing it is the scaffolding, not a category confusion.</p>
+</section>
+</section>
+<section id="how-the-decisions-interact" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-decisions-interact">How the decisions interact</h3>
+<p>Set out one at a time, each decision is defensible and most are obviously right. The difficulty is in the combination, and the combination was not designed.</p>
+<p><strong>Two decisions pull opposite ways.</strong> Itemisation raises marks by making partial credit systematic. The full application of an uncapped deduction schedule lowers them. Taken together the paper is more forgiving in its structure and less forgiving in its marking, and the observed mean is the residue. Nobody chose that pairing as a pairing.</p>
+<p><strong>One channel is capped and the other is not.</strong> The linguistic penalties stop at 1.00 whatever the number of errors; the <span class="math inline">\(-0.10\)</span> deductions have no cap at all in the Basque 2026 criteria. Of the nine communities coded, Canarias capped its deductions at 20 per cent of the section in 2025 and removed the cap in 2026; Andalucía caps at <span class="math inline">\(-0.25\)</span> per apartado; Extremadura caps at 1.00. Euskadi’s decision to leave the numerical deductions uncapped while the linguistic ones remained capped is a choice about which kind of error is allowed to be unbounded, and it went against the kind physics is made of.</p>
+<p><strong>The protection and the reading load are the same decision.</strong> This is the finding this chapter exists to state plainly. The itemisation that shortens the fall from a mistake is the itemisation that lengthens the paper, because each protected piece has to be written down and priced. They cannot be separated by better drafting; they can only be traded.</p>
+<p><strong>And the dilution is real in both directions.</strong> Marking competency items in the same quanta as traditional ones protects candidates prepared in the old way, and it also means that the competency items — the long, contextualised, judgement-heavy ones — are the part of the paper the deduction schedule barely touches. The paradigm change was diluted in the marking as well as in the structure.</p>
+</section>
+<section id="what-the-data-say-decision-by-decision" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-data-say-decision-by-decision">What the data say, decision by decision</h3>
+<div id="tbl-design" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[22,26,36,16]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Every design decision behind the 2026 paper, with what it was for and what it cost.
+</figcaption>
+<div aria-describedby="tbl-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 26%">
+<col style="width: 36%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decision</th>
+<th>Purpose (testimony)</th>
+<th>Measured cost</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Optionality cut to 50 %</td>
+<td>guarantee every candidate meets the new paradigm</td>
+<td>about <span class="math inline">\(-0.20\)</span> net of the field</td>
+<td>quantified (modelled)</td>
+</tr>
+<tr class="even">
+<td>Marks itemised into 0.25 quanta</td>
+<td>protect candidates; credit more elements</td>
+<td>the whole of the reading load: demand text per statement 88 → 181 words, prices 0 → 17</td>
+<td>measured</td>
+</tr>
+<tr class="odd">
+<td>”</td>
+<td>”</td>
+<td>dilutes the paradigm change on purpose</td>
+<td>testimony, consistent with the coding</td>
+</tr>
+<tr class="even">
+<td>”</td>
+<td>”</td>
+<td>raises marks, so the penalty burden behind the fall is larger than a model without it implies</td>
+<td>argued, not quantified</td>
+</tr>
+<tr class="odd">
+<td>Deduction schedule applied in full</td>
+<td>compliance and consistency</td>
+<td>sufficient for all four published figures; 59–87 % of the Física-specific fall on realistic readings; over-attributed by 0.38 if fitted to all four</td>
+<td>modelled; the application is testimony</td>
+</tr>
+<tr class="even">
+<td>0.10 against a 0.25 quantum</td>
+<td>not a decision</td>
+<td>every script off the grid after the first deduction</td>
+<td>arithmetic</td>
+</tr>
+<tr class="odd">
+<td>Half the paper exposed</td>
+<td>not a decision</td>
+<td>0.67 penalties per numerical answer at the fitted rate</td>
+<td>measured</td>
+</tr>
+<tr class="even">
+<td>Symbolic before numerical</td>
+<td>good practice; makes a wrong route visible</td>
+<td>shifts marks to unexposed sub-items; not costed</td>
+<td>not measured</td>
+</tr>
+<tr class="odd">
+<td>Constants table with distractors</td>
+<td>uniformity; a small test</td>
+<td>≈21 words of layout effect on the statement counts</td>
+<td>measured, small</td>
+</tr>
+<tr class="even">
+<td>Scientific notation printed</td>
+<td>scaffolding in its first scorable year</td>
+<td>not costed</td>
+<td>testimony</td>
+</tr>
+<tr class="odd">
+<td>Linguistic rules applied</td>
+<td>compliance</td>
+<td>capped at 1.00; the published figures want one error per script, worth 0.04</td>
+<td>modelled</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="what-2027-changes-and-the-one-decision-it-does-not-take" class="level3">
+<h3 class="anchored" data-anchor-id="what-2027-changes-and-the-one-decision-it-does-not-take">What 2027 changes, and the one decision it does not take</h3>
+<p>The 2027 paper keeps the structure, the contents and the marking. One thing changes: the statements get shorter, from about 1 430 words of reading to about 970, with the same verbs, the same rubric and the same demands. The budget is two-tiered — competency items at or below 250 words, option items at or below 150 — because the papers’ own trajectory shows a competency item costing about 400 words in its first year and about 300 in its second (<a href="../chapters/06-interpretation.html#statement-budget">the statement budget</a>).</p>
+<p>What this chapter adds is that <strong>the target may be reachable by a route nobody has costed</strong>. If the demand text per statement has doubled because of the itemisation, and the competency narrative has not grown at all, then the cheapest 470 words on the paper are in the nesting and the printed prices, not in the contextualisation everybody has been trying to compress. Flattening two levels of demand back to one, or printing the apartado’s price without printing each quantum’s, would buy a large part of the target without touching a single word of physics.</p>
+<p>It would also give back exactly what the itemisation was introduced to provide. That is the trade-off, and it is not the dossier’s to resolve:</p>
+<ul>
+<li><strong>Keep the itemisation and compress the narrative.</strong> The narrative is already at 70 words a statement; there is not 470 words of slack in it. This is the route the 2027 target implicitly assumes and it is the hardest one.</li>
+<li><strong>Flatten the itemisation and keep the narrative.</strong> Cheapest in words, and it returns the marking to the corrector’s discretion for partial credit, which is what the itemisation was meant to remove.</li>
+<li><strong>Keep both and print less.</strong> Itemise in the criteria, as now, but print only the apartado and its total on the paper. The candidate loses the signal of what each piece is worth; the corrector keeps the fine grid. This is the only option that separates the two effects, and nobody has tested whether candidates use the printed weights at all.</li>
+<li><strong>Keep both, print both, and cap the deductions.</strong> Does nothing for the reading load, but it addresses the interaction in #4 and #5 directly, and it is the only item on this list that is a marking decision rather than a drafting one.</li>
+</ul>
+<p>The dossier can price the first three in words and none of them in marks. It can say that the fourth is the one whose effect it has actually modelled. <strong>What would let the coordination choose is the tally</strong>: deductions per script crossed with the script’s own mark, and the 2026 band table (<a href="../chapters/06-interpretation.html#what-to-ask-for-and-what-each-request-would-separate">requests 3 and 11</a>).</p>
+</section>
+</section>
+<section id="part-two-the-order-in-which-we-came-to-see-it" class="level2">
+<h2 class="anchored" data-anchor-id="part-two-the-order-in-which-we-came-to-see-it">Part two: the order in which we came to see it</h2>
+<p>Part one is the argument arranged. This is the sequence, which was different, and which is kept because the order in which a thing is learned is evidence about how well it is known. Each round below is recorded in full in <a href="../chapters/13-audit.html">the audit</a>; what follows is only the design-side thread.</p>
+<p><strong>The paper as a length.</strong> The first thing the dossier noticed about the 2026 paper was that it was longer, and the reading-load section attributed the length to the competency items, because that is what a competency item looks like: a paragraph of scenario before the physics. The correlation across nine communities between length and the change in the mean was <span class="math inline">\(-0.905\)</span>. Nobody asked what <em>kind</em> of words had been added.</p>
+<p><strong>The paper as a structure.</strong> Coding the nine papers against the structural criteria showed that Euskadi was the only community to move all four axes in the direction the orientations ask, and that the nine did not sit comparable exams. This made the field comparison weaker and the Basque-specific number stronger, and it still had nothing to say about why the Basque paper was long.</p>
+<p><strong>The statement item by item.</strong> Asked for a word budget for 2027, the dossier counted every statement separately and found the length concentrated in the obligatory competency items in both years — A1 at 403 words in 2025, B1 at 406 in 2026. That looked like confirmation of the competency reading. It was not: it was the two obligatory items being the two that were both competencial <em>and</em> the most heavily itemised, and nothing in the count could separate those.</p>
+<p><strong>The coordinator’s corrections.</strong> Four readings of the coordination presentation were wrong and were withdrawn, including the scientific-notation one above. The correction that mattered most was a trajectory the dossier had missed in its own data: a competency item costs about 400 words in its first year and 300 in its second. That made 2026 a paper carrying one block at 400 and another at 300, rather than a paper that had gone wrong.</p>
+<p><strong>The marking regime.</strong> The coordinator supplied the account of non-award becoming deduction. Modelling it took three attempts, two of them wrong, and produced the dossier’s strongest single result: the regime is sufficient to produce the published figures. It also produced the assumption this round dismantled — that all twenty-eight sub-tasks are alike and that the linguistic channel is an unmodelled addition.</p>
+<p><strong>The distribution of the penalties.</strong> The coordinator objected that the model gives every candidate the same twelve deductions, and attached a purpose: he did not want the whole fall explained with the data in hand. That produced the ceiling argument, and the correction of a modelled top band that the dossier had been quoting as an observation.</p>
+<p><strong>The granularity.</strong> And then the piece that reorganises the rest: forty quanta of 0.25, a decision taken to protect candidates, which dilutes the paradigm change on purpose and which generates text. Measuring it showed that the competency narrative had not grown at all, and that the reading load — the dossier’s oldest and most-cited finding about the paper — had been attributed to the wrong cause for the whole of its life.</p>
+<p><strong>What the sequence shows.</strong> Every substantive correction in this thread came from the coordination and none from the data. The data were sufficient to measure the itemisation’s cost in words from the first day; the repository held the corrector’s document, the two statements and the marking-rules table throughout. What was missing was the knowledge that the itemisation was a <em>decision</em>, with a purpose, that could have been otherwise. A dossier written from published outputs can measure what a paper is; it cannot see the choices behind it, and it will attribute what it measures to whatever cause it already has a name for. That is worth recording as a limitation of the method and not only as a history of this study.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/12-ehu-paper-history.html" class="pagination-link" aria-label="Sixteen years of one paper">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sixteen years of one paper</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/01-data-hunt.html" class="pagination-link" aria-label="The data hunt">
+        <span class="nav-page-text">The data hunt</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Independent analysis prepared 18–19 September 2026, audited 19 and 20 September · all figures reproducible from <code>scripts/</code></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Data: EHU, SIIU/EPAU, Generalitat de Catalunya, GVA, Junta de Andalucía, CM, Uniovi, UCLM, ULL, ULPGC, UNIZAR, UPNA, UMU, UC, CiUG, UR</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

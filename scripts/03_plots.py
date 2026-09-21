@@ -43,6 +43,13 @@ def save(fig, name):
 #      than for the law — and that non-coincidence is the reason for separating them.
 #      COVID is marked as two years, not as a regime.
 #
+# R9.  Settled 21 September 2026 by the coordination: the darker tint covers 2020 AND
+#      2021, not 2020 alone.  Two reasons.  The relief measures — reduced syllabus,
+#      wider optionality, softened marking — were in force for both sittings, not for
+#      the first alone.  And the series says so: 2020 is 6.45 and 2021 is 7.69, the
+#      highest mean in seventeen years and 1.63 above 2022.  If one sitting were the
+#      anomaly it would be 2021, so shading 2020 alone marked the wrong year.
+#
 # R2.  The grey Ministry line stops at 2025 because the 2026 EPAU cube is not published
 #      until June 2027.  What exists for 2026 is this study's assembled cross-section of
 #      the nine communities that have published a result — a different population, nine
@@ -78,7 +85,7 @@ TXT01 = dict(
         spain="Spain (all CCAA), Ministry cube",
         nine="the nine communities with a published 2026 result",
         eus="Euskadi (UPV/EHU)",
-        covid="COVID sitting", covid_model="the paper it forced, kept to 2024",
+        covid="COVID sittings, 2020–21", covid_model="the paper they forced, kept to 2024",
         law="law", model="paper",
         laws=["PAU (RD 1892/2008)", "EAU (LOMCE)", "LOMLOE"],
         models=["two whole options A/B", "four of eight", "L1", "L2"],
@@ -97,7 +104,7 @@ TXT01 = dict(
         spain="España (todas las CCAA), cubo del Ministerio",
         nine="las nueve comunidades con resultado de 2026 publicado",
         eus="Euskadi (UPV/EHU)",
-        covid="convocatoria COVID", covid_model="el examen que impuso, hasta 2024",
+        covid="convocatorias COVID, 2020–21", covid_model="el examen que impusieron, hasta 2024",
         law="ley", model="modelo",
         laws=["PAU (RD 1892/2008)", "EAU (LOMCE)", "LOMLOE"],
         models=["dos opciones completas A/B", "cuatro de ocho", "L1", "L2"],
@@ -150,15 +157,17 @@ def fig01(lang):
     axr.set_ylim(-0.52, 1.02); axr.set_xlim(2009.4, 2026.6)
     axr.axis("off")
 
-    # --- COVID: one sitting, and a paper model that outlived it -------------------
-    # The pandemic sitting is 2020.  The four-of-eight paper it forced was then kept
-    # through 2024, so the shading covers the life of the model and the darker tint
-    # marks the sitting that caused it.  The two spans are deliberately different.
+    # --- COVID: two sittings, and a paper model that outlived them ----------------
+    # The pandemic sittings are 2020 and 2021: both were set under the relief measures,
+    # and 2021 is the highest mean in the whole series (7.69).  The four-of-eight paper
+    # they forced was then kept through 2024, so the light shading covers the life of
+    # the model and the darker tint marks the two sittings that caused it.  The two
+    # spans are deliberately different.
     for a in (ax, ax2):
         a.axvspan(2019.5, 2024.5, facecolor="#f7f5f1", edgecolor="none", lw=0, zorder=0)
-        a.axvspan(2019.5, 2020.5, facecolor="#e9e4da", edgecolor="none", lw=0, zorder=0)
-    ax.text(2020, 3.60, L["covid"], ha="center", va="bottom", fontsize=6.8, color=MUTED)
-    ax.text(2022.6, 3.37, L["covid_model"], ha="center", va="bottom", fontsize=6.8,
+        a.axvspan(2019.5, 2021.5, facecolor="#e9e4da", edgecolor="none", lw=0, zorder=0)
+    ax.text(2020.5, 3.60, L["covid"], ha="center", va="bottom", fontsize=6.8, color=MUTED)
+    ax.text(2023.0, 3.37, L["covid_model"], ha="center", va="bottom", fontsize=6.8,
             color=MUTED)
 
     # --- a. the means -------------------------------------------------------------

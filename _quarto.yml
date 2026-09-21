@@ -135,7 +135,7 @@ format:
     lang: en
     grid:
       sidebar-width: 310px
-      body-width: 720px
+      body-width: 920px
       margin-width: 260px
 
 bibliography: references.bib
