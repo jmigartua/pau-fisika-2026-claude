@@ -878,3 +878,94 @@ severity acts on numerically exposed sub-tasks irrespective of topic; reading lo
 acts in proportion to statement length. Sub-task marks would therefore **discriminate**
 among the hypotheses rather than merely quantify one, which is a stronger use of the
 same datum than §5.4 previously claimed.
+
+---
+
+### R16 · In June 2026 the old route was still open {#r16}
+
+**Remark.** "Have a look at the exam in 2026: even if all the syllabus was announced,
+meaning that problems from whatever *saber básico* could be included, different from
+the photoelectric effect in the case of the last one — it was included in a problem
+with optionality. So what does that mean? The idea is that even in 2026 the trend
+until then could have been followed by the students, effectively."
+
+And, on terminology: **"it is not obligatory: it has no optionality, that is the
+concept."** Adopted throughout: the property belongs to the *slot*, not to the
+student, and optionality is the variable the whole analysis uses.
+
+**Status:** **checked against the papers, confirmed, and written in**, 22 September.
+It is the sharpest correction of the round and it bounds a hypothesis this dossier
+had been treating too loosely.
+
+#### What the June 2026 paper actually offered
+
+| slot | | sub-topic | set 2010–2024 |
+|---|---|---|---:|
+| 1 | **no optionality** | circular orbit / satellite | **18×** |
+| 2 | **no optionality** | induction | 5× |
+| 3a | choice | standing waves | **0×** |
+| 3b | choice | thin lenses | 10× |
+| 4a | choice | photoelectric effect | 14× |
+| 4b | choice | radioactive decay, dating | **0×** |
+
+The two slots with no optionality were set on sub-topics ranked **1st and 11th of 15**
+by frequency — including the single most-set sub-topic in the entire archive in the
+opening slot. **Both sub-topics never set before sat where a choice was offered**,
+each beside an alternative set 10 and 14 times.
+
+A candidate could answer **1, 2, 3b and 4a** — four sub-topics set **47 times**
+between them in the preceding fifteen years — and meet nothing new.
+
+**The reopened syllabus was, in June, entirely avoidable. And the mean fell 1.48
+anyway.**
+
+July is the counter-case and is drawn beside it: there slot 2 offered no choice and
+was a mass spectrometer, never set before. No July 2026 mean is published, so the
+June/July contrast cannot yet be tested — one more datum that would earn its keep.
+
+#### What it does to the argument
+
+**It nearly empties the content channel of H1c for the ordinary sitting.** "They met
+material they had never been taught" cannot be what happened in June, because they
+did not have to meet it. The dossier had said "bounded: optional in June"; that was
+too weak a statement of a much stronger fact.
+
+**The inertia does not disappear — it relocates**, into two channels the content
+version never named:
+
+1. **Preparation spread thinner.** Schools had to *cover* the whole syllabus
+   precisely because nobody could know what would be *set*. A teaching year is
+   finite; covering block E in full and the un-set corners of C and D is time taken
+   from consolidating orbits, induction, lenses and the photoelectric effect. The
+   candidate who took the old route in June 2026 was less drilled on that route than
+   a 2024 candidate had been — not because the route changed, but because the year
+   had to cover more ground to reach it.
+2. **Familiar physics in an unfamiliar form.** Slot 1 was the archive's most-set
+   sub-topic, presented as a Starlink headline to be read, judged and explained, with
+   no alternative to turn to. Fifteen years had trained recognition of a problem
+   type, not the reading of a scenario built on one. On this reading the inertia
+   bites hardest exactly where the content did not change at all.
+
+What could not be avoided in June is now a short and specific list: the **genre** of
+the two no-choice slots, the **marking regime** in its second year, the **reading
+load**, and the loss of the **theory block** — four of the ten points that
+preparation had previously guaranteed.
+
+#### The smallest measurement in the study
+
+Slot 4 offered the photoelectric effect (set 14×) against C-14 dating (never set), to
+the same candidates, in the same paper, under the same marking. Two quantities settle
+a great deal:
+
+1. **How many candidates took 4a.** If they overwhelmingly did, the novelty was
+   avoided in fact and not merely in principle.
+2. **How they scored on 4a**, against 2024 and 2025 candidates on the same
+   sub-topic. If they did worse on the most standardised item in the archive, content
+   novelty is excluded by the paper's own internal evidence and preparation, genre and
+   marking must carry the fall between them.
+
+One option take-up and the sub-item marks of one problem, in three years. It is the
+smallest request identified anywhere in this dossier and it bears on the largest
+question.
+
+**Figure:** `fig35_route_2026`, both sittings against sixteen years of precedent.
