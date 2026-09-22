@@ -701,3 +701,99 @@ translated string *before* `set_title` is called.
 in the dossier, `fig08_attribution_budget` and `_es` in the paper, and the deck's
 `datos-presupuesto.png`. This is what the shared-panel discipline is for — the
 correction was made once.
+
+---
+
+### R14 · Four challenges to the field comparison, and what the Cataluña archive settles {#r14}
+
+**Remarks (22 September).** (a) The field is nine communities of seventeen — what if
+the missing eight would pull the mean down? (b) In 2026 the others did not merely
+fail to follow: they went backwards. (c) Castilla-La Mancha is not comparable —
+2026 is *its* first year, as 2025 was ours. (d) What were Cataluña's papers before
+2025?
+
+**Status:** (a) closed with a test; (b), (c) accepted, and they change the wording of
+the argument; (d) **settled with new evidence**, and it is the most consequential of
+the four.
+
+#### a. The eight that did not publish — testable, and tested
+
+For 2015–2025 all seventeen are known, so the nine can be checked as a proxy for the
+whole. Over ten transitions: mean error $-0.004$, sd $0.138$, largest error $0.242$,
+$r = 0.943$. Essentially unbiased.
+
+For the region-specific $-1.65$ to vanish, the missing eight would have to average
+$-3.34$ in 2026: more than twice Euskadi's own fall, and three times the worst they
+have ever collectively produced ($-0.99$, in 2025). Repeat that worst year exactly
+and the component is still $-1.10$ — two thirds survives. The shift required is
+**twelve standard deviations** of the historical error. The worry is legitimate and
+quantitatively small; it belongs in the paper, which does not yet contain it.
+
+#### b. The field retreated
+
+The competency-coded share of marks across the other eight fell from **11.2 % to
+7.2 %** between 2025 and 2026. Cataluña halved its own, 75 % → 37.5 %, while holding
+total substantive context at 87.5 % — it kept the dressing and dropped the demand.
+Comunitat Valenciana went to zero. Five were at zero and stayed. Only
+Castilla-La Mancha rose, by 20 points.
+
+This narrows the refutation. "Six of nine rose under the same decree" refutes that
+**the decree** lowered marks. It says nothing about competency examining, because
+almost nobody else did any. And the $-1.65$ is measured against a field moving the
+other way, so it mixes *we advanced* with *they retreated*.
+
+#### c. Castilla-La Mancha is stage one, not a counter-case
+
+| | stage | competency share | Δ mean | Δ field | specific |
+|---|---|---:|---:|---:|---:|
+| Euskadi | 2025 — **first** year | 0 → 25 | $-0.62$ | $-0.65$ | $+0.03$ |
+| Euskadi | 2026 — **second** year | 25 → 62.5 | $-1.48$ | $+0.17$ | $\mathbf{-1.65}$ |
+| C.-La Mancha | 2026 — **first** year | 0 → 20 | $+0.94$ | $+0.17$ | $+0.77$ |
+
+Both first years were harmless. The collapse is a second-year event. Comparing CLM's
+2026 with Euskadi's 2026 compares stage one with stage two, which is not a
+comparison — an error made and corrected here. **This also generates a prediction:**
+if the mechanism is the depth of conversion in year two, CLM should fall in 2027 if
+it goes deeper and not if it stays at 20 %.
+
+Note that the marking-severity hypothesis predicts the same first-year/second-year
+shape ("cautious in year one, full in year two"). Two hypotheses, one signature:
+another instance of the collinearity, not an escape from it.
+
+#### d. Cataluña had been examining this way since 2020
+
+The ordinary papers for 2020–2025 were obtained from `examenesdepau.com` and are in
+`data/catalunya/`; the measurement is `scripts/31_catalunya_history.py`.
+
+| Year | Structure | Problems with a justification demand | Problems in a real setting |
+|---|---|---:|---:|
+| 2020 | 4 of 8 | 37.5 % | 37.5 % |
+| 2021 | 4 of 8 | 62.5 % | 43.8 % |
+| 2022 | 4 of 8 | 50.0 % | 50.0 % |
+| 2023 | 4 of 7 | 50.0 % | 64.3 % |
+| 2024 | 4 of 7 | 28.6 % | 85.7 % |
+| 2025 | 4 exercises, A/B inside two | 66.7 % | 100 % |
+
+Freddie Mercury's voice and the Apollo 15 feather (2020); Tycho Brahe (2021); an
+eel's locomotion and a NASA launch (2022); Phobos and Deimos, and what the media
+said about the 2022 fusion announcement (2023); BepiColombo and the altitude of a
+Sant Joan firework (2024). Contexts and justification demands are present in every
+year, five years before the decree.
+
+**So Cataluña's 75 % in 2025 was not a conversion. It was steady state.** The
+*structure* changed in 2025 — four block exercises with internal options, as the
+decree asks — but the substance did not. Cataluña sat about $+0.65$ above the field
+in both 2025 and 2026, with three quarters of its marks competency-coded and then
+half that.
+
+**What this does to the argument.** It is the strongest evidence in the study
+against "competency examining lowers marks" as a general proposition: a neighbour
+has examined that way for five years without a collapse. The weight moves onto the
+**transition** rather than the paradigm — 0 → 25 → 62.5 in two years, with
+optionality halved, the syllabus reopened and a new marking regime in its second
+year, in a system with no prior experience of the style. H1b in the paper is
+therefore worded too loosely: it should name this conversion, not the model.
+
+**Limitation, stated because it bounds the claim.** 2025 and 2026 were coded blind
+by two readers ($\kappa = 0.76$). 2020–2024 were coded once, by one reader, after
+the result was known.

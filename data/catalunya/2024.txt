@@ -1,0 +1,245 @@
+                                                                                                                       2024
+
+Proves d’accés a la universitat
+
+Física
+Sèrie 1
+
+
+
+            Qualificació         TR
+
+                       1
+
+                       2
+
+                       3
+
+Problemes              4
+
+                       5
+
+                       6
+
+                       7
+
+Suma de notes parcials
+
+Qualificació final
+
+
+
+
+       Etiqueta de l’estudiant
+
+                                      Ubicació del tribunal ..............................................................................
+
+                                      Número del tribunal ...............................................................................
+
+
+
+      Etiqueta de qualificació                                                        Etiqueta de correcció
+      Responeu a QUATRE dels set problemes següents. En el cas que respongueu a més problemes,
+      només es valoraran els quatre primers.
+          Cada problema val 2,5 punts.
+
+
+
+
+      P1) BepiColombo és una missió espacial que té per objectiu l’exploració de Mercuri. La
+          missió va ser llançada l’any 2018, i hi arribarà el 2025. Un cop allà, posarà en òrbita dos
+          satèŀlits al voltant del planeta. Un dels satèŀlits és el Mercury Planetary Orbiter (MPO),
+          construït per l’Agència Espacial Europea, que orbitarà al voltant de Mercuri amb un
+          radi orbital mitjà de 3 360 km.
+          a) Considereu un satèŀlit que fa una òrbita circular al voltant de Mercuri. Deduïu
+              l’expressió de la velocitat orbital del satèŀlit en funció del radi orbital i la massa de
+              Mercuri (indiqueu clarament en quins principis o lleis físiques us baseu per fer la
+              vostra deducció). Amb aquesta expressió, calculeu la velocitat orbital del satèŀlit
+              MPO mentre orbita al voltant de Mercuri. Calculeu quantes voltes haurà fet al pla-
+              neta al cap d’un any terrestre.
+               [1,25 punts]
+           b) A partir de l’expressió general de l’energia mecànica, obtingueu la seva equació per
+              al cas particular d’un satèŀlit en òrbita circular (cal que l’equació final només estigui
+              expressada en funció de G, el radi orbital i les masses del satèŀlit i del planeta). Una
+              vegada el satèŀlit MPO estigui orbitant al voltant de Mercuri, encara tindrà com-
+              bustible per a poder fer maniobres. Considereu que el combustible disponible pot
+              proporcionar una energia de 4,5 × 109 J. Determineu el valor màxim que podria tenir
+              la massa del MPO per tal que amb l’energia disponible pogués escapar del camp
+              gravitatori de Mercuri.
+               [1,25 punts]
+
+           Dades: G = 6,67 × 10–11 N m2 kg–2.
+                  Massa de Mercuri, MM = 3,285 × 1023 kg.
+                  Any terrestre = 365,25 dies.
+
+
+
+
+–2–
+–3–
+      P2) Al laboratori dissenyem un experiment amb
+          dues masses que fan moviments independents.
+          La primera massa és de 0,5 kg i penja d’una molla
+          vertical. La segona massa es troba subjectada a
+          un disc vertical que gira a una velocitat angular
+          de 6,41 rad/s i el centre d’aquesta massa és a una
+          distància de 19 cm del centre del disc. Ambdues
+          masses s’iŀluminen lateralment i s’observa que les
+          seves ombres segueixen exactament el mateix moviment harmònic simple. Per a acon-
+          seguir-ho, deixem anar des de baix la massa de la molla just a t = 0 s, moment en què la
+          massa del disc també passa pel punt més baix de la rotació.
+          a) Escriviu l’equació de la posició vertical de les ombres respecte al temps. Trobeu la
+              constant elàstica de la molla i l’energia mecànica del moviment harmònic simple.
+              [1,25 punts]
+           b) Calculeu l’equació de la velocitat i l’energia cinètica respecte al temps de la massa
+              que penja de la molla. Representeu en la quadrícula adjunta l’energia mecànica,
+              l’energia potencial i l’energia cinètica en funció de la posició vertical per a la massa
+              que penja de la molla.
+              [1,25 punts]
+
+
+
+
+–4–
+–5–
+      P3) La superfície de la Terra és principalment aigua que conté ions en dissolució i que li fan
+          adquirir una càrrega neta negativa. Es pot considerar que la Terra té un camp elèctric
+          en punts propers a la seva superfície amb un mòdul constant de 150 N/C.
+          a) Dibuixeu l’esfera terrestre i representeu-hi el camp elèctric al voltant de la superfície.
+             Calculeu el valor de la càrrega total que produeix aquest camp elèctric. Per fer-ho,
+             considereu que el camp elèctric creat per una superfície esfèrica carregada unifor-
+             mement és igual al generat per tota la càrrega situada al centre de l’esfera.
+               [1,25 punts]
+           b) Calculeu el mòdul de la força elèctrica que produirà el camp elèctric sobre un electró
+              lliure situat a la vora de la superfície de la Terra. Calculeu la massa que ha de tenir
+              una gota esfèrica d’aigua amb una càrrega extra d’un sol electró perquè el seu pes es
+              compensi amb la força elèctrica. Feu un esquema en què es mostrin les forces que
+              actuen sobre la gota. Calculeu el diàmetre d’aquesta gota d’aigua.
+               [1,25 punts]
+
+           Dades:      Radi de la Terra, RT = 6,37 × 106 m.
+                       Densitat de l’aigua, ρ = 103 kg/m3.
+                       Massa de l’electró, Me = 9,11 × 10–31 kg.
+                       Superfície esfèrica: 4πr2.
+                       Volum d’una esfera: 4/3πr3.
+                       |e| = 1,602 × 10–19 C.
+
+                                                      .
+
+                       g = 9,81 m/s2.
+
+
+
+
+–6–
+–7–
+      P4) Un parallamps és una barra metàŀlica vertical que atrau i dirigeix grans descàrregues
+          de corrent cap a terra. La gran majoria de llamps núvol-terra són negatius, és a dir, són
+          transferències de càrrega negativa del núvol cap a terra. En el moment de la descàrrega
+          es crea un camp magnètic al voltant del parallamps que podem equiparar al creat per un
+          fil de corrent infinit. El corrent màxim que pot assumir un parallamps és d’uns 100 kA.
+          a) Calculeu el camp magnètic màxim que pot crear el parallamps a una distància de
+               10 cm. Feu un dibuix esquemàtic del parallamps indicant el sentit del moviment dels
+               electrons, la intensitat de corrent i tres línies de camp magnètic. Justifiqueu el sentit
+               de les línies de camp.
+               [1,25 punts]
+           b) Representeu gràficament, en la quadrícula de sota, el mòdul d’aquest camp
+              magnètic màxim en funció de la distància r al parallamps en l’interval següent:
+              10 cm ≤ r ≤ 50 cm. Suposem que hi ha un electró que en el moment de la descàrrega
+              es troba a 10 cm del parallamps i que té una velocitat de 103 m/s paraŀlela al para-
+              llamps i cap a terra. Calculeu el mòdul de la força que crea el camp magnètic sobre
+              l’electró i justifiqueu-ne la direcció i el sentit.
+               [1,25 punts]
+
+           Dades: El mòdul del camp magnètic creat per un fil infinit per on circula un corrent I
+                        a una distància r del fil és       .
+
+                        μ0 = 4π × 10–7 T m A–1.
+                        |e| = 1,602 × 10–19 C.
+
+
+
+
+–8–
+–9–
+         P5) L’Ainhoa està intrigada per saber a quina altura exploten els coets llançats a la revetlla
+             de Sant Joan. Per a poder-ho determinar se situa a una distància de 50 metres del punt
+             on es llancen els coets i enregistra, amb un sonòmetre, un nivell d’intensitat sonora de
+             100 decibels en l’explosió d’un coet que no s’ha enlairat.
+             a) Quina potència sonora emet el coet en el moment de l’explosió? Si l’explosió ha
+                durat 0,03 s, quina energia sonora s’ha alliberat?
+                  [1,25 punts]
+              b) Des de la mateixa distància al punt de llançament, enregistra 90 decibels d’intensitat
+                 sonora en el cas d’un coet igual a l’anterior que s’ha enlairat verticalment i ha explo-
+                 tat a certa altura. Calculeu a quina altura ha explotat el coet. Si dos coets idèntics a
+                 l’anterior exploten simultàniament a la mateixa altura que abans, quin nivell d’in-
+                 tensitat sonora percebrà l’Ainhoa, si està situada a la mateixa posició d’abans?
+                  [1,25 punts]
+
+              Nota:        Considereu que les ones sonores es propaguen en les tres dimensions de l’es-
+                           pai i la seva energia es distribueix en superfícies esfèriques.
+              Dades: I0 = 10–12 W m–2.
+                           La velocitat del so en l’aire és de 340 m/s.
+                           Superfície esfèrica: 4πr 2.
+
+
+
+
+– 10 –
+– 11 –
+         P6) El poloni (Z = 84) fou descobert el 1898 per Marie Sklodowska-Curie i Pierre Curie.
+             L’isòtop de poloni amb un temps de semidesintegració més llarg és el Po-210, que el té
+             de 138 dies. Es desintegra per emissió d’una partícula alfa i origina un isòtop estable de
+             plom (Pb).
+             a) Escriviu la desintegració del Po-210. Si l’activitat inicial per unitat de massa del
+                 Po-210 és d’1,66 × 1014 Bq/g, quina serà l’activitat de 5 mg d’aquest element al cap
+                 d’una setmana?
+                  [1,25 punts]
+              b) Els nuclis d’heli que es produeixen en les desin-
+                 tegracions alfa no triguen a captar dos electrons.
+                 Suposem que es forma un àtom d’heli en dos pas-
+                 sos ben diferenciats. Primerament, es transporta
+                 des d’una distància molt gran un primer electró
+                 a 0,6 × 10–10 m de la partícula alfa i es manté allà. Posteriorment, un segon electró es
+                 porta a l’altra banda de la partícula alfa a 0,6 × 10–10 m. La configuració final es mostra
+                 en la figura.
+                    Calculeu el treball realitzat pel camp elèctric en cada un dels dos passos. Quina és
+                 l’energia potencial electroestàtica de la configuració final?
+                  [1,25 punts]
+
+              Dades: |e| = 1,602 × 10–19 C.
+
+                                                         .
+
+
+
+
+– 12 –
+– 13 –
+         P7) Observem que en una mostra metàŀlica apareix l’efecte fotoelèctric quan la iŀluminem
+             amb llum monocromàtica de longituds d’ona més petites o iguals a 650 nm.
+             a) Calculeu el treball d’extracció del metall. Determineu el potencial de frenada si iŀlu-
+                minem el metall amb llum de 300 nm.
+                  [1,25 punts]
+              b) Trobeu l’expressió de la velocitat dels electrons en funció de la longitud d’ona inci-
+                 dent per a aquest metall. Calculeu la velocitat dels electrons per a una longitud d’ona
+                 incident de 500 nm i la longitud d’ona de De Broglie associada a aquests electrons.
+                  [1,25 punts]
+
+              Dades: c = 3,00 × 108 m s–1.
+                     |e| = 1,602 × 10–19 C.
+                     me = 9,11 × 10–31 kg.
+                     h = 6,626 × 10–34 J s.
+
+
+
+
+– 14 –
+– 15 –
+                                      Etiqueta de l’estudiant
+
+
+
+
+L’Institut d’Estudis Catalans ha tingut cura de la correcció lingüística i de l’edició d’aquesta prova d’accés
+
