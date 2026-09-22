@@ -659,3 +659,45 @@ the stylesheet; it is verified by asking the browser what it computed for the el
 the reader is actually looking at. One `getComputedStyle` call on the anchor would have
 caught this the first time, and it is now the check used before reporting any style
 change as done.
+
+---
+
+### R13 · The grey columns in the waterfall {#r13}
+
+**Remark.** "In the image, I have a problem with this figure, which we have been
+using all the time: what do the grey columns mean, represent?"
+
+**Status:** **defect confirmed and fixed**, 22 September. The question exposed a
+real error that had survived three audits.
+
+**What they represented.** The 2025 and 2026 *levels*, 5.47 and 3.99, drawn as bars
+from the bottom of the axes.
+
+**Why that was wrong.** The axes do not start at zero. They start at 3.44 — a value
+with no meaning, chosen only to frame the steps. So the columns had heights of
+**2.03 and 0.55** for levels whose ratio is 1.37:1. Read as bars, they said the
+2025 level was **3.7 times** the 2026 level: an overstatement by a factor of 2.7,
+produced entirely by where the axis was cut. A bar's height reads as a magnitude,
+and on a truncated axis that magnitude is an artefact.
+
+Worse, they were also redundant: the two dotted rules already carry 5.47 and 3.99
+across the panel, and both values are annotated.
+
+**The fix.** The endpoints are now level *caps* — a short heavy mark at the value,
+carrying no height at all. Nothing in the panel now encodes a quantity it should
+not, and the coloured steps carry all the vertical weight, which is what a
+waterfall is for.
+
+**Two traps on the way, both worth recording.** Stripping the panel letter "c." for
+the standalone versions failed twice. `ax.get_title()` returns the *centre* title
+and this one is set with `loc="left"`, so the first attempt read an empty string.
+The second attempt read it correctly but edited the rendered title, which
+`plot_style` hands out as a LaTeX-wrapped object subclassing `str`: the edit
+returned a plain string, which the style layer then escaped a second time,
+printing `\{}textbf{` on the figure. The letter is now removed from the plain
+translated string *before* `set_title` is called.
+
+**Reach.** One panel, six files: `fig25_decomposition` and `fig25_decomposition_es`
+in the dossier, `fig08_attribution_budget` and `_es` in the paper, and the deck's
+`datos-presupuesto.png`. This is what the shared-panel discipline is for — the
+correction was made once.

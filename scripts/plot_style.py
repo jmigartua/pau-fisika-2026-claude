@@ -348,6 +348,9 @@ ES_FIGURES = {
     "fig26_subject_decomposition",
     "fig28_cohort_rate",
     "fig29_statement_budget",
+    # paper-mode names, needed in Spanish for the coordination deck
+    "fig04_locus",
+    "fig08_attribution_budget",
 }
 
 

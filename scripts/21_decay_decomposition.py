@@ -352,9 +352,24 @@ start = float(pv[2025]); end = float(pv[2026])
 lo = min(end, start + sum(deltas)) - 0.55
 hi = max(start, start + deltas[0]) + 0.55
 
+# The two endpoints used to be drawn as columns rising from the bottom of the
+# axes. The axes do not start at zero — they start at 3.44, chosen to frame the
+# steps — so those columns had heights of 2.03 and 0.55 for levels of 5.47 and
+# 3.99: a ratio of 3.7:1 for a real ratio of 1.37:1, overstating the difference
+# by a factor of 2.7. A bar's height reads as a magnitude, and on a truncated
+# axis that magnitude is an artefact of where the axis was cut. The endpoints
+# are now level *caps*: a mark at the value, carrying no height at all. The
+# dotted rules already carry the eye across to them.
 ax3.axhline(start, color=MUTED, lw=0.9, ls=":")
 ax3.axhline(end, color=MUTED, lw=0.9, ls=":")
-ax3.bar(0, start - lo, bottom=lo, color=INK2, width=0.56)
+
+
+def _level_cap(x, y):
+    ax3.plot([x - 0.28, x + 0.28], [y, y], color=INK2, lw=5.0,
+             solid_capstyle="butt", zorder=3)
+
+
+_level_cap(0, start)
 ax3.annotate(f"{start:.2f}", (0, start + 0.10), ha="center", fontsize=10, color=INK)
 level = start
 for i_, (d, col) in enumerate(zip(deltas, colors), start=1):
@@ -364,13 +379,21 @@ for i_, (d, col) in enumerate(zip(deltas, colors), start=1):
                  fontsize=9.5, color="white" if abs(d) > 0.3 else INK)
     ax3.plot([i_ - 0.28, i_ + 1 - 0.28], [level + d, level + d], color=MUTED, lw=0.8, zorder=1)
     level += d
-ax3.bar(5, end - lo, bottom=lo, color=INK2, width=0.56)
+_level_cap(5, end)
 ax3.annotate(f"{end:.2f}", (5, end + 0.10), ha="center", fontsize=10, color=INK)
 ax3.set_xticks(range(6))
 ax3.set_xticklabels(labels, fontsize=9)
 ax3.set_ylabel(T("Mean Física mark"))
 ax3.set_ylim(lo, hi)
-ax3.set_title(T("c. What the 2026 fall is made of — and how much of it is still unattributed"), loc="left")
+# Standing alone in the paper and in the coordination deck, this panel is no
+# longer "panel c" of anything, so the letter goes. It is removed here, from the
+# plain translated string, rather than afterwards from the rendered title:
+# plot_style hands set_title a LaTeX-wrapped object, and editing that on the way
+# out gets it escaped a second time.
+_ttl_c = T("c. What the 2026 fall is made of — and how much of it is still unattributed")
+if _ps.PAPER:
+    _ttl_c = _ttl_c[3:]
+ax3.set_title(_ttl_c, loc="left")
 ax3.annotate(T("Basque-specific: {b:+.2f}.  Quantified: {q:.2f}.  Unattributed: {u:.2f} ({pc:.0f} %).")
              .format(b=basque_2026, q=abs(quantified), u=abs(remainder),
                      pc=100 * remainder / basque_2026),
@@ -385,7 +408,9 @@ fig.text(0.005, 0.005,
            "differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate."),
          fontsize=7, color=MUTED, linespacing=1.5)
 if _ps.PAPER:
-    # the shared source note belongs with the budget panel in the paper
+    # Standing alone, the budget panel is no longer "panel c" of anything, so the
+    # letter is dropped; the same applies to the two locus panels, which keep
+    # theirs because they are still a pair.
     _save(fig, "fig25_decomposition", PLOTS, dpi=200)          # -> fig04_locus
     _save(fig_c, "fig08_attribution_budget", PLOTS, dpi=200)
 else:
