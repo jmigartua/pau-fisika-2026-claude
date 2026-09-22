@@ -162,7 +162,7 @@ The two scenarios differ by 1.3 marks, most of the size of the 2026 event; the c
 
 Two things follow that are worth acting on rather than reading. The cohort term, small as it is, points the same way as every other measure in this section, so the sensible default for 2027 is that the intake will be slightly weaker than 2025's and considerably weaker than the decade's average — which argues for the paper being set with that in mind rather than against a remembered cohort. And the honest use of PISA 2025 here is not prediction but *attribution after the fact*: when the 2027 result arrives, the $-0.36$ is the part that should not be blamed on the paper, and everything beyond it is the part that should be explained.
 
-**H5 — "Física is sat last, and the admission arithmetic makes the last slot dispensable for the candidates most able to abandon it."** *Not a 2026 trigger; the first candidate mechanism the 2024 shape change has ever had, and the only hypothesis in this list that predicts a band signature rather than a level.* This began as the Canarian coordinators' account of their own decline — few degrees require a high Física mark, Matemáticas II carries the weighting, Física is examined last on a long day — and in that form it was filed as slow background. Restated in terms of the admission arithmetic it is sharper, and it makes a prediction the other hypotheses do not. The full treatment, including the test that fails and the test that does not, is in [the section below](#last-slot). In summary: the within-sequence position test is **contradicted** by the 2026 subject changes, so fatigue in its simple form is excluded as a cause of the $-1.48$; what survives is fatigue as a *multiplier* on reading load, and an effort-allocation mechanism whose predicted signature — losses concentrated at the top, pass rate held or improved, mean almost still — is the 2024 signature exactly.
+**H5 — "Física is sat last, and the admission arithmetic makes the last slot dispensable for the candidates most able to abandon it."** *Not a 2026 trigger; the first candidate mechanism the 2024 shape change has ever had, and the only hypothesis in this list that predicts a band signature rather than a level.* This began as the Canarian coordinators' account of their own decline — few degrees require a high Física mark, Matemáticas II carries the weighting, Física is examined last on a long day — and in that form it was filed as slow background. Restated in terms of the admission arithmetic it is sharper, and it makes a prediction the other hypotheses do not. The full treatment, including the test that fails and the test that does not, is in [the section below](#last-slot). In summary: the within-sequence position test is **contradicted** by the 2026 subject changes, and Física's own slot did not move between the two years, so position is excluded as a cause of the $-1.48$. Three things survive. The 2025 and 2026 calendars are *not* the same — Matemáticas II moved from the morning to the afternoon and became the paper immediately preceding Física, so that for the first time the two heaviest quantitative papers were sat back to back, which partitions the four subjects correctly and is confounded beyond separation. Fatigue survives as a *multiplier* on reading load. And the effort-allocation mechanism predicts a signature — losses concentrated at the top, pass rate held or improved, mean almost still — that is the 2024 signature exactly.
 
 **H6 — "Language or network bias."** *No evidence either way for Física.* The 2010–2022 series shows euskera/castellano differences of a few tenths in both directions and no sign that either network fails Física differentially; EHU's 2026 bias analysis was run for Euskara II. Nothing published for Física 2026 speaks to this.
 
@@ -194,21 +194,64 @@ within-cohort, within-year test of the position hypothesis available, the four s
 sat by overlapping populations in the same week under the same conditions, and it comes out
 against.
 
-#### Why it fails: fatigue is a level effect
+#### Why position fails, and where fatigue could still enter {#timetable-2025-2026}
 
-The deeper reason is structural rather than empirical. Física has been the last quantitative
-paper for years. Whatever fatigue costs a candidate, it cost the same in 2025 as in 2026, and
-it differences out of the $-1.48$ exactly as a national shock differences out of the field
-comparison in [the decomposition](#what-the-decay-is-made-of). Fatigue is in the *level* of
-the Física mean relative to its neighbours — a real quantity, and one that bears on the 2027
-design discussion — but a constant cannot produce a change.
+The structural reason a position effect cannot produce a change is that position is a
+constant. Whatever being sat last costs a candidate, it costs the same every year, and it
+differences out of the $-1.48$ exactly as a national shock differences out of the field
+comparison in [the decomposition](#what-the-decay-is-made-of). A fatigue argument therefore
+has to point at something that *moved* between the two sittings.
 
-There is one fact that would convert it into a change effect, and it is cheap to obtain: the
-2025 and 2026 calendars, side by side. Day, slot, number of papers between Química and
-Física, and the gap between days are all published by the coordination for both years. If the
-slot moved, fatigue enters [the mark budget](#the-mark-budget) with a line of its own; if it
-did not, it belongs in the design chapter and nowhere else. Neither sentence should be
-written before the two calendars have been compared, and this dossier holds neither.
+An earlier version of this section asserted that nothing had, and that assertion was made
+without checking. The two calendars have since been compared, and they are not the same.
+
+| | 2025 (3–5 June) | 2026 (2–4 June) |
+|---|---|---|
+| Química | Tue 14:30–16:00 | Tue 16:45–18:15 |
+| Biología | 14:30–16:00 | Tue 14:30–16:00 |
+| Matemáticas II | Wed **11:15–12:45** | Wed **14:30–16:00** |
+| Física | 16:30–18:00, last slot of its day | Wed 16:45–18:15, last slot of its day |
+
+: The ordinary-sitting timetable, 2025 against 2026. Sources: the UPV/EHU *Horarios* page and exam-days grid for 2026; the 25/26 access guide and the published press timetable for 2025, which disagree on the day of Biología and Física and agree on everything else. {#tbl-calendar}
+
+Four readings follow, and only the last of them survives.
+
+**Matemáticas II moved out of the morning into the afternoon**, 11:15 to 14:30. It is the
+largest change of position in the set and it belongs to the subject with the largest fall,
+$-1.67$. That is one observation and it is not independent of the rest of what happened to
+that paper.
+
+**Química moved later in the day**, 14:30 to 16:45, and fell $-0.21$ — the smallest fall of
+the three quantitative subjects. A simple "later is worse" rule is contradicted here as
+plainly as the sequence ordering contradicted it above.
+
+**Física's own slot did not move.** It sat in the final slot of its day in both years. The
+part of fatigue that is attributable to Física being last therefore still differences out,
+and cannot explain the $-1.48$.
+
+**What changed for Física is what precedes it.** In 2026 the paper immediately before it —
+same day, same candidates, forty-five minutes between them — is **Matemáticas II**. In 2025
+it was Biología. For the first time in this sitting the two heaviest quantitative papers were
+sat back to back in the final two slots of a single day. That is a change and not a level,
+which is what the hypothesis needed, and it partitions the four subjects correctly: the pair
+made adjacent fell ($-1.67$, $-1.48$), the pair moved to the other day did not ($-0.21$,
+$+0.15$).
+
+It is recorded here and it enters no budget, for a reason that should be stated rather than
+buried. The contrast has two observations on each side and is completely confounded. The pair
+that was made adjacent is also the pair that is most quantitative, shares the most candidates,
+and whose own instruments changed most; "adjacent" and "hardest" name the same two papers,
+and no published aggregate separates them. What the comparison establishes is that the
+delivery of the examination changed in a way consistent with the observed partition — which
+is a fact about the 2027 calendar decision, not a term in the attribution of 2026.
+
+One point remains open. The two sources for 2025 disagree on whether Biología and Física were
+sat on the Wednesday, directly after a morning Matemáticas II, or on the Thursday, a day
+later. The provisional grid printed in the 25/26 access guide says Thursday; the timetable
+published shortly before the sitting says Wednesday. The difference does not change the
+direction of any statement above — Matemáticas II moved from morning to afternoon and became
+adjacent to Física in either case — but it does change the size of the change, and it is
+marked open until the coordination confirms it.
 
 #### What survives: fatigue as a multiplier
 
@@ -257,20 +300,66 @@ something must have moved in 2024 — cut-offs rising in the degrees that weight
 a change in which subjects weight and by how much, or cohort growth tightening the
 competition. All three are public and none has been checked here.
 
-#### What the simulation would be, and what it would yield
+#### The weighting table, and the bound it already gives {#ponderaciones}
 
-The calculation is well posed. It needs the UPV/EHU ponderación table (which degrees weight
-Física at 0.2, at 0.1, at 0), the cut-off marks for those degrees, and a joint distribution
-of candidates' marks in the other subjects, which the published subject distributions supply.
+The admission rule is not inferred here; it is printed at the head of every page of the
+UPV/EHU weighting table: **"Se utilizarán las 2 calificaciones que sean más favorables para
+el estudiantado"**. Two marks enter, and only two, whatever else the candidate sits.
 
-What it yields is **a bound, not a measurement**: the fraction of candidates whose best two
-weighted marks are already settled before Física is sat, and for whom the paper's marginal
-contribution to the admission score is therefore zero. That fraction is the largest the
-effect can possibly be. If it is three per cent of the cohort the hypothesis is finished; if
-it is a quarter of the top band it accounts for 2024 unaided. The bound is obtainable from
-published tables and is honest in a way that any statement about what candidates actually did
-would not be, because no published aggregate records effort.
+Thirty-seven degrees in the three branches a Física candidate plausibly targets have been
+coded from the published table (`data/analysis/ponderaciones_ehu_2026.csv`). Física weights
+0.2 in 28 of them, 0.1 in eight, and nothing in one. That looks like a subject in demand,
+and read against the best-two rule it is the opposite.
 
+| | Física | Matemáticas II | Química | Biología |
+|---|---|---|---|---|
+| Ciencias (9 degrees) | 0.2 in 6 | 0.2 in 7 | 0.2 in 8 | 0.2 in 5 |
+| Ingeniería y Arquitectura (22) | 0.2 in **22** | 0.2 in 21 | 0.2 in 15 | — |
+| Ciencias de la Salud (6) | **0.1 in 5, none in 1** | none | 0.2 in **6** | 0.2 in **6** |
+
+: Weighting of the four quantitative subjects across the degrees a Física candidate targets. Source: UPV/EHU, *Parámetros de ponderación curso 2026-2027 y siguientes*. {#tbl-ponderaciones}
+
+Three consequences follow, and none of them needs a simulation.
+
+**Física is almost never the scarce subject.** Of the 28 degrees that weight it at 0.2, 26
+also weight Matemáticas II at 0.2 and **19 weight Física, Matemáticas II and Química all
+three at 0.2**. In twenty of the twenty-eight the candidate has at least two *other*
+0.2 subjects available. Física is therefore not a key that opens a door; it is one of three
+interchangeable keys of which two are used.
+
+**The first of the two slots is already filled before the candidate chooses anything.**
+Matemáticas II is the compulsory modality subject of the access phase for Ciencias y
+Tecnología, and an access-phase mark may be carried into the admission phase. Every science
+candidate consequently holds one 0.2 mark before sitting a single elective. The contest is
+for the *second* slot, and in the engineering degrees that second slot is contested between
+Química and Física.
+
+**Química is sat first.** On the 2026 calendar Química is the last slot of Tuesday and
+Física the last slot of Wednesday ([the timetable](#timetable-2025-2026)). A candidate walks
+into the Física room having already sat the subject that competes with it for the only
+remaining weighted slot, and with an approximate idea of how it went. That is the
+informational precondition the mechanism requires, and the calendar supplies it.
+
+The health-sciences row is the sharpest case and it points the same way. For Medicina,
+Enfermería, Fisioterapia, Farmacia and Odontología, **Biología and Química weight 0.2 and
+Física weights 0.1**. A medicine-bound candidate who sits all three cannot bring Física into
+the best two unless it beats a 0.2 subject by a factor of two in contribution — which in
+practice it cannot. For that group the marginal return on Física is not small; it is
+structurally zero. And that group is drawn from the top of the distribution, which is
+precisely where the 2024 losses were.
+
+#### What the simulation adds
+
+What the table cannot give is *how many* candidates are actually in that position, because
+that depends on their marks. Given the three weights above and a joint distribution of
+candidates' marks in the competing subjects — which the published subject distributions
+supply — one may compute the fraction whose best two are settled before Física is sat.
+
+The result is **a bound, not a measurement**: it is the largest the effect can be, not its
+size. A first-order sense of the magnitude comes free. Where Física, Matemáticas II and
+Química all weight 0.2 and the three marks are treated as exchangeable, Física falls outside
+the best two about one time in three. That is the order of the ceiling, not an estimate of
+what candidates did. No published aggregate records effort, and none will.
 
 ## Was 2026 a shift or a change of shape?
 
@@ -830,7 +919,7 @@ Requests 1 to 4 are the ones that change what can be concluded, and request 11 i
 - **A statement budget, in two tiers.** The unit a setter can act on is the item, not the paper, and the two kinds of item are not alike: a competency exercise has cost about 400 words in its first year and 300 in its second, an option item about 150 to 185. A budget of **250 for a competency item and 150 for an option** gives a paper of about 1 100 words read against 1 431 in 2026, a cut of 23 %, and is consistent with the trajectory the Basque papers already show (block A went 403 → 289 unaided). A uniform 150–175 band across all six statements would give 900–1 050 but would require the competency items to do something the coordination believes is pedagogically wrong. A further 103 words sit outside either total in the furniture — fifty-one printed weights the 2025 paper did not carry — and can go without touching a question. The five rules that deliver the cut are in [the statement section](#statement-budget).
 - **Calibration against a reference.** The Ministry cube gives, for every subject, community and year, a full distribution; a target distribution for Física (for example the 2017–2024 Basque band structure outside the COVID peak, $[0,5)$ ≈ 30 %, $[9,10]$ ≈ 16 %) can be written into the coordination instructions and checked against a pre-test of the paper on a sample of Bachillerato students, as some communities' ponencias already do informally.
 - **The threshold.** At the ULL the customary bunching of scripts just above the pass line thinned in 2026, from 17.5 % of scripts in $[5,6)$ in 2024 to 11.9 %; at the ULPGC, which never had the same bunching, it did not move (12.6 → 12.8 %). Whether borderline rounding is wanted is a policy question; at the ULL it was worth about 5.6 points of pass rate, and whether EHU rounds at all is not published.
-- **Order of exams.** Física is sat on the last slot of the science day in several communities; the Tenerife minutes name this explicitly. The Basque timetable is a free parameter.
+- **Order of exams.** Física is sat on the last slot of the science day in several communities; the Tenerife minutes name this explicitly. The Basque timetable is a free parameter, and it was moved between 2025 and 2026 without, as far as any published record shows, being treated as one: Matemáticas II came out of the morning and into the slot immediately before Física, so that the two heaviest quantitative papers were sat back to back for the first time ([the calendar comparison](#timetable-2025-2026)). The partition of the 2026 subject changes follows that pairing exactly, and is confounded with it beyond separation. Two decisions cost nothing and remove the confound for 2027: do not schedule Matemáticas II and Física consecutively, and do not schedule Física in the slot after the subject that competes with it for the second weighted mark. If the pairing is kept, the 2027 result will again be uninterpretable on this axis.
 - **Second marking.** Galicia's 2027 reform (double marking, external review of papers) is the model that the "déficit de confianza" language of July points toward; Veas & López-Pina's Rasch equating in Comunitat Valenciana is the statistical complement.
 
 None of these requires new data to be argued; all of them would be sharpened by the seven items above.

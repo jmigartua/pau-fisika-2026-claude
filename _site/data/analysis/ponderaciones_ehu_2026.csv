@@ -1,0 +1,38 @@
+rama,grado,bach_prioritario,biologia,fisica,matematicas_ii,quimica,dibujo_tecnico_ii,tecnologia_ing_ii
+Ciencias,Biología,NO,0.2,0.1,0.2,0.2,,
+Ciencias,Bioquímica y Biología Molecular,NO,0.2,0.1,0.1,0.2,,
+Ciencias,Biotecnología,NO,0.2,0.2,0.2,0.2,,
+Ciencias,Ciencia y Tecnología de los Alimentos,NO,0.2,0.1,0.2,0.2,,0.2
+Ciencias,Ciencias Ambientales,NO,0.2,0.2,0.2,0.2,,0.1
+Ciencias,Física,NO,0.1,0.2,0.2,0.2,0.1,
+Ciencias,Geología,NO,0.1,0.2,0.1,0.2,0.1,
+Ciencias,Matemáticas,NO,0.1,0.2,0.2,0.1,0.1,0.1
+Ciencias,Química,NO,0.1,0.2,0.2,0.2,,
+Ingeniería y Arquitectura,Arquitectura Técnica,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Fundamentos de Arquitectura,NO,,0.2,0.1,,0.2,
+Ingeniería y Arquitectura,Ingeniería Ambiental,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería Biomédica,SI,0.2,0.2,0.2,0.2,,
+Ingeniería y Arquitectura,Ingeniería Civil,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería de Energías Renovables,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería Eléctrica,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería Electrónica,NO,0.1,0.2,0.2,0.2,0.1,0.2
+Ingeniería y Arquitectura,Ingeniería Electrónica Industrial y Automática,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería en Automoción,SI,,0.2,0.2,,0.2,
+Ingeniería y Arquitectura,Ingeniería en Digitalización Industrial y Ciberseguridad,SI,,0.2,0.2,,,
+Ingeniería y Arquitectura,Ingeniería en Organización Industrial,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería en Tecnología de Telecomunicación,SI,,0.2,0.2,,,
+Ingeniería y Arquitectura,Ingeniería en Tecnología Industrial,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería Informática,NO,,0.2,0.2,0.1,,0.1
+Ingeniería y Arquitectura,Ingeniería Informática de Gestión y Sistemas de Información,SI,,0.2,0.2,,,
+Ingeniería y Arquitectura,Ingeniería Mecánica,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Ingeniería Química,NO,0.1,0.2,0.2,0.2,0.1,0.1
+Ingeniería y Arquitectura,Ingeniería Química Industrial,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Inteligencia Artificial,NO,,0.2,0.2,0.1,,0.1
+Ingeniería y Arquitectura,Máquinas y Mantenimiento Naval,SI,,0.2,0.2,0.2,0.2,
+Ingeniería y Arquitectura,Náutica y Transporte Marítimo,SI,,0.2,0.2,0.2,0.2,
+Ciencias de la Salud,Enfermería,NO,0.2,0.1,,0.2,,
+Ciencias de la Salud,Farmacia,NO,0.2,0.1,0.1,0.2,,
+Ciencias de la Salud,Fisioterapia,NO,0.2,0.1,,0.2,,
+Ciencias de la Salud,Medicina,NO,0.2,0.1,,0.2,,
+Ciencias de la Salud,Nutrición Humana y Dietética,NO,0.2,,0.1,0.2,,
+Ciencias de la Salud,Odontología,NO,0.2,0.1,,0.2,,

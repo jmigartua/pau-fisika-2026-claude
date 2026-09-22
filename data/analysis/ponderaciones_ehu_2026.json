@@ -1,0 +1,17 @@
+{
+ "source": "UPV/EHU, Parámetros de ponderación curso 2026-2027 y siguientes (parametros2026_cast.pdf), ramas Ciencias, Ingeniería y Arquitectura, Ciencias de la Salud. Arte/Humanidades and Ciencias Sociales omitted: Física is 0.2 there only for Filosofía.",
+ "rule": "Se utilizarán las 2 calificaciones que sean más favorables para el estudiantado",
+ "n_degrees_coded": 37,
+ "n_fisica_02": 28,
+ "n_fisica_01": 8,
+ "n_fisica_zero": 1,
+ "of_fisica_02_how_many_other_02_subjects": {
+  "1": 8,
+  "2": 4,
+  "3": 16
+ },
+ "n_fisica_matii_quim_all_02": 19,
+ "n_fisica_and_matii_02": 26,
+ "share_fisica_02_with_at_least_two_other_02": 0.714,
+ "health_sciences": "Física is 0.1 in 5 of 6 health degrees and 0 in the sixth; Biología and Química are 0.2 in all six"
+}

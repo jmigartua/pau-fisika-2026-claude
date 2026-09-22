@@ -66,6 +66,9 @@ DASH = [
     ("ULPGC Power BI 'Informe 2: Asignaturas (detallado y por sexo)'", "https://www.ulpgc.es/direccion-acceso/informes-ebau-powerbi-2021", "read in the built-in browser; values transcribed to data/found_canarias_ulpgc_powerbi.csv"),
     ("Uniovi press releases 12 Jun and 16 Jul 2026", "https://www.uniovi.es/actualidad/noticias/", "read by the search agent; values in data/regional_fisica_found.csv"),
     ("Canal Extremadura 11 Jun 2026 (UEx release)", "https://www.canalextremadura.es/noticias/extremadura/el-967-de-los-alumnos-presentados-aprueba-la-pau", "press; value in data/regional_fisica_found.csv"),
+    ("UPV/EHU 'Horarios' and '2026-azterketen-egunak', ordinary sitting 2026", "https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/vias-de-acceso/bachillerato-y-ciclos-formativos-de-grado-superior/pau/convocatoria-ordinaria/horarios", "the 2026 timetable; two EHU pages, mutually consistent; transcribed into the calendar comparison in Chapter 6"),
+    ("UPV/EHU 'Guia Acceso UPV 25-26' timetable grid (marked provisional)", "https://www.ehu.eus/documents/38889400/60894970/Gui%CC%81a+Acceso+UPV+25-26+CAST_web.pdf", "one of two sources for the 2025 timetable; puts Biologia and Fisica on the Thursday"),
+    ("Telecinco Euskadi, 24 May 2025, PAU 2025 Pais Vasco timetable", "https://www.telecinco.es/noticias/euskadi/20250524/fechas-pau-2025-euskadi-calendario-examenes-notas_18_015644523.html", "second source for the 2025 timetable; puts Biologia and Fisica on the Wednesday; the two agree on Quimica and Matematicas II and the disagreement is flagged in the text"),
 ]
 
 CAN25 = "https://www.gobiernodecanarias.org/cmsgob1/export/sites/educacion/web/bachillerato/_galerias/descargas/pau-2025/examenes-PAU-junio-2025/"

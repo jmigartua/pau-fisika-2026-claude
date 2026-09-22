@@ -202,6 +202,55 @@ The effect on the fitted numbers is modest and the effect on their meaning is no
 
 **The recurring failure did not recur, and a different one did.** Every hand-written number in figure 18 was checked against the JSON before this round closed, and none had drifted — the first clean check since the habit was instituted. What did fail was the figure's layout: its vertical pitch was a constant sized for four-line entries, and for the third time a step outgrew it and collided with the next heading. It is now computed from each step's own wrapped line count, which is the same move as the drift check — replacing a constant that has to be remembered with a quantity that is derived.
 
+## The eighth round (22 September): a claim asserted from assumption {#eighth-round}
+
+The seven rounds above caught numbers, stale fits, mis-specified baselines and one paragraph
+that asserted its conclusion without its mechanism. This round caught something the earlier
+rounds were not built to catch, and it is the more dangerous kind.
+
+Writing the section on fatigue and the examination week, the dossier argued — correctly in
+form — that a constant cannot produce a change, and then stated as fact that *"the order of
+the papers did not change between the two years, so whatever fatigue costs is common to both
+and differences out."* The logic was sound. The premise was never checked. It was inferred
+from the general knowledge that Física has been sat late for years, and written in the
+register of a finding.
+
+**The premise was false.** The two published EHU timetables differ, and they differ in the
+slot that the argument was about. Matemáticas II moved out of the Wednesday morning slot
+(11:15–12:45) into the early-afternoon slot (14:30–16:00), which made it the paper
+immediately before Física rather than a paper three hours and one other exam away. Química
+moved later in its day. Física's own slot did not move, so the conclusion the false premise
+supported — that Física's position cannot explain the $-1.48$ — happens to survive on other
+grounds. That is luck, not method.
+
+What the correction cost, and what it bought. It cost a section rewritten and a project
+record reissued the same day. It bought the observation the false premise had foreclosed:
+that in 2026 the two heaviest quantitative papers were sat back to back for the first time,
+and that the four subject changes partition along exactly that pairing. The dossier now
+carries that as a documented change in delivery with a matching partition, explicitly
+confounded with difficulty and explicitly excluded from the budget
+([the comparison](06-interpretation.qmd#timetable-2025-2026)).
+
+Two general lessons are worth recording because they are not the same as the earlier ones.
+
+**A premise stated in the voice of a finding is not audited by a numerical check.** Every
+mechanical verification this dossier runs — recomputation from source CSVs, second coding,
+figure regeneration — operates on quantities. "The timetable did not change" is not a
+quantity; it entered the text as background, and nothing in the apparatus was looking at it.
+The audit procedure now includes a specific pass: *every factual premise that an argument
+turns on must name its source, or be marked as unchecked in the text.*
+
+**Checking was cheap.** Both calendars are published by the university whose exam this is.
+The elapsed cost of establishing the truth was two web fetches. The premise was asserted
+rather than checked not because checking was hard but because the claim felt obvious, which
+is precisely the condition under which this failure mode operates.
+
+One point is left open rather than resolved, and is marked as such in the text: the two
+sources for the 2025 grid agree on Química and Matemáticas II and disagree on whether
+Biología and Física were sat on the Wednesday or the Thursday. The provisional grid in the
+25/26 access guide says Thursday; the timetable published days before the sitting says
+Wednesday. The direction of every statement holds either way; the magnitude does not.
+
 ## Corrections applied
 
 Every correction listed above is in the text of the chapter it belongs to. That sentence is easy to write and was false the last time it was written, so it was tested: after the rewrite a further reader was asked to grep for every superseded string and confirm it was gone. That reader found five more corrections claimed and not applied — the Asturias fix not carried into the derived eight-community correlation, the theory count not carried into one table caption, the collinearity and the "cannot drift" footnote not carried into figure 18, and the z-scale not carried into one paragraph of Chapter 6 — which have since been applied and re-checked. The general point stands and now has a second instance behind it. In summary: scripts 03, 07, 08, 09, 10, 11, 12, 13, 14, 16, 17, 18 corrected; script 21 added (the decomposition) in the second round and scripts 22, 23 and 24 in the third (the subject split, the comparability audit and the cohort rate), and all 28 figures now rendered at one resolution; Chapters 2, 3, 4, 5, 6, 11, 12, 14 and the overview corrected in place; Chapter 6 extended with the decomposition and its data-request list rewritten so that each request names the component it would separate; figures 4, 7, 9, 11, 14, 16, 17, 19, 20, 22, 23, 24 corrected for basis, legibility or a stale hard-coded string; figure 18's status colours reconciled with its own text, its stale "+0.9" replaced by the corrected $+0.79$, and its "cannot drift" footnote replaced by the truth.
@@ -224,6 +273,8 @@ That every one of the six was a count or a proportion, and none was a computed q
 The sixth and seventh rounds add six more of a different kind again, and they are errors of *status* and of *attribution* rather than of arithmetic. The sixth round's three: rather than of arithmetic: a modelled top band used as an observation in four documents; a bound ("flat is the ceiling") asserted before the runs that would have shown its domain; and a comparison of fit quality across shapes made while holding the voiding parameters at values fitted under one of them. The first was corrected, the second restricted to the family it actually bounds, and the third redone by refitting every shape on its own three numbers. All three were caught by running the analysis rather than by re-reading the prose, which is the opposite of the fourth round's pattern and suggests the two checks are complementary rather than redundant. The seventh round's three are of the same kind and one degree worse, because in each case the correcting fact was already in the repository: a cap recorded in `data/marking_rules_2025_2026.csv` while three sections said the channel was unbounded; a per-sub-item content listing sitting in the corrector's document while the model assumed uniformity; and two statements in `sources/exams/` that would have shown, at any point in the study's life, that the competency narrative had not grown. None of the three needed data EHU has not released. What they needed was a reason to look, and in every case the reason came from the coordination rather than from the dossier's own reading of its own files. **The standing lesson after seven rounds is that this study checks what it computes far better than it checks what it assumes**, and that its assumptions are most often wrong where they concern decisions somebody took on purpose.
 
 ## Still open, and for the author to decide
+
+- **Whether the front matter should be rebuilt rather than appended to.** It now carries nineteen findings accumulated over five days, and the last four were added two days after they were established, in breach of a standing instruction that it reflect every revision. Appending has kept it honest and made it long. A rebuilt front matter organised by question rather than by chronology would read better and would lose the record of what was learned when; the audit has no view on which matters more here.
 
 - **Whether the design chapter should carry the 2027 options at all.** [Chapter 16](16-paradigm.qmd) sets out four routes to the 2027 word target and prices three of them in words and none in marks. The case for keeping them is that the trade-off between the itemisation's protection and its reading cost is the decision this dossier has actually illuminated, and leaving it implicit would waste the finding. The case against is that the dossier has no measurement of what the protection is worth to a candidate, so three of the four options are priced on one side only.
 - **Whether the exposure coding should be second-coded.** `data/exam_subtask_coding_2026.csv` classifies forty-six sub-items by the nature of their demand, and it was coded once, by the author, from the corrector's content column. The reading-load coding was second-coded blind after the first audit found errors in it; this one has not been, and it now carries a published finding.

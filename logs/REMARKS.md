@@ -1049,3 +1049,145 @@ the most that is obtainable.
 
 **Open.** The 2025 and 2026 examination calendars, side by side. The UPV/EHU ponderación
 table and cut-offs. What changed in the admission incentive in 2024.
+
+---
+
+### R18 · The timetable did change, and the weighting table was read {#r18}
+
+**Origin.** Not a remark from the coordinator but a self-correction. R17 asserted that "the
+order of the papers did not change between the two years, so whatever fatigue costs is common
+to both and differences out." That assertion was made without checking the calendars. It is
+wrong.
+
+**The correction.** The two published timetables, side by side:
+
+| | 2025 (3–5 June) | 2026 (2–4 June) |
+|---|---|---|
+| Química | Tue 14:30–16:00 | Tue 16:45–18:15 |
+| Biología | 14:30–16:00 | Tue 14:30–16:00 |
+| Matemáticas II | Wed **11:15–12:45** | Wed **14:30–16:00** |
+| Física | 16:30–18:00, last slot of its day | Wed 16:45–18:15, last slot of its day |
+
+Four readings, of which only the last survives.
+
+1. *Matemáticas II moved from morning to afternoon* — the largest change of position in the
+   set, belonging to the subject with the largest fall ($-1.67$). One observation, not
+   independent of everything else that happened to that paper.
+2. *Química moved later* (14:30 → 16:45) and fell least of the quantitative subjects
+   ($-0.21$). A simple "later is worse" rule is contradicted here as plainly as the sequence
+   ordering contradicted it in R17.
+3. *Física's own slot did not move.* It was the last slot of its day in both years, so the
+   part of fatigue attributable to being last still differences out and cannot explain the
+   $-1.48$. R17's conclusion survives; its reasoning did not.
+4. *What changed for Física is what precedes it.* In 2026 the paper immediately before it —
+   same day, same candidates, 45 minutes apart — is **Matemáticas II**; in 2025 it was
+   Biología. For the first time the two heaviest quantitative papers were sat back to back.
+   That is a change and not a level, and it partitions the four subjects correctly: the pair
+   made adjacent fell ($-1.67$, $-1.48$), the pair displaced to the other day did not
+   ($-0.21$, $+0.15$).
+
+**Why (4) enters no budget.** Two observations against two, and completely confounded: the
+pair made adjacent is also the pair that is most quantitative, shares the most candidates and
+whose own instruments changed most. "Adjacent" and "hardest" name the same two papers. What
+it establishes is a fact about the 2027 calendar decision, not a term in the 2026
+attribution — and the design bullet now says so, with the two scheduling decisions that would
+remove the confound.
+
+**Open.** The two sources for 2025 disagree on whether Biología and Física were sat on the
+Wednesday or the Thursday. The provisional grid in the 25/26 access guide says Thursday; the
+timetable published days before the sitting says Wednesday. Both agree on Química (Tue 14:30)
+and Matemáticas II (Wed 11:15), so the direction of every statement above holds either way;
+the size of the change does not. Marked open in the text pending the coordinator's
+confirmation.
+
+**The weighting table.** `sources/raw/ehu_parametros_ponderacion_2026_27.pdf` (image-only,
+five pages, coded by eye into `data/analysis/ponderaciones_ehu_2026.csv`, 37 degrees). The
+admission rule is printed at the head of every page — *"Se utilizarán las 2 calificaciones que
+sean más favorables para el estudiantado"* — so the step function of R17 is documented and not
+inferred. Three consequences need no simulation:
+
+- Física weights 0.2 in 28 of the 37 degrees, which reads as demand and is the opposite: **26
+  of the 28 also weight Matemáticas II at 0.2 and 19 weight Física, Matemáticas II and Química
+  all three at 0.2**. Física is one of three interchangeable keys of which two are used.
+- Matemáticas II is the compulsory modality subject of the access phase for Ciencias y
+  Tecnología and its mark carries into the admission phase, so **one of the two slots is
+  filled before any elective is chosen**. The contest is for the second, and in engineering it
+  is Química against Física.
+- **Química is sat the day before Física** on the 2026 calendar, so the candidate enters the
+  Física room already knowing how its competitor went. That is the informational precondition
+  the mechanism requires, and the calendar supplies it.
+
+The health-sciences row is the sharpest case: Biología and Química at 0.2, **Física at 0.1**,
+so a medicine-bound candidate cannot bring Física into the best two at all. That group sits at
+the top of the distribution, which is where the 2024 losses were.
+
+**Implementation.** Chapter 6: `#timetable-2025-2026` replaces the incorrect paragraph;
+`#ponderaciones` is new, with @tbl-calendar and @tbl-ponderaciones; the H5 summary and the
+*Order of exams* design bullet are rewritten. Chapter 17: §6.4 rewritten on both points; the
+Limitations paragraph now records the unequal standing of the two timetable sources.
+`sources/source_registry.csv` gains the weighting-table PDF with its sha256.
+
+---
+
+### R19 · "Have you taken all these things into account in the website, paper, story?" {#r19}
+
+**Remark (22 September).** The coordinator asked whether the last four rounds had actually
+reached the whole site or only the chapters they were written in.
+
+**Status.** Audited; the honest answer was **no**, and the gap included a standing
+instruction. Now closed.
+
+**What the audit found.**
+
+| | R15 inertia | R16 route | R17 path / effort | R18 timetable / ponderaciones |
+|---|---|---|---|---|
+| Ch. 6 | yes | yes | yes | yes |
+| Ch. 11 | — | — | yes | — |
+| Ch. 12 | yes | yes | — | — |
+| Ch. 17 paper | yes | — | yes | yes |
+| Ch. 15 synthesis EN+ES | yes | **no** | **no** | **no** |
+| Ch. 14 briefing EN+ES | **no** | **no** | **no** | **no, and stale** |
+| Ch. 13 audit | **no** | **no** | **no** | **no** |
+| Ch. 8 sources | — | — | — | **no** |
+| `index.qmd` front matter | **no** | **no** | **no** | **no** |
+
+Four distinct failures, not one.
+
+1. **The front matter stopped at finding 15**, the 20 September material. R11 established
+   that it must reflect every revision. It had reflected none of four rounds over two days.
+2. **The briefing did not merely omit R18; it contradicted it.** Item 11 read "the Basque
+   timetable is a free parameter", sourced to *one set of minutes from another community* —
+   a claim superseded by EHU's own two calendars.
+3. **The audit chapter had no record of the R18 self-correction**, which is precisely the
+   class of error that chapter exists for.
+4. **Three sources the argument now rests on were outside the registry**, breaking the
+   traceability guarantee the front page makes.
+
+**Implementation.**
+
+- `index.qmd`: findings **16** (the instrument's inertia and the two courses of notice),
+  **17** (the 2026 route: every novelty in a slot with a choice), **18** (six communities
+  converted nothing and spread 1.96 marks), **19** (the timetable moved; the weighting table
+  makes Física the third of three keys).
+- `14-briefing.qmd` and `14-briefing-es.qmd`: lever 11 rewritten — it now states what it
+  previously said, why that is superseded, and the two 2027 scheduling decisions that remove
+  the confound; new lever 12 on the weighting table. The "what this needs from the office"
+  paragraph renumbered 9–12.
+- `15-synthesis.qmd` and `-es`: H5 row rewritten from "weighting rules make Física
+  dispensable" to the last-slot arithmetic; two new paragraphs on the competency-path bound
+  and the avoidable syllabus.
+- `13-audit.qmd`: **the eighth round** — *a claim asserted from assumption*. Records that the
+  false premise's conclusion survived on other grounds, which is luck and not method; that a
+  premise written in the voice of a finding is invisible to every numerical check the dossier
+  runs; and that checking cost two web fetches. Adds the audit rule: *every factual premise an
+  argument turns on must name its source or be marked unchecked in the text.* Also adds to the
+  open list the question of whether a front matter of nineteen appended findings should be
+  rebuilt by question rather than by chronology.
+- `scripts/05_registry.py`: the 2026 EHU timetable, the 25/26 guide grid and the press
+  timetable added to the web-source list; the weighting-table PDF already in the file
+  registry with its sha256.
+
+**Lesson recorded.** Writing a finding into the chapter that produced it is not the same as
+putting it into the dossier. The site has four surfaces that a reader may meet first — front
+matter, briefing, synthesis, paper — and a round is not finished until it has reached each of
+them or been consciously excluded from it. That check now belongs at the end of every round.

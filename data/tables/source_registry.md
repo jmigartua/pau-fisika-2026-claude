@@ -144,6 +144,7 @@
 | [raw/ehu_gv_resultados_escolares_2024_2025.pdf](https://www.euskadi.eus/contenidos/informacion/eskola_emaitzak_ikuskaritza/es_def/adjuntos/resultados-escolares-Todo-2024-2025.pdf) | 9056 | Gobierno Vasco, Resultados escolares 2024-25 | curl (search agent) | `d352198165e6` |
 | [raw/ehu_informe_eau_2024.pdf](https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/informe-eau_2024-1-) | 79 | EHU annual summary 2024 | curl (search agent) | `8c60a7e5f04a` |
 | [raw/ehu_informe_pau_2025.pdf](https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/informe-pau_2025-1-) | 78 | EHU annual summary 2025 | curl (search agent) | `2cb2276eec62` |
+| raw/ehu_parametros_ponderacion_2026_27.pdf | 1357 |  | curl (search agent) | `515a478b8f9a` |
 | [raw/gal_ciug_35_estatisticas_valoracions_2024.pdf](https://ciug.gal/PDF/Grupos_Traballo_2024/35_estatisticas_valoracions.pdf) | 369 | CiUG Física working group 2020-2023 | curl with repaired TLS chain (search agent) | `4024195f396c` |
 | [raw/gal_ciug_grupos_traballo.html](https://ciug.gal/grupos-de-traballo) | 21 | CiUG working groups page (empty, 18 Sep 2026) | curl | `eea7ec94bbbc` |
 | [raw/gal_ciug_home.html](https://ciug.gal/) | 23 | CiUG home snapshot | curl | `5ce08eb301d6` |
@@ -174,3 +175,6 @@
 | ULPGC Power BI 'Informe 2: Asignaturas (detallado y por sexo)' | <https://www.ulpgc.es/direccion-acceso/informes-ebau-powerbi-2021> | read in the built-in browser; values transcribed to data/found_canarias_ulpgc_powerbi.csv |
 | Uniovi press releases 12 Jun and 16 Jul 2026 | <https://www.uniovi.es/actualidad/noticias/> | read by the search agent; values in data/regional_fisica_found.csv |
 | Canal Extremadura 11 Jun 2026 (UEx release) | <https://www.canalextremadura.es/noticias/extremadura/el-967-de-los-alumnos-presentados-aprueba-la-pau> | press; value in data/regional_fisica_found.csv |
+| UPV/EHU 'Horarios' and '2026-azterketen-egunak', ordinary sitting 2026 | <https://www.ehu.eus/es/web/unibertsitaterako-sarbidea/vias-de-acceso/bachillerato-y-ciclos-formativos-de-grado-superior/pau/convocatoria-ordinaria/horarios> | the 2026 timetable; two EHU pages, mutually consistent; transcribed into the calendar comparison in Chapter 6 |
+| UPV/EHU 'Guia Acceso UPV 25-26' timetable grid (marked provisional) | <https://www.ehu.eus/documents/38889400/60894970/Gui%CC%81a+Acceso+UPV+25-26+CAST_web.pdf> | one of two sources for the 2025 timetable; puts Biologia and Fisica on the Thursday |
+| Telecinco Euskadi, 24 May 2025, PAU 2025 Pais Vasco timetable | <https://www.telecinco.es/noticias/euskadi/20250524/fechas-pau-2025-euskadi-calendario-examenes-notas_18_015644523.html> | second source for the 2025 timetable; puts Biologia and Fisica on the Wednesday; the two agree on Quimica and Matematicas II and the disagreement is flagged in the text |
