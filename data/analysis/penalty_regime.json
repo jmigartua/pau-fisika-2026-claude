@@ -52,6 +52,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 0.0,
       "apartados_voided_per_script": 0.0,
@@ -78,6 +82,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 1.996645,
       "apartados_voided_per_script": 0.0,
@@ -104,6 +112,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 4.00567,
       "apartados_voided_per_script": 0.0,
@@ -130,6 +142,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 6.009245,
       "apartados_voided_per_script": 0.0,
@@ -156,6 +172,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 8.002485,
       "apartados_voided_per_script": 0.0,
@@ -182,6 +202,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 9.994205,
       "apartados_voided_per_script": 0.0,
@@ -208,6 +232,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 12.006885,
       "apartados_voided_per_script": 0.0,
@@ -234,6 +262,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 14.000305,
       "apartados_voided_per_script": 0.0,
@@ -260,6 +292,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 16.00191,
       "apartados_voided_per_script": 0.0,
@@ -286,6 +322,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 20.00679,
       "apartados_voided_per_script": 0.0,
@@ -312,6 +352,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 25.002655,
       "apartados_voided_per_script": 0.0,
@@ -338,6 +382,10 @@
       "overdispersion": null,
       "n_exposed": 28,
       "lang": null,
+      "lang_shape": [
+        2.0,
+        2.0
+      ],
       "lang_shift": 0.0,
       "deductions_per_script": 30.00476,
       "apartados_voided_per_script": 0.0,
@@ -372,6 +420,10 @@
     "overdispersion": null,
     "n_exposed": 28,
     "lang": null,
+    "lang_shape": [
+      2.0,
+      2.0
+    ],
     "lang_shift": 0.0,
     "deductions_per_script": 11.98969,
     "apartados_voided_per_script": 1.43344,
@@ -399,6 +451,10 @@
     "overdispersion": null,
     "n_exposed": 28,
     "lang": null,
+    "lang_shape": [
+      2.0,
+      2.0
+    ],
     "lang_shift": 0.0,
     "deductions_per_script": 16.0022,
     "apartados_voided_per_script": 0.2914,

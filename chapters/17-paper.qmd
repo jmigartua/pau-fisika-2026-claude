@@ -171,6 +171,16 @@ quality tier — official statistic, institutional presentation, or press report
 and the single press-level figure is excluded from every calculation on which a
 conclusion depends.
 
+Whether these particular nine represent the seventeen is not a matter for
+assurance, because for 2015–2025 all seventeen are published and the question can
+be answered directly. Over the ten transitions in that window, the mean change of
+these nine tracks the mean change of all seventeen with a mean error of $-0.004$
+marks, a standard deviation of 0.138, a largest single error of 0.242, and a
+correlation of $r = 0.943$. The proxy is unbiased and tight. §4.7 states what
+would have to be true of the eight non-reporting communities in 2026 for the
+result of this article to change, and how far that is from anything they have
+ever done.
+
 ## The examination papers
 
 Every exercise and option of the eighteen ordinary papers set in 2025 and 2026 by
@@ -431,6 +441,21 @@ others moved one or none. With $n = 9$ and the outcome concentrated in one point
 this is consistency, not evidence of effect, and it is exactly what prevents the
 nine-community panel from testing the hypothesis it suggests.
 
+A further feature of the second year deserves recording, because it changes what
+the comparison means. The other eight communities did not merely fail to follow:
+their competency-coded share of marks **fell**, from 11.2 per cent to 7.2 per cent.
+Cataluña halved its own, from 75 to 37.5 per cent, while holding its total
+substantive context constant at 87.5 — it kept the context and dropped the demand
+attached to it. Comunitat Valenciana went to zero. Five were at zero and remained
+there. The field against which the region-specific component is measured was
+therefore moving away from the competency format while the region under study moved
+towards it, so that component mixes an advance with a retreat.
+
+This narrows the refutation of §1 to precisely what it establishes. That six of nine
+rose under the same decree refutes the proposition that **the decree** depressed
+marks. It establishes nothing about competency-style examining, because in the
+second year almost no other community was doing any.
+
 Three specific movements are worth recording. The share of marks carried by
 competency-coded items rose from 25 to 62.5 per cent — the largest movement in the
 set, and the only one of that magnitude. Optionality was halved, with two of four
@@ -475,6 +500,112 @@ applied more completely in its second year can account for between 59 and 87 per
 cent of the Physics-specific fall**, and the published data do not determine where
 in that range the truth lies. The single quantity that would discriminate — the
 2026 grade-band distribution, published in every prior year — is not available.
+
+## The field is a mixture of stages, not a control group {#sec-stages}
+
+The index of §4.4 measures how far each paper moved. It does not measure where each
+paper started, and the two are different questions. Coding the Catalan ordinary
+papers for 2020–2025 shows why that distinction matters more than the index does.
+
+| Year | Structure | Problems with a justify / evaluate demand | Problems in a real setting |
+|---|---|---:|---:|
+| 2020 | 4 of 8 | 37.5 % | 37.5 % |
+| 2021 | 4 of 8 | 62.5 % | 43.8 % |
+| 2022 | 4 of 8 | 50.0 % | 50.0 % |
+| 2023 | 4 of 7 | 50.0 % | 64.3 % |
+| 2024 | 4 of 7 | 28.6 % | 85.7 % |
+| 2025 | 4 exercises, A/B within two | 66.7 % | 100 % |
+
+: Cataluña's ordinary Physics papers before and after the reform. {#tbl-catalunya tbl-colwidths="[10,34,30,26]"}
+
+Real settings and explicit demands to justify, reason or evaluate appear in every
+year from 2020 — five years before the decree. The problems are set around a
+singer's voice and the Apollo 15 feather-and-hammer demonstration (2020), Tycho
+Brahe's observations (2021), the locomotion of an eel and a launch (2022), the moons
+of Mars and what the press made of a fusion announcement (2023), a planetary mission
+and the altitude of a firework (2024). What changed in 2025 was the *structure* —
+four block exercises with an internal option, which the decree prescribes — and not
+the substance.
+
+**Cataluña's 75 % of competency-coded marks in 2025 is therefore a steady state, not
+a conversion.** It is a system that has examined this way for years, and it sat
+about $+0.65$ above the field in both 2025 and 2026 — once with three quarters of
+its marks competency-coded and once with half that.
+
+This has two consequences, and they pull in opposite directions.
+
+It is the strongest evidence available against the proposition that competency-style
+examining depresses marks. A neighbouring system has examined that way for at least
+five years without a collapse, and halving its competency content did not move its
+position relative to the field. The weight therefore falls not on the paradigm but
+on the *transition*: a conversion from 0 to 25 to 62.5 per cent of the marks in two
+sittings, accompanied by halved optionality, a reopened syllabus and the second year
+of a new marking regime, in a system with no prior experience of the style.
+
+It also means the field is not a control group but **a mixture of stages**: one
+system that had converted years earlier, one converting for the first time in 2026,
+and six that had not converted at all. That makes it a sound measure of the national
+movement — which is all §3.1 asks of it — and a poor proxy for *a system like this
+one that did not convert*, because no such system exists in the set. The comparison
+that would identify the effect of a conversion is unavailable for the same structural
+reason as everything else in §5.
+
+The same distinction corrects a comparison that looks decisive and is not.
+Castilla-La Mancha raised its competency-coded marks from 0 to 20 per cent in 2026
+and its mean rose $+0.94$. Read against the region under study, whose marks fell in
+the year its share went to 62.5 per cent, that looks like a refutation. It is not,
+because the two are at different stages:
+
+| | stage | competency share | Δ mean | Δ field | specific |
+|---|---|---:|---:|---:|---:|
+| Region under study | 2025 — **first** year | 0 → 25 | $-0.62$ | $-0.65$ | $+0.03$ |
+| Region under study | 2026 — **second** year | 25 → 62.5 | $-1.48$ | $+0.17$ | $\mathbf{-1.65}$ |
+| Castilla-La Mancha | 2026 — **first** year | 0 → 20 | $+0.94$ | $+0.17$ | $+0.77$ |
+
+: Two conversions, aligned on stage rather than on year. {#tbl-stages tbl-colwidths="[26,24,16,11,11,12]"}
+
+Both first years were harmless. The event is a second-year event. Castilla-La Mancha
+in 2026 is therefore the region under study in 2025, one year later, and the
+comparison that matters has not happened yet — it will in 2027, and it constitutes a
+prediction: if the mechanism is the depth of conversion in the second year, that
+community should fall in 2027 if it goes further and not if it stays where it is.
+
+It should be said that marking severity applied cautiously in its first year and
+fully in its second predicts exactly the same first-year, second-year shape. Two
+hypotheses, one signature: this is §5.1 again, not an exception to it.
+
+## How much the result depends on who is in the field {#sec-sensitivity}
+
+Two objections follow from the preceding subsections. The field is nine of
+seventeen, so the eight that did not publish might have moved it. And Cataluña is a
+mature practice rather than a converting system, so it arguably does not belong in a
+field used to judge a conversion.
+
+Both are answered by exhibiting the whole space of choices rather than by making
+one. Removing a single community from a nine-point mean moves that mean by exactly
+$(x_i - \bar{x})/8$, so the set of one-community deletions is small and can simply be
+drawn.
+
+![**(a)** The region-specific component recomputed with each community in turn
+removed from the field. **(b)** The same fall labelled under both fields: only the
+term charged to the country and the unattributed remainder
+move.](../plots/paper/fig10_field_sensitivity.png){#fig-sensitivity}
+
+Removing Cataluña takes the component from $-1.64$ to $-1.56$: eight hundredths of a
+mark. Across all eight possible removals the component ranges from $-1.77$ to
+$-1.52$, and no point in that interval changes a statement in this article. The
+published figure retains all nine, on the principle stated in §3.1 that the field
+measures the national movement rather than serving as a matched control, and because
+selecting comparators by the character of their papers introduces a free parameter
+that the data cannot discipline.
+
+The eight non-reporting communities are bounded the same way. For the
+region-specific component to vanish they would have to average $-3.34$ marks in
+2026 — more than twice the fall under study, and over three times the worst they
+have ever collectively produced ($-0.99$, in 2025). Had they repeated that worst
+year exactly, the component would still be $-1.10$. The displacement required is
+twelve standard deviations of the historical nine-against-seventeen error reported
+in §2.2.
 
 ## The cohort term
 
@@ -658,8 +789,19 @@ same as being established at either end.
 
 The 2026 cross-section is nine communities assembled from sources of mixed
 quality, not a published statistic, and it is not a random sample of the
-seventeen. With $n = 9$ the reform-intensity association is descriptive and
-collapses when the single extreme point is removed, as §4.4 states.
+seventeen. Its adequacy as a proxy is measured in §2.2 and its influence on the
+result is bounded in §4.8, but neither removes the fact that eight communities are
+absent. With $n = 9$ the reform-intensity association is descriptive and collapses
+when the single extreme point is removed, as §4.4 states.
+
+The field is a mixture of systems at different stages of conversion (§4.7). It
+therefore measures the national movement well and cannot stand as a counterfactual
+for an unconverted system resembling the one under study; no such system is present.
+
+The Catalan series of §4.7 was coded once, by one reader, after the result was
+known. The 2025 and 2026 papers of all nine communities were coded blind by two
+readers, with $\kappa = 0.76$. The two are not evidence of the same quality, and
+the Catalan series is used only for the direction of travel it establishes.
 
 Every quantity in this article is a cohort statistic from a different examination,
 marked by different panels, in a system where the instrument changes annually.

@@ -629,8 +629,19 @@ fig.tight_layout(rect=(0, 0.04, 1, 0.94))
 fig.savefig(PLOTS / "fig11_exam_content.png", dpi=200)
 fig.savefig(PLOTS / "fig11_exam_content.svg")
 
-# second figure: stacked profile per paper
-fig, ax = plt.subplots(figsize=(12, 5.2))
+# Second figure: stacked profile per paper, with Cataluña's own history beneath it.
+#
+# R14. Cataluña's bar is the one that misleads in the top panel. Read alongside
+# the others it looks like a community that converted in 2025 and pulled back in
+# 2026, which is how it was read here at first. The ordinary papers 2020–2025 say
+# otherwise: real settings and explicit justification demands in every year, five
+# before the decree. Its 2025 level is steady state, so the lower panel is not
+# decoration — without it the top panel invites the wrong inference about the one
+# observation that matters most.
+fig = plt.figure(figsize=(12, 7.6))
+_gs = fig.add_gridspec(2, 1, height_ratios=[1.0, 0.58], hspace=0.42)
+ax = fig.add_subplot(_gs[0])
+axc = fig.add_subplot(_gs[1])
 order = chg.ccaa.tolist()
 x = np.arange(len(order))
 wbar = 0.38
@@ -653,6 +664,33 @@ ax.set_ylim(0, 110)
 fig.suptitle("Contextualisation profile of each paper (left bar 2025, right bar 2026); Δ mean grade under each community",
              fontsize=10.5, x=0.01, ha="left")
 ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), fontsize=8.5, frameon=False, ncol=3)
+# --- lower panel: Cataluña 2020-2025, measured on the same two dimensions
+_ch = pd.read_csv(ROOT / "data" / "analysis" / "catalunya_history_2020_2025.csv")
+_xc = np.arange(len(_ch))
+axc.bar(_xc - 0.19, _ch.demand_pct, 0.38, color=BLUE,
+        label="problems carrying a justify / evaluate demand")
+axc.bar(_xc + 0.19, _ch.context_pct, 0.38, color=AQUA,
+        label="problems set in a real context")
+for xi, a, b in zip(_xc, _ch.demand_pct, _ch.context_pct):
+    axc.text(xi - 0.19, a + 2.5, f"{a:.0f}", ha="center", fontsize=7.5, color=GREY)
+    axc.text(xi + 0.19, b + 2.5, f"{b:.0f}", ha="center", fontsize=7.5, color=GREY)
+axc.set_xticks(_xc)
+axc.set_xticklabels([f"{r.year}\n{r.structure}" for r in _ch.itertuples()], fontsize=8)
+axc.set_ylim(0, 132)
+axc.set_ylabel("% of the paper's problems")
+axc.set_title("Cataluña, ordinary papers 2020–2025: the 2025 level is where it had already been\n"
+              "the shaded year is the first under the decree — it changes the structure, not the substance",
+              fontsize=10, loc="left")
+axc.legend(loc="upper left", fontsize=8, frameon=False, ncol=2)
+axc.axvspan(4.5, 5.5, color=BLUE, alpha=0.06, zorder=0)
+
+# point the top panel at the lower one, at the bar that needs it
+_cat_i = order.index("Cataluña") if "Cataluña" in order else None
+if _cat_i is not None:
+    ax.annotate("not a 2025 conversion — see below", xy=(_cat_i, 92), xytext=(_cat_i + 1.6, 103),
+                fontsize=8, color=GREY, ha="left",
+                arrowprops=dict(arrowstyle="->", color=GREY, lw=0.9))
+
 fig.tight_layout(rect=(0, 0, 1, 0.94))
 fig.savefig(PLOTS / "fig12_exam_profiles.png", dpi=200)
 fig.savefig(PLOTS / "fig12_exam_profiles.svg")

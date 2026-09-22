@@ -1,0 +1,45 @@
+{
+  "field_nine": 0.16266666666666665,
+  "component_nine": -1.6426666666666667,
+  "field_eight_no_catalunya": 0.08299999999999996,
+  "component_eight_no_catalunya": -1.563,
+  "difference": 0.07966666666666677,
+  "leave_one_out": {
+    "Canarias": {
+      "field": 0.28700000000000003,
+      "component": -1.767
+    },
+    "Extremadura": {
+      "field": 0.28550000000000003,
+      "component": -1.7655
+    },
+    "Andalucía": {
+      "field": 0.16175,
+      "component": -1.64175
+    },
+    "Comunitat Valenciana": {
+      "field": 0.11975000000000002,
+      "component": -1.59975
+    },
+    "Cataluña": {
+      "field": 0.08299999999999996,
+      "component": -1.563
+    },
+    "Castilla-La Mancha": {
+      "field": 0.0655,
+      "component": -1.5455
+    },
+    "Madrid": {
+      "field": 0.05175000000000002,
+      "component": -1.53175
+    },
+    "Asturias": {
+      "field": 0.041750000000000065,
+      "component": -1.52175
+    }
+  },
+  "range": [
+    -1.767,
+    -1.52175
+  ]
+}

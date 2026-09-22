@@ -318,6 +318,7 @@ PAPER_NAMES = {
     "fig27_comparability": "fig06_reform_intensity",
     "fig30_penalty_regime": "fig07_marking_regime",
     "fig29_statement_budget": "fig09_statements",
+    "fig33_field_sensitivity": "fig10_field_sensitivity",
 }
 
 
@@ -351,6 +352,8 @@ ES_FIGURES = {
     # paper-mode names, needed in Spanish for the coordination deck
     "fig04_locus",
     "fig08_attribution_budget",
+    "fig33_field_sensitivity",
+    "fig34_budget_no_catalunya",
 }
 
 
