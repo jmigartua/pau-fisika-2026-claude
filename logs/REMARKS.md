@@ -1265,3 +1265,126 @@ power statement printed on the panel so the $-0.85$ cannot be read without it. C
 extended. Chapter 17: §4.7 extended, `@fig-cat-event`, Limitations rewritten on the
 measure's crudeness. `index.qmd`: finding **20**. Synthesis EN+ES and briefing lever 7.
 `scripts/05_registry.py`: the fifteen papers registered.
+
+---
+
+### R21 · "The plot resembles a cosine" {#r21}
+
+**Remark (22 September).** *"the plot resembles a cosine function… can the means from 2015
+to, let's say 2005 be found… to me, there seems a kind of cyclic behaviour, of course, I do
+not know what the external force is driving it / what do you think?"*
+
+**Status.** Tested and answered: no cycle. But the test required measuring the panel's
+memory, which the dossier had never measured, and that measurement produced the first
+pre-registered prediction in the study.
+
+**Can the series go back to 2005?** Not from anything reachable here. The Ministry cube
+starts in 2015 for every community; only Euskadi (2010–2026) and La Rioja (2010–2025)
+predate it, from regional reports. Cataluña's own pre-2015 statistics are on a Generalitat
+site that blocks automated fetching. Recorded as open. The longest series held — Euskadi's
+seventeen points — returns a best "period" of 40 years, which is a drift.
+
+**Is it a cycle? No, on four grounds.**
+
+1. **A difference cannot contain a common driver.** The plotted quantity is a community
+   minus the field, so anything acting on all of Spain is removed by construction. The
+   external force the remark was looking for is the one thing the series cannot hold.
+2. **Eleven points is one cycle.** Frequency resolution $1/11$ yr$^{-1}$: a nine-year
+   period is not distinguishable from infinity. Three cycles would need ~30 years.
+3. **The null decides it, and two nulls are wrong.** White noise gives $p = 0.02$ (the
+   classic way to manufacture a cycle). The *pooled* AR(1) $\phi = 0.61$ gives $p = 0.14$
+   — but that coefficient is mostly between-community level differences, and since the
+   sinusoid fit carries a constant those levels are absorbed. The correct null is the
+   within-community process, $\phi = 0.186$ (0.305 bias-corrected), giving $p = 0.024$ to
+   $0.042$. **Both wrong nulls were computed and reported in this session before the right
+   one; the first would have dismissed a live result, the second would have confirmed a
+   dead one.**
+4. **Look-elsewhere.** The same cosine fitted to all fifteen communities puts **Aragón
+   first** ($R^2 = 0.863$ at 10.4 y) ahead of Cataluña ($0.826$ at 8.6 y); median $R^2$ is
+   0.557; two of fifteen exceed 0.80, about what chance delivers at $p \approx 0.03$; and
+   the recovered periods run 2.5 to 40 years, sd 11. A common driver would impose a common
+   period and phase.
+
+**What the appearance is.** For an AR(1) the year-to-year changes anticorrelate at
+$-(1-\phi)/2$. Predicted $-0.407$; observed $-0.389$ ($p = 3\times10^{-6}$, $n = 135$).
+Mean reversion alone reproduces the wave. No feedback loop, no forcing, no cycle.
+
+**The finding that came out of it.** Euskadi's norm against the eight 2026 publishers is
+$+0.06$; 2025 $-0.25$; 2026 $-2.10$; deviation from its own norm $\mathbf{-2.16}$;
+innovation sd $0.468$.
+
+| 2027, if 2026 was… | expected | 95 % |
+|---|---|---|
+| a transient shock | $-0.40$ ($-0.66$ bias-corrected) | $[-1.32, +0.52]$ |
+| a permanent level change | $-2.16$ | $[-3.08, -1.24]$ |
+
+Separation **3.7 $\sigma$**, settled by one sitting.
+
+**The warning this delivers.** *If the paper is changed for 2027 and the mean recovers by
+about a mark and a half, that is what the panel predicts from doing nothing.* A recovery of
+that size is not evidence the intervention worked; only one clearly beyond the reversion
+band would be. Written before the sitting, which is the only time it is worth anything.
+Caveat: the shock branch assumes 2026 was a draw from the same process — precisely what the
+level-change branch denies, which is what makes it a test.
+
+**Implementation.** `scripts/37_cycle_and_reversion.py`, `fig38_cycle_and_reversion`
+(paper `fig13_reversion`). Chapter 6: `#mean-reversion` with `#reversion-2027`. Chapter 17:
+Discussion §6.5. `index.qmd` finding **21**. Synthesis EN+ES. Briefing monitoring lever 3,
+EN+ES, where the warning is operational.
+
+**Lesson.** The remark was about a picture and the answer was no — and it still produced the
+most decision-relevant number in the dossier. A question that turns out to be wrong is not a
+question that was not worth asking.
+
+---
+
+### R22 · The Oficina d'Accés URLs, and three defects in fig25 panel a {#r22}
+
+**Remark (22 September).** *"give me the url: If you can get the Oficina d'Accés dossiers
+for 2005–2014 / and can you revise the figure: fig25_decomposition_es / could there be some
+error in the plot to the left"*
+
+**The URLs.** The index is
+`https://universitats.gencat.cat/es/altres_pagines/informe_i_estadistiques/informe_i_estad_pau/index.html`
+(the `/ca/` variant of the same path is robots-disallowed; the `/es/` one is not). The
+annual dossiers follow
+`…/web/.content/01_acces_i_admissio/pau/documents/informes_i_estad/pau_estadistiques_YYYY.pdf`,
+verified for 2014. Those PDFs are behind a robots rule and were not fetched.
+
+**Three extra years, not spliced.** The index page yields Física means 5.51 (2012), 6.00
+(2013), 5.14 (2014), 5.87 (2015), 5.24 (2016). The Ministry cube gives 5.982 and 5.260 for
+the last two — 2016 agrees to two hundredths, 2015 differs by 0.11 — so the table is a
+*nearly* but not identically defined population (*estudiants aptes*, not presented
+candidates). **Not merged into the series**: a definitional step of a tenth would sit on top
+of the effect being measured. Recorded as available if the definition can be read off the
+dossiers.
+
+**The figure: the arithmetic was right, the drawing was wrong.** Every value in panel a was
+checked against panel b before anything was changed. 2024 sits at $(-0.21, -5.92)$ and 2025
+at $(-0.62, -0.14)$, exactly the $-5.9$ and $-0.1$ excesses panel b reports; the counts
+reconcile (17 communities, 187 community-years, 170 transitions, 160 outside Euskadi). Four
+defects, all presentational, one of them substantive:
+
+1. **The locus was unmarked.** The vertical line at $x=0$ means only "the mean did not
+   move"; the horizontal at $y=0$ **is the locus**, since the ordinate is already the
+   residual from it — and panel b's title speaks of 2024 leaving the locus while panel a
+   never showed where it was. Both lines were identical anonymous grey. The horizontal is
+   now dashed, darker and labelled.
+2. **The 2025 callout named the wrong point, visually.** Offset up and right, it landed
+   beside a different Basque year. Both callouts now carry a leader.
+3. **The legend sat on the data**, with a grey point printed through the word "Euskadi".
+   Space is now made below the scatter; the legend is unframed.
+4. **The x-axis said *Cambio de posición*** — but the prose pairs *forma* with *nivel*
+   ("2024 cambió la forma y apenas tocó el nivel"), and *posición* is this dossier's word
+   for a community's position against the field, a different quantity. The figure was
+   naming the level with the word reserved for the gap. Now **Cambio de nivel**, and the
+   English key changed to *Change of level* so the English figure matches its own prose.
+
+Captions in chapter 6 and both briefings now reconcile the 187/170/160 counts a reader
+meets in three places.
+
+**Lesson.** The remark was "could there be some error" and the honest first move was to
+re-derive every plotted value against the panel that shares its numbers. There was no error
+in the data. Three of the four defects were in how the panel spoke, and the fourth was a
+word that collided with the dossier's own vocabulary — which no numerical check would ever
+have found.

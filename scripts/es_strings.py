@@ -50,10 +50,11 @@ ES = {
 
     # ---------------------------------------------------------------- fig25
     "Euskadi, 2016–2025": "Euskadi, 2016–2025",
-    "Change of location: Δ mean mark": "Cambio de posición: Δ nota media",
+    "Change of level: Δ mean mark": "Cambio de nivel: Δ nota media",
     "Change of shape: Δ top band minus what\nthe level alone predicts (pp)":
         "Cambio de forma: Δ banda alta menos lo que\npredice el nivel por sí solo (pp)",
     "a. Two different kinds of year": "a. Dos clases distintas de año",
+    "the locus": "el lugar geométrico",
     "observed": "observado",
     "what the level alone predicts": "lo que predice el nivel por sí solo",
     "Change, percentage points": "Cambio, en puntos porcentuales",

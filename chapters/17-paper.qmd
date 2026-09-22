@@ -873,6 +873,48 @@ two scenarios. That the interval swallows the difference between the scenarios i
 not a defect of the calculation. It is the result: **the paper, not the cohort,
 determines the outcome, and the paper is a decision rather than a trend.**
 
+## The memory of the panel, and a falsifiable prediction {#sec-reversion}
+
+The series used throughout this article are deviations of a community from a
+contemporaneous field. How much memory such a deviation carries has not so far been
+estimated, and it bears directly on how the next sitting should be read.
+
+Pooling the fifteen communities without community intercepts gives an AR(1)
+coefficient of 0.614, but that figure is dominated by persistent level differences
+between communities. Within a community, around its own mean position, the
+coefficient is **0.186** (standard error 0.079, $n = 150$; 0.305 after correcting
+the downward bias of a dynamic panel with $T = 11$). The innovation standard
+deviation is 0.468.
+
+That coefficient has an immediate diagnostic use. For an AR(1) process the
+year-to-year *changes* anticorrelate at $-(1-\phi)/2 = -0.407$; the observed value
+is $-0.389$ ($p = 3\times10^{-6}$, $n = 135$). The alternation visible in these
+series — a fall followed by a recovery — is therefore fully accounted for by mean
+reversion, and requires no oscillatory mechanism. A sinusoid fitted to any single
+eleven-point series recovers a period near nine years, but so does pure noise with
+this memory, the recovered periods across the fifteen communities range from 2.5 to
+40 years, and the community with the best fit is not the one whose appearance
+prompted the exercise. Eleven annual points cannot resolve a nine-year period from a
+trend in any case.
+
+![**(a)** The best sinusoid fitted to each community's deviation from the field, eleven points each, with the recovered period printed against each bar. **(b)** The region under study against the eight communities publishing a 2026 figure, with the two predictions for 2027.](../plots/paper/fig13_reversion.png){#fig-reversion}
+
+The prediction follows. Measured against the eight communities that published a 2026
+figure, the region's norm over 2015–2024 is $+0.06$ and its 2026 position is
+$-2.10$, a deviation of $-2.16$ from its own norm. If 2026 was a transient shock,
+the 2027 deviation is expected at $-0.40$ (95 % interval $[-1.32, +0.52]$); if it
+was a permanent change of level, at $-2.16$ ($[-3.08, -1.24]$). The two hypotheses
+are separated by 1.76 marks against an innovation standard deviation of 0.468 —
+approximately $3.7\sigma$ — and one sitting discriminates between them.
+
+This is stated before the sitting, which is the only condition under which it
+constitutes a test. It carries one methodological consequence for the institution
+concerned: a 2027 recovery of approximately 1.5 marks is what the panel predicts in
+the absence of any intervention, and cannot by itself be read as evidence that a
+revised paper succeeded. The shock branch assumes the 2026 observation is a draw
+from the same process, which is the assumption the level-change branch denies; the
+test is a test precisely because the two cannot both hold.
+
 ## What a reader may conclude
 
 Three statements are supported. The 2025 fall was national, and the region moved

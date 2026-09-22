@@ -93,6 +93,8 @@ The July 2026 package in this project (`fisica_pau_ehu_package`, `hist_evolution
 
 **20. Cataluña converted in 2020, not 2025 — and the conversion cost it nothing a well-specified test could see.** Fifteen more Catalan papers (2005–2019) were added from an open archive, and one mechanical rule — what share of items require the candidate to justify, reason, explain, evaluate or say why — was applied to every year from 2010. The traditional decade sits at **17.7 %** (sd 10.9, range 6.2–33.3); 2020–2023 sits at **50.0 %**. The level roughly triples and the step is at **2020**, five years before the decree and five before the structural change that made the 2025 paper look converted. Differenced against the fifteen communities with a complete Ministry series, and dropping the COVID sittings because they confound treatment with control, Cataluña's position moves from $+0.42$ (2015–19) to $-0.43$ (2022–25), a shift of $-0.85$ — with Welch $p=0.087$, exact permutation $p=0.119$, and a **minimum detectable shift of 1.26 marks**. The estimate is smaller than the resolution of the design that produced it, 59 % of it is the field rising rather than Cataluña falling, and Cataluña's position moved $+1.28$ in 2017 with nothing happening to its paper at all. **This is a bound, not a coefficient, and no sentence in this dossier quotes it as one.** What it licenses is two things. A system that tripled its examined-reasoning share at one step produced nothing detectable over six years, while Euskadi's second-year fall alone is $-1.65$ — larger than the entire Catalan post-conversion displacement. And the floor matters more than the step: **Cataluña's lowest traditional year is 6.2 %, so it never examined without asking anyone to justify anything**, while the Basque instrument drew 40 % of its marks from a closed list of recall titles and carried zero competency marks as late as 2024. Cataluña intensified a practice it had; Euskadi introduced one it did not. It changed once and then left the paper alone for five years; Euskadi changed four axes in two sittings. ([The papers themselves](#catalunya-event))
 
+**21. A deviation of this kind usually gives most of itself back the next year — so a 2027 recovery of a mark and a half would be what doing nothing predicts.** A question about whether the Catalan curve is cyclic forced the first measurement of the panel's *memory*, and the memory turns out to matter more than the cycle. The wave is not one: a difference against the field cannot contain a driver common to Spain, because the subtraction removes it; eleven annual points contain one cycle of a nine-year period and cannot distinguish it from a trend; and when the same cosine is fitted to all fifteen communities, **Aragón fits better than Cataluña** and the recovered periods run from 2.5 to 40 years, where a common driver would impose a common period and phase. What the appearance really is falls out of one number. Within a community, around its own level, the deviation from the field follows an AR(1) with $\phi = 0.186$ — which predicts that year-to-year *changes* anticorrelate at $-0.407$, against $-0.389$ observed ($p = 3\times10^{-6}$, $n=135$). Mean reversion alone reproduces the wave; no forcing is needed. The consequence is a prediction. Euskadi's norm against the eight 2026 publishers is $+0.06$; its 2026 position is $-2.10$, a deviation of $\mathbf{-2.16}$ from its own norm. If that is a **transient shock**, 2027 should return $-0.40$ (95 % $[-1.32, +0.52]$); if it is a **permanent level change**, $-2.16$ (95 % $[-3.08, -1.24]$). The two differ by 1.76 marks against an innovation sd of 0.47 — **3.7 $\sigma$, settled by a single sitting.** So: if the paper is changed for 2027 and the mean recovers by about a mark and a half, that is what the panel predicts from doing nothing, and it is not evidence that the change worked. ([Interpretation](#mean-reversion))
+
 ## What is still missing
 
 No 2026 Física figure has been published for Aragón, Baleares, Cantabria, Castilla y León, Galicia, Murcia, Navarra or La Rioja; the Ministry's 2026 cube is due in June 2027. EHU has not published the Física result of the July 2026 sitting, the pass *count*, the revision statistics for Física, the tribunal-level spread it referred to on 6 July, nor any split by sex, language or territory. The Basque *Resultados escolares 2025-26* (the school marks of the cohort that sat PAU 2026) is not yet out. [Chapter 9](#sec-ch09) lists the URLs to poll and the dates by which each is expected.
@@ -933,7 +935,7 @@ The third is the uncomfortable one, and the audit sharpened it. If this analysis
 
 Everything above asks how large the fall was and which explanation survives. The question that matters for 2027 is a different one: what is the fall *made of* — how many distinct things happened, which of them can be told apart from each other with published data, and which of them can be acted on separately. This section answers it as far as the data allow and is explicit about where that stops.
 
-![**a** — every year-to-year transition in the panel, placed by how much the mean moved (location) and by how far the top band moved away from what that change of mean alone predicts (shape). Euskadi's ten transitions are in violet; 2024 and 2025 are ringed. **b** — the same two Basque years, observed against the locus prediction, for both published band quantities. **c** — the 2025 → 2026 fall split into the part common to the nine reporting communities, the two Basque-specific components this study can put a number on, and the part it cannot.](plots/fig25_decomposition.png){#fig-decomp}
+![**a** — every year-to-year transition in the panel, placed by how much the mean moved (location) and by how far the top band moved away from what that change of mean alone predicts (shape). Euskadi's ten transitions are in violet; 2024 and 2025 are ringed and carry a leader to their label. The dashed horizontal is the locus itself — the vertical axis is already the residual from it — so a point on that line is a year whose bands moved exactly as its change of mean predicts. The panel holds 170 transitions: 187 community-years less the first year of each of the seventeen communities, of which 160 belong to the other sixteen. **b** — the same two Basque years, observed against the locus prediction, for both published band quantities. **c** — the 2025 → 2026 fall split into the part common to the nine reporting communities, the two Basque-specific components this study can put a number on, and the part it cannot.](plots/fig25_decomposition.png){#fig-decomp}
 
 ### Three events, not one
 
@@ -1368,6 +1370,92 @@ The list below is ordered by how much of the unattributed $-1.33$ each item woul
 11. **The 2026 grade-band table for Física — the share of scripts in $[0,5)$, $[5,6)$, $[6,7)$, $[7,8)$, $[8,9)$ and $[9,10]$** — the same table Euskadi published every year through 2025 and has not published for 2026. *Separates*: the shape of the penalty distribution, and with it how much of the fall the marking regime can be held to account for. [The shape section](#penalty-shape) refits seven readings of the same regime against the four figures that *are* published; all seven match them, and the five that are readings anybody has offered differ by a factor of twenty-three on the share at or above nine — from 0.3 % if the penalties fell evenly on everybody to 6.1 % if they concentrated on the weakest. That single number therefore decides whether the marking sheet carries 87 % of the Física-specific $-1.10$ or 59 % of it, which is the difference between a dossier that has explained the Física fall and one that must keep looking. The dossier's own $2.09$ % is a smooth-curve extrapolation and is labelled modelled throughout; it is not a substitute. This is the cheapest request on the list — the table is a by-product of a tabulation already run, and it was routine until last year.
 
 Requests 1 to 4 are the ones that change what can be concluded, and request 11 is the one that costs least for what it settles. If only one can be obtained, it should be the first; if the first is refused as too laborious, a re-marking of a stratified sample by a second panel would substitute for both 1 and 2 at the cost of the marking itself. Request 3 is the exception to the ordering, in that it is the only item that is both decisive for one component and obtainable within days.
+
+## The memory of the panel, and the one prediction 2027 can settle {#mean-reversion}
+
+This section exists because of a question about a picture. Looking at Cataluña's position
+against the field over 2015–2025 ([the event study](#catalunya-event)),
+the coordination asked whether the curve was cyclic, and what might be driving it. Testing
+that properly required measuring something the dossier had never measured — how much memory
+these series have — and the measurement turns out to matter more than the question that
+prompted it.
+
+### The wave is not a cycle, and the reason is structural before it is statistical
+
+The fit is real enough: the best sinusoid on the eleven points gives $R^2 = 0.826$ at a
+period of **8.6 years**. Four things dispose of it.
+
+**A difference cannot contain a common driver.** The plotted quantity is one community
+*minus the field*. Anything acting on every community at once — a national reform, the
+pandemic, a demographic wave — is removed by that subtraction by construction. Whatever
+the wave is, it cannot be an external force acting on Spain; it would have to be specific
+to one community and carry a nine-year clock.
+
+**Eleven annual points contain one cycle.** The frequency resolution of an eleven-year
+record is $1/11$ yr$^{-1}$, so a period near nine years is not distinguishable from
+infinity — that is, from a trend, or from no cycle. Three cycles, the conventional minimum,
+would need about thirty years.
+
+**The null decides the answer, and the obvious null is the wrong one.** Against white noise
+the fit is significant at $p = 0.02$. Against the *pooled* AR(1) coefficient of the panel,
+$\phi = 0.61$, it is not ($p = 0.14$) — but that coefficient is mostly *between*
+communities, several of which sit above the field every year, and because the sinusoid fit
+carries a constant a community's own level is absorbed and cannot affect $R^2$. The null
+that governs the shape is the **within-community** process, $\phi = 0.186$ ($0.305$ after
+correcting the downward Nickell bias of a short dynamic panel). On that null the
+false-alarm probability is $0.024$ to $0.042$: marginal, and alive.
+
+**So the look-elsewhere effect decides it.** One series was examined because it looked
+wavy; the same fit was therefore run on all fifteen.
+
+![**a** — the best sinusoid fitted to every community's deviation from the field, eleven points each, with the recovered period printed against each bar. **b** — Euskadi's position against the eight communities that published a 2026 figure, with the two predictions for 2027.](plots/fig38_cycle_and_reversion.png){#fig-reversion}
+
+**Aragón fits better than Cataluña** ($R^2 = 0.863$ at 10.4 years), and no one has proposed
+that Aragón is cycling. Two of fifteen exceed $R^2 = 0.80$, about what chance delivers at
+$p \approx 0.03$ per series. And the recovered periods run from 2.5 to 40 years with a
+standard deviation of 11: **a common driver would impose a common period and a common
+phase, and these agree on neither.** Euskadi's own series, the longest held here at
+seventeen points, returns a best "period" of 40 years — the fitter's way of reporting a
+drift.
+
+### What the appearance actually is
+
+The within-community coefficient explains it completely. For an AR(1) process the
+year-to-year *changes* anticorrelate at $-(1-\phi)/2$:
+
+$$\text{predicted } \operatorname{corr}(\Delta_t, \Delta_{t-1}) = -0.407,
+\qquad \text{observed } -0.389 \;\; (p = 3\times10^{-6},\; n = 135).$$
+
+A year that moves down tends to be followed by a move up, at exactly the rate mean
+reversion alone predicts. No feedback loop, no external forcing and no cycle is needed. The
+wave is what mean reversion looks like over eleven years.
+
+### The consequence: what 2027 will do by itself {#reversion-2027}
+
+Measured against the eight communities that published a 2026 figure, Euskadi's norm over
+2015–2024 is $+0.06$. In 2025 it sat at $-0.25$; in 2026 at $-2.10$. Its 2026 deviation
+from **its own norm** is therefore $-2.16$, and the panel's innovation standard deviation
+is $0.47$.
+
+| 2027, if the 2026 fall was… | expected deviation | 95 % interval |
+|---|---|---|
+| a transient **shock** | $-0.40$ ($-0.66$ bias-corrected) | $[-1.32,\ +0.52]$ |
+| a permanent **level change** | $-2.16$ | $[-3.08,\ -1.24]$ |
+
+: The two readings of 2026, stated before the sitting. File: `data/analysis/cycle_and_reversion.json`. {#tbl-reversion}
+
+The predictions differ by 1.76 marks against an innovation sd of 0.47 — **a separation of
+3.7 $\sigma$, settled by one sitting.**
+
+**And this is the warning the section exists to deliver.** If the paper is changed for 2027
+and the mean recovers by about a mark and a half, *that is what the panel predicts from
+doing nothing at all*. A recovery of that size is not evidence that the intervention
+worked; only a recovery clearly beyond the reversion band would be. Written here before the
+sitting, which is the only time such a statement is worth anything.
+
+The honest caveat is that the shock branch assumes 2026 was a draw from the same process.
+If the instrument is permanently different, that assumption fails — which is precisely the
+alternative the test discriminates.
 
 ## Design questions for 2027 that the data already inform
 

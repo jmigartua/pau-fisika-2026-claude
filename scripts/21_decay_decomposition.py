@@ -304,8 +304,12 @@ else:
 
 # --- a. location against shape, every transition in the panel
 other = S[S.ccaa != PV]
-ax1.axhline(0, color=MUTED, lw=0.9, zorder=1)
 ax1.axvline(0, color=MUTED, lw=0.9, zorder=1)
+# The vertical is merely "no change in the mean". The HORIZONTAL is the locus itself —
+# y is already the residual from it — and it is what panel b is about, so it is drawn
+# and labelled differently. Before this revision both lines were identical grey and the
+# subject of the panel was unmarked.
+ax1.axhline(0, color=INK2, lw=1.2, ls=(0, (6, 3)), zorder=1)
 ax1.scatter(other.d_mean, other.top_excess, s=14, color=MUTED, alpha=0.55,
             label=T("the other {n} communities, {k} transitions").format(n=other.ccaa.nunique(), k=len(other)), zorder=2)
 ax1.scatter(pv_steps.d_mean, pv_steps.top_excess, s=42, color=C["violet"], zorder=4,
@@ -314,12 +318,26 @@ for y in (2024, 2025):
     r = pv_steps.loc[y]
     ax1.scatter([r.d_mean], [r.top_excess], s=120, facecolor="none",
                 edgecolor=C["red"], lw=1.8, zorder=5)
+# Both callouts now carry a leader, because 2025 sits in the crowded middle and its
+# label previously landed beside a different Basque point.
+_cal = {2024: (26, -4), 2025: (6, 36)}
+for y, off in _cal.items():
+    r = pv_steps.loc[y]
     ax1.annotate(f"{y}", (r.d_mean, r.top_excess), textcoords="offset points",
-                 xytext=(14, -3 if y == 2024 else 11), fontsize=9.5, color=C["red"])
-ax1.set_xlabel(T("Change of location: Δ mean mark"))
+                 xytext=off, fontsize=9.5, color=C["red"], zorder=6,
+                 ha="left" if off[0] > 0 else "right", va="center",
+                 arrowprops=dict(arrowstyle="-", lw=0.8, color=C["red"],
+                                 shrinkA=1, shrinkB=9))
+ax1.set_xlabel(T("Change of level: Δ mean mark"))
 ax1.set_ylabel(T("Change of shape: Δ top band minus what\nthe level alone predicts (pp)"))
 ax1.set_title(T("a. Two different kinds of year"), loc="left")
-ax1.legend(loc="lower left", fontsize=7.6, framealpha=0.92)
+# Room is made below the data so the legend occludes nothing; it previously sat on
+# top of the scatter with a grey point printed through the word "Euskadi".
+_lo, _hi = ax1.get_ylim()
+ax1.set_ylim(_lo - 0.34 * (_hi - _lo), _hi)
+ax1.annotate(T("the locus"), (ax1.get_xlim()[1], 0), textcoords="offset points",
+             xytext=(-4, 5), ha="right", va="bottom", fontsize=8.2, color=INK2)
+ax1.legend(loc="lower left", fontsize=7.6, framealpha=0.0, borderpad=0.2)
 
 # --- b. the same two years as bars: observed against locus
 lbl = [T("top band\n2023→2024"), T("pass rate\n2023→2024"), T("top band\n2024→2025"), T("pass rate\n2024→2025")]

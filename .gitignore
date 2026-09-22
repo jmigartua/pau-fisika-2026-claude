@@ -30,3 +30,9 @@ _site/docs/
 # chapter's sources and rendered output across. They are a copy of tracked files,
 # never a source, and a bare `git add -A` would otherwise commit them.
 _u*.tgz
+
+# The conversation record. This repository is PUBLIC and serves GitHub Pages from
+# docs/; the session transcript and the files derived from it contain the whole
+# working conversation. They are kept on disk and deliberately not committed. If any
+# of them is to be published, it is a decision to take explicitly, not by default.
+transcript/

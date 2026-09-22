@@ -1,0 +1,155 @@
+{
+ "catalunya_best_sinusoid": {
+  "R2": 0.826,
+  "period_years": 8.6,
+  "n_points": 11
+ },
+ "rayleigh_note": "with an 11-year record the frequency resolution is 1/11 yr^-1, so a period near 9 years cannot be distinguished from a trend or from no cycle at all; three cycles would need ~27 years",
+ "ar1_pooled_no_fixed_effects": {
+  "phi": 0.614,
+  "se": 0.063,
+  "n": 150,
+  "note": "mostly between-community level differences"
+ },
+ "ar1_within_community": {
+  "phi": 0.186,
+  "se": 0.079,
+  "n": 150,
+  "innovation_sd": 0.468,
+  "nickell_bias": -0.119,
+  "bias_corrected_phi": 0.305
+ },
+ "false_alarm": {
+  "white noise": {
+   "false_alarm_p": 0.02,
+   "median_period_from_noise": 3.8
+  },
+  "within-community, phi=0.19": {
+   "false_alarm_p": 0.024,
+   "median_period_from_noise": 5.1
+  },
+  "bias-corrected, phi=0.30": {
+   "false_alarm_p": 0.042,
+   "median_period_from_noise": 6.2
+  },
+  "pooled (wrong null), phi=0.61": {
+   "false_alarm_p": 0.137,
+   "median_period_from_noise": 9.5
+  }
+ },
+ "look_elsewhere": {
+  "Andalucía": {
+   "R2": 0.462,
+   "period": 2.9
+  },
+  "Aragón": {
+   "R2": 0.863,
+   "period": 10.4
+  },
+  "Asturias (Principado de)": {
+   "R2": 0.474,
+   "period": 40.0
+  },
+  "Canarias": {
+   "R2": 0.355,
+   "period": 4.9
+  },
+  "Cantabria": {
+   "R2": 0.398,
+   "period": 6.0
+  },
+  "Castilla-La Mancha": {
+   "R2": 0.577,
+   "period": 2.5
+  },
+  "Cataluña": {
+   "R2": 0.826,
+   "period": 8.6
+  },
+  "Comunitat Valenciana": {
+   "R2": 0.583,
+   "period": 6.1
+  },
+  "Extremadura": {
+   "R2": 0.706,
+   "period": 9.2
+  },
+  "Galicia": {
+   "R2": 0.526,
+   "period": 3.2
+  },
+  "Madrid (Comunidad de)": {
+   "R2": 0.561,
+   "period": 3.0
+  },
+  "Murcia (Región de)": {
+   "R2": 0.517,
+   "period": 9.3
+  },
+  "Navarra (Comunidad Foral de)": {
+   "R2": 0.557,
+   "period": 14.8
+  },
+  "País Vasco": {
+   "R2": 0.522,
+   "period": 10.7
+  },
+  "Rioja (La)": {
+   "R2": 0.766,
+   "period": 33.6
+  }
+ },
+ "look_elsewhere_summary": {
+  "n_communities": 15,
+  "median_R2": 0.557,
+  "n_above_0.80": 2,
+  "catalunya_rank": 2,
+  "period_median": 8.6,
+  "period_sd": 11.1,
+  "verdict": "periods do not agree, so no common driver; and the series that prompted the question is not even the best fit"
+ },
+ "pre_registered_2027": {
+  "euskadi_norm_2015_2024": 0.057,
+  "euskadi_position_2025": -0.246,
+  "euskadi_position_2026": -2.102,
+  "deviation_from_own_norm_2026": -2.159,
+  "field_2026_publishers": [
+   "Andalucía",
+   "Asturias (Principado de)",
+   "Canarias",
+   "Castilla-La Mancha",
+   "Cataluña",
+   "Comunitat Valenciana",
+   "Extremadura",
+   "Madrid (Comunidad de)"
+  ],
+  "innovation_sd": 0.468,
+  "shock_phi_0.19": {
+   "expected_2027_deviation": -0.4,
+   "ci95": [
+    -1.32,
+    0.52
+   ],
+   "implied_recovery": 1.76,
+   "half_life_years": 0.41
+  },
+  "shock_phi_0.30_bias_corrected": {
+   "expected_2027_deviation": -0.66,
+   "ci95": [
+    -1.58,
+    0.26
+   ],
+   "implied_recovery": 1.5,
+   "half_life_years": 0.58
+  },
+  "level_change": {
+   "expected_2027_deviation": -2.16,
+   "ci95": [
+    -3.08,
+    -1.24
+   ],
+   "implied_recovery": 0.0
+  },
+  "separation_sigma": 3.75
+ }
+}

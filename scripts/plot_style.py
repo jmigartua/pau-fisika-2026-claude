@@ -321,6 +321,7 @@ PAPER_NAMES = {
     "fig33_field_sensitivity": "fig10_field_sensitivity",
     "fig36_competency_path": "fig11_competency_path",
     "fig37_catalunya_event": "fig12_catalunya_event",
+    "fig38_cycle_and_reversion": "fig13_reversion",
 }
 
 
@@ -358,6 +359,7 @@ ES_FIGURES = {
     "fig34_budget_no_catalunya",
     "fig36_competency_path",
     "fig37_catalunya_event",
+    "fig38_cycle_and_reversion",
 }
 
 
