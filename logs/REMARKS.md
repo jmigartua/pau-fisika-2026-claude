@@ -797,3 +797,84 @@ therefore worded too loosely: it should name this conversion, not the model.
 **Limitation, stated because it bounds the claim.** 2025 and 2026 were coded blind
 by two readers ($\kappa = 0.76$). 2020–2024 were coded once, by one reader, after
 the result was known.
+
+---
+
+### R15 · The inertia the instrument built, and the two courses of notice {#r15}
+
+**Remark.** "Euskadi is the maintained effective reduced syllabus, and the theory
+questions out of a list of 23 … reflecting the inertia in the system, in the física
+en el segundo curso de bachillerato." And then, decisively: "the schools know it
+from 2024, the syllabus was going to be complete in 2026; 2025 I considered the
+transitory; from the coordination we gave them 2 courses, 2024-2025 and 2025-2026;
+they knew that."
+
+**Status:** **written in**, 22 September, across chapter 12, chapter 6, the paper and
+the four coordination documents, plus two Anexo slides in the deck.
+
+#### What the archive puts numbers on
+
+For fifteen years the instrument made two guarantees, and `data/ehu_theory_inventory.csv`
+and `data/ehu_formats.csv` measure both.
+
+| | theory | optionality | obligatory marks |
+|---|---|---:|---:|
+| 2010–2019 | **4 of 10 points**, closed list | 100 % | 0 |
+| 2020–2024 | **4 of 10 points**, closed list | 100 % | 0 |
+| 2025 | none | 75 % | 2.5 |
+| 2026 | none | 50 % | 5.0 |
+
+And the list used was narrower than the list published: **120 theory slots drew on
+22 distinct titles**, mean recurrence 5.5, the commonest set twelve times. (The
+inventory records what was *set*; if the published list held 23, one title went
+fifteen years without being examined.)
+
+**An instrument like that does not permit a narrow preparation, it rewards one.** A
+teacher accountable for results would teach the twenty-two titles, drill the
+recurring templates and let the rest go — the correct response to the incentive, not
+a failure of one. The *de facto* narrowing recorded in chapter 12 is therefore not
+something that happened alongside the exam. **It is what the exam wrote.**
+
+Sharpest instance: fourteen of the fifteen modern-physics problems of 2010–2024 were
+photoelectric, and **fission and fusion existed only as theory titles** — examinable
+as prose, never as a calculation — until 2026 set C-14 dating and Pu-239 decay as
+problems.
+
+#### The fact that changes the shape of the argument
+
+The reopening was **announced in 2024**, and **2024–25 and 2025–26 were designated
+transitional** by the coordination. Two courses. The schools knew.
+
+This is load-bearing and it must be stated wherever the inertia argument appears,
+because the obvious inference is the wrong one. **The gap is not an information
+failure.** What took longer than two courses was not the knowledge but the
+**practice**: an announcement does not manufacture worked-example banks, mock papers,
+a yearly sequence with room for the new material, or an examiner's fluency in setting
+and marking questions never previously set. Those accumulate, and the stock that
+existed had been accumulated against an instrument that ceased to exist.
+
+*Informed in time, and still not practised* is the honest form, and it is the only
+form that survives contact with the record. It also protects the transition that was
+actually designed: the finding is not that warning was withheld, it is that **warning
+is necessary and not sufficient when what changes is what teaching must produce
+rather than what it must cover**.
+
+#### Why it explains Cataluña without contradiction
+
+Cataluña set all-problems papers with real settings and justification demands from at
+least 2020, optionality near a half, no closed list. There was no equilibrium to
+undo. Two systems entered the same reform carrying different stocks of practice, and
+what differed was not notice but practice. In 2026 Euskadi arrived at roughly the
+optionality Cataluña has had for fifteen years — reached in two.
+
+#### Why it is now the best-formed candidate
+
+It is still unidentified: preparation inertia displaces the whole distribution just as
+paper difficulty, marking severity and reading load do. But **alone among the
+candidates it predicts a topic pattern** — the loss should concentrate in the
+sub-tasks examining what had never been set as a problem (modern physics beyond the
+photoelectric effect, standing waves, mirrors, decibels) and spare the rest. Marking
+severity acts on numerically exposed sub-tasks irrespective of topic; reading load
+acts in proportion to statement length. Sub-task marks would therefore **discriminate**
+among the hypotheses rather than merely quantify one, which is a stronger use of the
+same datum than §5.4 previously claimed.
