@@ -320,6 +320,7 @@ PAPER_NAMES = {
     "fig29_statement_budget": "fig09_statements",
     "fig33_field_sensitivity": "fig10_field_sensitivity",
     "fig36_competency_path": "fig11_competency_path",
+    "fig37_catalunya_event": "fig12_catalunya_event",
 }
 
 
@@ -356,6 +357,7 @@ ES_FIGURES = {
     "fig33_field_sensitivity",
     "fig34_budget_no_catalunya",
     "fig36_competency_path",
+    "fig37_catalunya_event",
 }
 
 

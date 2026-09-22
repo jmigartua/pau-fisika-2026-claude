@@ -1,0 +1,363 @@
+Proves d’accés a la universitat                                                        2019
+
+Física
+Sèrie 1
+
+L’examen consta d’una part comuna (problemes P1 i P2), que heu de fer obligatòriament, i
+d’una part optativa, de la qual heu d’escollir UNA de les dues opcions (A o B) i fer els proble-
+mes P3, P4 i P5 corresponents.
+     Cada problema val 2 punts.
+
+
+PART COMUNA
+
+P1) El sincrotró Alba és una instaŀlació
+    de recerca que utilitza llum gene-
+    rada per electrons accelerats per a
+    analitzar les propietats i l’estruc-
+    tura de la matèria. Les principals
+    qualitats d’aquesta radiació són un
+    ampli espectre, una intensitat ele-
+    vada i una brillantor extraordinà-
+    ria. Per a accelerar els electrons
+    s’utilitzen camps elèctrics i magnè-
+    tics. L’esquema mostra un model
+    molt simplificat de funcionament: al començament del procés es generen electrons
+    que s’acceleren en un accelerador lineal mitjançant un camp elèctric que suposarem
+    uniforme al llarg de la zona d’acceleració, la qual té una longitud d = 1,00 m.
+       L’energia cinètica inicial dels electrons és zero, però quan surten de l’accelerador és
+    d’1,00 keV.
+    a) Calculeu la intensitat del camp elèctric dins de l’accelerador i dibuixeu com són
+        les línies de camp en aquesta regió.
+         [1 punt]
+     b) Un cop els electrons han estat accelerats, se’ls condueix a l’anell de propulsió. Per
+        a guiar els electrons al llarg de l’anell s’utilitzen camps magnètics. En l’esquema
+        es mostra el primer camp magnètic que troben els electrons quan surten de l’ac-
+        celerador lineal i entren a l’anell de propulsió. Si en aquesta regió no hi ha camp
+        elèctric i el camp magnètic és de 0,15 T, calculeu la magnitud de la força que actu-
+        arà sobre l’electró. Quin tipus de trajectòria descriurà l’electró en aquesta regió?
+        Justifiqueu la resposta.
+         [1 punt]
+
+     Dades:         me = 9,11 × 10–31 kg.
+                    |e| = 1,602 × 10–19 C.
+                    1 eV = 1,602 × 10–19 J.
+      P2) El 29 de novembre de 2018, el nanosatèŀlit
+          CubeCat-1, desenvolupat per estudiants i investi-
+          gadors de la Universitat Politècnica de Catalunya
+          (UPC), es va llançar a l’espai des de la base espa-
+          cial de Sriharikota, a la costa est de l’Índia, dins
+          d’un coet de l’agència espacial índia ISRO.
+             El CubeCat-1 té una massa d’1,30 kg i orbita a
+          530 km de la superfície de la Terra.
+          a) Calculeu el període orbital del CubeCat-1 i           Font: https://www.upc.edu.
+              indiqueu el nombre de voltes completes que
+              fa cada dia al voltant de la Terra.
+               [1 punt]
+           b) Quin és el pes del nanosatèŀlit en la seva òrbita?
+               [1 punt]
+
+           Dades: G = 6,67 × 10–11 N m2 kg–2.
+                          MTerra = 5,98 × 1024 kg.
+                          RTerra = 6,37 × 106 m.
+
+      OPCIÓ A
+
+      P3) Un astronauta que és a l’espai vol mesurar la seva massa. Per fer-ho, s’asseu i es lliga
+          a una cadira de 2,00 kg de massa que està unida a una molla de constant elàstica
+          k = 320 N m–1. L’astronauta s’impulsa i triga 62,8 s a fer 20 osciŀlacions completes.
+          a) Quina és la massa de l’astronauta?
+               [1 punt]
+           b) Posteriorment aquest astronauta arriba a la Lluna, on fa osciŀlar un pèndol simple
+              d’1,00 kg de massa i 1,50 m de longitud. Aquest pèndol triga 2 min i 1 s a fer 20
+              osciŀlacions completes. Quina és la intensitat del camp gravitatori a la superfície de
+              la Lluna? Quina és la massa de la Lluna?
+               [1 punt]
+
+           Dades: G = 6,67 × 10–11 N m2 kg–2.
+                          RLluna = 1,737 × 106 m.
+                          El període d’osciŀlació d’un pèndol de longitud L és
+
+      P4) Hem situat una partícula puntual amb una càrrega q = 10 μC i
+          dues partícules puntuals amb una càrrega –q als vèrtexs d’un
+          quadrat de costat a = 1,50 cm tal com s’indica en la figura.
+          a) Quin és el valor de la càrrega puntual q0 situada al quart
+             vèrtex si la força elèctrica sobre la càrrega q és nuŀla?
+               [1 punt]
+           b) Quin treball haurem de fer per a portar una càrrega
+              puntual de 0,50 μC des d’una distància molt gran fins al
+              centre del quadrat?
+               [1 punt]
+
+           Dada:                                        .
+
+           Nota: Suposeu que les velocitats inicial i final de la càrrega que portem fins al centre
+                          del quadrat són nuŀles.
+-2-
+P5) El Reactor Experimental Termonuclear Internacional (International Thermonuclear
+    Experimental Reactor, ITER) és el primer projecte que estudia la possibilitat de produir
+    energia per fusió nuclear. De totes les reaccions de fusió possibles, la reacció entre el
+    deuteri i el triti (dos isòtops de l’hidrogen) és la més factible amb la tecnologia actual.
+    Aquesta fusió dona 42He i un neutró.
+    a) A partir de les dades, digueu quants protons i quants neutrons tenen el deuteri, el
+       triti i el 42He. Escriviu l’equació nuclear que correspon a aquest procés de fusió.
+         [1 punt]
+     b) Calculeu l’energia que s’allibera en la reacció de fusió anterior.
+         [1 punt]
+
+     Dades: 1 eV = 1,602 × 10–19 J.
+            c = 3,00 × 108 m s–1.
+            Masses (en kg):
+                      1
+                      0
+                          n (neutró)       4
+                                           2
+                                            He (heli)         2
+                                                              1
+                                                                  H (deuteri)      3
+                                                                                   1
+                                                                                       H (triti)
+                    1,674 927 × 10–27   6,644 657 × 10–27   3,343 584 × 10–27   5,007 357 × 10–27
+
+
+
+OPCIÓ B
+
+P3) Una espira rectangular i conductora es troba a prop d’un fil conductor rectilini infinit
+    pel qual circula una intensitat de corrent I cap avall, tal com es mostra en la figura a.
+
+
+
+
+     a) Representeu el sentit i la direcció del camp magnètic creat pel fil conductor en la
+        regió plana delimitada per l’espira. Aquest camp magnètic és uniforme en la regió
+        delimitada per l’espira? Justifiqueu la resposta.
+         [1 punt]
+     b) El fil conductor i l’espira no es mouen, però la intensitat del corrent que circula pel
+        conductor varia amb el temps, tal com indica la gràfica (figura b). Argumenteu si
+        s’indueix o no corrent en l’espira en els intervals de temps següents: de 0 a 20 s, de
+        20 a 80 s i de 80 a 120 s. En quin d’aquests tres intervals de temps la intensitat del
+        corrent induït és més gran? Justifiqueu la resposta.
+         [1 punt]
+
+
+
+
+                                                                                                    -3-
+P4) La longitud de la corda d’un violoncel és de 70 cm i la velocitat de propagació de les ones
+    en aquesta corda és de 308 m s–1. Per al tercer harmònic:
+    a) Representeu esquemàticament l’ona estacionària d’aquest harmònic i indiqueu-hi
+        tots els nodes i tots els ventres. Calculeu la longitud d’ona. Quina és la distància entre
+        dos nodes consecutius?
+         [1 punt]
+     b) Suposant que la corda està en posició horitzontal, calculeu, per a un ventre, el temps
+        que triga la posició vertical a passar del seu valor màxim al valor mínim (del punt més
+        alt al punt més baix).
+         [1 punt]
+
+
+
+
+P5) Quan s’iŀlumina una superfície metàŀlica amb una radiació ultraviolada λ = 300 nm, el
+    metall emet electrons amb una energia cinètica tan gran que, per a frenar-los (anuŀlar
+    el corrent), cal aplicar-hi un potencial de frenada d’1,04 V.
+    a) Calculeu l’energia dels fotons incidents i el treball d’extracció (o funció de treball)
+        d’aquest metall.
+         [1 punt]
+     b) A partir del balanç d’energia de l’efecte fotoelèctric, trobeu l’expressió de la velocitat
+        màxima dels fotoelectrons emesos en funció de la massa dels electrons (m), la cons-
+        tant de Planck, la velocitat de la llum, la longitud d’ona de la llum incident i el treball
+        d’extracció (We).
+         [1 punt]
+
+     Dades:         1 eV = 1,602 × 10–19 J.
+                    c = 3,00 × 108 m s–1.
+                    h = 6,63 × 10–34 J s.
+
+
+
+
+           L’Institut d’Estudis Catalans ha tingut cura de la correcció lingüística i de l’edició d’aquesta prova d’accés
+Proves d’accés a la universitat                                                         2019
+
+Física
+Sèrie 4
+
+L’examen consta d’una part comuna (problemes P1 i P2), que heu de fer obligatòriament, i
+d’una part optativa, de la qual heu d’escollir UNA de les dues opcions (A o B) i fer els proble-
+mes P3, P4 i P5 corresponents.
+     Cada problema val 2 punts.
+
+
+PART COMUNA
+P1) L’any 2004 es va aconseguir mesurar la massa d’un virus. Es va determinar la freqüèn-
+    cia d’osciŀlació d’un braç horitzontal petitíssim, primer sense el virus i després amb
+    el virus adherit. Sense el virus, la freqüència d’osciŀlació era de 2,00 × 1015 Hz, i amb el
+    virus, aquesta freqüència va ser de 2,87 × 1014 Hz.
+    a) Si suposem que el braç horitzontal sense el virus adherit es comporta com una
+        molla amb una massa osciŀlant de 2,10 × 10–16 g lligada a un extrem, quina és la
+        constant elàstica d’aquesta suposada molla?
+         [1 punt]
+     b) Partint de la mateixa suposició anterior sobre el comportament osciŀlatori del sis-
+        tema, calculeu la massa del virus.
+         [1 punt]
+
+P2) Determinar la massa i les posicions dels cossos
+    celestes va ser, sens dubte, un gran repte per als pri-
+    mers astrònoms. Gràcies a les valuoses dades sobre
+    les posicions dels astres que Tycho Brahe va recollir
+    al llarg de la seva vida, Johannes Kepler va poder
+    formular les seves famoses tres lleis.
+    a) Deduïu la tercera llei de Kepler a partir de la
+        segona llei de Newton i de la llei de la gravitació
+        universal, suposant que els planetes descriuen
+                                                               Kepler (esquerra) i Brahe (dreta)
+        moviments circulars uniformes al voltant del Sol.
+         [1 punt]
+     b) Determineu la massa del Sol emprant les dades que necessiteu de la taula següent:
+           Planeta   Radi de l’òrbita (m) Període (anys)
+          Mercuri        57,90 × 109          0,2408
+                                    9
+          Venus          108,2 × 10           0,6152
+                                    9
+          Terra          149,6 × 10           1,000
+                                    9
+          Mart           228,0 × 10           1,881
+         [1 punt]
+
+     Dada: G = 6,67 × 10–11 N m2 kg–2.
+      OPCIÓ A
+
+
+      P3) a) Escriviu l’equació del balanç energètic en l’efecte fotoelèctric. Digueu el significat de
+             cada un dels termes i deduïu l’expressió de la longitud d’ona llindar a partir, única-
+             ment, de la funció de treball (treball d’extracció) del metall i de constants universals.
+               [1 punt]
+           b) Iŀluminem una placa de sodi (funció de treball, 2,36 eV) amb radiació de freqüència
+              de 660 THz. Calculeu l’energia cinètica màxima dels fotoelectrons que s’emetran i el
+              potencial de frenada necessari per a aturar-los.
+               [1 punt]
+
+           Dades:         Constant de Planck, h = 6,63 × 10–34 J s.
+                          Velocitat de la llum, c = 3,00 × 108 m s–1.
+                          1 eV = 1,60 × 10–19 J.
+                          Càrrega de l’electró, qe = –1,60 × 10–19 C.
+
+
+
+      P4) Després de diversos mesuraments es va determinar que hi ha un camp elèctric que
+          envolta la Terra. La magnitud d’aquest camp a la superfície terrestre és d’uns 150 N m–1
+          i està dirigit cap al centre de la Terra.
+          a) Quin és el valor de la càrrega elèctrica de la Terra? (Considereu tota la càrrega con-
+              centrada en un punt al centre del planeta.)
+               [1 punt]
+           b) Quants electrons de més ha de tenir una gota d’aigua de 18 µm de radi perquè esti-
+              gui estacionària, és a dir, perquè no caigui, quan es troba a una altura propera a la
+              superfície terrestre? (Considereu que la gota té forma esfèrica.)
+               [1 punt]
+
+           Dades:         Radi de la Terra, RT = 6,37 × 106 m.
+                          Càrrega de l’electró, qe = –1,60 × 10–19 C.
+                          Densitat de l’aigua, ρaigua = 1,00 × 103 kg m–3.
+                          g = 9,81 m s–2.
+                                                            .
+
+
+
+
+-2-
+P5) a) Un altaveu està format per un imant permanent en
+       forma de disc i per una bobina per la qual circula un
+       corrent elèctric. La bobina està unida a una mem-
+       brana que participa dels moviments de la bobina.
+       — Com es mourà el conjunt bobina-membrana si
+          fem circular un corrent continu per la bobina
+          que, vist des de dalt, giri en sentit horari?
+            [0,5 punts]
+        — Com es mourà el conjunt bobina-membrana si fem circular un corrent altern per
+          la bobina?
+            [0,5 punts]
+        Justifiqueu les respostes explicitant en cada cas la direcció i el sentit del camp mag-
+        nètic produït per la bobina.
+     b) Necessitem més força sobre la bobina i per a aconseguir-ho cal que generi un camp
+        magnètic més intens. Justifiqueu quin efecte tindria cada una de les modificacions
+        següents sobre la intensitat del camp magnètic produït per la bobina:
+        — Un augment del nombre de voltes de la bobina.
+            [0,5 punts]
+        — Un augment de la intensitat del corrent elèctric.
+            [0,5 punts]
+
+        Nota:      S’entén que en cada cas es manté constant el paràmetre que canvia en l’altra
+                   opció.
+
+
+
+OPCIÓ B
+
+
+
+P3) El novembre del 2017, diversos observatoris de tot Europa van enregistrar un aug-
+    ment de les concentracions de l’isòtop ruteni 106 (106Ru). Es desconeix la naturalesa
+    exacta de l’accident que va provocar aquesta emissió radioactiva. Es calcula que, en el
+    moment de l’emissió, l’activitat de la fuita era de 200 TBq aproximadament. El període
+    de semidesintegració d’aquest isòtop és de 374 dies i es transforma en rodi 106 (106Rh).
+    a) Escriviu l’equació nuclear de la desintegració del ruteni 106, incloent-hi tots els
+       subíndexs i superíndexs, així com els noms de totes les partícules que intervenen en
+       l’equació. Com s’anomena aquesta desintegració?
+        [1 punt]
+     b) Calculeu l’activitat del ruteni 106 al cap de set mesos (210 dies) de ser alliberat a
+        causa de l’accident.
+        [1 punt]
+
+     Dades: Nombre atòmic del ruteni, Z(Ru) = 44.
+            Nombre atòmic del rodi, Z(Rh) = 45.
+
+
+
+
+                                                                                                  -3-
+P4) a) Un camp elèctric de més de 3,00 × 106 V m–1 provoca la
+       ruptura dielèctrica de l’aire (els electrons són arrencats dels
+       àtoms i en recombinar-se emeten llum). La descàrrega a
+       través de l’aire causada per la ruptura dielèctrica s’anomena
+       descàrrega en arc. Un exemple familiar de descàrrega en arc
+       és la descàrrega elèctrica que rebem quan toquem el pom
+       metàŀlic d’una porta després d’haver caminat per una catifa
+       en un dia sec. Calculeu, en aquest cas, la mínima diferència
+       de potencial entre la mà i el pom de la porta si en el moment de la descàrrega elèctrica
+       estan separats per 1,00 mm.
+         [1 punt]
+     b) Calculeu el treball que s’ha de fer perquè tres electrons que inicialment estaven molt
+        separats quedin a 0,1 nm l’un de l’altre i configurin un triangle equilàter.
+         [1 punt]
+
+     Dades:         Càrrega de l’electró, qe = –1,60 × 10–9 C.
+
+                                                                 .
+
+
+P5) a) Un mètode per a determinar les masses d’ions pesants consisteix a mesurar el temps
+       que necessiten per a fer un nombre determinat de voltes en un camp magnètic cone-
+       gut. En un d’aquests mesuraments, un ió amb una càrrega igual a la d’un electró fa
+       7,00 voltes en 1,29 ms en un camp magnètic perpendicular a la velocitat i amb un
+       mòdul de 45,0 mT. Feu una representació de la trajectòria de l’ió i dibuixeu en dues
+       posicions d’aquesta trajectòria el vector força que actua sobre l’ió. Calculeu la massa
+       de l’ió.
+         [1 punt]
+     b) Un protó que es mou a una velocitat de 5,00 × 105 m s–1 entra
+        en una regió de l’espai on hi ha un camp magnètic. El mòdul
+        de la força que produeix el camp magnètic sobre la càrre-
+        ga és 8,00 × 10–14 N. Calculeu el mòdul del camp magnètic.
+        Especifiqueu clarament la direcció i el sentit d’aquest camp
+        magnètic si les direccions i els sentits, tant de la força com de
+        la velocitat, són els representats en la figura.
+         [1 punt]
+
+     Dades:         Càrrega de l’electró, qe = –1,60 × 10–19 C.
+                    Càrrega del protó, qp = 1,60 × 10–19 C.
+
+
+
+
+           L’Institut d’Estudis Catalans ha tingut cura de la correcció lingüística i de l’edició d’aquesta prova d’accés
+

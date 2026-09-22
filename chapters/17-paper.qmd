@@ -559,7 +559,31 @@ This has two consequences, and they pull in opposite directions.
 It is the strongest evidence available against the proposition that competency-style
 examining depresses marks. A neighbouring system has examined that way for at least
 five years without a collapse, and halving its competency content did not move its
-position relative to the field. The weight therefore falls not on the paradigm but
+position relative to the field. With fifteen further papers of that system added
+(2005–2019) the claim can be dated and, within limits, priced. One mechanical rule —
+the share of items requiring the candidate to justify, reason, explain, evaluate or
+say why — places its traditional decade at 17.7 per cent (sd 10.9) and 2020–2023 at
+50.0 per cent: a step at 2020, five years before the decree and five before the
+structural change that made its 2025 paper appear converted. Its *lowest* traditional
+year is 6.2 per cent, so it never set a paper that asked nobody to justify anything,
+whereas the region under study drew 40 per cent of its marks from a closed list of
+recall titles and carried no competency-coded marks as late as 2024. The one
+intensified a practice it had; the other introduced one it did not.
+
+![**(a)** The comparator's papers on one mechanical measure, 2010–2025. **(b)** Its mean minus the fifteen-community field; the 2020 and 2021 sittings are excluded because every community's mean rose in them and they are also the first two years of the new style, so they confound treatment with control.](../plots/paper/fig12_catalunya_event.png){#fig-cat-event}
+
+Differencing against the fifteen communities with a complete 2015–2025 series, the
+comparator's position moves from $+0.42$ (2015–2019) to $-0.43$ (2022–2025), a shift
+of $-0.85$ (Welch $p = 0.087$; exact permutation over all 126 splits $p = 0.119$;
+$-0.60$, $p = 0.19$ omitting the pre-period's single outlier). **The minimum
+detectable shift of this design at 80 per cent power is 1.26 marks**, so the estimate
+lies below the resolution of the instrument that produced it and is reported as a
+bound rather than a coefficient. Two facts weaken it further: 59 per cent of the gap
+change is the field rising ($+0.50$) rather than the comparator falling ($-0.34$);
+and the comparator's position against the field has a year-to-year standard deviation
+of 0.71 and moved $+1.28$ in 2017 with no change to its paper. The region-specific
+component under study in 2026 is $-1.65$ in a single year, larger than the whole
+post-conversion displacement of a system that made a comparable change of style. The weight therefore falls not on the paradigm but
 on the *transition*: a conversion from 0 to 25 to 62.5 per cent of the marks in two
 sittings, accompanied by halved optionality, a reopened syllabus and the second year
 of a new marking regime, in a system with no prior experience of the style.
@@ -966,8 +990,13 @@ The field is a mixture of systems at different stages of conversion (§4.7). It
 therefore measures the national movement well and cannot stand as a counterfactual
 for an unconverted system resembling the one under study; no such system is present.
 
-The Catalan series of §4.7 was coded once, by one reader, after the result was
-known. The 2025 and 2026 papers of all nine communities were coded blind by two
+The comparator's 2020–2024 series of §4.7 was coded once, by one reader, after the
+result was known. The mechanical demand measure applied to its 2010–2025 papers is
+reproducible but crude: a verb list cannot see a demand phrased without one of its
+verbs, nor distinguish a token justification from a substantial one. The same rule
+applied to the region under study returns item counts inconsistent with the known
+structure of its papers, so no series for it is reported and the two systems are not
+compared as numbers on this measure. The 2025 and 2026 papers of all nine communities were coded blind by two
 readers, with $\kappa = 0.76$. The two are not evidence of the same quality, and
 the Catalan series is used only for the direction of travel it establishes.
 

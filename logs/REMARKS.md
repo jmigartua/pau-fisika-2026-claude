@@ -1191,3 +1191,77 @@ Four distinct failures, not one.
 putting it into the dossier. The site has four surfaces that a reader may meet first — front
 matter, briefing, synthesis, paper — and a round is not finished until it has reached each of
 them or been consciously excluded from it. That check now belongs at the end of every round.
+
+---
+
+### R20 · The Cataluña 2010–2019 papers, and what a conversion costs {#r20}
+
+**Remark (22 September).** *"could we try this: the Cataluña 2010–2019 papers / I would
+like to see if there was a impact from the model change in the mean mark, which in turn
+should be an indication of the scale of the impact, and perhaps it could be translated,
+with caution of course, to our case."*
+
+**Status.** Done. The transition is dated; the cost is bounded and explicitly not
+measured. Two translatable statements survive, neither of them a coefficient.
+
+**Getting the papers.** The blocked site was not needed. `examens.cat` carries the
+Catalan Física papers from 2000; the fifteen June papers 2005–2019 downloaded and parsed
+first time and are in `sources/exams_cat_hist/` with sha256 in the registry.
+
+**Dating the change.** `scripts/35_demand_history.py` applies one mechanical rule to
+every Catalan paper from 2010 — the share of items requiring the candidate to justify,
+reason, explain, evaluate, interpret or say why. Traditional decade **17.7 %** (sd 10.9,
+range 6.2–33.3); 2020–2023 **50.0 %**. The step is at **2020**, five years before the
+decree and five before the structural change that made the 2025 paper look converted.
+
+**The floor matters more than the step.** Cataluña's lowest traditional year is **6.2 %**
+— it never set a paper that asked nobody to justify anything. The Basque instrument of
+the same decade drew 40 % of its marks from a closed list of 22 recall titles and carried
+zero competency-coded marks as late as 2024. Cataluña *intensified* a practice it had;
+Euskadi *introduced* one it did not. Stated qualitatively because the two measures differ.
+
+**Pricing it.** `scripts/36_catalunya_event.py`, differencing against the fifteen
+communities with a complete 2015–2025 Ministry series, COVID sittings dropped because
+every community rose in them and they are also the first two years of the new Catalan
+style:
+
+| | Cataluña $-$ field |
+|---|---|
+| 2015–2019 | $+0.42$ |
+| 2022–2025 | $-0.43$ |
+| shift | $-0.85$ |
+
+Welch $p = 0.087$; exact permutation over all 126 splits $p = 0.119$; $-0.60$ ($p=0.19$)
+dropping 2018; $-1.27$ on medians. **MDE at 80 % power: 1.26 marks** — the estimate is
+below the resolution of the design. 59 % of the gap change is the field rising ($+0.50$)
+rather than Cataluña falling ($-0.34$). The year-to-year sd of the gap is 0.71 and it
+moved $+1.28$ in 2017 with nothing happening to the paper.
+
+**What it licenses.** Not a coefficient; no sentence in the dossier quotes the $-0.85$ as
+one. Two statements: (1) a system that tripled its examined-reasoning share at one step
+produced nothing a well-specified event study could see over six years, while Euskadi's
+second year alone is $-1.65$ — larger than the whole Catalan displacement and larger than
+the threshold that design needed; (2) **Cataluña changed once and then left the paper
+alone for five years**, while Euskadi moved four axes in two sittings. The Catalan archive
+cannot say what a conversion costs. It says what a conversion looks like when it is not
+also four other things at once.
+
+**One measure built and discarded, recorded because it nearly produced a false finding.**
+The same rule was applied to the Basque archive so both systems would sit on one measure.
+The splitter returns 7–12 items for years known to offer eight (`data/ehu_formats.csv`);
+some years yield only theory titles; one 2024 problem was counted twice because a degree
+symbol renders two ways. And before nouns were excluded from the verb list — *"los
+**valore**s de la frecuencia"*, *"**Explic**ación cuántica"* in a recall title — the
+measure put the 2024 Basque paper at **37.5 %** against 12.5 % the year before. Believed,
+that would have manufactured an instrument change in the one year the dossier says the
+instrument did not move, and handed the 2024 shape change a mechanism that does not
+exist. The Basque series was dropped; the script's docstring records all three
+corrections. This is the R18 lesson arriving a second time from a different direction:
+the check that caught it was reading the matched strings, not recomputing the number.
+
+**Implementation.** `fig37_catalunya_event` (paper `fig12_catalunya_event`), with the
+power statement printed on the panel so the $-0.85$ cannot be read without it. Chapter 11:
+`#catalunya-event`, four subsections including the discarded measure. Chapter 6: H1b
+extended. Chapter 17: §4.7 extended, `@fig-cat-event`, Limitations rewritten on the
+measure's crudeness. `index.qmd`: finding **20**. Synthesis EN+ES and briefing lever 7.
+`scripts/05_registry.py`: the fifteen papers registered.

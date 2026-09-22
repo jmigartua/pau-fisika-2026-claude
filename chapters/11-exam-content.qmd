@@ -168,6 +168,111 @@ The coding of 2020–2024 was done once, by one reader, after the 2026 result wa
 known; 2025 and 2026 were coded blind by two ($\kappa = 0.76$). The series is
 evidence of a direction of travel, not a measurement of equal standing.
 
+### How far back the steady state goes, and what it cost {#catalunya-event}
+
+The previous section could say that Cataluña's 2025 paper was not a conversion. It
+could not say when the conversion had been, because the archive stopped at 2020. The
+June papers from 2005 are on an open archive, and fifteen of them have been added
+([the registry](08-sources.qmd)). With them the question becomes answerable, and it
+splits in two: *when did the Catalan paper change*, and *what did the change cost*.
+
+#### The change is datable, and it is a step at 2020
+
+One mechanical rule was applied to every Catalan paper from 2010: what share of its
+items require the candidate to justify, reason, explain, evaluate, interpret or say
+why, as against compute, state or describe. The rule is a verb list, it does not know
+which year it is reading, and it is reproducible
+(`scripts/35_demand_history.py`).
+
+| | mean | sd | range |
+|---|---|---|---|
+| 2010–2019 | **17.7 %** | 10.9 | 6.2 – 33.3 |
+| 2020–2023 | **50.0 %** | — | 37.5 – 62.5 |
+
+: The Catalan paper on one mechanical measure. 2024 falls back to 14.3 % on a paper whose structure changed to four-of-seven; 2025 returns to 66.7 %. {#tbl-cat-demand}
+
+The level roughly triples and the step is at 2020 — five years before the decree and
+five years before the structural change that made the 2025 paper look converted. The
+series is noisy year to year, and no weight is put on any single year.
+
+**The number that matters most here is the floor, not the step.** Cataluña's lowest
+year across the whole traditional decade is **6.2 %**, and the mean is 17.7 %. It
+never set a paper that asked nobody to justify anything. Set against the Basque
+instrument of the same decade — forty per cent of the marks from a closed list of
+twenty-two recall titles, and competency-carried marks at zero as late as 2024
+([Sixteen years of one paper](12-ehu-paper-history.qmd#inertia)) — the contrast is
+not one of degree. Cataluña intensified a practice it already had. Euskadi introduced
+one it did not have. The two measures are different and are not compared as numbers;
+the statement is qualitative and is meant as such.
+
+#### The cost is bounded, not measured
+
+![**a** — the Catalan paper on one mechanical measure, 2010–2025; grey before the 2020 step, violet after. **b** — Cataluña's mean minus the fifteen-community field, with the COVID sittings excluded because they confound the treatment with the control. The power statement is printed on the panel so the $-0.85$ cannot be read without it.](../plots/fig37_catalunya_event.png){#fig-cat-event}
+
+Differencing against the fifteen communities with a complete 2015–2025 Ministry
+series, and dropping 2020 and 2021 — every community's mean rose in those sittings,
+and they are also the first two years of the new Catalan style, so they confound what
+is being measured with what is controlling for it:
+
+| | Cataluña $-$ field |
+|---|---|
+| 2015–2019 | $+0.42$ |
+| 2022–2025 | $-0.43$ |
+| **shift** | $\mathbf{-0.85}$ |
+
+: The Catalan position against the field, before and after the 2020 step. File: `data/analysis/catalunya_event.json`. {#tbl-cat-event}
+
+Welch $p = 0.087$; an exact permutation test over all 126 splits of the nine
+non-COVID years gives $p = 0.119$; dropping 2018, the pre-period's outlier, gives
+$-0.60$ ($p = 0.19$); on medians it gives $-1.27$. **And the smallest shift this
+design can detect at 80 % power is 1.26 marks.** The estimate is smaller than the
+resolution of the instrument that produced it. It is a bound and not a coefficient,
+and it is reported that way here because the temptation to quote it as one is
+obvious.
+
+Two further facts weaken it. **Most of the shift is the field rising, not Cataluña
+falling**: Cataluña's own mean fell 0.34 while the field rose 0.50, so 59 % of the
+gap change belongs to the other communities. And Cataluña's position against the
+field is restless in the absence of any change at all — the year-to-year standard
+deviation is 0.71, and in 2017 it moved $+1.28$ in a single year with nothing
+happening to its paper, which is half again the size of the entire post-conversion
+shift.
+
+#### What this licenses, and what it does not
+
+It does not license a coefficient. "Cataluña shows that conversion costs 0.85 marks"
+would be quoting a figure the design cannot resolve, drawn mostly from other
+communities improving. No such sentence appears in this dossier.
+
+It licenses two statements. First, a system that tripled its examined-reasoning share
+at a single step produced nothing a well-specified event study could detect across
+the six years that followed, while Euskadi's second-year fall alone is $-1.65$
+against the same kind of field — larger than the whole Catalan post-conversion
+displacement, and larger than the threshold that design would have needed to see one.
+The destination is not what hurt. That was already this dossier's reading; it is the
+first evidence for it from outside the 2026 cross-section.
+
+Second, and this is the one that carries: **Cataluña changed once, from a floor of
+6.2 %, and then left the paper alone for five years** while its contextualisation
+drifted upward on its own. Euskadi went 0 to 25 to 62.5 per cent in two sittings and,
+in the same two sittings, halved optionality, reopened the syllabus and changed the
+marking regime. The Catalan archive cannot tell us what a conversion costs. It tells
+us what a conversion looks like when it is not also four other things at once.
+
+#### One measure that was built and discarded
+
+The same mechanical rule was applied to the Basque archive, so that both systems
+would sit on one measure. It does not work, and the failure is recorded rather than
+hidden. The splitter returns 7 to 12 items for Basque years known to offer eight
+(`data/ehu_formats.csv`); some years yield only the theory titles; and one 2024
+problem was counted twice because a degree symbol renders two ways in the text layer.
+An early version of the measure, before nouns were excluded from the verb list, put
+the 2024 Basque paper at 37.5 % against 12.5 % the year before — which, had it been
+believed, would have manufactured an instrument change in the one year this dossier
+says the instrument did not move, and handed [the 2024 shape
+change](06-interpretation.qmd#a-basque-signal-that-arrives-a-year-early) a mechanism
+that does not exist. The Basque series was dropped; the script records why.
+
 ### The field retreated in the second year
 
 Across the other eight communities the competency-coded share of marks **fell** from

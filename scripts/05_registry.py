@@ -166,6 +166,18 @@ for f in sorted(HIST.iterdir()):
         desc = f"EHU Física {sit} {yr}, {kind}{lang}"
     rows.append(dict(file=f"exams_ehu_hist/{f.name}", bytes=f.stat().st_size, sha256=h, description=desc, url=url,
                      retrieval="curl (search agent), ehu.eus archive pages"))
+CATH = ROOT / "sources" / "exams_cat_hist"
+if CATH.exists():
+    for f in sorted(CATH.iterdir()):
+        if f.suffix != ".pdf":
+            continue
+        h = hashlib.sha256(f.read_bytes()).hexdigest()
+        yr = f.stem.split("_")[2]
+        rows.append(dict(file=f"exams_cat_hist/{f.name}", bytes=f.stat().st_size,
+                         sha256=h,
+                         description=f"Cataluña Física PAU {yr}, ordinary (juny) paper",
+                         url=f"https://examens.cat/wp-content/uploads/2021/03/pau_Fisica_{yr}_Juny_Enunciat.pdf",
+                         retrieval="curl, 22 September 2026"))
 PISA = ROOT / "sources" / "pisa"
 for f in sorted(PISA.iterdir()):
     if f.suffix not in (".xls", ".xlsx"):

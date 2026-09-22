@@ -1,0 +1,32 @@
+{
+ "field_n": 15,
+ "gap_pre_2015_2019": 0.42,
+ "gap_post_2022_2025": -0.425,
+ "shift": -0.845,
+ "welch_t": -2.003,
+ "welch_p": 0.087,
+ "permutation_p": 0.119,
+ "permutation_n": 126,
+ "pooled_sd": 0.646,
+ "mde_80pct_power": 1.26,
+ "yoy_sd_of_gap": 0.713,
+ "largest_yoy_swing_no_model_change": 1.28,
+ "decomposition": {
+  "catalunya_own_mean_change": -0.343,
+  "field_change": 0.502,
+  "share_of_gap_shift_that_is_the_field_rising": 0.594
+ },
+ "robustness": {
+  "drop 2018": {
+   "shift": -0.604,
+   "p": 0.189
+  },
+  "drop 2016 and 2018": {
+   "shift": -0.877,
+   "p": 0.056
+  },
+  "medians": {
+   "shift": -1.272
+  }
+ }
+}
