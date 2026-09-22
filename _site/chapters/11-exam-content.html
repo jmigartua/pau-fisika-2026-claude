@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,16 +11,10 @@
 
 <title>The papers themselves – PAU Física 2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -66,14 +60,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8ea58a61d1ba2dd7cb9d02c8236bb19e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4f56ef24fd7e0b60995d53dadae59254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d7169c38db111d135d171b3357e2edd5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4f56ef24fd7e0b60995d53dadae59254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +100,7 @@ div.csl-indent {
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -119,7 +113,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -307,8 +301,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -473,12 +466,30 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Briefing</span></a>
+ <span class="menu-text">Paper</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-paper.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">Decomposition and identification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Briefing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/15-synthesis.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clipboard-check" role="img">
@@ -511,13 +522,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Sources and reproducibility</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
@@ -563,9 +574,14 @@ window.Quarto = {
   <li><a href="#structure-and-content-of-the-eighteen-papers" id="toc-structure-and-content-of-the-eighteen-papers" class="nav-link" data-scroll-target="#structure-and-content-of-the-eighteen-papers">Structure and content of the eighteen papers</a></li>
   <li><a href="#what-the-papers-of-the-rising-communities-look-like" id="toc-what-the-papers-of-the-rising-communities-look-like" class="nav-link" data-scroll-target="#what-the-papers-of-the-rising-communities-look-like">What the papers of the rising communities look like</a></li>
   <li><a href="#what-the-papers-of-the-falling-communities-look-like" id="toc-what-the-papers-of-the-falling-communities-look-like" class="nav-link" data-scroll-target="#what-the-papers-of-the-falling-communities-look-like">What the papers of the falling communities look like</a></li>
-  <li><a href="#paper-change-against-grade-change" id="toc-paper-change-against-grade-change" class="nav-link" data-scroll-target="#paper-change-against-grade-change">Paper change against grade change</a></li>
+  <li><a href="#paper-change-against-grade-change" id="toc-paper-change-against-grade-change" class="nav-link" data-scroll-target="#paper-change-against-grade-change">Paper change against grade change</a>
+  <ul class="collapse">
+  <li><a href="#competency-path" id="toc-competency-path" class="nav-link" data-scroll-target="#competency-path">The route, not the destination</a></li>
+  </ul></li>
   <li><a href="#comparability" id="toc-comparability" class="nav-link" data-scroll-target="#comparability">Did the nine sit comparable exams?</a>
   <ul class="collapse">
+  <li><a href="#catalunya-history" id="toc-catalunya-history" class="nav-link" data-scroll-target="#catalunya-history">Cataluña: a steady state read as a conversion</a></li>
+  <li><a href="#the-field-retreated-in-the-second-year" id="toc-the-field-retreated-in-the-second-year" class="nav-link" data-scroll-target="#the-field-retreated-in-the-second-year">The field retreated in the second year</a></li>
   <li><a href="#how-far-each-paper-moved" id="toc-how-far-each-paper-moved" class="nav-link" data-scroll-target="#how-far-each-paper-moved">How far each paper moved</a></li>
   <li><a href="#what-this-does-and-does-not-establish" id="toc-what-this-does-and-does-not-establish" class="nav-link" data-scroll-target="#what-this-does-and-does-not-establish">What this does and does not establish</a></li>
   </ul></li>
@@ -1442,7 +1458,23 @@ Table&nbsp;4: Paper measures and grade change side by side, sorted by grade chan
 <li><strong>The Basque paper is the one paper in the set that changed genre between the two years</strong>, and it changed on four axes at once — content type (from one competency exercise to half the marks), guaranteed exposure (the competency exercises are the obligatory ones), optionality (75 % to 50 %) and format (granular 0.25-point sub-tasks). Castilla-La Mancha, the only other paper that moved in the same direction, moved on one axis by a fifth of the distance and rose.</li>
 <li><strong>Canarias shows that a structural cut in optionality without any competency content coincides with a fall of the same order as the second Basque step.</strong> That is one data point, and Canarias carries its own history (the 2019 collapse, the third-exam-of-the-day timetable noted in its coordination minutes); but it means the Basque fall cannot be attributed to the competency exercises <em>rather than</em> to the reduction in choice, on this evidence.</li>
 </ol>
+<section id="competency-path" class="level3">
+<h3 class="anchored" data-anchor-id="competency-path">The route, not the destination</h3>
+<p>The scatter panels above plot one year against one change, and a scatter cannot show a <em>route</em>. Two systems can arrive at similar competency content having come from opposite directions and from different distances, and after the Catalan archive that distinction is the question rather than a refinement of it. Figure <a href="#fig-competency-path" class="quarto-xref">Figure&nbsp;3</a> therefore draws each community as an arrow from the competency-coded share of its 2025 paper to the share of its 2026 paper, against the change in its mean — one measure throughout, so the horizontal axis means the same thing for every arrow.</p>
+<div id="fig-competency-path" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-competency-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig36_competency_path.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-competency-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Each community as an arrow from (competency-coded share of the 2025 paper, 0) to (share of the 2026 paper, change in the ordinary-sitting Física mean). Red = Euskadi; violet = Cataluña; orange = fell; blue = rose. Six communities have no horizontal component: they were at zero in both years. The Catalan note records what the arrow cannot — its 2025 position was a steady state held since at least 2020, so its leftward arrow is a retreat from a mature practice, not the reversal of a conversion.
+</figcaption>
+</figure>
+</div>
+<p>Three things are visible here that the scatter panels cannot show. Euskadi’s arrow is the only one that runs far to the right and steeply down, 25 to 62.5 per cent. Cataluña’s runs <em>left</em> and slightly up, 75 to 37.5, from a position it had occupied for at least six years. And six arrows are vertical at <span class="math inline">\(x=0\)</span>: communities whose papers contained no competency-coded marks in either year, spanning <span class="math inline">\(-0.83\)</span> to <span class="math inline">\(+1.13\)</span> in outcome.</p>
+<p>That vertical spread at zero is the figure’s real content, and it is a bound rather than a correlation. Whatever moved those six communities by up to 1.9 marks between them was not competency conversion, because they did none. Any account of 2026 that rests on the conversion alone must explain why the same year moved papers that never converted by as much as it moved the one that did.</p>
 <p>The cleanest statement is the one the earlier chapters left open: the reform framework (RD 534/2024) is common to all seventeen communities and cannot explain 2026; the <em>papers</em> are not common, and the Basque 2026 paper differs from its 2025 predecessor more than any other paper in this set differs from its own. Whether that difference produced the fall through the competency exercises, through the loss of choice, through the unfamiliar granular format, through the amount of reading the new items require in the time allowed (Andalucía, Extremadura and Madrid print 90 minutes on the paper; the EHU papers in this archive print no duration), or through marking-scheme effects that the corrector documents would show, is a question the grade data cannot settle and the exams alone cannot either. The natural next step is the one the UAM and Las Palmas commissions have taken elsewhere: an item-level analysis of the 2026 Basque scripts (marks by sub-task, by exercise and by option chosen), which would say directly whether the two obligatory competency exercises are where the 2 066 candidates lost their marks.</p>
+</section>
 </section>
 <section id="comparability" class="level2">
 <h2 class="anchored" data-anchor-id="comparability">Did the nine sit comparable exams?</h2>
@@ -1594,17 +1626,91 @@ Table&nbsp;5: The nine 2026 papers against the structural criteria. File: <code>
 <img src="../plots/fig27_comparability.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comparability-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: <strong>a</strong> — optionality in 2025 (grey) and 2026, against the criterion band; communities ordered by how far their paper moved. <strong>b</strong> — the reform-intensity index against the change in the mean. <strong>c</strong> — the competency-coded share of the expected marks, 2025 and 2026.
+Figure&nbsp;4: <strong>a</strong> — optionality in 2025 (grey) and 2026, against the criterion band; communities ordered by how far their paper moved. <strong>b</strong> — the reform-intensity index against the change in the mean. <strong>c</strong> — the competency-coded share of the expected marks, 2025 and 2026.
 </figcaption>
 </figure>
 </div>
+<section id="catalunya-history" class="level3">
+<h3 class="anchored" data-anchor-id="catalunya-history">Cataluña: a steady state read as a conversion</h3>
+<p>Cataluña’s bar in <a href="#fig-profiles" class="quarto-xref">Figure&nbsp;1</a> is the one that misleads, and it misled this study first. Read across the row it looks like a community that converted in 2025 and pulled back in 2026. The ordinary papers say otherwise.</p>
+<div id="tbl-catalunya-history" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[10,36,28,26]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-catalunya-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Cataluña’s ordinary Physics papers, 2020–2025. File: <code>data/analysis/catalunya_history_2020_2025.csv</code>.
+</figcaption>
+<div aria-describedby="tbl-catalunya-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 36%">
+<col style="width: 28%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Structure</th>
+<th style="text-align: right;">Justify / evaluate demand</th>
+<th style="text-align: right;">Real setting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2020</td>
+<td>4 of 8</td>
+<td style="text-align: right;">37.5 %</td>
+<td style="text-align: right;">37.5 %</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>4 of 8</td>
+<td style="text-align: right;">62.5 %</td>
+<td style="text-align: right;">43.8 %</td>
+</tr>
+<tr class="odd">
+<td>2022</td>
+<td>4 of 8</td>
+<td style="text-align: right;">50.0 %</td>
+<td style="text-align: right;">50.0 %</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td>4 of 7</td>
+<td style="text-align: right;">50.0 %</td>
+<td style="text-align: right;">64.3 %</td>
+</tr>
+<tr class="odd">
+<td>2024</td>
+<td>4 of 7</td>
+<td style="text-align: right;">28.6 %</td>
+<td style="text-align: right;">85.7 %</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>4 exercises, A/B inside two</td>
+<td style="text-align: right;">66.7 %</td>
+<td style="text-align: right;">100.0 %</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Real settings and explicit demands to justify, reason or evaluate appear in every year from 2020, five before the decree: a singer’s voice and the Apollo 15 feather (2020), Tycho Brahe (2021), an eel’s locomotion and a launch (2022), the moons of Mars and the press coverage of a fusion announcement (2023), a planetary mission and the altitude of a firework (2024). What 2025 changed was the structure — four block exercises with an internal option — not the substance.</p>
+<p>So Cataluña’s 75 % in 2025 is a steady state. It is a system that has examined this way for years, sitting about <span class="math inline">\(+0.65\)</span> above the field in both 2025 and 2026, once with three quarters of its marks competency-coded and once with half. That is the strongest evidence in this dossier against the proposition that competency examining depresses marks, and it moves the weight onto the transition rather than the paradigm.</p>
+<p>The coding of 2020–2024 was done once, by one reader, after the 2026 result was known; 2025 and 2026 were coded blind by two (<span class="math inline">\(\kappa = 0.76\)</span>). The series is evidence of a direction of travel, not a measurement of equal standing.</p>
+</section>
+<section id="the-field-retreated-in-the-second-year" class="level3">
+<h3 class="anchored" data-anchor-id="the-field-retreated-in-the-second-year">The field retreated in the second year</h3>
+<p>Across the other eight communities the competency-coded share of marks <strong>fell</strong> from 11.2 % to 7.2 % between 2025 and 2026. Cataluña halved its own while holding total substantive context at 87.5 %, keeping the context and dropping the demand; Comunitat Valenciana went to zero; five were at zero and stayed. The field against which the Basque-specific component is measured was moving away from the competency format while Euskadi moved towards it.</p>
+</section>
 <section id="how-far-each-paper-moved" class="level3">
 <h3 class="anchored" data-anchor-id="how-far-each-paper-moved">How far each paper moved</h3>
 <p>The criteria describe a level. What the 2026 results turn on is movement, so each paper’s change from its own 2025 predecessor is summarised in one index: the mean of four standardised movements — optionality (entering with its sign reversed, since cutting choice is the direction the orientations ask for), competency-coded marks, substantive context, and contextualised marks. Standardising inside the nine makes it a ranking device and not a scale with meaning of its own.</p>
 <div id="tbl-reform" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-reform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6: Movement of each 2026 paper from its own 2025 paper, and the index built from it. File: <code>data/analysis/comparability.json</code>.
+Table&nbsp;7: Movement of each 2026 paper from its own 2025 paper, and the index built from it. File: <code>data/analysis/comparability.json</code>.
 </figcaption>
 <div aria-describedby="tbl-reform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1814,14 +1920,13 @@ Sánchez-Tarazaga, L., &amp; Gimeno Rovira, J. A. (2026). <em><span></span>C<spa
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

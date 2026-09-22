@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,16 +12,10 @@
 
 <title>Synthesis for the coordination – PAU Física 2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../chapters/15-synthesis-es.html" rel="next">
-<link href="../chapters/07-literature.html" rel="prev">
+<link href="../chapters/17-paper.html" rel="prev">
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -47,14 +41,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8ea58a61d1ba2dd7cb9d02c8236bb19e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4f56ef24fd7e0b60995d53dadae59254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d7169c38db111d135d171b3357e2edd5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4f56ef24fd7e0b60995d53dadae59254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -100,7 +94,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -288,8 +282,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -454,12 +447,30 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Briefing</span></a>
+ <span class="menu-text">Paper</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-paper.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">Decomposition and identification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Briefing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/15-synthesis.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-clipboard-check" role="img">
@@ -492,13 +503,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Sources and reproducibility</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
@@ -614,6 +625,12 @@ window.Quarto = {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">21 September 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -628,7 +645,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>On one page
+On one page
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -646,11 +663,12 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How to read this document
+How to read this document
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>This is the short form of a longer dossier. Every number here is traceable to a chapter of it, and the chapter is named in brackets. Where a figure is <strong>modelled</strong> rather than observed it is said so on the spot. Nothing here is a causal estimate: these are cohort statistics of different papers marked by different tribunals, and the paper changes every year. The full argument, with its intervals, its failed tests and its two audits, is in <a href="../chapters/14-briefing.html">the briefing</a> and in <a href="../chapters/06-interpretation.html">Chapter 6</a>.</p>
+<p><strong>This version.</strong> 21 September 2026. The dossier was opened on 18 September and has been revised on every working day since: 19 September added the paper audits and the first external audit, 20 September the marking-regime and statement work with a second audit, and 21 September the coordination’s own remarks — the rebuilt figure 1, the three-way split of the competency verdict, and the COVID sittings. Every revision, with what it changed and why, is in the <a href="../chapters/09-log.html">work log</a> and in <a href="../chapters/13-audit.html">the record of remarks</a>.</p>
 </div>
 </div>
 <section id="the-ground" class="level1">
@@ -714,41 +732,42 @@ Table&nbsp;1: The same result in three frames <a href="../chapters/06-interpreta
 </figure>
 </div>
 <p>They span less than half a mark, so nothing here turns on the choice. The field is used for one purpose only, and it is a purpose no absolute number can serve: telling a year in which everyone fell from a year in which only we did.</p>
+<p><strong>How much this depends on the nine.</strong> For 2015–2025 all seventeen communities are published, so the nine can be checked against the whole: over ten transitions the mean error is <span class="math inline">\(-0.004\)</span> marks, sd 0.138, largest 0.242, <span class="math inline">\(r = 0.943\)</span>. Removing any single community from the field moves the Basque-specific component within <span class="math inline">\(-1.77\)</span> to <span class="math inline">\(-1.52\)</span> — removing Cataluña, the case with the strongest argument for exclusion, gives <span class="math inline">\(-1.56\)</span>. For the component to vanish, the eight communities that published no 2026 figure would have to average <span class="math inline">\(-3.34\)</span>, three times the worst they have ever produced together.</p>
 <p>A one-year fall of 1.48 is rare but not unprecedented — seven of the 170 year-to-year changes in the Ministry panel were as negative. What is exceptional is the <strong>level</strong>: 3.99 is below every regional mean in eleven years of Ministry data except Canarias 2019 <a href="../chapters/02-euskadi.html">Ch. 2</a>.</p>
 </section>
 <section id="three-events-not-one" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="three-events-not-one">Three events, not one</h2>
-<div id="fig-s-series" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-s-series-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<img src="../plots/fig01_euskadi_series.png" class="img-fluid figure-img column-page">
+<div id="fig-s-series" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-s-series-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig01_euskadi_series.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-s-series-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Física in the Basque university-entrance exam, ordinary sitting, 2010–2026. <strong>The ribbon carries two separate facts on the same axis</strong>: the <em>law</em> under which the exam was set, and the <em>paper model</em> actually used. They do not coincide — LOMCE governed from 2017 but the paper did not change until 2020, and it changed then for COVID and not for the law — which is why they are two rows and not one band; the marked interval under them spans those two years. <code>L1</code> and <code>L2</code> are the two LOMLOE papers, keyed beneath. <strong>COVID is one sitting and one model</strong>: the darker tint is the 2020 sitting itself, the lighter one the four-of-eight paper it forced, which was then kept through 2024. <strong>The grey line is the Ministry cube</strong> for all seventeen communities and stops at 2025, because the 2026 cube is not published until June 2027. <strong>The green marks</strong> are this study’s own cross-section of the nine communities that have published a 2026 result — a different population, and drawn detached for that reason. <strong>The two arrows on the right are changes, not levels</strong>, and both leave the same point, Euskadi’s own 2025 mean of 5.47. The <strong>blue</strong> arrow is Euskadi’s own change to 3.99, <span class="math inline">\(-1.48\)</span>. The <strong>green</strong> arrow is the change of the nine-community field, <span class="math inline">\(+0.17\)</span>, drawn from that same origin so that its head at 5.64 reads as <em>where Física would have ended had it moved with the field</em>. The bracket between the two heads is therefore the Basque-specific component, <span class="math inline">\(-1.65\)</span>, exactly. The distance between the two 2026 <strong>levels</strong> is 1.87 and is <em>not</em> that component, because the two series did not start level in 2025 (5.47 against 5.69). The field is the mean of the nine <strong>including</strong> Euskadi, which is the conservative reading; against the eight others alone the component would be <span class="math inline">\(-1.86\)</span>. The three values are the <code>total</code>, <code>common</code> and <code>basque_specific</code> terms of <code>data/analysis/decomposition.json</code>, computed by <code>scripts/21_decay_decomposition.py</code>.
+Figure&nbsp;1: Física in the Basque university-entrance exam, ordinary sitting, 2010–2026. <strong>The ribbon carries two separate facts on the same axis</strong>: the <em>law</em> under which the exam was set, and the <em>paper model</em> actually used. They do not coincide — LOMCE governed from 2017 but the paper did not change until 2020, and it changed then for COVID and not for the law — which is why they are two rows and not one band; the marked interval under them spans those two years. <code>L1</code> and <code>L2</code> are the two LOMLOE papers, keyed beneath. <strong>COVID is two sittings and one model</strong>: the darker tint is 2020 and 2021, both set under the relief measures — 2021 is the highest mean in the series, 7.69 — and the lighter one the four-of-eight paper they forced, which was then kept through 2024. <strong>The grey line is the Ministry cube</strong> for all seventeen communities and stops at 2025, because the 2026 cube is not published until June 2027. <strong>The green marks</strong> are this study’s own cross-section of the nine communities that have published a 2026 result — a different population, and drawn detached for that reason. <strong>The two arrows on the right are changes, not levels</strong>, and both leave the same point, Euskadi’s own 2025 mean of 5.47. The <strong>blue</strong> arrow is Euskadi’s own change to 3.99, <span class="math inline">\(-1.48\)</span>. The <strong>green</strong> arrow is the change of the nine-community field, <span class="math inline">\(+0.17\)</span>, drawn from that same origin so that its head at 5.64 reads as <em>where Física would have ended had it moved with the field</em>. The bracket between the two heads is therefore the Basque-specific component, <span class="math inline">\(-1.65\)</span>, exactly. The distance between the two 2026 <strong>levels</strong> is 1.87 and is <em>not</em> that component, because the two series did not start level in 2025 (5.47 against 5.69). The field is the mean of the nine <strong>including</strong> Euskadi, which is the conservative reading; against the eight others alone the component would be <span class="math inline">\(-1.86\)</span>. The three values are the <code>total</code>, <code>common</code> and <code>basque_specific</code> terms of <code>data/analysis/decomposition.json</code>, computed by <code>scripts/21_decay_decomposition.py</code>.
 </figcaption>
 </figure>
 </div>
 <p><strong>2024 changed the shape and barely touched the level.</strong> The mean moved <span class="math inline">\(-0.21\)</span> — nothing, in a series whose year-to-year standard deviation is 0.85. What moved was the distribution. The 8–10 band <strong>fell 9.0 points</strong> where a drop of 0.21 in the mean normally costs 3.1; and the pass rate <strong>rose 2.3</strong> where it would normally have fallen 2.8. Fewer at the top, more just over the line, with the mean almost still.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
-<p><strong>Where those “normally”s come from.</strong> From a <em>locus</em>: a curve fitted across all 187 community-year observations in the panel, giving each band’s share as a function of the mean. Evaluated at the 2023 mean and at the 2024 mean, the difference is what an ordinary distribution would have done on a fall of 0.21.</p>
-<p>Observed against expected, in percentage points: the 8–10 band, <span class="math inline">\(-9.03\)</span> against <span class="math inline">\(-3.11\)</span>; the pass rate, <span class="math inline">\(+2.28\)</span> against <span class="math inline">\(-2.76\)</span>.</p>
+<p><strong>Where those “normally”s come from.</strong> From a <em>locus</em>: a curve fitted across the 187 community-year observations, giving each band as a function of the mean, evaluated at 2023 and at 2024.</p>
 </div></div><p><strong>And a third number, which is the one that carries the rank.</strong> One measure sums that mismatch into a single figure: the <strong>conditional top-band residual</strong> — how much top band a community has <em>given its mean</em>, set against the other communities in the same year. Euskadi’s moved <strong><span class="math inline">\(-3.08\)</span> standard deviations</strong> between 2023 and 2024. That is the <strong>second-most-negative of the 170 transitions</strong> in the national panel, behind Cantabria 2025.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
-<p><strong>Two ranks, not one.</strong> On the conditional residual, 2024 is <strong>2nd of 170</strong>. On the combined size of the two departures from the locus, it is <strong>11th of 170</strong>. Both measures are reasonable and this document gives both.</p>
-<p><strong>Why 170 and not 187.</strong> Seventeen communities give eleven years of data — 187 observations — but only ten steps from one year to the next: <span class="math inline">\(17 \times 10 = 170\)</span>.</p>
-<p>Source: <code>typology.pais_vasco.2024</code>, in <code>decomposition.json</code>, computed by <code>21_decay_decomposition.py</code> (full paths in ch.&nbsp;10).</p>
-</div></div><p>Both things should be said together: <strong>second on one measure, eleventh on another, and large on both.</strong> And it happened <strong>on the last paper of the old format</strong>, a year before the first LOMLOE paper. Every test in this dossier that works on the mean is blind to it, and all of them are right: a mean cannot see candidates leave the top when others arrive from below.</p>
+<p><strong>Observed against expected</strong>, in percentage points: the 8–10 band, <span class="math inline">\(-9.03\)</span> against <span class="math inline">\(-3.11\)</span>; the pass rate, <span class="math inline">\(+2.28\)</span> against <span class="math inline">\(-2.76\)</span>.</p>
+</div><div class="">
+<p><strong>Why 170 and not 187.</strong> Seventeen communities give eleven years — 187 observations — but ten steps from one year to the next: <span class="math inline">\(17 \times 10 = 170\)</span>. Source: <code>typology.pais_vasco.2024</code> in <code>decomposition.json</code>.</p>
+</div></div>
+<p>Both things should be said together: <strong>second on one measure, eleventh on another, and large on both.</strong> And it happened <strong>on the last paper of the old format</strong>, a year before the first LOMLOE paper. Every test in this dossier that works on the mean is blind to it, and all of them are right: a mean cannot see candidates leave the top when others arrive from below.</p>
 <p><strong>2025 changed the level, and the change was the country’s.</strong> Euskadi lost 0.62; the nine-community field lost 0.65. Read against the field there is nothing Basque in 2025 at all.</p>
 <p><strong>2026 is ours.</strong> The field gained 0.17 and we lost 1.48, so the Basque-specific component is <span class="math inline">\(-1.65\)</span>, and the whole of it is in one year.</p>
 </section>
-<section id="what-the-1.65-is-made-of" class="level2 page-columns page-full">
+<section id="what-the-1.65-is-made-of" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-1.65-is-made-of">What the 1.65 is made of</h2>
-<div id="fig-s-subj" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-s-subj-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<img src="../plots/fig26_subject_decomposition.png" class="img-fluid figure-img column-page">
+<div id="fig-s-subj" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-s-subj-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig26_subject_decomposition.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-s-subj-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: <strong>a</strong> — the eight Basque subjects, with the three the numerical marking deductions can reach in orange. <strong>b</strong> — each community’s Física change against its own mean over the three shared subjects. <strong>c</strong> — the four terms of the split, which sum to the observed <span class="math inline">\(-1.48\)</span> by construction.
@@ -876,17 +895,17 @@ Table&nbsp;3: Components of the Basque-specific change <a href="../chapters/06-i
 </section>
 <section id="the-interpretations-and-what-holds-each-up" class="level1">
 <h1>The interpretations, and what holds each up</h1>
-<div id="tbl-s-hyp" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[22,20,58]">
+<div id="tbl-s-hyp" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[26,18,56]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-s-hyp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4: The explanations with verdicts <a href="../chapters/06-interpretation.html">Ch. 6</a>.
+Table&nbsp;4: The explanations with verdicts. The labels are the hypothesis numbers used throughout the dossier and in the briefing table <a href="../chapters/06-interpretation.html">Ch. 6</a>.
 </figcaption>
 <div aria-describedby="tbl-s-hyp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 22%">
-<col style="width: 20%">
-<col style="width: 57%">
+<col style="width: 26%">
+<col style="width: 18%">
+<col style="width: 56%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -897,37 +916,47 @@ Table&nbsp;4: The explanations with verdicts <a href="../chapters/06-interpretat
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>The competency model</strong></td>
+<td><strong>H1a</strong> · The competency model as a national frame</td>
 <td>Describes 2025 at most; does not explain 2026</td>
-<td>Applied in all seventeen communities in both years; six of nine rose in 2026 under it. 2025 was also the end of a plateau present in <em>every</em> subject and cannot be separated from it.</td>
+<td>Applied in all seventeen communities in both years; six of nine rose in 2026 under it. 2025 was also the end of a plateau present in <em>every</em> subject and cannot be separated from it. The frame alone therefore explains nothing about 2026.</td>
 </tr>
 <tr class="even">
-<td><strong>The 2026 paper</strong></td>
-<td>Consistent with everything; first-order variable</td>
-<td>The whole distribution moved; the damage is in Física and Matemáticas II; it is the only paper of the nine that changed genre, on four axes at once; reading load <span class="math inline">\(+45\)</span> %; choice halved (worth <span class="math inline">\(-0.26\)</span> by simulation).</td>
+<td><strong>H1b</strong> · Not the model — <strong>this conversion, at this speed</strong></td>
+<td>First-order candidate; the strongest surviving explanation of 2026</td>
+<td>Reworded on the Catalan archive: Cataluña has set papers with real settings and explicit justification demands in <strong>every year since 2020</strong>, five before the decree, and did not collapse; in 2026 it halved its competency-coded marks and its position against the field did not move. So competency examining is not the thing. The frame was national, the implementation was not. On a reform-intensity index built from four independent axes — optionality withdrawn, competency marks, substantive context, contextualised marks — Euskadi scores <span class="math inline">\(+1.76\)</span> and is first of nine; the next community is <span class="math inline">\(+0.39\)</span>. Five of the six communities that <em>rose</em> in 2026 have <strong>negative</strong> indices. Across the nine, <span class="math inline">\(r = -0.70\)</span>, <span class="math inline">\(p = 0.035\)</span>; drop Euskadi and the relation collapses to <span class="math inline">\(r = -0.40\)</span>, <span class="math inline">\(p = 0.33\)</span> — which is to say the relation <em>is</em> Euskadi, and this row records one community moving alone, not a national dose-response <a href="../chapters/11-exam-content.html#how-far-each-paper-moved">Ch. 11</a>.</td>
 </tr>
 <tr class="odd">
-<td><strong>Marking severity</strong></td>
+<td><strong>H1c</strong> · Fifteen years of a predictable paper, and two courses to retune</td>
+<td>Plausible, unmeasured, and untangled from the row above</td>
+<td>For fifteen years <strong>40 % of the marks came from a closed list</strong>, of which only <strong>22 titles</strong> were ever set across 120 slots, and <strong>optionality was 100 %</strong>. Fourteen of fifteen modern-physics problems were photoelectric; fission and fusion existed only as theory titles until 2026 set them as problems. The exam had been the curriculum. <strong>The schools were told</strong>: the reopening was announced in 2024 and 2024–25 and 2025–26 were designated transitional — so this is about <strong>practice, not information</strong>. An announcement does not create example banks, mock papers or an examiner’s fluency; those took longer than two courses. Cataluña had no such equilibrium to undo. Alone among the candidates, it predicts <em>where</em> the marks went <a href="../chapters/12-ehu-paper-history.html#inertia">Ch. 12</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>H2</strong> · The 2026 paper as a format — length, optionality, genre</td>
+<td>Consistent with everything; first-order variable</td>
+<td>Length, optionality and genre, set apart from the competency question above: reading load <span class="math inline">\(+45\)</span> %, to about 1 430 words of statement; choice halved, worth <span class="math inline">\(-0.26\)</span> by simulation; and it is the only paper of the nine that changed genre. The whole distribution moved, and the damage is in Física and Matemáticas II.</td>
+</tr>
+<tr class="odd">
+<td><strong>H2b</strong> · Marking severity</td>
 <td>Possible; the <em>timing</em> fits; bounded, not measured</td>
 <td>2026 is the second year of the deductions and of the linguistic component, and “cautious in year one, full in year two” predicts exactly the <span class="math inline">\(+0.03\)</span> / <span class="math inline">\(-1.65\)</span> pattern. But a <em>general</em> severity would move all eight subjects, and Lengua Castellana rose. A severity confined to the seven <strong>numerical</strong> deductions fits the pattern and is confounded with the format change <a href="../chapters/06-interpretation.html#marking-severity">Ch. 6</a>.</td>
 </tr>
 <tr class="even">
-<td><strong>Tribunal severity</strong></td>
+<td><strong>H3</strong> · Tribunal severity</td>
 <td>Possible, unmeasured, acknowledged by EHU</td>
 <td>The rector reported significant variation between panels in Física; the 6 July deck gave tribunal ranges for three other subjects and not for Física.</td>
 </tr>
 <tr class="odd">
-<td><strong>A weaker cohort</strong></td>
+<td><strong>H4</strong> · A weaker cohort</td>
 <td>Real outside the PAU, small inside it</td>
 <td>PISA shows a decade-long Basque decline the PAU sees only in Física and only from 2025. But 5.6 % <em>fewer</em> candidates sat Física in 2026, so composition works against the fall, not for it.</td>
 </tr>
 <tr class="even">
-<td><strong>Weighting rules make Física dispensable</strong></td>
+<td><strong>H5</strong> · Weighting rules make Física dispensable</td>
 <td>Plausible slow driver, not a 2026 trigger</td>
 <td>Fits a slow erosion, not a fall of a point and a half.</td>
 </tr>
 <tr class="odd">
-<td><strong>Language or network bias</strong></td>
+<td><strong>H6</strong> · Language or network bias</td>
 <td>No evidence either way for Física</td>
 <td>Only the Euskara II analysis was run.</td>
 </tr>
@@ -968,7 +997,7 @@ Table&nbsp;4: The explanations with verdicts <a href="../chapters/06-interpretat
 <li><strong>We cannot project 2027.</strong> The cohort term is a fifth of a mark; the paper is worth five times that.</li>
 </ul>
 </section>
-<section id="what-changes-in-2027-and-what-does-not" class="level1 page-columns page-full">
+<section id="what-changes-in-2027-and-what-does-not" class="level1">
 <h1>What changes in 2027, and what does not</h1>
 <section id="for-the-teachers-in-one-table" class="level2">
 <h2 class="anchored" data-anchor-id="for-the-teachers-in-one-table">For the teachers, in one table</h2>
@@ -1034,12 +1063,12 @@ Table&nbsp;5: What changes and what does not <a href="../chapters/06-interpretat
 </div>
 <p>Shorter is not easier. The verbs, the levels and the rubric are the same; what goes is narrative, repetition between parts, and formatting instructions that the marking criteria already carry.</p>
 </section>
-<section id="where-the-reading-actually-is" class="level2 page-columns page-full">
+<section id="where-the-reading-actually-is" class="level2">
 <h2 class="anchored" data-anchor-id="where-the-reading-actually-is">Where the reading actually is</h2>
-<div id="fig-s-budget" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-s-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<img src="../plots/fig29_statement_budget.png" class="img-fluid figure-img column-page">
+<div id="fig-s-budget" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-s-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../plots/fig29_statement_budget.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-s-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: <strong>a</strong> — each item’s statement in 2025 and 2026 against the 2027 target band; the obligatory competency items are in red. <strong>b</strong> — the two reconstructions of the 2026 electromagnetic problem, which share only their endpoint. <strong>c</strong> — what the paper costs to read and to answer, and what the target would cost.
@@ -1324,14 +1353,13 @@ Table&nbsp;8: Who decides what, and when.
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1680,8 +1708,8 @@ Table&nbsp;8: Who decides what, and when.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/07-literature.html" class="pagination-link" aria-label="Literature &amp; regulation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Literature &amp; regulation</span>
+      <a href="../chapters/17-paper.html" class="pagination-link" aria-label="Decomposition and identification">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Decomposition and identification</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

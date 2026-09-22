@@ -96,6 +96,30 @@ What the coding therefore supports is narrower and, for the purpose of the 2027 
 2. **The Basque paper is the one paper in the set that changed genre between the two years**, and it changed on four axes at once — content type (from one competency exercise to half the marks), guaranteed exposure (the competency exercises are the obligatory ones), optionality (75 % to 50 %) and format (granular 0.25-point sub-tasks). Castilla-La Mancha, the only other paper that moved in the same direction, moved on one axis by a fifth of the distance and rose.
 3. **Canarias shows that a structural cut in optionality without any competency content coincides with a fall of the same order as the second Basque step.** That is one data point, and Canarias carries its own history (the 2019 collapse, the third-exam-of-the-day timetable noted in its coordination minutes); but it means the Basque fall cannot be attributed to the competency exercises *rather than* to the reduction in choice, on this evidence.
 
+### The route, not the destination {#competency-path}
+
+The scatter panels above plot one year against one change, and a scatter cannot show a
+*route*. Two systems can arrive at similar competency content having come from opposite
+directions and from different distances, and after the Catalan archive that distinction is
+the question rather than a refinement of it. Figure @fig-competency-path therefore draws
+each community as an arrow from the competency-coded share of its 2025 paper to the share
+of its 2026 paper, against the change in its mean — one measure throughout, so the
+horizontal axis means the same thing for every arrow.
+
+![Each community as an arrow from (competency-coded share of the 2025 paper, 0) to (share of the 2026 paper, change in the ordinary-sitting Física mean). Red = Euskadi; violet = Cataluña; orange = fell; blue = rose. Six communities have no horizontal component: they were at zero in both years. The Catalan note records what the arrow cannot — its 2025 position was a steady state held since at least 2020, so its leftward arrow is a retreat from a mature practice, not the reversal of a conversion.](../plots/fig36_competency_path.png){#fig-competency-path}
+
+Three things are visible here that the scatter panels cannot show. Euskadi's arrow is the
+only one that runs far to the right and steeply down, 25 to 62.5 per cent. Cataluña's runs
+*left* and slightly up, 75 to 37.5, from a position it had occupied for at least six years.
+And six arrows are vertical at $x=0$: communities whose papers contained no competency-coded
+marks in either year, spanning $-0.83$ to $+1.13$ in outcome.
+
+That vertical spread at zero is the figure's real content, and it is a bound rather than a
+correlation. Whatever moved those six communities by up to 1.9 marks between them was not
+competency conversion, because they did none. Any account of 2026 that rests on the
+conversion alone must explain why the same year moved papers that never converted by as
+much as it moved the one that did.
+
 The cleanest statement is the one the earlier chapters left open: the reform framework (RD 534/2024) is common to all seventeen communities and cannot explain 2026; the *papers* are not common, and the Basque 2026 paper differs from its 2025 predecessor more than any other paper in this set differs from its own. Whether that difference produced the fall through the competency exercises, through the loss of choice, through the unfamiliar granular format, through the amount of reading the new items require in the time allowed (Andalucía, Extremadura and Madrid print 90 minutes on the paper; the EHU papers in this archive print no duration), or through marking-scheme effects that the corrector documents would show, is a question the grade data cannot settle and the exams alone cannot either. The natural next step is the one the UAM and Las Palmas commissions have taken elsewhere: an item-level analysis of the 2026 Basque scripts (marks by sub-task, by exercise and by option chosen), which would say directly whether the two obligatory competency exercises are where the 2 066 candidates lost their marks.
 
 ## Did the nine sit comparable exams? {#comparability}

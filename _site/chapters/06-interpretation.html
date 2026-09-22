@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,16 +11,10 @@
 
 <title>Interpretation and the 2027 question – PAU Física 2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -66,14 +60,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8ea58a61d1ba2dd7cb9d02c8236bb19e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1a08173ad70c230f5fde3fc0119ce07e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4f56ef24fd7e0b60995d53dadae59254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d7169c38db111d135d171b3357e2edd5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4f56ef24fd7e0b60995d53dadae59254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +100,7 @@ div.csl-indent {
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -119,7 +113,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -307,8 +301,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -473,12 +466,30 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Briefing</span></a>
+ <span class="menu-text">Paper</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-paper.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">Decomposition and identification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Briefing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/15-synthesis.html" class="sidebar-item-text sidebar-link"><i class="bi bi-clipboard-check" role="img">
@@ -511,13 +522,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Sources and reproducibility</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/08-sources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-archive" role="img">
@@ -566,6 +577,7 @@ window.Quarto = {
   <li><a href="#do-the-two-instruments-fall-at-the-same-rate" id="toc-do-the-two-instruments-fall-at-the-same-rate" class="nav-link" data-scroll-target="#do-the-two-instruments-fall-at-the-same-rate">Do the two instruments fall at the same rate?</a></li>
   <li><a href="#how-much-of-the-paper-is-reading" id="toc-how-much-of-the-paper-is-reading" class="nav-link" data-scroll-target="#how-much-of-the-paper-is-reading">How much of the paper is reading?</a></li>
   <li><a href="#what-pisa-2025-says-about-pau-2027" id="toc-what-pisa-2025-says-about-pau-2027" class="nav-link" data-scroll-target="#what-pisa-2025-says-about-pau-2027">What PISA 2025 says about PAU 2027</a></li>
+  <li><a href="#last-slot" id="toc-last-slot" class="nav-link" data-scroll-target="#last-slot">Fatigue, and the arithmetic of the last slot</a></li>
   </ul></li>
   <li><a href="#was-2026-a-shift-or-a-change-of-shape" id="toc-was-2026-a-shift-or-a-change-of-shape" class="nav-link" data-scroll-target="#was-2026-a-shift-or-a-change-of-shape">Was 2026 a shift or a change of shape?</a></li>
   <li><a href="#what-you-compare-against-decides-what-you-find" id="toc-what-you-compare-against-decides-what-you-find" class="nav-link" data-scroll-target="#what-you-compare-against-decides-what-you-find">What you compare against decides what you find</a>
@@ -634,7 +646,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 20, 2026</p>
+      <p class="date-modified">September 21, 2026</p>
     </div>
   </div>
     
@@ -651,7 +663,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Audit of 19 September 2026
+Audit of 19 September 2026
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -661,8 +673,13 @@ window.Quarto = {
 <section id="the-hypotheses-one-by-one" class="level2">
 <h2 class="anchored" data-anchor-id="the-hypotheses-one-by-one">The hypotheses, one by one</h2>
 <p>The evidence assembled in Chapters 2–5 is observational and the exam changes every year, so nothing below is a causal estimate. But the hypotheses that circulated in July can be sorted by what the data allow.</p>
-<p><strong>H1 — “The competency model (RD 534/2024) is to blame.”</strong> <em>Explains 2025, not 2026.</em> The model was applied in all seventeen communities in both years. In 2025 the Física mean fell in 14 of 17, by <span class="math inline">\(-0.81\)</span> on average — Euskadi’s <span class="math inline">\(-0.62\)</span> was below the national move. In 2026 six of nine reporting communities rose under the same model — five by <span class="math inline">\(+0.5\)</span> to <span class="math inline">\(+1.13\)</span>, Andalucía by <span class="math inline">\(+0.17\)</span>; Euskadi fell <span class="math inline">\(-1.48\)</span>. A national cause cannot produce opposite signs in the same year. The Basque institutions’ July framing (“el nuevo enfoque competencial pasa factura”) is therefore at most a description of 2025. There is a further difficulty with it: the only systematic rating of PAU papers’ competency orientation, covering six communities over 2015–2025 <span class="citation" data-cites="sancheztarazaga2026pau">(<a href="#ref-sancheztarazaga2026pau" role="doc-biblioref">Sánchez-Tarazaga &amp; Gimeno Rovira, 2026</a>)</span>, places País Vasco and Cataluña at the <em>top</em> of the range before the reform, so the Basque papers did not “become competency-based” in 2025 — they were already the most competency-oriented in Spain, and Cataluña, rated alongside them, rose in 2026.</p>
-<p><strong>H2 — “The 2026 Basque Física paper was harder, or differently pitched, than its own 2025 paper and than other communities’ 2026 papers.”</strong> <em>Consistent with everything.</em> The cohort-wide displacement of the distribution (<a href="../chapters/04-distributions.html">Chapter 4</a>), the confinement of the damage to Física and Matemáticas II with Química, Biología and Lengua unaffected (<a href="../chapters/05-subjects-sittings.html">Chapter 5</a>), the Catalan mirror image (Física up, Matemàtiques down, same authority, same cohort) and the Canarian coordinators’ own reading of their milder 2025 all point to the paper — its problems, its optionality (two of four problems with no choice in 2026), its marking scheme — as the first-order variable. The July package already noted that the 2026 ordinary paper’s gravitational problem contains a validity issue in its energy comparison. A structured content audit of the 2025 and 2026 papers of the nine communities with a 2026 result was carried out on 19 September and is reported in <a href="../chapters/11-exam-content.html">The papers themselves</a>: five of the six rising communities did not increase the competency content of their paper (they stayed at zero or fell); the sixth, Castilla-La Mancha, added one obligatory contextualised item and rose <span class="math inline">\(+0.94\)</span>, while the Basque paper moved from one competency exercise to half the marks, halved its optionality and changed format at the same time — it is the only paper in the set that changed genre between the two years. The comparison with the 2010–2024 Basque papers is in <a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a>: the 2025 break (no theory questions, new structure, first numerical penalties) was absorbed better than the national average; the 2026 step (competencial half, choice halved, −0.1 list and symbolic-first, syllabus opened) is the one the grades react to. An item-level analysis of the 2026 scripts is the natural continuation.</p>
+<p><strong>H1a — “The competency model (RD 534/2024), as a national frame, is to blame.”</strong> <em>Explains 2025, not 2026.</em> The model was applied in all seventeen communities in both years. In 2025 the Física mean fell in 14 of 17, by <span class="math inline">\(-0.81\)</span> on average — Euskadi’s <span class="math inline">\(-0.62\)</span> was below the national move. In 2026 six of nine reporting communities rose under the same model — five by <span class="math inline">\(+0.5\)</span> to <span class="math inline">\(+1.13\)</span>, Andalucía by <span class="math inline">\(+0.17\)</span>; Euskadi fell <span class="math inline">\(-1.48\)</span>. A national cause cannot produce opposite signs in the same year. The Basque institutions’ July framing (“el nuevo enfoque competencial pasa factura”) is therefore at most a description of 2025. There is a further difficulty with it: the only systematic rating of PAU papers’ competency orientation, covering six communities over 2015–2025 <span class="citation" data-cites="sancheztarazaga2026pau">(<a href="#ref-sancheztarazaga2026pau" role="doc-biblioref">Sánchez-Tarazaga &amp; Gimeno Rovira, 2026</a>)</span>, places País Vasco and Cataluña at the <em>top</em> of the range before the reform, so the Basque papers did not “become competency-based” in 2025 — they were already the most competency-oriented in Spain, and Cataluña, rated alongside them, rose in 2026.</p>
+<p><strong>H1b — “It is not the model; it is this conversion, at this speed.”</strong> <em>First-order candidate, and the strongest surviving explanation of 2026.</em> The wording matters and has been corrected: an earlier form of this hypothesis named the competency model as implemented here, which invites the reading that competency examining depresses marks. The Catalan archive refutes that reading. Cataluña has set papers with real settings and explicit justification demands in every year from 2020 — five before the decree — and did not collapse; in 2026 it halved its competency-coded marks and its position against the field did not move (<a href="../chapters/11-exam-content.html#catalunya-history">The papers themselves</a>). What is specific here is therefore not the destination but the route: 0 to 25 to 62.5 per cent of the marks in two sittings, with optionality halved, the syllabus reopened and a new marking regime in its second year, in a system with no prior experience of the style. H1a fails because the frame was national and the outcomes were not. That is an argument against the frame, not against the model: what a community did with the frame is a different variable, and it is one the papers themselves record. The content audit of the 2025 and 2026 papers of the nine reporting communities (<a href="../chapters/11-exam-content.html">The papers themselves</a>) yields a reform-intensity index from four axes that move independently — optionality withdrawn, competency marks, substantive context, contextualised marks. Euskadi scores <span class="math inline">\(+1.76\)</span> and is first of the nine; the next community, Castilla-La Mancha, is at <span class="math inline">\(+0.39\)</span>, and the other seven are at or below zero. Five of the six communities that rose in 2026 carry <strong>negative</strong> indices: Asturias <span class="math inline">\(-0.19\)</span>, Madrid <span class="math inline">\(-0.44\)</span>, Cataluña <span class="math inline">\(-0.72\)</span>, Comunitat Valenciana <span class="math inline">\(-0.71\)</span>, Andalucía <span class="math inline">\(-0.45\)</span>; the exception is Castilla-La Mancha at <span class="math inline">\(+0.39\)</span>, which added one obligatory contextualised item and rose <span class="math inline">\(+0.94\)</span>. That exception is not the counter-example it appears to be, because the two communities are at different stages: 2026 is Castilla-La Mancha’s <em>first</em> year of conversion, as 2025 was Euskadi’s, and both first years were harmless — <span class="math inline">\(+0.77\)</span> and <span class="math inline">\(+0.03\)</span> against the field respectively. The fall is a second-year event, and the comparison that would test it has not happened. It will in 2027: if the mechanism is the depth of conversion in the second year, Castilla-La Mancha should fall if it goes further and not if it stays at 20 %. Marking severity applied cautiously in year one and fully in year two predicts the same shape, which is the collinearity of <a href="#what-cannot-be-identified">the identification argument</a> rather than an escape from it. Across the nine, <span class="math inline">\(r = -0.70\)</span>, <span class="math inline">\(p = 0.035\)</span>. The reading this supports is narrower than a dose-response: drop Euskadi and the correlation falls to <span class="math inline">\(r = -0.40\)</span>, <span class="math inline">\(p = 0.33\)</span>, so the relation <em>is</em> Euskadi. Euskadi moved from one competency exercise to half the marks, halved its optionality and changed format at once — the only paper in the set that changed genre between the two years — and it is the only one that did. H1b therefore records one community implementing the frame completely and alone, which is exactly what makes it a candidate and exactly what stops the nine-community panel from testing it.</p>
+<p><strong>H1c — “Fifteen years of a predictable paper built a teaching equilibrium, and two courses were not enough to retune it.”</strong> <em>Plausible, unmeasured, not separable from H1b — and the candidate with the sharpest testable prediction.</em> The scale of what had accumulated is measurable. For fifteen years <strong>forty per cent of the marks came from a closed list of titles</strong>, and only <strong>22 distinct titles</strong> were ever set across 120 slots — a mean recurrence of 5.5, the commonest twelve times — while <strong>optionality stood at 100 %</strong>: every item could be declined. Fourteen of the fifteen modern-physics problems of that period were photoelectric, and fission and fusion existed only as theory titles, examinable as prose and never as a calculation, until carbon-14 dating and plutonium-239 decay appeared as problems in 2026 (<a href="../chapters/12-ehu-paper-history.html#inertia">Sixteen years of one paper</a>). A teacher optimising for results under that instrument would teach the twenty-two titles, drill the recurring templates and let the rest go — the correct response to the incentive, not a failure of one. The exam had been the curriculum, and the <em>de facto</em> narrowing is what the exam wrote: no text ever excluded mirrors, standing waves or nuclear decay; they were simply never set.</p>
+<p>The hypothesis is about <strong>practice, not information</strong>, and the distinction is load-bearing. The reopening was announced in 2024 and the two academic years 2024–25 and 2025–26 were designated transitional, so the schools knew and were given two courses; nothing here should be read as an information failure. What the announcement could not manufacture is worked-example banks, mock papers, a sequence for the year with room for the new material, and the teacher’s own fluency in setting and marking questions of a kind never previously set. Those accumulate, and fifteen years of them were tuned to an instrument that ceased to exist. In June 2026 the new sub-topics sat in <em>optional</em> slots — and the bound is far tighter than that phrasing suggests. The two slots that offered <strong>no optionality</strong> were set on sub-topics ranked 1st and 11th of 15 by frequency (circular orbits, set <strong>18 times</strong>; induction, 5), while the two never set before, standing waves and radioactive decay, both sat <strong>where a choice was offered</strong>, each beside an alternative set 10 and 14 times. A candidate could answer 1, 2, 3b and 4a — four sub-topics set <strong>47 times</strong> between them — and meet nothing new (<a href="../chapters/12-ehu-paper-history.html#inertia">Sixteen years of one paper</a>). <strong>The reopened syllabus was avoidable in June, and the mean fell 1.48 anyway</strong>, so meeting unfamiliar content is close to excluded for the ordinary sitting. The inertia therefore relocates into two channels the content version did not name: preparation spread thinner across a syllabus that had to be <em>covered</em> because nobody could know what would be <em>set</em>, leaving the old route less well drilled than in 2024; and familiar physics in an unfamiliar form, since slot 1 was the archive’s most-set sub-topic presented as a headline to be read, judged and explained.</p>
+<p>It is also the hypothesis Cataluña does not have available to it: that community has set all-problems papers with real settings and explicit justification demands since at least 2020, with optionality near a half and no closed theory list, so there was no equilibrium to unlearn when the decree arrived (<a href="../chapters/11-exam-content.html#catalunya-history">The papers themselves</a>). Two systems entered the same reform carrying different amounts of accumulated practice, and what differed was not notice but practice.</p>
+<p>No published aggregate separates H1c from H1b — both are properties of one paper in one year and both displace the whole distribution. But unlike its rivals H1c now predicts something testable inside the June paper itself. Slot 4 offered the photoelectric effect (set 14 times) against C-14 dating (never set). Two quantities settle it: how many candidates took 4a, and how they scored on it. <strong>If candidates overwhelmingly took the familiar option and still scored worse on it than their 2024 and 2025 counterparts, content novelty is excluded by the paper’s own internal evidence</strong>, and preparation, genre and marking must carry the fall between them. That is the smallest measurement identified anywhere in this study, and it bears on the largest question.</p>
+<p><strong>H2 — “The 2026 Basque Física paper was harder, or differently pitched, than its own 2025 paper and than other communities’ 2026 papers.”</strong> <em>Consistent with everything.</em> The cohort-wide displacement of the distribution (<a href="../chapters/04-distributions.html">Chapter 4</a>), the confinement of the damage to Física and Matemáticas II with Química, Biología and Lengua unaffected (<a href="../chapters/05-subjects-sittings.html">Chapter 5</a>), the Catalan mirror image (Física up, Matemàtiques down, same authority, same cohort) and the Canarian coordinators’ own reading of their milder 2025 all point to the paper — its problems, its optionality (two of four problems with no choice in 2026), its marking scheme — as the first-order variable. The July package already noted that the 2026 ordinary paper’s gravitational problem contains a validity issue in its energy comparison. What belongs to H2 rather than to H1b is what is genuinely <em>format</em>: length, optionality and genre. Reading load rose <span class="math inline">\(+45\)</span> % to about 1 430 words of statement; choice was halved, two of four problems carrying none, which simulation values at <span class="math inline">\(-0.26\)</span>; and the paper changed genre. The competency conversion that accompanied them is H1b, and the two are separable as descriptions but not in the data. The comparison with the 2010–2024 Basque papers is in <a href="../chapters/12-ehu-paper-history.html">Sixteen years of one paper</a>: the 2025 break (no theory questions, new structure, first numerical penalties) was absorbed better than the national average; the 2026 step (competencial half, choice halved, −0.1 list and symbolic-first, syllabus opened) is the one the grades react to. An item-level analysis of the 2026 scripts is the natural continuation.</p>
 <p><strong>H3 — “Tribunals marked more severely.”</strong> <em>Possible, unmeasured, and acknowledged by EHU.</em> The rector’s press conference reported “significant variation between evaluation panels” in Física among other subjects <span class="citation" data-cites="argia2026ehu">(<a href="#ref-argia2026ehu" role="doc-biblioref">Argia, 2026</a>)</span>, and the 6 July deck published tribunal-mean ranges for Euskara (2.88–4.43), Lengua (5.80–6.92) and Inglés (6.65–7.56) but not for Física. Rater-severity effects of the size needed to move a subject mean by more than a point are not unknown in Spanish PAU marking <span class="citation" data-cites="veas2025consistency">(<a href="#ref-veas2025consistency" role="doc-biblioref">Veas &amp; López-Pina, 2025</a>)</span>, but the cohort-wide shape of the 2026 distribution says severity, if present, was general rather than confined to a few panels. Only the tribunal-level Física table settles this.</p>
 <p><strong>H4 — “The cohort was weaker or differently composed.”</strong> <em>Weak inside the PAU data, stronger outside it. The recruitment version fails outright (<a href="#is-the-drift-real">below</a>) and the PAU shows no drift; but an externally marked instrument shows Basque science falling from +9 points above Spain to −5 over the decade, breaking in 2015 (<a href="#an-instrument-the-basque-tribunals-do-not-mark">below</a>).</em> Presentation fell 5.6 % from 2025 and enrolment is unpublished, so a small compositional component cannot be excluded, but the school marks of the preceding cohort were 7.09 with 98 % passing, and the same students’ Química and Biología marks did not move. A weaker cohort does not fail Física and Matemáticas by 1.5 points while holding Química. The same test can be run against Euskadi’s own pre-COVID baselines: relative to 2015–2019, Basque Matemáticas II, Química and Biología sat <span class="math inline">\(+0.1\)</span> to <span class="math inline">\(+1.6\)</span> above baseline through 2021–2024 and <span class="math inline">\(+0.27\)</span>, <span class="math inline">\(-0.01\)</span> and <span class="math inline">\(+0.31\)</span> in 2025, while Física was <span class="math inline">\(-0.39\)</span> in 2025 — the only Basque science subject clearly below its norm a year before the 2026 event and the year after the 2024 shape step (Química sits on it at <span class="math inline">\(-0.01\)</span>; on a pooled-phase baseline Química is <span class="math inline">\(-0.18\)</span> and the contrast is weaker, which is why the convention is stated here) (<code>data/audit/basque_subjects_vs_baseline.csv</code>). Whatever PISA sees in the Basque science base, the Basque PAU sees it in Física only, and only from 2025.</p>
 <section id="is-the-drift-real" class="level3">
@@ -803,7 +820,7 @@ Figure&nbsp;3: <strong>a</strong> — the PAU Física mean and the PISA science 
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Disclosure
+Disclosure
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -878,9 +895,124 @@ Figure&nbsp;5: <strong>a</strong> — the Euskadi Física series with two scenar
 </table>
 <p>The two scenarios differ by 1.3 marks, most of the size of the 2026 event; the cohort contributes a third of a mark or less to either. That is the finding, and it is not the one the question was hoping for. <strong>PAU 2027 is not something PISA predicts. It is something the 2027 paper and its marking scheme decide</strong>, with the cohort supplying a slow downward nudge three and a half to seven times smaller than the choice. A forecast whose interval spans 2.7 to 7.5 is not a forecast; it is a restatement that the exam is the dominant variable.</p>
 <p>Two things follow that are worth acting on rather than reading. The cohort term, small as it is, points the same way as every other measure in this section, so the sensible default for 2027 is that the intake will be slightly weaker than 2025’s and considerably weaker than the decade’s average — which argues for the paper being set with that in mind rather than against a remembered cohort. And the honest use of PISA 2025 here is not prediction but <em>attribution after the fact</em>: when the 2027 result arrives, the <span class="math inline">\(-0.36\)</span> is the part that should not be blamed on the paper, and everything beyond it is the part that should be explained.</p>
-<p><strong>H5 — “Students under-prepare Física because the weighting rules make it dispensable.”</strong> <em>Plausible as a slow driver, not as a 2026 trigger.</em> This is the Canarian coordinators’ hypothesis for their own decline (few degrees need a high Física mark; Matemáticas II carries the weighting; Física is examined last on a long day). It fits the ten-year erosion of the top decile better than a one-year fall of 1.5 points, and it is the hypothesis most directly addressable by the Basque ponderación table and the exam timetable for 2027.</p>
+<p><strong>H5 — “Física is sat last, and the admission arithmetic makes the last slot dispensable for the candidates most able to abandon it.”</strong> <em>Not a 2026 trigger; the first candidate mechanism the 2024 shape change has ever had, and the only hypothesis in this list that predicts a band signature rather than a level.</em> This began as the Canarian coordinators’ account of their own decline — few degrees require a high Física mark, Matemáticas II carries the weighting, Física is examined last on a long day — and in that form it was filed as slow background. Restated in terms of the admission arithmetic it is sharper, and it makes a prediction the other hypotheses do not. The full treatment, including the test that fails and the test that does not, is in <a href="#last-slot">the section below</a>. In summary: the within-sequence position test is <strong>contradicted</strong> by the 2026 subject changes, so fatigue in its simple form is excluded as a cause of the <span class="math inline">\(-1.48\)</span>; what survives is fatigue as a <em>multiplier</em> on reading load, and an effort-allocation mechanism whose predicted signature — losses concentrated at the top, pass rate held or improved, mean almost still — is the 2024 signature exactly.</p>
 <p><strong>H6 — “Language or network bias.”</strong> <em>No evidence either way for Física.</em> The 2010–2022 series shows euskera/castellano differences of a few tenths in both directions and no sign that either network fails Física differentially; EHU’s 2026 bias analysis was run for Euskara II. Nothing published for Física 2026 speaks to this.</p>
-<p>The ranking that emerges is H2 first, H3 unresolved and testable, H5 as background, H1 as a national 2025 coincidence that cannot be separated from the end of the COVID-era plateau and says nothing about 2026, H4 unsupported as a Basque-specific cohort effect in the PAU (though the PISA level decline is real), and H6 unsupported.</p>
+<p>The ranking that emerges is <strong>H1b and H2 together at the front</strong>, not separable from one another on published aggregates because they are two descriptions of the same paper; H1c plausible behind them and equally unseparable; H3 unresolved and testable; H5 no longer background but the leading candidate for 2024 specifically, and separable from the rest because it predicts a shape and they predict a level; H1a a national 2025 coincidence that cannot be separated from the end of the COVID-era plateau and says nothing about 2026; H4 unsupported as a Basque-specific cohort effect in the PAU (though the PISA level decline is real); and H6 unsupported. The change from an earlier version of this ranking is H1b: splitting the competency hypothesis into the national frame and the Basque implementation moves half of it from the back of the list to the front, because the objection that sank it — everyone had the model — applies only to the frame.</p>
+</section>
+<section id="last-slot" class="level3">
+<h3 class="anchored" data-anchor-id="last-slot">Fatigue, and the arithmetic of the last slot</h3>
+<p>Two mechanisms are usually named together and are not the same thing. Both start from the same fact — Física is the fourth of the four quantitative papers, sat after Química, Matemáticas II and Biología — and they part company immediately.</p>
+<section id="the-position-test-which-fails" class="level4">
+<h4 class="anchored" data-anchor-id="the-position-test-which-fails">The position test, which fails</h4>
+<p>If position in the sequence produced the 2026 fall, the damage should increase along the sequence. The eight Basque subject changes say otherwise:</p>
+<div id="tbl-sequence" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[18,42,40]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: The within-sequence ordering the fatigue hypothesis predicts, against the observed changes.
+</figcaption>
+<div aria-describedby="tbl-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 42%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>order sat</th>
+<th>subject</th>
+<th><span class="math inline">\(\Delta\)</span> 2025 <span class="math inline">\(\to\)</span> 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Química</td>
+<td><span class="math inline">\(-0.21\)</span></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Matemáticas II</td>
+<td><span class="math inline">\(-1.67\)</span></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Biología</td>
+<td><span class="math inline">\(+0.15\)</span></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Física</strong></td>
+<td><span class="math inline">\(-1.48\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The ordering is not monotone and is not close to it. The largest fall is in the subject sat <em>second</em>; the subject sat <em>third</em> rose; Física is second-worst, not worst. This is the only within-cohort, within-year test of the position hypothesis available, the four subjects were sat by overlapping populations in the same week under the same conditions, and it comes out against.</p>
+</section>
+<section id="why-it-fails-fatigue-is-a-level-effect" class="level4">
+<h4 class="anchored" data-anchor-id="why-it-fails-fatigue-is-a-level-effect">Why it fails: fatigue is a level effect</h4>
+<p>The deeper reason is structural rather than empirical. Física has been the last quantitative paper for years. Whatever fatigue costs a candidate, it cost the same in 2025 as in 2026, and it differences out of the <span class="math inline">\(-1.48\)</span> exactly as a national shock differences out of the field comparison in <a href="#what-the-decay-is-made-of">the decomposition</a>. Fatigue is in the <em>level</em> of the Física mean relative to its neighbours — a real quantity, and one that bears on the 2027 design discussion — but a constant cannot produce a change.</p>
+<p>There is one fact that would convert it into a change effect, and it is cheap to obtain: the 2025 and 2026 calendars, side by side. Day, slot, number of papers between Química and Física, and the gap between days are all published by the coordination for both years. If the slot moved, fatigue enters <a href="#the-mark-budget">the mark budget</a> with a line of its own; if it did not, it belongs in the design chapter and nowhere else. Neither sentence should be written before the two calendars have been compared, and this dossier holds neither.</p>
+</section>
+<section id="what-survives-fatigue-as-a-multiplier" class="level4">
+<h4 class="anchored" data-anchor-id="what-survives-fatigue-as-a-multiplier">What survives: fatigue as a multiplier</h4>
+<p>Fatigue does not act alone. It multiplies whatever the paper asks, and what the 2026 paper asked changed sharply: statement length rose 45 per cent, to about 1 430 words (<a href="#exposure-and-the-third-channel">the reading load</a>). A given increase in reading costs more in the fourth slot of the week than the same increase would cost in the first, because reading stamina is precisely what has been depleted. That is an interaction term, fatigue <span class="math inline">\(\times\)</span> load, and it requires no timetable change to be true. Its consequence is for 2027 rather than for the attribution of 2026: <strong>the statement budget is worth more than its face value, because the words it removes are the most expensive words in the week.</strong></p>
+</section>
+<section id="effort-allocation-and-why-the-return-on-física-is-a-step-function" class="level4">
+<h4 class="anchored" data-anchor-id="effort-allocation-and-why-the-return-on-física-is-a-step-function">Effort allocation, and why the return on Física is a step function</h4>
+<p>The second mechanism is not about tiredness. A candidate who sits Física only to raise the weighted admission mark, and who has already performed well in the papers sat earlier in the week, faces a return on further effort that is not merely diminishing. Under the admission arithmetic the <em>best two</em> weighted subjects of the fase de admisión enter the score. A candidate whose best two are already settled before Física gets, from anything Física can add, <strong>exactly zero</strong>. The function is a step, not a slope, and it is evaluated last, when the candidate has enough information to know approximately which side of it they are on.</p>
+<p>This is what makes the hypothesis testable, because it says <em>who</em> stops. Not the weak candidate: the weak candidate needs every mark and cannot afford to coast. The candidate who can afford to stop is the strong one. The mechanism therefore predicts losses concentrated in the top band, a pass rate held or improved, and a mean that barely moves.</p>
+<p>That is the 2024 signature, term for term:</p>
+<div id="tbl-2024-signature" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-2024-signature-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: The 2024 Basque Física distribution against what its own change of level predicts. Source: <a href="#a-basque-signal-that-arrives-a-year-early">the 2024 turn</a>.
+</figcaption>
+<div aria-describedby="tbl-2024-signature-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>observed</th>
+<th>expected from the mean move</th>
+<th>excess</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8–10 band</td>
+<td><span class="math inline">\(-9.0\)</span> pp</td>
+<td><span class="math inline">\(-3.1\)</span></td>
+<td><span class="math inline">\(\mathbf{-5.9}\)</span></td>
+</tr>
+<tr class="even">
+<td>pass rate</td>
+<td><span class="math inline">\(+2.3\)</span> pp</td>
+<td><span class="math inline">\(-2.8\)</span></td>
+<td><span class="math inline">\(\mathbf{+5.0}\)</span></td>
+</tr>
+<tr class="odd">
+<td>mean</td>
+<td><span class="math inline">\(-0.21\)</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Fewer at the top, more just above the line, the level almost still — on a paper of the old format, with the old choice rule and the old theory list, in which <em>nothing in the instrument moved</em>. 2024 is the one event in this study that has carried no mechanism at all. This is the first candidate it has had.</p>
+<p>It is not yet an explanation, and the reason is the same one that disposed of simple fatigue. Effort allocation is also a level effect unless the incentive changed. To attach it to 2024 something must have moved in 2024 — cut-offs rising in the degrees that weight Física, a change in which subjects weight and by how much, or cohort growth tightening the competition. All three are public and none has been checked here.</p>
+</section>
+<section id="what-the-simulation-would-be-and-what-it-would-yield" class="level4">
+<h4 class="anchored" data-anchor-id="what-the-simulation-would-be-and-what-it-would-yield">What the simulation would be, and what it would yield</h4>
+<p>The calculation is well posed. It needs the UPV/EHU ponderación table (which degrees weight Física at 0.2, at 0.1, at 0), the cut-off marks for those degrees, and a joint distribution of candidates’ marks in the other subjects, which the published subject distributions supply.</p>
+<p>What it yields is <strong>a bound, not a measurement</strong>: the fraction of candidates whose best two weighted marks are already settled before Física is sat, and for whom the paper’s marginal contribution to the admission score is therefore zero. That fraction is the largest the effect can possibly be. If it is three per cent of the cohort the hypothesis is finished; if it is a quarter of the top band it accounts for 2024 unaided. The bound is obtainable from published tables and is honest in a way that any statement about what candidates actually did would not be, because no published aggregate records effort.</p>
+</section>
 </section>
 </section>
 <section id="was-2026-a-shift-or-a-change-of-shape" class="level2">
@@ -976,7 +1108,7 @@ Figure&nbsp;8: <strong>a</strong> — the conditional top-band share <span class
 </tbody>
 </table>
 <p>Rows one and three are the uncomfortable pair — and row three hides a dispersion that is the real 2026 story: against their own pre-COVID baselines, Madrid (<span class="math inline">\(+1.02\)</span>), Castilla-La Mancha (<span class="math inline">\(+0.86\)</span>), Cataluña (<span class="math inline">\(+0.63\)</span>), Andalucía and Asturias (<span class="math inline">\(+0.48\)</span>) and Valencia (<span class="math inline">\(+0.34\)</span>) sit above their norm in 2026, Extremadura (<span class="math inline">\(-0.78\)</span>), Canarias (<span class="math inline">\(-0.86\)</span>) and País Vasco (<span class="math inline">\(-1.91\)</span>) below it (<code>data/audit/baseline_2026_by_community.csv</code>). “Spain is where it was” is an average of communities a point apart in both directions. Both are true of the same nine communities and the same ministry series, and they are not reconcilable as statements of fact about “what happened to Physics in Spain”: one says the subject collapsed, the other that it is exactly where it was in 2015–2019, <span class="math inline">\(+0.02\)</span> away after eleven years. The contradiction is entirely in the choice of reference year, and the year-on-year framing is the one that misleads, because 2024 was not a normal year to measure from.</p>
-<p>This weakens <strong>H1</strong> further than <a href="#the-hypotheses-one-by-one">the hypothesis review above</a> already did, though not as far as an earlier version of this section claimed. That section could say only that the competency model explains 2025 and not 2026. Measured from the pre-COVID baseline, the 2025 sitting did not fall below the historical norm, it returned to it — in every subject at once. A model introduced in 2025 that leaves the national Física mean 0.15 below where it sat in 2015–2019 is not doing anything visible to the <em>level</em>. What the frame cannot decide is why the plateau ended in 2025 rather than in 2023 or 2024: the withdrawal of a COVID-era regime and the first LOMLOE papers, with their new marking instructions in every subject, arrive in the same year, and nothing in the PAU series separates them. The honest form of H1 is therefore: the reform coincides with the end of a subject-general plateau and cannot be told apart from it; it does not explain the 2026 Basque result, which is the one this study is about.</p>
+<p>This weakens <strong>H1a</strong> further than <a href="#the-hypotheses-one-by-one">the hypothesis review above</a> already did, though not as far as an earlier version of this section claimed. That section could say only that the competency model explains 2025 and not 2026. Measured from the pre-COVID baseline, the 2025 sitting did not fall below the historical norm, it returned to it — in every subject at once. A model introduced in 2025 that leaves the national Física mean 0.15 below where it sat in 2015–2019 is not doing anything visible to the <em>level</em>. What the frame cannot decide is why the plateau ended in 2025 rather than in 2023 or 2024: the withdrawal of a COVID-era regime and the first LOMLOE papers, with their new marking instructions in every subject, arrive in the same year, and nothing in the PAU series separates them. The honest form of H1a is therefore: the reform, as a national frame, coincides with the end of a subject-general plateau and cannot be told apart from it; it does not explain the 2026 Basque result, which is the one this study is about. None of this touches H1b, which is about what one community did with the frame and not about the frame.</p>
 <p>It also makes the Basque case worse, not better. The headline everyone quoted is <span class="math inline">\(-1.48\)</span>, measured from 2025. Against Euskadi’s own pre-COVID baseline of 5.92 the 2026 fall is <span class="math inline">\(-1.93\)</span> — a third larger than the number in circulation — because 2025 was already 0.45 below that baseline. The Basque series did not fall once; it fell twice, and only the second fall was reported as news.</p>
 <p>None of this is a criticism of the sources. The Ministry publishes years, the universities publish years, and a year-on-year change is the only comparison most readers can make from what is published. But it means the honest form of every claim in this report carries its reference point on its face, and that the three sentences most likely to be quoted from this study — “the 2025 fall was national”, “the 2026 fall is regional”, “Euskadi fell 1.48” — are each true only in the frame that produced them.</p>
 <section id="why-a-field" class="level3">
@@ -986,7 +1118,7 @@ Figure&nbsp;8: <strong>a</strong> — the conditional top-band share <span class
 <div id="tbl-threeframes" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[30,48,22]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-threeframes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: The same Basque 2026 result in three frames. The middle row takes the Basque pre-COVID norm as 5.900, the convention used by the mark budget so that Euskadi and the field are computed on the same series; the specific-phase convention of 5.922 used in the frames section above gives <span class="math inline">\(-1.93\)</span>, and EHU’s own published series <span class="math inline">\(-1.92\)</span>.
+Table&nbsp;3: The same Basque 2026 result in three frames. The middle row takes the Basque pre-COVID norm as 5.900, the convention used by the mark budget so that Euskadi and the field are computed on the same series; the specific-phase convention of 5.922 used in the frames section above gives <span class="math inline">\(-1.93\)</span>, and EHU’s own published series <span class="math inline">\(-1.92\)</span>.
 </figcaption>
 <div aria-describedby="tbl-threeframes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1076,7 +1208,7 @@ Figure&nbsp;10: <strong>a</strong> — every year-to-year transition in the pane
 <div id="tbl-steps" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-steps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Each Basque transition 2016–2025: the change in the mean, the change in each published band quantity, what the level alone predicts for it through the locus fitted on all 187 region-years, and the excess. A year in which both excesses are small moved along the locus; a year in which they are large moved off it. File: <code>data/analysis/decomposition_steps.csv</code>.
+Table&nbsp;4: Each Basque transition 2016–2025: the change in the mean, the change in each published band quantity, what the level alone predicts for it through the locus fitted on all 187 region-years, and the excess. A year in which both excesses are small moved along the locus; a year in which they are large moved off it. File: <code>data/analysis/decomposition_steps.csv</code>.
 </figcaption>
 <div aria-describedby="tbl-steps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1231,7 +1363,7 @@ Table&nbsp;2: Each Basque transition 2016–2025: the change in the mean, the ch
 <div id="tbl-budget" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: The Basque change each year split into the part shared with the nine communities that have published a 2026 result — the same nine in every year, so the comparison population never changes — and the remainder. Pooled phase. File: <code>data/analysis/decomposition_budget.csv</code>.
+Table&nbsp;5: The Basque change each year split into the part shared with the nine communities that have published a 2026 result — the same nine in every year, so the comparison population never changes — and the remainder. Pooled phase. File: <code>data/analysis/decomposition_budget.csv</code>.
 </figcaption>
 <div aria-describedby="tbl-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1338,7 +1470,7 @@ Table&nbsp;3: The Basque change each year split into the part shared with the ni
 <div id="tbl-subjdecomp" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-subjdecomp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4: The balanced five-by-three panel behind the split. File: <code>data/analysis/subject_decomposition_panel.csv</code>.
+Table&nbsp;6: The balanced five-by-three panel behind the split. File: <code>data/analysis/subject_decomposition_panel.csv</code>.
 </figcaption>
 <div aria-describedby="tbl-subjdecomp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1438,7 +1570,7 @@ Figure&nbsp;11: <strong>a</strong> — the eight Basque subjects, with the three
 <div id="tbl-severity" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-severity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;5: The 2026 Basque subject changes, grouped by which marking rules can reach them. File: <code>data/analysis/subject_decomposition.json</code>.
+Table&nbsp;7: The 2026 Basque subject changes, grouped by which marking rules can reach them. File: <code>data/analysis/subject_decomposition.json</code>.
 </figcaption>
 <div aria-describedby="tbl-severity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1568,7 +1700,7 @@ Figure&nbsp;12: <strong>a</strong> — the deduction channel alone, with and wit
 <div id="tbl-penalty" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penalty-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6: The published 2025 distribution under the deduction channel alone. File: <code>data/analysis/penalty_regime.json</code>.
+Table&nbsp;8: The published 2025 distribution under the deduction channel alone. File: <code>data/analysis/penalty_regime.json</code>.
 </figcaption>
 <div aria-describedby="tbl-penalty-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1697,7 +1829,7 @@ Table&nbsp;6: The published 2025 distribution under the deduction channel alone.
 <div id="tbl-penalty-inv" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penalty-inv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;7: The deduction channel carrying each quantity by itself. File: <code>data/analysis/penalty_regime.json</code>.
+Table&nbsp;9: The deduction channel carrying each quantity by itself. File: <code>data/analysis/penalty_regime.json</code>.
 </figcaption>
 <div aria-describedby="tbl-penalty-inv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1768,7 +1900,7 @@ Figure&nbsp;13: <strong>a</strong> — five ways of spreading the same average o
 <div id="tbl-penalty-shape" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penalty-shape-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;8: Twelve deductions per script in every row; only the spread differs. File: <code>data/analysis/penalty_shape.json</code>.
+Table&nbsp;10: Twelve deductions per script in every row; only the spread differs. File: <code>data/analysis/penalty_shape.json</code>.
 </figcaption>
 <div aria-describedby="tbl-penalty-shape-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1868,7 +2000,7 @@ Table&nbsp;8: Twelve deductions per script in every row; only the spread differs
 <div id="tbl-penalty-budget" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penalty-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;9: The same twelve deductions as a budget, against the observed fall and against the Física-specific part of it. File: <code>data/analysis/penalty_shape.json</code>.
+Table&nbsp;11: The same twelve deductions as a budget, against the observed fall and against the Física-specific part of it. File: <code>data/analysis/penalty_shape.json</code>.
 </figcaption>
 <div aria-describedby="tbl-penalty-budget-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1968,7 +2100,7 @@ Table&nbsp;9: The same twelve deductions as a budget, against the observed fall 
 <div id="tbl-penalty-topband" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penalty-topband-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;10: Each shape refitted against the four published figures; the top band is neither fitted nor published. File: <code>data/analysis/penalty_shape.json</code>.
+Table&nbsp;12: Each shape refitted against the four published figures; the top band is neither fitted nor published. File: <code>data/analysis/penalty_shape.json</code>.
 </figcaption>
 <div aria-describedby="tbl-penalty-topband-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2121,7 +2253,7 @@ Figure&nbsp;14: <strong>a</strong> — what each of the four papers a candidate 
 <div id="tbl-exposure-coding" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exposure-coding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;11: The four papers a candidate can sit, coded from the corrector’s document. File: <code>data/analysis/marking_exposure.json</code>.
+Table&nbsp;13: The four papers a candidate can sit, coded from the corrector’s document. File: <code>data/analysis/marking_exposure.json</code>.
 </figcaption>
 <div aria-describedby="tbl-exposure-coding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2192,7 +2324,7 @@ Table&nbsp;11: The four papers a candidate can sit, coded from the corrector’s
 <div id="tbl-exposure-effect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exposure-effect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;12: What restricting the deductions to the sub-items that can receive one costs. File: <code>data/analysis/marking_exposure.json</code>.
+Table&nbsp;14: What restricting the deductions to the sub-items that can receive one costs. File: <code>data/analysis/marking_exposure.json</code>.
 </figcaption>
 <div aria-describedby="tbl-exposure-effect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2273,7 +2405,7 @@ Table&nbsp;12: What restricting the deductions to the sub-items that can receive
 <div id="tbl-language" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-language-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;13: The linguistic channel, with its cap. File: <code>data/analysis/marking_exposure.json</code>.
+Table&nbsp;15: The linguistic channel, with its cap. File: <code>data/analysis/marking_exposure.json</code>.
 </figcaption>
 <div aria-describedby="tbl-language-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2385,7 +2517,7 @@ Table&nbsp;13: The linguistic channel, with its cap. File: <code>data/analysis/m
 <div id="tbl-statement-structure" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-statement-structure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14: The printed statements of both papers, split by what the words do. File: <code>data/analysis/marking_exposure.json</code>.
+Table&nbsp;16: The printed statements of both papers, split by what the words do. File: <code>data/analysis/marking_exposure.json</code>.
 </figcaption>
 <div aria-describedby="tbl-statement-structure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2469,7 +2601,7 @@ Figure&nbsp;15: <strong>a</strong> — the change in PISA science per cohort-yea
 <div id="tbl-cohortsteps" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cohortsteps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;15: PISA science per cohort-year, and what one cohort-year of the Basque excess over Spain is worth on the PAU scale. File: <code>data/analysis/cohort_rate.json</code>.
+Table&nbsp;17: PISA science per cohort-year, and what one cohort-year of the Basque excess over Spain is worth on the PAU scale. File: <code>data/analysis/cohort_rate.json</code>.
 </figcaption>
 <div aria-describedby="tbl-cohortsteps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2561,7 +2693,7 @@ Table&nbsp;15: PISA science per cohort-year, and what one cohort-year of the Bas
 <div id="tbl-cohortident" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cohortident-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;16: What each term of the cohort model is, and whether PISA and the PAU together can separate it.
+Table&nbsp;18: What each term of the cohort model is, and whether PISA and the PAU together can separate it.
 </figcaption>
 <div aria-describedby="tbl-cohortident-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2630,7 +2762,7 @@ Table&nbsp;16: What each term of the cohort model is, and whether PISA and the P
 <div id="tbl-components" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;17: Components of the 2025 → 2026 Basque change, with the status of each and the measurement that would separate it from the others. File: <code>data/analysis/decomposition_components.csv</code>.
+Table&nbsp;19: Components of the 2025 → 2026 Basque change, with the status of each and the measurement that would separate it from the others. File: <code>data/analysis/decomposition_components.csv</code>.
 </figcaption>
 <div aria-describedby="tbl-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2731,7 +2863,7 @@ Table&nbsp;17: Components of the 2025 → 2026 Basque change, with the status of
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>A conflict of interest, stated
+A conflict of interest, stated
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2753,7 +2885,7 @@ Figure&nbsp;16: <strong>a</strong> — each item’s statement, 2025 and 2026, a
 <div id="tbl-budget-paper" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-budget-paper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;18: The two Basque papers measured statement by statement. File: <code>data/analysis/statement_budget.csv</code>.
+Table&nbsp;20: The two Basque papers measured statement by statement. File: <code>data/analysis/statement_budget.csv</code>.
 </figcaption>
 <div aria-describedby="tbl-budget-paper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2826,7 +2958,7 @@ Table&nbsp;18: The two Basque papers measured statement by statement. File: <cod
 <div id="tbl-budget-traj" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[34,22,22,22]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-budget-traj-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;19: The cost of a competency item over its first years, in statement words [<code>data/analysis/statement_budget.csv</code>].
+Table&nbsp;21: The cost of a competency item over its first years, in statement words [<code>data/analysis/statement_budget.csv</code>].
 </figcaption>
 <div aria-describedby="tbl-budget-traj-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2867,7 +2999,7 @@ Table&nbsp;19: The cost of a competency item over its first years, in statement 
 <div id="tbl-budget-tiers" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[30,24,24,22]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-budget-tiers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;20: Two tiers against one band.
+Table&nbsp;22: Two tiers against one band.
 </figcaption>
 <div aria-describedby="tbl-budget-tiers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -2979,7 +3111,7 @@ Table&nbsp;20: Two tiers against one band.
 </section>
 <section id="what-to-ask-for-and-what-each-request-would-separate" class="level2">
 <h2 class="anchored" data-anchor-id="what-to-ask-for-and-what-each-request-would-separate">What to ask for, and what each request would separate</h2>
-<p>The list below is ordered by how much of the unattributed <span class="math inline">\(-1.33\)</span> each item would resolve, not by how hard it is to obtain. Each request names the component of <a href="#tbl-components" class="quarto-xref">Table&nbsp;17</a> it identifies, so that a request that is refused can be traded against another rather than simply dropped. Items 3 and 8 came out of earlier rounds: the first out of taking the marking-severity hypothesis seriously enough to ask what would test it, the second out of asking what instrument could give a cohort rate that PISA cannot. Item 11 is new in this round, and it came out of a mistake — the dossier had been reading its own modelled top band as though it were published, and correcting that turned a supposed failure of the marking model into the sharpest single measurement on the list (<a href="#penalty-shape">the shape section</a>).</p>
+<p>The list below is ordered by how much of the unattributed <span class="math inline">\(-1.33\)</span> each item would resolve, not by how hard it is to obtain. Each request names the component of <a href="#tbl-components" class="quarto-xref">Table&nbsp;19</a> it identifies, so that a request that is refused can be traded against another rather than simply dropped. Items 3 and 8 came out of earlier rounds: the first out of taking the marking-severity hypothesis seriously enough to ask what would test it, the second out of asking what instrument could give a cohort rate that PISA cannot. Item 11 is new in this round, and it came out of a mistake — the dossier had been reading its own modelled top band as though it were published, and correcting that turned a supposed failure of the marking model into the sharpest single measurement on the list (<a href="#penalty-shape">the shape section</a>).</p>
 <ol type="1">
 <li><p><strong>Sub-task marks for a sample of 2026 scripts</strong> — mean and distribution of the marks awarded on each numbered sub-task of each exercise and option, on a stratified sample of, say, 300 scripts across tribunals. <em>Separates</em>: paper content, reading load, marking severity and syllabus exposure — all four of the unattributed components at once, because each leaves a different signature. Marks lost in the two obligatory competency exercises and not in the options point at content; marks lost in the explain-and-evaluate sub-tasks and not in the calculations point at genre; marks lost through accumulated <span class="math inline">\(-0.1\)</span> penalties and voided sections point at the marking scheme; marks lost only by the candidates who chose the newly examined options point at exposure. This is the single request that would turn three quarters of the fall from a bundle into a set of numbers, and it is what the Canarian subcommittee planned to do for its own 2026 paper. <strong>Run it first on B1, and run one comparison before any other</strong>: b)’s three sub-tasks against c)’s first, per mark. Both are the same three-step chain in a different configuration, so if the repetition worked as the scaffolding it was designed to be, c)1 should score above b)1–3; if it was a time tax on the longest statement in the paper, below. The two parts must not be compared whole, because half of c) is an evaluation sub-task with no analogue in b). Nothing else in the request is as cheap to compute or as directly actionable (<a href="#statement-budget">the statement section</a>).</p></li>
 <li><p><strong>Física by tribunal, 2025 and 2026</strong> — <span class="math inline">\(n_j\)</span>, <span class="math inline">\(\bar{x}_j\)</span>, <span class="math inline">\(s_j\)</span> and the school composition of each tribunal’s scripts. EHU computed this table and published the equivalent for three other subjects. <em>Separates</em>: tribunal severity from everything else, and shows whether the severity visible in 2026 was already building in 2025.</p></li>
@@ -3092,14 +3224,13 @@ Veas, A., &amp; López-Pina, J.-A. (2025). Consistency analysis of assessment bo
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -969,3 +969,83 @@ smallest request identified anywhere in this dossier and it bears on the largest
 question.
 
 **Figure:** `fig35_route_2026`, both sittings against sixteen years of precedent.
+
+---
+
+### R17 · The timetable, the admission arithmetic, and the competency path {#r17}
+
+**Remark (22 September).** Three items. (a) *"the timetable of the exam, in relation to
+the tiring of the students … being physics the last exam out of the four quantitative
+ones, chemistry, mathematics, biology and then physics … performance degrades from day to
+day; and in the same day, from slot to slot in time."* (b) *"if someone is taking the
+physics for rising the grade to enter to the Grade he/she wants, but having performed well
+in the others, relaxes, completely … some good data could be those related to possible
+combinations of the optional subjects for accessing the grades; those tables are public,
+and measure the ponderación rates."* (c) *"finally, the plot of the competential grade vs
+the decay in the mean."*
+
+**Status.** (a) tested and the simple form refuted; the surviving form written up as a
+design consequence rather than an attribution. (b) promoted from background to the leading
+candidate for the 2024 shape change, with the simulation specified as a bound. (c) built,
+wired into the dossier and into the paper.
+
+**Reasoning.**
+
+*The position test.* The four quantitative papers in the stated order give
+$-0.21$ (Química), $-1.67$ (Matemáticas II), $+0.15$ (Biología), $-1.48$ (Física). The
+ordering the mechanism requires is monotone and the observed one is not: the largest fall
+is sat second and the subject sat third rose. This is the only within-cohort, within-year
+test available and it comes out against.
+
+*Level versus change.* The structural objection is the more important one and generalises
+the field argument: Física has been last for years, so whatever fatigue costs is common to
+2025 and 2026 and differences out of the $-1.48$. Fatigue acts on the *level*. Converting
+it into a change effect requires the timetable itself to have changed, which the published
+2025 and 2026 calendars would settle and which this dossier does not hold. Neither
+sentence was written.
+
+*What survives.* Fatigue as a multiplier on reading load: a 45 % longer statement costs
+more in the fourth slot than the same increase would cost in the first. No timetable change
+is needed for this to be true, and its consequence is for the 2027 statement budget — the
+words removed are the most expensive words in the week — not for the attribution of 2026.
+
+*Effort allocation, restated structurally.* The coordinator's version ("relaxes,
+completely") is stronger than it sounds once the admission arithmetic is written down. The
+score takes the **best two** weighted subjects of the fase de admisión, so a candidate
+whose best two are settled before Física gets exactly zero from it: a step function, not a
+slope, evaluated last. That tells us *who* stops — not the weak candidate, who needs every
+mark, but the strong one — so the mechanism predicts losses concentrated at the top, the
+pass rate held or improved, and the mean almost still. That is the 2024 signature term for
+term (top band $-9.0$ pp against $-3.1$ expected; pass $+2.3$ against $-2.8$; mean
+$-0.21$), and 2024 is the one event in this study that has never carried a mechanism. It is
+recorded as a candidate and not as a finding, because an allocation rule is also a constant
+unless the incentive changed; what moved in 2024 (cut-offs, the weighting table, cohort
+size) is public and unchecked.
+
+*The simulation.* Specified as a **bound, not a measurement**: given the ponderación table,
+the cut-offs of the degrees that weight Física, and a joint distribution of candidates'
+other marks, compute the fraction whose best two are settled before Física is sat. That
+fraction is the largest the effect can be. Three per cent kills the hypothesis; a quarter
+of the top band explains 2024 unaided. No published aggregate records effort, so a bound is
+the most that is obtainable.
+
+**Implementation.**
+
+- `scripts/34_competency_path.py` → `fig36_competency_path`; paper name
+  `fig11_competency_path`; added to `ES_FIGURES` and `PAPER_NAMES`.
+- Chapter 11 gains *The route, not the destination* (`#competency-path`): the arrow figure
+  and the reading of the vertical spread at $x=0$ — six communities converted nothing and
+  span $-0.83$ to $+1.13$, a range of 1.96 marks, which bounds what the conversion variable
+  can be asked to carry.
+- Chapter 6: **H5 rewritten** from "weighting rules make it dispensable" to the last-slot
+  arithmetic, and moved in the ranking from background to the leading candidate for 2024
+  specifically, on the grounds that it is the only hypothesis predicting a *shape* where the
+  others predict a *level*. New section *Fatigue, and the arithmetic of the last slot*
+  (`#last-slot`) with the sequence table, the level/change argument, the multiplier, the
+  step function, the 2024 signature table and the simulation specification.
+- Chapter 17 (paper): `@fig-path` and its bound in §4.4; new Discussion §6.4 *Two mechanisms
+  located in the design of the examination week*; a Limitations paragraph stating that
+  neither mechanism enters the budget.
+
+**Open.** The 2025 and 2026 examination calendars, side by side. The UPV/EHU ponderación
+table and cut-offs. What changed in the admission incentive in 2024.

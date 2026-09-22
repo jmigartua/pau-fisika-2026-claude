@@ -162,11 +162,115 @@ The two scenarios differ by 1.3 marks, most of the size of the 2026 event; the c
 
 Two things follow that are worth acting on rather than reading. The cohort term, small as it is, points the same way as every other measure in this section, so the sensible default for 2027 is that the intake will be slightly weaker than 2025's and considerably weaker than the decade's average — which argues for the paper being set with that in mind rather than against a remembered cohort. And the honest use of PISA 2025 here is not prediction but *attribution after the fact*: when the 2027 result arrives, the $-0.36$ is the part that should not be blamed on the paper, and everything beyond it is the part that should be explained.
 
-**H5 — "Students under-prepare Física because the weighting rules make it dispensable."** *Plausible as a slow driver, not as a 2026 trigger.* This is the Canarian coordinators' hypothesis for their own decline (few degrees need a high Física mark; Matemáticas II carries the weighting; Física is examined last on a long day). It fits the ten-year erosion of the top decile better than a one-year fall of 1.5 points, and it is the hypothesis most directly addressable by the Basque ponderación table and the exam timetable for 2027.
+**H5 — "Física is sat last, and the admission arithmetic makes the last slot dispensable for the candidates most able to abandon it."** *Not a 2026 trigger; the first candidate mechanism the 2024 shape change has ever had, and the only hypothesis in this list that predicts a band signature rather than a level.* This began as the Canarian coordinators' account of their own decline — few degrees require a high Física mark, Matemáticas II carries the weighting, Física is examined last on a long day — and in that form it was filed as slow background. Restated in terms of the admission arithmetic it is sharper, and it makes a prediction the other hypotheses do not. The full treatment, including the test that fails and the test that does not, is in [the section below](#last-slot). In summary: the within-sequence position test is **contradicted** by the 2026 subject changes, so fatigue in its simple form is excluded as a cause of the $-1.48$; what survives is fatigue as a *multiplier* on reading load, and an effort-allocation mechanism whose predicted signature — losses concentrated at the top, pass rate held or improved, mean almost still — is the 2024 signature exactly.
 
 **H6 — "Language or network bias."** *No evidence either way for Física.* The 2010–2022 series shows euskera/castellano differences of a few tenths in both directions and no sign that either network fails Física differentially; EHU's 2026 bias analysis was run for Euskara II. Nothing published for Física 2026 speaks to this.
 
-The ranking that emerges is **H1b and H2 together at the front**, not separable from one another on published aggregates because they are two descriptions of the same paper; H1c plausible behind them and equally unseparable; H3 unresolved and testable; H5 as background; H1a a national 2025 coincidence that cannot be separated from the end of the COVID-era plateau and says nothing about 2026; H4 unsupported as a Basque-specific cohort effect in the PAU (though the PISA level decline is real); and H6 unsupported. The change from an earlier version of this ranking is H1b: splitting the competency hypothesis into the national frame and the Basque implementation moves half of it from the back of the list to the front, because the objection that sank it — everyone had the model — applies only to the frame.
+The ranking that emerges is **H1b and H2 together at the front**, not separable from one another on published aggregates because they are two descriptions of the same paper; H1c plausible behind them and equally unseparable; H3 unresolved and testable; H5 no longer background but the leading candidate for 2024 specifically, and separable from the rest because it predicts a shape and they predict a level; H1a a national 2025 coincidence that cannot be separated from the end of the COVID-era plateau and says nothing about 2026; H4 unsupported as a Basque-specific cohort effect in the PAU (though the PISA level decline is real); and H6 unsupported. The change from an earlier version of this ranking is H1b: splitting the competency hypothesis into the national frame and the Basque implementation moves half of it from the back of the list to the front, because the objection that sank it — everyone had the model — applies only to the frame.
+
+### Fatigue, and the arithmetic of the last slot {#last-slot}
+
+Two mechanisms are usually named together and are not the same thing. Both start from the
+same fact — Física is the fourth of the four quantitative papers, sat after Química,
+Matemáticas II and Biología — and they part company immediately.
+
+#### The position test, which fails
+
+If position in the sequence produced the 2026 fall, the damage should increase along the
+sequence. The eight Basque subject changes say otherwise:
+
+| order sat | subject | $\Delta$ 2025 $\to$ 2026 |
+|---|---|---|
+| 1 | Química | $-0.21$ |
+| 2 | Matemáticas II | $-1.67$ |
+| 3 | Biología | $+0.15$ |
+| 4 | **Física** | $-1.48$ |
+
+: The within-sequence ordering the fatigue hypothesis predicts, against the observed changes. {#tbl-sequence tbl-colwidths="[18,42,40]"}
+
+The ordering is not monotone and is not close to it. The largest fall is in the subject sat
+*second*; the subject sat *third* rose; Física is second-worst, not worst. This is the only
+within-cohort, within-year test of the position hypothesis available, the four subjects were
+sat by overlapping populations in the same week under the same conditions, and it comes out
+against.
+
+#### Why it fails: fatigue is a level effect
+
+The deeper reason is structural rather than empirical. Física has been the last quantitative
+paper for years. Whatever fatigue costs a candidate, it cost the same in 2025 as in 2026, and
+it differences out of the $-1.48$ exactly as a national shock differences out of the field
+comparison in [the decomposition](#what-the-decay-is-made-of). Fatigue is in the *level* of
+the Física mean relative to its neighbours — a real quantity, and one that bears on the 2027
+design discussion — but a constant cannot produce a change.
+
+There is one fact that would convert it into a change effect, and it is cheap to obtain: the
+2025 and 2026 calendars, side by side. Day, slot, number of papers between Química and
+Física, and the gap between days are all published by the coordination for both years. If the
+slot moved, fatigue enters [the mark budget](#the-mark-budget) with a line of its own; if it
+did not, it belongs in the design chapter and nowhere else. Neither sentence should be
+written before the two calendars have been compared, and this dossier holds neither.
+
+#### What survives: fatigue as a multiplier
+
+Fatigue does not act alone. It multiplies whatever the paper asks, and what the 2026 paper
+asked changed sharply: statement length rose 45 per cent, to about 1 430 words
+([the reading load](#exposure-and-the-third-channel)). A given increase in reading costs more
+in the fourth slot of the week than the same increase would cost in the first, because
+reading stamina is precisely what has been depleted. That is an interaction term, fatigue
+$\times$ load, and it requires no timetable change to be true. Its consequence is for 2027
+rather than for the attribution of 2026: **the statement budget is worth more than its face
+value, because the words it removes are the most expensive words in the week.**
+
+#### Effort allocation, and why the return on Física is a step function
+
+The second mechanism is not about tiredness. A candidate who sits Física only to raise the
+weighted admission mark, and who has already performed well in the papers sat earlier in the
+week, faces a return on further effort that is not merely diminishing. Under the admission
+arithmetic the *best two* weighted subjects of the fase de admisión enter the score. A
+candidate whose best two are already settled before Física gets, from anything Física can
+add, **exactly zero**. The function is a step, not a slope, and it is evaluated last, when
+the candidate has enough information to know approximately which side of it they are on.
+
+This is what makes the hypothesis testable, because it says *who* stops. Not the weak
+candidate: the weak candidate needs every mark and cannot afford to coast. The candidate who
+can afford to stop is the strong one. The mechanism therefore predicts losses concentrated in
+the top band, a pass rate held or improved, and a mean that barely moves.
+
+That is the 2024 signature, term for term:
+
+| | observed | expected from the mean move | excess |
+|---|---|---|---|
+| 8–10 band | $-9.0$ pp | $-3.1$ | $\mathbf{-5.9}$ |
+| pass rate | $+2.3$ pp | $-2.8$ | $\mathbf{+5.0}$ |
+| mean | $-0.21$ | | |
+
+: The 2024 Basque Física distribution against what its own change of level predicts. Source: [the 2024 turn](#a-basque-signal-that-arrives-a-year-early). {#tbl-2024-signature}
+
+Fewer at the top, more just above the line, the level almost still — on a paper of the old
+format, with the old choice rule and the old theory list, in which *nothing in the instrument
+moved*. 2024 is the one event in this study that has carried no mechanism at all. This is the
+first candidate it has had.
+
+It is not yet an explanation, and the reason is the same one that disposed of simple fatigue.
+Effort allocation is also a level effect unless the incentive changed. To attach it to 2024
+something must have moved in 2024 — cut-offs rising in the degrees that weight Física,
+a change in which subjects weight and by how much, or cohort growth tightening the
+competition. All three are public and none has been checked here.
+
+#### What the simulation would be, and what it would yield
+
+The calculation is well posed. It needs the UPV/EHU ponderación table (which degrees weight
+Física at 0.2, at 0.1, at 0), the cut-off marks for those degrees, and a joint distribution
+of candidates' marks in the other subjects, which the published subject distributions supply.
+
+What it yields is **a bound, not a measurement**: the fraction of candidates whose best two
+weighted marks are already settled before Física is sat, and for whom the paper's marginal
+contribution to the admission score is therefore zero. That fraction is the largest the
+effect can possibly be. If it is three per cent of the cohort the hypothesis is finished; if
+it is a quarter of the top band it accounts for 2024 unaided. The bound is obtainable from
+published tables and is honest in a way that any statement about what candidates actually did
+would not be, because no published aggregate records effort.
+
 
 ## Was 2026 a shift or a change of shape?
 
