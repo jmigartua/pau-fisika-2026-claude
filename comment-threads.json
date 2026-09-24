@@ -1,0 +1,87 @@
+{
+  "_comment": "Generated and maintained by scripts/comment_threads.py. One standing issue thread per page, in a PRIVATE companion repository so that editorial remarks are not published by this public one.",
+  "repo": "jmigartua/pau-fisika-notes-2027",
+  "site": "https://jmigartua.github.io/pau-fisika-2026-claude",
+  "threads": {
+    "chapters/01-data-hunt.html": {
+      "issue": 2,
+      "title": "ch01 · The data hunt"
+    },
+    "chapters/02-euskadi.html": {
+      "issue": 3,
+      "title": "ch02 · Euskadi 2010–2026: the series and the break"
+    },
+    "chapters/03-spain-2026.html": {
+      "issue": 4,
+      "title": "ch03 · Spain 2026: nine communities, three directions"
+    },
+    "chapters/04-distributions.html": {
+      "issue": 5,
+      "title": "ch04 · The shape of the collapse"
+    },
+    "chapters/05-subjects-sittings.html": {
+      "issue": 6,
+      "title": "ch05 · Subjects, sittings, participation and groups"
+    },
+    "chapters/06-interpretation.html": {
+      "issue": 7,
+      "title": "ch06 · Interpretation and the 2027 question"
+    },
+    "chapters/07-literature.html": {
+      "issue": 8,
+      "title": "ch07 · Literature: what exists and what does not"
+    },
+    "chapters/08-sources.html": {
+      "issue": 9,
+      "title": "ch08 · Sources"
+    },
+    "chapters/09-log.html": {
+      "issue": 10,
+      "title": "ch09 · Log"
+    },
+    "chapters/10-reproduce.html": {
+      "issue": 11,
+      "title": "ch10 · Methods, checks and reproduction"
+    },
+    "chapters/11-exam-content.html": {
+      "issue": 12,
+      "title": "ch11 · The papers themselves"
+    },
+    "chapters/12-ehu-paper-history.html": {
+      "issue": 13,
+      "title": "ch12 · Sixteen years of one paper"
+    },
+    "chapters/13-audit.html": {
+      "issue": 14,
+      "title": "ch13 · Audit"
+    },
+    "chapters/14-briefing-es.html": {
+      "issue": 15,
+      "title": "ch14 · Informe para la Dirección de Acceso"
+    },
+    "chapters/14-briefing.html": {
+      "issue": 16,
+      "title": "ch14 · Briefing for the Admissions Office"
+    },
+    "chapters/15-synthesis-es.html": {
+      "issue": 17,
+      "title": "ch15 · Síntesis para la coordinación"
+    },
+    "chapters/15-synthesis.html": {
+      "issue": 18,
+      "title": "ch15 · Synthesis for the coordination"
+    },
+    "chapters/16-paradigm.html": {
+      "issue": 19,
+      "title": "ch16 · The paradigm change, seen whole"
+    },
+    "chapters/17-paper.html": {
+      "issue": 20,
+      "title": "ch17 · When a national reform cannot explain a regional outcome"
+    },
+    "index.html": {
+      "issue": 1,
+      "title": "index · Physics in the PAU, 2026: what the data now say"
+    }
+  }
+}

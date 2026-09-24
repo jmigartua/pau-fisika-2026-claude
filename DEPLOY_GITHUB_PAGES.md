@@ -32,6 +32,26 @@ it is a self-contained `embed-resources: true` edition of the whole report, not 
 renders to `onepage.html` in the project root and has to be copied into `docs/` by hand. Skipping that copy
 silently drops https://jmigartua.github.io/pau-fisika-2026-claude/onepage.html from the published site.
 
+## Comment threads
+
+Every page carries a "Comment on this page" link in its right-hand column, pointing at that page's
+standing thread in the **private** companion repository
+[`pau-fisika-notes-2027`](https://github.com/jmigartua/pau-fisika-notes-2027). That repository holds
+no content — only issues — so there is nothing to keep in step with this one, and editorial remarks
+stay out of a repository that is public.
+
+After adding a chapter, open a thread for it:
+
+```bash
+python3 scripts/comment_threads.py --create   # opens threads for pages that have none
+python3 scripts/comment_threads.py            # report only, and regenerate comments.html
+```
+
+The map lives in `comment-threads.json`; the generated partial is `comments.html`, which
+`_quarto.yml` pulls in through `include-after-body`. Neither is edited by hand. A page added
+between runs still gets a link — to the issue list rather than to a thread — so nothing is ever
+left pointing nowhere.
+
 ## Theme
 
 `styles.scss` is a single stylesheet serving both colour schemes, adapted from the Codex-side site so the two

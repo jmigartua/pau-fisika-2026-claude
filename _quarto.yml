@@ -133,6 +133,10 @@ format:
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&display=swap" rel="stylesheet">
+    # The "Comment on this page" link, pointing at this page's standing thread
+    # in the private notes repository. Generated, with the page-to-thread map,
+    # by scripts/comment_threads.py — regenerate after adding a chapter.
+    include-after-body: comments.html
     toc: true
     toc-depth: 3
     number-sections: false

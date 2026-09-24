@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Subjects, sittings, participation and groups – PAU Física 2026</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -60,14 +66,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-55ab141dd447a5db25f9b02bc13364cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5b4e4ad6cda8ee308e5de16fe7059631.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0c8081985eeeb50794d30fa8d31fc890.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-34ccee47bae06f2332eb94a15df79591.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8fc3391f7d4e7c508e365abea68ea585.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-30867194622eda34d19dfd6f1668f6e1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8fc3391f7d4e7c508e365abea68ea585.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-66e8d3a7d2bd2cb9641d16c192b0a8fb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-744c0fecd8b996e628ded8f2d0f50733.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-66e8d3a7d2bd2cb9641d16c192b0a8fb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,7 +106,7 @@ div.csl-indent {
 <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,600,700%7CJetBrains+Mono:400,700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -113,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -301,7 +307,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo light-content">
+    <img src="../assets/favicon.svg" alt="PAU Física 2026" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PAU Física</span>
@@ -1250,6 +1257,84 @@ Donostitik. (2026). <em>Aprueba el 71,4% del alumnado que se present<span>ó</sp
 Gobierno Vasco, Inspección de Educación. (2025). <em>Resultados escolares 2024–2025</em>. <a href="https://www.euskadi.eus/contenidos/informacion/eskola_emaitzak_ikuskaritza/es_def/adjuntos/resultados-escolares-Todo-2024-2025.pdf">https://www.euskadi.eus/contenidos/informacion/eskola_emaitzak_ikuskaritza/es_def/adjuntos/resultados-escolares-Todo-2024-2025.pdf</a>
 </div>
 </div></section></div></main> <!-- /main -->
+<!-- Generated by scripts/comment_threads.py — do not edit by hand.
+     Adds the "Comment on this page" link that points at this page's standing
+     thread in the private notes repository. Regenerate after adding a chapter. -->
+<style>
+  #quarto-margin-sidebar .toc-actions {
+    border-top: 1px solid rgba(128, 128, 128, 0.25);
+    margin-top: 1em;
+    padding-top: 0.75em;
+  }
+  #quarto-margin-sidebar .toc-actions ul { display: block; padding-left: 0; margin-bottom: 0; }
+  #quarto-margin-sidebar .toc-actions ul li { padding-right: 0; }
+  .nav-footer-center .toc-actions { padding-top: 0; }
+</style>
+<script>
+(function () {
+  var REPO = 'jmigartua/pau-fisika-notes-2027';
+  var THREADS = {
+    "chapters/01-data-hunt.html": 2,
+    "chapters/02-euskadi.html": 3,
+    "chapters/03-spain-2026.html": 4,
+    "chapters/04-distributions.html": 5,
+    "chapters/05-subjects-sittings.html": 6,
+    "chapters/06-interpretation.html": 7,
+    "chapters/07-literature.html": 8,
+    "chapters/08-sources.html": 9,
+    "chapters/09-log.html": 10,
+    "chapters/10-reproduce.html": 11,
+    "chapters/11-exam-content.html": 12,
+    "chapters/12-ehu-paper-history.html": 13,
+    "chapters/13-audit.html": 14,
+    "chapters/14-briefing-es.html": 15,
+    "chapters/14-briefing.html": 16,
+    "chapters/15-synthesis-es.html": 17,
+    "chapters/15-synthesis.html": 18,
+    "chapters/16-paradigm.html": 19,
+    "chapters/17-paper.html": 20,
+    "index.html": 1
+};
+
+  function threadKey() {
+    var m = window.location.pathname.match(/chapters\/([^\/]+)\.html$/);
+    return m ? "chapters/" + m[1] + ".html" : "index.html";
+  }
+
+  var thread = THREADS[threadKey()];
+  // A page added since the last run has no thread yet; send the reader to the
+  // issue list rather than nowhere.
+  var href = thread
+    ? "https://github.com/" + REPO + "/issues/" + thread + "#new_comment_field"
+    : "https://github.com/" + REPO + "/issues";
+  var label = thread ? "Comment on this page" : "Open the notes";
+
+  var block = document.createElement("div");
+  block.className = "toc-actions";
+  var link = document.createElement("a");
+  link.href = href;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.className = "toc-action";
+  link.title = "Leave a remark for the co-coordination (private)";
+  link.innerHTML = '<i class="bi bi-chat-left-text" role="img" aria-label=""></i>' + label;
+  var item = document.createElement("li");
+  item.appendChild(link);
+  var list = document.createElement("ul");
+  list.appendChild(item);
+  block.appendChild(list);
+
+  // Beside the reader's eye while reading; the footer only if there is no
+  // margin sidebar on this page.
+  var toc = document.querySelector("#quarto-margin-sidebar nav#TOC");
+  if (toc && toc.parentNode) {
+    toc.parentNode.insertBefore(block, toc.nextSibling);
+  } else {
+    var footer = document.querySelector(".nav-footer-center");
+    if (footer) { footer.innerHTML = ""; footer.appendChild(block); }
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1314,13 +1399,14 @@ Gobierno Vasco, Inspección de Educación. (2025). <em>Resultados escolares 2024
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
