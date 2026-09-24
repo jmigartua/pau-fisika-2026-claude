@@ -2,16 +2,24 @@
 
 Every page of the site has one standing issue thread in a private companion
 repository, so that a remark can be left against the page it concerns without
-putting it in this public repository. This script is the only place that
+putting it in the site's own repository. This script is the only place that
 mapping is maintained:
 
-    python3 scripts/comment_threads.py            report, and regenerate comments.html
-    python3 scripts/comment_threads.py --create   also open threads for new pages
+    python3 comment_threads.py            report, and regenerate comments.html
+    python3 comment_threads.py --create   also open threads for new pages
 
-The map lives in comment-threads.json and the generated partial in
-comments.html, which _quarto.yml includes after the body of every page. A page
-with no thread yet still gets a link — to the issue list rather than to a
-thread — so a chapter added between runs is never left without one.
+Everything site-specific lives in comment-threads.json beside _quarto.yml, so
+this file is identical across the sites that use it:
+
+    repo     the private repository holding the threads
+    site     the published base URL, or null for a site read only locally
+    label    a label to put on new threads, or null
+    threads  the page-to-issue map, maintained here
+
+The generated partial is comments.html, which _quarto.yml includes after the
+body of every page. A page with no thread yet still gets a link — to the issue
+list rather than to a thread — so a chapter added between runs is never left
+without somewhere to go.
 
 Creating threads needs the gh CLI authenticated against an account with write
 access to the notes repository. Nothing else here touches the network.
@@ -24,12 +32,26 @@ import re
 import subprocess
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+
+def project_root():
+    """The directory holding _quarto.yml, found by walking up from this file.
+
+    Lets the script sit in scripts/ on one site and at the root of another.
+    """
+    for candidate in pathlib.Path(__file__).resolve().parents:
+        if (candidate / "_quarto.yml").exists():
+            return candidate
+    raise SystemExit("no _quarto.yml above this script — is it inside a Quarto project?")
+
+
+ROOT = project_root()
 MAP_PATH = ROOT / "comment-threads.json"
 PARTIAL_PATH = ROOT / "comments.html"
 
 
 def load_map():
+    if not MAP_PATH.exists():
+        raise SystemExit(f"{MAP_PATH} is missing; it carries the repo and the thread map")
     with MAP_PATH.open() as fh:
         return json.load(fh)
 
@@ -49,10 +71,10 @@ def page_title(path):
 
 
 def discover_pages():
-    """Every rendered page, as (html key, thread title, live url path)."""
+    """Every rendered page, as (html key, thread prefix, title, url path)."""
     pages = [("index.html", "index", page_title(ROOT / "index.qmd"), "")]
     for qmd in sorted((ROOT / "chapters").glob("*.qmd")):
-        number = re.match(r"(\d+)", qmd.stem)
+        number = re.match(r"(\d+[a-z]?)", qmd.stem)
         prefix = f"ch{number.group(1)}" if number else qmd.stem
         pages.append(
             (f"chapters/{qmd.stem}.html", prefix, page_title(qmd), f"chapters/{qmd.stem}.html")
@@ -60,7 +82,10 @@ def discover_pages():
     return pages
 
 
-ISSUE_BODY = """**Page:** [{title}]({url})
+HEADER_PUBLISHED = "**Page:** [{title}]({url})"
+HEADER_LOCAL = "**Page:** {title} — `{path}`\n\n_This site is read locally and is not published._"
+
+ISSUE_BODY = """{header}
 
 This is the standing thread for that page. Leave anything here — a remark, a \
 criticism, a question, or a paragraph you want written and have not written yet.
@@ -69,7 +94,7 @@ Label it so it is clear what you expect to happen:
 
 - `to-complete` — a gap meant to become text on the page
 - `correction` — something there is wrong
-- `question` — needs an answer before anything changes
+- `question` — needs settling before anything changes
 - `decided` — settled, kept for the record
 
 Quote the sentence you mean. The page is rewritten often, so a quote survives \
@@ -79,20 +104,25 @@ Close the thread only when the page no longer needs anything; otherwise leave \
 it open and let the comments accumulate."""
 
 
-def create_issue(repo, site, title, url_path):
-    url = f"{site}/{url_path}" if url_path else f"{site}/"
-    body = ISSUE_BODY.format(title=title, url=url)
-    result = subprocess.run(
-        ["gh", "issue", "create", "--repo", repo, "--title", title,
-         "--body", body, "--label", "site: claude"],
-        capture_output=True, text=True,
-    )
+def create_issue(data, title, url_path):
+    if data.get("site"):
+        base = data["site"].rstrip("/")
+        header = HEADER_PUBLISHED.format(title=title, url=f"{base}/{url_path}")
+    else:
+        header = HEADER_LOCAL.format(title=title, path=url_path or "index.html")
+
+    command = ["gh", "issue", "create", "--repo", data["repo"], "--title", title,
+               "--body", ISSUE_BODY.format(header=header)]
+    if data.get("label"):
+        command += ["--label", data["label"]]
+
+    result = subprocess.run(command, capture_output=True, text=True)
     if result.returncode != 0:
         raise SystemExit(f"gh issue create failed for {title!r}:\n{result.stderr}")
     return int(result.stdout.strip().rsplit("/", 1)[-1])
 
 
-PARTIAL = """<!-- Generated by scripts/comment_threads.py — do not edit by hand.
+PARTIAL = """<!-- Generated by comment_threads.py — do not edit by hand.
      Adds the "Comment on this page" link that points at this page's standing
      thread in the private notes repository. Regenerate after adding a chapter. -->
 <style>
@@ -111,6 +141,7 @@ PARTIAL = """<!-- Generated by scripts/comment_threads.py — do not edit by han
   var THREADS = {threads};
 
   function threadKey() {{
+    // Works for a published path and for a local file:// path alike.
     var m = window.location.pathname.match(/chapters\\/([^\\/]+)\\.html$/);
     return m ? "chapters/" + m[1] + ".html" : "index.html";
   }}
@@ -130,7 +161,7 @@ PARTIAL = """<!-- Generated by scripts/comment_threads.py — do not edit by han
   link.target = "_blank";
   link.rel = "noopener";
   link.className = "toc-action";
-  link.title = "Leave a remark for the co-coordination (private)";
+  link.title = {tooltip!r};
   link.innerHTML = '<i class="bi bi-chat-left-text" role="img" aria-label=""></i>' + label;
   var item = document.createElement("li");
   item.appendChild(link);
@@ -154,9 +185,11 @@ PARTIAL = """<!-- Generated by scripts/comment_threads.py — do not edit by han
 
 def write_partial(data):
     threads = {key: entry["issue"] for key, entry in sorted(data["threads"].items())}
-    PARTIAL_PATH.write_text(
-        PARTIAL.format(repo=data["repo"], threads=json.dumps(threads, indent=4))
-    )
+    PARTIAL_PATH.write_text(PARTIAL.format(
+        repo=data["repo"],
+        threads=json.dumps(threads, indent=4),
+        tooltip=data.get("tooltip", "Leave a remark (private)"),
+    ))
 
 
 def main():
@@ -171,7 +204,7 @@ def main():
     for key, prefix, title, url_path in missing:
         thread_title = f"{prefix} · {title}"
         if args.create:
-            number = create_issue(data["repo"], data["site"], thread_title, url_path)
+            number = create_issue(data, thread_title, url_path)
             data["threads"][key] = {"issue": number, "title": thread_title}
             print(f"opened #{number}  {thread_title}")
         else:
@@ -181,8 +214,7 @@ def main():
         save_map(data)
 
     write_partial(data)
-    covered = len(data["threads"])
-    print(f"{covered} page(s) linked; {len(missing)} without a thread"
+    print(f"{len(data['threads'])} page(s) linked; {len(missing)} without a thread"
           f"{' — run with --create' if missing and not args.create else ''}")
     return 0
 

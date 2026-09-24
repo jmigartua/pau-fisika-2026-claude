@@ -2,6 +2,8 @@
   "_comment": "Generated and maintained by scripts/comment_threads.py. One standing issue thread per page, in a PRIVATE companion repository so that editorial remarks are not published by this public one.",
   "repo": "jmigartua/pau-fisika-notes-2027",
   "site": "https://jmigartua.github.io/pau-fisika-2026-claude",
+  "label": "site: claude",
+  "tooltip": "Leave a remark for the co-coordination (private)",
   "threads": {
     "chapters/01-data-hunt.html": {
       "issue": 2,
