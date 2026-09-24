@@ -46,7 +46,10 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+# `T` is the time vector in this script, so the translation lookup is imported
+# under a name that cannot collide with it.
+from plot_style import C, INK, INK2, MUTED, SURF, apply_style, save as _save
+from plot_style import T as _T
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "analysis"
@@ -182,8 +185,47 @@ def main() -> None:
     figure(look, diff, r2, per, pos_hist, pos26, norm, x26, phi_w, phi_bc, sig_w, fap)
 
 
+def _reversion_panel(a2, pos_hist, pos26, norm, x26, phi, sig, standalone=False):
+    """Panel b, drawn into whichever axes it is given.
+
+    It is drawn twice: once as the right half of figure 38, and once on its own
+    for the coordination deck, where it is the closing slide and has to carry its
+    own title. The two must not drift apart, so there is one drawing routine.
+    """
+    yrs = list(pos_hist.index) + [2026]
+    vals = list(pos_hist.values) + [pos26]
+    a2.axhline(norm, color=MUTED, lw=1.0, ls="--", zorder=1)
+    a2.plot(yrs, vals, "o-", color=INK, lw=1.6, ms=4.6, zorder=3)
+    for ph, col, lab in ((phi, C["blue"], _T("a shock: reverts")),
+                         (1.0, C["red"], _T("a level change: persists"))):
+        e = norm + ph * x26
+        a2.errorbar([2027], [e], yerr=[1.96 * sig], fmt="s", ms=7, color=col,
+                    capsize=5, lw=1.8, zorder=4)
+        a2.annotate(lab, (2027, e), textcoords="offset points",
+                    xytext=(-11, 36 if ph < 1 else -32), ha="right", fontsize=8.6,
+                    color=col, fontweight="bold", zorder=5,
+                    bbox=dict(boxstyle="round,pad=0.18", fc=SURF, ec="none", alpha=0.9))
+    a2.axvspan(2026.5, 2027.6, color=MUTED, alpha=0.14, zorder=0)
+    a2.set_xlim(2014.4, 2027.9)
+    a2.set_xticks(range(2015, 2028, 3))
+    a2.set_ylabel(_T("Euskadi $-$ field (marks)"))
+    # The norm label is pinned to the norm line itself rather than to a y value
+    # chosen by eye: at 0.70 it sat exactly where the 2021 peak runs, and the
+    # curve struck through it.
+    # Pinned to the top-left corner in axes fractions. Hung off the norm line it
+    # collided with the curve at the left end and with the shock label at the
+    # right; the dash in front of it is what ties it to the line.
+    a2.text(0.015, 0.975, "– – " + _T("Euskadi's own norm %+.2f") % norm,
+            transform=a2.transAxes, fontsize=8.2, color=INK2, ha="left", va="top",
+            zorder=6,
+            bbox=dict(boxstyle="round,pad=0.18", fc=SURF, ec="none", alpha=0.9))
+    a2.text(0.03, 0.06, _T("separation %.1f$\\sigma$") % (abs(x26 - phi * x26) / sig),
+            transform=a2.transAxes, fontsize=8.6, color=INK, zorder=6,
+            bbox=dict(boxstyle="round,pad=0.35", fc="white", ec=MUTED, lw=0.7))
+
+
 def figure(look, diff, r2, per, pos_hist, pos26, norm, x26, phi, phibc, sig, fap):
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(10.4, 4.7),
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(10.4, 4.9),
                                  gridspec_kw=dict(wspace=0.30, width_ratios=[1.05, 1]))
 
     order = sorted(look, key=lambda c: look[c]["R2"])
@@ -193,43 +235,42 @@ def figure(look, diff, r2, per, pos_hist, pos26, norm, x26, phi, phibc, sig, fap
             (C["violet"] if c == "Cataluña" else MUTED) for c in order]
     a1.barh(range(len(order)), vals, color=cols, height=0.72, zorder=2)
     for i, c in enumerate(order):
-        a1.text(vals[i] + 0.012, i, "%.0f y" % look[c]["period"], va="center",
-                fontsize=7.6, color=INK2)
+        a1.text(vals[i] + 0.012, i, _T("%.0f y") % look[c]["period"], va="center",
+                fontsize=7.6, color=INK2, zorder=5,
+                bbox=dict(boxstyle="round,pad=0.12", fc=SURF, ec="none", alpha=0.9))
     a1.set_yticks(range(len(order)))
     a1.set_yticklabels(names, fontsize=8.2)
-    a1.set_xlim(0, 1.06)
-    a1.set_xlabel("best sinusoid $R^2$ on 11 points")
-    a1.set_title("a. Fit a cosine to every community, and\n     Aragón fits better than Cataluña", loc="left")
+    a1.set_xlim(0, 1.10)
+    a1.set_xlabel(_T("best sinusoid $R^2$ on 11 points"))
+    a1.set_title(_T("a. Fit a cosine to every community, and\n     Aragón fits better than Cataluña"), loc="left")
     a1.axvline(r2, color=C["violet"], lw=1.1, ls="--", zorder=3)
-    a1.text(0.975, 0.025, "the periods run 2.5 to 40 years.\nA common external driver would\nimpose a common period.\nThese do not agree.",
+    a1.text(0.975, 0.025, _T("the periods run 2.5 to 40 years.\nA common external driver would\nimpose a common period.\nThese do not agree."),
             transform=a1.transAxes, fontsize=7.9, color=INK2, va="bottom", ha="right",
             bbox=dict(boxstyle="round,pad=0.4", fc="white", ec=MUTED, lw=0.7))
 
-    yrs = list(pos_hist.index) + [2026]
-    vals = list(pos_hist.values) + [pos26]
-    a2.axhline(norm, color=MUTED, lw=1.0, ls="--", zorder=1)
-    a2.text(2014.8, 0.70, "Euskadi's own norm %+.2f" % norm, fontsize=8.2,
-            color=INK2, ha="left")
-    a2.plot(yrs, vals, "o-", color=INK, lw=1.6, ms=4.6, zorder=3)
-    for ph, col, lab in ((phi, C["blue"], "a shock: reverts"),
-                         (1.0, C["red"], "a level change: persists")):
-        e = norm + ph * x26
-        a2.errorbar([2027], [e], yerr=[1.96 * sig], fmt="s", ms=7, color=col,
-                    capsize=5, lw=1.8, zorder=4)
-        a2.annotate(lab, (2027, e), textcoords="offset points",
-                    xytext=(-11, 36 if ph < 1 else -32), ha="right", fontsize=8.6,
-                    color=col, fontweight="bold")
-    a2.axvspan(2026.5, 2027.6, color=MUTED, alpha=0.14, zorder=0)
-    a2.set_xlim(2014.4, 2027.9)
-    a2.set_xticks(range(2015, 2028, 3))
-    a2.set_ylabel("Euskadi $-$ field (marks)")
-    a2.set_title("b. …and the one prediction a single\n     sitting can settle", loc="left")
-    a2.text(0.03, 0.06, "separation %.1f$\\sigma$" % (abs(x26 - phi * x26) / sig),
-            transform=a2.transAxes, fontsize=8.6, color=INK,
-            bbox=dict(boxstyle="round,pad=0.35", fc="white", ec=MUTED, lw=0.7))
+    _reversion_panel(a2, pos_hist, pos26, norm, x26, phi, sig)
+    a2.set_title(_T("b. …and the one prediction a single\n     sitting can settle"), loc="left")
 
-    fig.suptitle("A wave that eleven points cannot establish, and a reversion that 2027 will test")
+    # The two panel titles are two lines deep. Constrained layout reserves room
+    # for a suptitle above a one-line title and the Spanish suptitle, which is a
+    # fifth longer, then printed across both of them.
+    fig.suptitle(_T("A wave that eleven points cannot establish, and a reversion that 2027 will test"),
+                 y=1.045)
     _save(fig, "fig38_cycle_and_reversion", ROOT / "plots")
+
+    # ---- and the same panel alone, for the coordination deck's closing slide
+    figb, ab = plt.subplots(figsize=(7.4, 4.4))
+    _reversion_panel(ab, pos_hist, pos26, norm, x26, phi, sig, standalone=True)
+    ab.set_title(_T("What doing nothing predicts for 2027"), loc="left")
+    figb.text(0.005, 0.005,
+              _T("Euskadi's position against the eight communities that published a 2026 mean, 2015–2026. "
+                 "Within a community the deviation from the field\nfollows an AR(1) with $\\phi = 0.186$: a shock "
+                 "gives back five sixths of itself in one year, a level change gives back none. The bars are "
+                 "95 % intervals\non an innovation sd of 0.47. A recovery of about a mark and a half in 2027 is "
+                 "what the panel predicts from changing nothing."),
+              fontsize=7, color=MUTED, linespacing=1.5)
+    figb.subplots_adjust(bottom=0.20, top=0.93, left=0.11, right=0.98)
+    _save(figb, "fig39_reversion_2027", ROOT / "plots")
 
 
 if __name__ == "__main__":

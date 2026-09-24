@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from plot_style import C, INK, INK2, MUTED, SURF, apply_style, save as _save
+from plot_style import C, INK, INK2, MUTED, SURF, T, apply_style, save as _save
 
 ROOT = Path(__file__).resolve().parents[1]
 PLOTS = ROOT / "plots"
@@ -41,7 +41,8 @@ def main() -> None:
     d = pd.read_csv(ROOT / "data" / "exam_change_vs_grade.csv")
     d["label"] = d.ccaa.map(lambda c: SHORT.get(c, c))
 
-    fig, ax = plt.subplots(figsize=(9.2, 6.0))
+    import plot_style as _ps
+    fig, ax = plt.subplots(figsize=(11.6, 5.2) if _ps.DECK else (9.2, 6.0))
     ax.axhline(0, color=MUTED, lw=0.9, ls="--", zorder=1)
 
     for r in d.itertuples():
@@ -73,28 +74,28 @@ def main() -> None:
                     ha="right" if off[0] < 0 else "left", fontsize=8.8,
                     color=INK if r.label in ("Euskadi", "Cataluña") else INK2)
 
-    ax.annotate("Extremadura $-0.82$\nCanarias $-0.83$", (0, -0.825),
+    ax.annotate(T("Extremadura $-0.82$\nCanarias $-0.83$"), (0, -0.825),
                 textcoords="offset points", xytext=(12, -2), ha="left",
                 fontsize=8.8, color=INK2, va="center")
 
-    ax.annotate("its 2025 paper: it had been\nnear here since at least 2020",
+    ax.annotate(T("its 2025 paper: it had been\nnear here since at least 2020"),
                 xy=(75, 0.04), xytext=(71, 0.70), fontsize=8.2, color=C["violet"],
                 ha="center", arrowprops=dict(arrowstyle="->", color=C["violet"], lw=0.9))
-    ax.annotate("six communities at zero\nin both years", xy=(0, 0.6), xytext=(9, 1.15),
+    ax.annotate(T("six communities at zero\nin both years"), xy=(0, 0.6), xytext=(9, 1.15),
                 fontsize=8.2, color=MUTED, ha="left",
                 arrowprops=dict(arrowstyle="->", color=MUTED, lw=0.9))
 
-    ax.set_xlabel("Competency-coded share of the paper's expected marks (%)")
-    ax.set_ylabel("Change in the ordinary-sitting Física mean, 2026 − 2025 (marks)")
+    ax.set_xlabel(T("Competency-coded share of the paper's expected marks (%)"))
+    ax.set_ylabel(T("Change in the ordinary-sitting Física mean, 2026 − 2025 (marks)"))
     ax.set_xlim(-6, 86)
     ax.set_ylim(-1.85, 1.55)
-    ax.set_title("Each community's route, 2025 → 2026: hollow point is 2025, filled point 2026",
+    ax.set_title(T("Each community's route, 2025 → 2026: hollow point is 2025, filled point 2026"),
                  loc="left")
     fig.text(0.005, 0.012,
-             "One measure on the horizontal axis throughout: the competency-coded share of expected marks, "
-             "from the item coding of the eighteen ordinary papers.\nThe vertical axis is each community's own "
-             "change, so every arrow starts at zero. Euskadi runs right and down; Cataluña runs left and up, "
-             "from a position it had held for five years.",
+             T("One measure on the horizontal axis throughout: the competency-coded share of expected marks, "
+               "from the item coding of the eighteen ordinary papers.\nThe vertical axis is each community's own "
+               "change, so every arrow starts at zero. Euskadi runs right and down; Cataluña runs left and up, "
+               "from a position it had held for five years."),
              fontsize=7, color=MUTED, linespacing=1.5)
     fig.subplots_adjust(bottom=0.155, top=0.93, left=0.105, right=0.985)
     _save(fig, "fig36_competency_path", PLOTS, dpi=200)

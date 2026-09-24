@@ -288,12 +288,22 @@ for y, r in pv_steps.iterrows():
 # below is untouched and draws into whichever axes it is handed.
 if _ps.PAPER:
     fig = plt.figure(figsize=(_ps.PAGE_W, _ps.PAGE_W * 0.52))
-    gsA = fig.add_gridspec(1, 2, wspace=0.30)
+    # The three-line source note is drawn in figure coordinates at the very bottom.
+    # With no reserved margin it printed straight over the x-axis label, which is
+    # what the coordination deck was carrying. The margin is reserved here.
+    gsA = fig.add_gridspec(1, 2, wspace=0.30, bottom=0.30, top=0.92,
+                           left=0.115, right=0.985)
     ax1 = fig.add_subplot(gsA[0, 0])
     ax2 = fig.add_subplot(gsA[0, 1])
     fig._pau_scale = (_ps.PAGE_W / 2.0) / (11.4 / 2.0)
-    fig_c = plt.figure(figsize=(_ps.PAGE_W, _ps.PAGE_W * 0.56))
-    fig_c._pau_scale = _ps.PAGE_W / 11.4
+    # The deck puts this panel on a 16:9 slide that also carries two cards, so a
+    # page-proportioned figure is too tall and pushes them under the ribbon.
+    if _ps.DECK:
+        fig_c = plt.figure(figsize=(10.6, 4.3))
+        fig_c._pau_scale = 10.6 / 11.4
+    else:
+        fig_c = plt.figure(figsize=(_ps.PAGE_W, _ps.PAGE_W * 0.56))
+        fig_c._pau_scale = _ps.PAGE_W / 11.4
     ax3 = fig_c.add_subplot(111)
 else:
     fig = plt.figure(figsize=(11.4, 9.2))
@@ -356,10 +366,16 @@ for xi, (o, p_) in enumerate(zip(obs, pred)):
                  color=C["red"] if abs(exc) > 2 else INK2)
 ax2.set_xticks(x)
 ax2.set_xticklabels(lbl, fontsize=8)
-ax2.set_ylim(-12.5, 5.2)
+# Headroom for the legend. At 5.2 the only free corner was also where the
+# "+5.0" residual label sits, and in Spanish the legend is wide enough to
+# reach it from the right-hand side.
+ax2.set_ylim(-12.5, 8.6)
 ax2.set_ylabel(T("Change, percentage points"))
 ax2.set_title(T("b. 2024 moved off the locus; 2025 moved along it"), loc="left")
-ax2.legend(loc="lower left", fontsize=8, framealpha=0.92)
+# Lower left is where the 2023→2024 top-band bar is. The only quadrant of this
+# panel that no bar reaches is the right-hand top corner, above the deepest
+# bar, and it also clears the "+5.0" residual label over the positive bar.
+ax2.legend(loc="upper right", fontsize=8, framealpha=0.92)
 
 # --- c. the mark budget and what is left unattributed (floating waterfall)
 labels = [T("Euskadi 2025"), T("Common to\nthe nine"), T("Choice\nremoved"),
@@ -417,10 +433,12 @@ ax3.annotate(T("Basque-specific: {b:+.2f}.  Quantified: {q:.2f}.  Unattributed: 
                      pc=100 * remainder / basque_2026),
              xy=(0.5, hi - 0.22), fontsize=9, color=C["red"], ha="left")
 
+# In paper mode panel c is a separate figure, so the note must not describe it.
+_note_c = ("" if _ps.PAPER else
+           T(" Panel c: pooled phase, the nine communities with a 2026 result in every year."))
 fig.text(0.005, 0.005,
          T("Ministry EPAU, ordinary sitting. Panels a and b: specific phase, 17 communities, "
-           "locus fitted on all 187 region-years. Panel c: pooled phase, the nine communities with a "
-           "2026 result in every year.\nThe choice term is a simulation of the two formats at item SD 0.2 "
+           "locus fitted on all 187 region-years.") + _note_c + T("\nThe choice term is a simulation of the two formats at item SD 0.2 "
            "net of the other eight communities' own cuts; the cohort term is the Basque PISA "
            "2022–2025 decline in excess of Spain's, one PAU year of it, transferred one-for-one.\nBoth are "
            "differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate."),

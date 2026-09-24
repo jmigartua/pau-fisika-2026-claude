@@ -32,7 +32,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from plot_style import C, INK, INK2, MUTED, apply_style, save as _save
+from plot_style import C, INK, INK2, MUTED, SURF, T, apply_style, save as _save
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "analysis"
@@ -100,53 +100,81 @@ def main() -> None:
 
     # ---------------------------------------------------------------- figure
     dem = pd.read_csv(OUT / "demand_history_two_systems.csv").set_index("year")
-    fig, (a1, a2) = plt.subplots(2, 1, figsize=(9.0, 6.6), sharex=True,
-                                 gridspec_kw=dict(hspace=0.30, height_ratios=[1, 1.15]))
+    # Stacked for the dossier page, side by side for a 16:9 slide. Same panels,
+    # same numbers; only the arrangement follows the medium.
+    import plot_style as _ps
+    if _ps.DECK:
+        fig, (a1, a2) = plt.subplots(1, 2, figsize=(13.0, 4.6),
+                                     gridspec_kw=dict(wspace=0.22))
+    else:
+        fig, (a1, a2) = plt.subplots(2, 1, figsize=(9.0, 6.6), sharex=True,
+                                     gridspec_kw=dict(hspace=0.30, height_ratios=[1, 1.15]))
 
     s = dem.loc[2010:2025, "demand_pct"]
     a1.bar(s.index, s.values, color=[C["violet"] if y >= 2020 else MUTED for y in s.index],
            width=0.72, zorder=2)
     a1.axhline(17.7, xmax=0.615, color=INK2, lw=1.3, ls="--", zorder=3)
     a1.axhline(50.0, xmin=0.615, xmax=0.87, color=C["violet"], lw=1.3, ls="--", zorder=3)
-    a1.text(2009.4, 76, "2010–2019   mean 17.7 %, sd 10.9", fontsize=8.6, color=INK2,
+    a1.text(2009.4, 76, T("2010–2019   mean 17.7 %, sd 10.9"), fontsize=8.6, color=INK2,
             va="top", ha="left")
-    a1.text(2009.4, 68, "2020–2023   mean 50.0 %", fontsize=8.6, color=C["violet"],
+    a1.text(2009.4, 68, T("2020–2023   mean 50.0 %"), fontsize=8.6, color=C["violet"],
             va="top", ha="left", fontweight="bold")
-    a1.annotate("never zero: the lowest\nCatalan year is 6.2 %", (2017.6, 6.2),
-                textcoords="offset points", xytext=(0, 30), fontsize=8.2, color=INK2,
-                ha="center", arrowprops=dict(arrowstyle="-", lw=0.8, color=MUTED))
-    a1.set_ylabel("items demanding\njustification (%)")
-    a1.set_title("a. The Catalan paper: one mechanical measure, sixteen years",
+    # Anchored over the 2013–14 trough, the only stretch of this panel with air
+    # above the bars and clear of the 17.7 mean line.
+    a1.annotate(T("never zero: the lowest\nCatalan year is 6.2 %"), (2013.0, 6.2),
+                textcoords="offset points", xytext=(0, 58), fontsize=8.2, color=INK2,
+                ha="center", zorder=6,
+                bbox=dict(boxstyle="round,pad=0.22", fc=SURF, ec="none", alpha=0.92),
+                arrowprops=dict(arrowstyle="-", lw=0.8, color=MUTED))
+    a1.set_ylabel(T("items demanding\njustification (%)"))
+    a1.set_title(T("a. The Catalan paper: one mechanical measure, sixteen years"),
                  loc="left")
     a1.set_ylim(0, 80)
 
     a2.axhline(0, color=MUTED, lw=0.9, ls="--", zorder=1)
     a2.plot(diff.index, diff.values, "o-", color=INK, lw=1.6, ms=5, zorder=3)
-    for ys, lab, col, dx, dy, ha in (
-            (PRE, "2015–19  %+.2f" % diff[PRE].mean(), INK2, -0.55, 0.10, "right"),
-            (POST, "2022–25  %+.2f" % diff[POST].mean(), C["violet"], -0.55, 0.19, "center")):
+    # The two period labels are placed in *offset points* from the bar they name,
+    # not in data units. In Spanish the box below grows and the axes rescale, and
+    # a data-unit offset that cleared the bar in English printed on top of it.
+    for ys, lab, col, ptsy in (
+            (PRE, "2015–19  %+.2f" % diff[PRE].mean(), INK2, 11),
+            (POST, "2022–25  %+.2f" % diff[POST].mean(), C["violet"], 12)):
         a2.hlines(diff[ys].mean(), min(ys) - 0.42, max(ys) + 0.42, color=col, lw=3.2,
                   zorder=4)
-        xa = (min(ys) + dx if ha == "right" else
-              (np.mean(ys) if ha == "center" else max(ys) + dx))
-        a2.text(xa, diff[ys].mean() + dy, lab, ha=ha, va="center", fontsize=9,
-                color=col, fontweight="bold")
+        a2.annotate(lab, (float(np.mean(ys)), diff[ys].mean()),
+                    textcoords="offset points", xytext=(0, ptsy), ha="center",
+                    va="bottom", fontsize=9, color=col, fontweight="bold", zorder=6,
+                    bbox=dict(boxstyle="round,pad=0.18", fc=SURF, ec="none", alpha=0.9))
     a2.axvspan(2019.5, 2021.5, color=MUTED, alpha=0.17, zorder=0)
-    a2.annotate("COVID\nsittings\nexcluded", (2020.5, -0.62), ha="center",
-                fontsize=8.2, color=INK2)
-    a2.annotate("shift $%+.2f$ — Welch $p=%.2f$, exact $p=%.2f$\n"
-                "smallest shift detectable here: %.2f"
-                % (shift, p, hits / tot, mde),
-                (2012.4, -0.42), fontsize=8.8, color=INK, ha="center",
-                bbox=dict(boxstyle="round,pad=0.45", fc="white", ec=MUTED, lw=0.8))
-    a2.set_ylabel("Cataluña $-$ field\n(marks)")
+    # Pinned to the top of the excluded band in axes fractions: at a fixed data
+    # y it sat wherever the curve happened to be that year.
+    a2.text(2020.5, 0.985, T("COVID\nsittings\nexcluded"), ha="center", va="top",
+            transform=a2.get_xaxis_transform(), fontsize=8.2, color=INK2, zorder=6,
+            bbox=dict(boxstyle="round,pad=0.22", fc=SURF, ec="none", alpha=0.92))
+    # Anchored in axes fractions rather than data coordinates: the Spanish text is
+    # a third wider than the English and, pinned at x=2012.4, it ran off the left
+    # edge of the panel and over the y tick labels.
+    a2.text(0.015, 0.035,
+            T("shift $%+.2f$ — Welch $p=%.2f$, exact $p=%.2f$\n"
+              "smallest shift detectable here: %.2f")
+            % (shift, p, hits / tot, mde),
+            transform=a2.transAxes, fontsize=8.4, color=INK, ha="left", va="bottom",
+            bbox=dict(boxstyle="round,pad=0.4", fc="white", ec=MUTED, lw=0.8),
+            zorder=6)
+    a2.set_ylabel(T("Cataluña $-$ field\n(marks)"))
     a2.set_xlabel("")
-    a2.set_title("b. …and what it did to the mean, against the fifteen-community field",
+    a2.set_title(T("b. …and what it did to the mean, against the fifteen-community field"),
                  loc="left")
+    _lo, _hi = a2.get_ylim()
+    a2.set_ylim(_lo - 0.30 * (_hi - _lo), _hi)
     a2.set_xlim(2008.8, 2026.4)
     a2.set_xticks(range(2010, 2027, 2))
+    if _ps.DECK:
+        # Unstacked, panel a no longer borrows the bottom axis's year labels.
+        a1.set_xlim(2008.8, 2026.4)
+        a1.set_xticks(range(2010, 2027, 2))
 
-    fig.suptitle("A conversion that can be dated, and a cost that cannot be measured")
+    fig.suptitle(T("A conversion that can be dated, and a cost that cannot be measured"))
     _save(fig, "fig37_catalunya_event", ROOT / "plots")
 
 

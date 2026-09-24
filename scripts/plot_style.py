@@ -308,6 +308,32 @@ LANG = os.environ.get("PAU_LANG", "en")
 # touched, so a panel cannot say one thing in the dossier and another in the paper.
 PAPER = os.environ.get("PAU_PAPER", "") not in ("", "0")
 
+# --------------------------------------------------------------------- deck mode
+# The coordination deck reuses the dossier's Spanish figures on its slides. The
+# one thing that does not transfer is the running head: a slide that says
+# "Figura 26 — …" is pointing at a document nobody in the room is holding, and
+# the slide already carries its own title. PAU_DECK=1 drops the running head and
+# writes into plots/deck/ under the deck's own file name. It changes nothing
+# else — no sizes, no layout, no numbers — so a deck figure and the dossier
+# figure it came from cannot say different things.
+DECK = os.environ.get("PAU_DECK", "") not in ("", "0")
+
+# Dossier figure name -> the name the deck's slides reference.
+DECK_NAMES = {
+    "fig01_euskadi_series":       "datos-serie",
+    "fig03_regions_2026_vs_2025": "datos-nueve",
+    "fig26_subject_decomposition": "datos-materias",
+    "fig29_statement_budget":     "datos-enunciados",
+    "fig36_competency_path":      "datos-rutas",
+    "fig37_catalunya_event":      "datos-catalunya",
+    "fig39_reversion_2027":       "datos-2027",
+    "fig40_timetable_weights":    "datos-semana",
+    "fig41_weighting_table":      "datos-ponderacion",
+    # these two are the paper-mode splits of fig25, and the deck uses them as such
+    "fig04_locus":                "datos-forma",
+    "fig08_attribution_budget":   "datos-presupuesto",
+}
+
 # A4 with the paper's own margins leaves ~163mm of text; 6.5in is that, near enough.
 PAGE_W = 6.5
 
@@ -360,6 +386,9 @@ ES_FIGURES = {
     "fig36_competency_path",
     "fig37_catalunya_event",
     "fig38_cycle_and_reversion",
+    "fig39_reversion_2027",
+    "fig40_timetable_weights",
+    "fig41_weighting_table",
 }
 
 
@@ -407,6 +436,26 @@ def save(fig, name, outdir: Path, dpi=200):
         fig.set_constrained_layout(False)
         name = PAPER_NAMES.get(name, name)
         outdir = outdir.parent / "plots" / "paper" if outdir.name != "plots" else outdir / "paper"
+    if DECK:
+        # Deck mode runs on top of whichever layout mode is active, so `name` is
+        # already the paper name when PAU_PAPER is set. A figure the deck does
+        # not use is simply not written.
+        # One caller appends the `_es` suffix itself before handing the name over,
+        # so the lookup has to tolerate a name that already carries it.
+        deck_name = DECK_NAMES.get(name[:-3] if name.endswith("_es") else name)
+        if deck_name is None or LANG != "es":
+            # The deck is in Spanish. An English deck figure is the defect this
+            # whole mode exists to stop, so it is refused rather than written.
+            plt.close(fig)
+            return
+        if fig._suptitle is not None:
+            fig._suptitle.set_visible(False)
+        outdir = (outdir / "deck") if outdir.name == "plots" else (outdir.parent / "deck")
+        outdir.mkdir(parents=True, exist_ok=True)
+        fig.savefig(outdir / f"{deck_name}.png", dpi=dpi, bbox_inches="tight")
+        plt.close(fig)
+        print("saved deck", deck_name)
+        return
     if LANG == "es":
         base = name[:-3] if name.endswith("_es") else name
         if base not in ES_FIGURES:

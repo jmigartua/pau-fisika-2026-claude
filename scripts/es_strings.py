@@ -204,3 +204,171 @@ ES.update({
     "Ministry EPAU, ordinary sitting. Panels a and b: specific phase, 17 communities, locus fitted on all 187 region-years. Panel c: pooled phase, the nine communities with a 2026 result in every year.\nThe choice term is a simulation of the two formats at item SD 0.2 net of the other eight communities' own cuts; the cohort term is the Basque PISA 2022–2025 decline in excess of Spain's, one PAU year of it, transferred one-for-one.\nBoth are differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate.":
         'EPAU del Ministerio, convocatoria ordinaria. Paneles a y b: fase específica, 17 comunidades, lugar geométrico ajustado sobre las 187 observaciones comunidad-año. Panel c: fase común, las nueve comunidades con resultado de 2026 en todos los años.\nEl término de la elección es una simulación de los dos formatos con desviación típica por ítem de 0.2, neta de los recortes propios de las otras ocho comunidades; el término de promoción es la caída vasca en PISA 2022–2025 en exceso de la de España, un año de PAU de ella, transferida uno a uno.\nLos dos son diferencias respecto del conjunto, porque la cantidad de la que se restan es una. Ninguno es una estimación causal.',
 })
+
+
+# R23 · The three figures added on 21–23 September were written with English
+# display strings and no `T()`, while their names had already been put into
+# `plot_style.ES_FIGURES`. The allowlist was doing the opposite of its job: it
+# let the pipeline write an `_es` file whose every word was English, and one of
+# those files reached a Spanish slide. Wrapping the strings and filling them in
+# here is the repair; the guard only works if both halves are done together.
+ES.update({
+    # ------------------------------------------------------------------ fig36
+    "Extremadura $-0.82$\nCanarias $-0.83$":
+        "Extremadura $-0.82$\nCanarias $-0.83$",
+    "its 2025 paper: it had been\nnear here since at least 2020":
+        "su prueba de 2025: ya estaba\ncerca de aquí desde 2020 al menos",
+    "six communities at zero\nin both years":
+        "seis comunidades a cero\nen los dos años",
+    "Competency-coded share of the paper's expected marks (%)":
+        "Puntos competenciales esperados de la prueba (%)",
+    "Change in the ordinary-sitting Física mean, 2026 − 2025 (marks)":
+        "Cambio de la media de Física, convocatoria ordinaria, 2026 − 2025 (puntos)",
+    "Each community's route, 2025 → 2026: hollow point is 2025, filled point 2026":
+        "El recorrido de cada comunidad, 2025 → 2026: el punto hueco es 2025; el relleno, 2026",
+    "One measure on the horizontal axis throughout: the competency-coded share of expected marks, "
+    "from the item coding of the eighteen ordinary papers.\nThe vertical axis is each community's own "
+    "change, so every arrow starts at zero. Euskadi runs right and down; Cataluña runs left and up, "
+    "from a position it had held for five years.":
+        "Una sola medida en el eje horizontal: la proporción de puntos esperados codificados como "
+        "competenciales, a partir de la codificación ítem a ítem de las dieciocho pruebas ordinarias."
+        "\nEl eje vertical es el cambio propio de cada comunidad, de modo que todas las flechas parten "
+        "de cero. Euskadi va a la derecha y hacia abajo; Cataluña, a la izquierda y hacia arriba, "
+        "desde una posición que llevaba cinco años ocupando.",
+
+    # ------------------------------------------------------------------ fig37
+    "2010–2019   mean 17.7 %, sd 10.9":
+        "2010–2019   media 17.7 %, desv. típ. 10.9",
+    "2020–2023   mean 50.0 %":
+        "2020–2023   media 50.0 %",
+    "never zero: the lowest\nCatalan year is 6.2 %":
+        "nunca cero: el año catalán\nmás bajo está en el 6.2 %",
+    "items demanding\njustification (%)":
+        "ítems que exigen\njustificar (%)",
+    "a. The Catalan paper: one mechanical measure, sixteen years":
+        "a. La prueba catalana: una medida mecánica, dieciséis años",
+    "COVID\nsittings\nexcluded":
+        "convocatorias\nde la COVID\nexcluidas",
+    "shift $%+.2f$ — Welch $p=%.2f$, exact $p=%.2f$\n"
+    "smallest shift detectable here: %.2f":
+        "desplazamiento $%+.2f$ — Welch $p=%.2f$, permutación exacta $p=%.2f$\n"
+        "menor desplazamiento detectable aquí: %.2f",
+    "Cataluña $-$ field\n(marks)":
+        "Cataluña $-$ conjunto\n(puntos)",
+    "b. …and what it did to the mean, against the fifteen-community field":
+        "b. …y qué le hizo a la media, frente al conjunto de quince comunidades",
+    "A conversion that can be dated, and a cost that cannot be measured":
+        "Una conversión que puede fecharse, y un coste que no puede medirse",
+
+    # ------------------------------------------------------------------ fig38
+    "best sinusoid $R^2$ on 11 points":
+        "mejor $R^2$ sinusoidal sobre 11 puntos",
+    "a. Fit a cosine to every community, and\n     Aragón fits better than Cataluña":
+        "a. Ajústese un coseno a cada comunidad:\n     Aragón ajusta mejor que Cataluña",
+    "the periods run 2.5 to 40 years.\nA common external driver would\nimpose a common period.\nThese do not agree.":
+        "los periodos van de 2.5 a 40 años.\nUna causa externa común impondría\nun periodo común.\nEstos no concuerdan.",
+    "Euskadi's own norm %+.2f":
+        "norma propia de Euskadi %+.2f",
+    "a shock: reverts":
+        "un choque: revierte",
+    "a level change: persists":
+        "un cambio de nivel: persiste",
+    "Euskadi $-$ field (marks)":
+        "Euskadi $-$ conjunto (puntos)",
+    "b. …and the one prediction a single\n     sitting can settle":
+        "b. …y la única predicción que una sola\n     convocatoria puede zanjar",
+    "separation %.1f$\\sigma$":
+        "separación %.1f$\\sigma$",
+    "A wave that eleven points cannot establish, and a reversion that 2027 will test":
+        "Una onda que once puntos no pueden establecer, y una reversión que 2027 pondrá a prueba",
+})
+
+# fig38 / fig39 — the reversion panel, drawn twice.
+ES.update({
+    "%.0f y": "%.0f a",
+    "What doing nothing predicts for 2027":
+        "Lo que predice no hacer nada, para 2027",
+    "Euskadi's position against the eight communities that published a 2026 mean, 2015–2026. "
+    "Within a community the deviation from the field\nfollows an AR(1) with $\\phi = 0.186$: a shock "
+    "gives back five sixths of itself in one year, a level change gives back none. The bars are "
+    "95 % intervals\non an innovation sd of 0.47. A recovery of about a mark and a half in 2027 is "
+    "what the panel predicts from changing nothing.":
+        "Posición de Euskadi frente a las ocho comunidades que publicaron media de 2026, 2015–2026. "
+        "Dentro de una comunidad, la desviación respecto del conjunto\nsigue un AR(1) con "
+        "$\\phi = 0.186$: un choque devuelve cinco sextos de sí mismo en un año; un cambio de nivel no "
+        "devuelve nada. Las barras son intervalos al 95 %\nsobre una desviación típica de la innovación "
+        "de 0.47. Una recuperación de punto y medio en 2027 es lo que el panel predice si no se cambia nada.",
+})
+
+# fig40 — the examination week and the weighting table (finding 19).
+ES.update({
+    "martes": "martes",
+    "miércoles": "miércoles",
+    "45 min": "45 min",
+    "Matemáticas II\nse mueve aquí": "Matemáticas II\nse mueve aquí",
+    "borde discontinuo: las dos fuentes de 2025\nno coinciden en el día":
+        "borde discontinuo: las dos fuentes de 2025\nno coinciden en el día",
+    "a. What moved in the examination week":
+        "a. Lo que se movió en la semana de exámenes",
+    "the two papers made adjacent are the two that fell":
+        "las dos pruebas que quedaron seguidas son las dos que cayeron",
+    "grados de Ciencias, Ingeniería\ny Ciencias de la Salud codificados":
+        "grados de Ciencias, Ingeniería\ny Ciencias de la Salud codificados",
+    "Física pondera $0.2$": "Física pondera $0.2$",
+    "…y Matemáticas II también": "…y Matemáticas II también",
+    "…y Química también:\nlas tres a $0.2$, y solo caben dos":
+        "…y Química también:\nlas tres a $0.2$, y solo caben dos",
+    "grados (de 37)": "grados (de 37)",
+    "b. “Se utilizarán las 2 calificaciones que sean más favorables”":
+        "b. “Se utilizarán las 2 calificaciones que sean más favorables”",
+    "Matemáticas II es obligatoria en la fase de acceso y se arrastra:\n"
+    "una de las dos plazas está ocupada antes de elegir nada.\n"
+    "En Ciencias de la Salud, Física pondera $0.1$ y Biología y Química $0.2$:\n"
+    "ahí no hay contienda — Física no entra.":
+        "Matemáticas II es obligatoria en la fase de acceso y se arrastra:\n"
+        "una de las dos plazas está ocupada antes de elegir nada.\n"
+        "En Ciencias de la Salud, Física pondera $0.1$ y Biología y Química $0.2$:\n"
+        "ahí no hay contienda — Física no entra.",
+    "Panel a: UPV/EHU timetables for the ordinary sitting, 2025 and 2026, with each subject's change in mean beneath its name. Física's own slot did not move — it was last on its day in both years — so what being last costs\ndifferences out. What changed is what precedes it. The contrast is confounded: the pair made adjacent is also the pair that is most quantitative and whose own papers changed most, and it enters no budget.\nPanel b: the weighting parameters for 2026-27, coded degree by degree for the three branches in which Física appears at all.":
+        "Panel a: horarios de la UPV/EHU para la convocatoria ordinaria, 2025 y 2026, con el cambio de la media de cada materia bajo su nombre. La franja propia de Física no se movió — fue la última de su día en los dos años —, de modo que\nlo que cuesta ir la última se cancela en la diferencia. Lo que cambió es lo que la precede. El contraste está confundido: el par que quedó seguido es también el más cuantitativo y aquel cuyas pruebas más cambiaron, y no entra en ningún presupuesto.\nPanel b: los parámetros de ponderación para 2026-27, codificados grado a grado en las tres ramas en las que Física aparece.",
+})
+
+# fig25 / fig04 — the source note, split in three so that paper mode can leave
+# out the sentence about a panel c it does not contain.
+ES.update({
+    "Ministry EPAU, ordinary sitting. Panels a and b: specific phase, 17 communities, "
+    "locus fitted on all 187 region-years.":
+        "EPAU del Ministerio, convocatoria ordinaria. Paneles a y b: fase específica, "
+        "17 comunidades, lugar geométrico ajustado sobre las 187 observaciones comunidad-año.",
+    " Panel c: pooled phase, the nine communities with a 2026 result in every year.":
+        " Panel c: fase común, las nueve comunidades con resultado de 2026 en todos los años.",
+    "\nThe choice term is a simulation of the two formats at item SD 0.2 "
+    "net of the other eight communities' own cuts; the cohort term is the Basque PISA "
+    "2022–2025 decline in excess of Spain's, one PAU year of it, transferred one-for-one.\nBoth are "
+    "differences from the field, because the quantity they are subtracted from is one. Neither is a causal estimate.":
+        "\nEl término de la elección es una simulación de los dos formatos con desviación típica "
+        "por ítem de 0.2, neta de los recortes propios de las otras ocho comunidades; el término de "
+        "promoción es la caída vasca en PISA 2022–2025 en exceso de la de España, un año de PAU de "
+        "ella, transferida uno a uno.\nLos dos son diferencias respecto del conjunto, porque la "
+        "cantidad de la que se restan es una. Ninguno es una estimación causal.",
+})
+
+# fig40 / fig41 — split in two for the deck, so each gets its own caption.
+ES.update({
+    "UPV/EHU timetables for the ordinary sitting, with each subject's change in "
+    "mean beneath its name. Física's own slot did not move — it was last on its "
+    "day in both years — so what being last\ncosts differences out. What changed is "
+    "what precedes it. The contrast is confounded and enters no budget: the pair "
+    "made adjacent is also the pair that is most quantitative.":
+        "Horarios de la UPV/EHU para la convocatoria ordinaria, con el cambio de la media de "
+        "cada materia bajo su nombre. La franja propia de Física no se movió — fue la última de "
+        "su día en los dos años —, de modo que\nlo que cuesta ir la última se cancela en la "
+        "diferencia. Lo que cambió es lo que la precede. El contraste está confundido y no entra "
+        "en ningún presupuesto: el par que quedó seguido es también el más cuantitativo.",
+    "Panel b: the weighting parameters for 2026-27, coded degree by degree for the "
+    "three branches in which Física appears at all. Only the two most favourable "
+    "marks count, and Matemáticas II is compulsory in the access phase.":
+        "Los parámetros de ponderación para 2026-27, codificados grado a grado en las tres ramas "
+        "en las que Física aparece. Solo cuentan las dos mejores calificaciones, y Matemáticas II "
+        "es obligatoria en la fase de acceso.",
+})

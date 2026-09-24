@@ -1388,3 +1388,68 @@ re-derive every plotted value against the panel that shares its numbers. There w
 in the data. Three of the four defects were in how the panel spoke, and the fourth was a
 word that collided with the dossier's own vocabulary — which no numerical check would ever
 have found.
+
+---
+
+## R23 · 23 September — "diagnose the slides you worked on, and produce the best ones"
+
+The coordination deck had seven uncommitted slides written on 20–22 September. Diagnosed
+against a build rather than by reading, and six separate classes of defect came out.
+
+**1. Every one of the seven was unshowable.** Measured in a real Slidev build, each of them
+ran off the bottom of the slide: the Cataluña annexe by 436 px and the attribution budget by
+408 px, more than half a slide each. The cause is that `.fig img` set `width: 100%` and no
+height at all, so a figure decided how tall its slide was; that is right for the wide 3:1
+strips the deck was built around and wrong for anything squarer. Fixed in `style.css` with
+`.fit-lg/-md/-sm/-xs` caps, plus a `width: fit-content` on the capped card so it hugs the
+picture instead of framing a stamp in a field of paper. Every slide is now checked against
+the top of the ribbon, not the bottom of the slide, because the ribbon is drawn inside it and
+content behind the ribbon is not merely ugly but invisible.
+
+**2. A figure in English on a Spanish slide.** `datos-perfiles.png` was English throughout —
+axis labels, legend, both panel titles. The mechanism is worth recording because it is the
+guard in `plot_style.save()` failing in the exact way it was written to prevent: the names
+`fig36`, `fig37`, `fig38` had been added to `ES_FIGURES`, but the three scripts had been
+written with hard-coded English strings and no `T()` at all. The allowlist then did the
+opposite of its job — it let the pipeline write an `_es` file whose every word was English.
+The three scripts are now wrapped and their strings are in `es_strings.py`; and `save()`
+refuses a deck figure outright unless `PAU_LANG=es`, so the failure cannot recur silently.
+
+**3. The deck carried the superseded figure 25.** `datos-forma.png` was the pre-R22 render,
+with all four defects R22 repaired plus a caption printed over the x-axis label. Three
+further defects were found in the paper-mode split while re-rendering it: no bottom margin
+was reserved for the three-line source note, the panel-b legend sat on the bars, and the
+source note described a panel c that paper mode puts in a different figure.
+
+**4. `+45 %` and `1 430 words` are two different counts, and the dossier crossed them in six
+places.** The whole paper went 1 335 → 1 940 words on the cross-community token count, which
+is $+45$ %; the statement went 1 026 → 1 431 on the hand-coded budget, which is $+39$ %. Both
+are right. Pairing the one percentage with the other's absolute is not, and chapter 6, both
+briefings and both syntheses did it. Corrected in all six.
+
+**5. Two slides contradicted findings the dossier had since reached.** The budget slide still
+listed *temas nuevos* among the four inseparable causes, which finding 17 has very nearly
+excluded for the ordinary sitting; and the optionality tile said $\div 2$ where the step
+2025 → 2026 is 75 → 50 %, a third, not a half.
+
+**6. What was missing was the actionable half.** Nothing in the deck carried finding 19 (the
+calendar moved; the weighting table makes Física the third of three keys), finding 20's
+quantified Catalan bound, finding 21's pre-registered 2027 test, or finding 18's six
+communities that converted nothing and still spread 1.96 marks. The first and last of those
+are the two facts a coordination meeting can actually act on, and the 2027 prediction is the
+only thing in the deck that lets it be wrong: without it, a recovery of a mark and a half next
+June reads as proof that shortening the statements worked, which is precisely the inference
+finding 21 forbids.
+
+Three new figures were built for this: `fig39_reversion_2027` (the reversion panel standing
+alone, for the closing slide), `fig40_timetable_weights` (the calendar and the weighting
+table), and its deck split `fig41_weighting_table`. A `PAU_DECK=1` mode was added to
+`plot_style` alongside `PAU_LANG` and `PAU_PAPER`: it drops the running head — a slide that
+says "Figura 26 —" points at a document nobody in the room is holding — and writes into
+`plots/deck/` under the deck's own file names, changing nothing else, so a deck figure and
+the dossier figure it came from cannot say different things.
+
+**Lesson.** Six of these were invisible from the source. The deck was written, read and
+believed correct; one build and one measurement pass found seven unshowable slides, an
+English figure and a superseded one. A deck is not a document — it has a geometry, and the
+geometry has to be checked by rendering it.
